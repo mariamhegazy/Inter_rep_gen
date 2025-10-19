@@ -1,0 +1,108 @@
+{
+  "raw_runs": {
+    "TI2V": {
+      "aesthetic_quality": 0.5873782032209894,
+      "background_consistency": 0.9606388257897418,
+      "dynamic_degree": 0.4782608695652174,
+      "imaging_quality": 0.695906621519713,
+      "motion_smoothness": 0.9890335340525745,
+      "overall_consistency": 0.27072141740633093,
+      "subject_consistency": 0.9548328893583106,
+      "temporal_flickering": 0.9716913151339597,
+      "temporal_style": 0.27072141740633093
+    },
+    "TI2V_modified": {
+      "aesthetic_quality": 0.5780255110640274,
+      "background_consistency": 0.9514042583264802,
+      "imaging_quality": 0.6988136409047689,
+      "motion_smoothness": 0.986877852267505,
+      "overall_consistency": 0.21652441809051914,
+      "subject_consistency": 0.9300516870402192,
+      "temporal_flickering": 0.9670811009800719,
+      "temporal_style": 0.21652441809051914
+    }
+  },
+  "normalized_runs": {
+    "TI2V": {
+      "aesthetic_quality": 0.5873782032209894,
+      "background_consistency": 0.9467011859035095,
+      "dynamic_degree": 0.4782608695652174,
+      "imaging_quality": 0.695906621519713,
+      "motion_smoothness": 0.9709555199059159,
+      "overall_consistency": 0.7437401577097004,
+      "subject_consistency": 0.9470987226028468,
+      "temporal_flickering": 0.9236345161423245,
+      "temporal_style": 0.7437401577097004
+    },
+    "TI2V_modified": {
+      "aesthetic_quality": 0.5780255110640274,
+      "background_consistency": 0.9341966937393099,
+      "imaging_quality": 0.6988136409047689,
+      "motion_smoothness": 0.9635603851372383,
+      "overall_consistency": 0.5948473024464812,
+      "subject_consistency": 0.9180741239637142,
+      "temporal_flickering": 0.91119800642048,
+      "temporal_style": 0.5948473024464812
+    }
+  },
+  "dimensions_union": [
+    "aesthetic_quality",
+    "background_consistency",
+    "dynamic_degree",
+    "imaging_quality",
+    "motion_smoothness",
+    "overall_consistency",
+    "subject_consistency",
+    "temporal_flickering",
+    "temporal_style"
+  ],
+  "dimensions_intersection": [
+    "aesthetic_quality",
+    "background_consistency",
+    "imaging_quality",
+    "motion_smoothness",
+    "overall_consistency",
+    "subject_consistency",
+    "temporal_flickering",
+    "temporal_style"
+  ],
+  "used_minmax": {
+    "aesthetic_quality": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "background_consistency": {
+      "min": 0.2615,
+      "max": 1.0
+    },
+    "dynamic_degree": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "imaging_quality": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "motion_smoothness": {
+      "min": 0.706,
+      "max": 0.9975
+    },
+    "overall_consistency": {
+      "min": 0.0,
+      "max": 0.364
+    },
+    "subject_consistency": {
+      "min": 0.1462,
+      "max": 1.0
+    },
+    "temporal_flickering": {
+      "min": 0.6293,
+      "max": 1.0
+    },
+    "temporal_style": {
+      "min": 0.0,
+      "max": 0.364
+    }
+  },
+  "normalization_source": "constants"
+}

@@ -1,0 +1,20 @@
+{
+  "subject_consistency": {"min": 0.1462, "max": 1.0000},
+  "background_consistency": {"min": 0.2615, "max": 1.0000},
+  "temporal_flickering": {"min": 0.6293, "max": 1.0000},
+  "motion_smoothness": {"min": 0.7060, "max": 0.9975},
+  "dynamic_degree": {"min": 0.0000, "max": 1.0000},
+  "aesthetic_quality": {"min": 0.0000, "max": 1.0000},
+  "imaging_quality": {"min": 0.0000, "max": 1.0000},
+  "multiple_objects": {"min": 0.0000, "max": 1.0000},
+  "human_action": {"min": 0.0000, "max": 1.0000},
+  "color": {"min": 0.0000, "max": 1.0000},
+  "spatial_relationship": {"min": 0.0000, "max": 1.0000},
+  "scene": {"min": 0.0000, "max": 0.8222},
+  "appearance_style": {"min": 0.0009, "max": 1.0000},
+  "temporal_style": {"min": 0.0000, "max": 0.3640},
+  "overall_consistency": {"min": 0.0000, "max": 0.3640},
+  "camera_motion": {"min": 0.0, "max": 1.0000},
+  "i2v_subject": {"min": 0.0000, "max": 1.0000},
+  "i2v_background": {"min": 0.0000, "max": 1.0000}
+}

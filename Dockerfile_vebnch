@@ -1,0 +1,61 @@
+# ---------- VBench evaluation image (no heredocs) ----------
+# Override BASE_IMAGE to one with CUDA 12.1 or 11.x if you need Detectron2.
+#   CUDA 11.8 example: nvcr.io/nvidia/pytorch:23.08-py3
+#   CUDA 12.1 example: nvcr.io/nvidia/pytorch:24.01-py3
+ARG BASE_IMAGE=nvcr.io/nvidia/pytorch:24.10-py3
+FROM ${BASE_IMAGE} AS base
+
+ENV DEBIAN_FRONTEND=noninteractive
+WORKDIR /workspace
+
+# Minimal system deps
+RUN apt-get update -y && apt-get install -y --no-install-recommends \
+    build-essential git curl wget ca-certificates \
+    libglib2.0-0 libsm6 libxext6 libxrender1 libgl1 ffmpeg \
+ && rm -rf /var/lib/apt/lists/*
+
+# Keep Python packaging toolchain modern (prevents setuptools/packaging issues)
+RUN python -m pip install --upgrade "pip>=24.2" "setuptools>=77.0.0" "wheel>=0.44.0" "packaging>=24.2"
+
+# Choose a PyTorch CUDA wheel channel (must be <= cu121 for Detectron2).
+# Default: cu118. Override at build: --build-arg TORCH_CUDA_CHANNEL=https://download.pytorch.org/whl/cu121
+ARG TORCH_CUDA_CHANNEL=https://download.pytorch.org/whl/cu118
+
+# Remove preinstalled torch stack (if present) to avoid ABI conflicts
+RUN echo "Preinstalled torch packages:" \
+ && (python -m pip freeze | grep -E '^(torch|torchvision|torchaudio)==') || true \
+ && python -m pip uninstall -y torch torchvision torchaudio || true
+
+# Install torch/torchvision (CUDA <= 12.1)
+RUN --mount=type=cache,target=/root/.cache/pip \
+    pip install --index-url ${TORCH_CUDA_CHANNEL} torch torchvision
+
+# VBench
+RUN --mount=type=cache,target=/root/.cache/pip \
+    pip install vbench
+
+# Detectron2 (needs CUDA 12.1 or 11.x + matching torch)
+RUN --mount=type=cache,target=/root/.cache/pip \
+    pip install git+https://github.com/facebookresearch/detectron2.git
+
+# (Optional) download VBench_full_info.json at build
+# Provide a URL via: --build-arg VBENCH_JSON_URL="https://.../VBench_full_info.json"
+ARG VBENCH_JSON_URL=""
+RUN if [ -n "$VBENCH_JSON_URL" ]; then \
+      echo "Downloading VBench_full_info.json from $VBENCH_JSON_URL" && \
+      curl -L "$VBENCH_JSON_URL" -o /workspace/VBench_full_info.json ; \
+    else \
+      echo "Tip: mount VBench_full_info.json at runtime or pass VBENCH_JSON_URL at build."; \
+    fi
+
+# Quick import check (non-fatal). Enable with: --build-arg RUN_IMPORT_CHECK=true
+ARG RUN_IMPORT_CHECK=false
+RUN if [ "$RUN_IMPORT_CHECK" = "true" ]; then \
+      python -c "import torch, torchvision; \
+print('Torch:', torch.__version__, 'CUDA:', torch.version.cuda, 'CUDA avail:', torch.cuda.is_available()); \
+import detectron2; print('detectron2 OK'); \
+import vbench; print('vbench OK')" ; \
+    else echo "Skipping import check."; fi
+
+WORKDIR /workspace
+CMD ["/bin/bash"]

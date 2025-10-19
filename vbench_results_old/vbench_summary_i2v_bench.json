@@ -1,0 +1,42 @@
+{
+  "runs": {
+    "TI2V": {
+      "aesthetic_quality": 0.616473645151922,
+      "background_consistency": 0.9798387592341624,
+      "dynamic_degree": 0.4721030042918455,
+      "i2v_background": 0.9636899102387989,
+      "i2v_subject": 0.9596904136074204,
+      "imaging_quality": 0.7060020512663767,
+      "motion_smoothness": 0.9897853468401572,
+      "subject_consistency": 0.955682069731767
+    },
+    "I2V": {
+      "background_consistency": 0.9628137912879996,
+      "dynamic_degree": 0.6137339055793991,
+      "i2v_background": 0.960027564978417,
+      "i2v_subject": 0.952474025108016,
+      "imaging_quality": 0.7076467634648089,
+      "motion_smoothness": 0.9887215950947429,
+      "subject_consistency": 0.937925637799058
+    }
+  },
+  "dimensions_union": [
+    "aesthetic_quality",
+    "background_consistency",
+    "dynamic_degree",
+    "i2v_background",
+    "i2v_subject",
+    "imaging_quality",
+    "motion_smoothness",
+    "subject_consistency"
+  ],
+  "dimensions_intersection": [
+    "background_consistency",
+    "dynamic_degree",
+    "i2v_background",
+    "i2v_subject",
+    "imaging_quality",
+    "motion_smoothness",
+    "subject_consistency"
+  ]
+}

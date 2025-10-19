@@ -1,0 +1,155 @@
+{
+  "raw_runs": {
+    "TI2V": {
+      "subject_consistency": 0.9630995813012839,
+      "background_consistency": 0.965769279839097,
+      "temporal_flickering": 0.9816323991796084,
+      "motion_smoothness": 0.9911250656760845,
+      "dynamic_degree": 0.3746397694524496,
+      "aesthetic_quality": 0.6159107693677677,
+      "imaging_quality": 0.7055697962895191,
+      "temporal_style": 0.25442325167078794,
+      "overall_consistency": 0.25442325167078794
+    },
+    "TI2V_contradiction": {
+      "subject_consistency": 0.9592148528995277,
+      "background_consistency": 0.9620324507684919,
+      "temporal_flickering": 0.981271253488741,
+      "motion_smoothness": 0.9910756853289292,
+      "dynamic_degree": 0.3919308357348703,
+      "aesthetic_quality": 0.6131651131838818,
+      "imaging_quality": 0.7070773819548103,
+      "temporal_style": 0.23185910021494377,
+      "overall_consistency": 0.22547890859996894
+    },
+    "T2V": {
+      "subject_consistency": 0.97109351390928,
+      "background_consistency": 0.9728198664332673,
+      "temporal_flickering": 0.9805439896770856,
+      "motion_smoothness": 0.9896473864927825,
+      "dynamic_degree": 0.3227665706051873,
+      "aesthetic_quality": 0.6077401226638717,
+      "imaging_quality": 0.7291378285444382,
+      "temporal_style": 0.26343548272116385,
+      "overall_consistency": 0.26343548272116385
+    },
+    "T2V_contradiction": {
+      "subject_consistency": 0.974975589146045,
+      "background_consistency": 0.973522351179755,
+      "temporal_flickering": 0.9806914620382685,
+      "motion_smoothness": 0.9896297887804779,
+      "dynamic_degree": 0.31412103746397696,
+      "aesthetic_quality": 0.6076938819988317,
+      "imaging_quality": 0.7285908529556135,
+      "temporal_style": 0.2661782402641835,
+      "overall_consistency": 0.2661782402641835
+    }
+  },
+  "normalized_runs": {
+    "TI2V": {
+      "subject_consistency": 0.9567809572514452,
+      "background_consistency": 0.9536483139324267,
+      "temporal_flickering": 0.9504515758824074,
+      "motion_smoothness": 0.9781305855097236,
+      "dynamic_degree": 0.3746397694524496,
+      "aesthetic_quality": 0.6159107693677677,
+      "imaging_quality": 0.7055697962895191,
+      "temporal_style": 0.6989649771175493,
+      "overall_consistency": 0.6989649771175493
+    },
+    "TI2V_contradiction": {
+      "subject_consistency": 0.9522310293974323,
+      "background_consistency": 0.9485882881089938,
+      "temporal_flickering": 0.9494773495784758,
+      "motion_smoothness": 0.9779611846618496,
+      "dynamic_degree": 0.3919308357348703,
+      "aesthetic_quality": 0.6131651131838818,
+      "imaging_quality": 0.7070773819548103,
+      "temporal_style": 0.6369755500410543,
+      "overall_consistency": 0.6194475510988158
+    },
+    "T2V": {
+      "subject_consistency": 0.9661437267618647,
+      "background_consistency": 0.9631954860301523,
+      "temporal_flickering": 0.9475154833479513,
+      "motion_smoothness": 0.9730613601810718,
+      "dynamic_degree": 0.3227665706051873,
+      "aesthetic_quality": 0.6077401226638717,
+      "imaging_quality": 0.7291378285444382,
+      "temporal_style": 0.723723853629571,
+      "overall_consistency": 0.723723853629571
+    },
+    "T2V_contradiction": {
+      "subject_consistency": 0.9706905471375556,
+      "background_consistency": 0.9641467179143602,
+      "temporal_flickering": 0.9479133046621756,
+      "motion_smoothness": 0.973000990670593,
+      "dynamic_degree": 0.31412103746397696,
+      "aesthetic_quality": 0.6076938819988317,
+      "imaging_quality": 0.7285908529556135,
+      "temporal_style": 0.73125890182468,
+      "overall_consistency": 0.73125890182468
+    }
+  },
+  "dimensions_union": [
+    "aesthetic_quality",
+    "background_consistency",
+    "dynamic_degree",
+    "imaging_quality",
+    "motion_smoothness",
+    "overall_consistency",
+    "subject_consistency",
+    "temporal_flickering",
+    "temporal_style"
+  ],
+  "dimensions_intersection": [
+    "aesthetic_quality",
+    "background_consistency",
+    "dynamic_degree",
+    "imaging_quality",
+    "motion_smoothness",
+    "overall_consistency",
+    "subject_consistency",
+    "temporal_flickering",
+    "temporal_style"
+  ],
+  "used_minmax": {
+    "aesthetic_quality": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "background_consistency": {
+      "min": 0.2615,
+      "max": 1.0
+    },
+    "dynamic_degree": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "imaging_quality": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "motion_smoothness": {
+      "min": 0.706,
+      "max": 0.9975
+    },
+    "overall_consistency": {
+      "min": 0.0,
+      "max": 0.364
+    },
+    "subject_consistency": {
+      "min": 0.1462,
+      "max": 1.0
+    },
+    "temporal_flickering": {
+      "min": 0.6293,
+      "max": 1.0
+    },
+    "temporal_style": {
+      "min": 0.0,
+      "max": 0.364
+    }
+  },
+  "normalization_source": "constants"
+}

@@ -1,0 +1,37 @@
+{
+  "runs": {
+    "TI2V": {
+      "subject_consistency": 0.9630995813012839,
+      "background_consistency": 0.965769279839097,
+      "motion_smoothness": 0.9911250656760845,
+      "dynamic_degree": 0.3746397694524496,
+      "aesthetic_quality": 0.6159107693677677,
+      "imaging_quality": 0.7055697962895191,
+      "human_action": 0.0,
+      "temporal_style": 0.25442325167078794,
+      "overall_consistency": 0.25442325167078794
+    }
+  },
+  "dimensions_union": [
+    "aesthetic_quality",
+    "background_consistency",
+    "dynamic_degree",
+    "human_action",
+    "imaging_quality",
+    "motion_smoothness",
+    "overall_consistency",
+    "subject_consistency",
+    "temporal_style"
+  ],
+  "dimensions_intersection": [
+    "aesthetic_quality",
+    "background_consistency",
+    "dynamic_degree",
+    "human_action",
+    "imaging_quality",
+    "motion_smoothness",
+    "overall_consistency",
+    "subject_consistency",
+    "temporal_style"
+  ]
+}

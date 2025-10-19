@@ -1,0 +1,56 @@
+{
+  "dimension_order": [
+    "aesthetic_quality",
+    "background_consistency",
+    "dynamic_degree",
+    "human_action",
+    "imaging_quality",
+    "motion_smoothness",
+    "overall_consistency",
+    "subject_consistency",
+    "temporal_flickering",
+    "temporal_style"
+  ],
+  "models": {
+    "WAN2.2_TI2V": {
+      "overall": {
+        "subject_consistency": 0.9630995813012839,
+        "background_consistency": 0.965769279839097,
+        "temporal_flickering": NaN,
+        "motion_smoothness": 0.9911250656760845,
+        "dynamic_degree": 0.3746397694524496,
+        "aesthetic_quality": 0.6159107693677677,
+        "imaging_quality": 0.7055697962895191,
+        "human_action": 0.0,
+        "temporal_style": 0.25442325167078794,
+        "overall_consistency": 0.25442325167078794
+      },
+      "radar": {
+        "dimensions": [
+          "aesthetic_quality",
+          "background_consistency",
+          "dynamic_degree",
+          "human_action",
+          "imaging_quality",
+          "motion_smoothness",
+          "overall_consistency",
+          "subject_consistency",
+          "temporal_flickering",
+          "temporal_style"
+        ],
+        "values": [
+          0.6159107693677677,
+          0.965769279839097,
+          0.3746397694524496,
+          0.0,
+          0.7055697962895191,
+          0.9911250656760845,
+          0.25442325167078794,
+          0.9630995813012839,
+          NaN,
+          0.25442325167078794
+        ]
+      }
+    }
+  }
+}

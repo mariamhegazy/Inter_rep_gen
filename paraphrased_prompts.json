@@ -1,0 +1,2438 @@
+[
+  {
+    "id": 8,
+    "file_name": "a view of a star trail in the night sky.jpg",
+    "type": "abstract",
+    "caption": "a depiction of star trails across the night sky",
+    "original_caption": "a view of a star trail in the night sky"
+  },
+  {
+    "id": 9,
+    "file_name": "an aerial view of a small town on the edge of the ocean.jpg",
+    "type": "architecture",
+    "caption": "a bird's-eye view of a quaint coastal town perched on the ocean's edge.",
+    "original_caption": "an aerial view of a small town on the edge of the ocean"
+  },
+  {
+    "id": 10,
+    "file_name": "Colorful buildings on the seaside cliffs.jpg",
+    "type": "architecture",
+    "caption": "Vibrant structures perched on coastal cliffs.",
+    "original_caption": "Colorful buildings on the seaside cliffs"
+  },
+  {
+    "id": 11,
+    "file_name": "a bunch of houses that are on a hillside.jpg",
+    "type": "architecture",
+    "caption": "a cluster of houses situated on a hillside.",
+    "original_caption": "a bunch of houses that are on a hillside"
+  },
+  {
+    "id": 12,
+    "file_name": "a building that is sitting on the side of a pond.jpg",
+    "type": "architecture",
+    "caption": "a structure positioned beside a pond",
+    "original_caption": "a building that is sitting on the side of a pond"
+  },
+  {
+    "id": 13,
+    "file_name": "an aerial view of a busy city with a bridge in the background.jpg",
+    "type": "architecture",
+    "caption": "an overhead perspective of a bustling urban area featuring a bridge in the distance.",
+    "original_caption": "an aerial view of a busy city with a bridge in the background"
+  },
+  {
+    "id": 14,
+    "file_name": "a bridge that is over a body of water.jpg",
+    "type": "architecture",
+    "caption": "a structure spanning a waterway",
+    "original_caption": "a bridge that is over a body of water"
+  },
+  {
+    "id": 15,
+    "file_name": "a pile of wood sitting next to a log house.jpg",
+    "type": "architecture",
+    "caption": "A stack of logs placed beside a wooden cabin.",
+    "original_caption": "a pile of wood sitting next to a log house"
+  },
+  {
+    "id": 16,
+    "file_name": "a view of a snowy mountain side with many buildings.jpg",
+    "type": "architecture",
+    "caption": "a scenic view of a mountain slope blanketed in snow, dotted with numerous buildings.",
+    "original_caption": "a view of a snowy mountain side with many buildings"
+  },
+  {
+    "id": 17,
+    "file_name": "san francisco skyline at sunset.jpg",
+    "type": "architecture",
+    "caption": "San Francisco's skyline bathed in the warm glow of sunset.",
+    "original_caption": "san francisco skyline at sunset"
+  },
+  {
+    "id": 18,
+    "file_name": "a castle on top of a hill covered in snow.jpg",
+    "type": "architecture",
+    "caption": "a snow-covered hilltop with a castle perched upon it",
+    "original_caption": "a castle on top of a hill covered in snow"
+  },
+  {
+    "id": 19,
+    "file_name": "an aerial view of big ben and the houses of parliament in london.jpg",
+    "type": "architecture",
+    "caption": "an aerial perspective of Big Ben and the Houses of Parliament in London.",
+    "original_caption": "an aerial view of big ben and the houses of parliament in london"
+  },
+  {
+    "id": 20,
+    "file_name": "a beach with a lot of buildings on the side of a cliff.jpg",
+    "type": "architecture",
+    "caption": "a shoreline featuring numerous structures built along the edge of a steep cliff.",
+    "original_caption": "a beach with a lot of buildings on the side of a cliff"
+  },
+  {
+    "id": 21,
+    "file_name": "an alley way in an old european city.jpg",
+    "type": "architecture",
+    "caption": "a narrow street in a historic European town",
+    "original_caption": "an alley way in an old european city"
+  },
+  {
+    "id": 22,
+    "file_name": "the golden gate bridge in san franscisco is lit up by the setting sun.jpg",
+    "type": "architecture",
+    "caption": "The Golden Gate Bridge in San Francisco is illuminated by the setting sun.",
+    "original_caption": "the golden gate bridge in san franscisco is lit up by the setting sun"
+  },
+  {
+    "id": 23,
+    "file_name": "the great wall of china in autumn.jpg",
+    "type": "architecture",
+    "caption": "The Great Wall of China during autumn.",
+    "original_caption": "the great wall of china in autumn"
+  },
+  {
+    "id": 24,
+    "file_name": "the town of hallstatt is surrounded by mountains and water.jpg",
+    "type": "architecture",
+    "caption": "The picturesque town of Hallstatt is nestled amidst mountains and water.",
+    "original_caption": "the town of hallstatt is surrounded by mountains and water"
+  },
+  {
+    "id": 25,
+    "file_name": "tokyo skyline at night.jpg",
+    "type": "architecture",
+    "caption": "Nighttime view of the Tokyo skyline.",
+    "original_caption": "tokyo skyline at night"
+  },
+  {
+    "id": 26,
+    "file_name": "a large wave crashes into a lighthouse.jpg",
+    "type": "architecture",
+    "caption": "A massive wave slams into the lighthouse.",
+    "original_caption": "a large wave crashes into a lighthouse"
+  },
+  {
+    "id": 27,
+    "file_name": "a church sits on top of a hill under a cloudy sky.jpg",
+    "type": "architecture",
+    "caption": "A church is perched atop a hill beneath a sky filled with clouds.",
+    "original_caption": "a church sits on top of a hill under a cloudy sky"
+  },
+  {
+    "id": 28,
+    "file_name": "the parthenon in acropolis, greece.jpg",
+    "type": "architecture",
+    "caption": "The Parthenon at the Acropolis in Greece.",
+    "original_caption": "the parthenon in acropolis, greece"
+  },
+  {
+    "id": 29,
+    "file_name": "a large crowd of people walking in a shopping mall.jpg",
+    "type": "architecture",
+    "caption": "A bustling shopping mall filled with a large number of people walking around.",
+    "original_caption": "a large crowd of people walking in a shopping mall"
+  },
+  {
+    "id": 30,
+    "file_name": "the pyramids of giza, egypt.jpg",
+    "type": "architecture",
+    "caption": "The Great Pyramids of Giza in Egypt.",
+    "original_caption": "the pyramids of giza, egypt"
+  },
+  {
+    "id": 31,
+    "file_name": "a stage door painted with a star on the side of a brick wall.jpg",
+    "type": "architecture",
+    "caption": "a door labeled \"STAGE DOOR\" with a star painted on it, situated against a brick wall.",
+    "original_caption": "a stage door painted with a star on the side of a brick wall"
+  },
+  {
+    "id": 32,
+    "file_name": "a light house on the edge of the water.jpg",
+    "type": "architecture",
+    "caption": "a lighthouse situated at the water's edge",
+    "original_caption": "a light house on the edge of the water"
+  },
+  {
+    "id": 33,
+    "file_name": "an asian city street at night with people and bicycles.jpg",
+    "type": "architecture",
+    "caption": "A bustling Asian city street at night, featuring pedestrians and bicycles.",
+    "original_caption": "an asian city street at night with people and bicycles"
+  },
+  {
+    "id": 34,
+    "file_name": "a couple of wooden benches in the middle of a street.jpg",
+    "type": "architecture",
+    "caption": "a few wooden benches situated in the center of a street",
+    "original_caption": "a couple of wooden benches in the middle of a street"
+  },
+  {
+    "id": 35,
+    "file_name": "a pagoda sits on top of a mountain in japan.jpg",
+    "type": "architecture",
+    "caption": "A pagoda is perched atop a mountain in Japan.",
+    "original_caption": "a pagoda sits on top of a mountain in japan"
+  },
+  {
+    "id": 36,
+    "file_name": "a red bus driving down a snowy street at night.jpg",
+    "type": "architecture",
+    "caption": "a red bus traveling along a snow-covered street during the evening.",
+    "original_caption": "a red bus driving down a snowy street at night"
+  },
+  {
+    "id": 37,
+    "file_name": "a snow covered street.jpg",
+    "type": "architecture",
+    "caption": "a street blanketed in snow",
+    "original_caption": "a snow covered street"
+  },
+  {
+    "id": 38,
+    "file_name": "a house with snow on the ground.jpg",
+    "type": "architecture",
+    "caption": "a residence covered in snow with a snowy landscape around it.",
+    "original_caption": "a house with snow on the ground"
+  },
+  {
+    "id": 39,
+    "file_name": "cars parked on the side of the road during a snowstorm.jpg",
+    "type": "architecture",
+    "caption": "Vehicles are parked along the roadside during a snowstorm.",
+    "original_caption": "cars parked on the side of the road during a snowstorm"
+  },
+  {
+    "id": 40,
+    "file_name": "a group of statues on the side of a building.jpg",
+    "type": "architecture",
+    "caption": "a set of statues positioned along the side of a structure",
+    "original_caption": "a group of statues on the side of a building"
+  },
+  {
+    "id": 41,
+    "file_name": "a city street at night during a snow storm.jpg",
+    "type": "architecture",
+    "caption": "a snowy city street at night",
+    "original_caption": "a city street at night during a snow storm"
+  },
+  {
+    "id": 42,
+    "file_name": "tower bridge in london.jpg",
+    "type": "architecture",
+    "caption": "Tower Bridge in London.",
+    "original_caption": "tower bridge in london"
+  },
+  {
+    "id": 43,
+    "file_name": "chinese pagoda in the middle of a snowy day.jpg",
+    "type": "architecture",
+    "caption": "A traditional Chinese pagoda stands amidst a snowy day.",
+    "original_caption": "chinese pagoda in the middle of a snowy day"
+  },
+  {
+    "id": 44,
+    "file_name": "a dark alleyway with a bus driving down it.jpg",
+    "type": "architecture",
+    "caption": "a dimly lit alley with a bus traveling through it",
+    "original_caption": "a dark alleyway with a bus driving down it"
+  },
+  {
+    "id": 45,
+    "file_name": "a monastery sits on top of a cliff in bhutan.jpg",
+    "type": "architecture",
+    "caption": "A monastery is perched atop a cliff in Bhutan.",
+    "original_caption": "a monastery sits on top of a cliff in bhutan"
+  },
+  {
+    "id": 46,
+    "file_name": "the dome of the rock in jerusalem.jpg",
+    "type": "architecture",
+    "caption": "The Dome of the Rock in Jerusalem.",
+    "original_caption": "the dome of the rock in jerusalem"
+  },
+  {
+    "id": 47,
+    "file_name": "an aerial view of a futuristic building on a cliff overlooking a body of water.jpg",
+    "type": "architecture",
+    "caption": "an overhead perspective of a modern structure perched on a cliffside, with a vast water body in the background.",
+    "original_caption": "an aerial view of a futuristic building on a cliff overlooking a body of water"
+  },
+  {
+    "id": 48,
+    "file_name": "a reflection of a city with buildings in the water.jpg",
+    "type": "architecture",
+    "caption": "a cityscape reflected in the water, showing the outlines of buildings.",
+    "original_caption": "a reflection of a city with buildings in the water"
+  },
+  {
+    "id": 49,
+    "file_name": "a bar with chairs and a television on the wall.jpg",
+    "type": "indoor",
+    "caption": "a pub featuring chairs and a television mounted on the wall.",
+    "original_caption": "a bar with chairs and a television on the wall"
+  },
+  {
+    "id": 50,
+    "file_name": "a living room filled with lots of books on a wall.jpg",
+    "type": "indoor",
+    "caption": "a cozy living room with numerous books lined up on a wall.",
+    "original_caption": "a living room filled with lots of books on a wall"
+  },
+  {
+    "id": 51,
+    "file_name": "a living room filled with furniture next to a stone wall.jpg",
+    "type": "indoor",
+    "caption": "a cozy living room featuring various pieces of furniture situated beside a rustic stone wall.",
+    "original_caption": "a living room filled with furniture next to a stone wall"
+  },
+  {
+    "id": 52,
+    "file_name": "a table and chairs in a room with sunlight coming through the window.jpg",
+    "type": "indoor",
+    "caption": "A room with a table and chairs, bathed in sunlight streaming through the window.",
+    "original_caption": "a table and chairs in a room with sunlight coming through the window"
+  },
+  {
+    "id": 53,
+    "file_name": "a room filled with lots of shelves filled with books.jpg",
+    "type": "indoor",
+    "caption": "a space containing numerous shelves stocked with books.",
+    "original_caption": "a room filled with lots of shelves filled with books"
+  },
+  {
+    "id": 54,
+    "file_name": "an art gallery with paintings on the walls.jpg",
+    "type": "indoor",
+    "caption": "a gallery space featuring artwork displayed on the walls",
+    "original_caption": "an art gallery with paintings on the walls"
+  },
+  {
+    "id": 55,
+    "file_name": "a room with a lot of pictures on the walls.jpg",
+    "type": "indoor",
+    "caption": "a space adorned with numerous images displayed on the walls.",
+    "original_caption": "a room with a lot of pictures on the walls"
+  },
+  {
+    "id": 56,
+    "file_name": "a painting of a cloudy sky next to an easel.jpg",
+    "type": "indoor",
+    "caption": "a canvas depicting a cloudy sky placed beside an easel.",
+    "original_caption": "a painting of a cloudy sky next to an easel"
+  },
+  {
+    "id": 57,
+    "file_name": "a living room with a christmas tree and a rocking chair.jpg",
+    "type": "indoor",
+    "caption": "A cozy living room featuring a decorated Christmas tree and a wooden rocking chair.",
+    "original_caption": "a living room with a christmas tree and a rocking chair"
+  },
+  {
+    "id": 58,
+    "file_name": "a kitchen with a sink and a lot of glasses on the counter.jpg",
+    "type": "indoor",
+    "caption": "a room featuring a sink and numerous glasses placed on the counter.",
+    "original_caption": "a kitchen with a sink and a lot of glasses on the counter"
+  },
+  {
+    "id": 59,
+    "file_name": "a wooden table in front of a brick wall with bottles on the wall.jpg",
+    "type": "indoor",
+    "caption": "a wooden table positioned in front of a brick wall, with bottles displayed on the wall.",
+    "original_caption": "a wooden table in front of a brick wall with bottles on the wall"
+  },
+  {
+    "id": 60,
+    "file_name": "a room filled with paintings and statues.jpg",
+    "type": "indoor",
+    "caption": "an art gallery showcasing paintings and sculptures.",
+    "original_caption": "a room filled with paintings and statues"
+  },
+  {
+    "id": 61,
+    "file_name": "an outdoor dining area surrounded by plants and a brick walkway.jpg",
+    "type": "indoor",
+    "caption": "A patio dining space with tables and chairs, flanked by lush greenery and a brick pathway.",
+    "original_caption": "an outdoor dining area surrounded by plants and a brick walkway"
+  },
+  {
+    "id": 62,
+    "file_name": "a room filled with books and teddy bears.jpg",
+    "type": "indoor",
+    "caption": "a space brimming with books and teddy bears.",
+    "original_caption": "a room filled with books and teddy bears"
+  },
+  {
+    "id": 63,
+    "file_name": "a table and chairs in a room with a plant in the corner.jpg",
+    "type": "indoor",
+    "caption": "A room featuring a table surrounded by chairs, with a plant situated in one corner.",
+    "original_caption": "a table and chairs in a room with a plant in the corner"
+  },
+  {
+    "id": 64,
+    "file_name": "a living room with a couch, table, and a window.jpg",
+    "type": "indoor",
+    "caption": "A cozy living room featuring a couch, a table, and a window.",
+    "original_caption": "a living room with a couch, table, and a window"
+  },
+  {
+    "id": 65,
+    "file_name": "a modern living room with wood floors and a tv.jpg",
+    "type": "indoor",
+    "caption": "A contemporary living room featuring wooden flooring and a television setup.",
+    "original_caption": "a modern living room with wood floors and a tv"
+  },
+  {
+    "id": 66,
+    "file_name": "a room with a desk and a chair in it.jpg",
+    "type": "indoor",
+    "caption": "A room featuring a desk accompanied by a chair.",
+    "original_caption": "a room with a desk and a chair in it"
+  },
+  {
+    "id": 67,
+    "file_name": "a large waterfall in the middle of a building.jpg",
+    "type": "indoor",
+    "caption": "a massive waterfall situated within a building's interior",
+    "original_caption": "a large waterfall in the middle of a building"
+  },
+  {
+    "id": 68,
+    "file_name": "a chair in a room next to some drawings.jpg",
+    "type": "indoor",
+    "caption": "a chair situated in a room beside some sketches.",
+    "original_caption": "a chair in a room next to some drawings"
+  },
+  {
+    "id": 69,
+    "file_name": "a living room with hardwood floors and a white couch.jpg",
+    "type": "indoor",
+    "caption": "a cozy living room featuring hardwood flooring and a white sofa.",
+    "original_caption": "a living room with hardwood floors and a white couch"
+  },
+  {
+    "id": 70,
+    "file_name": "two people in a canoe on a lake with mountains in the background.jpg",
+    "type": "scenery",
+    "caption": "Two individuals are paddling a canoe on a tranquil lake, with towering mountains visible in the distance.",
+    "original_caption": "two people in a canoe on a lake with mountains in the background"
+  },
+  {
+    "id": 71,
+    "file_name": "an aerial view of a snowy road in a forest.jpg",
+    "type": "scenery",
+    "caption": "a bird's-eye view of a snow-covered road winding through a forest.",
+    "original_caption": "an aerial view of a snowy road in a forest"
+  },
+  {
+    "id": 72,
+    "file_name": "a view of a waterfall from a distance.jpg",
+    "type": "scenery",
+    "caption": "a distant view of a waterfall",
+    "original_caption": "a view of a waterfall from a distance"
+  },
+  {
+    "id": 73,
+    "file_name": "a group of hot air balloons flying over a valley.jpg",
+    "type": "scenery",
+    "caption": "a cluster of colorful hot air balloons soaring above a valley.",
+    "original_caption": "a group of hot air balloons flying over a valley"
+  },
+  {
+    "id": 74,
+    "file_name": "an aerial view of a group of islands in the middle of a lake.jpg",
+    "type": "scenery",
+    "caption": "an overhead perspective of islands situated within a lake",
+    "original_caption": "an aerial view of a group of islands in the middle of a lake"
+  },
+  {
+    "id": 75,
+    "file_name": "an aerial view of a rocky beach in indonesia.jpg",
+    "type": "scenery",
+    "caption": "an overhead perspective of a rugged shoreline in Indonesia",
+    "original_caption": "an aerial view of a rocky beach in indonesia"
+  },
+  {
+    "id": 76,
+    "file_name": "fireworks in the night sky over a city.jpg",
+    "type": "scenery",
+    "caption": "A dazzling display of fireworks lights up the night sky above a cityscape.",
+    "original_caption": "fireworks in the night sky over a city"
+  },
+  {
+    "id": 77,
+    "file_name": "a large wave crashes into a lighthouse on a stormy day.jpg",
+    "type": "scenery",
+    "caption": "A powerful wave smashes against a lighthouse during a tempestuous day.",
+    "original_caption": "a large wave crashes into a lighthouse on a stormy day"
+  },
+  {
+    "id": 78,
+    "file_name": "a mountain range with a sky background.jpg",
+    "type": "scenery",
+    "caption": "a range of mountains set against a sky backdrop",
+    "original_caption": "a mountain range with a sky background"
+  },
+  {
+    "id": 79,
+    "file_name": "a large bonfire is burning in the night sky.jpg",
+    "type": "scenery",
+    "caption": "A massive fire is blazing brightly against the night sky.",
+    "original_caption": "a large bonfire is burning in the night sky"
+  },
+  {
+    "id": 80,
+    "file_name": "a close-up view of the flames of a fireplace.jpg",
+    "type": "scenery",
+    "caption": "a detailed view of the fire's flames in a fireplace.",
+    "original_caption": "a close-up view of the flames of a fireplace"
+  },
+  {
+    "id": 81,
+    "file_name": "a farm in the middle of the day.jpg",
+    "type": "scenery",
+    "caption": "a rural setting during the daytime",
+    "original_caption": "a farm in the middle of the day"
+  },
+  {
+    "id": 82,
+    "file_name": "a flock of birds flying over a tree at sunset.jpg",
+    "type": "scenery",
+    "caption": "A group of birds is flying above a tree during sunset.",
+    "original_caption": "a flock of birds flying over a tree at sunset"
+  },
+  {
+    "id": 83,
+    "file_name": "a captivating scene featuring a spiral galaxy shining brilliantly in the night sky.jpg",
+    "type": "scenery",
+    "caption": "a mesmerizing view showcasing a spiral galaxy radiating brightly against the backdrop of the night sky.",
+    "original_caption": "a captivating scene featuring a spiral galaxy shining brilliantly in the night sky"
+  },
+  {
+    "id": 84,
+    "file_name": "a mountain with snow on it.jpg",
+    "type": "scenery",
+    "caption": "a snowy mountain peak",
+    "original_caption": "a mountain with snow on it"
+  },
+  {
+    "id": 85,
+    "file_name": "a bridge that is in the middle of a river.jpg",
+    "type": "scenery",
+    "caption": "a structure spanning a river in the middle of a waterway",
+    "original_caption": "a bridge that is in the middle of a river"
+  },
+  {
+    "id": 86,
+    "file_name": "a group of people standing on top of a green hill.jpg",
+    "type": "scenery",
+    "caption": "A group of individuals is gathered atop a lush, green hill.",
+    "original_caption": "a group of people standing on top of a green hill"
+  },
+  {
+    "id": 87,
+    "file_name": "a sandy beach with a wooden pier in the water.jpg",
+    "type": "scenery",
+    "caption": "a beach with sand and a wooden pier extending into the water.",
+    "original_caption": "a sandy beach with a wooden pier in the water"
+  },
+  {
+    "id": 88,
+    "file_name": "a lake surrounded by mountains and flowers.jpg",
+    "type": "scenery",
+    "caption": "a body of water encircled by mountains and blossoms",
+    "original_caption": "a lake surrounded by mountains and flowers"
+  },
+  {
+    "id": 89,
+    "file_name": "a hot-air balloon flying over a desert landscape.jpg",
+    "type": "scenery",
+    "caption": "a hot-air balloon soaring above a desert terrain",
+    "original_caption": "a hot-air balloon flying over a desert landscape"
+  },
+  {
+    "id": 90,
+    "file_name": "several hot air balloons flying over a city.jpg",
+    "type": "scenery",
+    "caption": "numerous hot air balloons soaring above a town",
+    "original_caption": "several hot air balloons flying over a city"
+  },
+  {
+    "id": 91,
+    "file_name": "a group of hot air balloons flying over a field.jpg",
+    "type": "scenery",
+    "caption": "several hot air balloons soaring above a field",
+    "original_caption": "a group of hot air balloons flying over a field"
+  },
+  {
+    "id": 92,
+    "file_name": "a large wave crashes over a rocky cliff.jpg",
+    "type": "scenery",
+    "caption": "A massive wave crashes over a rugged cliff.",
+    "original_caption": "a large wave crashes over a rocky cliff"
+  },
+  {
+    "id": 93,
+    "file_name": "the sun is setting over a lake in the mountains.jpg",
+    "type": "scenery",
+    "caption": "The sun is descending over a tranquil lake nestled in the mountains.",
+    "original_caption": "the sun is setting over a lake in the mountains"
+  },
+  {
+    "id": 94,
+    "file_name": "a mountain range with snow on the ground.jpg",
+    "type": "scenery",
+    "caption": "a range of mountains covered in snow on the ground",
+    "original_caption": "a mountain range with snow on the ground"
+  },
+  {
+    "id": 95,
+    "file_name": "sun rays shining through clouds over a lake.jpg",
+    "type": "scenery",
+    "caption": "sunlight filtering through the clouds above a lake.",
+    "original_caption": "sun rays shining through clouds over a lake"
+  },
+  {
+    "id": 96,
+    "file_name": "a boat sits on the shore of a lake with mt fuji in the background.jpg",
+    "type": "scenery",
+    "caption": "A boat rests on the lakeshore, with Mount Fuji visible in the distance.",
+    "original_caption": "a boat sits on the shore of a lake with mt fuji in the background"
+  },
+  {
+    "id": 97,
+    "file_name": "a foggy road with trees in the distance.jpg",
+    "type": "scenery",
+    "caption": "a misty road with trees visible in the background",
+    "original_caption": "a foggy road with trees in the distance"
+  },
+  {
+    "id": 98,
+    "file_name": "two swans swimming on a lake in the fog.jpg",
+    "type": "scenery",
+    "caption": "Two swans gliding across a foggy lake.",
+    "original_caption": "two swans swimming on a lake in the fog"
+  },
+  {
+    "id": 99,
+    "file_name": "the sun is shining through the trees near a waterfall.jpg",
+    "type": "scenery",
+    "caption": "Sunlight filters through the trees near a cascading waterfall.",
+    "original_caption": "the sun is shining through the trees near a waterfall"
+  },
+  {
+    "id": 100,
+    "file_name": "a sandy beach with palm trees on the shore.jpg",
+    "type": "scenery",
+    "caption": "A beach with sand and palm trees along the shoreline.",
+    "original_caption": "a sandy beach with palm trees on the shore"
+  },
+  {
+    "id": 101,
+    "file_name": "an aerial view of a body of water and a beach.jpg",
+    "type": "scenery",
+    "caption": "an overhead perspective of a beach and a water body",
+    "original_caption": "an aerial view of a body of water and a beach"
+  },
+  {
+    "id": 102,
+    "file_name": "a foggy field that has trees in the grass.jpg",
+    "type": "scenery",
+    "caption": "a misty field with trees growing among the grass",
+    "original_caption": "a foggy field that has trees in the grass"
+  },
+  {
+    "id": 103,
+    "file_name": "a foggy landscape with trees and hills in the distance.jpg",
+    "type": "scenery",
+    "caption": "a misty scene featuring trees and distant hills.",
+    "original_caption": "a foggy landscape with trees and hills in the distance"
+  },
+  {
+    "id": 104,
+    "file_name": "a large wave in the ocean with a lot of spray coming from it.jpg",
+    "type": "scenery",
+    "caption": "A massive ocean wave with significant spray emanating from it.",
+    "original_caption": "a large wave in the ocean with a lot of spray coming from it"
+  },
+  {
+    "id": 105,
+    "file_name": "a waterfall is shown in the middle of a lush green hillside.jpg",
+    "type": "scenery",
+    "caption": "A waterfall cascades down a verdant hillside.",
+    "original_caption": "a waterfall is shown in the middle of a lush green hillside"
+  },
+  {
+    "id": 106,
+    "file_name": "an aerial view of a curvy road in the middle of a forest.jpg",
+    "type": "scenery",
+    "caption": "a bird's-eye view of a winding road surrounded by a dense forest.",
+    "original_caption": "an aerial view of a curvy road in the middle of a forest"
+  },
+  {
+    "id": 107,
+    "file_name": "a mountain covered in snow with evergreen trees.jpg",
+    "type": "scenery",
+    "caption": "a snowy mountain blanketed with evergreen trees",
+    "original_caption": "a mountain covered in snow with evergreen trees"
+  },
+  {
+    "id": 108,
+    "file_name": "a very large waterfall in the middle of the day.jpg",
+    "type": "scenery",
+    "caption": "a massive waterfall during the daytime",
+    "original_caption": "a very large waterfall in the middle of the day"
+  },
+  {
+    "id": 109,
+    "file_name": "a large waterfall in the middle of a lush green hillside.jpg",
+    "type": "scenery",
+    "caption": "a massive waterfall situated in the heart of a verdant hillside.",
+    "original_caption": "a large waterfall in the middle of a lush green hillside"
+  },
+  {
+    "id": 110,
+    "file_name": "a brown bear in the water with a fish in its mouth.jpg",
+    "type": "animal",
+    "caption": "a brown bear standing in water, holding a fish in its mouth.",
+    "original_caption": "a brown bear in the water with a fish in its mouth"
+  },
+  {
+    "id": 111,
+    "file_name": "a close-up of a hippopotamus eating grass in a field.jpg",
+    "type": "animal",
+    "caption": "a hippopotamus is shown up close, grazing on grass in a field.",
+    "original_caption": "a close-up of a hippopotamus eating grass in a field"
+  },
+  {
+    "id": 112,
+    "file_name": "a sea turtle swimming in the ocean under the water.jpg",
+    "type": "animal",
+    "caption": "a sea turtle gliding through the ocean beneath the surface of the water.",
+    "original_caption": "a sea turtle swimming in the ocean under the water"
+  },
+  {
+    "id": 113,
+    "file_name": "two bees are flying over a lavender plant.jpg",
+    "type": "animal",
+    "caption": "Two bees are hovering over a lavender plant.",
+    "original_caption": "two bees are flying over a lavender plant"
+  },
+  {
+    "id": 114,
+    "file_name": "the otter is standing in the water.jpg",
+    "type": "animal",
+    "caption": "The otter is positioned in the water.",
+    "original_caption": "the otter is standing in the water"
+  },
+  {
+    "id": 115,
+    "file_name": "a dog carrying a soccer ball in its mouth.jpg",
+    "type": "animal",
+    "caption": "a canine holding a soccer ball in its mouth",
+    "original_caption": "a dog carrying a soccer ball in its mouth"
+  },
+  {
+    "id": 116,
+    "file_name": "an eagle is flying over a mountain with trees in the background.jpg",
+    "type": "animal",
+    "caption": "A majestic eagle soars above a mountainous landscape, with dense trees forming the backdrop.",
+    "original_caption": "an eagle is flying over a mountain with trees in the background"
+  },
+  {
+    "id": 117,
+    "file_name": "a couple of horses are running in the dirt.jpg",
+    "type": "animal",
+    "caption": "Two horses are galloping across a dusty terrain.",
+    "original_caption": "a couple of horses are running in the dirt"
+  },
+  {
+    "id": 118,
+    "file_name": "a highland cow with long horns standing in a field.jpg",
+    "type": "animal",
+    "caption": "A Highland cow featuring long horns is standing in a field.",
+    "original_caption": "a highland cow with long horns standing in a field"
+  },
+  {
+    "id": 119,
+    "file_name": "a monkey is holding a banana in its mouth.jpg",
+    "type": "animal",
+    "caption": "A monkey is gripping a banana with its mouth.",
+    "original_caption": "a monkey is holding a banana in its mouth"
+  },
+  {
+    "id": 120,
+    "file_name": "a large rhino grazing in the grass near a bush.jpg",
+    "type": "animal",
+    "caption": "a massive rhinoceros feeding on grass close to a shrub.",
+    "original_caption": "a large rhino grazing in the grass near a bush"
+  },
+  {
+    "id": 121,
+    "file_name": "a butterfly sits on top of a purple flower.jpg",
+    "type": "animal",
+    "caption": "A butterfly is perched atop a vibrant purple flower.",
+    "original_caption": "a butterfly sits on top of a purple flower"
+  },
+  {
+    "id": 122,
+    "file_name": "an alligator is covered in green plants in the water.jpg",
+    "type": "animal",
+    "caption": "A crocodile is partially submerged in water, covered with green aquatic plants.",
+    "original_caption": "an alligator is covered in green plants in the water"
+  },
+  {
+    "id": 123,
+    "file_name": "a red panda eating bamboo in a zoo.jpg",
+    "type": "animal",
+    "caption": "a red panda munching on bamboo at the zoo",
+    "original_caption": "a red panda eating bamboo in a zoo"
+  },
+  {
+    "id": 124,
+    "file_name": "a monochromatic video capturing a cat's gaze into the camera.jpg",
+    "type": "animal",
+    "caption": "a black-and-white video showcasing a cat's direct gaze at the camera.",
+    "original_caption": "a monochromatic video capturing a cat's gaze into the camera"
+  },
+  {
+    "id": 125,
+    "file_name": "a frog sitting on top of water lily leaves.jpg",
+    "type": "animal",
+    "caption": "a frog perched on water lily leaves",
+    "original_caption": "a frog sitting on top of water lily leaves"
+  },
+  {
+    "id": 126,
+    "file_name": "a lion is roaring in the wild.jpg",
+    "type": "animal",
+    "caption": "a lion is letting out a roar in its natural habitat.",
+    "original_caption": "a lion is roaring in the wild"
+  },
+  {
+    "id": 127,
+    "file_name": "a seagull is flying towards a person's hand.jpg",
+    "type": "animal",
+    "caption": "A seagull is approaching a person's outstretched hand.",
+    "original_caption": "a seagull is flying towards a person's hand"
+  },
+  {
+    "id": 128,
+    "file_name": "a yellow and white jellyfish is floating in the ocean.jpg",
+    "type": "animal",
+    "caption": "A jellyfish with yellow and white hues is drifting in the ocean.",
+    "original_caption": "a yellow and white jellyfish is floating in the ocean"
+  },
+  {
+    "id": 129,
+    "file_name": "a group of jellyfish swimming in an aquarium.jpg",
+    "type": "animal",
+    "caption": "several jellyfish floating in an aquarium setting.",
+    "original_caption": "a group of jellyfish swimming in an aquarium"
+  },
+  {
+    "id": 130,
+    "file_name": "a clown fish hiding in a purple anemone.jpg",
+    "type": "animal",
+    "caption": "A clownfish seeking shelter within a purple anemone.",
+    "original_caption": "a clown fish hiding in a purple anemone"
+  },
+  {
+    "id": 131,
+    "file_name": "a snake sitting on the ground next to a bowl.jpg",
+    "type": "animal",
+    "caption": "a snake resting on the ground beside a bowl",
+    "original_caption": "a snake sitting on the ground next to a bowl"
+  },
+  {
+    "id": 132,
+    "file_name": "a brown and white cow eating hay.jpg",
+    "type": "animal",
+    "caption": "A brown and white cow is grazing on hay.",
+    "original_caption": "a brown and white cow eating hay"
+  },
+  {
+    "id": 133,
+    "file_name": "a seal swimming in the water.jpg",
+    "type": "animal",
+    "caption": "a seal gliding through the water",
+    "original_caption": "a seal swimming in the water"
+  },
+  {
+    "id": 134,
+    "file_name": "a panda bear is eating a piece of bamboo.jpg",
+    "type": "animal",
+    "caption": "A panda is munching on a bamboo stalk.",
+    "original_caption": "a panda bear is eating a piece of bamboo"
+  },
+  {
+    "id": 135,
+    "file_name": "a small bird sits on a moss covered branch.jpg",
+    "type": "animal",
+    "caption": "A tiny bird perches on a branch covered in moss.",
+    "original_caption": "a small bird sits on a moss covered branch"
+  },
+  {
+    "id": 136,
+    "file_name": "a bird with a fish in its beak flying over a field.jpg",
+    "type": "animal",
+    "caption": "a bird carrying a fish in its beak while flying over a field",
+    "original_caption": "a bird with a fish in its beak flying over a field"
+  },
+  {
+    "id": 137,
+    "file_name": "a large flock of birds flying in the sky.jpg",
+    "type": "animal",
+    "caption": "a sizable group of birds soaring through the sky",
+    "original_caption": "a large flock of birds flying in the sky"
+  },
+  {
+    "id": 138,
+    "file_name": "a bald eagle flying over a tree filled forest.jpg",
+    "type": "animal",
+    "caption": "a bald eagle soaring above a forest dense with trees",
+    "original_caption": "a bald eagle flying over a tree filled forest"
+  },
+  {
+    "id": 139,
+    "file_name": "a giraffe walking in a field.jpg",
+    "type": "animal",
+    "caption": "A giraffe strolling through a field.",
+    "original_caption": "a giraffe walking in a field"
+  },
+  {
+    "id": 140,
+    "file_name": "a lioness yawning in a field.jpg",
+    "type": "animal",
+    "caption": "a female lion yawning in a grassy area",
+    "original_caption": "a lioness yawning in a field"
+  },
+  {
+    "id": 141,
+    "file_name": "a little crab scurried on the sandy beach.jpg",
+    "type": "animal",
+    "caption": "A small crab quickly moved across the sandy shore.",
+    "original_caption": "a little crab scurried on the sandy beach"
+  },
+  {
+    "id": 142,
+    "file_name": "a warthog is walking in the grass.jpg",
+    "type": "animal",
+    "caption": "A warthog is strolling through the grass.",
+    "original_caption": "a warthog is walking in the grass"
+  },
+  {
+    "id": 143,
+    "file_name": "a penguin walking on a beach near the water.jpg",
+    "type": "animal",
+    "caption": "A penguin is strolling along a beach close to the water.",
+    "original_caption": "a penguin walking on a beach near the water"
+  },
+  {
+    "id": 144,
+    "file_name": "a tiger walking through a wooded area.jpg",
+    "type": "animal",
+    "caption": "a tiger strolling through a forested area",
+    "original_caption": "a tiger walking through a wooded area"
+  },
+  {
+    "id": 145,
+    "file_name": "a tiger walking on a dirt path in the woods.jpg",
+    "type": "animal",
+    "caption": "a tiger strolling along a dirt trail in the forest",
+    "original_caption": "a tiger walking on a dirt path in the woods"
+  },
+  {
+    "id": 146,
+    "file_name": "a small monkey holding a piece of food in it's mouth.jpg",
+    "type": "animal",
+    "caption": "a tiny monkey with a piece of food in its mouth",
+    "original_caption": "a small monkey holding a piece of food in it's mouth"
+  },
+  {
+    "id": 147,
+    "file_name": "a squirrel sitting on the ground eating a piece of bread.jpg",
+    "type": "animal",
+    "caption": "a squirrel perched on the ground and nibbling on a piece of bread.",
+    "original_caption": "a squirrel sitting on the ground eating a piece of bread"
+  },
+  {
+    "id": 148,
+    "file_name": "a group of fish swimming over a coral reef.jpg",
+    "type": "animal",
+    "caption": "a school of fish swimming above a coral reef",
+    "original_caption": "a group of fish swimming over a coral reef"
+  },
+  {
+    "id": 149,
+    "file_name": "a toad is sitting on top of some moss.jpg",
+    "type": "animal",
+    "caption": "A toad is perched atop some moss.",
+    "original_caption": "a toad is sitting on top of some moss"
+  },
+  {
+    "id": 150,
+    "file_name": "a great white shark swimming in the ocean.jpg",
+    "type": "animal",
+    "caption": "a large white shark gliding through the ocean.",
+    "original_caption": "a great white shark swimming in the ocean"
+  },
+  {
+    "id": 151,
+    "file_name": "a group of camels resting in the desert.jpg",
+    "type": "animal",
+    "caption": "a few camels taking a break in the desert.",
+    "original_caption": "a group of camels resting in the desert"
+  },
+  {
+    "id": 152,
+    "file_name": "two sheep grazing in the grass next to a wooden bridge.jpg",
+    "type": "animal",
+    "caption": "Two sheep are grazing in the grass beside a wooden bridge.",
+    "original_caption": "two sheep grazing in the grass next to a wooden bridge"
+  },
+  {
+    "id": 153,
+    "file_name": "an elephant walking through a forest.jpg",
+    "type": "animal",
+    "caption": "A large elephant is strolling through a dense forest.",
+    "original_caption": "an elephant walking through a forest"
+  },
+  {
+    "id": 154,
+    "file_name": "a white rooster standing in a grassy field.jpg",
+    "type": "animal",
+    "caption": "A white rooster is standing in a grassy field.",
+    "original_caption": "a white rooster standing in a grassy field"
+  },
+  {
+    "id": 155,
+    "file_name": "a zebra walking across a dirt road near a field.jpg",
+    "type": "animal",
+    "caption": "A zebra is walking along a dirt path near a field.",
+    "original_caption": "a zebra walking across a dirt road near a field"
+  },
+  {
+    "id": 156,
+    "file_name": "cars are driving down a street lined with tall trees.jpg",
+    "type": "transportation",
+    "caption": "Vehicles are traveling along a road flanked by tall trees.",
+    "original_caption": "cars are driving down a street lined with tall trees"
+  },
+  {
+    "id": 157,
+    "file_name": "the cars on the street are waiting for the traffic lights.jpg",
+    "type": "transportation",
+    "caption": "The vehicles on the road are stopped, waiting for the traffic signals.",
+    "original_caption": "the cars on the street are waiting for the traffic lights"
+  },
+  {
+    "id": 158,
+    "file_name": "a bicycle leaning against a fence in the snow.jpg",
+    "type": "transportation",
+    "caption": "a bike propped against a fence covered in snow.",
+    "original_caption": "a bicycle leaning against a fence in the snow"
+  },
+  {
+    "id": 159,
+    "file_name": "a blue fishing boat is navigating in the ocean next to a cruise ship.jpg",
+    "type": "transportation",
+    "caption": "A blue fishing vessel is sailing in the ocean alongside a cruise ship.",
+    "original_caption": "a blue fishing boat is navigating in the ocean next to a cruise ship"
+  },
+  {
+    "id": 160,
+    "file_name": "a blue car driving down a dirt road near train tracks.jpg",
+    "type": "transportation",
+    "caption": "A blue vehicle is traveling along a dirt path close to railway tracks.",
+    "original_caption": "a blue car driving down a dirt road near train tracks"
+  },
+  {
+    "id": 161,
+    "file_name": "a sailboat is drifting on the ocean.jpg",
+    "type": "transportation",
+    "caption": "A sailboat is floating on the ocean.",
+    "original_caption": "a sailboat is drifting on the ocean"
+  },
+  {
+    "id": 162,
+    "file_name": "a couple of boats floating on a body of water.jpg",
+    "type": "transportation",
+    "caption": "a few boats drifting on a water surface",
+    "original_caption": "a couple of boats floating on a body of water"
+  },
+  {
+    "id": 163,
+    "file_name": "a city street with cars driving in the rain.jpg",
+    "type": "transportation",
+    "caption": "a wet city street with vehicles moving during a rainy day",
+    "original_caption": "a city street with cars driving in the rain"
+  },
+  {
+    "id": 164,
+    "file_name": "a red and white tram traveling down a snowy street.jpg",
+    "type": "transportation",
+    "caption": "A red and white tram is moving along a street covered in snow.",
+    "original_caption": "a red and white tram traveling down a snowy street"
+  },
+  {
+    "id": 165,
+    "file_name": "a city bus driving down a snowy street at night.jpg",
+    "type": "transportation",
+    "caption": "a public bus traveling along a snow-covered street during the night.",
+    "original_caption": "a city bus driving down a snowy street at night"
+  },
+  {
+    "id": 166,
+    "file_name": "a green toy car is sitting on the ground.jpg",
+    "type": "transportation",
+    "caption": "A green toy car is positioned on the ground.",
+    "original_caption": "a green toy car is sitting on the ground"
+  },
+  {
+    "id": 167,
+    "file_name": "a train traveling down tracks through the woods with leaves on the ground.jpg",
+    "type": "transportation",
+    "caption": "a locomotive moving along the tracks through a forest, with fallen leaves covering the ground.",
+    "original_caption": "a train traveling down tracks through the woods with leaves on the ground"
+  },
+  {
+    "id": 168,
+    "file_name": "a man in a small boat fishing in the ocean.jpg",
+    "type": "transportation",
+    "caption": "A person is fishing from a small boat on the ocean.",
+    "original_caption": "a man in a small boat fishing in the ocean"
+  },
+  {
+    "id": 169,
+    "file_name": "an airplane is flying through the sky at sunset.jpg",
+    "type": "transportation",
+    "caption": "A plane is soaring in the sky during sunset.",
+    "original_caption": "an airplane is flying through the sky at sunset"
+  },
+  {
+    "id": 170,
+    "file_name": "an old rusty car sits in the middle of a field.jpg",
+    "type": "transportation",
+    "caption": "A weathered, rusted vehicle is positioned amidst a field.",
+    "original_caption": "an old rusty car sits in the middle of a field"
+  },
+  {
+    "id": 171,
+    "file_name": "a motorcycle driving down a road.jpg",
+    "type": "transportation",
+    "caption": "a motorbike traveling along a road",
+    "original_caption": "a motorcycle driving down a road"
+  },
+  {
+    "id": 172,
+    "file_name": "a blue train traveling through a lush green area.jpg",
+    "type": "transportation",
+    "caption": "a blue train moving through a verdant, green landscape",
+    "original_caption": "a blue train traveling through a lush green area"
+  },
+  {
+    "id": 173,
+    "file_name": "a white car is swiftly driving on a dirt road near a bush, kicking up dust.jpg",
+    "type": "transportation",
+    "caption": "A white vehicle is speeding along a dirt path near some bushes, creating a cloud of dust.",
+    "original_caption": "a white car is swiftly driving on a dirt road near a bush, kicking up dust"
+  },
+  {
+    "id": 174,
+    "file_name": "a large cargo ship sailing in the water.jpg",
+    "type": "transportation",
+    "caption": "A massive freight vessel navigating through the water.",
+    "original_caption": "a large cargo ship sailing in the water"
+  },
+  {
+    "id": 175,
+    "file_name": "the red Alfa sports car is speeding down the road.jpg",
+    "type": "transportation",
+    "caption": "The vibrant red Alfa sports car is racing along the road.",
+    "original_caption": "the red Alfa sports car is speeding down the road"
+  },
+  {
+    "id": 176,
+    "file_name": "two cars that have been involved in a violent collision.jpg",
+    "type": "transportation",
+    "caption": "two vehicles that have experienced a forceful crash",
+    "original_caption": "two cars that have been involved in a violent collision"
+  },
+  {
+    "id": 177,
+    "file_name": "a red double decker bus driving down a street.jpg",
+    "type": "transportation",
+    "caption": "A red double-decker bus is traveling along a street.",
+    "original_caption": "a red double decker bus driving down a street"
+  },
+  {
+    "id": 178,
+    "file_name": "A red sports car driving through sand, kicking up a large amount of dust.jpg",
+    "type": "transportation",
+    "caption": "A vibrant red sports car is speeding across a sandy terrain, creating a massive cloud of dust in its wake.",
+    "original_caption": "A red sports car driving through sand, kicking up a large amount of dust"
+  },
+  {
+    "id": 179,
+    "file_name": "a yellow toy car parked on a rock near the water.jpg",
+    "type": "transportation",
+    "caption": "A yellow toy car is parked on a rocky surface close to the water.",
+    "original_caption": "a yellow toy car parked on a rock near the water"
+  },
+  {
+    "id": 180,
+    "file_name": "a space shuttle taking off into the sky.jpg",
+    "type": "transportation",
+    "caption": "a space shuttle launching into the sky",
+    "original_caption": "a space shuttle taking off into the sky"
+  },
+  {
+    "id": 181,
+    "file_name": "a steam train traveling through the woods.jpg",
+    "type": "transportation",
+    "caption": "a vintage steam locomotive moving through a forested area",
+    "original_caption": "a steam train traveling through the woods"
+  },
+  {
+    "id": 182,
+    "file_name": "a group of buses parked at a bus station.jpg",
+    "type": "transportation",
+    "caption": "several buses are parked at a bus terminal.",
+    "original_caption": "a group of buses parked at a bus station"
+  },
+  {
+    "id": 183,
+    "file_name": "A bunch of cars are driving on a highway.jpg",
+    "type": "transportation",
+    "caption": "Several vehicles are traveling along a highway.",
+    "original_caption": "A bunch of cars are driving on a highway"
+  },
+  {
+    "id": 184,
+    "file_name": "a white and blue airplane flying in the sky.jpg",
+    "type": "transportation",
+    "caption": "A white airplane with blue accents is flying through the sky.",
+    "original_caption": "a white and blue airplane flying in the sky"
+  },
+  {
+    "id": 185,
+    "file_name": "A space station orbited above the Earth.jpg",
+    "type": "transportation",
+    "caption": "An orbiting space station was positioned above the Earth.",
+    "original_caption": "A space station orbited above the Earth"
+  },
+  {
+    "id": 186,
+    "file_name": "A yellow boat is cruising in front of a bridge.jpg",
+    "type": "transportation",
+    "caption": "A vibrant yellow vessel is gliding along the water in front of a prominent bridge.",
+    "original_caption": "A yellow boat is cruising in front of a bridge"
+  },
+  {
+    "id": 187,
+    "file_name": "tangerines in a metal bowl on a table.jpg",
+    "type": "food",
+    "caption": "A metal bowl filled with tangerines placed on a table.",
+    "original_caption": "tangerines in a metal bowl on a table"
+  },
+  {
+    "id": 188,
+    "file_name": "a shadow of a hand reaching for a leaf.jpg",
+    "type": "other",
+    "caption": "a silhouette of a hand grasping a leaf",
+    "original_caption": "a shadow of a hand reaching for a leaf"
+  },
+  {
+    "id": 189,
+    "file_name": "A teddy bear is climbing over a wooden fence.jpg",
+    "type": "other",
+    "caption": "A stuffed bear is perched atop a wooden fence.",
+    "original_caption": "A teddy bear is climbing over a wooden fence"
+  },
+  {
+    "id": 190,
+    "file_name": "a book on fire with flames coming out of it.jpg",
+    "type": "other",
+    "caption": "a book engulfed in flames with fire emanating from it",
+    "original_caption": "a book on fire with flames coming out of it"
+  },
+  {
+    "id": 191,
+    "file_name": "a close-up of a pink rose with water droplets on it.jpg",
+    "type": "plant",
+    "caption": "a detailed view of a pink rose adorned with water droplets.",
+    "original_caption": "a close-up of a pink rose with water droplets on it"
+  },
+  {
+    "id": 192,
+    "file_name": "a person is cooking meat on a grill with flames.jpg",
+    "type": "food",
+    "caption": "A person is grilling meat over an open flame.",
+    "original_caption": "a person is cooking meat on a grill with flames"
+  },
+  {
+    "id": 193,
+    "file_name": "a snowman wearing a santa hat and scarf.jpg",
+    "type": "other",
+    "caption": "A snowman adorned with a Santa hat and scarf.",
+    "original_caption": "a snowman wearing a santa hat and scarf"
+  },
+  {
+    "id": 194,
+    "file_name": "a person holding a sparkler in their hand.jpg",
+    "type": "other",
+    "caption": "A person is holding a sparkler in their hand.",
+    "original_caption": "a person holding a sparkler in their hand"
+  },
+  {
+    "id": 195,
+    "file_name": "a teddy bear sitting on a moss covered ground.jpg",
+    "type": "other",
+    "caption": "a plush bear seated on a ground covered in moss",
+    "original_caption": "a teddy bear sitting on a moss covered ground"
+  },
+  {
+    "id": 196,
+    "file_name": "a statue of a lion is sitting on a pedestal.jpg",
+    "type": "other",
+    "caption": "A lion statue is positioned on a pedestal.",
+    "original_caption": "a statue of a lion is sitting on a pedestal"
+  },
+  {
+    "id": 197,
+    "file_name": "metal balls are suspended in the air.jpg",
+    "type": "other",
+    "caption": "spherical metallic objects are hanging in the air.",
+    "original_caption": "metal balls are suspended in the air"
+  },
+  {
+    "id": 198,
+    "file_name": "a close up of a bunch of green grapes.jpg",
+    "type": "plant",
+    "caption": "a close-up shot of a cluster of green grapes",
+    "original_caption": "a close up of a bunch of green grapes"
+  },
+  {
+    "id": 199,
+    "file_name": "a close-up view of a green plant with unfurled fronds.jpg",
+    "type": "plant",
+    "caption": "a detailed shot of a vibrant green plant featuring coiled fronds.",
+    "original_caption": "a close-up view of a green plant with unfurled fronds"
+  },
+  {
+    "id": 200,
+    "file_name": "an orange mushroom sitting on top of a tree stump in the woods.jpg",
+    "type": "plant",
+    "caption": "a vibrant orange mushroom perched atop a tree stump in a forest setting.",
+    "original_caption": "an orange mushroom sitting on top of a tree stump in the woods"
+  },
+  {
+    "id": 201,
+    "file_name": "a stack of pancakes covered in syrup and fruit.jpg",
+    "type": "food",
+    "caption": "a tower of pancakes topped with syrup and fresh fruit.",
+    "original_caption": "a stack of pancakes covered in syrup and fruit"
+  },
+  {
+    "id": 202,
+    "file_name": "a plate of spaghetti with spinach and tomatoes.jpg",
+    "type": "food",
+    "caption": "a dish of spaghetti garnished with spinach and tomatoes",
+    "original_caption": "a plate of spaghetti with spinach and tomatoes"
+  },
+  {
+    "id": 203,
+    "file_name": "a pink lotus flower in the middle of a pond.jpg",
+    "type": "plant",
+    "caption": "a delicate pink lotus blossom floating in the center of a tranquil pond.",
+    "original_caption": "a pink lotus flower in the middle of a pond"
+  },
+  {
+    "id": 204,
+    "file_name": "a person holding a sparkler in front of a sunset.jpg",
+    "type": "other",
+    "caption": "A person is holding a sparkler against a sunset backdrop.",
+    "original_caption": "a person holding a sparkler in front of a sunset"
+  },
+  {
+    "id": 205,
+    "file_name": "a pink rose is blooming in a garden.jpg",
+    "type": "plant",
+    "caption": "A delicate pink rose is in full bloom within a garden.",
+    "original_caption": "a pink rose is blooming in a garden"
+  },
+  {
+    "id": 206,
+    "file_name": "a snow man holding a lantern in the snow.jpg",
+    "type": "other",
+    "caption": "a snowman holding a lantern while standing in the snow.",
+    "original_caption": "a snow man holding a lantern in the snow"
+  },
+  {
+    "id": 207,
+    "file_name": "a stack of chocolate cookies with a bite taken out of it.jpg",
+    "type": "food",
+    "caption": "a pile of chocolate cookies with one having a missing bite",
+    "original_caption": "a stack of chocolate cookies with a bite taken out of it"
+  },
+  {
+    "id": 208,
+    "file_name": "a white plate topped with eggs, toast, tomatoes, and a sausage.jpg",
+    "type": "food",
+    "caption": "A white plate featuring scrambled eggs, grilled toast, roasted tomatoes, and a sausage link.",
+    "original_caption": "a white plate topped with eggs, toast, tomatoes, and a sausage"
+  },
+  {
+    "id": 209,
+    "file_name": "a yellow water lily is floating in a pond.jpg",
+    "type": "plant",
+    "caption": "A yellow water lily floats gracefully on the surface of a pond.",
+    "original_caption": "a yellow water lily is floating in a pond"
+  },
+  {
+    "id": 210,
+    "file_name": "an astronaut floating in space with the earth in the background.jpg",
+    "type": "single-human",
+    "caption": "A space traveler is floating in the vastness of space, with the Earth visible in the distance.",
+    "original_caption": "an astronaut floating in space with the earth in the background"
+  },
+  {
+    "id": 211,
+    "file_name": "A little girl, lost in thought, is quietly sitting on the bus.jpg",
+    "type": "single-human",
+    "caption": "A young girl, deep in thought, sits quietly on the bus.",
+    "original_caption": "A little girl, lost in thought, is quietly sitting on the bus"
+  },
+  {
+    "id": 212,
+    "file_name": "a man holding a tray in front of a brick wall.jpg",
+    "type": "single-human",
+    "caption": "A man is standing in front of a brick wall, holding a tray.",
+    "original_caption": "a man holding a tray in front of a brick wall"
+  },
+  {
+    "id": 213,
+    "file_name": "an older man playing a saxophone on the street.jpg",
+    "type": "single-human",
+    "caption": "A senior man is playing a saxophone on the street.",
+    "original_caption": "an older man playing a saxophone on the street"
+  },
+  {
+    "id": 214,
+    "file_name": "an older man jogging by the water.jpg",
+    "type": "single-human",
+    "caption": "A senior man is jogging along the waterfront.",
+    "original_caption": "an older man jogging by the water"
+  },
+  {
+    "id": 215,
+    "file_name": "a person riding a skateboard on a concrete floor.jpg",
+    "type": "single-human",
+    "caption": "A person is skateboarding on a concrete surface.",
+    "original_caption": "a person riding a skateboard on a concrete floor"
+  },
+  {
+    "id": 216,
+    "file_name": "a woman with long black hair is posing for a picture.jpg",
+    "type": "single-human",
+    "caption": "A woman with dark, long hair is posing for a photograph.",
+    "original_caption": "a woman with long black hair is posing for a picture"
+  },
+  {
+    "id": 217,
+    "file_name": "a woman sitting on the ground in front of a guitar.jpg",
+    "type": "single-human",
+    "caption": "A woman is seated on the ground with a guitar nearby.",
+    "original_caption": "a woman sitting on the ground in front of a guitar"
+  },
+  {
+    "id": 218,
+    "file_name": "a little girl wearing a purple helmet riding a blue bike.jpg",
+    "type": "single-human",
+    "caption": "A young girl in a purple helmet is riding a blue bicycle.",
+    "original_caption": "a little girl wearing a purple helmet riding a blue bike"
+  },
+  {
+    "id": 219,
+    "file_name": "a young boy is jumping in the mud.jpg",
+    "type": "single-human",
+    "caption": "A child is leaping into a muddy puddle.",
+    "original_caption": "a young boy is jumping in the mud"
+  },
+  {
+    "id": 220,
+    "file_name": "a man sitting in the driver's seat of a car wearing sunglasses.jpg",
+    "type": "single-human",
+    "caption": "A man is seated in the driver's seat of a car, wearing sunglasses.",
+    "original_caption": "a man sitting in the driver's seat of a car wearing sunglasses"
+  },
+  {
+    "id": 221,
+    "file_name": "a little boy jumping in the air over a puddle of water.jpg",
+    "type": "single-human",
+    "caption": "A young boy is leaping into the air above a puddle of water.",
+    "original_caption": "a little boy jumping in the air over a puddle of water"
+  },
+  {
+    "id": 222,
+    "file_name": "a woman with afro hair is smiling while wearing earphones.jpg",
+    "type": "single-human",
+    "caption": "A woman with an afro hairstyle is smiling while listening to earphones.",
+    "original_caption": "a woman with afro hair is smiling while wearing earphones"
+  },
+  {
+    "id": 223,
+    "file_name": "a smiling woman with her hands clasped.jpg",
+    "type": "single-human",
+    "caption": "a woman with a smile, her hands pressed together",
+    "original_caption": "a smiling woman with her hands clasped"
+  },
+  {
+    "id": 224,
+    "file_name": "a young boy standing in a field with horses in the background.jpg",
+    "type": "single-human",
+    "caption": "A young boy is standing in a field, with horses visible in the background.",
+    "original_caption": "a young boy standing in a field with horses in the background"
+  },
+  {
+    "id": 225,
+    "file_name": "a young man is covered in colored powder.jpg",
+    "type": "single-human",
+    "caption": "A young man is drenched in vibrant colored powder.",
+    "original_caption": "a young man is covered in colored powder"
+  },
+  {
+    "id": 226,
+    "file_name": "a woman with curly hair is drinking a beer.jpg",
+    "type": "single-human",
+    "caption": "A woman with curly hair is sipping from a beer bottle.",
+    "original_caption": "a woman with curly hair is drinking a beer"
+  },
+  {
+    "id": 227,
+    "file_name": "an old man standing in the middle of a field holding a bunch of plants.jpg",
+    "type": "single-human",
+    "caption": "A senior man is standing amidst a field, holding a bundle of plants.",
+    "original_caption": "an old man standing in the middle of a field holding a bunch of plants"
+  },
+  {
+    "id": 228,
+    "file_name": "a man standing on a boat with a net.jpg",
+    "type": "single-human",
+    "caption": "A person is standing on a boat while holding a net.",
+    "original_caption": "a man standing on a boat with a net"
+  },
+  {
+    "id": 229,
+    "file_name": "a woman in a hat is putting salt into a basket.jpg",
+    "type": "single-human",
+    "caption": "A person wearing a hat is filling a basket with salt.",
+    "original_caption": "a woman in a hat is putting salt into a basket"
+  },
+  {
+    "id": 230,
+    "file_name": "a young girl smelling a pink flower.jpg",
+    "type": "single-human",
+    "caption": "A young girl is inhaling the scent of a pink flower.",
+    "original_caption": "a young girl smelling a pink flower"
+  },
+  {
+    "id": 231,
+    "file_name": "a young boy leaning on a wooden pole.jpg",
+    "type": "single-human",
+    "caption": "a child leaning against a wooden post",
+    "original_caption": "a young boy leaning on a wooden pole"
+  },
+  {
+    "id": 232,
+    "file_name": "a man in a hat sitting in front of a brick oven.jpg",
+    "type": "single-human",
+    "caption": "A man wearing a hat is seated in front of a brick oven.",
+    "original_caption": "a man in a hat sitting in front of a brick oven"
+  },
+  {
+    "id": 233,
+    "file_name": "a man in a mexican outfit holding an acoustic guitar.jpg",
+    "type": "single-human",
+    "caption": "A man dressed in traditional Mexican attire is holding an acoustic guitar.",
+    "original_caption": "a man in a mexican outfit holding an acoustic guitar"
+  },
+  {
+    "id": 234,
+    "file_name": "a snowboarder is in the air doing a trick.jpg",
+    "type": "single-human",
+    "caption": "A snowboarder is airborne, performing a trick.",
+    "original_caption": "a snowboarder is in the air doing a trick"
+  },
+  {
+    "id": 235,
+    "file_name": "a man riding a horse with a spear in his hand.jpg",
+    "type": "single-human",
+    "caption": "A man on horseback holding a spear.",
+    "original_caption": "a man riding a horse with a spear in his hand"
+  },
+  {
+    "id": 236,
+    "file_name": "a woman carrying a bundle of plants over their head.jpg",
+    "type": "single-human",
+    "caption": "A person balancing a load of plants on their shoulders while walking.",
+    "original_caption": "a woman carrying a bundle of plants over their head"
+  },
+  {
+    "id": 237,
+    "file_name": "a person jumping in the air over a fence.jpg",
+    "type": "single-human",
+    "caption": "a person leaping over a fence in mid-air.",
+    "original_caption": "a person jumping in the air over a fence"
+  },
+  {
+    "id": 238,
+    "file_name": "a man on a surfboard riding a wave in the ocean.jpg",
+    "type": "single-human",
+    "caption": "A person is surfing on a board, gliding along a wave in the ocean.",
+    "original_caption": "a man on a surfboard riding a wave in the ocean"
+  },
+  {
+    "id": 239,
+    "file_name": "a man sitting on steps playing an acoustic guitar.jpg",
+    "type": "single-human",
+    "caption": "A person is seated on the steps, strumming an acoustic guitar.",
+    "original_caption": "a man sitting on steps playing an acoustic guitar"
+  },
+  {
+    "id": 240,
+    "file_name": "a man swinging a tennis racquet at a tennis ball.jpg",
+    "type": "single-human",
+    "caption": "A person is hitting a tennis ball with a racket.",
+    "original_caption": "a man swinging a tennis racquet at a tennis ball"
+  },
+  {
+    "id": 241,
+    "file_name": "a man riding a mountain bike on top of a rocky hill.jpg",
+    "type": "single-human",
+    "caption": "A man is cycling a mountain bike atop a rugged hill.",
+    "original_caption": "a man riding a mountain bike on top of a rocky hill"
+  },
+  {
+    "id": 242,
+    "file_name": "a man riding a bike down a street.jpg",
+    "type": "single-human",
+    "caption": "a person cycling along a street.",
+    "original_caption": "a man riding a bike down a street"
+  },
+  {
+    "id": 243,
+    "file_name": "a man is running on a dirt road.jpg",
+    "type": "single-human",
+    "caption": "A man is jogging along a dirt path.",
+    "original_caption": "a man is running on a dirt road"
+  },
+  {
+    "id": 244,
+    "file_name": "A man in a black suit and a sombrero, shouting loudly.jpg",
+    "type": "single-human",
+    "caption": "A man dressed in a black suit and wearing a sombrero, yelling out loud.",
+    "original_caption": "A man in a black suit and a sombrero, shouting loudly"
+  },
+  {
+    "id": 245,
+    "file_name": "a man standing on top of a sand dune in the desert.jpg",
+    "type": "single-human",
+    "caption": "A man is standing atop a sand dune in the desert.",
+    "original_caption": "a man standing on top of a sand dune in the desert"
+  },
+  {
+    "id": 246,
+    "file_name": "a person riding a motorcycle down a road.jpg",
+    "type": "single-human",
+    "caption": "A motorcyclist is traveling along a road.",
+    "original_caption": "a person riding a motorcycle down a road"
+  },
+  {
+    "id": 247,
+    "file_name": "a man standing on top of a mountain with a backpack.jpg",
+    "type": "single-human",
+    "caption": "A man with a backpack stands atop a mountain.",
+    "original_caption": "a man standing on top of a mountain with a backpack"
+  },
+  {
+    "id": 248,
+    "file_name": "a man with a skull face paint smoking a cigar and holding a guitar.jpg",
+    "type": "single-human",
+    "caption": "A man wearing skull face paint is smoking a cigar while holding a guitar.",
+    "original_caption": "a man with a skull face paint smoking a cigar and holding a guitar"
+  },
+  {
+    "id": 249,
+    "file_name": "a man in sunglasses laying on a wooden bench.jpg",
+    "type": "single-human",
+    "caption": "A man wearing sunglasses is reclining on a wooden bench.",
+    "original_caption": "a man in sunglasses laying on a wooden bench"
+  },
+  {
+    "id": 250,
+    "file_name": "an older woman sitting in a room with a cigarette in her hand.jpg",
+    "type": "single-human",
+    "caption": "A senior woman is seated in a room, holding a cigarette in her hand.",
+    "original_caption": "an older woman sitting in a room with a cigarette in her hand"
+  },
+  {
+    "id": 251,
+    "file_name": "a man sitting on the ground playing a musical instrument.jpg",
+    "type": "single-human",
+    "caption": "A man seated on the ground is playing a musical instrument.",
+    "original_caption": "a man sitting on the ground playing a musical instrument"
+  },
+  {
+    "id": 252,
+    "file_name": "a person riding a horse in a polo match.jpg",
+    "type": "single-human",
+    "caption": "a rider on horseback participating in a polo game",
+    "original_caption": "a person riding a horse in a polo match"
+  },
+  {
+    "id": 253,
+    "file_name": "a woman in a kimono holding an umbrella.jpg",
+    "type": "single-human",
+    "caption": "A person dressed in traditional attire, holding an umbrella, is seated near a stream.",
+    "original_caption": "a woman in a kimono holding an umbrella"
+  },
+  {
+    "id": 254,
+    "file_name": "a person riding a dirt bike.jpg",
+    "type": "single-human",
+    "caption": "an individual on a dirt bike in action.",
+    "original_caption": "a person riding a dirt bike"
+  },
+  {
+    "id": 255,
+    "file_name": "a person riding an atv on a dirt track.jpg",
+    "type": "single-human",
+    "caption": "A person is riding an all-terrain vehicle (ATV) along a dirt track.",
+    "original_caption": "a person riding an atv on a dirt track"
+  },
+  {
+    "id": 256,
+    "file_name": "a person riding a wave on a surfboard.jpg",
+    "type": "single-human",
+    "caption": "an individual surfing on a wave with a surfboard",
+    "original_caption": "a person riding a wave on a surfboard"
+  },
+  {
+    "id": 257,
+    "file_name": "a woman in a wetsuit is swimming in the ocean.jpg",
+    "type": "single-human",
+    "caption": "A person wearing a wetsuit is swimming underwater in the ocean.",
+    "original_caption": "a woman in a wetsuit is swimming in the ocean"
+  },
+  {
+    "id": 258,
+    "file_name": "a man snorkling in the ocean.jpg",
+    "type": "single-human",
+    "caption": "a person snorkeling in the ocean",
+    "original_caption": "a man snorkling in the ocean"
+  },
+  {
+    "id": 259,
+    "file_name": "a beautiful woman in a blue sari posing in front of a wall.jpg",
+    "type": "single-human",
+    "caption": "A woman dressed in a blue sari is posing in front of a wall.",
+    "original_caption": "a beautiful woman in a blue sari posing in front of a wall"
+  },
+  {
+    "id": 260,
+    "file_name": "a woman wearing a shawl in front of a mountain.jpg",
+    "type": "single-human",
+    "caption": "A woman draped in a shawl stands before a mountainous backdrop.",
+    "original_caption": "a woman wearing a shawl in front of a mountain"
+  },
+  {
+    "id": 261,
+    "file_name": "a woman is making bread in an oven.jpg",
+    "type": "single-human",
+    "caption": "A woman is baking bread in an oven.",
+    "original_caption": "a woman is making bread in an oven"
+  },
+  {
+    "id": 262,
+    "file_name": "a woman smiles while holding a yellow flower.jpg",
+    "type": "single-human",
+    "caption": "A woman is smiling while holding a yellow flower.",
+    "original_caption": "a woman smiles while holding a yellow flower"
+  },
+  {
+    "id": 263,
+    "file_name": "A young boy is lifting a bundle of dry grass wrapped in waterproof fabric over his head.jpg",
+    "type": "single-human",
+    "caption": "A child is carrying a bundle of dried grass encased in waterproof material above his head.",
+    "original_caption": "A young boy is lifting a bundle of dry grass wrapped in waterproof fabric over his head"
+  },
+  {
+    "id": 264,
+    "file_name": "two people performing a sword fight in front of a forest.jpg",
+    "type": "multiple-human",
+    "caption": "Two individuals engaged in a sword duel in front of a forested backdrop.",
+    "original_caption": "two people performing a sword fight in front of a forest"
+  },
+  {
+    "id": 265,
+    "file_name": "a woman in a colorful shirt is cooking food.jpg",
+    "type": "single-human",
+    "caption": "A woman wearing a vibrant shirt is preparing food.",
+    "original_caption": "a woman in a colorful shirt is cooking food"
+  },
+  {
+    "id": 266,
+    "file_name": "an older woman is drinking a bottle of water.jpg",
+    "type": "single-human",
+    "caption": "A senior woman is sipping from a water bottle.",
+    "original_caption": "an older woman is drinking a bottle of water"
+  },
+  {
+    "id": 267,
+    "file_name": "a smiling woman sitting at a table with food and drinks.jpg",
+    "type": "single-human",
+    "caption": "A woman is seated at a table, smiling, with food and drinks in front of her.",
+    "original_caption": "a smiling woman sitting at a table with food and drinks"
+  },
+  {
+    "id": 268,
+    "file_name": "a woman wearing a hijab reading a book on the beach.jpg",
+    "type": "single-human",
+    "caption": "A woman in a hijab is reading a book while sitting on the beach.",
+    "original_caption": "a woman wearing a hijab reading a book on the beach"
+  },
+  {
+    "id": 269,
+    "file_name": "a woman wearing a headscarf is reaching for an olive tree.jpg",
+    "type": "single-human",
+    "caption": "A woman adorned with a headscarf is extending her hand toward an olive tree.",
+    "original_caption": "a woman wearing a headscarf is reaching for an olive tree"
+  },
+  {
+    "id": 270,
+    "file_name": "a woman in a white dress jumping in the air in a field of pink flowers.jpg",
+    "type": "single-human",
+    "caption": "A woman wearing a white dress is leaping into the air amidst a field of pink flowers.",
+    "original_caption": "a woman in a white dress jumping in the air in a field of pink flowers"
+  },
+  {
+    "id": 271,
+    "file_name": "a woman wearing a conical hat sits on a boat.jpg",
+    "type": "single-human",
+    "caption": "A woman in a conical hat is seated on a boat.",
+    "original_caption": "a woman wearing a conical hat sits on a boat"
+  },
+  {
+    "id": 272,
+    "file_name": "an older woman sitting in front of an old building.jpg",
+    "type": "single-human",
+    "caption": "A senior woman is seated in front of a vintage building.",
+    "original_caption": "an older woman sitting in front of an old building"
+  },
+  {
+    "id": 273,
+    "file_name": "a woman is praying in front of a buddhist temple.jpg",
+    "type": "single-human",
+    "caption": "A woman is offering prayers in front of a Buddhist temple.",
+    "original_caption": "a woman is praying in front of a buddhist temple"
+  },
+  {
+    "id": 274,
+    "file_name": "a woman with green hair smiling for the camera.jpg",
+    "type": "single-human",
+    "caption": "A person with green hair is smiling at the camera.",
+    "original_caption": "a woman with green hair smiling for the camera"
+  },
+  {
+    "id": 275,
+    "file_name": "A group of people in a yellow raft is rowing through turbulent waters.jpg",
+    "type": "multiple-human",
+    "caption": "A group of individuals in a yellow raft are navigating through rough waters using paddles.",
+    "original_caption": "A group of people in a yellow raft is rowing through turbulent waters"
+  },
+  {
+    "id": 276,
+    "file_name": "a man carrying a woman on his back in a field.jpg",
+    "type": "multiple-human",
+    "caption": "A woman is being carried on a man's back in a grassy field.",
+    "original_caption": "a man carrying a woman on his back in a field"
+  },
+  {
+    "id": 277,
+    "file_name": "an indian police officer talking to an old woman.jpg",
+    "type": "multiple-human",
+    "caption": "A police officer in India is conversing with an elderly woman.",
+    "original_caption": "an indian police officer talking to an old woman"
+  },
+  {
+    "id": 278,
+    "file_name": "two people scuba diving in the ocean.jpg",
+    "type": "multiple-human",
+    "caption": "Two individuals are scuba diving in the ocean.",
+    "original_caption": "two people scuba diving in the ocean"
+  },
+  {
+    "id": 279,
+    "file_name": "A man and woman dressed as sugar skulls in a field of flowers, sharing a loving gaze with each other.jpg",
+    "type": "multiple-human",
+    "caption": "A man and woman adorned in sugar skull makeup stand in a field of flowers, exchanging a tender look.",
+    "original_caption": "A man and woman dressed as sugar skulls in a field of flowers, sharing a loving gaze with each other"
+  },
+  {
+    "id": 280,
+    "file_name": "a group of people watching a cow race.jpg",
+    "type": "multiple-human",
+    "caption": "a crowd of spectators observing a race involving cows.",
+    "original_caption": "a group of people watching a cow race"
+  },
+  {
+    "id": 281,
+    "file_name": "a man and a child riding bumper cars in an amusement park.jpg",
+    "type": "multiple-human",
+    "caption": "A man and a child are enjoying a ride in bumper cars at an amusement park.",
+    "original_caption": "a man and a child riding bumper cars in an amusement park"
+  },
+  {
+    "id": 282,
+    "file_name": "a group of motorcyclists racing on a dirt track.jpg",
+    "type": "multiple-human",
+    "caption": "a group of riders competing on a dirt track with motorcycles.",
+    "original_caption": "a group of motorcyclists racing on a dirt track"
+  },
+  {
+    "id": 283,
+    "file_name": "a man and a woman are boxing in a boxing ring.jpg",
+    "type": "multiple-human",
+    "caption": "A man and a woman are sparring in a boxing ring.",
+    "original_caption": "a man and a woman are boxing in a boxing ring"
+  },
+  {
+    "id": 284,
+    "file_name": "a man holding a baby in his arms.jpg",
+    "type": "multiple-human",
+    "caption": "A man cradling a baby in his arms.",
+    "original_caption": "a man holding a baby in his arms"
+  },
+  {
+    "id": 285,
+    "file_name": "a man and a woman sitting on a bench playing instruments.jpg",
+    "type": "multiple-human",
+    "caption": "A man and a woman are seated on a bench, playing musical instruments.",
+    "original_caption": "a man and a woman sitting on a bench playing instruments"
+  },
+  {
+    "id": 286,
+    "file_name": "two men are standing next to each other with a bicycle.jpg",
+    "type": "multiple-human",
+    "caption": "Two individuals are positioned beside one another near a bicycle.",
+    "original_caption": "two men are standing next to each other with a bicycle"
+  },
+  {
+    "id": 287,
+    "file_name": "a man and a boy sitting on a beach near the ocean.jpg",
+    "type": "multiple-human",
+    "caption": "A man and a child are seated on a sandy beach by the ocean.",
+    "original_caption": "a man and a boy sitting on a beach near the ocean"
+  },
+  {
+    "id": 288,
+    "file_name": "two men in white clothing standing next to each other.jpg",
+    "type": "multiple-human",
+    "caption": "Two individuals dressed in white attire are standing beside one another.",
+    "original_caption": "two men in white clothing standing next to each other"
+  },
+  {
+    "id": 289,
+    "file_name": "a group of men riding horses in a dusty arena.jpg",
+    "type": "multiple-human",
+    "caption": "a group of riders on horses in a dusty arena.",
+    "original_caption": "a group of men riding horses in a dusty arena"
+  },
+  {
+    "id": 290,
+    "file_name": "a soccer player in a yellow and black shirt is chasing a soccer ball.jpg",
+    "type": "multiple-human",
+    "caption": "A soccer player wearing a yellow and black uniform is pursuing a soccer ball.",
+    "original_caption": "a soccer player in a yellow and black shirt is chasing a soccer ball"
+  },
+  {
+    "id": 291,
+    "file_name": "a group of women sitting on the steps of a building.jpg",
+    "type": "multiple-human",
+    "caption": "three women are seated on the steps of a building.",
+    "original_caption": "a group of women sitting on the steps of a building"
+  },
+  {
+    "id": 292,
+    "file_name": "a group of people gathered around a red checkered blanket.jpg",
+    "type": "multiple-human",
+    "caption": "a crowd of individuals gathered around a red and white checkered cloth",
+    "original_caption": "a group of people gathered around a red checkered blanket"
+  },
+  {
+    "id": 293,
+    "file_name": "a group of people in orange jumpsuits running along a river.jpg",
+    "type": "multiple-human",
+    "caption": "a group of individuals wearing orange jumpsuits are running alongside a river.",
+    "original_caption": "a group of people in orange jumpsuits running along a river"
+  },
+  {
+    "id": 294,
+    "file_name": "a woman walking down a sidewalk with a bag.jpg",
+    "type": "multiple-human",
+    "caption": "A person strolling along a walkway while carrying a bag.",
+    "original_caption": "a woman walking down a sidewalk with a bag"
+  },
+  {
+    "id": 295,
+    "file_name": "a busy street with cars and people on motorcycles.jpg",
+    "type": "multiple-human",
+    "caption": "a bustling street filled with vehicles and individuals riding motorcycles.",
+    "original_caption": "a busy street with cars and people on motorcycles"
+  },
+  {
+    "id": 296,
+    "file_name": "a man in a mask is walking through a crowd of people.jpg",
+    "type": "multiple-human",
+    "caption": "A person wearing a mask is making their way through a group of individuals.",
+    "original_caption": "a man in a mask is walking through a crowd of people"
+  },
+  {
+    "id": 297,
+    "file_name": "a man and a woman walking under an umbrella next to a brick wall.jpg",
+    "type": "multiple-human",
+    "caption": "A man and a woman are walking together under an umbrella beside a brick wall.",
+    "original_caption": "a man and a woman walking under an umbrella next to a brick wall"
+  },
+  {
+    "id": 298,
+    "file_name": "a group of people riding bikes down a street.jpg",
+    "type": "multiple-human",
+    "caption": "a group of individuals cycling along a street.",
+    "original_caption": "a group of people riding bikes down a street"
+  },
+  {
+    "id": 299,
+    "file_name": "An old person is holding a cup on the street, and people around are curiously looking at him.jpg",
+    "type": "multiple-human",
+    "caption": "An elderly individual is holding a cup while standing on the street, and those nearby are observing him with curiosity.",
+    "original_caption": "An old person is holding a cup on the street, and people around are curiously looking at him"
+  },
+  {
+    "id": 300,
+    "file_name": "two young girls playing with leaves in the woods.jpg",
+    "type": "multiple-human",
+    "caption": "Two young girls are playing with leaves in a wooded area.",
+    "original_caption": "two young girls playing with leaves in the woods"
+  },
+  {
+    "id": 301,
+    "file_name": "One person is riding on the back of a horse led by another person.jpg",
+    "type": "multiple-human",
+    "caption": "A person is mounted on a horse, which is being guided by another individual.",
+    "original_caption": "One person is riding on the back of a horse led by another person"
+  },
+  {
+    "id": 302,
+    "file_name": "an older woman and a young girl are knitting together.jpg",
+    "type": "multiple-human",
+    "caption": "A senior woman and a young girl are engaged in knitting together.",
+    "original_caption": "an older woman and a young girl are knitting together"
+  },
+  {
+    "id": 303,
+    "file_name": "three geishas walking down the street in traditional clothing.jpg",
+    "type": "multiple-human",
+    "caption": "Three women dressed in traditional attire are walking down the street.",
+    "original_caption": "three geishas walking down the street in traditional clothing"
+  },
+  {
+    "id": 304,
+    "file_name": "two men riding bikes down a road near a forest.jpg",
+    "type": "multiple-human",
+    "caption": "Two individuals are cycling along a road adjacent to a forested area.",
+    "original_caption": "two men riding bikes down a road near a forest"
+  },
+  {
+    "id": 305,
+    "file_name": "two women carrying bowls on their heads.jpg",
+    "type": "multiple-human",
+    "caption": "Two women balancing bowls on their heads.",
+    "original_caption": "two women carrying bowls on their heads"
+  },
+  {
+    "id": 306,
+    "file_name": "two women eating pizza at a restaurant.jpg",
+    "type": "multiple-human",
+    "caption": "Two women enjoying pizza at a restaurant.",
+    "original_caption": "two women eating pizza at a restaurant"
+  },
+  {
+    "id": 307,
+    "file_name": "two young women studying in a library.jpg",
+    "type": "multiple-human",
+    "caption": "Two young women are engaged in studying at a library.",
+    "original_caption": "two young women studying in a library"
+  },
+  {
+    "id": 308,
+    "file_name": "pink water lilies in a pond with leaves.jpg",
+    "type": "plant",
+    "caption": "Pink water lilies floating in a pond, surrounded by leaves.",
+    "original_caption": "pink water lilies in a pond with leaves"
+  },
+  {
+    "id": 309,
+    "file_name": "a group of succulents in a rock garden.jpg",
+    "type": "plant",
+    "caption": "a cluster of succulent plants growing among rocks in a garden setting.",
+    "original_caption": "a group of succulents in a rock garden"
+  },
+  {
+    "id": 310,
+    "file_name": "a close up view of a bunch of snowdrop flowers.jpg",
+    "type": "plant",
+    "caption": "a detailed view of numerous snowdrop flowers up close.",
+    "original_caption": "a close up view of a bunch of snowdrop flowers"
+  },
+  {
+    "id": 311,
+    "file_name": "a close up of leaves with water droplets on them.jpg",
+    "type": "plant",
+    "caption": "a detailed view of leaves adorned with water droplets",
+    "original_caption": "a close up of leaves with water droplets on them"
+  },
+  {
+    "id": 312,
+    "file_name": "a close-up of a sea anemone in the water.jpg",
+    "type": "plant",
+    "caption": "a detailed view of a sea anemone underwater",
+    "original_caption": "a close-up of a sea anemone in the water"
+  },
+  {
+    "id": 313,
+    "file_name": "a plant with water droplets on it.jpg",
+    "type": "plant",
+    "caption": "a plant adorned with water droplets",
+    "original_caption": "a plant with water droplets on it"
+  },
+  {
+    "id": 314,
+    "file_name": "a group of cactus plants in the desert.jpg",
+    "type": "plant",
+    "caption": "a cluster of cacti growing in a desert landscape",
+    "original_caption": "a group of cactus plants in the desert"
+  },
+  {
+    "id": 315,
+    "file_name": "a close-up view of a plant with spiky leaves.jpg",
+    "type": "plant",
+    "caption": "a detailed shot of a plant featuring sharp, spiky foliage.",
+    "original_caption": "a close-up view of a plant with spiky leaves"
+  },
+  {
+    "id": 316,
+    "file_name": "A budding and blossoming flower bud seedling.jpg",
+    "type": "plant",
+    "caption": "A flower bud in the process of blooming and developing seeds.",
+    "original_caption": "A budding and blossoming flower bud seedling"
+  },
+  {
+    "id": 317,
+    "file_name": "a field of orange flowers near the ocean'.jpg",
+    "type": "plant",
+    "caption": "a meadow with vibrant orange blooms by the sea.",
+    "original_caption": "a field of orange flowers near the ocean'"
+  },
+  {
+    "id": 318,
+    "file_name": "a close-up view of a bunch of pink flowers.jpg",
+    "type": "plant",
+    "caption": "a detailed view of numerous pink flowers up close.",
+    "original_caption": "a close-up view of a bunch of pink flowers"
+  },
+  {
+    "id": 319,
+    "file_name": "pink water lilies in a pond.jpg",
+    "type": "plant",
+    "caption": "water lilies with pink blooms floating in a pond",
+    "original_caption": "pink water lilies in a pond"
+  },
+  {
+    "id": 320,
+    "file_name": "reeds blowing in the wind against a cloudy sky.jpg",
+    "type": "plant",
+    "caption": "tall grasses swaying in the breeze under a partly cloudy sky",
+    "original_caption": "reeds blowing in the wind against a cloudy sky"
+  },
+  {
+    "id": 321,
+    "file_name": "two tall cacti in the middle of the desert.jpg",
+    "type": "plant",
+    "caption": "Two towering cacti stand amidst the desert landscape.",
+    "original_caption": "two tall cacti in the middle of the desert"
+  },
+  {
+    "id": 322,
+    "file_name": "a sea anemone on a coral reef.jpg",
+    "type": "plant",
+    "caption": "a coral reef with a sea anemone present",
+    "original_caption": "a sea anemone on a coral reef"
+  },
+  {
+    "id": 323,
+    "file_name": "a dandelion blowing in the wind.jpg",
+    "type": "plant",
+    "caption": "a dandelion seed head dispersing seeds in the breeze",
+    "original_caption": "a dandelion blowing in the wind"
+  },
+  {
+    "id": 324,
+    "file_name": "A boiling pot cooking vegetables.jpg",
+    "type": "food",
+    "caption": "A pot of vegetables being cooked at a boil.",
+    "original_caption": "A boiling pot cooking vegetables"
+  },
+  {
+    "id": 325,
+    "file_name": "a woman stirring food in a pan on the stove.jpg",
+    "type": "food",
+    "caption": "A person is stirring food in a pan on the stove using a wooden spoon.",
+    "original_caption": "a woman stirring food in a pan on the stove"
+  },
+  {
+    "id": 326,
+    "file_name": "two eggs are fried in a frying pan on the stove.jpg",
+    "type": "food",
+    "caption": "Two eggs are being cooked in a skillet on the stove.",
+    "original_caption": "two eggs are fried in a frying pan on the stove"
+  },
+  {
+    "id": 327,
+    "file_name": "fried onion rings in a basket.jpg",
+    "type": "food",
+    "caption": "onion rings being fried in a basket",
+    "original_caption": "fried onion rings in a basket"
+  },
+  {
+    "id": 328,
+    "file_name": "a pot is sitting on top of a campfire.jpg",
+    "type": "food",
+    "caption": "A pot is placed over a campfire.",
+    "original_caption": "a pot is sitting on top of a campfire"
+  },
+  {
+    "id": 329,
+    "file_name": "a chef is preparing a dish with mushrooms on a wooden board.jpg",
+    "type": "food",
+    "caption": "A chef is crafting a dish featuring mushrooms on a wooden platter.",
+    "original_caption": "a chef is preparing a dish with mushrooms on a wooden board"
+  },
+  {
+    "id": 330,
+    "file_name": "a hand holding a slice of pizza.jpg",
+    "type": "food",
+    "caption": "A hand gripping a slice of pizza.",
+    "original_caption": "a hand holding a slice of pizza"
+  },
+  {
+    "id": 331,
+    "file_name": "A person is using tongs to pick up meat from a plate.jpg",
+    "type": "food",
+    "caption": "A person is using tongs to lift meat from a dish.",
+    "original_caption": "A person is using tongs to pick up meat from a plate"
+  },
+  {
+    "id": 332,
+    "file_name": "The meat is picked up from the grill with tongs.jpg",
+    "type": "food",
+    "caption": "The meat is lifted from the grill using tongs.",
+    "original_caption": "The meat is picked up from the grill with tongs"
+  },
+  {
+    "id": 333,
+    "file_name": "A person is whisking eggs, and the egg whites and yolks are gently streaming out.jpg",
+    "type": "food",
+    "caption": "A person is cracking eggs, and the egg whites and yolks are delicately flowing out.",
+    "original_caption": "A person is whisking eggs, and the egg whites and yolks are gently streaming out"
+  },
+  {
+    "id": 334,
+    "file_name": "a person is putting sauce on a burger.jpg",
+    "type": "food",
+    "caption": "A person is adding sauce to a burger.",
+    "original_caption": "a person is putting sauce on a burger"
+  },
+  {
+    "id": 335,
+    "file_name": "A person is making dumplings.jpg",
+    "type": "food",
+    "caption": "Someone is preparing dumplings.",
+    "original_caption": "A person is making dumplings"
+  },
+  {
+    "id": 336,
+    "file_name": "a pan filled with fried food.jpg",
+    "type": "food",
+    "caption": "a pot containing fried items",
+    "original_caption": "a pan filled with fried food"
+  },
+  {
+    "id": 337,
+    "file_name": "Chopsticks are slowly picking up the buns from the plastic container.jpg",
+    "type": "food",
+    "caption": "The chopsticks are carefully lifting the buns from the plastic container.",
+    "original_caption": "Chopsticks are slowly picking up the buns from the plastic container"
+  },
+  {
+    "id": 338,
+    "file_name": "a basket of french fries in a fryer.jpg",
+    "type": "food",
+    "caption": "A metal basket filled with golden french fries is being lifted from a fryer.",
+    "original_caption": "a basket of french fries in a fryer"
+  },
+  {
+    "id": 339,
+    "file_name": "a table with lobsters and drinks on it.jpg",
+    "type": "food",
+    "caption": "A table set with lobsters and beverages.",
+    "original_caption": "a table with lobsters and drinks on it"
+  },
+  {
+    "id": 340,
+    "file_name": "a person pouring coffee into a pot on a stove.jpg",
+    "type": "food",
+    "caption": "a person adding coffee to a pot on the stove",
+    "original_caption": "a person pouring coffee into a pot on a stove"
+  },
+  {
+    "id": 341,
+    "file_name": "a kettle is sitting on top of a campfire.jpg",
+    "type": "food",
+    "caption": "A kettle is placed over a campfire.",
+    "original_caption": "a kettle is sitting on top of a campfire"
+  },
+  {
+    "id": 342,
+    "file_name": "Chopsticks are picking up noodles from the bowl.jpg",
+    "type": "food",
+    "caption": "A pair of chopsticks is lifting noodles out of the bowl.",
+    "original_caption": "Chopsticks are picking up noodles from the bowl"
+  },
+  {
+    "id": 343,
+    "file_name": "a person is cooking eggs on an outdoor grill.jpg",
+    "type": "food",
+    "caption": "A person is preparing eggs on an outdoor cooking surface.",
+    "original_caption": "a person is cooking eggs on an outdoor grill"
+  },
+  {
+    "id": 344,
+    "file_name": "a person is cooking food in a wok on a stove.jpg",
+    "type": "food",
+    "caption": "A person is preparing food in a wok over a stove.",
+    "original_caption": "a person is cooking food in a wok on a stove"
+  },
+  {
+    "id": 345,
+    "file_name": "a person is holding up a burger with his hands.jpg",
+    "type": "food",
+    "caption": "A person is gripping a burger with their hands.",
+    "original_caption": "a person is holding up a burger with his hands"
+  },
+  {
+    "id": 346,
+    "file_name": "A person is pouring water into a teacup.jpg",
+    "type": "food",
+    "caption": "Someone is filling a teacup with water.",
+    "original_caption": "A person is pouring water into a teacup"
+  },
+  {
+    "id": 347,
+    "file_name": "a person pouring seasoning into a pot of food.jpg",
+    "type": "food",
+    "caption": "A person is adding seasoning to a pot of food.",
+    "original_caption": "a person pouring seasoning into a pot of food"
+  },
+  {
+    "id": 348,
+    "file_name": "a person holding a taco in their hand.jpg",
+    "type": "food",
+    "caption": "a person gripping a taco with their hand",
+    "original_caption": "a person holding a taco in their hand"
+  },
+  {
+    "id": 349,
+    "file_name": "a person slicing salmon on a cutting board.jpg",
+    "type": "food",
+    "caption": "a person cutting salmon on a chopping board",
+    "original_caption": "a person slicing salmon on a cutting board"
+  },
+  {
+    "id": 350,
+    "file_name": "a bunch of food is cooking on a grill over an open fire.jpg",
+    "type": "food",
+    "caption": "A variety of food is being cooked on a grill above an open flame.",
+    "original_caption": "a bunch of food is cooking on a grill over an open fire"
+  },
+  {
+    "id": 351,
+    "file_name": "a close up of a piece of sushi on chopsticks.jpg",
+    "type": "food",
+    "caption": "a close-up shot of sushi being held by chopsticks.",
+    "original_caption": "a close up of a piece of sushi on chopsticks"
+  },
+  {
+    "id": 352,
+    "file_name": "a group of pots on a stove with flames in the background.jpg",
+    "type": "food",
+    "caption": "several pots on a stove with flames visible in the background",
+    "original_caption": "a group of pots on a stove with flames in the background"
+  },
+  {
+    "id": 353,
+    "file_name": "a person cooking vegetables in a pan on a stove.jpg",
+    "type": "food",
+    "caption": "A person is sautéing vegetables in a skillet on a stovetop.",
+    "original_caption": "a person cooking vegetables in a pan on a stove"
+  },
+  {
+    "id": 354,
+    "file_name": "a large pot of soup filled with vegetables and meat.jpg",
+    "type": "food",
+    "caption": "a big pot containing soup with various vegetables and meat ingredients.",
+    "original_caption": "a large pot of soup filled with vegetables and meat"
+  },
+  {
+    "id": 355,
+    "file_name": "a person holding chopsticks over a bowl of food.jpg",
+    "type": "food",
+    "caption": "A person is using chopsticks to lift food from a bowl.",
+    "original_caption": "a person holding chopsticks over a bowl of food"
+  }
+]

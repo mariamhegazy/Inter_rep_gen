@@ -1,0 +1,91 @@
+{
+  "raw_runs": {
+    "I2V": {
+      "background_consistency": 0.9600336814413265,
+      "dynamic_degree": 0.6334841628959276,
+      "i2v_background": 0.9905444467158951,
+      "i2v_subject": 0.9791957380019163,
+      "imaging_quality": 0.7103406424208498,
+      "motion_smoothness": 0.987912573634579,
+      "subject_consistency": 0.9411087332391721
+    },
+    "TI2V": {
+      "background_consistency": 0.9786530786631059,
+      "dynamic_degree": 0.4721030042918455,
+      "i2v_background": 0.9949521191798303,
+      "i2v_subject": 0.9851592298120643,
+      "imaging_quality": 0.7125213086078542,
+      "motion_smoothness": 0.989281063341687,
+      "subject_consistency": 0.9573365371040093
+    }
+  },
+  "normalized_runs": {
+    "I2V": {
+      "background_consistency": 0.9458817622766779,
+      "dynamic_degree": 0.6334841628959276,
+      "i2v_background": 0.9905444467158951,
+      "i2v_subject": 0.9791957380019163,
+      "imaging_quality": 0.7103406424208498,
+      "motion_smoothness": 0.967110029621197,
+      "subject_consistency": 0.9310245177315204
+    },
+    "TI2V": {
+      "background_consistency": 0.9710942161991957,
+      "dynamic_degree": 0.4721030042918455,
+      "i2v_background": 0.9949521191798303,
+      "i2v_subject": 0.9851592298120643,
+      "imaging_quality": 0.7125213086078542,
+      "motion_smoothness": 0.9718046769869191,
+      "subject_consistency": 0.9500310811712455
+    }
+  },
+  "dimensions_union": [
+    "background_consistency",
+    "dynamic_degree",
+    "i2v_background",
+    "i2v_subject",
+    "imaging_quality",
+    "motion_smoothness",
+    "subject_consistency"
+  ],
+  "dimensions_intersection": [
+    "background_consistency",
+    "dynamic_degree",
+    "i2v_background",
+    "i2v_subject",
+    "imaging_quality",
+    "motion_smoothness",
+    "subject_consistency"
+  ],
+  "used_minmax": {
+    "background_consistency": {
+      "min": 0.2615,
+      "max": 1.0
+    },
+    "dynamic_degree": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "i2v_background": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "i2v_subject": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "imaging_quality": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "motion_smoothness": {
+      "min": 0.706,
+      "max": 0.9975
+    },
+    "subject_consistency": {
+      "min": 0.1462,
+      "max": 1.0
+    }
+  },
+  "normalization_source": "constants"
+}

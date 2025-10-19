@@ -1,0 +1,133 @@
+{
+  "raw_runs": {
+    "I2V": {
+      "dynamic_degree": 0.5389221556886228,
+      "aesthetic_quality": 0.6115707775611363,
+      "background_consistency": 0.9507961768114163,
+      "imaging_quality": 0.7099646348632795,
+      "motion_smoothness": 0.9887469169810904,
+      "overall_consistency": 0.24888046150525173,
+      "subject_consistency": 0.9456624418720156,
+      "temporal_flickering": 0.9755491585685389,
+      "temporal_style": 0.24888046150525173
+    },
+    "TI2V": {
+      "dynamic_degree": 0.39481268011527376,
+      "aesthetic_quality": 0.6299349957653013,
+      "background_consistency": 0.9651325735189271,
+      "imaging_quality": 0.7117891600089564,
+      "motion_smoothness": 0.9903866674221691,
+      "overall_consistency": 0.26005460171603334,
+      "subject_consistency": 0.9629715323494703,
+      "temporal_flickering": 0.9803927988236641,
+      "temporal_style": 0.26005460171603334
+    },
+    "T2V": {
+      "aesthetic_quality": 0.6077401226638717,
+      "background_consistency": 0.9728198664332673,
+      "dynamic_degree": 0.3227665706051873,
+      "imaging_quality": 0.7291379826246094,
+      "motion_smoothness": 0.9896473861948535,
+      "overall_consistency": 0.2649470645859193,
+      "subject_consistency": 0.9710936360769725,
+      "temporal_flickering": 0.9805439896770856,
+      "temporal_style": 0.2649470645859193
+    }
+  },
+  "normalized_runs": {
+    "I2V": {
+      "dynamic_degree": 0.5389221556886228,
+      "aesthetic_quality": 0.6115707775611363,
+      "background_consistency": 0.9333732929064541,
+      "imaging_quality": 0.7099646348632795,
+      "motion_smoothness": 0.9699722709471368,
+      "overall_consistency": 0.6837375316078345,
+      "subject_consistency": 0.9363579782993858,
+      "temporal_flickering": 0.9340414312612324,
+      "temporal_style": 0.6837375316078345
+    },
+    "TI2V": {
+      "dynamic_degree": 0.39481268011527376,
+      "aesthetic_quality": 0.6299349957653013,
+      "background_consistency": 0.9527861523614449,
+      "imaging_quality": 0.7117891600089564,
+      "motion_smoothness": 0.9755974868685043,
+      "overall_consistency": 0.7144357190000916,
+      "subject_consistency": 0.9566309819038069,
+      "temporal_flickering": 0.9471076310322745,
+      "temporal_style": 0.7144357190000916
+    },
+    "T2V": {
+      "aesthetic_quality": 0.6077401226638717,
+      "background_consistency": 0.9631954860301523,
+      "dynamic_degree": 0.3227665706051873,
+      "imaging_quality": 0.7291379826246094,
+      "motion_smoothness": 0.9730613591590169,
+      "overall_consistency": 0.727876551060218,
+      "subject_consistency": 0.9661438698488786,
+      "temporal_flickering": 0.9475154833479513,
+      "temporal_style": 0.727876551060218
+    }
+  },
+  "dimensions_union": [
+    "aesthetic_quality",
+    "background_consistency",
+    "dynamic_degree",
+    "imaging_quality",
+    "motion_smoothness",
+    "overall_consistency",
+    "subject_consistency",
+    "temporal_flickering",
+    "temporal_style"
+  ],
+  "dimensions_intersection": [
+    "aesthetic_quality",
+    "background_consistency",
+    "dynamic_degree",
+    "imaging_quality",
+    "motion_smoothness",
+    "overall_consistency",
+    "subject_consistency",
+    "temporal_flickering",
+    "temporal_style"
+  ],
+  "used_minmax": {
+    "aesthetic_quality": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "background_consistency": {
+      "min": 0.2615,
+      "max": 1.0
+    },
+    "dynamic_degree": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "imaging_quality": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "motion_smoothness": {
+      "min": 0.706,
+      "max": 0.9975
+    },
+    "overall_consistency": {
+      "min": 0.0,
+      "max": 0.364
+    },
+    "subject_consistency": {
+      "min": 0.1462,
+      "max": 1.0
+    },
+    "temporal_flickering": {
+      "min": 0.6293,
+      "max": 1.0
+    },
+    "temporal_style": {
+      "min": 0.0,
+      "max": 0.364
+    }
+  },
+  "normalization_source": "constants"
+}

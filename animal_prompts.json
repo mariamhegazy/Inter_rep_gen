@@ -1,0 +1,324 @@
+[
+   {
+    "id": 110,
+    "file_name": "a brown bear in the water with a fish in its mouth.jpg",
+    "type": "animal",
+    "caption_paraphrased": "a brown bear standing in water, holding a fish in its mouth.",
+    "caption": "a brown bear in the water with a fish in its mouth"
+  },
+  {
+    "id": 111,
+    "file_name": "a close-up of a hippopotamus eating grass in a field.jpg",
+    "type": "animal",
+    "caption_paraphrased": "a hippopotamus is shown up close, grazing on grass in a field.",
+    "caption": "a close-up of a hippopotamus eating grass in a field"
+  },
+  {
+    "id": 112,
+    "file_name": "a sea turtle swimming in the ocean under the water.jpg",
+    "type": "animal",
+    "caption_paraphrased": "a sea turtle gliding through the ocean beneath the surface of the water.",
+    "caption": "a sea turtle swimming in the ocean under the water"
+  },
+  {
+    "id": 113,
+    "file_name": "two bees are flying over a lavender plant.jpg",
+    "type": "animal",
+    "caption_paraphrased": "Two bees are hovering over a lavender plant.",
+    "caption": "two bees are flying over a lavender plant"
+  },
+  {
+    "id": 114,
+    "file_name": "the otter is standing in the water.jpg",
+    "type": "animal",
+    "caption_paraphrased": "The otter is positioned in the water.",
+    "caption": "the otter is standing in the water"
+  },
+  {
+    "id": 115,
+    "file_name": "a dog carrying a soccer ball in its mouth.jpg",
+    "type": "animal",
+    "caption_paraphrased": "a canine holding a soccer ball in its mouth",
+    "caption": "a dog carrying a soccer ball in its mouth"
+  },
+  {
+    "id": 116,
+    "file_name": "an eagle is flying over a mountain with trees in the background.jpg",
+    "type": "animal",
+    "caption_paraphrased": "A majestic eagle soars above a mountainous landscape, with dense trees forming the backdrop.",
+    "caption": "an eagle is flying over a mountain with trees in the background"
+  },
+  {
+    "id": 117,
+    "file_name": "a couple of horses are running in the dirt.jpg",
+    "type": "animal",
+    "caption_paraphrased": "Two horses are galloping across a dusty terrain.",
+    "caption": "a couple of horses are running in the dirt"
+  },
+  {
+    "id": 118,
+    "file_name": "a highland cow with long horns standing in a field.jpg",
+    "type": "animal",
+    "caption_paraphrased": "A Highland cow featuring long horns is standing in a field.",
+    "caption": "a highland cow with long horns standing in a field"
+  },
+  {
+    "id": 119,
+    "file_name": "a monkey is holding a banana in its mouth.jpg",
+    "type": "animal",
+    "caption_paraphrased": "A monkey is gripping a banana with its mouth.",
+    "caption": "a monkey is holding a banana in its mouth"
+  },
+  {
+    "id": 120,
+    "file_name": "a large rhino grazing in the grass near a bush.jpg",
+    "type": "animal",
+    "caption_paraphrased": "a massive rhinoceros feeding on grass close to a shrub.",
+    "caption": "a large rhino grazing in the grass near a bush"
+  },
+  {
+    "id": 121,
+    "file_name": "a butterfly sits on top of a purple flower.jpg",
+    "type": "animal",
+    "caption_paraphrased": "A butterfly is perched atop a vibrant purple flower.",
+    "caption": "a butterfly sits on top of a purple flower"
+  },
+  {
+    "id": 122,
+    "file_name": "an alligator is covered in green plants in the water.jpg",
+    "type": "animal",
+    "caption_paraphrased": "A crocodile is partially submerged in water, covered with green aquatic plants.",
+    "caption": "an alligator is covered in green plants in the water"
+  },
+  {
+    "id": 123,
+    "file_name": "a red panda eating bamboo in a zoo.jpg",
+    "type": "animal",
+    "caption_paraphrased": "a red panda munching on bamboo at the zoo",
+    "caption": "a red panda eating bamboo in a zoo"
+  },
+  {
+    "id": 124,
+    "file_name": "a monochromatic video capturing a cat's gaze into the camera.jpg",
+    "type": "animal",
+    "caption_paraphrased": "a black-and-white video showcasing a cat's direct gaze at the camera.",
+    "caption": "a monochromatic video capturing a cat's gaze into the camera"
+  },
+  {
+    "id": 125,
+    "file_name": "a frog sitting on top of water lily leaves.jpg",
+    "type": "animal",
+    "caption_paraphrased": "a frog perched on water lily leaves",
+    "caption": "a frog sitting on top of water lily leaves"
+  },
+  {
+    "id": 126,
+    "file_name": "a lion is roaring in the wild.jpg",
+    "type": "animal",
+    "caption_paraphrased": "a lion is letting out a roar in its natural habitat.",
+    "caption": "a lion is roaring in the wild"
+  },
+  {
+    "id": 127,
+    "file_name": "a seagull is flying towards a person's hand.jpg",
+    "type": "animal",
+    "caption_paraphrased": "A seagull is approaching a person's outstretched hand.",
+    "caption": "a seagull is flying towards a person's hand"
+  },
+  {
+    "id": 128,
+    "file_name": "a yellow and white jellyfish is floating in the ocean.jpg",
+    "type": "animal",
+    "caption_paraphrased": "A jellyfish with yellow and white hues is drifting in the ocean.",
+    "caption": "a yellow and white jellyfish is floating in the ocean"
+  },
+  {
+    "id": 129,
+    "file_name": "a group of jellyfish swimming in an aquarium.jpg",
+    "type": "animal",
+    "caption_paraphrased": "several jellyfish floating in an aquarium setting.",
+    "caption": "a group of jellyfish swimming in an aquarium"
+  },
+  {
+    "id": 130,
+    "file_name": "a clown fish hiding in a purple anemone.jpg",
+    "type": "animal",
+    "caption_paraphrased": "A clownfish seeking shelter within a purple anemone.",
+    "caption": "a clown fish hiding in a purple anemone"
+  },
+  {
+    "id": 131,
+    "file_name": "a snake sitting on the ground next to a bowl.jpg",
+    "type": "animal",
+    "caption_paraphrased": "a snake resting on the ground beside a bowl",
+    "caption": "a snake sitting on the ground next to a bowl"
+  },
+  {
+    "id": 132,
+    "file_name": "a brown and white cow eating hay.jpg",
+    "type": "animal",
+    "caption_paraphrased": "A brown and white cow is grazing on hay.",
+    "caption": "a brown and white cow eating hay"
+  },
+  {
+    "id": 133,
+    "file_name": "a seal swimming in the water.jpg",
+    "type": "animal",
+    "caption_paraphrased": "a seal gliding through the water",
+    "caption": "a seal swimming in the water"
+  },
+  {
+    "id": 134,
+    "file_name": "a panda bear is eating a piece of bamboo.jpg",
+    "type": "animal",
+    "caption_paraphrased": "A panda is munching on a bamboo stalk.",
+    "caption": "a panda bear is eating a piece of bamboo"
+  },
+  {
+    "id": 135,
+    "file_name": "a small bird sits on a moss covered branch.jpg",
+    "type": "animal",
+    "caption_paraphrased": "A tiny bird perches on a branch covered in moss.",
+    "caption": "a small bird sits on a moss covered branch"
+  },
+  {
+    "id": 136,
+    "file_name": "a bird with a fish in its beak flying over a field.jpg",
+    "type": "animal",
+    "caption_paraphrased": "a bird carrying a fish in its beak while flying over a field",
+    "caption": "a bird with a fish in its beak flying over a field"
+  },
+  {
+    "id": 137,
+    "file_name": "a large flock of birds flying in the sky.jpg",
+    "type": "animal",
+    "caption_paraphrased": "a sizable group of birds soaring through the sky",
+    "caption": "a large flock of birds flying in the sky"
+  },
+  {
+    "id": 138,
+    "file_name": "a bald eagle flying over a tree filled forest.jpg",
+    "type": "animal",
+    "caption_paraphrased": "a bald eagle soaring above a forest dense with trees",
+    "caption": "a bald eagle flying over a tree filled forest"
+  },
+  {
+    "id": 139,
+    "file_name": "a giraffe walking in a field.jpg",
+    "type": "animal",
+    "caption_paraphrased": "A giraffe strolling through a field.",
+    "caption": "a giraffe walking in a field"
+  },
+  {
+    "id": 140,
+    "file_name": "a lioness yawning in a field.jpg",
+    "type": "animal",
+    "caption_paraphrased": "a female lion yawning in a grassy area",
+    "caption": "a lioness yawning in a field"
+  },
+  {
+    "id": 141,
+    "file_name": "a little crab scurried on the sandy beach.jpg",
+    "type": "animal",
+    "caption_paraphrased": "A small crab quickly moved across the sandy shore.",
+    "caption": "a little crab scurried on the sandy beach"
+  },
+  {
+    "id": 142,
+    "file_name": "a warthog is walking in the grass.jpg",
+    "type": "animal",
+    "caption_paraphrased": "A warthog is strolling through the grass.",
+    "caption": "a warthog is walking in the grass"
+  },
+  {
+    "id": 143,
+    "file_name": "a penguin walking on a beach near the water.jpg",
+    "type": "animal",
+    "caption_paraphrased": "A penguin is strolling along a beach close to the water.",
+    "caption": "a penguin walking on a beach near the water"
+  },
+  {
+    "id": 144,
+    "file_name": "a tiger walking through a wooded area.jpg",
+    "type": "animal",
+    "caption_paraphrased": "a tiger strolling through a forested area",
+    "caption": "a tiger walking through a wooded area"
+  },
+  {
+    "id": 145,
+    "file_name": "a tiger walking on a dirt path in the woods.jpg",
+    "type": "animal",
+    "caption_paraphrased": "a tiger strolling along a dirt trail in the forest",
+    "caption": "a tiger walking on a dirt path in the woods"
+  },
+  {
+    "id": 146,
+    "file_name": "a small monkey holding a piece of food in it's mouth.jpg",
+    "type": "animal",
+    "caption_paraphrased": "a tiny monkey with a piece of food in its mouth",
+    "caption": "a small monkey holding a piece of food in it's mouth"
+  },
+  {
+    "id": 147,
+    "file_name": "a squirrel sitting on the ground eating a piece of bread.jpg",
+    "type": "animal",
+    "caption_paraphrased": "a squirrel perched on the ground and nibbling on a piece of bread.",
+    "caption": "a squirrel sitting on the ground eating a piece of bread"
+  },
+  {
+    "id": 148,
+    "file_name": "a group of fish swimming over a coral reef.jpg",
+    "type": "animal",
+    "caption_paraphrased": "a school of fish swimming above a coral reef",
+    "caption": "a group of fish swimming over a coral reef"
+  },
+  {
+    "id": 149,
+    "file_name": "a toad is sitting on top of some moss.jpg",
+    "type": "animal",
+    "caption_paraphrased": "A toad is perched atop some moss.",
+    "caption": "a toad is sitting on top of some moss"
+  },
+  {
+    "id": 150,
+    "file_name": "a great white shark swimming in the ocean.jpg",
+    "type": "animal",
+    "caption_paraphrased": "a large white shark gliding through the ocean.",
+    "caption": "a great white shark swimming in the ocean"
+  },
+  {
+    "id": 151,
+    "file_name": "a group of camels resting in the desert.jpg",
+    "type": "animal",
+    "caption_paraphrased": "a few camels taking a break in the desert.",
+    "caption": "a group of camels resting in the desert"
+  },
+  {
+    "id": 152,
+    "file_name": "two sheep grazing in the grass next to a wooden bridge.jpg",
+    "type": "animal",
+    "caption_paraphrased": "Two sheep are grazing in the grass beside a wooden bridge.",
+    "caption": "two sheep grazing in the grass next to a wooden bridge"
+  },
+  {
+    "id": 153,
+    "file_name": "an elephant walking through a forest.jpg",
+    "type": "animal",
+    "caption_paraphrased": "A large elephant is strolling through a dense forest.",
+    "caption": "an elephant walking through a forest"
+  },
+  {
+    "id": 154,
+    "file_name": "a white rooster standing in a grassy field.jpg",
+    "type": "animal",
+    "caption_paraphrased": "A white rooster is standing in a grassy field.",
+    "caption": "a white rooster standing in a grassy field"
+  },
+  {
+    "id": 155,
+    "file_name": "a zebra walking across a dirt road near a field.jpg",
+    "type": "animal",
+    "caption_paraphrased": "A zebra is walking along a dirt path near a field.",
+    "caption": "a zebra walking across a dirt road near a field"
+  }
+]
