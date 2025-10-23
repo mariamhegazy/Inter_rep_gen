@@ -16,6 +16,13 @@ project_roots = [
 for project_root in project_roots:
     sys.path.insert(0, project_root) if project_root not in sys.path else None
 
+
+import math
+import os
+
+import matplotlib.pyplot as plt
+import torch
+
 from videox_fun.dist import set_multi_gpus_devices, shard_model
 from videox_fun.models import (
     AutoencoderKLWan,
@@ -39,6 +46,74 @@ from videox_fun.utils.utils import (
     get_image_to_video_latent,
     save_videos_grid,
 )
+
+
+def _reshape_to_fhw(vec, grid):
+    # vec: [Lq], grid: [3] = (F, H, W)
+    F, H, W = [int(x) for x in grid.tolist()]
+    tensor = vec[: F * H * W].reshape(F, H, W)
+    return tensor.float().cpu().numpy()
+
+
+def save_zebra_heatmaps(attn_module, out_dir="debug_attn", prefix="run"):
+    """
+    attn_module: the *last* WanCrossAttention you want to inspect
+                 (e.g., pipeline.transformer.blocks[-1].cross_attn)
+    """
+    os.makedirs(out_dir, exist_ok=True)
+    info = getattr(attn_module, "_debug_last", None)
+    if info is None or info["zebra_mass"] is None or info["grid"] is None:
+        print("No debug info found on attn module.")
+        return
+
+    z = info["zebra_mass"][0]  # [Lq] for batch item 0
+    grid = info["grid"][0]  # [3] (F,H,W) for sample 0
+    fhw = _reshape_to_fhw(z, grid)  # [F,H,W]
+
+    # aggregate over time to see spatial layout; and over space to see per-frame curve
+    spatial = fhw.mean(0)  # [H,W]
+    per_frame = fhw.mean(axis=(1, 2))  # [F]
+
+    # optional: overlay the gate if present (after steering)
+    gate = info.get("gate", None)
+    if gate is not None:
+        g_fhw = _reshape_to_fhw(gate[0], grid)  # [F,H,W]
+        g_spatial = g_fhw.mean(0)  # [H,W]
+    else:
+        g_spatial = None
+
+    # Plot spatial maps
+    plt.figure()
+    plt.title("Zebra attention mass (spatial avg over frames)")
+    plt.imshow(spatial, cmap="inferno")
+    plt.colorbar()
+    plt.tight_layout()
+    plt.savefig(os.path.join(out_dir, f"{prefix}_zebra_spatial.png"))
+    plt.close()
+
+    if g_spatial is not None:
+        plt.figure()
+        plt.title(
+            "Applied gate g (spatial avg over frames) — lower = stronger suppression"
+        )
+        plt.imshow(g_spatial, cmap="viridis", vmin=0, vmax=1)
+        plt.colorbar()
+        plt.tight_layout()
+        plt.savefig(os.path.join(out_dir, f"{prefix}_gate_spatial.png"))
+        plt.close()
+
+    # Plot per-frame curve
+    plt.figure()
+    plt.title("Zebra attention mass per frame (mean over HxW)")
+    plt.plot(per_frame)
+    plt.xlabel("frame")
+    plt.ylabel("mass")
+    plt.tight_layout()
+    plt.savefig(os.path.join(out_dir, f"{prefix}_zebra_per_frame.png"))
+    plt.close()
+
+    print("wrote:", out_dir)
+
 
 # GPU memory mode, which can be chosen in [model_full_load, model_full_load_and_qfloat8, model_cpu_offload, model_cpu_offload_and_qfloat8, sequential_cpu_offload].
 # model_full_load means that the entire model will be moved to the GPU.
@@ -123,10 +198,10 @@ fps = 24
 # ome graphics cards, such as v100, 2080ti, do not support torch.bfloat16
 weight_dtype = torch.bfloat16
 # If you want to generate from text, please set the validation_image_start = None and validation_image_end = None
-validation_image_start = "/capstor/store/cscs/swissai/a144/mariam/vbench2_beta_i2v/data/crop/16-9/an elephant walking through a forest.jpg"
+validation_image_start = "/capstor/scratch/cscs/mhasan/VideoX-Fun-ours/test_assets/premium_photo-1669277330871-443462026e13.jpeg"
 
 # prompts
-prompt = "a zebra walking through a forest"
+prompt = "a zebra running in the field"
 negative_prompt = (
     "overexposed, blurry, low quality, deformed hands, ugly, artifacts, static scene"
 )
@@ -136,7 +211,7 @@ num_inference_steps = 50
 # The lora_weight is used for low noise model, the lora_high_weight is used for high noise model.
 lora_weight = 0.55
 lora_high_weight = 0.55
-save_path = "samples/wan-videos-ti2v"
+save_path = "samples/wan-videos-ti2v-adapt"
 
 device = set_multi_gpus_devices(ulysses_degree, ring_degree)
 config = OmegaConf.load(config_path)
@@ -425,6 +500,160 @@ with torch.no_grad():
     else:
         input_video, input_video_mask, clip_image = None, None, None
 
+    tokens = tokenizer(
+        prompt,
+        padding=False,
+        truncation=True,
+        return_tensors="pt",
+        add_special_tokens=False,
+    )
+    ids = tokens.input_ids[0].tolist()
+
+    # find all positions belonging to the word "zebra"
+    # (handles BPE subwords like "ze", "##bra" etc.; adapt as needed to your tokenizer)
+    zebra_positions = [
+        i
+        for i, tok in enumerate(tokenizer.convert_ids_to_tokens(ids))
+        if "zebra" in tok.lower()
+    ]
+
+    # 2) enable steering on the transformer
+    # pipeline.transformer.enable_text_spatial_steer(
+    #     token_ids=zebra_positions,
+    #     beta=0.6,  # suppression strength (try 0.4 ~ 0.7)
+    #     ema=0.8,  # smoother memory of where zebra tends to sit
+    #     topk=0.10,  # suppress top 10% zebra-dominated query tokens each layer call
+    # )
+
+    # pipeline.transformer.enable_text_framewise_crossattn(
+    #     start=0.2, end=0.3, mode="linear"
+    # )
+
+    # # --- Temporal fade for the image-conditioning mask ---
+    # if input_video_mask is not None:
+    #     # input_video_mask: (1, 1, T, H, W) with 1's where the copied image dominates
+    #     T = input_video_mask.shape[2]
+
+    #     # Linear decay (1.0 at frame 0 → 0.0 at frame T-1).
+    #     # Feel free to try 'cosine' or 'exp' schedules.
+    #     decay = torch.linspace(
+    #         1.0, 0.0, T, device=input_video_mask.device, dtype=input_video_mask.dtype
+    #     )
+
+    #     # Optional: keep first frame slightly looser than 1.0 if you want text to already nudge it
+    #     # decay[0] = 0.8
+
+    #     input_video_mask = input_video_mask * decay.view(1, 1, T, 1, 1)
+
+    # def make_framewise_cfg_wrapper(pipe, base_s=3.0, g0=1.0, g1=7.0):
+    #     """
+    #     Keep Wan2.2 pipeline's CFG path intact (needs guidance_scale=base_s > 1 in the pipeline call).
+    #     We only reshape the *conditional* half so that after the pipeline's scalar CFG,
+    #     the *effective* guidance equals your per-frame ramp g[t] in [g0..g1].
+    #     """
+    #     import types
+
+    #     orig_forward = pipe.transformer.forward
+
+    #     def framewise_forward(module, *args, **kwargs):
+    #         out = orig_forward(*args, **kwargs)
+
+    #         # Accept dict or tensor output (some builds return {"sample": tensor})
+    #         if isinstance(out, dict) and "sample" in out:
+    #             x = out["sample"]
+    #             dict_out = True
+    #         else:
+    #             x = out
+    #             dict_out = False
+
+    #         B2, C, T, H, W = x.shape
+    #         if (B2 % 2) != 0:
+    #             # Not in CFG mode → leave untouched (e.g., guidance_scale==1.0)
+    #             return out
+
+    #         B = B2 // 2
+    #         x = x.view(2, B, C, T, H, W)  # [uncond, cond_raw]
+    #         x_uncond, x_cond_raw = x[0], x[1]
+
+    #         # Per-frame target guidance ramp g[t]
+    #         g = torch.linspace(g0, g1, T, device=x.device, dtype=x.dtype).view(
+    #             1, 1, T, 1, 1
+    #         )
+
+    #         # Pre-adjust conditional so downstream 'base_s' scalar yields g[t]
+    #         scale = g / float(base_s)
+    #         x_cond_adj = x_uncond + scale * (x_cond_raw - x_uncond)
+
+    #         x_out = torch.stack([x_uncond, x_cond_adj], dim=0).view(B2, C, T, H, W)
+    #         if dict_out:
+    #             out["sample"] = x_out
+    #             return out
+    #         return x_out
+
+    #     pipe.transformer.forward = types.MethodType(framewise_forward, pipe.transformer)
+    #     return pipe
+
+    # if input_video_mask is not None:
+    #     T = input_video_mask.shape[2]
+    #     decay = torch.linspace(
+    #         1.0, 0.0, T, device=input_video_mask.device, dtype=input_video_mask.dtype
+    #     )
+    #     input_video_mask = input_video_mask * decay.view(1, 1, T, 1, 1)
+    # # Example ramp: gentle at early frames, strong at the end
+    # make_framewise_cfg_wrapper(pipeline, g0=1.0, g1=7.0)
+    # BASE_S = 3.0
+
+    attn_mod = pipeline.transformer.blocks[-1].cross_attn
+
+    # # A) BEFORE steering
+    # pipeline.transformer.disable_text_spatial_steer()
+    # sample = pipeline(
+    #     prompt,
+    #     num_frames=video_length,
+    #     negative_prompt=negative_prompt,
+    #     height=sample_size[0],
+    #     width=sample_size[1],
+    #     generator=generator,
+    #     guidance_scale=guidance_scale,
+    #     num_inference_steps=num_inference_steps,
+    #     boundary=boundary,
+    #     video=input_video,
+    #     mask_video=input_video_mask,
+    #     shift=shift,
+    # ).videos
+    # save_zebra_heatmaps(attn_mod, out_dir="debug_attn", prefix="before")
+
+    full = tokenizer(
+        prompt,
+        truncation=True,
+        padding="max_length",
+        max_length=pipeline.transformer.text_len,
+        return_tensors="pt",
+    )
+    full_ids = full.input_ids[0].tolist()
+
+    # subword IDs for the concept (strip special tokens if any)
+    zebra_sub_ids = [
+        tid
+        for tid in tokenizer("zebra").input_ids
+        if tid
+        not in (
+            tokenizer.pad_token_id,
+            tokenizer.bos_token_id,
+            tokenizer.eos_token_id,
+            0,
+            None,
+        )
+    ]
+
+    # positions in the full prompt that match any zebra subword
+    zebra_pos = [i for i, tid in enumerate(full_ids) if tid in set(zebra_sub_ids)]
+
+    # enable steering with **positions**
+    pipe_tr = pipeline.transformer
+    pipe_tr.enable_text_spatial_steer(token_ids=zebra_pos, beta=0.7, ema=0.8, topk=0.40)
+    # optional extras
+    pipe_tr.steering.update({"delta": 3.0, "frac_push": 0.10, "smooth": 0.25})
     sample = pipeline(
         prompt,
         num_frames=video_length,
@@ -439,6 +668,7 @@ with torch.no_grad():
         mask_video=input_video_mask,
         shift=shift,
     ).videos
+    # save_zebra_heatmaps(attn_mod, out_dir="debug_attn", prefix="after")
 
 if lora_path is not None:
     pipeline = unmerge_lora(

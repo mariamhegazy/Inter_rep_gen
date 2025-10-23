@@ -46,6 +46,37 @@ def sinusoidal_embedding_1d(dim, position):
     return x
 
 
+def _build_framewise_gain(
+    grid_sizes, L, device, dtype, start=0.2, end=1.2, mode="linear"
+):
+    """
+    grid_sizes: [B, 3] with (F_p, H_p, W_p) per sample (p = patch)
+    Returns gain of shape [B, L, 1], padded to current sequence length L.
+    start: gain at first frame; end: gain at last frame (can be <1, =1, or >1)
+    """
+    gains = []
+    for F, H, W in grid_sizes.tolist():
+        if mode == "linear":
+            ramp = torch.linspace(start, end, F, device=device, dtype=dtype)
+        elif mode == "cosine":
+            # slow start, strong end
+            t = torch.linspace(0, 1, F, device=device, dtype=dtype)
+            ramp = start + (end - start) * (1 - torch.cos(torch.pi * t)) / 2
+        else:
+            raise ValueError(f"Unknown mode: {mode}")
+
+        w = ramp.view(F, 1, 1).expand(F, H, W).reshape(-1)  # length = F*H*W
+
+        # pad/truncate to L
+        if w.numel() < L:
+            pad = torch.full((L - w.numel(),), end, device=device, dtype=dtype)
+            w = torch.cat([w, pad], dim=0)
+        else:
+            w = w[:L]
+        gains.append(w)
+    return torch.stack(gains, dim=0).unsqueeze(-1)  # [B, L, 1]
+
+
 @amp.autocast(enabled=False)
 def rope_params(max_seq_len, dim, theta=10000):
     assert dim % 2 == 0
@@ -177,6 +208,79 @@ def rope_apply_qk(q, k, grid_sizes, freqs):
     q = rope_apply(q, grid_sizes, freqs)
     k = rope_apply(k, grid_sizes, freqs)
     return q, k
+
+
+import math
+import os
+
+import matplotlib.pyplot as plt
+import torch
+
+
+def _reshape_to_fhw(vec, grid):
+    # vec: [Lq], grid: [3] = (F, H, W)
+    F, H, W = [int(x) for x in grid.tolist()]
+    return vec[: F * H * W].reshape(F, H, W).cpu().numpy()
+
+
+def save_zebra_heatmaps(attn_module, out_dir="debug_attn", prefix="run"):
+    """
+    attn_module: the *last* WanCrossAttention you want to inspect
+                 (e.g., pipeline.transformer.blocks[-1].cross_attn)
+    """
+    os.makedirs(out_dir, exist_ok=True)
+    info = getattr(attn_module, "_debug_last", None)
+    if info is None or info["zebra_mass"] is None or info["grid"] is None:
+        print("No debug info found on attn module.")
+        return
+
+    z = info["zebra_mass"][0]  # [Lq] for batch item 0
+    grid = info["grid"][0]  # [3] (F,H,W) for sample 0
+    fhw = _reshape_to_fhw(z, grid)  # [F,H,W]
+
+    # aggregate over time to see spatial layout; and over space to see per-frame curve
+    spatial = fhw.mean(0)  # [H,W]
+    per_frame = fhw.mean(axis=(1, 2))  # [F]
+
+    # optional: overlay the gate if present (after steering)
+    gate = info.get("gate", None)
+    if gate is not None:
+        g_fhw = _reshape_to_fhw(gate[0], grid)  # [F,H,W]
+        g_spatial = g_fhw.mean(0)  # [H,W]
+    else:
+        g_spatial = None
+
+    # Plot spatial maps
+    plt.figure()
+    plt.title("Zebra attention mass (spatial avg over frames)")
+    plt.imshow(spatial, cmap="inferno")
+    plt.colorbar()
+    plt.tight_layout()
+    plt.savefig(os.path.join(out_dir, f"{prefix}_zebra_spatial.png"))
+    plt.close()
+
+    if g_spatial is not None:
+        plt.figure()
+        plt.title(
+            "Applied gate g (spatial avg over frames) — lower = stronger suppression"
+        )
+        plt.imshow(g_spatial, cmap="viridis", vmin=0, vmax=1)
+        plt.colorbar()
+        plt.tight_layout()
+        plt.savefig(os.path.join(out_dir, f"{prefix}_gate_spatial.png"))
+        plt.close()
+
+    # Plot per-frame curve
+    plt.figure()
+    plt.title("Zebra attention mass per frame (mean over HxW)")
+    plt.plot(per_frame)
+    plt.xlabel("frame")
+    plt.ylabel("mass")
+    plt.tight_layout()
+    plt.savefig(os.path.join(out_dir, f"{prefix}_zebra_per_frame.png"))
+    plt.close()
+
+    print("wrote:", out_dir)
 
 
 class WanRMSNorm(nn.Module):
@@ -339,25 +443,139 @@ class WanI2VCrossAttention(WanSelfAttention):
         return x
 
 
+# class WanCrossAttention(WanSelfAttention):
+#     def forward(self, x, context, context_lens, dtype=torch.bfloat16, t=0):
+#         r"""
+#         Args:
+#             x(Tensor): Shape [B, L1, C]
+#             context(Tensor): Shape [B, L2, C]
+#             context_lens(Tensor): Shape [B]
+#         """
+#         b, n, d = x.size(0), self.num_heads, self.head_dim
+#         # compute query, key, value
+#         q = self.norm_q(self.q(x.to(dtype))).view(b, -1, n, d)
+#         k = self.norm_k(self.k(context.to(dtype))).view(b, -1, n, d)
+#         v = self.v(context.to(dtype)).view(b, -1, n, d)
+#         # compute attention
+#         x = attention(q.to(dtype), k.to(dtype), v.to(dtype), k_lens=context_lens)
+#         # output
+#         x = x.flatten(2)
+#         x = self.o(x.to(dtype))
+#         return x
+
+
 class WanCrossAttention(WanSelfAttention):
     def forward(self, x, context, context_lens, dtype=torch.bfloat16, t=0):
-        r"""
-        Args:
-            x(Tensor): Shape [B, L1, C]
-            context(Tensor): Shape [B, L2, C]
-            context_lens(Tensor): Shape [B]
-        """
+        import math
+
         b, n, d = x.size(0), self.num_heads, self.head_dim
-        # compute query, key, value
-        q = self.norm_q(self.q(x.to(dtype))).view(b, -1, n, d)
-        k = self.norm_k(self.k(context.to(dtype))).view(b, -1, n, d)
-        v = self.v(context.to(dtype)).view(b, -1, n, d)
-        # compute attention
-        x = attention(q.to(dtype), k.to(dtype), v.to(dtype), k_lens=context_lens)
-        # output
-        x = x.flatten(2)
-        x = self.o(x.to(dtype))
-        return x
+
+        q = self.norm_q(self.q(x.to(dtype))).view(b, -1, n, d)  # [B,Lq,H,Dh]
+        k_all = self.norm_k(self.k(context.to(dtype))).view(b, -1, n, d)  # [B,Lt,H,Dh]
+        v_all = self.v(context.to(dtype)).view(b, -1, n, d)
+
+        steering = getattr(self, "steering", None)
+
+        # === no steering ===
+        if (
+            (steering is None)
+            or (not steering.get("enabled", False))
+            or (not steering.get("token_ids"))
+        ):
+            out = attention(
+                q.to(dtype), k_all.to(dtype), v_all.to(dtype), k_lens=context_lens
+            )
+            return self.o(out.to(dtype).flatten(2))
+
+        # === parameters (conservative defaults) ===
+        beta = float(
+            steering.get("beta", 0.3)
+        )  # downweight factor on hot queries to zebra
+        frac_hot = float(
+            steering.get("topk", 0.10)
+        )  # top-% of queries to suppress zebra
+        frac_cold = float(
+            steering.get("frac_push", 0.10)
+        )  # bottom-% to encourage zebra
+        temp = float(steering.get("temp", 1.0))  # attn temperature (>=1 cooler softmax)
+        # schedule knob (optional): e.g., only steer after t_ratio>0.4
+        t_ratio = float(
+            steering.get("t_ratio", 1.0)
+        )  # supply from outer loop if you want
+
+        # small guard to avoid early destruction
+        if t_ratio < float(steering.get("start_ratio", 0.0)):
+            out = attention(
+                q.to(dtype), k_all.to(dtype), v_all.to(dtype), k_lens=context_lens
+            )
+            return self.o(out.to(dtype).flatten(2))
+
+        # --- build full attention weights once ---
+        # scores: [B,H,Lq,Lt]
+        scores = torch.einsum("bqhd,bkhd->bhqk", q.float(), k_all.float()) / math.sqrt(
+            d
+        )
+        # clamp logits to avoid infs when bfloat16 reductions happen later
+        scores = scores.clamp(min=-20.0, max=20.0)
+        if temp != 1.0:
+            scores = scores / temp
+        weights = scores.softmax(dim=-1)  # [B,H,Lq,Lt] float32
+
+        # zebra mask (positions in Lt, not vocab ids!)
+        Lt = k_all.size(1)
+        mask_zebra = scores.new_zeros((Lt,), dtype=torch.bool)
+        token_pos = steering["token_ids"]
+        token_pos = [p for p in token_pos if 0 <= p < Lt]
+        if len(token_pos) == 0:
+            # nothing to do
+            out = torch.einsum("bhqk,bkhd->bqhd", weights.to(dtype), v_all.to(dtype))
+            return self.o(out.to(dtype).flatten(2))
+        mask_zebra[token_pos] = True
+
+        # zebra / rest weights
+        w_z = weights[..., mask_zebra]  # [B,H,Lq,Lz]
+        w_r = weights[..., ~mask_zebra]  # [B,H,Lq,Lr]
+
+        # per-query zebra mass (mean over heads for stability): [B,Lq]
+        zebra_mass = w_z.mean(1).sum(-1).detach()  # sum over Lz
+
+        # choose hot/cold queries
+        Lq = q.size(1)
+        k_hot = max(1, int(math.ceil(frac_hot * Lq)))
+        k_cold = max(1, int(math.ceil(frac_cold * Lq)))
+
+        vals_hot, idx_hot = torch.topk(zebra_mass, k_hot, dim=1)
+        vals_cold, idx_cold = torch.topk(-zebra_mass, k_cold, dim=1)
+
+        # build per-query scale factors: s_zebra (down on hot, up on cold)
+        s_z = torch.ones((b, Lq), device=weights.device, dtype=weights.dtype)
+        s_r = torch.ones_like(s_z)
+
+        # downweight zebra where it's dominating
+        s_z.scatter_(1, idx_hot, (1.0 - beta))
+        # gently encourage zebra elsewhere (optional, small)
+        boost = float(steering.get("boost", 0.15))
+        s_z.scatter_(1, idx_cold, (1.0 + boost))
+
+        # broadcast to [B,H,Lq,•]
+        s_z = s_z.unsqueeze(1).unsqueeze(-1)  # [B,1,Lq,1]
+        s_r = s_r.unsqueeze(1).unsqueeze(-1)
+
+        # reweight and renormalize
+        w_z = w_z * s_z
+        w_r = w_r * s_r
+        denom = w_z.sum(-1, keepdim=True) + w_r.sum(-1, keepdim=True) + 1e-8
+        w_z = w_z / denom
+        w_r = w_r / denom
+
+        # merge back to full weight tensor
+        weights_mod = weights.clone()
+        weights_mod[..., mask_zebra] = w_z
+        weights_mod[..., ~mask_zebra] = w_r
+
+        # final attn output
+        out = torch.einsum("bhqk,bkhd->bqhd", weights_mod.to(dtype), v_all.to(dtype))
+        return self.o(out.to(dtype).flatten(2))
 
 
 WAN_CROSSATTENTION_CLASSES = {
@@ -446,6 +664,14 @@ class WanAttentionBlock(nn.Module):
         # cross-attention & ffn function
         def cross_attn_ffn(x, context, context_lens, e):
             # cross-attention
+            # --- attach debug context for this call ---
+            self.cross_attn._debug_grid_sizes = grid_sizes  # [B,3] (F,H,W) for reshape
+            self.cross_attn._debug_log = True  # ask cross-attn to log once
+            # also forward the steering dict from the parent transformer (if present)
+            if hasattr(self, "steering"):
+                self.cross_attn.steering = self.steering
+            # ------------------------------------------
+            attn_out = self.cross_attn(self.norm3(x), context, context_lens, dtype, t=t)
             x = x + self.cross_attn(self.norm3(x), context, context_lens, dtype, t=t)
 
             # ffn function
@@ -458,6 +684,83 @@ class WanAttentionBlock(nn.Module):
 
         x = cross_attn_ffn(x, context, context_lens, e)
         return x
+
+    # def forward(
+    #     self,
+    #     x,
+    #     e,
+    #     seq_lens,
+    #     grid_sizes,
+    #     freqs,
+    #     context,
+    #     context_lens,
+    #     dtype=torch.bfloat16,
+    #     t=0,
+    # ):
+    #     r"""
+    #     Args:
+    #         x(Tensor): Shape [B, L, C]
+    #         e(Tensor): Shape [B, 6, C]
+    #         seq_lens(Tensor): Shape [B], length of each sequence in batch
+    #         grid_sizes(Tensor): Shape [B, 3], the second dimension contains (F, H, W)
+    #         freqs(Tensor): Rope freqs, shape [1024, C / num_heads / 2]
+    #     """
+    #     if e.dim() > 3:
+    #         e = (self.modulation.unsqueeze(0) + e).chunk(6, dim=2)
+    #         e = [e.squeeze(2) for e in e]
+    #     else:
+    #         e = (self.modulation + e).chunk(6, dim=1)
+
+    #     # self-attention
+    #     temp_x = self.norm1(x) * (1 + e[1]) + e[0]
+    #     temp_x = temp_x.to(dtype)
+
+    #     y = self.self_attn(temp_x, seq_lens, grid_sizes, freqs, dtype, t=t)
+    #     x = x + y * e[2]
+
+    #     # cross-attention & ffn function
+    #     def cross_attn_ffn(x, context, context_lens, e):
+    #         # cross-attention
+    #         # x = x + self.cross_attn(self.norm3(x), context, context_lens, dtype, t=t)
+    #         attn_out = self.cross_attn(self.norm3(x), context, context_lens, dtype, t=t)
+
+    #         # === NEW: framewise gain for text cross-attn ===
+    #         gain_cfg = getattr(self, "text_xattn_gain_cfg", None)
+    #         # if not attached to block, read from parent module (the transformer)
+    #         if gain_cfg is None and hasattr(self, "text_xattn_gain_cfg") is False:
+    #             # 'self' is a block; try to read from its owning module via closure
+    #             try:
+    #                 gain_cfg = (
+    #                     transformer_self.text_xattn_gain_cfg
+    #                 )  # set by outer scope (see below)
+    #             except NameError:
+    #                 gain_cfg = None
+
+    #         if gain_cfg is not None:
+    #             B, L, C = x.shape
+    #             g = _build_framewise_gain(
+    #                 grid_sizes=grid_sizes,  # captured from outer scope
+    #                 L=L,
+    #                 device=x.device,
+    #                 dtype=attn_out.dtype,
+    #                 start=gain_cfg["start"],
+    #                 end=gain_cfg["end"],
+    #                 mode=gain_cfg["mode"],
+    #             )  # [B, L, 1]
+    #             attn_out = attn_out * g.to(attn_out.dtype)
+
+    #         x = x + attn_out
+
+    #         # ffn function
+    #         temp_x = self.norm2(x) * (1 + e[4]) + e[3]
+    #         temp_x = temp_x.to(dtype)
+
+    #         y = self.ffn(temp_x)
+    #         x = x + y * e[5]
+    #         return x
+
+    #     x = cross_attn_ffn(x, context, context_lens, e)
+    #     return x
 
 
 class Head(nn.Module):
@@ -839,7 +1142,7 @@ class WanTransformer3DModel(ModelMixin, ConfigMixin, FromOriginalModelMixin):
         # Wan2.2 don't need a clip.
         # if self.model_type == 'i2v':
         #     assert clip_fea is not None and y is not None
-        # params
+
         device = self.patch_embedding.weight.device
         dtype = x.dtype
         if self.freqs.device != device and torch.device(type="meta") != device:
@@ -1468,5 +1771,48 @@ class Wan2_2Transformer3DModel(WanTransformer3DModel):
             cross_attn_type="cross_attn",
         )
 
+        self.text_xattn_gain_cfg = None
+
+        self.steering = {
+            "enabled": False,
+            "token_ids": None,  # list[int] indices of 'zebra' tokens in the text sequence
+            "beta": 0.7,  # suppression strength (0..1); higher = stronger push-away
+            "ema": 0.8,  # running-average memory for the zebra heatmap
+            "heatmap": None,  # will hold [B, L_query] running zebra-attn per query token
+            "topk": 0.10,  # suppress top-10% zebra-dominated queries each call
+        }
+
         if hasattr(self, "img_emb"):
             del self.img_emb
+        for blk in self.blocks:
+            # Option A: share the same dict (simplest)
+            blk.cross_attn.steering = self.steering
+
+    def enable_text_framewise_crossattn(self, start=0.2, end=1.2, mode="linear"):
+        self.text_xattn_gain_cfg = {
+            "start": float(start),
+            "end": float(end),
+            "mode": str(mode),
+        }
+
+    def disable_text_framewise_crossattn(self):
+        self.text_xattn_gain_cfg = None
+
+    def enable_text_spatial_steer(self, token_ids, beta=0.6, ema=0.8, topk=0.10):
+        self.steering.update(
+            {
+                "enabled": True,
+                "token_ids": list(token_ids),
+                "beta": float(beta),
+                "ema": float(ema),
+                "topk": float(topk),
+                "heatmap": None,
+            }
+        )
+
+    def disable_text_spatial_steer(self):
+        self.steering["enabled"] = False
+        self.steering["heatmap"] = None
+        self.steering["heatmap"] = None
+        self.steering["heatmap"] = None
+        self.steering["heatmap"] = None

@@ -51,19 +51,22 @@ from videox_fun.utils.utils import (
 
 
 def parse_args():
-    p = argparse.ArgumentParser("Wan2.2-5B DDP sampler for VBench datasets")
+    p = argparse.ArgumentParser(
+        "Wan2.2-5B DDP sampler for VBench datasets (TI2V/T2V/I2V) + Unconditional (U2V)"
+    )
+
     # dataset & IO
     p.add_argument(
         "--dataset_json",
         type=str,
-        required=True,
-        help="Path to JSON array with {file_name, caption, type, ...} or augmented/contradict files",
+        required=False,
+        help="Path to JSON array with {file_name, caption, type, ...}. Not required for --mode u2v.",
     )
     p.add_argument(
         "--images_root",
         type=str,
         default=None,
-        help="Optional root for relative image paths; ignored when JSON has absolute image_path.",
+        help="Optional root for relative image paths; ignored when JSON has absolute image_path. Ignored for u2v.",
     )
     p.add_argument(
         "--outdir",
@@ -75,14 +78,14 @@ def parse_args():
         "--mode",
         type=str,
         default="ti2v",
-        choices=["ti2v", "t2v", "i2v"],
-        help="ti2v=image+text, t2v=text only, i2v=image only",
+        choices=["ti2v", "t2v", "i2v", "u2v"],  # NEW: u2v
+        help="ti2v=image+text, t2v=text only, i2v=image only, u2v=unconditional (no text, no image)",
     )
     p.add_argument(
         "--resume", action="store_true", help="Skip items whose output already exists."
     )
 
-    # NEW: choose which caption field to use
+    # Which caption field to use (ignored for u2v)
     p.add_argument(
         "--caption_field",
         type=str,
@@ -91,7 +94,7 @@ def parse_args():
         help="Which caption to use: base->caption, aug->caption_aug, contra->caption_contra, auto tries aug->contra->base",
     )
 
-    # NEW: skip by type (comma-separated). Default skips 'abstract'
+    # Skip by type (ignored for u2v)
     p.add_argument(
         "--skip_types",
         type=str,
@@ -139,7 +142,12 @@ def parse_args():
     p.add_argument("--num_frames", type=int, default=121)
     p.add_argument("--fps", type=int, default=24)
     p.add_argument("--steps", type=int, default=50)
-    p.add_argument("--guidance", type=float, default=6.0)
+    p.add_argument(
+        "--guidance",
+        type=float,
+        default=6.0,
+        help="Classifier-free guidance scale. Forced to 1.0 in u2v.",
+    )
     p.add_argument(
         "--negative_prompt",
         type=str,
@@ -171,9 +179,20 @@ def parse_args():
 
     # batching / sharding
     p.add_argument(
-        "--max_videos", type=int, default=None, help="Debug: limit total items."
+        "--max_videos",
+        type=int,
+        default=None,
+        help="Debug: limit total items (ignored for u2v; use --num_uncond).",
     )
     p.add_argument("--verbose", action="store_true")
+
+    # NEW: unconditional controls
+    p.add_argument(
+        "--num_uncond",
+        type=int,
+        default=5000,
+        help="Only for --mode u2v: number of unconditional samples to generate.",
+    )
 
     return p.parse_args()
 
@@ -437,6 +456,99 @@ def main():
         if rank == 0 and args.verbose:
             print(*m, flush=True)
 
+    # Load models early (also needed for T adjustment)
+    pipe, config = load_models(args, device=device)
+    boundary = config["transformer_additional_kwargs"].get("boundary", 0.875)
+
+    # dtype + generator
+    weight_dtype = getattr(torch, args.weight_dtype)
+    base_gen = torch.Generator(device=device)
+
+    # Adjust temporal length to VAE stride
+    T = args.num_frames
+    tcr = pipe.vae.config.temporal_compression_ratio
+    if T != 1:
+        T = int((T - 1) // tcr * tcr + 1)
+
+    if args.enable_riflex:
+        latent_frames = (T - 1) // tcr + 1
+        pipe.transformer.enable_riflex(k=args.riflex_k, L_test=latent_frames)
+        if pipe.transformer_2 is not None:
+            pipe.transformer_2.enable_riflex(k=args.riflex_k, L_test=latent_frames)
+
+    # Build output root
+    mode_dir_map = dict(ti2v="TI2V", t2v="T2V", i2v="I2V", u2v="U2V")
+    mode_dir = mode_dir_map[args.mode]
+
+    # -------------------------
+    # U2V: unconditional path
+    # -------------------------
+    if args.mode == "u2v":
+        if rank == 0 and args.guidance != 1.0 and args.verbose:
+            print(
+                f"[Note] For U2V we set guidance_scale=1.0 (was {args.guidance}).",
+                flush=True,
+            )
+
+        cap_tag = "UNCOND"
+        out_root = Path(args.outdir) / mode_dir / cap_tag
+        if args.prompt_category is not None:
+            out_root = out_root / args.prompt_category
+        out_root.mkdir(parents=True, exist_ok=True)
+
+        # shard unconditional indices across ranks
+        total = args.num_uncond
+        idxs = [i for i in range(total) if i % world_size == rank]
+        _log(f"[Shard] rank {rank} got {len(idxs)} / {total} unconditional samples")
+
+        # generation loop
+        for local_i, idx in enumerate(idxs):
+            seed_i = args.seed + idx
+            fn_stem = f"uncond_seed{seed_i}_idx{idx:05d}"
+            out_path = out_root / f"{fn_stem}.mp4"
+            if args.resume and out_path.exists():
+                _log(f"[Skip] exists: {out_path}")
+                continue
+            if out_path.exists():
+                out_path = make_unique_path(out_path)
+
+            gen = base_gen.manual_seed(seed_i)
+            with torch.no_grad():
+                sample = pipe(
+                    "",  # empty prompt
+                    num_frames=T,
+                    negative_prompt=args.negative_prompt,  # still useful for quality
+                    height=args.height,
+                    width=args.width,
+                    generator=gen,
+                    guidance_scale=1.0,  # force off in u2v
+                    num_inference_steps=args.steps,
+                    boundary=boundary,
+                    video=None,
+                    mask_video=None,
+                    shift=args.shift,
+                ).videos
+
+            out_path.parent.mkdir(parents=True, exist_ok=True)
+            save_videos_grid(sample, str(out_path), fps=args.fps)
+            _log(f"[OK][U2V] {idx:05d} -> {out_path}")
+
+        # Finish
+        if dist.is_initialized():
+            dist.barrier()
+            if rank == 0:
+                print("[Done][U2V] All ranks finished.", flush=True)
+            dist.destroy_process_group()
+        else:
+            print("[Done][U2V] Single process finished.", flush=True)
+        return  # end main()
+
+    # -------------------------
+    # TI2V / T2V / I2V path
+    # -------------------------
+    if not args.dataset_json:
+        raise ValueError("--dataset_json is required unless --mode u2v")
+
     # Load dataset
     with open(args.dataset_json, "r") as f:
         data = json.load(f)
@@ -447,11 +559,8 @@ def main():
     )
 
     # Filter + normalize items
-    # Filter + normalize items
-
     items = []
     for i, it in enumerate(data):
-        # allow either 'file_name' or 'image_path' (or neither for pure T2V)
         has_img_ref = bool((it.get("image_path") or it.get("file_name") or "").strip())
         typ = (it.get("type") or "").strip().lower()
         if typ in skip_set:
@@ -486,7 +595,6 @@ def main():
     )
 
     # Prepare output dir (include caption source subfolder)
-    mode_dir = dict(ti2v="TI2V", t2v="T2V", i2v="I2V")[args.mode]
     # Use the first item’s tag to create the caption-source subfolder; if empty, default BASE
     cap_tag = sharded[0]["cap_tag"] if sharded else "BASE"
     if args.prompt_category is not None:
@@ -494,26 +602,6 @@ def main():
     else:
         out_root = Path(args.outdir) / mode_dir / cap_tag
     out_root.mkdir(parents=True, exist_ok=True)
-
-    # Load models
-    pipe, config = load_models(args, device=device)
-    boundary = config["transformer_additional_kwargs"].get("boundary", 0.875)
-
-    # dtype + generator
-    weight_dtype = getattr(torch, args.weight_dtype)
-    base_gen = torch.Generator(device=device)
-
-    # Adjust temporal length to VAE stride
-    T = args.num_frames
-    tcr = pipe.vae.config.temporal_compression_ratio
-    if T != 1:
-        T = int((T - 1) // tcr * tcr + 1)
-
-    if args.enable_riflex:
-        latent_frames = (T - 1) // tcr + 1
-        pipe.transformer.enable_riflex(k=args.riflex_k, L_test=latent_frames)
-        if pipe.transformer_2 is not None:
-            pipe.transformer_2.enable_riflex(k=args.riflex_k, L_test=latent_frames)
 
     def _slug(s):
         s = s.strip().replace(" ", "_")
@@ -524,7 +612,6 @@ def main():
         prompt = it["caption"] or ""
         cap_tag = it["cap_tag"]  # BASE / AUG / CONTRA
 
-        mode_dir = dict(ti2v="TI2V", t2v="T2V", i2v="I2V")[args.mode]
         if args.prompt_category is not None:
             out_root = Path(args.outdir) / mode_dir / cap_tag / args.prompt_category
         else:
@@ -538,14 +625,14 @@ def main():
             fallback_stem = (
                 Path(tmp_img_path).stem if tmp_img_path else f"sample_{it['id']:05d}"
             )
-        # prompt_stem = (
-        #     slugify(prompt)
-        #     if prompt
-        #     else slugify(fallback_stem or f"sample_{it['id']:05d}")
-        # )
-        # prompt_stem = prompt_stem[:180] if len(prompt_stem) > 180 else prompt_stem
+        prompt_stem = (
+            slugify(prompt)
+            if prompt
+            else slugify(fallback_stem or f"sample_{it['id']:05d}")
+        )
+        prompt_stem = prompt_stem[:180] if len(prompt_stem) > 180 else prompt_stem
 
-        out_path = out_root / f"{prompt}.mp4"
+        out_path = out_root / f"{prompt_stem}.mp4"
         if args.resume and out_path.exists():
             _log(f"[Skip] exists: {out_path}")
             continue
@@ -556,6 +643,7 @@ def main():
         if args.mode == "t2v":
             v_in, m_in, _ = None, None, None
             cond_prompt = prompt
+            g_scale = args.guidance
         elif args.mode == "i2v":
             img_path = resolve_img_path(it, args.images_root)
             if not img_path or not os.path.exists(img_path):
@@ -563,6 +651,7 @@ def main():
                 continue
             v_in, m_in, _ = ensure_latent_video(img_path, T, args.height, args.width)
             cond_prompt = ""
+            g_scale = 1.0  # text-free -> CFG doesn't help
         else:  # ti2v
             img_path = resolve_img_path(it, args.images_root)
             if not img_path or not os.path.exists(img_path):
@@ -570,6 +659,7 @@ def main():
                 continue
             v_in, m_in, _ = ensure_latent_video(img_path, T, args.height, args.width)
             cond_prompt = prompt
+            g_scale = args.guidance
 
         gen = base_gen.manual_seed(args.seed + it["id"])
         with torch.no_grad():
@@ -580,7 +670,7 @@ def main():
                 height=args.height,
                 width=args.width,
                 generator=gen,
-                guidance_scale=args.guidance,
+                guidance_scale=g_scale,
                 num_inference_steps=args.steps,
                 boundary=boundary,
                 video=v_in,
@@ -604,32 +694,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-# # Single GPU, TI2V (image + caption)
-# python generate_videos_ddp.py \
-#   --dataset_json /path/to/vbench_i2v.json \
-#   --images_root /path/to/images \
-#   --outdir /path/to/out \
-#   --mode ti2v --resume --verbose
-
-# # Multi-GPU (e.g., 8x A100), TI2V
-# torchrun --nproc_per_node=8 generate_videos_ddp.py \
-#   --dataset_json /path/to/vbench_i2v.json \
-#   --images_root /path/to/images \
-#   --outdir /path/to/out \
-#   --mode ti2v --resume
-
-# # Generate T2V on the SAME items (using only captions)
-# torchrun --nproc_per_node=8 generate_videos_ddp.py \
-#   --dataset_json /path/to/vbench_i2v.json \
-#   --images_root /path/to/images \
-#   --outdir /path/to/out \
-#   --mode t2v --resume
-
-# # Generate I2V on the SAME items (using only images)
-# torchrun --nproc_per_node=8 generate_videos_ddp.py \
-#   --dataset_json /path/to/vbench_i2v.json \
-#   --images_root /path/to/images \
-#   --outdir /path/to/out \
-#   --mode i2v --resume

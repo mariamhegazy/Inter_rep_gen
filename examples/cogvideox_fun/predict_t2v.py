@@ -3,10 +3,14 @@ import sys
 
 import numpy as np
 import torch
-from diffusers import (CogVideoXDDIMScheduler, DDIMScheduler,
-                       DPMSolverMultistepScheduler,
-                       EulerAncestralDiscreteScheduler, EulerDiscreteScheduler,
-                       PNDMScheduler)
+from diffusers import (
+    CogVideoXDDIMScheduler,
+    DDIMScheduler,
+    DPMSolverMultistepScheduler,
+    EulerAncestralDiscreteScheduler,
+    EulerDiscreteScheduler,
+    PNDMScheduler,
+)
 from PIL import Image
 from transformers import T5EncoderModel
 
@@ -15,16 +19,21 @@ project_roots = [os.path.dirname(current_file_path), os.path.dirname(os.path.dir
 for project_root in project_roots:
     sys.path.insert(0, project_root) if project_root not in sys.path else None
 
-from videox_fun.models import (AutoencoderKLCogVideoX,
-                              CogVideoXTransformer3DModel, T5EncoderModel,
-                              T5Tokenizer)
-from videox_fun.pipeline import (CogVideoXFunPipeline,
-                                CogVideoXFunInpaintPipeline)
-from videox_fun.utils.fp8_optimization import (convert_model_weight_to_float8, replace_parameters_by_name,
-                                              convert_weight_dtype_wrapper)
+from videox_fun.dist import set_multi_gpus_devices, shard_model
+from videox_fun.models import (
+    AutoencoderKLCogVideoX,
+    CogVideoXTransformer3DModel,
+    T5EncoderModel,
+    T5Tokenizer,
+)
+from videox_fun.pipeline import CogVideoXFunInpaintPipeline, CogVideoXFunPipeline
+from videox_fun.utils.fp8_optimization import (
+    convert_model_weight_to_float8,
+    convert_weight_dtype_wrapper,
+    replace_parameters_by_name,
+)
 from videox_fun.utils.lora_utils import merge_lora, unmerge_lora
 from videox_fun.utils.utils import get_image_to_video_latent, save_videos_grid
-from videox_fun.dist import set_multi_gpus_devices, shard_model
 
 # GPU memory mode, which can be chosen in [model_full_load, model_full_load_and_qfloat8, model_cpu_offload, model_cpu_offload_and_qfloat8, sequential_cpu_offload].
 # model_full_load means that the entire model will be moved to the GPU.
@@ -54,7 +63,7 @@ fsdp_text_encoder   = True
 compile_dit         = False
 
 # model path
-model_name          = "models/Diffusion_Transformer/CogVideoX-Fun-V1.1-2b-InP"
+model_name          = "/capstor/scratch/cscs/mhasan/VideoX-Fun-ours/models/CogVideoX-Fun-V1.5-5b-InP"
 
 # Choose the sampler in "Euler" "Euler A" "DPM++" "PNDM" "DDIM_Cog" and "DDIM_Origin"
 sampler_name        = "DDIM_Origin"
@@ -250,6 +259,14 @@ def save_results():
         image.save(video_path)
     else:
         video_path = os.path.join(save_path, prefix + ".mp4")
+        save_videos_grid(sample, video_path, fps=fps)
+
+if ulysses_degree * ring_degree > 1:
+    import torch.distributed as dist
+    if dist.get_rank() == 0:
+        save_results()
+else:
+    save_results()        video_path = os.path.join(save_path, prefix + ".mp4")
         save_videos_grid(sample, video_path, fps=fps)
 
 if ulysses_degree * ring_degree > 1:

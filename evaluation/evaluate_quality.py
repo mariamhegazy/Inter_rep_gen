@@ -28,7 +28,7 @@ def set_all_seeds(seed=0):
     torch.cuda.manual_seed_all(seed)
 
 
-set_all_seeds(1234)
+set_all_seeds(43)
 
 
 # ========== DDP utils ==========
@@ -499,4 +499,4 @@ if __name__ == "__main__":
 # pip install torchmetrics[image]
 
 
-# torchrun --nnodes=1 --nproc_per_node=4 evaluation/evaluate_quality.py   --real_dir /capstor/store/cscs/swissai/a144/datasets/OpenVid-1M/validation   --gen_dir  samples/wan-videos-openvid/TI2V/BASE/   --num_eval 5000   --num_frames 121   --image_size 256   --batch_size 10 --ddp
+# torchrun --nnodes=1 --nproc_per_node=4 evaluation/evaluate_quality.py   --real_dir /capstor/store/cscs/swissai/a144/datasets/OpenVid-1M/validation   --gen_dir  samples/wan-videos-openvid/T2V/BASE  --num_eval 10000   --num_frames 121   --image_size 256   --batch_size 10 --ddp

@@ -1,0 +1,802 @@
+[
+  {
+    "file_name": "A_dog_runs_through_a_field_while_a_cat_climbs_a_tree.png",
+    "caption": "A dog runs through a field while a cat climbs a tree"
+  },
+  {
+    "file_name": "A_fish_swims_gracefully_in_a_tank_as_a_horse_gallops_outside.png",
+    "caption": "A fish swims gracefully in a tank as a horse gallops outside"
+  },
+  {
+    "file_name": "An_elephant_sprays_water_with_its_trunk__a_lion_sitting_nearby.png",
+    "caption": "An elephant sprays water with its trunk, a lion sitting nearby"
+  },
+  {
+    "file_name": "A_panda_eats_bamboo_while_a_monkey_swings_from_branch_to_branch.png",
+    "caption": "A panda eats bamboo while a monkey swings from branch to branch"
+  },
+  {
+    "file_name": "A_deer_grazes_in_the_meadow_as_a_rabbit_hops_by.png",
+    "caption": "A deer grazes in the meadow as a rabbit hops by"
+  },
+  {
+    "file_name": "A_kangaroo_bounds_across_the_plain_and_a_cow_grazes.png",
+    "caption": "A kangaroo bounds across the plain and a cow grazes"
+  },
+  {
+    "file_name": "A_chicken_pecks_at_the_ground__a_bee_flies_overhead.png",
+    "caption": "A chicken pecks at the ground, a bee flies overhead"
+  },
+  {
+    "file_name": "A_snail_crosses_the_path_as_a_butterfly_flutters_above.png",
+    "caption": "A snail crosses the path as a butterfly flutters above"
+  },
+  {
+    "file_name": "A_penguin_waddles_on_the_ice__a_camel_treks_by.png",
+    "caption": "A penguin waddles on the ice, a camel treks by"
+  },
+  {
+    "file_name": "A_squirrel_scurries_up_a_tree_as_a_bat_flies_out_from_the_leaves.png",
+    "caption": "A squirrel scurries up a tree as a bat flies out from the leaves"
+  },
+  {
+    "file_name": "A_frog_jumps_from_lily_to_lily__a_swan_swims_nearby.png",
+    "caption": "A frog jumps from lily to lily, a swan swims nearby"
+  },
+  {
+    "file_name": "A_cat_sits_on_a_windowsill_and_a_dog_plays_in_the_yard.png",
+    "caption": "A cat sits on a windowsill and a dog plays in the yard"
+  },
+  {
+    "file_name": "A_horse_walks_in_the_field_and_a_rabbit_nibbles_on_grass.png",
+    "caption": "A horse walks in the field and a rabbit nibbles on grass"
+  },
+  {
+    "file_name": "A_monkey_plays_with_fruit__a_deer_grazes_nearby.png",
+    "caption": "A monkey plays with fruit, a deer grazes nearby"
+  },
+  {
+    "file_name": "A_rabbit_digs_a_hole__a_kangaroo_bounds_nearby.png",
+    "caption": "A rabbit digs a hole, a kangaroo bounds nearby"
+  },
+  {
+    "file_name": "A_bee_lands_on_a_flower_and_a_butterfly_dances_around_the_petals.png",
+    "caption": "A bee lands on a flower and a butterfly dances around the petals"
+  },
+  {
+    "file_name": "A_butterfly_flies_from_flower_to_flower__a_bird_flies_from_above.png",
+    "caption": "A butterfly flies from flower to flower, a bird flies from above"
+  },
+  {
+    "file_name": "A_penguin_dives_into_cold_waters_and_a_seal_surfaces.png",
+    "caption": "A penguin dives into cold waters and a seal surfaces"
+  },
+  {
+    "file_name": "A_squirrel_gathers_nuts_and_a_bat_hangs_from_a_tree_branch.png",
+    "caption": "A squirrel gathers nuts and a bat hangs from a tree branch"
+  },
+  {
+    "file_name": "A_dolphin_jumps_while_a_shark_lurks_beneath_the_waves.png",
+    "caption": "A dolphin jumps while a shark lurks beneath the waves"
+  },
+  {
+    "file_name": "A_mouse_sneaks_cheese_from_the_kitchen__a_cat_lies_in_wait.png",
+    "caption": "A mouse sneaks cheese from the kitchen, a cat lies in wait"
+  },
+  {
+    "file_name": "A_duck_swims_in_the_pond_and_a_frog_hops_onto_a_lily_pad.png",
+    "caption": "A duck swims in the pond and a frog hops onto a lily pad"
+  },
+  {
+    "file_name": "A_dog_plays_guitar_while_a_cat_takes_a_selfie.png",
+    "caption": "A dog plays guitar while a cat takes a selfie"
+  },
+  {
+    "file_name": "A_horse_listens_to_music_with_headphones_and_a_cow_eats_pizza.png",
+    "caption": "A horse listens to music with headphones and a cow eats pizza"
+  },
+  {
+    "file_name": "An_elephant_lifts_weights_while_a_lion_wears_VR_goggles.png",
+    "caption": "An elephant lifts weights while a lion wears VR goggles"
+  },
+  {
+    "file_name": "A_kangaroo_boxes_in_a_ring_while_a_sheep_jumps_rope.png",
+    "caption": "A kangaroo boxes in a ring while a sheep jumps rope"
+  },
+  {
+    "file_name": "A_pig_cooks_in_a_chef_s_hat_and_a_chicken_tastes_the_sauce.png",
+    "caption": "A pig cooks in a chef's hat and a chicken tastes the sauce"
+  },
+  {
+    "file_name": "A_snail_races_slowly_in_a_miniature_car__a_butterfly_flies_alongside.png",
+    "caption": "A snail races slowly in a miniature car, a butterfly flies alongside"
+  },
+  {
+    "file_name": "A_penguin_slides_down_a_snowy_slope_and_a_seal_claps.png",
+    "caption": "A penguin slides down a snowy slope and a seal claps"
+  },
+  {
+    "file_name": "A_wolf_howls_into_a_microphone_and_a_fox_plays_the_drums.png",
+    "caption": "A wolf howls into a microphone and a fox plays the drums"
+  },
+  {
+    "file_name": "A_squirrel_types_on_a_laptop_and_a_bat_hangs_from_a_charging_cable.png",
+    "caption": "A squirrel types on a laptop and a bat hangs from a charging cable"
+  },
+  {
+    "file_name": "A_dolphin_paints_underwater_on_canvas_and_a_shark_swims_nearby.png",
+    "caption": "A dolphin paints underwater on canvas and a shark swims nearby"
+  },
+  {
+    "file_name": "A_parrot_hosts_a_talk_show_and_a_duck_claps.png",
+    "caption": "A parrot hosts a talk show and a duck claps"
+  },
+  {
+    "file_name": "A_cat_DJ_at_a_party__a_dog_dances_with_glow_sticks.png",
+    "caption": "A cat DJ at a party, a dog dances with glow sticks"
+  },
+  {
+    "file_name": "A_rabbit_hosts_a_magic_show_and_a_kangaroo_watches_in_awe.png",
+    "caption": "A rabbit hosts a magic show and a kangaroo watches in awe"
+  },
+  {
+    "file_name": "A_sheep_knits_a_sweater_and_a_chicken_models_the_outfit.png",
+    "caption": "A sheep knits a sweater and a chicken models the outfit"
+  },
+  {
+    "file_name": "A_bee_conducts_an_orchestra_of_flowers_and_a_butterfly_flutters_to_the_beat.png",
+    "caption": "A bee conducts an orchestra of flowers and a butterfly flutters to the beat"
+  },
+  {
+    "file_name": "A_squirrel_is_cooking_and_a_bat_tastes_the_dishes.png",
+    "caption": "A squirrel is cooking and a bat tastes the dishes"
+  },
+  {
+    "file_name": "A_frog_plays_drums_on_lily_pads__a_snail_sways_along_with_the_beats.png",
+    "caption": "A frog plays drums on lily pads, a snail sways along with the beats"
+  },
+  {
+    "file_name": "A_crow_writes_a_novel_and_a_parrot_reads_a_book.png",
+    "caption": "A crow writes a novel and a parrot reads a book"
+  },
+  {
+    "file_name": "A_parrot_rides_a_skateboard_and_a_duck_takes_a_photo.png",
+    "caption": "A parrot rides a skateboard and a duck takes a photo"
+  },
+  {
+    "file_name": "A_monkey_juggles_bananas__a_teddy_bear_is_surprised.png",
+    "caption": "A monkey juggles bananas, a teddy bear is surprised"
+  },
+  {
+    "file_name": "A_teddy_bear_plays_a_guitar_and_a_kangaroo_hops_in_rhythm.png",
+    "caption": "A teddy bear plays a guitar and a kangaroo hops in rhythm"
+  },
+  {
+    "file_name": "A_monkey_in_a_pilot_jacket_and_a_parrot_with_aviator_goggles_ready_for_flight.png",
+    "caption": "A monkey in a pilot jacket and a parrot with aviator goggles ready for flight"
+  },
+  {
+    "file_name": "A_horse_dons_a_top_hat_and_a_cow_wears_a_bow_tie_at_a_barn_dance.png",
+    "caption": "A horse dons a top hat and a cow wears a bow tie at a barn dance"
+  },
+  {
+    "file_name": "A_man_jogs_through_the_park_and_a_dog_fetches_a_stick.png",
+    "caption": "A man jogs through the park and a dog fetches a stick"
+  },
+  {
+    "file_name": "A_woman_reads_a_book_and_a_cat_naps_on_the_sofa.png",
+    "caption": "A woman reads a book and a cat naps on the sofa"
+  },
+  {
+    "file_name": "A_child_blows_bubbles_and_a_fish_swims_around_in_a_bowl.png",
+    "caption": "A child blows bubbles and a fish swims around in a bowl"
+  },
+  {
+    "file_name": "A_kid_climbs_a_tree__a_horse_grazes_nearby.png",
+    "caption": "A kid climbs a tree, a horse grazes nearby"
+  },
+  {
+    "file_name": "A_person_is_painting_and_an_elephant_waves_its_trunk.png",
+    "caption": "A person is painting and an elephant waves its trunk"
+  },
+  {
+    "file_name": "A_man_cooks_dinner_and_a_dog_lounges_in_the_sun.png",
+    "caption": "A man cooks dinner and a dog lounges in the sun"
+  },
+  {
+    "file_name": "A_woman_gardens_and_a_panda_munches_on_bamboo.png",
+    "caption": "A woman gardens and a panda munches on bamboo"
+  },
+  {
+    "file_name": "A_child_plays_on_a_swing__a_monkey_dangles_from_branches.png",
+    "caption": "A child plays on a swing, a monkey dangles from branches"
+  },
+  {
+    "file_name": "A_person_rides_a_bicycle__a_rabbit_hops_alongside_the_path.png",
+    "caption": "A person rides a bicycle, a rabbit hops alongside the path"
+  },
+  {
+    "file_name": "A_woman_walks_and_a_cow_is_chewing_grass.png",
+    "caption": "A woman walks and a cow is chewing grass"
+  },
+  {
+    "file_name": "A_kid_flies_a_kite_and_a_sheep_grazes_under_the_sky.png",
+    "caption": "A kid flies a kite and a sheep grazes under the sky"
+  },
+  {
+    "file_name": "A_person_sketches_in_a_park_and_a_chicken_lays_an_egg.png",
+    "caption": "A person sketches in a park and a chicken lays an egg"
+  },
+  {
+    "file_name": "A_woman_waters_plants_and_a_snail_crawls_along_the_pot.png",
+    "caption": "A woman waters plants and a snail crawls along the pot"
+  },
+  {
+    "file_name": "A_kid_and_a_penguin_watch_a_movie_in_the_cinema.png",
+    "caption": "A kid and a penguin watch a movie in the cinema"
+  },
+  {
+    "file_name": "A_person_makes_coffee_and_a_camel_stands_outside_the_window.png",
+    "caption": "A person makes coffee and a camel stands outside the window"
+  },
+  {
+    "file_name": "A_man_takes_photos_and_a_boy_dances_on_the_street.png",
+    "caption": "A man takes photos and a boy dances on the street"
+  },
+  {
+    "file_name": "A_child_picks_apples_and_a_squirrel_gathers_nuts_in_the_orchard.png",
+    "caption": "A child picks apples and a squirrel gathers nuts in the orchard"
+  },
+  {
+    "file_name": "A_kid_plays_piano_and_a_bat_hangs_from_the_ceiling.png",
+    "caption": "A kid plays piano and a bat hangs from the ceiling"
+  },
+  {
+    "file_name": "A_person_swims_in_a_lake__a_dolphin_jumps_nearby.png",
+    "caption": "A person swims in a lake, a dolphin jumps nearby"
+  },
+  {
+    "file_name": "A_man_teaches_math_and_a_mouse_scurries_around_the_classroom.png",
+    "caption": "A man teaches math and a mouse scurries around the classroom"
+  },
+  {
+    "file_name": "A_woman_bakes_cookies_and_a_frog_hops_on_the_kitchen_window.png",
+    "caption": "A woman bakes cookies and a frog hops on the kitchen window"
+  },
+  {
+    "file_name": "A_person_rows_a_boat__a_duck_swims_alongside.png",
+    "caption": "A person rows a boat, a duck swims alongside"
+  },
+  {
+    "file_name": "A_man_fixes_a_bike__a_dog_sits_beside.png",
+    "caption": "A man fixes a bike, a dog sits beside"
+  },
+  {
+    "file_name": "A_woman_knits_a_sweater_and_a_cat_plays_with_the_yarn.png",
+    "caption": "A woman knits a sweater and a cat plays with the yarn"
+  },
+  {
+    "file_name": "A_child_throws_a_frisbee_and_a_fish_splashes_in_a_nearby_pond.png",
+    "caption": "A child throws a frisbee and a fish splashes in a nearby pond"
+  },
+  {
+    "file_name": "A_man_sets_up_a_telescope_and_a_lion_rests_under_the_stars.png",
+    "caption": "A man sets up a telescope and a lion rests under the stars"
+  },
+  {
+    "file_name": "A_woman_practices_yoga_and_a_panda_relaxes_under_a_tree.png",
+    "caption": "A woman practices yoga and a panda relaxes under a tree"
+  },
+  {
+    "file_name": "A_man_jogs_and_a_car_drives_on_the_road.png",
+    "caption": "A man jogs and a car drives on the road"
+  },
+  {
+    "file_name": "A_woman_rides_a_bicycle_and_a_drone_hovers_above_capturing_the_scene.png",
+    "caption": "A woman rides a bicycle and a drone hovers above capturing the scene"
+  },
+  {
+    "file_name": "A_dog_chases_after_a_balloon_drifting_in_the_wind.png",
+    "caption": "A dog chases after a balloon drifting in the wind"
+  },
+  {
+    "file_name": "A_cat_skates_on_a_skateboard__chasing_a_rolling_ball.png",
+    "caption": "A cat skates on a skateboard, chasing a rolling ball"
+  },
+  {
+    "file_name": "A_fish_swims_in_a_tank_and_a_model_boat_floats_above.png",
+    "caption": "A fish swims in a tank and a model boat floats above"
+  },
+  {
+    "file_name": "A_horse_races_alongside_a_moving_train.png",
+    "caption": "A horse races alongside a moving train"
+  },
+  {
+    "file_name": "A_deer_grazes_as_a_motorcycle_speeds_along_a_nearby_road.png",
+    "caption": "A deer grazes as a motorcycle speeds along a nearby road"
+  },
+  {
+    "file_name": "A_rabbit_hops_near_a_rotating_windmill.png",
+    "caption": "A rabbit hops near a rotating windmill"
+  },
+  {
+    "file_name": "A_kangaroo_bounds_alongside_a_moving_bus.png",
+    "caption": "A kangaroo bounds alongside a moving bus"
+  },
+  {
+    "file_name": "The_sun_rises_above_the_horizon_and_a_ship_sails_across_the_sea.png",
+    "caption": "The sun rises above the horizon and a ship sails across the sea"
+  },
+  {
+    "file_name": "A_sheep_walks_on_the_grass_as_a_hot_air_balloon_floats_overhead.png",
+    "caption": "A sheep walks on the grass as a hot air balloon floats overhead"
+  },
+  {
+    "file_name": "A_penguin_waddles_as_a_ship_cruises_in_the_distance.png",
+    "caption": "A penguin waddles as a ship cruises in the distance"
+  },
+  {
+    "file_name": "A_camel_walks_through_the_desert__a_car_drives_in_the_background.png",
+    "caption": "A camel walks through the desert, a car drives in the background"
+  },
+  {
+    "file_name": "A_bat_flies_out_of_a_cave_as_a_helicopter_flies_overhead.png",
+    "caption": "A bat flies out of a cave as a helicopter flies overhead"
+  },
+  {
+    "file_name": "A_dolphin_jumps_next_to_a_speeding_boat.png",
+    "caption": "A dolphin jumps next to a speeding boat"
+  },
+  {
+    "file_name": "A_frog_jumps_onto_a_lily_pad__a_toy_boat_passes_by.png",
+    "caption": "A frog jumps onto a lily pad, a toy boat passes by"
+  },
+  {
+    "file_name": "A_duck_swims_in_a_pond_and_a_model_ship_floats_nearby.png",
+    "caption": "A duck swims in a pond and a model ship floats nearby"
+  },
+  {
+    "file_name": "A_child_plays_toys__a_robot_walks_around.png",
+    "caption": "A child plays toys, a robot walks around"
+  },
+  {
+    "file_name": "A_kid_throws_stones_and_a_ferris_wheel_slowly_rotates.png",
+    "caption": "A kid throws stones and a ferris wheel slowly rotates"
+  },
+  {
+    "file_name": "A_person_rows_a_boat_and_a_duck_paddles_alongside.png",
+    "caption": "A person rows a boat and a duck paddles alongside"
+  },
+  {
+    "file_name": "A_bird_sits_on_a_branch_while_a_squirrel_climbs_the_tree.png",
+    "caption": "A bird sits on a branch while a squirrel climbs the tree"
+  },
+  {
+    "file_name": "A_dolphin_leaps_out_of_the_water_as_a_shark_glides_beneath_the_waves.png",
+    "caption": "A dolphin leaps out of the water as a shark glides beneath the waves"
+  },
+  {
+    "file_name": "A_boy_plays_basketball_and_a_girl_jumps_rope.png",
+    "caption": "A boy plays basketball and a girl jumps rope"
+  },
+  {
+    "file_name": "A_peacock_fans_its_feathers_while_a_rabbit_nibbles_on_clover.png",
+    "caption": "A peacock fans its feathers while a rabbit nibbles on clover"
+  },
+  {
+    "file_name": "A_penguin_slides_on_the_ice_while_a_seal_lounges_nearby.png",
+    "caption": "A penguin slides on the ice while a seal lounges nearby"
+  },
+  {
+    "file_name": "A_cow_grazes_in_a_pasture_while_a_dog_herds_sheep_nearby.png",
+    "caption": "A cow grazes in a pasture while a dog herds sheep nearby"
+  },
+  {
+    "file_name": "A_flamingo_balances_on_one_leg_and_a_woman_takes_photos.png",
+    "caption": "A flamingo balances on one leg and a woman takes photos"
+  },
+  {
+    "file_name": "A_kangaroo_hops_across_the_plain_while_an_emu_strides_beside_it.png",
+    "caption": "A kangaroo hops across the plain while an emu strides beside it"
+  },
+  {
+    "file_name": "A_car_is_driving_down_the_street_while_a_dog_is_barking_at_a_passerby..png",
+    "caption": "A car is driving down the street while a dog is barking at a passerby."
+  },
+  {
+    "file_name": "A_robot_is_fixing_a_malfunctioning_light_while_a_dog_is_chasing_its_tail_in_the_backyard..png",
+    "caption": "A robot is fixing a malfunctioning light while a dog is chasing its tail in the backyard."
+  },
+  {
+    "file_name": "A_tree_is_swaying_in_the_wind_while_a_fish_is_swimming_in_a_pond_below..png",
+    "caption": "A tree is swaying in the wind while a fish is swimming in a pond below."
+  },
+  {
+    "file_name": "A_spaceship_is_launching_into_the_sky_while_a_deer_is_grazing_in_the_meadow_below..png",
+    "caption": "A spaceship is launching into the sky while a deer is grazing in the meadow below."
+  },
+  {
+    "file_name": "A_bike_is_racing_down_the_street_as_a_butterfly_is_fluttering_above_the_flowers..png",
+    "caption": "A bike is racing down the street as a butterfly is fluttering above the flowers."
+  },
+  {
+    "file_name": "A_rock_is_rolling_down_a_hill_as_a_panda_is_climbing_a_bamboo_tree..png",
+    "caption": "A rock is rolling down a hill as a panda is climbing a bamboo tree."
+  },
+  {
+    "file_name": "A_bed_is_covered_in_a_soft_blanket_while_a_puppy_is_playing_with_a_toy_on_the_floor..png",
+    "caption": "A bed is covered in a soft blanket while a puppy is playing with a toy on the floor."
+  },
+  {
+    "file_name": "A_football_is_being_kicked_across_the_field_while_a_sparrow_is_pecking_at_seeds..png",
+    "caption": "A football is being kicked across the field while a sparrow is pecking at seeds."
+  },
+  {
+    "file_name": "A_frog_is_hopping_through_the_marsh_while_a_kite_is_soaring_above_the_fields..png",
+    "caption": "A frog is hopping through the marsh while a kite is soaring above the fields."
+  },
+  {
+    "file_name": "A_fireplace_is_crackling_with_flames_while_a_motorcycle_is_racing_down_the_highway..png",
+    "caption": "A fireplace is crackling with flames while a motorcycle is racing down the highway."
+  },
+  {
+    "file_name": "A_squirrel_is_climbing_a_tree_as_a_swan_is_floating_on_the_pond_nearby..png",
+    "caption": "A squirrel is climbing a tree as a swan is floating on the pond nearby."
+  },
+  {
+    "file_name": "A_canoe_is_drifting_down_the_river_as_a_toddler_is_running_in_the_park..png",
+    "caption": "A canoe is drifting down the river as a toddler is running in the park."
+  },
+  {
+    "file_name": "A_robot_is_painting_a_mural_on_a_brick_wall__while_a_cat_is_leaping_onto_a_nearby_ledge..png",
+    "caption": "A robot is painting a mural on a brick wall, while a cat is leaping onto a nearby ledge."
+  },
+  {
+    "file_name": "A_kite_is_soaring_high_in_the_sky__while_a_dog_is_chasing_after_a_ball_on_the_grassy_field_below..png",
+    "caption": "A kite is soaring high in the sky, while a dog is chasing after a ball on the grassy field below."
+  },
+  {
+    "file_name": "A_ship_is_sailing_through_the_waves__while_a_seagull_is_gliding_above_the_deck..png",
+    "caption": "A ship is sailing through the waves, while a seagull is gliding above the deck."
+  },
+  {
+    "file_name": "A_bicycle_is_cruising_down_a_street__while_a_squirrel_is_scampering_up_a_tree_trunk..png",
+    "caption": "A bicycle is cruising down a street, while a squirrel is scampering up a tree trunk."
+  },
+  {
+    "file_name": "A_dolphin_is_leaping_out_of_the_water__while_a_boat_is_gliding_through_the_waves..png",
+    "caption": "A dolphin is leaping out of the water, while a boat is gliding through the waves."
+  },
+  {
+    "file_name": "A_rabbit_is_hopping_across_the_meadow__while_a_butterfly_is_dancing_above_a_patch_of_blooming_daisies..png",
+    "caption": "A rabbit is hopping across the meadow, while a butterfly is dancing above a patch of blooming daisies."
+  },
+  {
+    "file_name": "A_truck_is_rumbling_along_the_road__while_a_sheep_is_grazing_in_a_nearby_field..png",
+    "caption": "A truck is rumbling along the road, while a sheep is grazing in a nearby field."
+  },
+  {
+    "file_name": "A_baby_is_giggling__while_a_puppy_is_wagging_its_tail..png",
+    "caption": "A baby is giggling, while a puppy is wagging its tail."
+  },
+  {
+    "file_name": "A_penguin_is_sliding_on_its_belly_across_the_ice__while_a_polar_bear_is_lumbering_along_the_snowy_shore..png",
+    "caption": "A penguin is sliding on its belly across the ice, while a polar bear is lumbering along the snowy shore."
+  },
+  {
+    "file_name": "A_cat_is_stretching_on_a_sunlit_windowsill__while_a_dog_is_digging_in_the_garden..png",
+    "caption": "A cat is stretching on a sunlit windowsill, while a dog is digging in the garden."
+  },
+  {
+    "file_name": "A_spaceship_is_ascending_into_the_sky__while_a_meteor_is_streaking_across_the_heavens..png",
+    "caption": "A spaceship is ascending into the sky, while a meteor is streaking across the heavens."
+  },
+  {
+    "file_name": "A_crane_is_lifting_heavy_beams_at_the_construction_site__while_a_pigeon_is_strutting_along_the_sidewalk..png",
+    "caption": "A crane is lifting heavy beams at the construction site, while a pigeon is strutting along the sidewalk."
+  },
+  {
+    "file_name": "A_cowboy_is_riding_his_horse_across_the_open_plain__while_a_bird_is_circling_overhead..png",
+    "caption": "A cowboy is riding his horse across the open plain, while a bird is circling overhead."
+  },
+  {
+    "file_name": "A_plane_is_soaring_high_above_the_clouds__while_a_parachutist_is_descending_slowly_with_a_colorful_canopy..png",
+    "caption": "A plane is soaring high above the clouds, while a parachutist is descending slowly with a colorful canopy."
+  },
+  {
+    "file_name": "A_musician_is_strumming_a_guitar_on_stage__while_a_dancer_is_twirling_gracefully_under_the_spotlight..png",
+    "caption": "A musician is strumming a guitar on stage, while a dancer is twirling gracefully under the spotlight."
+  },
+  {
+    "file_name": "A_runner_is_sprinting_down_the_track__while_a_coach_is_yelling_encouragement_from_the_sidelines..png",
+    "caption": "A runner is sprinting down the track, while a coach is yelling encouragement from the sidelines."
+  },
+  {
+    "file_name": "An_orange_is_rolling_off_the_kitchen_counter__while_a_knife_is_lying_on_the_cutting_board..png",
+    "caption": "An orange is rolling off the kitchen counter, while a knife is lying on the cutting board."
+  },
+  {
+    "file_name": "A_fish_is_swimming_in_the_water__while_a_frog_is_hopping_onto_a_lily_pad..png",
+    "caption": "A fish is swimming in the water, while a frog is hopping onto a lily pad."
+  },
+  {
+    "file_name": "A_train_is_chugging_through_the_valley__while_a_cow_is_grazing_peacefully_in_the_meadow..png",
+    "caption": "A train is chugging through the valley, while a cow is grazing peacefully in the meadow."
+  },
+  {
+    "file_name": "A_boat_is_floating_quietly_on_the_lake__while_a_duck_is_wading_along_the_shore..png",
+    "caption": "A boat is floating quietly on the lake, while a duck is wading along the shore."
+  },
+  {
+    "file_name": "A_bottle_is_rolling_across_the_picnic_table__while_an_ant_is_crawling_toward_the_food..png",
+    "caption": "A bottle is rolling across the picnic table, while an ant is crawling toward the food."
+  },
+  {
+    "file_name": "An_apple_is_falling_from_the_tree__while_a_monkey_is_climbing_up_the_tree..png",
+    "caption": "An apple is falling from the tree, while a monkey is climbing up the tree."
+  },
+  {
+    "file_name": "A_rocket_is_blasting_off_into_space__while_an_astronaut_is_waving_from_the_launch_platform..png",
+    "caption": "A rocket is blasting off into space, while an astronaut is waving from the launch platform."
+  },
+  {
+    "file_name": "An_umbrella_is_fluttering_in_the_strong_wind__while_a_bus_is_waiting_at_the_crowded_bus_stop..png",
+    "caption": "An umbrella is fluttering in the strong wind, while a bus is waiting at the crowded bus stop."
+  },
+  {
+    "file_name": "A_flag_is_fluttering_in_the_strong_wind__while_a_leaf_is_twisting_and_turning_in_the_breeze..png",
+    "caption": "A flag is fluttering in the strong wind, while a leaf is twisting and turning in the breeze."
+  },
+  {
+    "file_name": "A_bus_is_crossing_the_bridge__while_a_boat_is_floating_in_the_river_below..png",
+    "caption": "A bus is crossing the bridge, while a boat is floating in the river below."
+  },
+  {
+    "file_name": "A_bottle_is_floating_down_the_river__while_a_fish_is_jumping_out_of_the_water..png",
+    "caption": "A bottle is floating down the river, while a fish is jumping out of the water."
+  },
+  {
+    "file_name": "A_snowboarder_is_sliding_down_the_snowy_slope__while_a_bear_is_walking_through_the_forest_nearby..png",
+    "caption": "A snowboarder is sliding down the snowy slope, while a bear is walking through the forest nearby."
+  },
+  {
+    "file_name": "A_cow_is_chewing_on_grass_in_the_field__while_a_tractor_is_plowing_the_soil_nearby..png",
+    "caption": "A cow is chewing on grass in the field, while a tractor is plowing the soil nearby."
+  },
+  {
+    "file_name": "A_jellyfish_is_drifting_gracefully_through_the_water__while_a_shark_is_gliding_silently_below..png",
+    "caption": "A jellyfish is drifting gracefully through the water, while a shark is gliding silently below."
+  },
+  {
+    "file_name": "A_vase_is_holding_fresh-cut_flowers__while_a_bee_is_buzzing_nearby..png",
+    "caption": "A vase is holding fresh-cut flowers, while a bee is buzzing nearby."
+  },
+  {
+    "file_name": "A_seagull_is_swooping_low_over_the_water__while_a_surfboard_is_carving_through_the_waves..png",
+    "caption": "A seagull is swooping low over the water, while a surfboard is carving through the waves."
+  },
+  {
+    "file_name": "A_girl_is_running_along_the_sidewalk__while_a_butterfly_is_fluttering..png",
+    "caption": "A girl is running along the sidewalk, while a butterfly is fluttering."
+  },
+  {
+    "file_name": "A_woman_is_watering_her_garden_with_a_hose__while_a_cat_is_walking_nearby..png",
+    "caption": "A woman is watering her garden with a hose, while a cat is walking nearby."
+  },
+  {
+    "file_name": "A_man_is_reading_a_newspaper_on_a_park_bench__while_a_squirrel_is_climbing_a_tree..png",
+    "caption": "A man is reading a newspaper on a park bench, while a squirrel is climbing a tree."
+  },
+  {
+    "file_name": "A_woman_is_walking_with_a_briefcase_in_hand__while_a_car_is_passing_by_on_the_busy_street..png",
+    "caption": "A woman is walking with a briefcase in hand, while a car is passing by on the busy street."
+  },
+  {
+    "file_name": "A_girl_is_playing_the_piano_in_the_living_room__while_a_boy_is_playing_the_guitar..png",
+    "caption": "A girl is playing the piano in the living room, while a boy is playing the guitar."
+  },
+  {
+    "file_name": "A_boy_is_climbing_a_tree_in_the_yard__while_a_cat_is_drinking_water_from_a_bowl..png",
+    "caption": "A boy is climbing a tree in the yard, while a cat is drinking water from a bowl."
+  },
+  {
+    "file_name": "A_man_is_fishing_by_the_lake__while_a_duck_is_paddling_past_him_on_the_water..png",
+    "caption": "A man is fishing by the lake, while a duck is paddling past him on the water."
+  },
+  {
+    "file_name": "A_girl_is_blowing_bubbles_in_the_yard__while_a_puppy_is_jumping..png",
+    "caption": "A girl is blowing bubbles in the yard, while a puppy is jumping."
+  },
+  {
+    "file_name": "A_boy_is_skateboarding_down_the_street__while_a_man_is_jogging_nearby..png",
+    "caption": "A boy is skateboarding down the street, while a man is jogging nearby."
+  },
+  {
+    "file_name": "A_man_is_rowing_a_canoe_across_the_lake__while_a_boy_is_waving_from_the_dock..png",
+    "caption": "A man is rowing a canoe across the lake, while a boy is waving from the dock."
+  },
+  {
+    "file_name": "A_girl_is_feeding_ducks_at_the_pond__while_a_mother_is_holding_her_baby..png",
+    "caption": "A girl is feeding ducks at the pond, while a mother is holding her baby."
+  },
+  {
+    "file_name": "A_boy_is_riding_his_scooter_down_the_sidewalk__while_a_mailman_is_delivering_letters_to_nearby_houses..png",
+    "caption": "A boy is riding his scooter down the sidewalk, while a mailman is delivering letters to nearby houses."
+  },
+  {
+    "file_name": "A_baby_is_crawling_across_the_living_room_floor__while_a_kitten_is_jumping_up..png",
+    "caption": "A baby is crawling across the living room floor, while a kitten is jumping up."
+  },
+  {
+    "file_name": "A_pirate_is_digging_for_treasure_on_the_beach__while_a_parrot_is_perched_on_a_tree..png",
+    "caption": "A pirate is digging for treasure on the beach, while a parrot is perched on a tree."
+  },
+  {
+    "file_name": "A_prince_is_riding_through_the_forest_on_his_horse__while_an_eagle_is_soaring_above..png",
+    "caption": "A prince is riding through the forest on his horse, while an eagle is soaring above."
+  },
+  {
+    "file_name": "A_toddler_is_playing_with_building_blocks_on_the_living_room_floor__while_a_dog_is_napping_in_the_sunbeam..png",
+    "caption": "A toddler is playing with building blocks on the living room floor, while a dog is napping in the sunbeam."
+  },
+  {
+    "file_name": "A_child_is_wading_through_the_shallow_creek__while_a_dragonfly_is_flying_nearby..png",
+    "caption": "A child is wading through the shallow creek, while a dragonfly is flying nearby."
+  },
+  {
+    "file_name": "A_man_is_vacuuming_the_living_room_carpet__while_a_dog_is_trotting_around..png",
+    "caption": "A man is vacuuming the living room carpet, while a dog is trotting around."
+  },
+  {
+    "file_name": "A_butterfly_is_flitting_from_one_flower_to_the_next__while_a_gardener_is_trimming_the_hedges_carefully..png",
+    "caption": "A butterfly is flitting from one flower to the next, while a gardener is trimming the hedges carefully."
+  },
+  {
+    "file_name": "A_baby_is_crawling_across_the_living_room_floor__while_a_kitten_is_jumping_up..png",
+    "caption": "A baby is crawling on the playground, while a puppy is rolling around in the grass."
+  },
+  {
+    "file_name": "A_man_is_trekking_up_the_mountain__while_an_owl_is_soaring_in_the_sky..png",
+    "caption": "A man is trekking up the mountain, while an owl is soaring in the sky."
+  },
+  {
+    "file_name": "A_woman_is_turning_pages_of_her_favorite_book__while_a_dog_is_lying_on_the_floor..png",
+    "caption": "A woman is turning pages of her favorite book, while a dog is lying on the floor."
+  },
+  {
+    "file_name": "A_child_is_fleeing_from_the_waves_at_the_beach__while_a_seagull_is_swooping_down_to_catch_a_fish..png",
+    "caption": "A child is fleeing from the waves at the beach, while a seagull is swooping down to catch a fish."
+  },
+  {
+    "file_name": "A_dog_running_through_a_field_while_a_bird_flying_across_the_sky..png",
+    "caption": "A dog running through a field while a bird flying across the sky."
+  },
+  {
+    "file_name": "A_chef_cooking_in_a_bustling_kitchen_while_a_waiter_carrying_a_tray_of_dishes..png",
+    "caption": "A chef cooking in a bustling kitchen while a waiter carrying a tray of dishes."
+  },
+  {
+    "file_name": "A_dancer_spinning_gracefully_on_stage_while_a_musician_playing_the_violin..png",
+    "caption": "A dancer spinning gracefully on stage while a musician playing the violin."
+  },
+  {
+    "file_name": "A_child_jumping_in_a_puddle_while_a_kite_floating_in_the_air..png",
+    "caption": "A child jumping in a puddle while a kite floating in the air."
+  },
+  {
+    "file_name": "A_lion_prowling_in_the_grass_while_an_elephant_walking_nearby..png",
+    "caption": "A lion prowling in the grass while an elephant walking nearby."
+  },
+  {
+    "file_name": "A_farmer_plowing_the_field_while_a_horse_galloping_in_the_pasture..png",
+    "caption": "A farmer plowing the field while a horse galloping in the pasture."
+  },
+  {
+    "file_name": "A_teacher_explaining_a_lesson_while_a_student_taking_notes..png",
+    "caption": "A teacher explaining a lesson while a student taking notes."
+  },
+  {
+    "file_name": "A_deer_grazing_in_a_meadow_while_a_rabbit_hopping_nearby..png",
+    "caption": "A deer grazing in a meadow while a rabbit hopping nearby."
+  },
+  {
+    "file_name": "A_gardener_pruning_roses_while_a_cat_strolling_through_the_garden..png",
+    "caption": "A gardener pruning roses while a cat strolling through the garden."
+  },
+  {
+    "file_name": "A_child_drawing_with_chalk_while_a_butterfly_fluttering_around..png",
+    "caption": "A child drawing with chalk while a butterfly fluttering around."
+  },
+  {
+    "file_name": "A_fan_spinning_in_a_living_room_while_a_cupcake_melting_in_the_heat..png",
+    "caption": "A fan spinning in a living room while a cupcake melting in the heat."
+  },
+  {
+    "file_name": "A_car_speeding_down_the_highway_while_a_painter_mixing_colors_on_a_palette..png",
+    "caption": "A car speeding down the highway while a painter mixing colors on a palette."
+  },
+  {
+    "file_name": "A_frisbee_spinning_through_the_air_while_a_raccoon_climbing_a_fence..png",
+    "caption": "A frisbee spinning through the air while a raccoon climbing a fence."
+  },
+  {
+    "file_name": "A_fire_hydrant_spraying_water_while_a_kite_dancing_in_the_wind..png",
+    "caption": "A fire hydrant spraying water while a kite dancing in the wind."
+  },
+  {
+    "file_name": "A_turtle_crawls_on_the_beach_as_a_seagull_soars_overhead..png",
+    "caption": "A turtle crawls on the beach as a seagull soars overhead."
+  },
+  {
+    "file_name": "A_deer_drinks_from_a_river_while_a_canoe_drifts_nearby..png",
+    "caption": "A deer drinks from a river while a canoe drifts nearby."
+  },
+  {
+    "file_name": "A_turtle_rides_a_skateboard_while_an_owl_reads_a_newspaper..png",
+    "caption": "A turtle rides a skateboard while an owl reads a newspaper."
+  },
+  {
+    "file_name": "A_squirrel_drives_a_car_while_a_penguin_blows_bubbles..png",
+    "caption": "A squirrel drives a car while a penguin blows bubbles."
+  },
+  {
+    "file_name": "A_kangaroo_juggles_oranges_while_a_zebra_uses_a_laptop..png",
+    "caption": "A kangaroo juggles oranges while a zebra uses a laptop."
+  },
+  {
+    "file_name": "A_panda_takes_selfies_while_a_tiger_watches_TV..png",
+    "caption": "A panda takes selfies while a tiger watches TV."
+  },
+  {
+    "file_name": "A_rabbit_skateboards_through_town_while_an_owl_watches_a_movie..png",
+    "caption": "A rabbit skateboards through town while an owl watches a movie."
+  },
+  {
+    "file_name": "A_panda_drinks_tea_while_a_penguin_eats_cookies..png",
+    "caption": "A panda drinks tea while a penguin eats cookies."
+  },
+  {
+    "file_name": "A_bear_brews_coffee_while_a_raccoon_decorates_a_wedding_cake..png",
+    "caption": "A bear brews coffee while a raccoon decorates a wedding cake."
+  },
+  {
+    "file_name": "A_dog_plays_chess_and_a_cat_rides_a_bike..png",
+    "caption": "A dog plays chess and a cat rides a bike."
+  },
+  {
+    "file_name": "A_rabbit_ice_skates_on_a_frozen_lake_while_a_chipmunk_builds_a_snowman..png",
+    "caption": "A rabbit ice skates on a frozen lake while a chipmunk builds a snowman."
+  },
+  {
+    "file_name": "A_cat_paints_a_canvas_while_a_dog_jumps_rope..png",
+    "caption": "A cat paints a canvas while a dog jumps rope."
+  },
+  {
+    "file_name": "A_kangaroo_kicks_a_soccer_ball_while_a_koala_hangs_from_a_bar..png",
+    "caption": "A kangaroo kicks a soccer ball while a koala hangs from a bar."
+  },
+  {
+    "file_name": "A_dog_wears_sunglasses_while_a_cat_wears_a_superhero_cape..png",
+    "caption": "A dog wears sunglasses while a cat wears a superhero cape."
+  },
+  {
+    "file_name": "A_fox_wears_VR_goggles_while_a_raccoon_rides_a_scooter..png",
+    "caption": "A fox wears VR goggles while a raccoon rides a scooter."
+  },
+  {
+    "file_name": "A_panda_wears_a_chef_hat_while_a_tiger_tastes_the_food..png",
+    "caption": "A panda wears a chef hat while a tiger tastes the food."
+  },
+  {
+    "file_name": "A_cat_takes_selfies_while_a_dog_rides_a_skateboard_in_the_background..png",
+    "caption": "A cat takes selfies while a dog rides a skateboard in the background."
+  },
+  {
+    "file_name": "A_giraffe_wears_a_sun_hat_while_an_elephant_waters_plants_with_its_trunk..png",
+    "caption": "A giraffe wears a sun hat while an elephant waters plants with its trunk."
+  },
+  {
+    "file_name": "A_rabbit_wears_a_detective_hat_and_a_cat_drives_a_toy_car..png",
+    "caption": "A rabbit wears a detective hat and a cat drives a toy car."
+  }
+]

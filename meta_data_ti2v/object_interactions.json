@@ -1,0 +1,786 @@
+[
+  {
+    "file_name": "Two_cars_collide_at_an_intersection.png",
+    "caption": "Two cars collide at an intersection"
+  },
+  {
+    "file_name": "Football_players_bump_into_each_other_during_a_game.png",
+    "caption": "Football players bump into each other during a game"
+  },
+  {
+    "file_name": "A_swimmer_dives_into_a_pool__creating_ripples..png",
+    "caption": "A swimmer dives into a pool, creating ripples."
+  },
+  {
+    "file_name": "Iron_presses_down_on_wrinkled_fabric.png",
+    "caption": "Iron presses down on wrinkled fabric"
+  },
+  {
+    "file_name": "Drum_skin_vibrates_when_struck_by_a_drumstick.png",
+    "caption": "Drum skin vibrates when struck by a drumstick"
+  },
+  {
+    "file_name": "A_horse_jumps_over_a_fence.png",
+    "caption": "A horse jumps over a fence"
+  },
+  {
+    "file_name": "Raindrops_hit_a_tin_roof.png",
+    "caption": "Raindrops hit a tin roof"
+  },
+  {
+    "file_name": "Rope_tugs_against_a_boat.png",
+    "caption": "Rope tugs against a boat"
+  },
+  {
+    "file_name": "Bird_lands_on_a_branch_causing_it_to_dip.png",
+    "caption": "Bird lands on a branch causing it to dip"
+  },
+  {
+    "file_name": "Child_kicks_a_soccer_ball.png",
+    "caption": "Child kicks a soccer ball"
+  },
+  {
+    "file_name": "Dog_snatches_a_rolling_ball.png",
+    "caption": "Dog snatches a rolling ball"
+  },
+  {
+    "file_name": "The_golfer_striking_the_ball_forward.png",
+    "caption": "The golfer striking the ball forward"
+  },
+  {
+    "file_name": "Basketball_player_dribbles.png",
+    "caption": "Basketball player dribbles"
+  },
+  {
+    "file_name": "Child_jumps_on_a_trampoline__bouncing_high.png",
+    "caption": "Child jumps on a trampoline, bouncing high"
+  },
+  {
+    "file_name": "Wave_crashes_into_rocks__splashing_water_everywhere.png",
+    "caption": "Wave crashes into rocks, splashing water everywhere"
+  },
+  {
+    "file_name": "Child_pushes_toy_car.png",
+    "caption": "Child pushes toy car"
+  },
+  {
+    "file_name": "Bowling_ball_strikes_pins__scattering_them.png",
+    "caption": "Bowling ball strikes pins, scattering them"
+  },
+  {
+    "file_name": "Surfer_catches_a_wave__riding_forward.png",
+    "caption": "Surfer catches a wave, riding forward"
+  },
+  {
+    "file_name": "Person_slips_on_ice__sliding_forward.png",
+    "caption": "Person slips on ice, sliding forward"
+  },
+  {
+    "file_name": "A_tire_pump_inflates_a_bicycle_tire.png",
+    "caption": "A tire pump inflates a bicycle tire"
+  },
+  {
+    "file_name": "Cat_s_paw_presses_on_a_soft_pillow.png",
+    "caption": "Cat's paw presses on a soft pillow"
+  },
+  {
+    "file_name": "Footsteps_imprint_on_soft_sand.png",
+    "caption": "Footsteps imprint on soft sand"
+  },
+  {
+    "file_name": "Fork_tines_press_into_a_piece_of_cake.png",
+    "caption": "Fork tines press into a piece of cake"
+  },
+  {
+    "file_name": "A_child_s_hand_presses_a_clay_ball_into_a_flat_disc.png",
+    "caption": "A child's hand presses a clay ball into a flat disc"
+  },
+  {
+    "file_name": "A_pair_of_scissors_cuts_through_fabric.png",
+    "caption": "A pair of scissors cuts through fabric"
+  },
+  {
+    "file_name": "Spoon_stirs_cream_into_coffee.png",
+    "caption": "Spoon stirs cream into coffee"
+  },
+  {
+    "file_name": "Dog_s_nose_touches_a_reflective_glass_door.png",
+    "caption": "Dog's nose touches a reflective glass door"
+  },
+  {
+    "file_name": "An_eraser_removes_marks_from_paper.png",
+    "caption": "An eraser removes marks from paper"
+  },
+  {
+    "file_name": "A_knife_slices_through_a_ripe_tomato.png",
+    "caption": "A knife slices through a ripe tomato"
+  },
+  {
+    "file_name": "Chef_slices_cucumber.png",
+    "caption": "Chef slices cucumber"
+  },
+  {
+    "file_name": "Soccer_ball_strikes_window__causing_it_to_crack.png",
+    "caption": "Soccer ball strikes window, causing it to crack"
+  },
+  {
+    "file_name": "Knife_sharpens_pencil.png",
+    "caption": "Knife sharpens pencil"
+  },
+  {
+    "file_name": "Glass_shatters_when_hit_by_a_rock.png",
+    "caption": "Glass shatters when hit by a rock"
+  },
+  {
+    "file_name": "A_mirror_breaks_when_struck_by_a_thrown_rock.png",
+    "caption": "A mirror breaks when struck by a thrown rock"
+  },
+  {
+    "file_name": "Firewood_splits_under_axe_s_chop.png",
+    "caption": "Firewood splits under axe's chop"
+  },
+  {
+    "file_name": "Pottery_shatters_on_the_floor.png",
+    "caption": "Pottery shatters on the floor"
+  },
+  {
+    "file_name": "Paper_burns_in_a_fire.png",
+    "caption": "Paper burns in a fire"
+  },
+  {
+    "file_name": "Balloon_pops_when_pricked_with_a_needle.png",
+    "caption": "Balloon pops when pricked with a needle"
+  },
+  {
+    "file_name": "Blue_ink_drops_into_water_and_disperses.png",
+    "caption": "Blue ink drops into water and disperses"
+  },
+  {
+    "file_name": "Butter_melts_on_hot_toast.png",
+    "caption": "Butter melts on hot toast"
+  },
+  {
+    "file_name": "Mage_conjures_fireball_in_palm__controlling_the_flames.png",
+    "caption": "Mage conjures fireball in palm, controlling the flames"
+  },
+  {
+    "file_name": "A_magician_pulls_a_rabbit_out_of_a_hat.png",
+    "caption": "A magician pulls a rabbit out of a hat"
+  },
+  {
+    "file_name": "Alice_shrinks_after_drinking_mysterious_potion.png",
+    "caption": "Alice shrinks after drinking mysterious potion"
+  },
+  {
+    "file_name": "Sorcerer_summons_water_from_thin_air__flooding_room.png",
+    "caption": "Sorcerer summons water from thin air, flooding room"
+  },
+  {
+    "file_name": "Superhero_phases_through_falling_debris_unharmed.png",
+    "caption": "Superhero phases through falling debris unharmed"
+  },
+  {
+    "file_name": "Water_sprite_freezes_lake_with_a_touch.png",
+    "caption": "Water sprite freezes lake with a touch"
+  },
+  {
+    "file_name": "Man_teaches_robot_to_play_chess.png",
+    "caption": "Man teaches robot to play chess"
+  },
+  {
+    "file_name": "Woman_discusses_project_with_colleague_over_coffee.png",
+    "caption": "Woman discusses project with colleague over coffee"
+  },
+  {
+    "file_name": "Boy_shares_ice_cream_with_his_dog.png",
+    "caption": "Boy shares ice cream with his dog"
+  },
+  {
+    "file_name": "Cats_chase_each_other_around_the_living_room.png",
+    "caption": "Cats chase each other around the living room"
+  },
+  {
+    "file_name": "Girl_reads_bedtime_story_to_her_stuffed_bear.png",
+    "caption": "Girl reads bedtime story to her stuffed bear"
+  },
+  {
+    "file_name": "Business_partners_shake_hands_on_a_new_deal.png",
+    "caption": "Business partners shake hands on a new deal"
+  },
+  {
+    "file_name": "Child_plays_with_family_dog_at_the_beach.png",
+    "caption": "Child plays with family dog at the beach"
+  },
+  {
+    "file_name": "Old_friends_hug_each_other_at_a_reunion.png",
+    "caption": "Old friends hug each other at a reunion"
+  },
+  {
+    "file_name": "Couple_dances_closely_at_a_dimly_lit_party.png",
+    "caption": "Couple dances closely at a dimly lit party"
+  },
+  {
+    "file_name": "Fisherman_feeds_seagulls_at_the_dock.png",
+    "caption": "Fisherman feeds seagulls at the dock"
+  },
+  {
+    "file_name": "Mother_teaches_son_how_to_tie_his_shoes.png",
+    "caption": "Mother teaches son how to tie his shoes"
+  },
+  {
+    "file_name": "Two_wolves_howl_together_under_a_full_moon.png",
+    "caption": "Two wolves howl together under a full moon"
+  },
+  {
+    "file_name": "Two_monkeys_groom_each_other_on_a_tree_branch.png",
+    "caption": "Two monkeys groom each other on a tree branch"
+  },
+  {
+    "file_name": "Coach_motivates_athlete_during_a_tough_workout.png",
+    "caption": "Coach motivates athlete during a tough workout"
+  },
+  {
+    "file_name": "Customer_negotiates_price_with_a_street_vendor.png",
+    "caption": "Customer negotiates price with a street vendor"
+  },
+  {
+    "file_name": "Rabbit_in_a_suit_negotiates_carrot_deal_with_farmer.png",
+    "caption": "Rabbit in a suit negotiates carrot deal with farmer"
+  },
+  {
+    "file_name": "Business_cat_types_on_laptop.png",
+    "caption": "Business cat types on laptop"
+  },
+  {
+    "file_name": "Owl_teacher_explains_math_to_squirrel_students.png",
+    "caption": "Owl teacher explains math to squirrel students"
+  },
+  {
+    "file_name": "Bear_chef_tastes_honey_from_his_gourmet_kitchen.png",
+    "caption": "Bear chef tastes honey from his gourmet kitchen"
+  },
+  {
+    "file_name": "Dapper_wolf_discusses_stock_market_trends.png",
+    "caption": "Dapper wolf discusses stock market trends"
+  },
+  {
+    "file_name": "Giraffe_painter_reaches_high_walls_without_a_ladder.png",
+    "caption": "Giraffe painter reaches high walls without a ladder"
+  },
+  {
+    "file_name": "Mouse_detective_investigates_cheese_theft.png",
+    "caption": "Mouse detective investigates cheese theft"
+  },
+  {
+    "file_name": "Duck_journalist_interviews_a_famous_goose.png",
+    "caption": "Duck journalist interviews a famous goose"
+  },
+  {
+    "file_name": "Tiger_coach_whistles_at_soccer_practice.png",
+    "caption": "Tiger coach whistles at soccer practice"
+  },
+  {
+    "file_name": "Raccoon_trash_collector_cleans_up_the_park.png",
+    "caption": "Raccoon trash collector cleans up the park"
+  },
+  {
+    "file_name": "Penguin_waiter_slides_dinner_to_customers.png",
+    "caption": "Penguin waiter slides dinner to customers"
+  },
+  {
+    "file_name": "Rabbit_tailor_sews_fabric_into_a_dress.png",
+    "caption": "Rabbit tailor sews fabric into a dress"
+  },
+  {
+    "file_name": "Beaver_architect_designs_a_dam.png",
+    "caption": "Beaver architect designs a dam"
+  },
+  {
+    "file_name": "Sloth_librarian_arranges_books_slowly_but_surely.png",
+    "caption": "Sloth librarian arranges books slowly but surely"
+  },
+  {
+    "file_name": "Dog_firefighter_rescues_kittens_from_a_tree.png",
+    "caption": "Dog firefighter rescues kittens from a tree"
+  },
+  {
+    "file_name": "Rabbit_police_officer_directs_traffic.png",
+    "caption": "Rabbit police officer directs traffic"
+  },
+  {
+    "file_name": "Bear_journalist_interviews_a_celebrity.png",
+    "caption": "Bear journalist interviews a celebrity"
+  },
+  {
+    "file_name": "Friends_share_stories_around_bonfire__under_starry_night_sky.png",
+    "caption": "Friends share stories around bonfire, under starry night sky"
+  },
+  {
+    "file_name": "Violinist_and_pianist_captivate_with_harmonious_duet_performance.png",
+    "caption": "Violinist and pianist captivate with harmonious duet performance"
+  },
+  {
+    "file_name": "Gardener_tenderly_prunes_bonsai_tree__creating_natural_art.png",
+    "caption": "Gardener tenderly prunes bonsai tree, creating natural art"
+  },
+  {
+    "file_name": "Girl_and_grandmother_bake_cookies__laughter_filling_the_kitchen.png",
+    "caption": "Girl and grandmother bake cookies, laughter filling the kitchen"
+  },
+  {
+    "file_name": "Elderly_man_feeds_pigeons__surrounded_by_fluttering_wings.png",
+    "caption": "Elderly man feeds pigeons, surrounded by fluttering wings"
+  },
+  {
+    "file_name": "A_group_of_elephants_playfully_spray_water_at_each_other.png",
+    "caption": "A group of elephants playfully spray water at each other"
+  },
+  {
+    "file_name": "A_young_girl_and_her_teddy_bear_have_a_tea_party.png",
+    "caption": "A young girl and her teddy bear have a tea party"
+  },
+  {
+    "file_name": "A_child_and_a_puppy_embark_on_an_adventure_through_a_forest.png",
+    "caption": "A child and a puppy embark on an adventure through a forest"
+  },
+  {
+    "file_name": "A_pack_of_wolves_howl_in_harmony__their_voices_echoing_through_the_night.png",
+    "caption": "A pack of wolves howl in harmony, their voices echoing through the night"
+  },
+  {
+    "file_name": "A_parent_and_child_build_a_sandcastle_together.png",
+    "caption": "A parent and child build a sandcastle together"
+  },
+  {
+    "file_name": "A_conductor_leads_an_orchestra__guiding_the_musicians_to_create_a_harmonious_symphony.png",
+    "caption": "A conductor leads an orchestra, guiding the musicians to create a harmonious symphony"
+  },
+  {
+    "file_name": "A_dog_and_a_cat_playfully_chase_each_other.png",
+    "caption": "A dog and a cat playfully chase each other"
+  },
+  {
+    "file_name": "A_group_of_children_engage_in_a_lively_game_of_jump_rope.png",
+    "caption": "A group of children engage in a lively game of jump rope"
+  },
+  {
+    "file_name": "A_couple_dances_under_the_moonlight__their_steps_perfectly_in_sync_with_the_romantic_melody.png",
+    "caption": "A couple dances under the moonlight, their steps perfectly in sync with the romantic melody"
+  },
+  {
+    "file_name": "A_group_of_volunteers_clean_up_a_beach__working_together_to_protect_the_environment.png",
+    "caption": "A group of volunteers clean up a beach, working together to protect the environment"
+  },
+  {
+    "file_name": "A_parent_teaches_a_child_to_ride_a_bike.png",
+    "caption": "A parent teaches a child to ride a bike"
+  },
+  {
+    "file_name": "A_group_of_firefighters_work_together__battling_the_flames_and_saving_lives.png",
+    "caption": "A group of firefighters work together, battling the flames and saving lives"
+  },
+  {
+    "file_name": "A_parent_and_child_build_a_sandcastle_together.png",
+    "caption": "A parent and child plant a garden, nurturing plants and watching them grow"
+  },
+  {
+    "file_name": "A_cat_pouncing_on_a_small_toy__causing_it_to_roll_across_the_wooden_floor..png",
+    "caption": "A cat pouncing on a small toy, causing it to roll across the wooden floor."
+  },
+  {
+    "file_name": "A_gust_of_wind_pushing_a_swinging_gate__making_it_moving_open..png",
+    "caption": "A gust of wind pushing a swinging gate, making it moving open."
+  },
+  {
+    "file_name": "A_child_throwing_a_frisbee__sending_it_spinning_through_the_air_towards_a_park_bench..png",
+    "caption": "A child throwing a frisbee, sending it spinning through the air towards a park bench."
+  },
+  {
+    "file_name": "A_bowling_ball_striking_a_set_of_pins__causing_them_to_topple_in_different_directions..png",
+    "caption": "A bowling ball striking a set of pins, causing them to topple in different directions."
+  },
+  {
+    "file_name": "A_skateboarder_performing_a_trick__launching_their_board_into_the_air_before_landing_back_on_the_pavement..png",
+    "caption": "A skateboarder performing a trick, launching their board into the air before landing back on the pavement."
+  },
+  {
+    "file_name": "A_strong_wave_crashing_into_a_small_boat__rocking_it_violently_from_side_to_side..png",
+    "caption": "A strong wave crashing into a small boat, rocking it violently from side to side."
+  },
+  {
+    "file_name": "A_dog_nudging_a_ball_with_its_nose__making_it_bounce_erratically_on_the_grass..png",
+    "caption": "A dog nudging a ball with its nose, making it bounce erratically on the grass."
+  },
+  {
+    "file_name": "A_soccer_player_kicking_a_ball__sending_it_soaring_towards_the_goalpost..png",
+    "caption": "A soccer player kicking a ball, sending it soaring towards the goalpost."
+  },
+  {
+    "file_name": "A_swimmer_diving_into_a_pool__creating_a_splash_that_disturbs_the_calm_water_surface..png",
+    "caption": "A swimmer diving into a pool, creating a splash that disturbs the calm water surface."
+  },
+  {
+    "file_name": "A_child_knocking_over_a_tower_of_blocks__scattering_pieces_across_the_carpet..png",
+    "caption": "A child knocking over a tower of blocks, scattering pieces across the carpet."
+  },
+  {
+    "file_name": "A_book_sliding_off_a_tilted_shelf__landing_with_a_on_the_floor..png",
+    "caption": "A book sliding off a tilted shelf, landing with a on the floor."
+  },
+  {
+    "file_name": "A_firefighter_spraying_a_jet_of_water_at_a_burning_structure__causing_the_flames_to_waver_and_shrink..png",
+    "caption": "A firefighter spraying a jet of water at a burning structure, causing the flames to waver and shrink."
+  },
+  {
+    "file_name": "A_basketball_player_making_a_powerful_slam_dunk__sending_the_hoop_vibrating_from_the_impact..png",
+    "caption": "A basketball player making a powerful slam dunk, sending the hoop vibrating from the impact."
+  },
+  {
+    "file_name": "A_bird_landing_on_a_delicate_flower_stem__causing_the_blossom_to_sway_gently..png",
+    "caption": "A bird landing on a delicate flower stem, causing the blossom to sway gently."
+  },
+  {
+    "file_name": "A_chef_tossing_a_pancake_in_the_air__flipping_it_before_it_lands_back_on_the_pan..png",
+    "caption": "A chef tossing a pancake in the air, flipping it before it lands back on the pan."
+  },
+  {
+    "file_name": "A_snowball_thrown_at_a_wall__bursting_apart_and_scattering_bits_of_snow..png",
+    "caption": "A snowball thrown at a wall, bursting apart and scattering bits of snow."
+  },
+  {
+    "file_name": "A_child_jumping_onto_a_trampoline__compressing_the_surface_and_bouncing_back_into_the_air..png",
+    "caption": "A child jumping onto a trampoline, compressing the surface and bouncing back into the air."
+  },
+  {
+    "file_name": "A_fisherman_casting_a_line_into_the_lake__causing_ripples_to_form_around_the_lure..png",
+    "caption": "A fisherman casting a line into the lake, causing ripples to form around the lure."
+  },
+  {
+    "file_name": "A_dog_tugging_on_a_rope_toy__pulling_it_and_making_a_nearby_chair_wobble..png",
+    "caption": "A dog tugging on a rope toy, pulling it and making a nearby chair wobble."
+  },
+  {
+    "file_name": "A_deer_brushing_past_a_low_tree_branch__setting_loose_a_flurry_of_autumn_leaves..png",
+    "caption": "A deer brushing past a low tree branch, setting loose a flurry of autumn leaves."
+  },
+  {
+    "file_name": "A_cat_leaping_onto_a_desk__causing_a_cup_to_tip_over_and_spill_its_contents..png",
+    "caption": "A cat leaping onto a desk, causing a cup to tip over and spill its contents."
+  },
+  {
+    "file_name": "A_bird_pecking_at_a_hanging_lantern__making_the_lantern_swing_gently..png",
+    "caption": "A bird pecking at a hanging lantern, making the lantern swing gently."
+  },
+  {
+    "file_name": "A_bus_splashing_through_a_puddle__sending_water_spraying_onto_the_sidewalk..png",
+    "caption": "A bus splashing through a puddle, sending water spraying onto the sidewalk."
+  },
+  {
+    "file_name": "A_plane_touching_down_on_a_runway__causing_a_cloud_of_smoke_as_the_tires_meet_the_asphalt..png",
+    "caption": "A plane touching down on a runway, causing a cloud of smoke as the tires meet the asphalt."
+  },
+  {
+    "file_name": "A_horse_brushing_against_a_parked_bike__tipping_it_over_onto_the_ground..png",
+    "caption": "A horse brushing against a parked bike, tipping it over onto the ground."
+  },
+  {
+    "file_name": "A_dolphin_leaping_over_a_boat_s_wake__creating_a_splash_as_it_re-enters_the_water..png",
+    "caption": "A dolphin leaping over a boat's wake, creating a splash as it re-enters the water."
+  },
+  {
+    "file_name": "A_cat_pawing_at_a_fallen_leaf__sending_it_fluttering_across_the_yard..png",
+    "caption": "A cat pawing at a fallen leaf, sending it fluttering across the yard."
+  },
+  {
+    "file_name": "A_deer_running_into_a_field_of_flowers__disturbing_petals_that_float_gently_to_the_earth..png",
+    "caption": "A deer running into a field of flowers, disturbing petals that float gently to the earth."
+  },
+  {
+    "file_name": "A_fish_splashing_in_a_pond__making_ripples_that_disturb_a_lily_pad_nearby..png",
+    "caption": "A fish splashing in a pond, making ripples that disturb a lily pad nearby."
+  },
+  {
+    "file_name": "A_dog_dragging_a_blanket_off_a_bed__leaving_it_tangled_on_the_floor..png",
+    "caption": "A dog dragging a blanket off a bed, leaving it tangled on the floor."
+  },
+  {
+    "file_name": "A_parrot_knocking_over_a_bottle_on_a_counter__sending_it_rolling_before_crashing_onto_the_floor..png",
+    "caption": "A parrot knocking over a bottle on a counter, sending it rolling before crashing onto the floor."
+  },
+  {
+    "file_name": "A_child_launching_a_kite_into_the_air__where_the_wind_catches_and_pulls_it_upward..png",
+    "caption": "A child launching a kite into the air, where the wind catches and pulls it upward."
+  },
+  {
+    "file_name": "A_raccoon_climbing_onto_a_fence__making_it_wobble_from_side_to_side..png",
+    "caption": "A raccoon climbing onto a fence, making it wobble from side to side."
+  },
+  {
+    "file_name": "A_jellyfish_floating_into_a_coral_reef__causing_the_smaller_fish_nearby_to_scatter..png",
+    "caption": "A jellyfish floating into a coral reef, causing the smaller fish nearby to scatter."
+  },
+  {
+    "file_name": "An_eagle_swooping_down_to_grab_a_fish_from_the_river__creating_ripples_on_the_surface..png",
+    "caption": "An eagle swooping down to grab a fish from the river, creating ripples on the surface."
+  },
+  {
+    "file_name": "A_goat_butting_its_head_against_a_wooden_crate__causing_it_to_slide_across_the_barn_floor..png",
+    "caption": "A goat butting its head against a wooden crate, causing it to slide across the barn floor."
+  },
+  {
+    "file_name": "A_crab_scuttling_across_a_sandy_beach__displacing_tiny_grains_with_its_movements..png",
+    "caption": "A crab scuttling across a sandy beach, displacing tiny grains with its movements."
+  },
+  {
+    "file_name": "A_horse_galloping_past_a_sleeping_dog__causing_the_dog_to_wake_and_look_around..png",
+    "caption": "A horse galloping past a sleeping dog, causing the dog to wake and look around."
+  },
+  {
+    "file_name": "A_dolphin_tossing_a_beach_ball_with_its_nose__sending_the_ball_back_toward_a_group_of_cheering_people..png",
+    "caption": "A dolphin tossing a beach ball with its nose, sending the ball back toward a group of cheering people."
+  },
+  {
+    "file_name": "A_soccer_player_kicking_a_ball__sending_it_soaring_towards_the_goalpost..png",
+    "caption": "A soccer player kicking a pumpkin, sending it rolling down a grassy hill."
+  },
+  {
+    "file_name": "A_mother_holding_her_baby__rocking_gently_on_a_rocking_chair..png",
+    "caption": "A mother holding her baby, rocking gently on a rocking chair."
+  },
+  {
+    "file_name": "A_deer_stepping_onto_a_frozen_pond__causing_the_ice_to_crack_slightly_beneath_its_hooves..png",
+    "caption": "A deer stepping onto a frozen pond, causing the ice to crack slightly beneath its hooves."
+  },
+  {
+    "file_name": "An_ant_carrying_a_crumb_on_the_table_away..png",
+    "caption": "An ant carrying a crumb on the table away."
+  },
+  {
+    "file_name": "A_snowball_hitting_a_stop_sign__leaving_a_patch_of_wet_snow_on_the_red_surface..png",
+    "caption": "A snowball hitting a stop sign, leaving a patch of wet snow on the red surface."
+  },
+  {
+    "file_name": "A_frog_leaping_onto_a_wet_rock__causing_droplets_to_splash_into_the_air..png",
+    "caption": "A frog leaping onto a wet rock, causing droplets to splash into the air."
+  },
+  {
+    "file_name": "A_magician_throwing_a_deck_of_cards_into_the_air__causing_them_to_flutter_around_a_captivated_audience..png",
+    "caption": "A magician throwing a deck of cards into the air, causing them to flutter around a captivated audience."
+  },
+  {
+    "file_name": "A_helicopter_landing_on_a_hospital_helipad__making_the_nearby_trees_sway_from_the_gust_of_wind..png",
+    "caption": "A helicopter landing on a hospital helipad, making the nearby trees sway from the gust of wind."
+  },
+  {
+    "file_name": "A_frog_jumping_into_a_bowl_of_water__making_droplets_splash_onto_the_surrounding_grass..png",
+    "caption": "A frog jumping into a bowl of water, making droplets splash onto the surrounding grass."
+  },
+  {
+    "file_name": "A_robot_vacuum_bumping_into_a_wall__redirecting_itself_and_leaving_a_trail_of_clean_carpet_behind..png",
+    "caption": "A robot vacuum bumping into a wall, redirecting itself and leaving a trail of clean carpet behind."
+  },
+  {
+    "file_name": "A_pigeon_taking_off_from_a_lamppost__causing_loose_feathers_to_float_down_slowly..png",
+    "caption": "A pigeon taking off from a lamppost, causing loose feathers to float down slowly."
+  },
+  {
+    "file_name": "A_girl_turns_on_a_hair_dryer__causing_her_long_hair_to_blow_wildly_in_the_air..png",
+    "caption": "A girl turns on a hair dryer, causing her long hair to blow wildly in the air."
+  },
+  {
+    "file_name": "Grandpa_teaches_his_grandson_to_fly_a_kite_in_the_park..png",
+    "caption": "Grandpa teaches his grandson to fly a kite in the park."
+  },
+  {
+    "file_name": "Friends_share_popcorn_while_watching_a_movie_together..png",
+    "caption": "Friends share popcorn while watching a movie together."
+  },
+  {
+    "file_name": "Dog_runs_alongside_a_boy_riding_his_bike_down_the_street..png",
+    "caption": "Dog runs alongside a boy riding his bike down the street."
+  },
+  {
+    "file_name": "Chef_shows_his_apprentice_how_to_slice_vegetables_properly..png",
+    "caption": "Chef shows his apprentice how to slice vegetables properly."
+  },
+  {
+    "file_name": "Two_dogs_play_tug-of-war_with_a_rope_toy_in_the_backyard..png",
+    "caption": "Two dogs play tug-of-war with a rope toy in the backyard."
+  },
+  {
+    "file_name": "Father_helps_his_daughter_build_a_sandcastle_at_the_beach..png",
+    "caption": "Father helps his daughter build a sandcastle at the beach."
+  },
+  {
+    "file_name": "Young_couple_dances_together_under_the_moonlight_at_a_festival..png",
+    "caption": "Young couple dances together under the moonlight at a festival."
+  },
+  {
+    "file_name": "Teenagers_collaborate_on_a_science_project_in_the_school_library..png",
+    "caption": "Teenagers collaborate on a science project in the school library."
+  },
+  {
+    "file_name": "Grandmother_bakes_cookies_with_her_granddaughter_in_the_kitchen..png",
+    "caption": "Grandmother bakes cookies with her granddaughter in the kitchen."
+  },
+  {
+    "file_name": "Friends_play_a_board_game_together_at_a_cozy_cafe..png",
+    "caption": "Friends play a board game together at a cozy cafe."
+  },
+  {
+    "file_name": "Boy_draws_a_picture_and_proudly_shows_it_to_his_dog__who_wags_his_tail..png",
+    "caption": "Boy draws a picture and proudly shows it to his dog, who wags his tail."
+  },
+  {
+    "file_name": "Two_kittens_snuggle_together_on_a_warm_windowsill..png",
+    "caption": "Two kittens snuggle together on a warm windowsill."
+  },
+  {
+    "file_name": "A_girl_enjoys_a_picnic_by_the_lake__feeding_crumbs_to_the_ducks..png",
+    "caption": "A girl enjoys a picnic by the lake, feeding crumbs to the ducks."
+  },
+  {
+    "file_name": "A_woman_gives_an_old_lady_a_bouquet_of_fresh_flowers..png",
+    "caption": "A woman gives an old lady a bouquet of fresh flowers."
+  },
+  {
+    "file_name": "A_little_girl_takes_pictures_of_a_cat..png",
+    "caption": "A little girl takes pictures of a cat."
+  },
+  {
+    "file_name": "A_father_and_daughter_carve_pumpkins_together__comparing_their_funny_designs..png",
+    "caption": "A father and daughter carve pumpkins together, comparing their funny designs."
+  },
+  {
+    "file_name": "A_little_girl_dresses_up_her_teddy_bear_in_her_room..png",
+    "caption": "A little girl dresses up her teddy bear in her room."
+  },
+  {
+    "file_name": "A_woman_practices_yoga_in_the_park__with_a_puppy_copying_her_poses..png",
+    "caption": "A woman practices yoga in the park, with a puppy copying her poses."
+  },
+  {
+    "file_name": "A_young_girl_teaches_her_puppy_how_to_sit__rewarding_it_with_treats..png",
+    "caption": "A young girl teaches her puppy how to sit, rewarding it with treats."
+  },
+  {
+    "file_name": "A_grandmother_reads_a_bedtime_story_to_her_grandchild..png",
+    "caption": "A grandmother reads a bedtime story to her grandchild."
+  },
+  {
+    "file_name": "A_little_boy_and_his_dad_fly_paper_airplanes_off_the_balcony__watching_them_loop_and_glide_in_the_breeze..png",
+    "caption": "A little boy and his dad fly paper airplanes off the balcony, watching them loop and glide in the breeze."
+  },
+  {
+    "file_name": "A_boy_feeds_ducks_at_the_pond..png",
+    "caption": "A boy feeds ducks at the pond."
+  },
+  {
+    "file_name": "Two_musicians_practice_a_duet_on_the_piano__working_to_synchronize_their_notes_and_harmonies..png",
+    "caption": "Two musicians practice a duet on the piano, working to synchronize their notes and harmonies."
+  },
+  {
+    "file_name": "A_woman_laughs_as_her_friends_surprise_her_with_a_birthday_cake_and_a_room_full_of_balloons..png",
+    "caption": "A woman laughs as her friends surprise her with a birthday cake and a room full of balloons."
+  },
+  {
+    "file_name": "A_couple_watches_a_sunset_from_a_rooftop__holding_hands_as_they_take_in_the_view..png",
+    "caption": "A couple watches a sunset from a rooftop, holding hands as they take in the view."
+  },
+  {
+    "file_name": "A_little_boy_pretends_to_be_a_doctor__using_a_toy_stethoscope_to_check_up_on_his_teddy_bear..png",
+    "caption": "A little boy pretends to be a doctor, using a toy stethoscope to check up on his teddy bear."
+  },
+  {
+    "file_name": "Two_artists_work_on_a_mural_together__discussing_ideas_and_mixing_colors_to_create_a_masterpiece..png",
+    "caption": "Two artists work on a mural together, discussing ideas and mixing colors to create a masterpiece."
+  },
+  {
+    "file_name": "A_girl_braids_her_friend_s_hair..png",
+    "caption": "A girl braids her friend's hair."
+  },
+  {
+    "file_name": "A_woman_high-fives_her_friend_after_they_complete_a_challenging_hike_together..png",
+    "caption": "A woman high-fives her friend after they complete a challenging hike together."
+  },
+  {
+    "file_name": "A_grandmother_teaches_her_grandson_how_to_bake_cookies..png",
+    "caption": "A grandmother teaches her grandson how to bake cookies."
+  },
+  {
+    "file_name": "A_group_of_volunteers_works_together_to_plant_trees_in_a_local_park..png",
+    "caption": "A group of volunteers works together to plant trees in a local park."
+  },
+  {
+    "file_name": "A_young_couple_browses_an_art_gallery__discussing_their_favorite_pieces..png",
+    "caption": "A young couple browses an art gallery, discussing their favorite pieces."
+  },
+  {
+    "file_name": "A_father_and_daughter_carve_pumpkins_together__comparing_their_funny_designs..png",
+    "caption": "A father and daughter race toy cars across the living room floor, cheering and laughing."
+  },
+  {
+    "file_name": "A_man_proposes_to_his_partner_in_a_flower-filled_park..png",
+    "caption": "A man proposes to his partner in a flower-filled park."
+  },
+  {
+    "file_name": "Two_friends_build_a_snowman_together..png",
+    "caption": "Two friends build a snowman together."
+  },
+  {
+    "file_name": "A_group_of_kids_plays_soccer_in_the_street..png",
+    "caption": "A group of kids plays soccer in the street."
+  },
+  {
+    "file_name": "A_woman_gives_her_dog_a_bubble_bath..png",
+    "caption": "A woman gives her dog a bubble bath."
+  },
+  {
+    "file_name": "A_man_teaches_his_partner_how_to_play_a_card_game..png",
+    "caption": "A man teaches his partner how to play a card game."
+  },
+  {
+    "file_name": "Two_friends_share_popcorn_at_the_movies..png",
+    "caption": "Two friends share popcorn at the movies."
+  },
+  {
+    "file_name": "A_couple_decorates_their_first_Christmas_tree..png",
+    "caption": "A couple decorates their first Christmas tree."
+  },
+  {
+    "file_name": "Two_kids_build_a_sandcastle_at_the_beach..png",
+    "caption": "Two kids build a sandcastle at the beach."
+  },
+  {
+    "file_name": "Two_hikers_celebrate_reaching_the_mountain_peak..png",
+    "caption": "Two hikers celebrate reaching the mountain peak."
+  },
+  {
+    "file_name": "A_man_teaches_his_friend_how_to_surf..png",
+    "caption": "A man teaches his friend how to surf."
+  },
+  {
+    "file_name": "A_couple_plants_flowers_in_their_garden..png",
+    "caption": "A couple plants flowers in their garden."
+  },
+  {
+    "file_name": "A_mother_teaches_her_son_to_tie_his_shoes..png",
+    "caption": "A mother teaches her son to tie his shoes."
+  },
+  {
+    "file_name": "A_couple_goes_ice_skating..png",
+    "caption": "A couple goes ice skating."
+  },
+  {
+    "file_name": "A_father_pushes_his_daughter_on_a_swing..png",
+    "caption": "A father pushes his daughter on a swing."
+  },
+  {
+    "file_name": "A_teacher_helps_a_student_with_a_science_experiment..png",
+    "caption": "A teacher helps a student with a science experiment."
+  },
+  {
+    "file_name": "Two_kids_have_a_water_balloon_fight_on_a_hot_day..png",
+    "caption": "Two kids have a water balloon fight on a hot day."
+  }
+]

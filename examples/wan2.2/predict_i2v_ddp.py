@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# generate_videos_ddp.py
+# generate_i2v_ti2v_ddp.py
 import argparse
 import json
 import os
@@ -26,6 +26,7 @@ for r in [
 # Wan 2.2 imports from your codebase
 from diffusers import FlowMatchEulerDiscreteScheduler
 
+from videox_fun.dist import set_multi_gpus_devices, shard_model
 from videox_fun.models import (
     AutoencoderKLWan,
     AutoencoderKLWan3_8,
@@ -34,7 +35,7 @@ from videox_fun.models import (
     WanT5EncoderModel,
 )
 from videox_fun.models.cache_utils import get_teacache_coefficients
-from videox_fun.pipeline import Wan2_2TI2VPipeline
+from videox_fun.pipeline import Wan2_2I2VPipeline
 from videox_fun.utils.fm_solvers import FlowDPMSolverMultistepScheduler
 from videox_fun.utils.fm_solvers_unipc import FlowUniPCMultistepScheduler
 from videox_fun.utils.fp8_optimization import (
@@ -50,14 +51,20 @@ from videox_fun.utils.utils import (
 )
 
 
+# ---------------------------
+# Args
+# ---------------------------
 def parse_args():
-    p = argparse.ArgumentParser("Wan2.2-5B DDP sampler for VBench datasets")
+    p = argparse.ArgumentParser(
+        "Wan2.2 I2V/TI2V DDP sampler (same naming/sharding as your TI2V script)"
+    )
+
     # dataset & IO
     p.add_argument(
         "--dataset_json",
         type=str,
         required=True,
-        help="Path to JSON array with {file_name, caption, type, ...} or augmented/contradict files",
+        help="JSON array with items having image refs ('image_path' or 'file_name'). For TI2V, also needs captions.",
     )
     p.add_argument(
         "--images_root",
@@ -69,47 +76,53 @@ def parse_args():
         "--outdir",
         type=str,
         required=True,
-        help="Where to write mp4s. Will create mode subfolders.",
+        help="Where to write mp4s. Will create I2V/TI2V/<CAPSRC>/[category] (CAPSRC used only for TI2V).",
     )
     p.add_argument(
         "--mode",
         type=str,
-        default="ti2v",
-        choices=["ti2v", "t2v", "i2v"],
-        help="ti2v=image+text, t2v=text only, i2v=image only",
+        default="i2v",
+        choices=["i2v", "ti2v"],
+        help="i2v=image only, ti2v=image+text",
     )
     p.add_argument(
         "--resume", action="store_true", help="Skip items whose output already exists."
     )
+    p.add_argument(
+        "--prompt_category",
+        type=str,
+        default=None,
+        help="Optional subfolder (e.g., action_binding)",
+    )
 
-    # NEW: choose which caption field to use
+    # caption picking (same policy as your TI2V script)
     p.add_argument(
         "--caption_field",
         type=str,
         default="auto",
         choices=["auto", "base", "aug", "contra"],
-        help="Which caption to use: base->caption, aug->caption_aug, contra->caption_contra, auto tries aug->contra->base",
-    )
-
-    # NEW: skip by type (comma-separated). Default skips 'abstract'
-    p.add_argument(
-        "--skip_types",
-        type=str,
-        default="abstract",
-        help="Comma-separated list of item['type'] values to skip. Use '' to skip none.",
+        help="base->caption, aug->caption_aug, contra->caption_contra, auto tries aug->contra->base",
     )
 
     # model / config
     p.add_argument(
-        "--config_path", type=str, default="config/wan2.2/wan_civitai_5b.yaml"
+        "--config_path", type=str, default="config/wan2.2/wan_civitai_i2v.yaml"
     )
-    p.add_argument("--model_dir", type=str, default="models/Wan2.2-TI2V-5B")
+    p.add_argument("--model_dir", type=str, default="models/Wan2.2-I2V-A14B")
+
     p.add_argument(
         "--sampler",
         type=str,
         default="Flow_Unipc",
         choices=["Flow", "Flow_Unipc", "Flow_DPM++"],
     )
+    p.add_argument(
+        "--shift",
+        type=int,
+        default=5,
+        help="Noise schedule shift for Flow_Unipc / Flow_DPM++",
+    )
+
     p.add_argument(
         "--gpu_memory_mode",
         type=str,
@@ -127,17 +140,12 @@ def parse_args():
         action="store_true",
         help="Compile blocks (not compatible with sequential_cpu_offload/FSDP).",
     )
-    p.add_argument(
-        "--prompt_category",
-        type=str,
-        default=None,
-    )
 
     # generation
-    p.add_argument("--height", type=int, default=704)
-    p.add_argument("--width", type=int, default=1280)
-    p.add_argument("--num_frames", type=int, default=121)
-    p.add_argument("--fps", type=int, default=24)
+    p.add_argument("--height", type=int, default=480)
+    p.add_argument("--width", type=int, default=832)
+    p.add_argument("--num_frames", type=int, default=81)
+    p.add_argument("--fps", type=int, default=16)
     p.add_argument("--steps", type=int, default=50)
     p.add_argument("--guidance", type=float, default=6.0)
     p.add_argument(
@@ -146,12 +154,6 @@ def parse_args():
         default="overexposed, blurry, low quality, deformed hands, ugly, artifacts, static scene",
     )
     p.add_argument("--seed", type=int, default=43)
-    p.add_argument(
-        "--shift",
-        type=int,
-        default=5,
-        help="Noise schedule shift for Flow_Unipc / Flow_DPM++",
-    )
     p.add_argument(
         "--weight_dtype", type=str, default="bfloat16", choices=["bfloat16", "float16"]
     )
@@ -167,7 +169,9 @@ def parse_args():
 
     # LoRA (optional)
     p.add_argument("--lora_path", type=str, default=None)
+    p.add_argument("--lora_high_path", type=str, default=None)
     p.add_argument("--lora_weight", type=float, default=0.55)
+    p.add_argument("--lora_high_weight", type=float, default=0.55)
 
     # batching / sharding
     p.add_argument(
@@ -178,6 +182,9 @@ def parse_args():
     return p.parse_args()
 
 
+# ---------------------------
+# DDP utils
+# ---------------------------
 def ddp_init():
     if "RANK" in os.environ and "WORLD_SIZE" in os.environ:
         dist.init_process_group(backend="nccl")
@@ -195,6 +202,9 @@ def log(rank, *msg):
         print(*msg, flush=True)
 
 
+# ---------------------------
+# Helpers (same as TI2V)
+# ---------------------------
 _slug_re = re.compile(r"[^a-zA-Z0-9._-]+")
 
 
@@ -202,6 +212,32 @@ def slugify(s: str) -> str:
     s = s.strip().replace(" ", "_")
     s = _slug_re.sub("_", s)
     return s[:200]
+
+
+def pick_caption(it, caption_field: str) -> tuple[str, str]:
+    """
+    Returns (caption_text, source_tag) where source_tag in {'BASE','AUG','CONTRA'}.
+    If caption_field='auto', tries caption_aug -> caption_contra -> caption.
+    """
+    if caption_field == "base":
+        cap = (it.get("caption") or "").strip()
+        return cap, "BASE"
+    if caption_field == "aug":
+        cap = (it.get("caption_aug") or "").strip()
+        return cap, "AUG"
+    if caption_field == "contra":
+        cap = (it.get("caption_contra") or "").strip()
+        return cap, "CONTRA"
+    # auto
+    for key, tag in (
+        ("caption_aug", "AUG"),
+        ("caption_contra", "CONTRA"),
+        ("caption", "BASE"),
+    ):
+        cap = (it.get(key) or "").strip()
+        if cap:
+            return cap, tag
+    return "", "BASE"
 
 
 def build_scheduler(name, cfg, shift):
@@ -216,12 +252,40 @@ def build_scheduler(name, cfg, shift):
     return S(**filter_kwargs(S, cfg))
 
 
-from videox_fun.utils.utils import filter_kwargs  # noqa: E402
+def resolve_img_path(item, images_root: str | None) -> str:
+    """
+    Prefer absolute item['image_path'] if present.
+    Else use item['file_name'] joined with images_root (if provided).
+    Returns '' if we can't resolve a path.
+    """
+    p = (item.get("image_path") or "").strip()
+    if p:
+        return p if os.path.isabs(p) else os.path.join(images_root or "", p)
+    fn = (item.get("file_name") or "").strip()
+    if not fn:
+        return ""
+    return fn if os.path.isabs(fn) else os.path.join(images_root or "", fn)
 
 
+def make_unique_path(base_path: Path) -> Path:
+    """Append _1, _2, ... if the file already exists."""
+    if not base_path.exists():
+        return base_path
+    stem, suffix, parent = base_path.stem, base_path.suffix, base_path.parent
+    i = 1
+    while True:
+        cand = parent / f"{stem}_{i}{suffix}"
+        if not cand.exists():
+            return cand
+        i += 1
+
+
+# ---------------------------
+# Model loading
+# ---------------------------
 def load_models(args, device):
     config = OmegaConf.load(args.config_path)
-    boundary = config["transformer_additional_kwargs"].get("boundary", 0.875)
+    boundary = config["transformer_additional_kwargs"].get("boundary", 0.900)
 
     transformer = Wan2_2Transformer3DModel.from_pretrained(
         os.path.join(
@@ -236,26 +300,20 @@ def load_models(args, device):
         low_cpu_mem_usage=True,
         torch_dtype=getattr(torch, args.weight_dtype),
     )
-    transformer_2 = None
-    if (
-        config["transformer_additional_kwargs"].get(
-            "transformer_combination_type", "single"
-        )
-        == "moe"
-    ):
-        transformer_2 = Wan2_2Transformer3DModel.from_pretrained(
-            os.path.join(
-                args.model_dir,
-                config["transformer_additional_kwargs"].get(
-                    "transformer_high_noise_model_subpath", "transformer"
-                ),
+
+    transformer_2 = Wan2_2Transformer3DModel.from_pretrained(
+        os.path.join(
+            args.model_dir,
+            config["transformer_additional_kwargs"].get(
+                "transformer_high_noise_model_subpath", "transformer"
             ),
-            transformer_additional_kwargs=OmegaConf.to_container(
-                config["transformer_additional_kwargs"]
-            ),
-            low_cpu_mem_usage=True,
-            torch_dtype=getattr(torch, args.weight_dtype),
-        )
+        ),
+        transformer_additional_kwargs=OmegaConf.to_container(
+            config["transformer_additional_kwargs"]
+        ),
+        low_cpu_mem_usage=True,
+        torch_dtype=getattr(torch, args.weight_dtype),
+    )
 
     Chosen_AutoencoderKL = {
         "AutoencoderKLWan": AutoencoderKLWan,
@@ -286,7 +344,7 @@ def load_models(args, device):
         args.sampler, OmegaConf.to_container(config["scheduler_kwargs"]), args.shift
     )
 
-    pipe = Wan2_2TI2VPipeline(
+    pipe = Wan2_2I2VPipeline(
         transformer=transformer,
         transformer_2=transformer_2,
         vae=vae,
@@ -295,53 +353,54 @@ def load_models(args, device):
         scheduler=scheduler,
     )
 
+    # Optional compile
     if args.compile_dit:
         for i in range(len(pipe.transformer.blocks)):
             pipe.transformer.blocks[i] = torch.compile(pipe.transformer.blocks[i])
-        if transformer_2 is not None:
-            for i in range(len(pipe.transformer_2.blocks)):
-                pipe.transformer_2.blocks[i] = torch.compile(
-                    pipe.transformer_2.blocks[i]
-                )
+        for i in range(len(pipe.transformer_2.blocks)):
+            pipe.transformer_2.blocks[i] = torch.compile(pipe.transformer_2.blocks[i])
 
+    # Memory/offload modes
     if args.gpu_memory_mode == "sequential_cpu_offload":
-        replace_parameters_by_name(transformer, ["modulation"], device=device)
-        transformer.freqs = transformer.freqs.to(device=device)
-        if transformer_2 is not None:
-            replace_parameters_by_name(transformer_2, ["modulation"], device=device)
-            transformer_2.freqs = transformer_2.freqs.to(device=device)
+        replace_parameters_by_name(pipe.transformer, ["modulation"], device=device)
+        replace_parameters_by_name(pipe.transformer_2, ["modulation"], device=device)
+        pipe.transformer.freqs = pipe.transformer.freqs.to(device=device)
+        pipe.transformer_2.freqs = pipe.transformer_2.freqs.to(device=device)
         pipe.enable_sequential_cpu_offload(device=device)
     elif args.gpu_memory_mode == "model_cpu_offload_and_qfloat8":
         convert_model_weight_to_float8(
-            transformer, exclude_module_name=["modulation"], device=device
+            pipe.transformer, exclude_module_name=["modulation"], device=device
         )
-        convert_weight_dtype_wrapper(transformer, getattr(torch, args.weight_dtype))
-        if transformer_2 is not None:
-            convert_model_weight_to_float8(
-                transformer_2, exclude_module_name=["modulation"], device=device
-            )
-            convert_weight_dtype_wrapper(
-                transformer_2, getattr(torch, args.weight_dtype)
-            )
+        convert_model_weight_to_float8(
+            pipe.transformer_2, exclude_module_name=["modulation"], device=device
+        )
+        convert_weight_dtype_wrapper(
+            pipe.transformer, getattr(torch, args.weight_dtype)
+        )
+        convert_weight_dtype_wrapper(
+            pipe.transformer_2, getattr(torch, args.weight_dtype)
+        )
         pipe.enable_model_cpu_offload(device=device)
     elif args.gpu_memory_mode == "model_cpu_offload":
         pipe.enable_model_cpu_offload(device=device)
     elif args.gpu_memory_mode == "model_full_load_and_qfloat8":
         convert_model_weight_to_float8(
-            transformer, exclude_module_name=["modulation"], device=device
+            pipe.transformer, exclude_module_name=["modulation"], device=device
         )
-        convert_weight_dtype_wrapper(transformer, getattr(torch, args.weight_dtype))
-        if transformer_2 is not None:
-            convert_model_weight_to_float8(
-                transformer_2, exclude_module_name=["modulation"], device=device
-            )
-            convert_weight_dtype_wrapper(
-                transformer_2, getattr(torch, args.weight_dtype)
-            )
+        convert_model_weight_to_float8(
+            pipe.transformer_2, exclude_module_name=["modulation"], device=device
+        )
+        convert_weight_dtype_wrapper(
+            pipe.transformer, getattr(torch, args.weight_dtype)
+        )
+        convert_weight_dtype_wrapper(
+            pipe.transformer_2, getattr(torch, args.weight_dtype)
+        )
         pipe.to(device=device)
     else:
         pipe.to(device=device)
 
+    # TeaCache / cfg-skip
     if args.enable_teacache:
         coeffs = get_teacache_coefficients(args.model_dir)
         if coeffs is not None:
@@ -352,81 +411,18 @@ def load_models(args, device):
                 num_skip_start_steps=args.teacache_skip_start,
                 offload=args.teacache_offload,
             )
-            if transformer_2 is not None:
-                pipe.transformer_2.share_teacache(transformer=pipe.transformer)
+            pipe.transformer_2.share_teacache(transformer=pipe.transformer)
 
     if args.cfg_skip_ratio is not None and args.cfg_skip_ratio > 0:
         pipe.transformer.enable_cfg_skip(args.cfg_skip_ratio, args.steps)
-        if transformer_2 is not None:
-            pipe.transformer_2.share_cfg_skip(transformer=pipe.transformer)
+        pipe.transformer_2.share_cfg_skip(transformer=pipe.transformer)
 
     return pipe, config
 
 
-def ensure_latent_video(img_path, T, H, W):
-    if img_path is None:
-        return None, None, None
-    return get_image_to_video_latent(img_path, None, video_length=T, sample_size=[H, W])
-
-
-def pick_caption(it, caption_field: str) -> tuple[str, str]:
-    """
-    Returns (caption_text, source_tag) where source_tag in {'BASE','AUG','CONTRA'}.
-    If caption_field='auto', tries caption_aug -> caption_contra -> caption.
-    """
-    if caption_field == "base":
-        cap = (it.get("caption") or "").strip()
-        return cap, "BASE"
-    if caption_field == "aug":
-        cap = (it.get("caption_aug") or "").strip()
-        return cap, "AUG"
-    if caption_field == "contra":
-        cap = (it.get("caption_contra") or "").strip()
-        return cap, "CONTRA"
-
-    # auto
-    for key, tag in (
-        ("caption_aug", "AUG"),
-        ("caption_contra", "CONTRA"),
-        ("caption", "BASE"),
-    ):
-        cap = (it.get(key) or "").strip()
-        if cap:
-            return cap, tag
-    return "", "BASE"
-
-
-def make_unique_path(base_path: Path) -> Path:
-    """Append _1, _2, ... if the file already exists."""
-    if not base_path.exists():
-        return base_path
-    stem = base_path.stem
-    suffix = base_path.suffix
-    parent = base_path.parent
-    i = 1
-    while True:
-        cand = parent / f"{stem}_{i}{suffix}"
-        if not cand.exists():
-            return cand
-        i += 1
-
-
-def resolve_img_path(item, images_root: str | None) -> str:
-    """
-    Prefer absolute item['image_path'] if present.
-    Else use item['file_name'] joined with images_root (if provided).
-    Returns '' if we can't resolve a path.
-    """
-    p = (item.get("image_path") or "").strip()
-    if p:
-        return p if os.path.isabs(p) else os.path.join(images_root or "", p)
-
-    fn = (item.get("file_name") or "").strip()
-    if not fn:
-        return ""
-    return fn if os.path.isabs(fn) else os.path.join(images_root or "", fn)
-
-
+# ---------------------------
+# Main
+# ---------------------------
 def main():
     args = parse_args()
     rank, world_size, local_rank = ddp_init()
@@ -441,38 +437,26 @@ def main():
     with open(args.dataset_json, "r") as f:
         data = json.load(f)
 
-    # Build skip set
-    skip_set = set(
-        [s.strip().lower() for s in (args.skip_types or "").split(",") if s.strip()]
-    )
-
-    # Filter + normalize items
-    # Filter + normalize items
-
+    # Normalize & filter items
     items = []
     for i, it in enumerate(data):
-        # allow either 'file_name' or 'image_path' (or neither for pure T2V)
-        has_img_ref = bool((it.get("image_path") or it.get("file_name") or "").strip())
-        typ = (it.get("type") or "").strip().lower()
-        if typ in skip_set:
+        # Require an image reference
+        has_img = bool((it.get("image_path") or it.get("file_name") or "").strip())
+        if not has_img:
             continue
 
         cap, tag = pick_caption(it, args.caption_field)
-        # For T2V we only need caption; for TI2V/I2V we also need an image reference
-        if args.mode in ("ti2v", "i2v") and not has_img_ref:
-            continue
-        if args.mode in ("t2v",) and not cap:
+        if args.mode == "ti2v" and not cap:
+            # TI2V needs caption + image
             continue
 
-        # Keep both references; we'll resolve image path later
         items.append(
             {
                 "id": i,
                 "file_name": (it.get("file_name") or "").strip(),
                 "image_path": (it.get("image_path") or "").strip(),
-                "caption": cap,
-                "cap_tag": tag,
-                "type": typ,
+                "caption": cap,  # may be empty in i2v
+                "cap_tag": tag,  # BASE / AUG / CONTRA
             }
         )
 
@@ -481,23 +465,23 @@ def main():
 
     # Shard by rank
     sharded = [it for i, it in enumerate(items) if i % world_size == rank]
-    _log(
-        f"[Shard] rank {rank} got {len(sharded)} / {len(items)} items (skipping types: {sorted(skip_set)})"
-    )
+    _log(f"[Shard] rank {rank} got {len(sharded)} / {len(items)} items")
 
-    # Prepare output dir (include caption source subfolder)
-    mode_dir = dict(ti2v="TI2V", t2v="T2V", i2v="I2V")[args.mode]
-    # Use the first item’s tag to create the caption-source subfolder; if empty, default BASE
-    cap_tag = sharded[0]["cap_tag"] if sharded else "BASE"
+    # Make base output dir
+    mode_dir = dict(i2v="I2V", ti2v="TI2V")[args.mode]
+    # If TI2V, folder includes caption source; else use "BASE" by convention
+    cap_tag_for_dir = (
+        sharded[0]["cap_tag"] if (sharded and args.mode == "ti2v") else "BASE"
+    )
     if args.prompt_category is not None:
-        out_root = Path(args.outdir) / mode_dir / cap_tag / args.prompt_category
+        out_root = Path(args.outdir) / mode_dir / cap_tag_for_dir / args.prompt_category
     else:
-        out_root = Path(args.outdir) / mode_dir / cap_tag
+        out_root = Path(args.outdir) / mode_dir / cap_tag_for_dir
     out_root.mkdir(parents=True, exist_ok=True)
 
-    # Load models
+    # Load models / pipeline
     pipe, config = load_models(args, device=device)
-    boundary = config["transformer_additional_kwargs"].get("boundary", 0.875)
+    boundary = config["transformer_additional_kwargs"].get("boundary", 0.900)
 
     # dtype + generator
     weight_dtype = getattr(torch, args.weight_dtype)
@@ -512,39 +496,30 @@ def main():
     if args.enable_riflex:
         latent_frames = (T - 1) // tcr + 1
         pipe.transformer.enable_riflex(k=args.riflex_k, L_test=latent_frames)
-        if pipe.transformer_2 is not None:
-            pipe.transformer_2.enable_riflex(k=args.riflex_k, L_test=latent_frames)
-
-    def _slug(s):
-        s = s.strip().replace(" ", "_")
-        return re.sub(r"[^a-zA-Z0-9._-]+", "_", s)[:200]
+        pipe.transformer_2.enable_riflex(k=args.riflex_k, L_test=latent_frames)
 
     # Process shard
     for it in sharded:
-        prompt = it["caption"] or ""
-        cap_tag = it["cap_tag"]  # BASE / AUG / CONTRA
+        prompt = it["caption"] if args.mode == "ti2v" else ""
+        cap_tag = it["cap_tag"] if args.mode == "ti2v" else "BASE"
 
-        mode_dir = dict(ti2v="TI2V", t2v="T2V", i2v="I2V")[args.mode]
+        # Resolve image path
+        img_path = resolve_img_path(it, args.images_root)
+        if not img_path or not os.path.exists(img_path):
+            _log(f"[Warn] image missing: {img_path or '(empty)'} (skip)")
+            continue
+
+        # Recompute out_root per item to reflect possibly different cap_tag in TI2V
         if args.prompt_category is not None:
             out_root = Path(args.outdir) / mode_dir / cap_tag / args.prompt_category
         else:
             out_root = Path(args.outdir) / mode_dir / cap_tag
         out_root.mkdir(parents=True, exist_ok=True)
 
-        # For filename: prefer prompt slug; else fall back to image/file stem; else id
-        fallback_stem = ""
-        if it.get("image_path") or it.get("file_name"):
-            tmp_img_path = resolve_img_path(it, args.images_root)
-            fallback_stem = (
-                Path(tmp_img_path).stem if tmp_img_path else f"sample_{it['id']:05d}"
-            )
-        # prompt_stem = (
-        #     slugify(prompt)
-        #     if prompt
-        #     else slugify(fallback_stem or f"sample_{it['id']:05d}")
-        # )
+        # Filename: prefer prompt slug; else fall back to image/file stem; else id
+        fallback_stem = Path(img_path).stem if img_path else f"sample_{it['id']:05d}"
+        # prompt_stem = slugify(prompt) if prompt else slugify(fallback_stem)
         # prompt_stem = prompt_stem[:180] if len(prompt_stem) > 180 else prompt_stem
-
         out_path = out_root / f"{prompt}.mp4"
         if args.resume and out_path.exists():
             _log(f"[Skip] exists: {out_path}")
@@ -552,29 +527,15 @@ def main():
         if out_path.exists():
             out_path = make_unique_path(out_path)
 
-        # Inputs per mode
-        if args.mode == "t2v":
-            v_in, m_in, _ = None, None, None
-            cond_prompt = prompt
-        elif args.mode == "i2v":
-            img_path = resolve_img_path(it, args.images_root)
-            if not img_path or not os.path.exists(img_path):
-                _log(f"[Warn] image missing: {img_path or '(empty)'} (skip)")
-                continue
-            v_in, m_in, _ = ensure_latent_video(img_path, T, args.height, args.width)
-            cond_prompt = ""
-        else:  # ti2v
-            img_path = resolve_img_path(it, args.images_root)
-            if not img_path or not os.path.exists(img_path):
-                _log(f"[Warn] image missing: {img_path or '(empty)'} (skip)")
-                continue
-            v_in, m_in, _ = ensure_latent_video(img_path, T, args.height, args.width)
-            cond_prompt = prompt
+        # Prepare latent video + mask from image
+        v_in, m_in, _ = get_image_to_video_latent(
+            img_path, None, video_length=T, sample_size=[args.height, args.width]
+        )
 
         gen = base_gen.manual_seed(args.seed + it["id"])
         with torch.no_grad():
             sample = pipe(
-                cond_prompt,
+                prompt,
                 num_frames=T,
                 negative_prompt=args.negative_prompt,
                 height=args.height,
@@ -604,32 +565,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-# # Single GPU, TI2V (image + caption)
-# python generate_videos_ddp.py \
-#   --dataset_json /path/to/vbench_i2v.json \
-#   --images_root /path/to/images \
-#   --outdir /path/to/out \
-#   --mode ti2v --resume --verbose
-
-# # Multi-GPU (e.g., 8x A100), TI2V
-# torchrun --nproc_per_node=8 generate_videos_ddp.py \
-#   --dataset_json /path/to/vbench_i2v.json \
-#   --images_root /path/to/images \
-#   --outdir /path/to/out \
-#   --mode ti2v --resume
-
-# # Generate T2V on the SAME items (using only captions)
-# torchrun --nproc_per_node=8 generate_videos_ddp.py \
-#   --dataset_json /path/to/vbench_i2v.json \
-#   --images_root /path/to/images \
-#   --outdir /path/to/out \
-#   --mode t2v --resume
-
-# # Generate I2V on the SAME items (using only images)
-# torchrun --nproc_per_node=8 generate_videos_ddp.py \
-#   --dataset_json /path/to/vbench_i2v.json \
-#   --images_root /path/to/images \
-#   --outdir /path/to/out \
-#   --mode i2v --resume

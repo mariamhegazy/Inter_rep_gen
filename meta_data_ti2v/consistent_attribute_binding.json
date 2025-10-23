@@ -1,0 +1,790 @@
+[
+  {
+    "file_name": "A_blue_car_drives_past_a_white_picket_fence_on_a_sunny_day.png",
+    "caption": "A blue car drives past a white picket fence on a sunny day"
+  },
+  {
+    "file_name": "A_black_dog_sits_beside_a_red_vase_on_a_table.png",
+    "caption": "A black dog sits beside a red vase on a table"
+  },
+  {
+    "file_name": "Red_toaster_toasting_bread_beside_a_white_refrigerator.png",
+    "caption": "Red toaster toasting bread beside a white refrigerator"
+  },
+  {
+    "file_name": "Green_parrot_perching_on_a_brown_chair.png",
+    "caption": "Green parrot perching on a brown chair"
+  },
+  {
+    "file_name": "Yellow_rubber_duck_floating_next_to_a_blue_bath_towel.png",
+    "caption": "Yellow rubber duck floating next to a blue bath towel"
+  },
+  {
+    "file_name": "Blue_umbrella_shielding_a_pink_picnic_blanket.png",
+    "caption": "Blue umbrella shielding a pink picnic blanket"
+  },
+  {
+    "file_name": "Green_tractor_plowing_near_a_white_farmhouse.png",
+    "caption": "Green tractor plowing near a white farmhouse"
+  },
+  {
+    "file_name": "Orange_cat_sleeping_on_a_purple_cushion.png",
+    "caption": "Orange cat sleeping on a purple cushion"
+  },
+  {
+    "file_name": "Black_swan_gliding_past_a_green_lily_pad.png",
+    "caption": "Black swan gliding past a green lily pad"
+  },
+  {
+    "file_name": "Brown_squirrel_climbing_a_black_lamp_post.png",
+    "caption": "Brown squirrel climbing a black lamp post"
+  },
+  {
+    "file_name": "Green_taxi_drives_past_a_yellow_building.png",
+    "caption": "Green taxi drives past a yellow building"
+  },
+  {
+    "file_name": "Blue_jay_swooping_near_a_red_maple_tree.png",
+    "caption": "Blue jay swooping near a red maple tree"
+  },
+  {
+    "file_name": "Pink_motorcycle_weaving_through_orange_traffic_cones.png",
+    "caption": "Pink motorcycle weaving through orange traffic cones"
+  },
+  {
+    "file_name": "Yellow_curtains_swaying_near_a_blue_sofa.png",
+    "caption": "Yellow curtains swaying near a blue sofa"
+  },
+  {
+    "file_name": "Blue_curtains_swaying_near_a_yellow_sofa.png",
+    "caption": "Blue curtains swaying near a yellow sofa"
+  },
+  {
+    "file_name": "Yellow_school_bus_stopping_in_front_of_a_red_building.png",
+    "caption": "Yellow school bus stopping in front of a red building"
+  },
+  {
+    "file_name": "White_tractor_plowing_near_a_green_farmhouse.png",
+    "caption": "White tractor plowing near a green farmhouse"
+  },
+  {
+    "file_name": "Man_in_a_black_suit_driving_a_red_sports_car.png",
+    "caption": "Man in a black suit driving a red sports car"
+  },
+  {
+    "file_name": "Girl_in_pink_sweater_holding_a_golden_trophy.png",
+    "caption": "Girl in pink sweater holding a golden trophy"
+  },
+  {
+    "file_name": "Man_in_a_red_suit_driving_a_black_sports_car.png",
+    "caption": "Man in a red suit driving a black sports car"
+  },
+  {
+    "file_name": "Yellow_pencil_writing_on_a_green_notebook.png",
+    "caption": "Yellow pencil writing on a green notebook"
+  },
+  {
+    "file_name": "Round_soccer_ball_bouncing_near_a_square_scoreboard.png",
+    "caption": "Round soccer ball bouncing near a square scoreboard"
+  },
+  {
+    "file_name": "Cylindrical_thermos_pouring_into_a_conical_paper_cup.png",
+    "caption": "Cylindrical thermos pouring into a conical paper cup"
+  },
+  {
+    "file_name": "Oblong_canoe_gliding_past_a_circular_buoy.png",
+    "caption": "Oblong canoe gliding past a circular buoy"
+  },
+  {
+    "file_name": "Pyramidal_tent_sheltering_a_round_grill.png",
+    "caption": "Pyramidal tent sheltering a round grill"
+  },
+  {
+    "file_name": "Rectangular_briefcase_swinging_near_a_hexagonal_fountain.png",
+    "caption": "Rectangular briefcase swinging near a hexagonal fountain"
+  },
+  {
+    "file_name": "Conical_hat_spinning_beside_a_square_cake.png",
+    "caption": "Conical hat spinning beside a square cake"
+  },
+  {
+    "file_name": "Cylindrical_bin_rolling_towards_a_triangular_sign.png",
+    "caption": "Cylindrical bin rolling towards a triangular sign"
+  },
+  {
+    "file_name": "Oval_bathtub_filling_near_a_rectangular_towel.png",
+    "caption": "Oval bathtub filling near a rectangular towel"
+  },
+  {
+    "file_name": "Spherical_globe_rotating_next_to_a_cube_clock.png",
+    "caption": "Spherical globe rotating next to a cube clock"
+  },
+  {
+    "file_name": "Star-shaped_cookie_resting_on_a_round_coaster.png",
+    "caption": "Star-shaped cookie resting on a round coaster"
+  },
+  {
+    "file_name": "Spiral_staircase_winding_beside_a_cubic_stool.png",
+    "caption": "Spiral staircase winding beside a cubic stool"
+  },
+  {
+    "file_name": "Elliptical_mirror_hanging_near_a_square_window.png",
+    "caption": "Elliptical mirror hanging near a square window"
+  },
+  {
+    "file_name": "Diamond-shaped_kite_soaring_above_a_flat_roof.png",
+    "caption": "Diamond-shaped kite soaring above a flat roof"
+  },
+  {
+    "file_name": "Heart-shaped_pillow_tossed_onto_a_circular_bed.png",
+    "caption": "Heart-shaped pillow tossed onto a circular bed"
+  },
+  {
+    "file_name": "Woolen_scarf_fluttering_near_a_leather_suitcase.png",
+    "caption": "Woolen scarf fluttering near a leather suitcase"
+  },
+  {
+    "file_name": "Silk_dress_swaying_beside_a_velvet_curtain.png",
+    "caption": "Silk dress swaying beside a velvet curtain"
+  },
+  {
+    "file_name": "Leather_boots_stepping_on_a_marble_floor.png",
+    "caption": "Leather boots stepping on a marble floor"
+  },
+  {
+    "file_name": "Wooden_chair_sliding_across_a_slate_tile.png",
+    "caption": "Wooden chair sliding across a slate tile"
+  },
+  {
+    "file_name": "Ceramic_vase_rotating_on_a_copper_table.png",
+    "caption": "Ceramic vase rotating on a copper table"
+  },
+  {
+    "file_name": "Denim_jacket_hanging_on_a_metal_coat_rack.png",
+    "caption": "Denim jacket hanging on a metal coat rack"
+  },
+  {
+    "file_name": "Crystal_chandelier_swinging_above_a_wooden_table.png",
+    "caption": "Crystal chandelier swinging above a wooden table"
+  },
+  {
+    "file_name": "Corduroy_cloth_brushing_against_a_glass_table.png",
+    "caption": "Corduroy cloth brushing against a glass table"
+  },
+  {
+    "file_name": "Velvet_ribbon_tied_on_an_iron_fence.png",
+    "caption": "Velvet ribbon tied on an iron fence"
+  },
+  {
+    "file_name": "Linen_curtains_blowing_beside_a_bamboo_wall.png",
+    "caption": "Linen curtains blowing beside a bamboo wall"
+  },
+  {
+    "file_name": "Plush_teddy_bear_tumbling_next_to_a_leather_couch.png",
+    "caption": "Plush teddy bear tumbling next to a leather couch"
+  },
+  {
+    "file_name": "Furry_dog_fetching_a_rubber_ball.png",
+    "caption": "Furry dog fetching a rubber ball"
+  },
+  {
+    "file_name": "Slick_seal_sliding_near_a_rubber_mat.png",
+    "caption": "Slick seal sliding near a rubber mat"
+  },
+  {
+    "file_name": "Silver-haired_woman_admiring_a_black_grand_piano.png",
+    "caption": "Silver-haired woman admiring a black grand piano"
+  },
+  {
+    "file_name": "Young_boy_tossing_a_leather_baseball_glove.png",
+    "caption": "Young boy tossing a leather baseball glove"
+  },
+  {
+    "file_name": "Muscular_man_wielding_an_iron_sword.png",
+    "caption": "Muscular man wielding an iron sword"
+  },
+  {
+    "file_name": "Elderly_artist_with_a_white_beard_painting_on_a_white_canvas.png",
+    "caption": "Elderly artist with a white beard painting on a white canvas"
+  },
+  {
+    "file_name": "Girl_with_braids_feeding_a_spotted_deer.png",
+    "caption": "Girl with braids feeding a spotted deer"
+  },
+  {
+    "file_name": "Boy_in_a_blue_shirt_playing_chess_with_a_bearded_man.png",
+    "caption": "Boy in a blue shirt playing chess with a bearded man"
+  },
+  {
+    "file_name": "Tall_woman_discussing_plans_with_a_short_woman.png",
+    "caption": "Tall woman discussing plans with a short woman"
+  },
+  {
+    "file_name": "Girl_with_curly_hair_riding_a_red_bike.png",
+    "caption": "Girl with curly hair riding a red bike"
+  },
+  {
+    "file_name": "Woman_in_red_dress_painting_with_a_man_in_a_green_shirt.png",
+    "caption": "Woman in red dress painting with a man in a green shirt"
+  },
+  {
+    "file_name": "Golden_retriever_chasing_a_yellow_frisbee_in_the_park.png",
+    "caption": "Golden retriever chasing a yellow frisbee in the park"
+  },
+  {
+    "file_name": "Red_car_racing_past_an_old_church.png",
+    "caption": "Red car racing past an old church"
+  },
+  {
+    "file_name": "Green_tree_shedding_leaves_near_a_wooden_cabin.png",
+    "caption": "Green tree shedding leaves near a wooden cabin"
+  },
+  {
+    "file_name": "Fresh_sushi_served_on_a_slate_plate.png",
+    "caption": "Fresh sushi served on a slate plate"
+  },
+  {
+    "file_name": "Striped_cat_lounging_on_a_velvet_pillow.png",
+    "caption": "Striped cat lounging on a velvet pillow"
+  },
+  {
+    "file_name": "Blue_truck_hauling_a_load_of_orange_pumpkins.png",
+    "caption": "Blue truck hauling a load of orange pumpkins"
+  },
+  {
+    "file_name": "Woman_with_glasses_reading_to_a_little_girl.png",
+    "caption": "Woman with glasses reading to a little girl"
+  },
+  {
+    "file_name": "man_in_a_white_vest_fixing_a_red_bike.png",
+    "caption": "man in a white vest fixing a red bike"
+  },
+  {
+    "file_name": "Elderly_woman_watering_red_rose.png",
+    "caption": "Elderly woman watering red rose"
+  },
+  {
+    "file_name": "Boy_with_a_cap_playing_soccer_with_a_girl_wearing_a_red_shirt.png",
+    "caption": "Boy with a cap playing soccer with a girl wearing a red shirt"
+  },
+  {
+    "file_name": "Green_beetle_crawling_on_a_gray_rock.png",
+    "caption": "Green beetle crawling on a gray rock"
+  },
+  {
+    "file_name": "Fluffy_squirrel_playing_on_a_metal_bench.png",
+    "caption": "Fluffy squirrel playing on a metal bench"
+  },
+  {
+    "file_name": "Orange_truck_hauling_a_load_of_blue_pumpkins.png",
+    "caption": "Orange truck hauling a load of blue pumpkins"
+  },
+  {
+    "file_name": "Golden_sunlight_piercing_through_dark_clouds.png",
+    "caption": "Golden sunlight piercing through dark clouds"
+  },
+  {
+    "file_name": "Fluffy_clouds_drifting_over_a_jagged_mountain_peak.png",
+    "caption": "Fluffy clouds drifting over a jagged mountain peak"
+  },
+  {
+    "file_name": "Murky_water_swirling_around_a_shiny_anchor.png",
+    "caption": "Murky water swirling around a shiny anchor"
+  },
+  {
+    "file_name": "Glistening_waves_crashing_against_a_rugged_cliffside.png",
+    "caption": "Glistening waves crashing against a rugged cliffside"
+  },
+  {
+    "file_name": "Bioluminescent_jellyfish_floating_near_red_corals.png",
+    "caption": "Bioluminescent jellyfish floating near red corals"
+  },
+  {
+    "file_name": "Blue_apple_bouncing_near_a_pink_tree.png",
+    "caption": "Blue apple bouncing near a pink tree"
+  },
+  {
+    "file_name": "Green_cat_chasing_a_purple_mouse.png",
+    "caption": "Green cat chasing a purple mouse"
+  },
+  {
+    "file_name": "Purple_banana_hanging_from_a_green_vine.png",
+    "caption": "Purple banana hanging from a green vine"
+  },
+  {
+    "file_name": "Orange_elephant_standing_on_a_blue_ball.png",
+    "caption": "Orange elephant standing on a blue ball"
+  },
+  {
+    "file_name": "A_red_dog_chasing_a_green_horse.png",
+    "caption": "A red dog chasing a green horse"
+  },
+  {
+    "file_name": "Pink_giraffe_eating_from_a_brown_bush.png",
+    "caption": "Pink giraffe eating from a brown bush"
+  },
+  {
+    "file_name": "Ancient_vase_displayed_next_to_a_glass_sculpture.png",
+    "caption": "Ancient vase displayed next to a glass sculpture"
+  },
+  {
+    "file_name": "Chef_in_white_apron_slicing_green_cucumbers.png",
+    "caption": "Chef in white apron slicing green cucumbers"
+  },
+  {
+    "file_name": "Star-shaped_mirror_reflecting_a_square_moon.png",
+    "caption": "Star-shaped mirror reflecting a square moon"
+  },
+  {
+    "file_name": "Heart-shaped_book_opening_next_to_a_circular_lamp.png",
+    "caption": "Heart-shaped book opening next to a circular lamp"
+  },
+  {
+    "file_name": "Triangular_pizza_slicing_next_to_a_round_plate.png",
+    "caption": "Triangular pizza slicing next to a round plate"
+  },
+  {
+    "file_name": "L-shaped_sofa_placed_next_to_a_round_window.png",
+    "caption": "L-shaped sofa placed next to a round window"
+  },
+  {
+    "file_name": "Crystal_cake_shimmering_beside_a_metal_apple.png",
+    "caption": "Crystal cake shimmering beside a metal apple"
+  },
+  {
+    "file_name": "Metallic_tree_rustling_near_a_paper_bench.png",
+    "caption": "Metallic tree rustling near a paper bench"
+  },
+  {
+    "file_name": "A_paper_plane_flying_above_a_knitted_vase.png",
+    "caption": "A paper plane flying above a knitted vase"
+  },
+  {
+    "file_name": "Wooden_car_speeding_past_a_porcelain_tree.png",
+    "caption": "Wooden car speeding past a porcelain tree"
+  },
+  {
+    "file_name": "Man_with_a_balloon_head_juggling_transparent_apples.png",
+    "caption": "Man with a balloon head juggling transparent apples"
+  },
+  {
+    "file_name": "Dancer_with_metallic_skin_twirling_near_a_glowing_tree.png",
+    "caption": "Dancer with metallic skin twirling near a glowing tree"
+  },
+  {
+    "file_name": "Pig_with_wings_flying_above_a_diamond_mountain.png",
+    "caption": "Pig with wings flying above a diamond mountain"
+  },
+  {
+    "file_name": "Cubic_watermelon_rolling_towards_a_rainbow_river.png",
+    "caption": "Cubic watermelon rolling towards a rainbow river"
+  },
+  {
+    "file_name": "Paper_car_racing_a_crystal_snail.png",
+    "caption": "Paper car racing a crystal snail"
+  },
+  {
+    "file_name": "Porcelain_rabbit_hopping_by_a_golden_cactus.png",
+    "caption": "Porcelain rabbit hopping by a golden cactus"
+  },
+  {
+    "file_name": "Purple_ballon_floating_near_a_yellow_car.png",
+    "caption": "Purple ballon floating near a yellow car"
+  },
+  {
+    "file_name": "Yellow_rose_swaying_near_a_green_bench.png",
+    "caption": "Yellow rose swaying near a green bench"
+  },
+  {
+    "file_name": "Big_hearts_and_small_stars_floating_upwards.png",
+    "caption": "Big hearts and small stars floating upwards"
+  },
+  {
+    "file_name": "A_red_bicycle_races_alongside_a_yellow_taxi_through_the_bustling_streets.png",
+    "caption": "A red bicycle races alongside a yellow taxi through the bustling streets"
+  },
+  {
+    "file_name": "A_silver_rocket_launches_past_a_blue_skyscraper_under_a_bright_sky.png",
+    "caption": "A silver rocket launches past a blue skyscraper under a bright sky"
+  },
+  {
+    "file_name": "A_green_bird_flutters_near_a_blue_window_on_a_sunny_day.png",
+    "caption": "A green bird flutters near a blue window on a sunny day"
+  },
+  {
+    "file_name": "A_pink_balloon_drifts_past_a_green_traffic_light_on_the_street.png",
+    "caption": "A pink balloon drifts past a green traffic light on the street"
+  },
+  {
+    "file_name": "A_black_motorcycle_zooms_alongside_a_green_bus_on_a_busy_road.png",
+    "caption": "A black motorcycle zooms alongside a green bus on a busy road"
+  },
+  {
+    "file_name": "A_white_horse_gallops_past_a_brown_fence__kicking_up_dust.png",
+    "caption": "A white horse gallops past a brown fence, kicking up dust"
+  },
+  {
+    "file_name": "A_white_pigeon_circles_above_a_blue_suitcase__preparing_to_land.png",
+    "caption": "A white pigeon circles above a blue suitcase, preparing to land"
+  },
+  {
+    "file_name": "A_blue_boat_sails_past_a_white_lighthouse__waves_crashing_around_it.png",
+    "caption": "A blue boat sails past a white lighthouse, waves crashing around it"
+  },
+  {
+    "file_name": "A_green_soccer_ball_bounces_near_a_yellow_bench_in_the_playground.png",
+    "caption": "A green soccer ball bounces near a yellow bench in the playground"
+  },
+  {
+    "file_name": "A_red_fox_sneaks_past_a_green_statue_in_the_garden.png",
+    "caption": "A red fox sneaks past a green statue in the garden"
+  },
+  {
+    "file_name": "A_yellow_car_passed_by_a_red_stop_sign_on_a_street.png",
+    "caption": "A yellow car passed by a red stop sign on a street"
+  },
+  {
+    "file_name": "A_blue_ladder_leans_against_a_red_farmhouse__feet_stomping_up_each_rung.png",
+    "caption": "A blue ladder leans against a red farmhouse, feet stomping up each rung"
+  },
+  {
+    "file_name": "A_yellow_pencil_rolls_off_a_purple_notebook_on_the_desk.png",
+    "caption": "A yellow pencil rolls off a purple notebook on the desk"
+  },
+  {
+    "file_name": "A_pink_basket_tumbles_away_from_a_blue_picnic_blanket__blown_by_a_strong_wind.png",
+    "caption": "A pink basket tumbles away from a blue picnic blanket, blown by a strong wind"
+  },
+  {
+    "file_name": "A_blue_umbrella_spins_near_a_green_door__rain_splattering_all_around.png",
+    "caption": "A blue umbrella spins near a green door, rain splattering all around"
+  },
+  {
+    "file_name": "A_yellow_hair_drier_blasts_air_onto_a_purple_towel__making_the_fabric_ripple_gracefully.png",
+    "caption": "A yellow hair drier blasts air onto a purple towel, making the fabric ripple gracefully"
+  },
+  {
+    "file_name": "A_red_cushion_flies_through_the_air_as_a_gray_cat_leaps_to_catch_it.png",
+    "caption": "A red cushion flies through the air as a gray cat leaps to catch it"
+  },
+  {
+    "file_name": "A_brown_raccoon_tips_over_a_yellow_bin__scavenging_for_snacks.png",
+    "caption": "A brown raccoon tips over a yellow bin, scavenging for snacks"
+  },
+  {
+    "file_name": "A_gray_squirrel_climbs_onto_a_black_remote__accidentally_changing_the_channel.png",
+    "caption": "A gray squirrel climbs onto a black remote, accidentally changing the channel"
+  },
+  {
+    "file_name": "A_golden_monkey_plays_tennis_with_a_blue_tennis_racket.png",
+    "caption": "A golden monkey plays tennis with a blue tennis racket"
+  },
+  {
+    "file_name": "A_white_rabbit_hops_across_a_red_carpet_in_a_living_room.png",
+    "caption": "A white rabbit hops across a red carpet in a living room"
+  },
+  {
+    "file_name": "A_yellow_teddy_bear_has_breakfast_from_a_blue_bowl__sitting_on_the_dining_table.png",
+    "caption": "A yellow teddy bear has breakfast from a blue bowl, sitting on the dining table"
+  },
+  {
+    "file_name": "A_green_spaceship_zooms_past_a_purple_airplane_in_the_sky.png",
+    "caption": "A green spaceship zooms past a purple airplane in the sky"
+  },
+  {
+    "file_name": "A_pink_teddy_bear_sits_on_a_black_oven_in_the_kitchen.png",
+    "caption": "A pink teddy bear sits on a black oven in the kitchen"
+  },
+  {
+    "file_name": "A_white_kitten_naps_in_a_purple_bathtub__paws_stretched_out_as_it_dreams_peacefully.png",
+    "caption": "A white kitten naps in a purple bathtub, paws stretched out as it dreams peacefully"
+  },
+  {
+    "file_name": "A_girl_in_a_red_dress_rides_a_blue_bicycle_in_the_park.png",
+    "caption": "A girl in a red dress rides a blue bicycle in the park"
+  },
+  {
+    "file_name": "A_little_boy_wearing_a_green_jacket_have_a_meal_with_a_red_spoon.png",
+    "caption": "A little boy wearing a green jacket have a meal with a red spoon"
+  },
+  {
+    "file_name": "A_lady_wearing_a_pink_dress_holds_a_green_umbrella__twirling_it_as_she_dances_in_the_rain.png",
+    "caption": "A lady wearing a pink dress holds a green umbrella, twirling it as she dances in the rain"
+  },
+  {
+    "file_name": "A_grandmother_in_a_purple_shawl_knits_beside_a_golden_fireplace.png",
+    "caption": "A grandmother in a purple shawl knits beside a golden fireplace"
+  },
+  {
+    "file_name": "A_father_in_a_green_vest_pitches_a_yellow_tent__securing_each_peg_with_careful_precision.png",
+    "caption": "A father in a green vest pitches a yellow tent, securing each peg with careful precision"
+  },
+  {
+    "file_name": "A_mother_in_a_pink_blouse_pushes_a_brown_stroller_in_a_park.png",
+    "caption": "A mother in a pink blouse pushes a brown stroller in a park"
+  },
+  {
+    "file_name": "A_king_dressed_in_gold_swings_a_blue_sword_in_the_palace.png",
+    "caption": "A king dressed in gold swings a blue sword in the palace"
+  },
+  {
+    "file_name": "A_cowboy_in_a_white_hat_lassos_a_black_bull_on_a_sunny_day.png",
+    "caption": "A cowboy in a white hat lassos a black bull on a sunny day"
+  },
+  {
+    "file_name": "A_girl_in_a_black_dress_watering_a_green_rose_in_the_garden.png",
+    "caption": "A girl in a black dress watering a green rose in the garden"
+  },
+  {
+    "file_name": "A_baby_in_a_yellow_onesie_claps_happily_as_a_blue_robot_dances_in_front_of_them.png",
+    "caption": "A baby in a yellow onesie claps happily as a blue robot dances in front of them"
+  },
+  {
+    "file_name": "A_girl_in_a_black_dress_watering_a_green_rose_in_the_garden.png",
+    "caption": "A girl in a pink hat chases a white kitten, her laughter filling the garden"
+  },
+  {
+    "file_name": "A_toddler_in_a_red_onesie_hugs_a_white_teddy_bear__snuggling_it_tightly.png",
+    "caption": "A toddler in a red onesie hugs a white teddy bear, snuggling it tightly"
+  },
+  {
+    "file_name": "A_DJ_in_a_purple_hoodie_adjusts_a_green_turntable__music_echoing_through_the_venue.png",
+    "caption": "A DJ in a purple hoodie adjusts a green turntable, music echoing through the venue"
+  },
+  {
+    "file_name": "A_girl_in_a_black_dress_watering_a_green_rose_in_the_garden.png",
+    "caption": "A girl in a yellow dress races a boy in a blue hoodie, both laughing as they run through the park"
+  },
+  {
+    "file_name": "A_boy_in_a_superhero_costume_jumps_excitedly_next_to_a_girl_with_long_braids.png",
+    "caption": "A boy in a yellow shirt tosses a football to a girl in a blue shirt, both focused on the game"
+  },
+  {
+    "file_name": "A_blue_scarf_flutters_away_from_a_yellow_handbag__carried_by_the_wind.png",
+    "caption": "A blue scarf flutters away from a yellow handbag, carried by the wind"
+  },
+  {
+    "file_name": "A_yellow_scarf_flutters_away_from_a_blue_handbag__carried_by_the_wind.png",
+    "caption": "A yellow scarf flutters away from a blue handbag, carried by the wind"
+  },
+  {
+    "file_name": "A_blue_ball_rolls_near_a_red_backpack_on_the_playground_field.png",
+    "caption": "A blue ball rolls near a red backpack on the playground field"
+  },
+  {
+    "file_name": "A_red_ball_rolls_near_a_blue_backpack_on_the_playground_field.png",
+    "caption": "A red ball rolls near a blue backpack on the playground field"
+  },
+  {
+    "file_name": "A_yellow_frisbee_spins_away_from_a_blue_dog__the_dog_leaping_to_catch_it_mid-air.png",
+    "caption": "A yellow frisbee spins away from a blue dog, the dog leaping to catch it mid-air"
+  },
+  {
+    "file_name": "A_blue_frisbee_spins_away_from_a_yellow_dog__the_dog_leaping_to_catch_it_mid-air.png",
+    "caption": "A blue frisbee spins away from a yellow dog, the dog leaping to catch it mid-air"
+  },
+  {
+    "file_name": "A_green_potted_plant_sways_as_an_orange_cat_darts_by__leaves_rustling_in_the_sudden_movement.png",
+    "caption": "A green potted plant sways as an orange cat darts by, leaves rustling in the sudden movement"
+  },
+  {
+    "file_name": "An_orange_potted_plant_sways_as_a_green_cat_darts_by__leaves_rustling_in_the_sudden_movement.png",
+    "caption": "An orange potted plant sways as a green cat darts by, leaves rustling in the sudden movement"
+  },
+  {
+    "file_name": "A_green_parrot_perches_atop_a_red_fire_hydrant__fluttering_its_wings_to_stay_balanced.png",
+    "caption": "A green parrot perches atop a red fire hydrant, fluttering its wings to stay balanced"
+  },
+  {
+    "file_name": "A_red_parrot_perches_atop_a_green_fire_hydrant__fluttering_its_wings_to_stay_balanced.png",
+    "caption": "A red parrot perches atop a green fire hydrant, fluttering its wings to stay balanced"
+  },
+  {
+    "file_name": "A_bride_in_a_blue_gown_holds_a_white_bouquet__petals_fluttering_as_she_walks_down_the_aisle.png",
+    "caption": "A bride in a white gown holds a blue bouquet, petals fluttering as she walks down the aisle"
+  },
+  {
+    "file_name": "A_bride_in_a_blue_gown_holds_a_white_bouquet__petals_fluttering_as_she_walks_down_the_aisle.png",
+    "caption": "A bride in a blue gown holds a white bouquet, petals fluttering as she walks down the aisle"
+  },
+  {
+    "file_name": "A_blue_dolphin_leaping_over_a_pink_sailboat__splashing_sparkling_droplets_everywhere.png",
+    "caption": "A blue dolphin leaping over a pink sailboat, splashing sparkling droplets everywhere"
+  },
+  {
+    "file_name": "A_pink_dolphin_leaping_over_a_blue_sailboat__splashing_sparkling_droplets_everywhere.png",
+    "caption": "A pink dolphin leaping over a blue sailboat, splashing sparkling droplets everywhere"
+  },
+  {
+    "file_name": "A_yellow_crab_scuttling_beside_a_red_surfboard_on_the_sandy_shore.png",
+    "caption": "A yellow crab scuttling beside a red surfboard on the sandy shore"
+  },
+  {
+    "file_name": "A_red_crab_scuttling_beside_a_yellow_surfboard_on_the_sandy_shore.png",
+    "caption": "A red crab scuttling beside a yellow surfboard on the sandy shore"
+  },
+  {
+    "file_name": "A_purple_tractor_pulling_a_cart_of_orange_carrots.png",
+    "caption": "A purple tractor pulling a cart of orange carrots"
+  },
+  {
+    "file_name": "An_orange_tractor_pulling_a_cart_of_purple_carrots.png",
+    "caption": "An orange tractor pulling a cart of purple carrots"
+  },
+  {
+    "file_name": "A_girl_in_green_dress_playing_a_black_piano.png",
+    "caption": "A girl in green dress playing a black piano"
+  },
+  {
+    "file_name": "A_girl_in_black_dress_playing_a_green_piano.png",
+    "caption": "A girl in black dress playing a green piano"
+  },
+  {
+    "file_name": "A_bell-shaped_glass_covers_a_triangular_cake.png",
+    "caption": "A bell-shaped glass covers a triangular cake"
+  },
+  {
+    "file_name": "A_spherical_drone_hovers_around_a_circular_monument__scanning_each_detail_with_a_soft_hum.png",
+    "caption": "A spherical drone hovers around a circular monument, scanning each detail with a soft hum"
+  },
+  {
+    "file_name": "A_triangular_leaf_flutters_down__landing_softly_next_onto_an_L-shaped_sofa_in_the_living_room.png",
+    "caption": "A triangular leaf flutters down, landing softly next onto an L-shaped sofa in the living room"
+  },
+  {
+    "file_name": "A_spherical_cow_grazes_near_a_triangular_hut.png",
+    "caption": "A spherical cow grazes near a triangular hut"
+  },
+  {
+    "file_name": "A_cube-shaped_ice_block_slides_across_a_round_plate.png",
+    "caption": "A cube-shaped ice block slides across a round plate"
+  },
+  {
+    "file_name": "An_S-shaped_logo_spins_above_a_cube-shaped_building.png",
+    "caption": "An S-shaped logo spins above a cube-shaped building"
+  },
+  {
+    "file_name": "A_circular_mirror_reflects_a_cat_lounging_on_a_square_cushion.png",
+    "caption": "A circular mirror reflects a cat lounging on a square cushion"
+  },
+  {
+    "file_name": "A_cylindrical_vase_tips_over_as_a_playful_kitten_with_a_triangular_hat_pounces_on_it.png",
+    "caption": "A cylindrical vase tips over as a playful kitten with a triangular hat pounces on it"
+  },
+  {
+    "file_name": "A_round_Rubik_s_cube_spins_beside_a_heart-shaped_alarm_clock.png",
+    "caption": "A round Rubik's cube spins beside a heart-shaped alarm clock"
+  },
+  {
+    "file_name": "A_fan-shaped_window_casts_light_onto_a_star-shaped_bottle.png",
+    "caption": "A fan-shaped window casts light onto a star-shaped bottle"
+  },
+  {
+    "file_name": "A_square_watermelon_and_a_heart-shaped_peach_balance_carefully_on_a_stool__wobbling_with_each_movement.png",
+    "caption": "A square watermelon and a heart-shaped peach balance carefully on a stool, wobbling with each movement"
+  },
+  {
+    "file_name": "A_cuboid_balloon_drifts_past_a_circular_window__sunlight_streaming_through_the_glass_panes.png",
+    "caption": "A cuboid balloon drifts past a circular window, sunlight streaming through the glass panes"
+  },
+  {
+    "file_name": "A_metallic_apple_rolls_across_a_woven_picnic_blanket_in_a_garden.png",
+    "caption": "A metallic apple rolls across a woven picnic blanket in a garden"
+  },
+  {
+    "file_name": "A_spongy_ball_bounces_near_a_marble_bench.png",
+    "caption": "A spongy ball bounces near a marble bench"
+  },
+  {
+    "file_name": "A_marble_teapot_pours_tea_into_a_parchment_cup__steam_rising_into_the_crisp_morning_air.png",
+    "caption": "A marble teapot pours tea into a parchment cup, steam rising into the crisp morning air"
+  },
+  {
+    "file_name": "A_leathery_umbrella_spins_beside_a_bamboo_bridge.png",
+    "caption": "A leathery umbrella spins beside a bamboo bridge"
+  },
+  {
+    "file_name": "A_feathered_pillow_floats_beside_a_clay_sculpture__drifting_peacefully_in_the_gentle_breeze.png",
+    "caption": "A feathered pillow floats beside a clay sculpture, drifting peacefully in the gentle breeze"
+  },
+  {
+    "file_name": "A_lacy_curtain_billows_beside_a_wooden_vase__catching_the_breeze_from_the_open_window.png",
+    "caption": "A lacy curtain billows beside a wooden vase, catching the breeze from the open window"
+  },
+  {
+    "file_name": "A_cardboard_plane_glides_over_a_woven_rug.png",
+    "caption": "A cardboard plane glides over a woven rug"
+  },
+  {
+    "file_name": "A_glass_apple_tumbles_from_a_wicker_basket.png",
+    "caption": "A glass apple tumbles from a wicker basket"
+  },
+  {
+    "file_name": "A_woolen_hat_flies_off_a_wooden_bench__carried_away_by_a_sudden_gust_of_wind.png",
+    "caption": "A woolen hat flies off a wooden bench, carried away by a sudden gust of wind"
+  },
+  {
+    "file_name": "A_rubbery_duck_swims_in_a_marble_pool.png",
+    "caption": "A rubbery duck swims in a marble pool"
+  },
+  {
+    "file_name": "A_wooden_ladder_tips_over_beside_a_clay_statue.png",
+    "caption": "A wooden ladder tips over beside a clay statue"
+  },
+  {
+    "file_name": "A_cardboard_castle_collapses_as_a_rubbery_ball_crashes_into_it.png",
+    "caption": "A cardboard castle collapses as a rubbery ball crashes into it"
+  },
+  {
+    "file_name": "A_man_in_the_leather_jacket_pours_coffee_into_a_ceramic_mug__steam_rising_in_gentle_curls.png",
+    "caption": "A man in the leather jacket pours coffee into a ceramic mug, steam rising in gentle curls"
+  },
+  {
+    "file_name": "A_glass_teapot_pours_tea_into_a_ceramic_teacup.png",
+    "caption": "A glass teapot pours tea into a ceramic teacup"
+  },
+  {
+    "file_name": "A_paper_cup_pours_milk_into_a_glass_vase__the_liquid_swirling_and_splashing_inside.png",
+    "caption": "A paper cup pours milk into a glass vase, the liquid swirling and splashing inside"
+  },
+  {
+    "file_name": "A_grandmother_wearing_pearl_earrings_next_to_her_granddaughter_in_a_colorful_sweater__sharing_family_stories.png",
+    "caption": "A grandmother wearing pearl earrings next to her granddaughter in a colorful sweater, sharing family stories"
+  },
+  {
+    "file_name": "A_man_in_a_suit_and_tie_talks_with_a_woman_in_a_blouse_and_trousers_at_a_networking_event.png",
+    "caption": "A man in a suit and tie talks with a woman in a blouse and trousers at a networking event"
+  },
+  {
+    "file_name": "A_girl_wearing_a_colorful_scarf_giggles_with_a_boy_in_a_cute_hat_as_they_play_with_a_puppy_in_the_park.png",
+    "caption": "A girl wearing a colorful scarf giggles with a boy in a cute hat as they play with a puppy in the park"
+  },
+  {
+    "file_name": "A_boy_in_a_superhero_costume_jumps_excitedly_next_to_a_girl_with_long_braids.png",
+    "caption": "A boy in a superhero costume jumps excitedly next to a girl with long braids"
+  },
+  {
+    "file_name": "A_grandmother_wearing_a_cozy_sweater_shares_cookies_with_her_grandson_in_pajamas__both_enjoying_a_quiet_afternoon_at_home.png",
+    "caption": "A grandmother wearing a cozy sweater shares cookies with her grandson in pajamas, both enjoying a quiet afternoon at home"
+  },
+  {
+    "file_name": "A_girl_wearing_sunglasses_plays_a_guitar_next_to_a_boy_in_tank_top__strumming_along_in_the_summer_breeze.png",
+    "caption": "A girl wearing sunglasses plays a guitar next to a boy in tank top, strumming along in the summer breeze"
+  },
+  {
+    "file_name": "A_woman_with_curly_hair_helps_a_toddler_in_a_cute_onesie_pick_flowers_in_a_sunny_garden.png",
+    "caption": "A woman with curly hair helps a toddler in a cute onesie pick flowers in a sunny garden"
+  },
+  {
+    "file_name": "A_prince_in_formal_attire_greets_a_princess_in_a_beautiful_gown__both_smiling_at_the_royal_ball.png",
+    "caption": "A prince in formal attire greets a princess in a beautiful gown, both smiling at the royal ball"
+  },
+  {
+    "file_name": "An_artist_in_a_paint-splattered_apron_demonstrates_techniques_to_a_boy_in_a_t-shirt_and_jeans__both_engaged_in_a_creative_workshop..png",
+    "caption": "An artist in a paint-splattered apron demonstrates techniques to a boy in a t-shirt and jeans, both engaged in a creative workshop."
+  },
+  {
+    "file_name": "A_scientist_in_safety_goggles_examines_a_sample_next_to_a_girl_in_a_scrub_top__both_working_diligently_in_a_laboratory.png",
+    "caption": "A scientist in safety goggles examines a sample next to a girl in a scrub top, both working diligently in a laboratory"
+  }
+]

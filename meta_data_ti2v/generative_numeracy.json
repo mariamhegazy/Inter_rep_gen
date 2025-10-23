@@ -1,0 +1,802 @@
+[
+  {
+    "file_name": "One_tree_stands_tall__swaying_gently_in_the_breeze..png",
+    "caption": "One tree stands tall, swaying gently in the breeze."
+  },
+  {
+    "file_name": "One_flower_stands_in_the_vase__petals_opening_gracefully..png",
+    "caption": "One flower stands in the vase, petals opening gracefully."
+  },
+  {
+    "file_name": "One_book_lies_open_on_the_desk__pages_curl_gently_in_the_breeze..png",
+    "caption": "One book lies open on the desk, pages curl gently in the breeze."
+  },
+  {
+    "file_name": "One_star_twinkles_in_the_dark_sky..png",
+    "caption": "One star twinkles in the dark sky."
+  },
+  {
+    "file_name": "One_leaf_floats_down_a_stream..png",
+    "caption": "One leaf floats down a stream."
+  },
+  {
+    "file_name": "One_skyscraper_pierces_the_sky__shimmering_in_the_sun..png",
+    "caption": "One skyscraper pierces the sky, shimmering in the sun."
+  },
+  {
+    "file_name": "One_butterfly_flutters_by__wings_dancing_through_the_air..png",
+    "caption": "One butterfly flutters by, wings dancing through the air."
+  },
+  {
+    "file_name": "One_bee_buzzes_nearby__hovering_over_wildflowers..png",
+    "caption": "One bee buzzes nearby, hovering over wildflowers."
+  },
+  {
+    "file_name": "One_shoe_lies_on_the_sidewalk__laces_trailing_loosely..png",
+    "caption": "One shoe lies on the sidewalk, laces trailing loosely."
+  },
+  {
+    "file_name": "One_bubble_floats_above_the_grass..png",
+    "caption": "One bubble floats above the grass."
+  },
+  {
+    "file_name": "One_tree_swaying_in_the_breeze__and_one_bee_flies_nearby..png",
+    "caption": "One tree swaying in the breeze, and one bee flies nearby."
+  },
+  {
+    "file_name": "One_flower_in_the_vase_and_one_bubble_floats_above..png",
+    "caption": "One flower in the vase and one bubble floats above."
+  },
+  {
+    "file_name": "One_book_on_the_bench__and_one_leaf_falls_onto_its_cover__landing_softly..png",
+    "caption": "One book on the bench, and one leaf falls onto its cover, landing softly."
+  },
+  {
+    "file_name": "One_tree_by_the_river__and_one_bubble_rises_drifting_upwards..png",
+    "caption": "One tree by the river, and one bubble rises drifting upwards."
+  },
+  {
+    "file_name": "One_skyscraper_gleams_in_the_sun__and_one_butterfly_flies_past..png",
+    "caption": "One skyscraper gleams in the sun, and one butterfly flies past."
+  },
+  {
+    "file_name": "One_star_falls_slowly__and_one_flower_catches_it_in_its_petals..png",
+    "caption": "One star falls slowly, and one flower catches it in its petals."
+  },
+  {
+    "file_name": "One_flower_floats_on_a_cloud__and_one_star_hovers_nearby..png",
+    "caption": "One flower floats on a cloud, and one star hovers nearby."
+  },
+  {
+    "file_name": "One_bee_and_one_butterfly_fly_in_the_garden..png",
+    "caption": "One bee and one butterfly fly in the garden."
+  },
+  {
+    "file_name": "One_star_hangs_from_a_tree__twinkling_softly..png",
+    "caption": "One star hangs from a tree, twinkling softly."
+  },
+  {
+    "file_name": "One_bubble_floats_in_front_of_a_shoe..png",
+    "caption": "One bubble floats in front of a shoe."
+  },
+  {
+    "file_name": "Two_cars_speed_along_a_road..png",
+    "caption": "Two cars speed along a road."
+  },
+  {
+    "file_name": "Two_cats_walking_on_the_floor..png",
+    "caption": "Two cats walking on the floor."
+  },
+  {
+    "file_name": "Two_dogs_running_through_a_field..png",
+    "caption": "Two dogs running through a field."
+  },
+  {
+    "file_name": "Two_robots_dance_rhythmically_in_the_lab..png",
+    "caption": "Two robots dance rhythmically in the lab."
+  },
+  {
+    "file_name": "Two_oranges_roll_across_the_table..png",
+    "caption": "Two oranges roll across the table."
+  },
+  {
+    "file_name": "Two_birds_soar_through_the_sky..png",
+    "caption": "Two birds soar through the sky."
+  },
+  {
+    "file_name": "Two_horses_gallop_across_the_beach..png",
+    "caption": "Two horses gallop across the beach."
+  },
+  {
+    "file_name": "Two_ships_drift_into_the_harbor..png",
+    "caption": "Two ships drift into the harbor."
+  },
+  {
+    "file_name": "Two_rabbits_hop_through_a_meadow..png",
+    "caption": "Two rabbits hop through a meadow."
+  },
+  {
+    "file_name": "Two_balls_bounce_across_a_playground..png",
+    "caption": "Two balls bounce across a playground."
+  },
+  {
+    "file_name": "Two_fish_swim_gracefully_in_the_sea..png",
+    "caption": "Two fish swim gracefully in the sea."
+  },
+  {
+    "file_name": "Two_bears_lumber_through_the_woods..png",
+    "caption": "Two bears lumber through the woods."
+  },
+  {
+    "file_name": "Two_motorcycles_glide_down_the_highway..png",
+    "caption": "Two motorcycles glide down the highway."
+  },
+  {
+    "file_name": "Two_chairs_rock_on_a_porch__creaking_with_the_breeze..png",
+    "caption": "Two chairs rock on a porch, creaking with the breeze."
+  },
+  {
+    "file_name": "Two_cups_sit_on_a_table__steaming_with_fresh_coffee..png",
+    "caption": "Two cups sit on a table, steaming with fresh coffee."
+  },
+  {
+    "file_name": "Two_apples_rolling_over_the_grass..png",
+    "caption": "Two apples rolling over the grass."
+  },
+  {
+    "file_name": "Two_boxes_are_placed_on_the_table..png",
+    "caption": "Two boxes are placed on the table."
+  },
+  {
+    "file_name": "Two_pairs_of_sunglasses_glint_under_the_sun_on_a_beach_towel..png",
+    "caption": "Two pairs of sunglasses glint under the sun on a beach towel."
+  },
+  {
+    "file_name": "Two_buses_travel_down_the_street..png",
+    "caption": "Two buses travel down the street."
+  },
+  {
+    "file_name": "Two_pandas_munch_bamboo_in_the_garden..png",
+    "caption": "Two pandas munch bamboo in the garden."
+  },
+  {
+    "file_name": "Two_elephants_splash_water_from_a_river..png",
+    "caption": "Two elephants splash water from a river."
+  },
+  {
+    "file_name": "Two_cows_amble_through_the_pasture..png",
+    "caption": "Two cows amble through the pasture."
+  },
+  {
+    "file_name": "Two_trucks_move_along_the_road..png",
+    "caption": "Two trucks move along the road."
+  },
+  {
+    "file_name": "Two_airplanes_fly_across_the_sky..png",
+    "caption": "Two airplanes fly across the sky."
+  },
+  {
+    "file_name": "Two_bicycles_glide_down_a_park_path..png",
+    "caption": "Two bicycles glide down a park path."
+  },
+  {
+    "file_name": "Two_sheep_graze_on_a_hillside..png",
+    "caption": "Two sheep graze on a hillside."
+  },
+  {
+    "file_name": "Two_people_sit_around_a_table__chatting_as_they_share_their_meal..png",
+    "caption": "Two people sit around a table, chatting as they share their meal."
+  },
+  {
+    "file_name": "Two_boys_play_soccer_on_a_grassy_field..png",
+    "caption": "Two boys play soccer on a grassy field."
+  },
+  {
+    "file_name": "Two_girls_paint_a_large_canvas_together..png",
+    "caption": "Two girls paint a large canvas together."
+  },
+  {
+    "file_name": "Two_children_run_along_the_tracks..png",
+    "caption": "Two children run along the tracks."
+  },
+  {
+    "file_name": "Three_cars_speed_along_a_road..png",
+    "caption": "Three cars speed along a road."
+  },
+  {
+    "file_name": "Three_cats_walking_on_the_floor..png",
+    "caption": "Three cats walking on the floor."
+  },
+  {
+    "file_name": "Three_dogs_running_through_a_field..png",
+    "caption": "Three dogs running through a field."
+  },
+  {
+    "file_name": "Three_robots_dance_rhythmically_in_the_lab..png",
+    "caption": "Three robots dance rhythmically in the lab."
+  },
+  {
+    "file_name": "Three_oranges_roll_across_the_table..png",
+    "caption": "Three oranges roll across the table."
+  },
+  {
+    "file_name": "Three_birds_soar_through_the_sky..png",
+    "caption": "Three birds soar through the sky."
+  },
+  {
+    "file_name": "Three_horses_gallop_across_the_beach..png",
+    "caption": "Three horses gallop across the beach."
+  },
+  {
+    "file_name": "Three_ships_drift_into_the_harbor..png",
+    "caption": "Three ships drift into the harbor."
+  },
+  {
+    "file_name": "Three_rabbits_hop_through_a_meadow..png",
+    "caption": "Three rabbits hop through a meadow."
+  },
+  {
+    "file_name": "Three_balls_bounce_across_a_playground..png",
+    "caption": "Three balls bounce across a playground."
+  },
+  {
+    "file_name": "Three_fish_swim_gracefully_in_the_sea..png",
+    "caption": "Three fish swim gracefully in the sea."
+  },
+  {
+    "file_name": "Three_bears_lumber_through_the_woods..png",
+    "caption": "Three bears lumber through the woods."
+  },
+  {
+    "file_name": "Three_motorcycles_glide_down_the_highway..png",
+    "caption": "Three motorcycles glide down the highway."
+  },
+  {
+    "file_name": "Three_chairs_rock_on_a_porch__creaking_with_the_breeze..png",
+    "caption": "Three chairs rock on a porch, creaking with the breeze."
+  },
+  {
+    "file_name": "Three_cups_sit_on_a_table__steaming_with_fresh_coffee..png",
+    "caption": "Three cups sit on a table, steaming with fresh coffee."
+  },
+  {
+    "file_name": "Three_apples_rolling_over_the_grass..png",
+    "caption": "Three apples rolling over the grass."
+  },
+  {
+    "file_name": "Three_boxes_are_placed_on_the_table..png",
+    "caption": "Three boxes are placed on the table."
+  },
+  {
+    "file_name": "Three_pairs_of_sunglasses_glint_under_the_sun_on_a_beach_towel..png",
+    "caption": "Three pairs of sunglasses glint under the sun on a beach towel."
+  },
+  {
+    "file_name": "Three_buses_travel_down_the_street..png",
+    "caption": "Three buses travel down the street."
+  },
+  {
+    "file_name": "Three_pandas_munch_bamboo_in_the_garden..png",
+    "caption": "Three pandas munch bamboo in the garden."
+  },
+  {
+    "file_name": "Three_elephants_splash_water_from_a_river..png",
+    "caption": "Three elephants splash water from a river."
+  },
+  {
+    "file_name": "Three_cows_amble_through_the_pasture..png",
+    "caption": "Three cows amble through the pasture."
+  },
+  {
+    "file_name": "Three_trucks_move_along_the_road..png",
+    "caption": "Three trucks move along the road."
+  },
+  {
+    "file_name": "Three_airplanes_fly_across_the_sky..png",
+    "caption": "Three airplanes fly across the sky."
+  },
+  {
+    "file_name": "Three_bicycles_glide_down_a_park_path..png",
+    "caption": "Three bicycles glide down a park path."
+  },
+  {
+    "file_name": "Three_sheep_graze_on_a_hillside..png",
+    "caption": "Three sheep graze on a hillside."
+  },
+  {
+    "file_name": "Three_people_sit_around_a_table__chatting_as_they_share_their_meal..png",
+    "caption": "Three people sit around a table, chatting as they share their meal."
+  },
+  {
+    "file_name": "Three_boys_play_soccer_on_a_grassy_field..png",
+    "caption": "Three boys play soccer on a grassy field."
+  },
+  {
+    "file_name": "Three_girls_paint_a_large_canvas_together..png",
+    "caption": "Three girls paint a large canvas together."
+  },
+  {
+    "file_name": "Three_children_run_along_the_tracks..png",
+    "caption": "Three children run along the tracks."
+  },
+  {
+    "file_name": "Four_cars_speed_along_a_road..png",
+    "caption": "Four cars speed along a road."
+  },
+  {
+    "file_name": "Four_cats_walking_on_the_floor..png",
+    "caption": "Four cats walking on the floor."
+  },
+  {
+    "file_name": "Four_dogs_running_through_a_field..png",
+    "caption": "Four dogs running through a field."
+  },
+  {
+    "file_name": "Four_robots_dance_rhythmically_in_the_lab..png",
+    "caption": "Four robots dance rhythmically in the lab."
+  },
+  {
+    "file_name": "Four_oranges_roll_across_the_table..png",
+    "caption": "Four oranges roll across the table."
+  },
+  {
+    "file_name": "Four_birds_soar_through_the_sky..png",
+    "caption": "Four birds soar through the sky."
+  },
+  {
+    "file_name": "Four_horses_gallop_across_the_beach..png",
+    "caption": "Four horses gallop across the beach."
+  },
+  {
+    "file_name": "Four_ships_drift_into_the_harbor..png",
+    "caption": "Four ships drift into the harbor."
+  },
+  {
+    "file_name": "Four_rabbits_hop_through_a_meadow..png",
+    "caption": "Four rabbits hop through a meadow."
+  },
+  {
+    "file_name": "Four_balls_bounce_across_a_playground..png",
+    "caption": "Four balls bounce across a playground."
+  },
+  {
+    "file_name": "Four_fish_swim_gracefully_in_the_sea..png",
+    "caption": "Four fish swim gracefully in the sea."
+  },
+  {
+    "file_name": "Four_bears_lumber_through_the_woods..png",
+    "caption": "Four bears lumber through the woods."
+  },
+  {
+    "file_name": "Four_motorcycles_glide_down_the_highway..png",
+    "caption": "Four motorcycles glide down the highway."
+  },
+  {
+    "file_name": "Four_chairs_rock_on_a_porch__creaking_with_the_breeze..png",
+    "caption": "Four chairs rock on a porch, creaking with the breeze."
+  },
+  {
+    "file_name": "Four_cups_sit_on_a_table__steaming_with_fresh_coffee..png",
+    "caption": "Four cups sit on a table, steaming with fresh coffee."
+  },
+  {
+    "file_name": "Four_apples_rolling_over_the_grass..png",
+    "caption": "Four apples rolling over the grass."
+  },
+  {
+    "file_name": "Four_boxes_are_placed_on_the_table..png",
+    "caption": "Four boxes are placed on the table."
+  },
+  {
+    "file_name": "Four_pairs_of_sunglasses_glint_under_the_sun_on_a_beach_towel..png",
+    "caption": "Four pairs of sunglasses glint under the sun on a beach towel."
+  },
+  {
+    "file_name": "Four_buses_travel_down_the_street..png",
+    "caption": "Four buses travel down the street."
+  },
+  {
+    "file_name": "Four_pandas_munch_bamboo_in_the_garden..png",
+    "caption": "Four pandas munch bamboo in the garden."
+  },
+  {
+    "file_name": "Four_elephants_splash_water_from_a_river..png",
+    "caption": "Four elephants splash water from a river."
+  },
+  {
+    "file_name": "Four_cows_amble_through_the_pasture..png",
+    "caption": "Four cows amble through the pasture."
+  },
+  {
+    "file_name": "Four_trucks_move_along_the_road..png",
+    "caption": "Four trucks move along the road."
+  },
+  {
+    "file_name": "Four_airplanes_fly_across_the_sky..png",
+    "caption": "Four airplanes fly across the sky."
+  },
+  {
+    "file_name": "Four_bicycles_glide_down_a_park_path..png",
+    "caption": "Four bicycles glide down a park path."
+  },
+  {
+    "file_name": "Four_sheep_graze_on_a_hillside..png",
+    "caption": "Four sheep graze on a hillside."
+  },
+  {
+    "file_name": "Four_people_sit_around_a_table__chatting_as_they_share_their_meal..png",
+    "caption": "Four people sit around a table, chatting as they share their meal."
+  },
+  {
+    "file_name": "Four_boys_play_soccer_on_a_grassy_field..png",
+    "caption": "Four boys play soccer on a grassy field."
+  },
+  {
+    "file_name": "Four_girls_paint_a_large_canvas_together..png",
+    "caption": "Four girls paint a large canvas together."
+  },
+  {
+    "file_name": "Four_children_run_along_the_tracks..png",
+    "caption": "Four children run along the tracks."
+  },
+  {
+    "file_name": "Five_cars_speed_along_a_road..png",
+    "caption": "Five cars speed along a road."
+  },
+  {
+    "file_name": "Five_cats_walking_on_the_floor..png",
+    "caption": "Five cats walking on the floor."
+  },
+  {
+    "file_name": "Five_dogs_running_through_a_field..png",
+    "caption": "Five dogs running through a field."
+  },
+  {
+    "file_name": "Five_robots_dance_rhythmically_in_the_lab..png",
+    "caption": "Five robots dance rhythmically in the lab."
+  },
+  {
+    "file_name": "Five_oranges_roll_across_the_table..png",
+    "caption": "Five oranges roll across the table."
+  },
+  {
+    "file_name": "Five_birds_soar_through_the_sky..png",
+    "caption": "Five birds soar through the sky."
+  },
+  {
+    "file_name": "Five_horses_gallop_across_the_beach..png",
+    "caption": "Five horses gallop across the beach."
+  },
+  {
+    "file_name": "Five_ships_drift_into_the_harbor..png",
+    "caption": "Five ships drift into the harbor."
+  },
+  {
+    "file_name": "Five_rabbits_hop_through_a_meadow..png",
+    "caption": "Five rabbits hop through a meadow."
+  },
+  {
+    "file_name": "Five_balls_bounce_across_a_playground..png",
+    "caption": "Five balls bounce across a playground."
+  },
+  {
+    "file_name": "Five_fish_swim_gracefully_in_the_sea..png",
+    "caption": "Five fish swim gracefully in the sea."
+  },
+  {
+    "file_name": "Five_bears_lumber_through_the_woods..png",
+    "caption": "Five bears lumber through the woods."
+  },
+  {
+    "file_name": "Five_motorcycles_glide_down_the_highway..png",
+    "caption": "Five motorcycles glide down the highway."
+  },
+  {
+    "file_name": "Five_chairs_rock_on_a_porch__creaking_with_the_breeze..png",
+    "caption": "Five chairs rock on a porch, creaking with the breeze."
+  },
+  {
+    "file_name": "Five_cups_sit_on_a_table__steaming_with_fresh_coffee..png",
+    "caption": "Five cups sit on a table, steaming with fresh coffee."
+  },
+  {
+    "file_name": "Five_apples_rolling_over_the_grass..png",
+    "caption": "Five apples rolling over the grass."
+  },
+  {
+    "file_name": "Five_boxes_are_placed_on_the_table..png",
+    "caption": "Five boxes are placed on the table."
+  },
+  {
+    "file_name": "Five_pairs_of_sunglasses_glint_under_the_sun_on_a_beach_towel..png",
+    "caption": "Five pairs of sunglasses glint under the sun on a beach towel."
+  },
+  {
+    "file_name": "Five_buses_travel_down_the_street..png",
+    "caption": "Five buses travel down the street."
+  },
+  {
+    "file_name": "Five_pandas_munch_bamboo_in_the_garden..png",
+    "caption": "Five pandas munch bamboo in the garden."
+  },
+  {
+    "file_name": "Five_elephants_splash_water_from_a_river..png",
+    "caption": "Five elephants splash water from a river."
+  },
+  {
+    "file_name": "Five_cows_amble_through_the_pasture..png",
+    "caption": "Five cows amble through the pasture."
+  },
+  {
+    "file_name": "Five_trucks_move_along_the_road..png",
+    "caption": "Five trucks move along the road."
+  },
+  {
+    "file_name": "Five_airplanes_fly_across_the_sky..png",
+    "caption": "Five airplanes fly across the sky."
+  },
+  {
+    "file_name": "Five_bicycles_glide_down_a_park_path..png",
+    "caption": "Five bicycles glide down a park path."
+  },
+  {
+    "file_name": "Five_sheep_graze_on_a_hillside..png",
+    "caption": "Five sheep graze on a hillside."
+  },
+  {
+    "file_name": "Five_people_sit_around_a_table__chatting_as_they_share_their_meal..png",
+    "caption": "Five people sit around a table, chatting as they share their meal."
+  },
+  {
+    "file_name": "Five_boys_play_soccer_on_a_grassy_field..png",
+    "caption": "Five boys play soccer on a grassy field."
+  },
+  {
+    "file_name": "Five_girls_paint_a_large_canvas_together..png",
+    "caption": "Five girls paint a large canvas together."
+  },
+  {
+    "file_name": "Five_children_run_along_the_tracks..png",
+    "caption": "Five children run along the tracks."
+  },
+  {
+    "file_name": "Six_cars_speed_along_a_road..png",
+    "caption": "Six cars speed along a road."
+  },
+  {
+    "file_name": "Six_cats_walking_on_the_floor..png",
+    "caption": "Six cats walking on the floor."
+  },
+  {
+    "file_name": "Six_dogs_running_through_a_field..png",
+    "caption": "Six dogs running through a field."
+  },
+  {
+    "file_name": "Six_robots_dance_rhythmically_in_the_lab..png",
+    "caption": "Six robots dance rhythmically in the lab."
+  },
+  {
+    "file_name": "Six_oranges_roll_across_the_table..png",
+    "caption": "Six oranges roll across the table."
+  },
+  {
+    "file_name": "Six_birds_soar_through_the_sky..png",
+    "caption": "Six birds soar through the sky."
+  },
+  {
+    "file_name": "Six_horses_gallop_across_the_beach..png",
+    "caption": "Six horses gallop across the beach."
+  },
+  {
+    "file_name": "Seven_cars_speed_along_a_road..png",
+    "caption": "Seven cars speed along a road."
+  },
+  {
+    "file_name": "Seven_cats_walking_on_the_floor..png",
+    "caption": "Seven cats walking on the floor."
+  },
+  {
+    "file_name": "Seven_dogs_running_through_a_field..png",
+    "caption": "Seven dogs running through a field."
+  },
+  {
+    "file_name": "Seven_robots_dance_rhythmically_in_the_lab..png",
+    "caption": "Seven robots dance rhythmically in the lab."
+  },
+  {
+    "file_name": "Seven_oranges_roll_across_the_table..png",
+    "caption": "Seven oranges roll across the table."
+  },
+  {
+    "file_name": "Seven_birds_soar_through_the_sky..png",
+    "caption": "Seven birds soar through the sky."
+  },
+  {
+    "file_name": "Seven_horses_gallop_across_the_beach..png",
+    "caption": "Seven horses gallop across the beach."
+  },
+  {
+    "file_name": "Eight_cars_speed_along_a_road..png",
+    "caption": "Eight cars speed along a road."
+  },
+  {
+    "file_name": "Eight_cats_walking_on_the_floor..png",
+    "caption": "Eight cats walking on the floor."
+  },
+  {
+    "file_name": "Eight_dogs_running_through_a_field..png",
+    "caption": "Eight dogs running through a field."
+  },
+  {
+    "file_name": "Eight_robots_dance_rhythmically_in_the_lab..png",
+    "caption": "Eight robots dance rhythmically in the lab."
+  },
+  {
+    "file_name": "Eight_oranges_roll_across_the_table..png",
+    "caption": "Eight oranges roll across the table."
+  },
+  {
+    "file_name": "Eight_birds_soar_through_the_sky..png",
+    "caption": "Eight birds soar through the sky."
+  },
+  {
+    "file_name": "One_car_drives_down_the_track__and_one_motorcycle_follows..png",
+    "caption": "One car drives down the track, and one motorcycle follows."
+  },
+  {
+    "file_name": "One_cat_lounges_in_the_garden__and_two_birds_swoop_overhead..png",
+    "caption": "One cat lounges in the garden, and two birds swoop overhead."
+  },
+  {
+    "file_name": "One_dog_races_through_the_field__and_three_children_run_behind_them..png",
+    "caption": "One dog races through the field, and three children run behind them."
+  },
+  {
+    "file_name": "Two_oranges_roll_on_the_counter_near_one_cup..png",
+    "caption": "Two oranges roll on the counter near one cup."
+  },
+  {
+    "file_name": "Two_fish_swim_in_the_pond__and_five_frogs_sit_on_lily_pads..png",
+    "caption": "Two fish swim in the pond, and two frogs sit on lily pads."
+  },
+  {
+    "file_name": "Two_pandas_munch_on_bamboo__and_three_elephants_spray_water..png",
+    "caption": "Two pandas munch on bamboo, and three elephants spray water."
+  },
+  {
+    "file_name": "Three_cows_graze_in_the_pasture__and_one_sheep_wanders_nearby..png",
+    "caption": "Three cows graze in the pasture, and one sheep wanders nearby."
+  },
+  {
+    "file_name": "Three_airplanes_soar_high_above__and_two_birds_circle_below..png",
+    "caption": "Three airplanes soar high above, and two birds circle below."
+  },
+  {
+    "file_name": "Three_dogs_dig_in_the_sand__and_three_cats_walking_nearby..png",
+    "caption": "Three dogs dig in the sand, and three cats walking nearby."
+  },
+  {
+    "file_name": "Two_chairs_sit_around_a_campfire__and_three_people_roasting_marshmallows..png",
+    "caption": "Two chairs sit around a campfire, and three people roasting marshmallows."
+  },
+  {
+    "file_name": "Two_rabbits_dash_across_the_garden__and_eight_butterflies_flutter_nearby..png",
+    "caption": "Two rabbits dash across the garden, and three butterflies flutter nearby."
+  },
+  {
+    "file_name": "Three_ships_sail_into_the_harbor__and_two_seagulls_circle_above..png",
+    "caption": "Three ships sail into the harbor, and two seagulls circle above."
+  },
+  {
+    "file_name": "Two_horses_trot_along_the_fence_line__and_two_cows_chewing_grass_nearby..png",
+    "caption": "Two horses trot along the fence line, and two cows chewing grass nearby."
+  },
+  {
+    "file_name": "Three_apples_hang_heavy_on_the_tree_branch__and_three_birds_perch_nearby..png",
+    "caption": "Three apples hang heavy on the tree branch, and three birds perch nearby."
+  },
+  {
+    "file_name": "Two_kites_soar_high_in_the_sky__and_one_balloon_drifts_in_the_breeze..png",
+    "caption": "Two kites soar high in the sky, and three balloons drift in the breeze."
+  },
+  {
+    "file_name": "Two_cars_speed_down_the_track__and_five_motorcycles_follow..png",
+    "caption": "Two cars speed down the track, and five motorcycles follow."
+  },
+  {
+    "file_name": "Three_cats_lounge_in_the_garden__and_seven_birds_swoop_overhead..png",
+    "caption": "Three cats lounge in the garden, and seven birds swoop overhead."
+  },
+  {
+    "file_name": "Eight_dogs_race_through_the_field__and_four_children_run_behind_them..png",
+    "caption": "Eight dogs race through the field, and two children run behind them."
+  },
+  {
+    "file_name": "Seven_oranges_roll_on_the_counter_near_three_cups..png",
+    "caption": "Seven oranges roll on the counter near three cups."
+  },
+  {
+    "file_name": "Two_fish_swim_in_the_pond__and_five_frogs_sit_on_lily_pads..png",
+    "caption": "Two fish swim in the pond, and five frogs sit on lily pads."
+  },
+  {
+    "file_name": "Three_pandas_munch_on_bamboo__and_four_elephants_spray_water..png",
+    "caption": "Three pandas munch on bamboo, and four elephants spray water."
+  },
+  {
+    "file_name": "Four_cows_graze_in_the_pasture__and_seven_sheep_wander_nearby..png",
+    "caption": "Four cows graze in the pasture, and two sheep wander nearby."
+  },
+  {
+    "file_name": "Four_airplanes_soar_high_above__and_six_birds_circle_below..png",
+    "caption": "Four airplanes soar high above, and three birds circle below."
+  },
+  {
+    "file_name": "Two_dogs_dig_in_the_sand__and_four_cats_walking_nearby..png",
+    "caption": "Two dogs dig in the sand, and four cats walking nearby."
+  },
+  {
+    "file_name": "Three_chairs_sit_around_a_campfire__and_seven_people_roasting_marshmallows..png",
+    "caption": "Three chairs sit around a campfire, and seven people roasting marshmallows."
+  },
+  {
+    "file_name": "Two_rabbits_dash_across_the_garden__and_eight_butterflies_flutter_nearby..png",
+    "caption": "Two rabbits dash across the garden, and eight butterflies flutter nearby."
+  },
+  {
+    "file_name": "One_ship_sails_into_the_harbor__and_six_seagulls_circle_above..png",
+    "caption": "One ship sails into the harbor, and six seagulls circle above."
+  },
+  {
+    "file_name": "Four_horses_trot_along_the_fence_line__and_one_cow_chewing_grass_nearby..png",
+    "caption": "Four horses trot along the fence line, and one cow chewing grass nearby."
+  },
+  {
+    "file_name": "Seven_apples_hang_heavy_on_the_tree_branch__and_one_bird_perches_nearby..png",
+    "caption": "Seven apples hang heavy on the tree branch, and one bird perches nearby."
+  },
+  {
+    "file_name": "Two_kites_soar_high_in_the_sky__and_one_balloon_drifts_in_the_breeze..png",
+    "caption": "Two kites soar high in the sky, and one balloon drifts in the breeze."
+  },
+  {
+    "file_name": "Four_cars_speed_down_the_track__and_five_motorcycles_follow..png",
+    "caption": "Four cars speed down the track, and five motorcycles follow."
+  },
+  {
+    "file_name": "Six_cats_lounge_in_the_garden__and_seven_birds_swoop_overhead..png",
+    "caption": "Six cats lounge in the garden, and seven birds swoop overhead."
+  },
+  {
+    "file_name": "Eight_dogs_race_through_the_field__and_four_children_run_behind_them..png",
+    "caption": "Eight dogs race through the field, and four children run behind them."
+  },
+  {
+    "file_name": "Seven_oranges_roll_on_the_counter_near_five_cups..png",
+    "caption": "Seven oranges roll on the counter near five cups."
+  },
+  {
+    "file_name": "Four_fish_swim_in_the_pond__and_five_frogs_sit_on_lily_pads..png",
+    "caption": "Four fish swim in the pond, and five frogs sit on lily pads."
+  },
+  {
+    "file_name": "Seven_pandas_munch_on_bamboo__and_four_elephants_spray_water..png",
+    "caption": "Seven pandas munch on bamboo, and four elephants spray water."
+  },
+  {
+    "file_name": "Four_cows_graze_in_the_pasture__and_seven_sheep_wander_nearby..png",
+    "caption": "Four cows graze in the pasture, and seven sheep wander nearby."
+  },
+  {
+    "file_name": "Four_airplanes_soar_high_above__and_six_birds_circle_below..png",
+    "caption": "Four airplanes soar high above, and six birds circle below."
+  },
+  {
+    "file_name": "Six_dogs_dig_in_the_sand__and_four_cats_walking_nearby..png",
+    "caption": "Six dogs dig in the sand, and four cats walking nearby."
+  },
+  {
+    "file_name": "Five_chairs_sit_around_a_campfire__and_seven_people_roasting_marshmallows..png",
+    "caption": "Five chairs sit around a campfire, and seven people roasting marshmallows."
+  }
+]
