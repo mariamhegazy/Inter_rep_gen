@@ -701,13 +701,13 @@ def parse_args():
     parser.add_argument(
         "--rank",
         type=int,
-        default=128,
+        default=16,
         help=("The dimension of the LoRA update matrices."),
     )
     parser.add_argument(
         "--network_alpha",
         type=int,
-        default=64,
+        default=8,
         help=("The dimension of the LoRA update matrices."),
     )
     parser.add_argument(
@@ -914,6 +914,29 @@ def parse_args():
         help=("The module is not trained in loras. "),
     )
 
+    ###T2A additions
+    parser.add_argument(
+        "--sparse_time_mode",
+        type=str,
+        default="none",
+        choices=[
+            "none",
+            "start",
+            "start_last",
+            "linspace_k",
+            "explicit_latent",
+            "explicit_pixel",
+        ],
+        help="Which latent time indices to denoise per sample.",
+    )
+    parser.add_argument("--sparse_k", type=int, default=2, help="K for linspace_k.")
+    parser.add_argument(
+        "--sparse_explicit",
+        type=str,
+        default="",
+        help="Comma-separated indices. For explicit_latent: e.g. '0,-1'; for explicit_pixel: '0,120'.",
+    )
+
     args = parser.parse_args()
     env_local_rank = int(os.environ.get("LOCAL_RANK", -1))
     if env_local_rank != -1 and env_local_rank != args.local_rank:
@@ -924,6 +947,50 @@ def parse_args():
         args.non_ema_revision = args.revision
 
     return args
+
+
+def _unique_sorted_int(xs):
+    return sorted(list({int(x) for x in xs}))
+
+
+def _choose_sparse_latents(
+    mode, k, explicit, r, t_lat, t_pix=None, torch_gen=None, device="cpu"
+):
+    # r = vae.config.temporal_compression_ratio
+    if mode == "none":
+        return torch.arange(t_lat, device=device)
+    if mode == "start":
+        return torch.tensor([0], device=device)
+    if mode == "start_last":
+        if t_lat == 1:
+            return torch.tensor([0], device=device)
+        return torch.tensor([0, t_lat - 1], device=device)
+    if mode == "linspace_k":
+        k = max(1, min(int(k), t_lat))
+        return (
+            torch.linspace(0, t_lat - 1, steps=k, device=device)
+            .round()
+            .to(torch.long)
+            .unique(sorted=True)
+        )
+    if mode == "explicit_latent":
+        raw = [s for s in str(explicit).split(",") if s.strip() != ""]
+        vals = []
+        for s in raw:
+            if s.strip() == "-1":
+                vals.append(t_lat - 1)
+            else:
+                vals.append(int(s))
+        vals = [max(0, min(t_lat - 1, v)) for v in vals]
+        return torch.tensor(_unique_sorted_int(vals), device=device)
+    if mode == "explicit_pixel":
+        if t_pix is None:
+            t_pix = (t_lat - 1) * r + 1
+        pix = [int(s) for s in str(explicit).split(",") if s.strip() != ""]
+        pix = [max(0, min(t_pix - 1, v)) for v in pix]
+        lat = [int(v) // r for v in pix]
+        return torch.tensor(_unique_sorted_int(lat), device=device)
+    raise ValueError(f"Unknown sparse_time_mode {mode}")
 
 
 def main():
@@ -1157,7 +1224,24 @@ def main():
         args.train_text_encoder and not args.training_with_video_token_length,
         True,
     )
+    vae.requires_grad_(False)
+    text_encoder.requires_grad_(False)
+    transformer3d.requires_grad_(False)
 
+    # LoRA trainables only
+    lora_params = [p for p in network.parameters() if p.requires_grad]
+
+    # Debug: how many parameters are we really training?
+    total = sum(p.numel() for p in transformer3d.parameters()) + sum(
+        p.numel() for p in text_encoder.parameters()
+    )
+    trainable = sum(p.numel() for p in lora_params)
+    print(f"[sanity] trainable params: {trainable} / {total} = {trainable/total:.4%}")
+
+    # Build param groups from LoRA only (still respects your per-module LRs)
+    trainable_params_optim = network.prepare_optimizer_params(
+        args.learning_rate / 2, args.learning_rate, args.learning_rate
+    )
     if args.transformer_path is not None:
         print(f"From checkpoint: {args.transformer_path}")
         if args.transformer_path.endswith("safetensors"):
@@ -1834,7 +1918,7 @@ def main():
             tracker_config,
             init_kwargs={
                 "wandb": {
-                    "name": args.output_dir,
+                    "name": args.output_dir.split("/")[-1],
                 }
             },
         )
@@ -2298,6 +2382,42 @@ def main():
                     else:
                         latents = _batch_encode_vae(pixel_values)
 
+                    # === SPARSE-TIME: keep only selected latent frames ===
+                    r = vae.config.temporal_compression_ratio
+                    t_lat_full = latents.shape[2]  # latent time length
+                    t_pix_est = (t_lat_full - 1) * r + 1  # estimated pixel time span
+
+                    idx_lat = _choose_sparse_latents(
+                        mode=args.sparse_time_mode,
+                        k=args.sparse_k,
+                        explicit=args.sparse_explicit,
+                        r=r,
+                        t_lat=t_lat_full,
+                        t_pix=t_pix_est,
+                        torch_gen=torch_rng,
+                        device=latents.device,
+                    )
+                    if idx_lat.numel() == 0:
+                        idx_lat = torch.tensor([0], device=latents.device)  # safety
+
+                    # if accelerator.is_main_process and (global_step % 1 == 0):
+                    #     r = vae.config.temporal_compression_ratio
+                    #     t_lat_full = latents.shape[2]
+                    #     # Approximate pixel frame ids covered by anchors
+                    #     anchor_pix = (idx_lat.long() * r).tolist()
+                    #     logger.info(
+                    #         f"[T2A] mode={args.sparse_time_mode} idx_lat={idx_lat.tolist()} "
+                    #         f"t_lat_full={t_lat_full}  ~pixel={anchor_pix}"
+                    #     )
+
+                    # Subselect time for everything that lives in latent-time
+                    latents = latents.index_select(dim=2, index=idx_lat)
+
+                    # if accelerator.is_main_process and (global_step % 1 == 0):
+                    #     logger.info(
+                    #         f"[T2A] latents trimmed to anchors: {latents.shape} (B,C,T*,H,W)"
+                    #     )
+
                     if args.train_mode != "normal":
                         mask = rearrange(mask, "b f c h w -> b c f h w")
                         mask = torch.concat(
@@ -2511,6 +2631,26 @@ def main():
                     noise_pred.float(), target.float(), weighting.float()
                 )
                 loss = loss.mean()
+
+                with torch.no_grad():
+                    per_frame_loss = F.mse_loss(
+                        noise_pred.float(), target.float(), reduction="none"
+                    ).mean(
+                        dim=(1, 3, 4)
+                    )  # [B, C, T] -> mean over C,H,W
+                    # collapse channel too
+                    per_frame_loss = per_frame_loss.mean(dim=1)  # [B, T]
+                    # Log one sample’s per-frame loss
+                    # if accelerator.is_main_process and (global_step % 1 ==
+                    #  0):
+                    #     logger.info(
+                    #         f"[T2A] per-frame loss (anchors only exist): "
+                    #         f"{per_frame_loss[0].tolist()}"
+                    #     )
+                    #     logger.info(
+                    #         # f"[T2A] timesteps (anchors only exist): {timesteps[0].tolist()}",
+                    #         f"noise pred shape: {noise_pred.shape}",
+                    #     )
 
                 if args.motion_sub_loss and noise_pred.size()[2] > 2:
                     gt_sub_noise = (

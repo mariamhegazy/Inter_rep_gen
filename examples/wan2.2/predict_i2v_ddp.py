@@ -47,6 +47,7 @@ from videox_fun.utils.lora_utils import merge_lora, unmerge_lora
 from videox_fun.utils.utils import (
     filter_kwargs,
     get_image_to_video_latent,
+    get_image_to_video_latent_simple,
     save_videos_grid,
 )
 
@@ -178,6 +179,13 @@ def parse_args():
         "--max_videos", type=int, default=None, help="Debug: limit total items."
     )
     p.add_argument("--verbose", action="store_true")
+    p.add_argument(
+        "--positions_start",
+        type=int,
+        nargs="+",
+        default=None,
+        help="e.g., --positions_start -1 3 5",
+    )
 
     return p.parse_args()
 
@@ -420,6 +428,31 @@ def load_models(args, device):
     return pipe, config
 
 
+def ensure_latent_video(img_path, T, H, W, positions=None):
+    """
+    Prepare latent video with image conditioning at specified positions.
+
+    Args:
+        img_path: Path to image or list of image paths
+        T: Number of frames
+        H: Height
+        W: Width
+        positions: List of frame indices (defaults to [0] if None)
+    """
+    if img_path is None:
+        return None, None, None
+    if positions is None:
+        print("Using original conditioning at frame 0")
+        return get_image_to_video_latent(
+            img_path, None, video_length=T, sample_size=[H, W]
+        )
+    else:
+        print(f"Using new conditioning at frame {positions[0]}")
+        return get_image_to_video_latent_simple(
+            images=img_path, positions=positions, video_length=T, sample_size=[H, W]
+        )
+
+
 # ---------------------------
 # Main
 # ---------------------------
@@ -457,6 +490,7 @@ def main():
                 "image_path": (it.get("image_path") or "").strip(),
                 "caption": cap,  # may be empty in i2v
                 "cap_tag": tag,  # BASE / AUG / CONTRA
+                "orig_cap": (it.get("original_caption") or "").strip(),
             }
         )
 
@@ -520,7 +554,12 @@ def main():
         fallback_stem = Path(img_path).stem if img_path else f"sample_{it['id']:05d}"
         # prompt_stem = slugify(prompt) if prompt else slugify(fallback_stem)
         # prompt_stem = prompt_stem[:180] if len(prompt_stem) > 180 else prompt_stem
-        out_path = out_root / f"{prompt}.mp4"
+        # out_path = out_root / f"{prompt}.mp4"
+        save_caption = it.get("orig_cap")
+        save_stem = save_caption if save_caption else prompt
+        save_stem = save_stem[:180] if len(save_stem) > 180 else save_stem
+        out_path = out_root / f"{save_stem}.mp4"
+
         if args.resume and out_path.exists():
             _log(f"[Skip] exists: {out_path}")
             continue
@@ -528,8 +567,15 @@ def main():
             out_path = make_unique_path(out_path)
 
         # Prepare latent video + mask from image
-        v_in, m_in, _ = get_image_to_video_latent(
-            img_path, None, video_length=T, sample_size=[args.height, args.width]
+        # v_in, m_in, _ = get_image_to_video_latent(
+        #     img_path, None, video_length=T, sample_size=[args.height, args.width]
+        # )
+        input_video, input_video_mask, _ = ensure_latent_video(
+            img_path,
+            T=T,
+            H=args.height,
+            W=args.width,
+            positions=args.positions_start,
         )
 
         gen = base_gen.manual_seed(args.seed + it["id"])
@@ -544,8 +590,8 @@ def main():
                 guidance_scale=args.guidance,
                 num_inference_steps=args.steps,
                 boundary=boundary,
-                video=v_in,
-                mask_video=m_in,
+                video=input_video,
+                mask_video=input_video_mask,
                 shift=args.shift,
             ).videos
 

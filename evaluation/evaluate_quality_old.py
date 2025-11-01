@@ -12,6 +12,7 @@ import numpy as np
 import torch
 import torch.distributed as dist
 from torch.utils.data import DataLoader, Dataset
+from torch.utils.data._utils.collate import default_collate
 from torch.utils.data.distributed import DistributedSampler
 from tqdm import tqdm
 
@@ -28,7 +29,7 @@ def set_all_seeds(seed=0):
 
 
 # set_all_seeds(123)
-set_all_seeds(1234)
+set_all_seeds(0)
 
 
 # ========== DDP utils ==========
@@ -44,11 +45,6 @@ def setup_ddp(args):
         args.local_rank = int(os.environ["LOCAL_RANK"])
         torch.cuda.set_device(args.local_rank)
         dist.init_process_group(backend="nccl", init_method="env://")
-        # Quiet "unknown device for barrier" warning in some builds
-        try:
-            dist.barrier(device_ids=[args.local_rank])
-        except TypeError:
-            dist.barrier()
         ddp_print(
             f"Initialized DDP: rank={args.rank} local_rank={args.local_rank} world_size={args.world_size}"
         )
@@ -77,12 +73,6 @@ def cleanup_ddp():
 
 def gather_embeddings_no_pad_mismatch(local_embs: torch.Tensor, device: str = "cuda"):
     """DDP-safe gather for variable-sized chunks; returns [sum(n_i), D]."""
-    # Ensure 2-D [N, D]
-    if local_embs.ndim > 2:
-        local_embs = local_embs.view(local_embs.shape[0], -1).contiguous()
-    elif local_embs.ndim == 1:
-        local_embs = local_embs.unsqueeze(1).contiguous()
-
     world = dist.get_world_size()
     n_local = torch.tensor([local_embs.shape[0]], device=device, dtype=torch.int64)
     sizes = [torch.zeros(1, device=device, dtype=torch.int64) for _ in range(world)]
@@ -90,29 +80,19 @@ def gather_embeddings_no_pad_mismatch(local_embs: torch.Tensor, device: str = "c
     sizes = [int(s.item()) for s in sizes]
     max_n = max(sizes)
     D = local_embs.shape[1]
-
     local_pad = local_embs
     if local_embs.shape[0] < max_n:
         pad = torch.zeros(
             max_n - local_embs.shape[0], D, device=device, dtype=local_embs.dtype
         )
         local_pad = torch.cat([local_embs, pad], dim=0)
-
     recv = [
         torch.zeros(max_n, D, device=device, dtype=local_embs.dtype)
         for _ in range(world)
     ]
     dist.all_gather(recv, local_pad)
-    return torch.cat([recv[r][: sizes[r]] for r in range(world)], dim=0)
-
-
-def ddp_broadcast_object(obj, src=0):
-    """Broadcast a Python object (e.g., list of paths) from rank `src` to all ranks."""
-    if not dist.is_initialized():
-        return obj
-    buf = [obj if dist.get_rank() == src else None]
-    dist.broadcast_object_list(buf, src=src)
-    return buf[0]
+    chunks = [recv[r][: sizes[r]] for r in range(world)]
+    return torch.cat(chunks, dim=0)
 
 
 # ========== Files ==========
@@ -140,50 +120,6 @@ def list_videos(
                 paths.append(p)
     paths.sort()
     return paths
-
-
-def is_video_readable(video_path: str) -> bool:
-    """Quickly test readability by trying to grab a single frame (imageio/pyav, then cv2)."""
-    try:
-        with iio.imopen(video_path, "r", plugin="pyav") as reader:
-            try:
-                _ = reader.read(index=0)
-                return True
-            except IndexError:
-                return False
-            except Exception:
-                pass
-    except Exception:
-        pass
-    cap = cv2.VideoCapture(video_path)
-    ok, _ = cap.read()
-    cap.release()
-    return bool(ok)
-
-
-def take_first_k_valid(paths, k: int, label: str):
-    """Linear scan until we collect k readable videos (or exhaust)."""
-    picked = []
-    for p in paths:
-        if is_video_readable(p):
-            picked.append(p)
-            if len(picked) == k:
-                break
-    ddp_print(f"[{label}] requested {k}, found {len(picked)} valid")
-    return picked
-
-
-def take_first_k_valid_pairs(reals, gens, k: int):
-    """For --match_by basename case: keep pairs where BOTH sides are readable."""
-    r_out, g_out = [], []
-    for r, g in zip(reals, gens):
-        if is_video_readable(r) and is_video_readable(g):
-            r_out.append(r)
-            g_out.append(g)
-            if len(r_out) == k:
-                break
-    ddp_print(f"[pairs] requested {k}, found {len(r_out)} valid pairs")
-    return r_out, g_out
 
 
 # ========== Dataset (fixed-length T; resizable storage) ==========
@@ -245,96 +181,93 @@ class MP4VideoDataset(Dataset):
         vid = np.ascontiguousarray(vid)
 
         # -------- SAVE PREVIEW (optional; set EVAL_SAVE_VIZ_DIR to enable) --------
-        # -------- SAVE PREVIEW (optional; set EVAL_SAVE_VIZ_DIR to enable) --------
         # # -------- SAVE PREVIEW (optional; set EVAL_SAVE_VIZ_DIR or keep default folder) --------
-        debug_dir = os.environ.get("EVAL_SAVE_VIZ_DIR", "viz_evaluation")
-        if debug_dir:
-            try:
-                from pathlib import Path
+        # debug_dir = os.environ.get("EVAL_SAVE_VIZ_DIR", "viz_evaluation")
+        # if debug_dir:
+        #     try:
+        #         from pathlib import Path
 
-                os.makedirs(debug_dir, exist_ok=True)
-                rank = int(os.environ.get("RANK", "0"))
-                limit = int(
-                    os.environ.get("EVAL_SAVE_VIZ_MAX", "3")
-                )  # save first N per rank
-                fps = int(os.environ.get("EVAL_SAVE_VIZ_FPS", "12"))
+        #         os.makedirs(debug_dir, exist_ok=True)
+        #         rank = int(os.environ.get("RANK", "0"))
+        #         limit = int(
+        #             os.environ.get("EVAL_SAVE_VIZ_MAX", "3")
+        #         )  # save first N per rank
+        #         fps = int(os.environ.get("EVAL_SAVE_VIZ_FPS", "12"))
 
-                if idx < limit:
-                    stem = Path(video_path).stem
-                    out_mp4 = os.path.join(
-                        debug_dir, f"rank{rank}_{stem}_T{self.num_frames}_{Ht}x{Wt}.mp4"
-                    )
+        #         if idx < limit:
+        #             stem = Path(video_path).stem
+        #             out_mp4 = os.path.join(
+        #                 debug_dir, f"rank{rank}_{stem}_T{self.num_frames}_{Ht}x{Wt}.mp4"
+        #             )
 
-                    T = vid.shape[0]
-                    # --- Try robust PyAV writer (preferred) ---
-                    wrote = False
-                    try:
-                        import av  # PyAV
+        #             T = vid.shape[0]
+        #             # --- Try robust PyAV writer (preferred) ---
+        #             wrote = False
+        #             try:
+        #                 import av  # PyAV
 
-                        # Some ffmpeg builds require even width/height for yuv420p (we already have 256x256)
-                        with av.open(out_mp4, mode="w") as container:
-                            stream = container.add_stream("h264", rate=fps)
-                            stream.width = Wt
-                            stream.height = Ht
-                            stream.pix_fmt = "yuv420p"  # most compatible
-                            for t in range(T):
-                                frame = av.VideoFrame.from_ndarray(
-                                    vid[t], format="rgb24"
-                                )
-                                for packet in stream.encode(frame):
-                                    container.mux(packet)
-                            # flush encoder
-                            for packet in stream.encode():
-                                container.mux(packet)
-                        wrote = os.path.exists(out_mp4) and os.path.getsize(out_mp4) > 0
-                    except Exception as _pyav_err:
-                        wrote = False  # fall through to OpenCV
+        #                 # Some ffmpeg builds require even width/height for yuv420p (we already have 256x256)
+        #                 with av.open(out_mp4, mode="w") as container:
+        #                     stream = container.add_stream("h264", rate=fps)
+        #                     stream.width = Wt
+        #                     stream.height = Ht
+        #                     stream.pix_fmt = "yuv420p"  # most compatible
+        #                     for t in range(T):
+        #                         frame = av.VideoFrame.from_ndarray(
+        #                             vid[t], format="rgb24"
+        #                         )
+        #                         for packet in stream.encode(frame):
+        #                             container.mux(packet)
+        #                     # flush encoder
+        #                     for packet in stream.encode():
+        #                         container.mux(packet)
+        #                 wrote = os.path.exists(out_mp4) and os.path.getsize(out_mp4) > 0
+        #             except Exception as _pyav_err:
+        #                 wrote = False  # fall through to OpenCV
 
-                    # --- Fallback: OpenCV writer ---
-                    if not wrote:
-                        try:
-                            fourcc = cv2.VideoWriter_fourcc(*"mp4v")
-                            vw = cv2.VideoWriter(out_mp4, fourcc, fps, (Wt, Ht))
-                            if vw.isOpened():
-                                for fr in vid:
-                                    vw.write(cv2.cvtColor(fr, cv2.COLOR_RGB2BGR))
-                                vw.release()
-                            wrote = (
-                                os.path.exists(out_mp4) and os.path.getsize(out_mp4) > 0
-                            )
+        #             # --- Fallback: OpenCV writer ---
+        #             if not wrote:
+        #                 try:
+        #                     fourcc = cv2.VideoWriter_fourcc(*"mp4v")
+        #                     vw = cv2.VideoWriter(out_mp4, fourcc, fps, (Wt, Ht))
+        #                     if vw.isOpened():
+        #                         for fr in vid:
+        #                             vw.write(cv2.cvtColor(fr, cv2.COLOR_RGB2BGR))
+        #                         vw.release()
+        #                     wrote = (
+        #                         os.path.exists(out_mp4) and os.path.getsize(out_mp4) > 0
+        #                     )
 
-                            # Last-ditch: write .avi with XVID if mp4 failed
-                            if not wrote:
-                                out_avi = os.path.join(
-                                    debug_dir,
-                                    f"rank{rank}_{stem}_T{self.num_frames}_{Ht}x{Wt}.avi",
-                                )
-                                fourcc_avi = cv2.VideoWriter_fourcc(*"XVID")
-                                vw = cv2.VideoWriter(out_avi, fourcc_avi, fps, (Wt, Ht))
-                                if vw.isOpened():
-                                    for fr in vid:
-                                        vw.write(cv2.cvtColor(fr, cv2.COLOR_RGB2BGR))
-                                    vw.release()
-                        except Exception:
-                            pass
-            except Exception as _save_err:
-                # Don't crash the dataset on save errors
-                print(f"Warning: failed to save eval viz for {video_path}: {_save_err}")
-                pass
-        # -------------------------------------------------------------------------
-
-        # -------------------------------------------------------------------------
+        #                     # Last-ditch: write .avi with XVID if mp4 failed
+        #                     if not wrote:
+        #                         out_avi = os.path.join(
+        #                             debug_dir,
+        #                             f"rank{rank}_{stem}_T{self.num_frames}_{Ht}x{Wt}.avi",
+        #                         )
+        #                         fourcc_avi = cv2.VideoWriter_fourcc(*"XVID")
+        #                         vw = cv2.VideoWriter(out_avi, fourcc_avi, fps, (Wt, Ht))
+        #                         if vw.isOpened():
+        #                             for fr in vid:
+        #                                 vw.write(cv2.cvtColor(fr, cv2.COLOR_RGB2BGR))
+        #                             vw.release()
+        #                 except Exception:
+        #                     pass
+        #     except Exception as _save_err:
+        #         # Don't crash the dataset on save errors
+        #         print(f"Warning: failed to save eval viz for {video_path}: {_save_err}")
+        #         pass
+        # # -------------------------------------------------------------------------
 
         return vid
 
 
 def collate_skip_none(batch):
-    """Return a stack of CPU torch.uint8 tensors; returns None if all items were None."""
+    """Return a stack of CPU torch.uint8 tensors with resizable storage."""
     import numpy as np
 
     items = []
     for b in batch:
-        if b is None:
+        if b is None:  # filter
             continue
         if isinstance(b, np.ndarray):
             b = np.ascontiguousarray(b)
@@ -344,7 +277,7 @@ def collate_skip_none(batch):
         else:
             raise TypeError(f"Unexpected batch element type: {type(b)}")
     if not items:
-        return None  # let the outer loop skip this batch
+        raise ValueError("Empty batch after filtering out None samples.")
     return torch.stack(items, dim=0)  # [B, T, H, W, C] on CPU
 
 
@@ -371,18 +304,11 @@ def extract_fvd_embeddings(
         desc="Extracting FVD Embeddings",
         disable=(dist.is_initialized() and dist.get_rank() != 0),
     ):
-        if batch is None:
-            continue
         # batch: [B, T, H, W, C] uint8 on CPU
         np_batch = batch.cpu().numpy()
         emb = get_fvd_logits(
             np_batch, i3d=i3d, device=device, batch_size=batch_size
-        )  # torch.Tensor [B, D] (or [B, D, 1, 1] depending on impl)
-        # Force [B, D]
-        if emb.ndim > 2:
-            emb = emb.view(emb.shape[0], -1).contiguous()
-        elif emb.ndim == 1:
-            emb = emb.unsqueeze(1).contiguous()
+        )  # torch.Tensor [B, D]
         all_embeddings.append(emb)
     local = (
         torch.cat(all_embeddings, dim=0)
@@ -445,8 +371,6 @@ def extract_fid_features(
         desc="Extracting FID Features",
         disable=(dist.is_initialized() and dist.get_rank() != 0),
     ):
-        if batch is None:
-            continue
         # batch: [B, T, H, W, C] uint8 -> float in [0,1]
         B, T, H, W, C = batch.shape
         imgs = (
@@ -550,7 +474,7 @@ def main():
     parser.add_argument("--recursive", action="store_true")
     parser.add_argument("--extensions", type=str, default="mp4,webm,mkv,avi,mov,m4v")
     parser.add_argument("--num_eval", type=int, default=5000)
-    parser.add_argument("--num_frames", type=int, default=97)  # e.g., 97 or 33/121
+    parser.add_argument("--num_frames", type=int, default=97)  # you used 97
     parser.add_argument("--image_size", type=int, default=256)
     parser.add_argument("--batch_size", type=int, default=8)
     parser.add_argument("--num_workers", type=int, default=8)
@@ -566,42 +490,25 @@ def main():
 
     try:
         exts = [e.strip() for e in args.extensions.split(",") if e.strip()]
-        all_real = list_videos(args.real_dir, recursive=args.recursive, extensions=exts)
-        all_gen = list_videos(args.gen_dir, recursive=args.recursive, extensions=exts)
+        real_paths = list_videos(
+            args.real_dir, recursive=args.recursive, extensions=exts
+        )
+        gen_paths = list_videos(args.gen_dir, recursive=args.recursive, extensions=exts)
 
         if args.match_by == "basename":
-            all_real, all_gen = match_by_basename(all_real, all_gen)
-            ddp_print(f"Matched by basename: {len(all_real)} pairs")
+            real_paths, gen_paths = match_by_basename(real_paths, gen_paths)
+            ddp_print(f"Matched by basename: {len(real_paths)} pairs")
 
-        requested = args.num_eval
-
-        # Do filtering once on rank 0, then broadcast lists to all ranks.
-        if (not dist.is_initialized()) or dist.get_rank() == 0:
-            if args.match_by == "basename":
-                real_paths, gen_paths = take_first_k_valid_pairs(
-                    all_real, all_gen, requested
-                )
-            else:
-                real_paths = take_first_k_valid(all_real, requested, "real")
-                gen_paths = take_first_k_valid(all_gen, requested, "gen")
-        else:
-            real_paths, gen_paths = [], []
-
-        real_paths = ddp_broadcast_object(real_paths, src=0)
-        gen_paths = ddp_broadcast_object(gen_paths, src=0)
-
-        N = min(len(real_paths), len(gen_paths), requested)
-        if N == 0:
+        if len(real_paths) == 0 or len(gen_paths) == 0:
             raise RuntimeError(
-                "No valid readable videos found after filtering. Check inputs."
-            )
-        if N < requested:
-            ddp_print(
-                f"Warning: only {N} valid items available (requested {requested})."
+                f"No videos found. real={len(real_paths)} gen={len(gen_paths)}"
             )
 
+        real_paths = real_paths[: args.num_eval]
+        gen_paths = gen_paths[: args.num_eval]
+        N = min(len(real_paths), len(gen_paths))
         real_paths, gen_paths = real_paths[:N], gen_paths[:N]
-        ddp_print(f"Using N={N} valid videos from each set.")
+        ddp_print(f"Using N={N} videos from each set.")
 
         target_size = (args.image_size, args.image_size)
         real_ds = MP4VideoDataset(
@@ -664,3 +571,12 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# torchrun --nnodes=1 --nproc_per_node=4 evaluation/evaluate_quality.py   --real_dir /capstor/store/cscs/swissai/a144/datasets/ssv2   --gen_dir  /capstor/scratch/cscs/mhasan/VideoX-Fun/samples/intraguide_0.2_1100   --dataset_name SSV2   --num_eval 5000   --num_frames 33   --image_size 256   --batch_size 10 --ddp
+# pip install torchmetrics[image]
+# torchrun --nnodes=1 --nproc_per_node=4 evaluation/evaluate_quality.py   --real_dir /capstor/store/cscs/swissai/a144/datasets/ssv2   --gen_dir  /capstor/scratch/cscs/mhasan/VideoX-Fun/samples/intraguide_0.2_1100   --dataset_name SSV2   --num_eval 5000   --num_frames 33   --image_size 256   --batch_size 10 --ddp
+# pip install torchmetrics[image]
+
+
+# torchrun --nnodes=1 --nproc_per_node=4 evaluation/evaluate_quality.py   --real_dir /capstor/store/cscs/swissai/a144/datasets/OpenVid-1M/validation   --gen_dir  samples/wan-videos-openvid/T2V/BASE  --num_eval 10000   --num_frames 121   --image_size 256   --batch_size 10 --ddp
+# torchrun --nnodes=1 --nproc_per_node=4 evaluation/evaluate_quality.py   --real_dir /capstor/store/cscs/swissai/a144/datasets/OpenVid-1M/validation   --gen_dir  samples/wan-videos-openvid/T2V/BASE  --num_eval 10000   --num_frames 121   --image_size 256   --batch_size 10 --ddp

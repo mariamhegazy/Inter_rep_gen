@@ -567,6 +567,13 @@ class Wan2_2TI2VPipeline(DiffusionPipeline):
         boundary: float = 0.875,
         comfyui_progressbar: bool = False,
         shift: int = 5,
+        sparse_time_mode: Optional[
+            str
+        ] = None,  # "start","start_last","linspace_k","explicit_latent","explicit_pixel"
+        sparse_time_arg: Optional[
+            Union[int, str]
+        ] = None,  # K for linspace_k, or comma-list for explicit*
+        return_anchor_frames_only: bool = True,
     ) -> Union[WanPipelineOutput, Tuple]:
         """
         Function invoked when calling the pipeline for generation.
@@ -735,6 +742,56 @@ class Wan2_2TI2VPipeline(DiffusionPipeline):
 
         if comfyui_progressbar:
             pbar.update(1)
+
+        # t2a additions
+        # === SPARSE-TIME in pipeline ===
+        r = self.vae.temporal_compression_ratio
+        t_lat_full = latents.shape[2]
+        t_pix_est = (t_lat_full - 1) * r + 1
+
+        def _parse_sparse_arg():
+            if sparse_time_mode in (None, "none"):
+                return torch.arange(t_lat_full, device=latents.device)
+            if sparse_time_mode == "start":
+                return torch.tensor([0], device=latents.device)
+            if sparse_time_mode == "start_last":
+                return torch.tensor([0, max(0, t_lat_full - 1)], device=latents.device)
+            if sparse_time_mode == "linspace_k":
+                K = int(sparse_time_arg) if sparse_time_arg is not None else 2
+                K = max(1, min(K, t_lat_full))
+                return (
+                    torch.linspace(0, t_lat_full - 1, steps=K, device=latents.device)
+                    .round()
+                    .to(torch.long)
+                    .unique(sorted=True)
+                )
+            if sparse_time_mode == "explicit_latent":
+                raw = [s for s in str(sparse_time_arg).split(",") if s.strip() != ""]
+                vals = []
+                for s in raw:
+                    if s.strip() == "-1":
+                        vals.append(t_lat_full - 1)
+                    else:
+                        vals.append(int(s))
+                vals = [max(0, min(t_lat_full - 1, v)) for v in vals]
+                return torch.tensor(sorted(set(vals)), device=latents.device)
+            if sparse_time_mode == "explicit_pixel":
+                raw = [
+                    int(s) for s in str(sparse_time_arg).split(",") if s.strip() != ""
+                ]
+                raw = [max(0, min(t_pix_est - 1, v)) for v in raw]
+                lat = [int(v) // r for v in raw]
+                return torch.tensor(sorted(set(lat)), device=latents.device)
+            raise ValueError(f"Unknown sparse_time_mode {sparse_time_mode}")
+
+        idx_lat = _parse_sparse_arg()
+        if idx_lat.numel() == 0:
+            idx_lat = torch.tensor([0], device=latents.device)
+
+        latents = latents.index_select(2, idx_lat)
+        if init_video is not None and masked_image_latents is not None:
+            masked_image_latents = masked_image_latents.index_select(2, idx_lat)
+            mask = mask.index_select(2, idx_lat)
 
         # 6. Prepare extra step kwargs. TODO: Logic should ideally just be moved out of the pipeline
         extra_step_kwargs = self.prepare_extra_step_kwargs(generator, eta)

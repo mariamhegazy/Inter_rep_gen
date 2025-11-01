@@ -12,34 +12,63 @@ import numpy as np
 
 def is_number(x):
     try:
-        return isinstance(x, (int, float)) and not isinstance(x, bool)
+        # also handle numpy numeric types
+        import numbers
+
+        return isinstance(x, numbers.Number) and not isinstance(x, bool)
     except Exception:
         return False
 
 
 def load_overall_scores(path: str, exclude_dims: set) -> Dict[str, float]:
     """
-    Load a VBench/VBench-2.0 evaluation json and extract overall per-dimension scores.
-    Expected shape for each dimension:
-      "dimension_name": [overall_score, [... per-video list ...]]
-    Returns {dimension_name: overall_score} (with NaNs filtered out),
+    Load a VBench/VBench-2.0 evaluation json and extract an overall score per dimension.
+
+    NEW (preferred): expects each dimension to look like
+      {
+        "mean_of_means": ...,
+        "std_of_means": ...,
+        "overall_mean_min": ...,
+        "overall_mean_max": <WE USE THIS>,
+        "overall_mean_mean": ...,
+        "n_runs": ...,
+        "per_video": {...}
+      }
+
+    Legacy fallback: each dimension is [overall_score, [... per-video list ...]]
+
+    Returns {dimension_name: overall_score} using "overall_mean_max" when available,
     skipping any dimensions listed in exclude_dims.
     """
     with open(path, "r") as f:
         data = json.load(f)
 
-    out = {}
+    out: Dict[str, float] = {}
     for dim, payload in data.items():
         if dim in exclude_dims:
             continue
-        if (
+
+        val = None
+
+        # Preferred: dict with "overall_mean_max"
+        if isinstance(payload, dict):
+            if "overall_mean_max" in payload and is_number(payload["overall_mean_max"]):
+                val = float(payload["overall_mean_max"])
+            # extra fallback variants if present in some files
+            elif "overall" in payload and is_number(payload["overall"]):
+                val = float(payload["overall"])
+
+        # Legacy: list/tuple [overall, per-video...]
+        elif (
             isinstance(payload, (list, tuple))
             and len(payload) >= 1
             and is_number(payload[0])
         ):
-            overall = float(payload[0])
-            if not math.isnan(overall):
-                out[dim] = overall
+            val = float(payload[0])
+
+        if val is not None and not math.isnan(val):
+            out[dim] = val
+
     return out
 
 
@@ -61,26 +90,21 @@ def normalize_runs(
       normalized_runs: same structure as `runs` but with normalized values in [0,1]
       used_minmax: {dim: (min_val, max_val)} actually used for normalization
     """
-    # Gather all dims and raw values
     all_dims = sorted(set().union(*[set(sc.keys()) for _, sc in runs]))
     used_minmax: Dict[str, Tuple[float, float]] = {}
 
     if constants:
-        # Use paper constants where available
         for d in all_dims:
             c = constants.get(d)
             if c is not None and "min" in c and "max" in c:
                 used_minmax[d] = (float(c["min"]), float(c["max"]))
-        # For dims missing in constants, fall back to observed min/max
         missing = [d for d in all_dims if d not in used_minmax]
         if missing:
             obs_minmax = compute_observed_minmax(runs, missing)
             used_minmax.update(obs_minmax)
     else:
-        # No constants provided -> fully observed min/max
         used_minmax = compute_observed_minmax(runs, all_dims)
 
-    # Normalize
     norm_runs: List[Tuple[str, Dict[str, float]]] = []
     for name, scores in runs:
         norm_scores = {}
@@ -89,7 +113,6 @@ def normalize_runs(
             if mx > mn:
                 norm_v = (v - mn) / (mx - mn)
             else:
-                # Degenerate: no spread -> map to 0.5 (neutral) to avoid spikes
                 norm_v = 0.5
             norm_scores[d] = clamp01(norm_v)
         norm_runs.append((name, norm_scores))
@@ -105,7 +128,6 @@ def compute_observed_minmax(
     for d in dims:
         vals = [sc[d] for _, sc in runs if d in sc and is_number(sc[d])]
         if len(vals) == 0:
-            # If truly missing everywhere, fall back to (0,1)
             used[d] = (0.0, 1.0)
         else:
             used[d] = (float(min(vals)), float(max(vals)))
@@ -119,7 +141,7 @@ def radar_single(
         return
     dims = list(scores.keys())
     vals = [scores[d] for d in dims]
-    dims, vals = zip(*sorted(zip(dims, vals), key=lambda x: x[0]))  # stable order
+    dims, vals = zip(*sorted(zip(dims, vals), key=lambda x: x[0]))
 
     labels = list(dims) + [dims[0]]
     values = list(vals) + [vals[0]]
@@ -213,7 +235,7 @@ def main():
         required=True,
         help=(
             "Pairs of: NAME PATH.json (space-separated). "
-            "Example: --inputs TI2V_BASE ti2v_base.json T2V_AUG t2v_aug.json"
+            "Example: --inputs TI2V ti2v.json T2V t2v.json"
         ),
     )
     ap.add_argument(
@@ -320,121 +342,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# python utils/vbench_results.py \
-#   --inputs \
-#     TI2V  /capstor/scratch/cscs/mhasan/VBench/evaluation_results_base/results_2025-10-16-17:14:02_TI2V_eval_results2.json \
-#     TI2V_contradiction   /capstor/scratch/cscs/mhasan/VBench/evaluation_results/results_2025-10-16-20:17:43_TI2V_contra_eval_results.json \
-#     T2V   /capstor/scratch/cscs/mhasan/VBench/evaluation_results_base/results_2025-10-16-17:52:40_T2V_eval_results2.json \
-#     T2V_contradiction /capstor/scratch/cscs/mhasan/VBench/evaluation_results/results_2025-10-16-20:17:38_T2V_contra_eval_results.json \
-#   --out_json vbench_results/vbench_summary_contra.json \
-#   --out_dir vbench_results/plots_contra
-
-
-# python utils/vbench_results.py \
-#   --inputs \
-#     TI2V  /capstor/scratch/cscs/mhasan/VBench/evaluation_results_base/results_2025-10-16-17:14:02_TI2V_eval_results2.json \
-#     T2V   /capstor/scratch/cscs/mhasan/VBench/evaluation_results_base/results_2025-10-16-17:52:40_T2V_eval_results2.json \
-#     I2V   /capstor/scratch/cscs/mhasan/VBench/evaluation_results_base/results_2025-10-16-17:25:24_I2V_eval_results2.json \
-#   --out_json vbench_results/vbench_summary_base.json \
-#   --out_dir vbench_results/plots_base
-
-
-# python utils/vbench_results.py \
-#   --inputs \
-#     TI2V /capstor/scratch/cscs/mhasan/VBench/evaluation_results_base/results_2025-10-16-17:14:02_TI2V_eval_results2.json \
-#     TI2V_augmentation /capstor/scratch/cscs/mhasan/VBench/evaluation_results/results_2025-10-16-20:32:58_TI2V_aug_eval_results.json \
-#     T2V /capstor/scratch/cscs/mhasan/VBench/evaluation_results_base/results_2025-10-16-17:52:40_T2V_eval_results2.json \
-#     T2V_augmentation /path/to/T2V_aug_eval_results.json \
-#   --out_json vbench_results/vbench_summary_contra.json \
-#   --out_dir vbench_results/plots_contra
-
-
-# python utils/vbench_results.py \
-#   --inputs \
-#     TI2V  /capstor/scratch/cscs/mhasan/VBench/evaluation_i2v_results/results_2025-10-18-18:46:14_ti2v_combined_eval_results.json \
-#     I2V /capstor/scratch/cscs/mhasan/VBench/evaluation_i2v_results/results_2025-10-18-17:41:50_i2v_combined_eval_results.json \
-#   --out_json vbench_results/vbench_summary_i2v_bench.json \
-#   --out_dir vbench_results/plots_i2v
-
-
-# T2V evaluation_results/results_2025-10-18-21:39:15_T2V_base_combined_eval_results.json
-# I2V evaluation_results/results_2025-10-18-21:42:26_I2V_base_combined_eval_results.json
-# TI2V evaluation_results/results_2025-10-18-21:42:58_TI2V_base_combined_eval_results.json
-
-# T2V_contra evaluation_results/results_2025-10-18-21:41:16_T2V_contra_combined_eval_results.json
-# TI2V_aug evaluation_results/results_2025-10-18-21:43:29_TI2V_aug_combined_eval_results.json
-
-
-# i2v eval
-# I2V evaluation_i2v_results/results_2025-10-18-21:36:04_i2v-base_combined_eval_results.json
-# TI2V evaluation_i2v_results/results_2025-10-18-21:38:51_ti2v-base_combined_eval_results.json
-
-
-# python utils/vbench_results.py \
-#   --inputs \
-#     I2V /capstor/scratch/cscs/mhasan/VBench/evaluation_i2v_results/results_2025-10-18-21:36:04_i2v-base_combined_eval_results.json \
-#     TI2V /capstor/scratch/cscs/mhasan/VBench/evaluation_i2v_results/results_2025-10-18-21:38:51_ti2v-base_combined_eval_results.json \
-#   --out_json vbench_results/vbench_summary_12v_bench.json \
-#   --out_dir vbench_results/plots_i2v
-
-
-# python utils/vbench_results.py \
-#   --inputs \
-#     I2V /capstor/scratch/cscs/mhasan/VBench/evaluation_results/results_2025-10-18-21:42:26_I2V_base_combined_eval_results.json \
-#     TI2V /capstor/scratch/cscs/mhasan/VBench/evaluation_results/results_2025-10-18-21:42:58_TI2V_base_combined_eval_results.json \
-#     T2V /capstor/scratch/cscs/mhasan/VBench/evaluation_results/results_2025-10-18-21:39:15_T2V_base_combined_eval_results.json \
-#   --out_json vbench_results/vbench_summary_base.json \
-#   --out_dir vbench_results/plots_base
-
-# python utils/vbench_results.py \
-#   --inputs \
-#     TI2V /capstor/scratch/cscs/mhasan/VBench/evaluation_results/results_2025-10-18-21:42:58_TI2V_base_combined_eval_results.json \
-#     T2V /capstor/scratch/cscs/mhasan/VBench/evaluation_results/results_2025-10-18-21:39:15_T2V_base_combined_eval_results.json \
-#     T2V_contra /capstor/scratch/cscs/mhasan/VBench/evaluation_results/results_2025-10-18-21:41:16_T2V_contra_combined_eval_results.json \
-#     TI2V_contra /capstor/scratch/cscs/mhasan/VBench/evaluation_results/results_2025-10-18-21:43:49_TI2V_contra_combined_eval_results.json \
-#   --out_json vbench_results/vbench_summary_contra.json \
-#   --out_dir vbench_results/plots_contra
-
-# python utils/vbench_results.py \
-#   --inputs \
-#     TI2V /capstor/scratch/cscs/mhasan/VBench/evaluation_results/results_2025-10-18-21:42:58_TI2V_base_combined_eval_results.json \
-#     T2V /capstor/scratch/cscs/mhasan/VBench/evaluation_results/results_2025-10-18-21:39:15_T2V_base_combined_eval_results.json \
-#     T2V_aug /capstor/scratch/cscs/mhasan/VBench/evaluation_results/results_2025-10-18-21:40:49_T2V_aug_combined_eval_results.json \
-#     TI2V_aug /capstor/scratch/cscs/mhasan/VBench/evaluation_results/results_2025-10-18-21:43:29_TI2V_aug_combined_eval_results.json \
-#   --out_json vbench_results/vbench_summary_aug.json \
-#   --out_dir vbench_results/plots_aug
-
-# TI2V_animal /capstor/scratch/cscs/mhasan/VBench/evaluation_results/results_2025-10-19-18:09:55_TI2V_animal_combined_eval_results.json
-# TI2V_engineered
-
-# T2V_paraphrased /capstor/scratch/cscs/mhasan/VBench/evaluation_results/results_2025-10-19-18:00:45_T2V_paraphrased_combined_eval_results.json
-# TI2V_paraphrased /capstor/scratch/cscs/mhasan/VBench/evaluation_results/results_2025-10-19-18:00:24_TI2V_paraphrased_combined_eval_results.json
-
-
-# python utils/vbench_results.py \
-#   --inputs \
-#     TI2V /capstor/scratch/cscs/mhasan/VBench/evaluation_results_full/results_2025-10-18-21:42:58_TI2V_base_combined_eval_results.json \
-#     T2V /capstor/scratch/cscs/mhasan/VBench/evaluation_results_full/results_2025-10-18-21:39:15_T2V_base_combined_eval_results.json \
-#     T2V_paraphrased /capstor/scratch/cscs/mhasan/VBench/evaluation_results/results_2025-10-19-18:00:45_T2V_paraphrased_combined_eval_results.json \
-#     TI2V_paraphrased /capstor/scratch/cscs/mhasan/VBench/evaluation_results/results_2025-10-19-18:00:24_TI2V_paraphrased_combined_eval_results.json \
-#   --out_json vbench_results/vbench_summary_paraphrased.json \
-#   --out_dir vbench_results/plots_paraphrased
-
-
-# python utils/vbench_results.py \
-#   --inputs \
-#     TI2V /capstor/scratch/cscs/mhasan/VBench/evaluation_results/results_2025-10-19-18:09:55_TI2V_animal_combined_eval_results.json \
-#     TI2V_modified /capstor/scratch/cscs/mhasan/VBench/evaluation_results/results_2025-10-19-18:09:16_TI2V_engineered_combined_eval_results.json \
-#   --out_json vbench_results/vbench_summary_engineered.json \
-#   --out_dir vbench_results/plots_engineered
-
-
-# python utils/vbench_results.py \
-#   --inputs \
-#     T2V /capstor/scratch/cscs/mhasan/VBench/evaluation_standard_t2v_5b/aggregated_results.json \
-#     T2V_upsampled /capstor/scratch/cscs/mhasan/VBench/evaluation_standard_t2v_5b_upsampled/aggregated_results.json \
-#     TI2V_different_img /capstor/scratch/cscs/mhasan/VBench/evaluation_standard_ti2v_5b/aggregated_results.json \
-#     TI2V_seeds /capstor/scratch/cscs/mhasan/VBench/evaluation_standard_ti2v_5b_seeds/aggregated_results.json \
-#   --out_json vbench_results/vbench_summary_standard.json \
-#   --out_dir vbench_results/plots_t2v_standard

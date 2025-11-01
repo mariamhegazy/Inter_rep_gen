@@ -16,9 +16,10 @@ from PIL import Image
 
 def filter_kwargs(cls, kwargs):
     sig = inspect.signature(cls.__init__)
-    valid_params = set(sig.parameters.keys()) - {'self', 'cls'}
+    valid_params = set(sig.parameters.keys()) - {"self", "cls"}
     filtered_kwargs = {k: v for k, v in kwargs.items() if k in valid_params}
     return filtered_kwargs
+
 
 def get_width_and_height_from_image_and_base_resolution(image, base_resolution):
     target_pixels = int(base_resolution) * int(base_resolution)
@@ -27,6 +28,7 @@ def get_width_and_height_from_image_and_base_resolution(image, base_resolution):
     width_slider = round(original_width * ratio)
     height_slider = round(original_height * ratio)
     return height_slider, width_slider
+
 
 def color_transfer(sc, dc):
     """
@@ -56,7 +58,16 @@ def color_transfer(sc, dc):
     dst = cv2.cvtColor(cv2.convertScaleAbs(img_n), cv2.COLOR_LAB2RGB)
     return dst
 
-def save_videos_grid(videos: torch.Tensor, path: str, rescale=False, n_rows=6, fps=12, imageio_backend=True, color_transfer_post_process=False):
+
+def save_videos_grid(
+    videos: torch.Tensor,
+    path: str,
+    rescale=False,
+    n_rows=6,
+    fps=12,
+    imageio_backend=True,
+    color_transfer_post_process=False,
+):
     videos = rearrange(videos, "b c t h w -> t b c h w")
     outputs = []
     for x in videos:
@@ -69,18 +80,28 @@ def save_videos_grid(videos: torch.Tensor, path: str, rescale=False, n_rows=6, f
 
     if color_transfer_post_process:
         for i in range(1, len(outputs)):
-            outputs[i] = Image.fromarray(color_transfer(np.uint8(outputs[i]), np.uint8(outputs[0])))
+            outputs[i] = Image.fromarray(
+                color_transfer(np.uint8(outputs[i]), np.uint8(outputs[0]))
+            )
 
     os.makedirs(os.path.dirname(path), exist_ok=True)
     if imageio_backend:
         if path.endswith("mp4"):
             imageio.mimsave(path, outputs, fps=fps)
         else:
-            imageio.mimsave(path, outputs, duration=(1000 * 1/fps))
+            imageio.mimsave(path, outputs, duration=(1000 * 1 / fps))
     else:
         if path.endswith("mp4"):
-            path = path.replace('.mp4', '.gif')
-        outputs[0].save(path, format='GIF', append_images=outputs, save_all=True, duration=100, loop=0)
+            path = path.replace(".mp4", ".gif")
+        outputs[0].save(
+            path,
+            format="GIF",
+            append_images=outputs,
+            save_all=True,
+            duration=100,
+            loop=0,
+        )
+
 
 def merge_video_audio(video_path: str, audio_path: str):
     """
@@ -103,30 +124,31 @@ def merge_video_audio(video_path: str, audio_path: str):
     try:
         # create ffmpeg command
         command = [
-            'ffmpeg',
-            '-y',  # overwrite
-            '-i',
+            "ffmpeg",
+            "-y",  # overwrite
+            "-i",
             video_path,
-            '-i',
+            "-i",
             audio_path,
-            '-c:v',
-            'copy',  # copy video stream
-            '-c:a',
-            'aac',  # use AAC audio encoder
-            '-b:a',
-            '192k',  # set audio bitrate (optional)
-            '-map',
-            '0:v:0',  # select the first video stream
-            '-map',
-            '1:a:0',  # select the first audio stream
-            '-shortest',  # choose the shortest duration
-            temp_output
+            "-c:v",
+            "copy",  # copy video stream
+            "-c:a",
+            "aac",  # use AAC audio encoder
+            "-b:a",
+            "192k",  # set audio bitrate (optional)
+            "-map",
+            "0:v:0",  # select the first video stream
+            "-map",
+            "1:a:0",  # select the first audio stream
+            "-shortest",  # choose the shortest duration
+            temp_output,
         ]
 
         # execute the command
         print("Start merging video and audio...")
         result = subprocess.run(
-            command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+            command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
+        )
 
         # check result
         if result.returncode != 0:
@@ -142,110 +164,280 @@ def merge_video_audio(video_path: str, audio_path: str):
             os.remove(temp_output)
         print(f"merge_video_audio failed with error: {e}")
 
-def get_image_to_video_latent(validation_image_start, validation_image_end, video_length, sample_size):
+
+def get_image_to_video_latent_simple(images, positions, video_length, sample_size):
+    """
+    Simple function to condition video generation on one or multiple images at arbitrary positions.
+
+    Args:
+        images: Single image or list of images (PIL Image, numpy array, or file path)
+        positions: Single int or list of ints indicating frame positions (supports negative indexing)
+        video_length: Total number of frames in the video
+        sample_size: [height, width] for resizing images
+
+    Returns:
+        input_video: Tensor of shape [1, 3, video_length, height, width] with images at specified positions
+        input_video_mask: Tensor of shape [1, 1, video_length, height, width] (0=known, 255=unknown)
+        clip_image: First image for CLIP encoding
+
+    Example:
+        # Single image at frame 0
+        video, mask, clip = get_image_to_video_latent_simple(img, 0, 121, [512, 512])
+
+        # Multiple images at different positions
+        video, mask, clip = get_image_to_video_latent_simple([img1, img2], [0, 60], 121, [512, 512])
+
+        # Using negative indexing (last frame)
+        video, mask, clip = get_image_to_video_latent_simple(img, -1, 121, [512, 512])
+    """
+    print("Using get_image_to_video_latent_simple")
+    # Normalize inputs to lists
+    if not isinstance(images, list):
+        images = [images]
+    if not isinstance(positions, list):
+        positions = [positions]
+
+    if len(images) != len(positions):
+        raise ValueError(
+            f"Number of images ({len(images)}) must match number of positions ({len(positions)})"
+        )
+
+    # Load and resize images
+    processed_images = []
+    for img in images:
+        if isinstance(img, str) and os.path.isfile(img):
+            img = Image.open(img).convert("RGB")
+        elif not isinstance(img, Image.Image):
+            # Assume it's a numpy array
+            img = Image.fromarray(np.array(img, np.uint8))
+
+        img = img.resize([sample_size[1], sample_size[0]])
+        processed_images.append(img)
+
+    # Convert positions to valid indices (handle negative indexing)
+    valid_positions = []
+    for pos in positions:
+        if pos < 0:
+            pos = video_length + pos
+        pos = max(0, min(pos, video_length - 1))
+        valid_positions.append(pos)
+
+    # Sort positions and images together to process them in order
+    sorted_pairs = sorted(zip(valid_positions, processed_images), key=lambda x: x[0])
+    sorted_positions = [p for p, _ in sorted_pairs]
+    sorted_images = [img for _, img in sorted_pairs]
+
+    # Initialize video by tiling the first image across all frames (like original function)
+    # IMPORTANT: Tile first WITHOUT normalization (like original), normalize happens implicitly later
+    input_video = (
+        torch.tile(
+            torch.from_numpy(np.array(sorted_images[0]))
+            .permute(2, 0, 1)
+            .unsqueeze(1)
+            .unsqueeze(0),
+            [1, 1, video_length, 1, 1],
+        )
+        / 255.0
+    )
+    # Initialize mask with all unknown (255)
+    input_video_mask = (
+        torch.ones([1, 1, video_length, sample_size[0], sample_size[1]]) * 255
+    )
+
+    # Place each conditioning image at its specific position and mark only that position as known in the mask
+    for i, (pos, img) in enumerate(zip(sorted_positions, sorted_images)):
+        img_tensor = torch.from_numpy(np.array(img)).permute(2, 0, 1).float() / 255.0
+        # Place the image at the conditioning position
+        input_video[0, :, pos, :, :] = img_tensor
+        # Mark ONLY this specific frame as known (0), leave all others as unknown (255)
+        input_video_mask[0, 0, pos, :, :] = 0
+
+    # Use first image for CLIP encoding
+    clip_image = processed_images[0]
+
+    return input_video, input_video_mask, clip_image
+
+
+def get_image_to_video_latent(
+    validation_image_start, validation_image_end, video_length, sample_size
+):
     if validation_image_start is not None and validation_image_end is not None:
-        if type(validation_image_start) is str and os.path.isfile(validation_image_start):
+        if type(validation_image_start) is str and os.path.isfile(
+            validation_image_start
+        ):
             image_start = clip_image = Image.open(validation_image_start).convert("RGB")
             image_start = image_start.resize([sample_size[1], sample_size[0]])
             clip_image = clip_image.resize([sample_size[1], sample_size[0]])
         else:
             image_start = clip_image = validation_image_start
-            image_start = [_image_start.resize([sample_size[1], sample_size[0]]) for _image_start in image_start]
-            clip_image = [_clip_image.resize([sample_size[1], sample_size[0]]) for _clip_image in clip_image]
+            image_start = [
+                _image_start.resize([sample_size[1], sample_size[0]])
+                for _image_start in image_start
+            ]
+            clip_image = [
+                _clip_image.resize([sample_size[1], sample_size[0]])
+                for _clip_image in clip_image
+            ]
 
         if type(validation_image_end) is str and os.path.isfile(validation_image_end):
             image_end = Image.open(validation_image_end).convert("RGB")
             image_end = image_end.resize([sample_size[1], sample_size[0]])
         else:
             image_end = validation_image_end
-            image_end = [_image_end.resize([sample_size[1], sample_size[0]]) for _image_end in image_end]
+            image_end = [
+                _image_end.resize([sample_size[1], sample_size[0]])
+                for _image_end in image_end
+            ]
 
         if type(image_start) is list:
             clip_image = clip_image[0]
             start_video = torch.cat(
-                [torch.from_numpy(np.array(_image_start)).permute(2, 0, 1).unsqueeze(1).unsqueeze(0) for _image_start in image_start], 
-                dim=2
+                [
+                    torch.from_numpy(np.array(_image_start))
+                    .permute(2, 0, 1)
+                    .unsqueeze(1)
+                    .unsqueeze(0)
+                    for _image_start in image_start
+                ],
+                dim=2,
             )
             input_video = torch.tile(start_video[:, :, :1], [1, 1, video_length, 1, 1])
-            input_video[:, :, :len(image_start)] = start_video
-            
+            input_video[:, :, : len(image_start)] = start_video
+
             input_video_mask = torch.zeros_like(input_video[:, :1])
-            input_video_mask[:, :, len(image_start):] = 255
+            input_video_mask[:, :, len(image_start) :] = 255
         else:
             input_video = torch.tile(
-                torch.from_numpy(np.array(image_start)).permute(2, 0, 1).unsqueeze(1).unsqueeze(0), 
-                [1, 1, video_length, 1, 1]
+                torch.from_numpy(np.array(image_start))
+                .permute(2, 0, 1)
+                .unsqueeze(1)
+                .unsqueeze(0),
+                [1, 1, video_length, 1, 1],
             )
             input_video_mask = torch.zeros_like(input_video[:, :1])
             input_video_mask[:, :, 1:] = 255
 
         if type(image_end) is list:
-            image_end = [_image_end.resize(image_start[0].size if type(image_start) is list else image_start.size) for _image_end in image_end]
+            image_end = [
+                _image_end.resize(
+                    image_start[0].size
+                    if type(image_start) is list
+                    else image_start.size
+                )
+                for _image_end in image_end
+            ]
             end_video = torch.cat(
-                [torch.from_numpy(np.array(_image_end)).permute(2, 0, 1).unsqueeze(1).unsqueeze(0) for _image_end in image_end], 
-                dim=2
+                [
+                    torch.from_numpy(np.array(_image_end))
+                    .permute(2, 0, 1)
+                    .unsqueeze(1)
+                    .unsqueeze(0)
+                    for _image_end in image_end
+                ],
+                dim=2,
             )
-            input_video[:, :, -len(end_video):] = end_video
-            
-            input_video_mask[:, :, -len(image_end):] = 0
+            input_video[:, :, -len(end_video) :] = end_video
+
+            input_video_mask[:, :, -len(image_end) :] = 0
         else:
-            image_end = image_end.resize(image_start[0].size if type(image_start) is list else image_start.size)
-            input_video[:, :, -1:] = torch.from_numpy(np.array(image_end)).permute(2, 0, 1).unsqueeze(1).unsqueeze(0)
+            image_end = image_end.resize(
+                image_start[0].size if type(image_start) is list else image_start.size
+            )
+            input_video[:, :, -1:] = (
+                torch.from_numpy(np.array(image_end))
+                .permute(2, 0, 1)
+                .unsqueeze(1)
+                .unsqueeze(0)
+            )
             input_video_mask[:, :, -1:] = 0
 
         input_video = input_video / 255
 
     elif validation_image_start is not None:
-        if type(validation_image_start) is str and os.path.isfile(validation_image_start):
+        if type(validation_image_start) is str and os.path.isfile(
+            validation_image_start
+        ):
             image_start = clip_image = Image.open(validation_image_start).convert("RGB")
             image_start = image_start.resize([sample_size[1], sample_size[0]])
             clip_image = clip_image.resize([sample_size[1], sample_size[0]])
         else:
             image_start = clip_image = validation_image_start
-            image_start = [_image_start.resize([sample_size[1], sample_size[0]]) for _image_start in image_start]
-            clip_image = [_clip_image.resize([sample_size[1], sample_size[0]]) for _clip_image in clip_image]
+            image_start = [
+                _image_start.resize([sample_size[1], sample_size[0]])
+                for _image_start in image_start
+            ]
+            clip_image = [
+                _clip_image.resize([sample_size[1], sample_size[0]])
+                for _clip_image in clip_image
+            ]
         image_end = None
-        
+
         if type(image_start) is list:
             clip_image = clip_image[0]
             start_video = torch.cat(
-                [torch.from_numpy(np.array(_image_start)).permute(2, 0, 1).unsqueeze(1).unsqueeze(0) for _image_start in image_start], 
-                dim=2
+                [
+                    torch.from_numpy(np.array(_image_start))
+                    .permute(2, 0, 1)
+                    .unsqueeze(1)
+                    .unsqueeze(0)
+                    for _image_start in image_start
+                ],
+                dim=2,
             )
             input_video = torch.tile(start_video[:, :, :1], [1, 1, video_length, 1, 1])
-            input_video[:, :, :len(image_start)] = start_video
+            input_video[:, :, : len(image_start)] = start_video
             input_video = input_video / 255
-            
+
             input_video_mask = torch.zeros_like(input_video[:, :1])
-            input_video_mask[:, :, len(image_start):] = 255
+            input_video_mask[:, :, len(image_start) :] = 255
         else:
-            input_video = torch.tile(
-                torch.from_numpy(np.array(image_start)).permute(2, 0, 1).unsqueeze(1).unsqueeze(0), 
-                [1, 1, video_length, 1, 1]
-            ) / 255
+            input_video = (
+                torch.tile(
+                    torch.from_numpy(np.array(image_start))
+                    .permute(2, 0, 1)
+                    .unsqueeze(1)
+                    .unsqueeze(0),
+                    [1, 1, video_length, 1, 1],
+                )
+                / 255
+            )
             input_video_mask = torch.zeros_like(input_video[:, :1])
-            input_video_mask[:, :, 1:, ] = 255
+            input_video_mask[
+                :,
+                :,
+                1:,
+            ] = 255
     else:
         image_start = None
         image_end = None
         input_video = torch.zeros([1, 3, video_length, sample_size[0], sample_size[1]])
-        input_video_mask = torch.ones([1, 1, video_length, sample_size[0], sample_size[1]]) * 255
+        input_video_mask = (
+            torch.ones([1, 1, video_length, sample_size[0], sample_size[1]]) * 255
+        )
         clip_image = None
 
     del image_start
     del image_end
     gc.collect()
 
-    return  input_video, input_video_mask, clip_image
+    return input_video, input_video_mask, clip_image
 
-def get_video_to_video_latent(input_video_path, video_length, sample_size, fps=None, validation_video_mask=None, ref_image=None):
+
+def get_video_to_video_latent(
+    input_video_path,
+    video_length,
+    sample_size,
+    fps=None,
+    validation_video_mask=None,
+    ref_image=None,
+):
     if input_video_path is not None:
         if isinstance(input_video_path, str):
             cap = cv2.VideoCapture(input_video_path)
             input_video = []
 
             original_fps = cap.get(cv2.CAP_PROP_FPS)
-            frame_skip = 1 if fps is None else max(1,int(original_fps // fps))
+            frame_skip = 1 if fps is None else max(1, int(original_fps // fps))
 
             frame_count = 0
 
@@ -268,12 +460,26 @@ def get_video_to_video_latent(input_video_path, video_length, sample_size, fps=N
         input_video = input_video.permute([3, 0, 1, 2]).unsqueeze(0) / 255
 
         if validation_video_mask is not None:
-            validation_video_mask = Image.open(validation_video_mask).convert('L').resize((sample_size[1], sample_size[0]))
+            validation_video_mask = (
+                Image.open(validation_video_mask)
+                .convert("L")
+                .resize((sample_size[1], sample_size[0]))
+            )
             input_video_mask = np.where(np.array(validation_video_mask) < 240, 0, 255)
-            
-            input_video_mask = torch.from_numpy(np.array(input_video_mask)).unsqueeze(0).unsqueeze(-1).permute([3, 0, 1, 2]).unsqueeze(0)
-            input_video_mask = torch.tile(input_video_mask, [1, 1, input_video.size()[2], 1, 1])
-            input_video_mask = input_video_mask.to(input_video.device, input_video.dtype)
+
+            input_video_mask = (
+                torch.from_numpy(np.array(input_video_mask))
+                .unsqueeze(0)
+                .unsqueeze(-1)
+                .permute([3, 0, 1, 2])
+                .unsqueeze(0)
+            )
+            input_video_mask = torch.tile(
+                input_video_mask, [1, 1, input_video.size()[2], 1, 1]
+            )
+            input_video_mask = input_video_mask.to(
+                input_video.device, input_video.dtype
+            )
         else:
             input_video_mask = torch.zeros_like(input_video[:, :1])
             input_video_mask[:, :, :] = 255
@@ -299,8 +505,9 @@ def get_video_to_video_latent(input_video_path, video_length, sample_size, fps=N
             ref_image = ref_image.unsqueeze(0).permute([3, 0, 1, 2]).unsqueeze(0) / 255
     return input_video, input_video_mask, ref_image, clip_image
 
+
 def padding_image(images, new_width, new_height):
-    new_image = Image.new('RGB', (new_width, new_height), (255, 255, 255))
+    new_image = Image.new("RGB", (new_width, new_height), (255, 255, 255))
 
     aspect_ratio = images.width / images.height
     if new_width / new_height > 1:
@@ -327,6 +534,7 @@ def padding_image(images, new_width, new_height):
 
     return new_image
 
+
 def get_image_latent(ref_image=None, sample_size=None, padding=False):
     if ref_image is not None:
         if isinstance(ref_image, str):
@@ -349,6 +557,7 @@ def get_image_latent(ref_image=None, sample_size=None, padding=False):
 
     return ref_image
 
+
 def get_image(ref_image=None):
     if ref_image is not None:
         if isinstance(ref_image, str):
@@ -358,40 +567,51 @@ def get_image(ref_image=None):
 
     return ref_image
 
+
 def timer(func):
     def wrapper(*args, **kwargs):
-        start_time  = time.time()
-        result      = func(*args, **kwargs)
-        end_time    = time.time()
+        start_time = time.time()
+        result = func(*args, **kwargs)
+        end_time = time.time()
         print(f"function {func.__name__} running for {end_time - start_time} seconds")
         return result
+
     return wrapper
+
 
 def timer_record(model_name=""):
     def decorator(func):
         def wrapper(*args, **kwargs):
             torch.cuda.synchronize()
             start_time = time.time()
-            result      = func(*args, **kwargs)
+            result = func(*args, **kwargs)
             torch.cuda.synchronize()
             end_time = time.time()
             import torch.distributed as dist
+
             if dist.is_initialized():
                 if dist.get_rank() == 0:
-                    time_sum  = end_time - start_time
-                    print('# --------------------------------------------------------- #')
-                    print(f'#   {model_name} time: {time_sum}s')
-                    print('# --------------------------------------------------------- #')
+                    time_sum = end_time - start_time
+                    print(
+                        "# --------------------------------------------------------- #"
+                    )
+                    print(f"#   {model_name} time: {time_sum}s")
+                    print(
+                        "# --------------------------------------------------------- #"
+                    )
                     _write_to_excel(model_name, time_sum)
             else:
-                time_sum  = end_time - start_time
-                print('# --------------------------------------------------------- #')
-                print(f'#   {model_name} time: {time_sum}s')
-                print('# --------------------------------------------------------- #')
+                time_sum = end_time - start_time
+                print("# --------------------------------------------------------- #")
+                print(f"#   {model_name} time: {time_sum}s")
+                print("# --------------------------------------------------------- #")
                 _write_to_excel(model_name, time_sum)
             return result
+
         return wrapper
+
     return decorator
+
 
 def _write_to_excel(model_name, time_sum):
     import os
@@ -411,14 +631,26 @@ def _write_to_excel(model_name, time_sum):
     col_idx = int(col_env)
 
     if row_idx >= len(df):
-        df = pd.concat([df, pd.DataFrame([ [None] * (len(df.columns) if not df.empty else 0) ] * (row_idx - len(df) + 1))], ignore_index=True)
+        df = pd.concat(
+            [
+                df,
+                pd.DataFrame(
+                    [[None] * (len(df.columns) if not df.empty else 0)]
+                    * (row_idx - len(df) + 1)
+                ),
+            ],
+            ignore_index=True,
+        )
 
     if col_idx >= len(df.columns):
-        df = pd.concat([df, pd.DataFrame(columns=range(len(df.columns), col_idx + 1))], axis=1)
+        df = pd.concat(
+            [df, pd.DataFrame(columns=range(len(df.columns), col_idx + 1))], axis=1
+        )
 
     df.iloc[row_idx, col_idx] = time_sum
 
     df.to_excel(file_path, index=False, header=False, sheet_name="Sheet1")
+
 
 def get_autocast_dtype():
     try:
@@ -436,7 +668,9 @@ def get_autocast_dtype():
                 print("Using bfloat16.")
                 return torch.bfloat16
             else:
-                print("Compute capability >= 8.0 but bfloat16 not supported, falling back to float16.")
+                print(
+                    "Compute capability >= 8.0 but bfloat16 not supported, falling back to float16."
+                )
                 return torch.float16
         else:
             print("GPU does not support bfloat16 natively, using float16.")

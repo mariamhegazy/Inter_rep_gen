@@ -427,6 +427,7 @@ def main():
                 "id": i,
                 "caption": cap,
                 "cap_tag": tag,  # BASE / AUG / CONTRA
+                "orig_cap": (it.get("original_caption") or "").strip(),
             }
         )
 
@@ -481,7 +482,10 @@ def main():
         # Filename: slugified prompt (same as TI2V)
         # prompt_stem = slugify(prompt) if prompt else f"sample_{it['id']:05d}"
         # prompt_stem = prompt_stem[:180] if len(prompt_stem) > 180 else prompt_stem
-        out_path = out_root / f"{prompt}.mp4"
+        save_caption = it.get("orig_cap")
+        save_stem = save_caption if save_caption else prompt
+        save_stem = save_stem[:180] if len(save_stem) > 180 else save_stem
+        out_path = out_root / f"{save_stem}.mp4"
 
         if args.resume and out_path.exists():
             _log(f"[Skip] exists: {out_path}")
@@ -490,7 +494,7 @@ def main():
             # Append _1, _2, ...
             i = 1
             while True:
-                cand = out_root / f"{prompt_stem}_{i}.mp4"
+                cand = out_root / f"{save_stem}_{i}.mp4"
                 if not cand.exists():
                     out_path = cand
                     break

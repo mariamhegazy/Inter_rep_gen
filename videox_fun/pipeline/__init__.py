@@ -11,6 +11,7 @@ from .pipeline_wan2_2_fun_control import Wan2_2FunControlPipeline
 from .pipeline_wan2_2_fun_inpaint import Wan2_2FunInpaintPipeline
 from .pipeline_wan2_2_s2v import Wan2_2S2VPipeline
 from .pipeline_wan2_2_ti2v import Wan2_2TI2VPipeline
+from .pipeline_wan2_2_ti2v_icg import Wan2_2TI2VPipeline as Wan2_2TI2VPipeline_ICG
 from .pipeline_wan2_2_vace_fun import Wan2_2VaceFunPipeline
 from .pipeline_wan_fun_control import WanFunControlPipeline
 from .pipeline_wan_fun_inpaint import WanFunInpaintPipeline

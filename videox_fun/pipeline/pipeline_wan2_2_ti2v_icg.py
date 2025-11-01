@@ -567,6 +567,8 @@ class Wan2_2TI2VPipeline(DiffusionPipeline):
         boundary: float = 0.875,
         comfyui_progressbar: bool = False,
         shift: int = 5,
+        image_guidance_scale: float = 1.0,
+        icg_image_mode: str = "gaussian",
     ) -> Union[WanPipelineOutput, Tuple]:
         """
         Function invoked when calling the pipeline for generation.
@@ -709,6 +711,22 @@ class Wan2_2TI2VPipeline(DiffusionPipeline):
                 noise_aug_strength=None,
             )
 
+            # --- build independent image surrogate *once* (ICG for image) ---
+            masked_video_latents_hat = None
+            if init_video is not None:
+                if icg_image_mode == "gaussian":
+                    # zero-mean, match per-tensor std for stability
+                    std = masked_video_latents.detach().float().std().clamp_min(1e-6)
+                    masked_video_latents_hat = (
+                        torch.randn_like(masked_video_latents) * std
+                    )
+                elif icg_image_mode == "zeros":
+                    masked_video_latents_hat = torch.zeros_like(masked_video_latents)
+                else:
+                    masked_video_latents_hat = torch.randn_like(
+                        masked_video_latents
+                    )  # fallback
+
             mask_condition = torch.concat(
                 [
                     torch.repeat_interleave(
@@ -761,54 +779,88 @@ class Wan2_2TI2VPipeline(DiffusionPipeline):
         with self.progress_bar(total=num_inference_steps) as progress_bar:
             for i, t in enumerate(timesteps):
                 self.transformer.current_steps = i
-
                 if self.interrupt:
                     continue
 
-                latent_model_input = (
-                    torch.cat([latents] * 2) if do_classifier_free_guidance else latents
-                )
-                if hasattr(self.scheduler, "scale_model_input"):
-                    latent_model_input = self.scheduler.scale_model_input(
-                        latent_model_input, t
-                    )
+                # Scale model input for scheduler
+                def _scale_latents(lats):
+                    x = lats
+                    if hasattr(self.scheduler, "scale_model_input"):
+                        x = self.scheduler.scale_model_input(x, t)
+                    return x
 
-                # broadcast to batch dimension in a way that's compatible with ONNX/Core ML
+                # Compute timestep tensor
                 if init_video is not None:
                     temp_ts = ((mask[0][0][:, ::2, ::2]) * t).flatten()
                     temp_ts = torch.cat(
                         [temp_ts, temp_ts.new_ones(seq_len - temp_ts.size(0)) * t]
-                    )
-                    temp_ts = temp_ts.unsqueeze(0)
-                    timestep = temp_ts.expand(
-                        latent_model_input.shape[0], temp_ts.size(1)
-                    )
-                else:
-                    timestep = t.expand(latent_model_input.shape[0])
+                    ).unsqueeze(0)
 
+                    def _t_broadcast(B):
+                        return temp_ts.expand(B, temp_ts.size(1))
+
+                else:
+
+                    def _t_broadcast(B):
+                        return t.expand(B)
+
+                # Choose which transformer to use (keeps your boundary logic)
                 if self.transformer_2 is not None:
-                    if t >= boundary * self.scheduler.config.num_train_timesteps:
-                        local_transformer = self.transformer_2
-                    else:
-                        local_transformer = self.transformer
+                    local_transformer = (
+                        self.transformer_2
+                        if t >= boundary * self.scheduler.config.num_train_timesteps
+                        else self.transformer
+                    )
                 else:
                     local_transformer = self.transformer
 
-                # predict noise model_output
-                with torch.cuda.amp.autocast(dtype=weight_dtype), torch.cuda.device(
-                    device=device
-                ):
-                    noise_pred = local_transformer(
-                        x=latent_model_input,
-                        context=in_prompt_embeds,
-                        t=timestep,
-                        seq_len=seq_len,
+                # --- Two image branches: real image vs independent surrogate ---
+                # latents_img   := with real masked_video_latents (your current behavior)
+                # latents_base  := with independent masked_video_latents_hat (image-unconditional branch)
+                if init_video is not None:
+                    latents_img = (1 - mask) * masked_video_latents + mask * latents
+                    latents_base = (
+                        1 - mask
+                    ) * masked_video_latents_hat + mask * latents
+                else:
+                    # no image conditioning (t2v): just use the same latents; ICG image is a no-op
+                    latents_img = latents
+                    latents_base = latents
+
+                # Duplicate per CFG branch (uncond/cond) and then stack both image branches => 4x batch
+                do_cfg = guidance_scale > 1.0
+                if do_cfg:
+                    lm_base = torch.cat(
+                        [latents_base, latents_base], dim=0
+                    )  # [u, c] for base
+                    lm_img = torch.cat(
+                        [latents_img, latents_img], dim=0
+                    )  # [u, c] for img
+                    latent_model_input = torch.cat([lm_base, lm_img], dim=0)
+                    latent_model_input = _scale_latents(latent_model_input)
+
+                    # in_prompt_embeds already holds [neg, pos]; reuse it twice to match 4x batch
+                    context4 = in_prompt_embeds + in_prompt_embeds
+                    timestep4 = _t_broadcast(latent_model_input.shape[0])
+
+                    with torch.cuda.amp.autocast(dtype=weight_dtype), torch.cuda.device(
+                        device=device
+                    ):
+                        noise_pred_all = local_transformer(
+                            x=latent_model_input,
+                            context=context4,
+                            t=timestep4,
+                            seq_len=seq_len,
+                        )
+
+                    # Split: base[u,c], img[u,c]
+                    noise_base_u, noise_base_c, noise_img_u, noise_img_c = (
+                        noise_pred_all.chunk(4)
                     )
 
-                # perform guidance
-                if do_classifier_free_guidance:
-                    if self.transformer_2 is not None and (
-                        isinstance(self.guidance_scale, (list, tuple))
+                    # Text CFG inside each image branch
+                    if self.transformer_2 is not None and isinstance(
+                        self.guidance_scale, (list, tuple)
                     ):
                         sample_guide_scale = (
                             self.guidance_scale[1]
@@ -819,15 +871,48 @@ class Wan2_2TI2VPipeline(DiffusionPipeline):
                         )
                     else:
                         sample_guide_scale = self.guidance_scale
-                    noise_pred_uncond, noise_pred_text = noise_pred.chunk(2)
-                    noise_pred = noise_pred_uncond + sample_guide_scale * (
-                        noise_pred_text - noise_pred_uncond
+
+                    pred_base = noise_base_u + sample_guide_scale * (
+                        noise_base_c - noise_base_u
+                    )
+                    pred_img = noise_img_u + sample_guide_scale * (
+                        noise_img_c - noise_img_u
                     )
 
-                # compute the previous noisy sample x_t -> x_t-1
+                    # ICG on image: scale only the image contribution
+                    w_img = (
+                        float(image_guidance_scale) if init_video is not None else 1.0
+                    )
+                    noise_pred = pred_base + w_img * (pred_img - pred_base)
+
+                else:
+                    # No text guidance: still do two image branches and blend them
+                    lm_base = _scale_latents(latents_base)
+                    lm_img = _scale_latents(latents_img)
+                    timestep2 = _t_broadcast(2)
+                    context2 = in_prompt_embeds + in_prompt_embeds
+
+                    with torch.cuda.amp.autocast(dtype=weight_dtype), torch.cuda.device(
+                        device=device
+                    ):
+                        noise_base, noise_img = local_transformer(
+                            x=torch.cat([lm_base, lm_img], dim=0),
+                            context=context2,
+                            t=timestep2,
+                            seq_len=seq_len,
+                        ).chunk(2)
+
+                    w_img = (
+                        float(image_guidance_scale) if init_video is not None else 1.0
+                    )
+                    noise_pred = noise_base + w_img * (noise_img - noise_base)
+
+                # Scheduler update
                 latents = self.scheduler.step(
                     noise_pred, t, latents, **extra_step_kwargs, return_dict=False
                 )[0]
+
+                # Re-apply mask blending on latents (your original behavior)
                 if init_video is not None:
                     latents = (1 - mask) * masked_video_latents + mask * latents
 
@@ -863,10 +948,6 @@ class Wan2_2TI2VPipeline(DiffusionPipeline):
         # Offload all models
         self.maybe_free_model_hooks()
 
-        if not return_dict:
-            video = torch.from_numpy(video)
-
-        return WanPipelineOutput(videos=video)
         if not return_dict:
             video = torch.from_numpy(video)
 

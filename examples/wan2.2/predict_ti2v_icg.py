@@ -25,7 +25,7 @@ from videox_fun.models import (
     WanT5EncoderModel,
 )
 from videox_fun.models.cache_utils import get_teacache_coefficients
-from videox_fun.pipeline import Wan2_2TI2VPipeline
+from videox_fun.pipeline import Wan2_2TI2VPipeline_ICG
 from videox_fun.utils.fm_solvers import FlowDPMSolverMultistepScheduler
 from videox_fun.utils.fm_solvers_unipc import FlowUniPCMultistepScheduler
 from videox_fun.utils.fp8_optimization import (
@@ -116,26 +116,30 @@ lora_high_path = None
 
 # Other params
 sample_size = [704, 1280]
-video_length = 1
+video_length = 121
 fps = 24
 
 # Use torch.float16 if GPU does not support torch.bfloat16
 # ome graphics cards, such as v100, 2080ti, do not support torch.bfloat16
 weight_dtype = torch.bfloat16
 # If you want to generate from text, please set the validation_image_start = None and validation_image_end = None
-# validation_image_start = "/capstor/store/cscs/swissai/a144/mariam/vbench2_beta_i2v/data/crop/16-9/an elephant walking through a forest.jpg"
-validation_image_start = None
+validation_image_start = "/capstor/scratch/cscs/mhasan/VideoX-Fun-ours/test_assets/premium_photo-1669277330871-443462026e13.jpeg"
 
 # prompts
-prompt = "A bee lands on a flower and a butterfly dances around the petals"
-negative_prompt = "a blurry cartoonish, image, low resolution, distorted, deformed, disfigured, ugly, extra limbs, cloned face, skinny, glitchy, double torso, extra arms, extra hands, mangled fingers, missing lips, ugly face, distorted legs, fused fingers, too many fingers, long neck, jpeg artifacts, cropped, worst quality, low quality, normal quality"
+prompt = "a zebra running in the field"
+negative_prompt = (
+    "overexposed, blurry, low quality, deformed hands, ugly, artifacts, static scene"
+)
 guidance_scale = 6.0
 seed = 43
 num_inference_steps = 50
 # The lora_weight is used for low noise model, the lora_high_weight is used for high noise model.
 lora_weight = 0.55
 lora_high_weight = 0.55
-save_path = "samples_test/wan-videos-ti2v-negative"
+save_path = "samples/wan-videos-ti2v-icg"
+
+image_guidance_scale = 1.0
+icg_image_mode = "gaussian"
 
 device = set_multi_gpus_devices(ulysses_degree, ring_degree)
 config = OmegaConf.load(config_path)
@@ -261,7 +265,7 @@ scheduler = Chosen_Scheduler(
 )
 
 # Get Pipeline
-pipeline = Wan2_2TI2VPipeline(
+pipeline = Wan2_2TI2VPipeline_ICG(
     transformer=transformer,
     transformer_2=transformer_2,
     vae=vae,
@@ -437,6 +441,8 @@ with torch.no_grad():
         video=input_video,
         mask_video=input_video_mask,
         shift=shift,
+        image_guidance_scale=image_guidance_scale,
+        icg_image_mode=icg_image_mode,
     ).videos
 
 if lora_path is not None:

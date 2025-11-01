@@ -12,7 +12,6 @@ from typing import (
     Union,
 )
 
-import cv2
 import numpy as np
 import torch
 from PIL import Image
@@ -313,7 +312,7 @@ class AspectRatioBatchSampler(BatchSampler):
         for idx in self.sampler:
             try:
                 video_dict = self.dataset[idx]
-                width, more = video_dict.get("width", None), video_dict.get(
+                width, height = video_dict.get("width", None), video_dict.get(
                     "height", None
                 )
 
@@ -495,5 +494,4 @@ class AspectRatioBatchImageVideoSampler(BatchSampler):
                 # yield a batch of indices in the same aspect ratio group
                 if len(bucket) == self.batch_size:
                     yield bucket[:]
-                    del bucket[:]
                     del bucket[:]
