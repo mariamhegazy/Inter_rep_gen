@@ -96,6 +96,7 @@ config_path = "config/wan2.2/wan_civitai_5b.yaml"
 # model path
 model_name = "models/Wan2.2-TI2V-5B"
 
+
 # Choose the sampler in "Flow", "Flow_Unipc", "Flow_DPM++"
 sampler_name = "Flow_Unipc"
 # [NOTE]: Noise schedule shift parameter. Affects temporal dynamics.
@@ -105,18 +106,20 @@ shift = 5
 # Load pretrained model if need
 # The transformer_path is used for low noise model, the transformer_high_path is used for high noise model.
 # Since Wan2.2-5b consists of only one model, only transformer_path is used.
+# transformer_path = "output_dir/wan2.2_5b_finetune_ultravideo_T2A_start_rank128_few_shot/checkpoint-980.safetensors"
 transformer_path = None
 transformer_high_path = None
 vae_path = None
 # Load lora model if need
 # The lora_path is used for low noise model, the lora_high_path is used for high noise model.
 # Since Wan2.2-5b consists of only one model, only lora_path is used.
+# lora_path = "output_dir/wan2.2_5b_finetune_ultravideo_T2A_start_rank128_few_shot/checkpoint-980.safetensors"
 lora_path = None
 lora_high_path = None
 
 # Other params
 sample_size = [704, 1280]
-video_length = 1
+video_length = 121
 fps = 24
 
 # Use torch.float16 if GPU does not support torch.bfloat16
@@ -127,15 +130,20 @@ weight_dtype = torch.bfloat16
 validation_image_start = None
 
 # prompts
-prompt = "A bee lands on a flower and a butterfly dances around the petals"
-negative_prompt = "a blurry cartoonish, image, low resolution, distorted, deformed, disfigured, ugly, extra limbs, cloned face, skinny, glitchy, double torso, extra arms, extra hands, mangled fingers, missing lips, ugly face, distorted legs, fused fingers, too many fingers, long neck, jpeg artifacts, cropped, worst quality, low quality, normal quality"
+# prompt = "a tree leaf turning from green to red"
+prompt = "The video captures a serene moment in a lush, green forest where two elephants are seen walking and interacting with their surroundings. It opens with a wide shot of a dense, verdant forest, setting the stage for the natural beauty that follows. As the camera slowly zooms in, two elephants come into view, their massive forms dominating the frame. The larger elephant, likely the matriarch, leads the way, her trunk occasionally reaching down to touch the ground or interact with the smaller elephant beside her. The smaller elephant follows closely, its youthful energy evident in its playful movements. The camera pans around the elephants, capturing their interactions from various angles. The sunlight streaming through the trees creates a dynamic interplay of light and shadow, enhancing the texture of the elephants' skin and the surrounding foliage. The scene transitions smoothly, maintaining a steady pace that mirrors the calm demeanor of the elephants. The video concludes with a close-up shot of the elephants' faces, their eyes conveying a sense of wisdom and tranquility. The forest provides a protective and nurturing environment, with tall trees and thick bushes surrounding the area. The ground is covered with dry grass and scattered leaves, adding to the natural setting. The video has a documentary style, focusing on capturing the natural behavior and beauty of the elephants in their habitat. The use of natural lighting and smooth camera movements adds to the authenticity and immersive quality of the footage. The overall atmosphere is serene and tranquil, with the warm lighting, gentle camera movements, and natural setting creating a sense of peace and harmony."
+negative_prompt = (
+    "overexposed, blurry, low quality, deformed hands, ugly, artifacts, static scene"
+)
+
+
 guidance_scale = 6.0
 seed = 43
 num_inference_steps = 50
 # The lora_weight is used for low noise model, the lora_high_weight is used for high noise model.
 lora_weight = 0.55
 lora_high_weight = 0.55
-save_path = "samples_test/wan-videos-ti2v-negative"
+save_path = "samples_test/wan-videos-ti2v-startimg"
 
 device = set_multi_gpus_devices(ulysses_degree, ring_degree)
 config = OmegaConf.load(config_path)

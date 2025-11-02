@@ -356,6 +356,7 @@ class Wan2_2TI2VPipeline(DiffusionPipeline):
         device,
         generator,
         latents=None,
+        num_latent_frames: Optional[int] = None,
     ):
         if isinstance(generator, list) and len(generator) != batch_size:
             raise ValueError(
@@ -363,10 +364,23 @@ class Wan2_2TI2VPipeline(DiffusionPipeline):
                 f" size of {batch_size}. Make sure the batch size matches the length of the generators."
             )
 
+        # shape = (
+        #     batch_size,
+        #     num_channels_latents,
+        #     (num_frames - 1) // self.vae.temporal_compression_ratio + 1,
+        #     height // self.vae.spatial_compression_ratio,
+        #     width // self.vae.spatial_compression_ratio,
+        # )
+
+        T_lat = (
+            num_latent_frames
+            if num_latent_frames is not None
+            else ((num_frames - 1) // self.vae.temporal_compression_ratio + 1)
+        )
         shape = (
             batch_size,
             num_channels_latents,
-            (num_frames - 1) // self.vae.temporal_compression_ratio + 1,
+            T_lat,
             height // self.vae.spatial_compression_ratio,
             width // self.vae.spatial_compression_ratio,
         )
@@ -574,6 +588,9 @@ class Wan2_2TI2VPipeline(DiffusionPipeline):
             Union[int, str]
         ] = None,  # K for linspace_k, or comma-list for explicit*
         return_anchor_frames_only: bool = True,
+        anchor_upsample: str = "linear",  # {"nearest","linear"}
+        sparse_apply_to: str = "latent",  # "latent" | "pixel" | "both"
+        sparse_temporal_halo: Optional[int] = None,
     ) -> Union[WanPipelineOutput, Tuple]:
         """
         Function invoked when calling the pipeline for generation.
@@ -672,6 +689,69 @@ class Wan2_2TI2VPipeline(DiffusionPipeline):
         else:
             init_video = None
 
+        # --- right after scheduler/timesteps are set, before prepare_latents ---
+        r = self.vae.temporal_compression_ratio
+        T_lat_full = (num_frames - 1) // r + 1
+        T_pix_full = num_frames
+
+        def _parse_sparse_arg():
+            if sparse_time_mode in (None, "none"):
+                return torch.arange(T_lat_full, device=device)
+            if sparse_time_mode == "start":
+                return torch.tensor([0], device=device)
+            if sparse_time_mode == "start_last":
+                return torch.tensor([0, max(0, T_lat_full - 1)], device=device)
+            if sparse_time_mode == "linspace_k":
+                K = int(sparse_time_arg) if sparse_time_arg is not None else 2
+                K = max(1, min(K, T_lat_full))
+                return (
+                    torch.linspace(0, T_lat_full - 1, steps=K, device=device)
+                    .round()
+                    .to(torch.long)
+                    .unique(sorted=True)
+                )
+            if sparse_time_mode == "explicit_latent":
+                vals = []
+                for s in [
+                    x for x in str(sparse_time_arg).split(",") if x.strip() != ""
+                ]:
+                    vals.append(T_lat_full - 1 if s.strip() == "-1" else int(s))
+                vals = [max(0, min(T_lat_full - 1, v)) for v in vals]
+                return torch.tensor(sorted(set(vals)), device=device)
+            if sparse_time_mode == "explicit_pixel":
+                raw = [
+                    int(s) for s in str(sparse_time_arg).split(",") if s.strip() != ""
+                ]
+                raw = [max(0, min(T_pix_full - 1, v)) for v in raw]
+                return torch.tensor(
+                    sorted(set([int(v) // r for v in raw])), device=device
+                )
+            raise ValueError(f"Unknown sparse_time_mode {sparse_time_mode}")
+
+        idx_lat = _parse_sparse_arg()
+        if idx_lat.numel() == 0:
+            idx_lat = torch.tensor([0], device=device)
+        T_lat_anchor = int(idx_lat.numel())
+
+        r = self.vae.temporal_compression_ratio
+        T_pix_full = num_frames
+
+        if sparse_apply_to in ("pixel", "both") and video is not None:
+            min_lat = int(idx_lat.min().item())
+            max_lat = int(idx_lat.max().item())
+            halo = r if sparse_temporal_halo is None else int(sparse_temporal_halo)
+            pix_start = max(0, min_lat * r - halo)
+            pix_end = min(T_pix_full, (max_lat + 1) * r + halo)  # exclusive
+
+            # slice the raw inputs BEFORE preprocess/encode
+            video = video[:, :, pix_start:pix_end, ...]
+            if mask_video is not None:
+                mask_video = mask_video[:, :, pix_start:pix_end, ...]
+
+            # remap anchor indices to the trimmed clip
+            idx_lat = idx_lat - min_lat
+            T_pix_full = video.shape[2]  # new span after trim
+
         latent_channels = self.vae.config.latent_channels
         latents = self.prepare_latents(
             batch_size * num_videos_per_prompt,
@@ -683,7 +763,19 @@ class Wan2_2TI2VPipeline(DiffusionPipeline):
             device,
             generator,
             latents,
+            num_latent_frames=T_lat_anchor,  # <<< anchors
         )
+        # latents = self.prepare_latents(
+        #     batch_size * num_videos_per_prompt,
+        #     latent_channels,
+        #     num_frames,
+        #     height,
+        #     width,
+        #     weight_dtype,
+        #     device,
+        #     generator,
+        #     latents,
+        # )
         if comfyui_progressbar:
             pbar.update(1)
 
@@ -740,6 +832,21 @@ class Wan2_2TI2VPipeline(DiffusionPipeline):
         else:
             init_video = None
 
+        if init_video is not None and not (mask_video == 255).all():
+            masked_video_latents = masked_video_latents.index_select(2, idx_lat)
+            mask = F.interpolate(
+                mask_condition[:, :1],
+                size=latents.size()[-3:],
+                mode="trilinear",
+                align_corners=True,
+            ).to(device, weight_dtype)
+            mask = mask.index_select(2, torch.arange(T_lat_anchor, device=device))
+            # blend once before loop (you also re-blend each step below)
+            latents = (1 - mask) * masked_video_latents + mask * latents
+        else:
+            mask = None
+            masked_video_latents = None
+
         if comfyui_progressbar:
             pbar.update(1)
 
@@ -789,9 +896,16 @@ class Wan2_2TI2VPipeline(DiffusionPipeline):
             idx_lat = torch.tensor([0], device=latents.device)
 
         latents = latents.index_select(2, idx_lat)
-        if init_video is not None and masked_image_latents is not None:
-            masked_image_latents = masked_image_latents.index_select(2, idx_lat)
+        if init_video is not None and masked_video_latents is not None:
+            masked_video_latents = masked_video_latents.index_select(2, idx_lat)
             mask = mask.index_select(2, idx_lat)
+            B, C, T, H, W = latents.shape
+            ph, pw = (
+                self.transformer.config.patch_size[1],
+                self.transformer.config.patch_size[2],
+            )
+            tokens_per_frame = math.ceil((W * H) / (ph * pw))
+            seq_len = tokens_per_frame * T
 
         # 6. Prepare extra step kwargs. TODO: Logic should ideally just be moved out of the pipeline
         extra_step_kwargs = self.prepare_extra_step_kwargs(generator, eta)
@@ -802,14 +916,21 @@ class Wan2_2TI2VPipeline(DiffusionPipeline):
             width // self.vae.spatial_compression_ratio,
             height // self.vae.spatial_compression_ratio,
         )
-        seq_len = math.ceil(
-            (target_shape[2] * target_shape[3])
-            / (
-                self.transformer.config.patch_size[1]
-                * self.transformer.config.patch_size[2]
-            )
-            * target_shape[1]
+        # seq_len = math.ceil(
+        #     (target_shape[2] * target_shape[3])
+        #     / (
+        #         self.transformer.config.patch_size[1]
+        #         * self.transformer.config.patch_size[2]
+        #     )
+        #     * target_shape[1]
+        # )
+        B, C, T, H_lat, W_lat = latents.shape
+        ph, pw = (
+            self.transformer.config.patch_size[1],
+            self.transformer.config.patch_size[2],
         )
+        tokens_per_frame = math.ceil((W_lat * H_lat) / (ph * pw))
+        seq_len = tokens_per_frame * T
         # 7. Denoising loop
         num_warmup_steps = max(
             len(timesteps) - num_inference_steps * self.scheduler.order, 0
@@ -907,15 +1028,32 @@ class Wan2_2TI2VPipeline(DiffusionPipeline):
                 if comfyui_progressbar:
                     pbar.update(1)
 
-        if output_type == "numpy":
-            video = self.decode_latents(latents)
-        elif not output_type == "latent":
-            video = self.decode_latents(latents)
-            video = self.video_processor.postprocess_video(
-                video=video, output_type=output_type
-            )
+        # if output_type == "numpy":
+        #     video = self.decode_latents(latents)
+        # elif not output_type == "latent":
+        #     video = self.decode_latents(latents)
+        #     video = self.video_processor.postprocess_video(
+        #         video=video, output_type=output_type
+        #     )
+        # else:
+        #     video = latents
+
+        # sparse-aware decode
+        frames_anchor = _decode_anchor_latents_as_frames(
+            self.vae, latents
+        )  # (B,K,C,H,W)
+
+        if return_anchor_frames_only:
+            video_torch = frames_anchor  # (B,K,C,H,W)
         else:
+            video_torch = _upsample_anchors_to_full(
+                frames_anchor, idx_lat, T_pix_full, r, mode=anchor_upsample
+            )  # (B,T,C,H,W)
+
+        if output_type == "latent":
             video = latents
+        else:
+            video = video_torch.cpu().numpy()
 
         # Offload all models
         self.maybe_free_model_hooks()
@@ -924,7 +1062,73 @@ class Wan2_2TI2VPipeline(DiffusionPipeline):
             video = torch.from_numpy(video)
 
         return WanPipelineOutput(videos=video)
-        if not return_dict:
-            video = torch.from_numpy(video)
 
-        return WanPipelineOutput(videos=video)
+
+def _decode_anchor_latents_as_frames(vae, latents):
+    """
+    latents: (B,C,K,H,W)
+    returns: (B,K,C,H,W) in [0,1]
+    """
+    B, C, K, H, W = latents.shape
+    x = latents.permute(0, 2, 1, 3, 4).reshape(B * K, C, 1, H, W)  # (B*K, C, 1, H, W)
+
+    out = vae.decode(
+        x.to(vae.dtype)
+    ).sample  # could be (N,C,T,H,W) or (N,C,H,W) or (N,T,C,H,W)
+
+    # --- normalize to (N, C, H, W) ---
+    if out.dim() == 5:
+        # Heuristics: prefer (N,C,T,H,W); if time is in dim 1 instead, permute.
+        if out.shape[1] in (1, 3):  # (N,C,T,H,W)
+            out = out[:, :, 0]  # take the first time slice -> (N,C,H,W)
+        elif out.shape[2] in (1, 3):  # (N,T,C,H,W)
+            out = out[:, 0]  # take the first time slice -> (N,C,H,W)
+        else:
+            # Fallback: assume (N,C,T,H,W)
+            out = out[:, :, 0]
+    elif out.dim() == 4:
+        # already (N,C,H,W)
+        pass
+    else:
+        raise RuntimeError(f"Unexpected VAE decode output shape: {tuple(out.shape)}")
+
+    out = (out / 2 + 0.5).clamp(0, 1).float()  # [0,1]
+    out = out.reshape(B, K, out.shape[1], out.shape[-2], out.shape[-1])  # (B,K,C,H,W)
+    return out
+
+
+def _upsample_anchors_to_full(frames_anchor, anchor_lat_idx, T_pix, r, mode="linear"):
+    """
+    frames_anchor: (B,K,C,H,W), anchor_lat_idx: (K,), T_pix=num_frames, r=vae.temporal_compression_ratio
+    returns: (B,T_pix,C,H,W)
+    """
+    B, K, C, H, W = frames_anchor.shape
+    anchor_pix = (anchor_lat_idx.long() * int(r)).tolist()
+    out = frames_anchor.new_empty((B, T_pix, C, H, W))
+
+    if mode == "nearest":
+        for t in range(T_pix):
+            j = min(range(K), key=lambda q: abs(t - anchor_pix[q]))
+            out[:, t] = frames_anchor[:, j]
+        return out
+
+    # linear
+    for t in range(T_pix):
+        if t in anchor_pix:
+            out[:, t] = frames_anchor[:, anchor_pix.index(t)]
+            continue
+        left = [ap for ap in anchor_pix if ap < t]
+        right = [ap for ap in anchor_pix if ap > t]
+        if not left:
+            out[:, t] = frames_anchor[:, 0]
+            continue
+        if not right:
+            out[:, t] = frames_anchor[:, -1]
+            continue
+        l = max(left)
+        rgt = min(right)
+        jl = anchor_pix.index(l)
+        jr = anchor_pix.index(rgt)
+        w = (t - l) / float(rgt - l)
+        out[:, t] = (1 - w) * frames_anchor[:, jl] + w * frames_anchor[:, jr]
+    return out

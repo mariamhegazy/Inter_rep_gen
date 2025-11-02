@@ -12,10 +12,13 @@ from diffusers.utils import BaseOutput, logging, replace_example_docstring
 from diffusers.utils.torch_utils import randn_tensor
 from diffusers.video_processor import VideoProcessor
 
-from ..models import (AutoencoderKLWan, AutoTokenizer,
-                              WanT5EncoderModel, Wan2_2Transformer3DModel)
-from ..utils.fm_solvers import (FlowDPMSolverMultistepScheduler,
-                                get_sampling_sigmas)
+from ..models import (
+    AutoencoderKLWan,
+    AutoTokenizer,
+    Wan2_2Transformer3DModel,
+    WanT5EncoderModel,
+)
+from ..utils.fm_solvers import FlowDPMSolverMultistepScheduler, get_sampling_sigmas
 from ..utils.fm_solvers_unipc import FlowUniPCMultistepScheduler
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name
@@ -62,9 +65,13 @@ def retrieve_timesteps(
         second element is the number of inference steps.
     """
     if timesteps is not None and sigmas is not None:
-        raise ValueError("Only one of `timesteps` or `sigmas` can be passed. Please choose one to set custom values")
+        raise ValueError(
+            "Only one of `timesteps` or `sigmas` can be passed. Please choose one to set custom values"
+        )
     if timesteps is not None:
-        accepts_timesteps = "timesteps" in set(inspect.signature(scheduler.set_timesteps).parameters.keys())
+        accepts_timesteps = "timesteps" in set(
+            inspect.signature(scheduler.set_timesteps).parameters.keys()
+        )
         if not accepts_timesteps:
             raise ValueError(
                 f"The current scheduler class {scheduler.__class__}'s `set_timesteps` does not support custom"
@@ -74,7 +81,9 @@ def retrieve_timesteps(
         timesteps = scheduler.timesteps
         num_inference_steps = len(timesteps)
     elif sigmas is not None:
-        accept_sigmas = "sigmas" in set(inspect.signature(scheduler.set_timesteps).parameters.keys())
+        accept_sigmas = "sigmas" in set(
+            inspect.signature(scheduler.set_timesteps).parameters.keys()
+        )
         if not accept_sigmas:
             raise ValueError(
                 f"The current scheduler class {scheduler.__class__}'s `set_timesteps` does not support custom"
@@ -102,6 +111,107 @@ class WanPipelineOutput(BaseOutput):
     """
 
     videos: torch.Tensor
+
+
+def _unique_sorted_int(xs):
+    return sorted(list({int(x) for x in xs}))
+
+
+def _choose_sparse_latents(mode, k, explicit, r, t_lat, t_pix=None, device="cpu"):
+    # r = VAE temporal compression ratio; t_lat = total latent frames; t_pix = total pixel frames
+    if mode == "none":
+        return torch.arange(t_lat, device=device)
+
+    if mode == "start":
+        return torch.tensor([0], device=device)
+
+    if mode == "start_last":
+        if t_lat == 1:
+            return torch.tensor([0], device=device)
+        return torch.tensor([0, t_lat - 1], device=device)
+
+    if mode == "linspace_k":
+        k = max(1, min(int(k), t_lat))
+        return (
+            torch.linspace(0, t_lat - 1, steps=k, device=device)
+            .round()
+            .to(torch.long)
+            .unique(sorted=True)
+        )
+
+    if mode == "explicit_latent":
+        raw = [s for s in str(explicit).split(",") if s.strip() != ""]
+        vals = []
+        for s in raw:
+            vals.append(t_lat - 1 if s.strip() == "-1" else int(s))
+        vals = [max(0, min(t_lat - 1, v)) for v in vals]
+        return torch.tensor(_unique_sorted_int(vals), device=device)
+
+    raise ValueError(f"Unknown sparse_time_mode {mode}")
+
+
+def _decode_anchor_latents_as_frames(vae, latents):
+    # latents: (B, C, K, H, W) -> decode each anchor separately as T=1 to get (B, K, C, H, W)
+    B, C, K, H, W = latents.shape
+    x = latents.permute(0, 2, 1, 3, 4).reshape(B * K, C, 1, H, W)  # (B*K, C, 1, H, W)
+    frames = vae.decode(x.to(vae.dtype)).sample  # (B*K, 1, C, H, W)
+    frames = (frames / 2 + 0.5).clamp(0, 1).float().cpu()  # keep torch here
+    frames = frames.reshape(
+        B, K, 1, frames.shape[-3], frames.shape[-2], frames.shape[-1]
+    )
+    frames = frames.squeeze(2)  # (B, K, C, H, W)
+    return frames
+
+
+def _upsample_anchors_to_full(frames_anchor, anchor_lat_idx, T_pix, r, mode="nearest"):
+    """
+    frames_anchor: (B, K, C, H, W) decoded pixel frames for anchors (one per latent)
+    anchor_lat_idx: (K,) latent indices (0..T_lat-1)
+    T_pix: desired pixel frames (num_frames arg)
+    r: temporal compression ratio (>=1)
+    mode: "nearest" or "linear"
+    Returns: (B, T_pix, C, H, W)
+    """
+    B, K, C, H, W = frames_anchor.shape
+    # map latent anchors to pixel frame indices
+    anchor_pix = (anchor_lat_idx.long() * int(r)).tolist()
+
+    # initialize output and fill anchor positions
+    out = torch.empty(
+        B, T_pix, C, H, W, dtype=frames_anchor.dtype, device=frames_anchor.device
+    )
+    # start by nearest fill for all positions
+    if mode == "nearest":
+        for t in range(T_pix):
+            # find nearest anchor
+            nearest = min(range(K), key=lambda j: abs(t - anchor_pix[j]))
+            out[:, t] = frames_anchor[:, nearest]
+        return out
+
+    # linear interpolation along time
+    # left/right neighbors per t
+    for t in range(T_pix):
+        # exact anchor?
+        if t in anchor_pix:
+            j = anchor_pix.index(t)
+            out[:, t] = frames_anchor[:, j]
+            continue
+        # find left and right anchors
+        right_candidates = [ap for ap in anchor_pix if ap > t]
+        left_candidates = [ap for ap in anchor_pix if ap < t]
+        if not left_candidates:
+            out[:, t] = frames_anchor[:, 0]
+            continue
+        if not right_candidates:
+            out[:, t] = frames_anchor[:, -1]
+            continue
+        l = max(left_candidates)
+        rgt = min(right_candidates)
+        jl = anchor_pix.index(l)
+        jr = anchor_pix.index(rgt)
+        w = (t - l) / float(rgt - l)
+        out[:, t] = (1 - w) * frames_anchor[:, jl] + w * frames_anchor[:, jr]
+    return out
 
 
 class Wan2_2Pipeline(DiffusionPipeline):
@@ -133,10 +243,16 @@ class Wan2_2Pipeline(DiffusionPipeline):
         super().__init__()
 
         self.register_modules(
-            tokenizer=tokenizer, text_encoder=text_encoder, vae=vae, transformer=transformer, 
-            transformer_2=transformer_2, scheduler=scheduler
+            tokenizer=tokenizer,
+            text_encoder=text_encoder,
+            vae=vae,
+            transformer=transformer,
+            transformer_2=transformer_2,
+            scheduler=scheduler,
         )
-        self.video_processor = VideoProcessor(vae_scale_factor=self.vae.spatial_compression_ratio)
+        self.video_processor = VideoProcessor(
+            vae_scale_factor=self.vae.spatial_compression_ratio
+        )
 
     def _get_t5_prompt_embeds(
         self,
@@ -162,23 +278,33 @@ class Wan2_2Pipeline(DiffusionPipeline):
         )
         text_input_ids = text_inputs.input_ids
         prompt_attention_mask = text_inputs.attention_mask
-        untruncated_ids = self.tokenizer(prompt, padding="longest", return_tensors="pt").input_ids
+        untruncated_ids = self.tokenizer(
+            prompt, padding="longest", return_tensors="pt"
+        ).input_ids
 
-        if untruncated_ids.shape[-1] >= text_input_ids.shape[-1] and not torch.equal(text_input_ids, untruncated_ids):
-            removed_text = self.tokenizer.batch_decode(untruncated_ids[:, max_sequence_length - 1 : -1])
+        if untruncated_ids.shape[-1] >= text_input_ids.shape[-1] and not torch.equal(
+            text_input_ids, untruncated_ids
+        ):
+            removed_text = self.tokenizer.batch_decode(
+                untruncated_ids[:, max_sequence_length - 1 : -1]
+            )
             logger.warning(
                 "The following part of your input was truncated because `max_sequence_length` is set to "
                 f" {max_sequence_length} tokens: {removed_text}"
             )
 
         seq_lens = prompt_attention_mask.gt(0).sum(dim=1).long()
-        prompt_embeds = self.text_encoder(text_input_ids.to(device), attention_mask=prompt_attention_mask.to(device))[0]
+        prompt_embeds = self.text_encoder(
+            text_input_ids.to(device), attention_mask=prompt_attention_mask.to(device)
+        )[0]
         prompt_embeds = prompt_embeds.to(dtype=dtype, device=device)
 
         # duplicate text embeddings for each generation per prompt, using mps friendly method
         _, seq_len, _ = prompt_embeds.shape
         prompt_embeds = prompt_embeds.repeat(1, num_videos_per_prompt, 1)
-        prompt_embeds = prompt_embeds.view(batch_size * num_videos_per_prompt, seq_len, -1)
+        prompt_embeds = prompt_embeds.view(
+            batch_size * num_videos_per_prompt, seq_len, -1
+        )
 
         return [u[:v] for u, v in zip(prompt_embeds, seq_lens)]
 
@@ -239,7 +365,11 @@ class Wan2_2Pipeline(DiffusionPipeline):
 
         if do_classifier_free_guidance and negative_prompt_embeds is None:
             negative_prompt = negative_prompt or ""
-            negative_prompt = batch_size * [negative_prompt] if isinstance(negative_prompt, str) else negative_prompt
+            negative_prompt = (
+                batch_size * [negative_prompt]
+                if isinstance(negative_prompt, str)
+                else negative_prompt
+            )
 
             if prompt is not None and type(prompt) is not type(negative_prompt):
                 raise TypeError(
@@ -264,7 +394,16 @@ class Wan2_2Pipeline(DiffusionPipeline):
         return prompt_embeds, negative_prompt_embeds
 
     def prepare_latents(
-        self, batch_size, num_channels_latents, num_frames, height, width, dtype, device, generator, latents=None
+        self,
+        batch_size,
+        num_channels_latents,
+        num_frames,
+        height,
+        width,
+        dtype,
+        device,
+        generator,
+        latents=None,
     ):
         if isinstance(generator, list) and len(generator) != batch_size:
             raise ValueError(
@@ -272,16 +411,30 @@ class Wan2_2Pipeline(DiffusionPipeline):
                 f" size of {batch_size}. Make sure the batch size matches the length of the generators."
             )
 
+        # shape = (
+        #     batch_size,
+        #     num_channels_latents,
+        #     (num_frames - 1) // self.vae.temporal_compression_ratio + 1,
+        #     height // self.vae.spatial_compression_ratio,
+        #     width // self.vae.spatial_compression_ratio,
+        # )
+        T_lat = (
+            num_latent_frames
+            if num_latent_frames is not None
+            else ((num_frames - 1) // self.vae.temporal_compression_ratio + 1)
+        )
         shape = (
             batch_size,
             num_channels_latents,
-            (num_frames - 1) // self.vae.temporal_compression_ratio + 1,
+            T_lat,
             height // self.vae.spatial_compression_ratio,
             width // self.vae.spatial_compression_ratio,
         )
 
         if latents is None:
-            latents = randn_tensor(shape, generator=generator, device=device, dtype=dtype)
+            latents = randn_tensor(
+                shape, generator=generator, device=device, dtype=dtype
+            )
         else:
             latents = latents.to(device)
 
@@ -304,13 +457,17 @@ class Wan2_2Pipeline(DiffusionPipeline):
         # eta corresponds to η in DDIM paper: https://arxiv.org/abs/2010.02502
         # and should be between [0, 1]
 
-        accepts_eta = "eta" in set(inspect.signature(self.scheduler.step).parameters.keys())
+        accepts_eta = "eta" in set(
+            inspect.signature(self.scheduler.step).parameters.keys()
+        )
         extra_step_kwargs = {}
         if accepts_eta:
             extra_step_kwargs["eta"] = eta
 
         # check if the scheduler accepts generator
-        accepts_generator = "generator" in set(inspect.signature(self.scheduler.step).parameters.keys())
+        accepts_generator = "generator" in set(
+            inspect.signature(self.scheduler.step).parameters.keys()
+        )
         if accepts_generator:
             extra_step_kwargs["generator"] = generator
         return extra_step_kwargs
@@ -327,10 +484,13 @@ class Wan2_2Pipeline(DiffusionPipeline):
         negative_prompt_embeds=None,
     ):
         if height % 8 != 0 or width % 8 != 0:
-            raise ValueError(f"`height` and `width` have to be divisible by 8 but are {height} and {width}.")
+            raise ValueError(
+                f"`height` and `width` have to be divisible by 8 but are {height} and {width}."
+            )
 
         if callback_on_step_end_tensor_inputs is not None and not all(
-            k in self._callback_tensor_inputs for k in callback_on_step_end_tensor_inputs
+            k in self._callback_tensor_inputs
+            for k in callback_on_step_end_tensor_inputs
         ):
             raise ValueError(
                 f"`callback_on_step_end_tensor_inputs` has to be in {self._callback_tensor_inputs}, but found {[k for k in callback_on_step_end_tensor_inputs if k not in self._callback_tensor_inputs]}"
@@ -344,8 +504,12 @@ class Wan2_2Pipeline(DiffusionPipeline):
             raise ValueError(
                 "Provide either `prompt` or `prompt_embeds`. Cannot leave both `prompt` and `prompt_embeds` undefined."
             )
-        elif prompt is not None and (not isinstance(prompt, str) and not isinstance(prompt, list)):
-            raise ValueError(f"`prompt` has to be of type `str` or `list` but is {type(prompt)}")
+        elif prompt is not None and (
+            not isinstance(prompt, str) and not isinstance(prompt, list)
+        ):
+            raise ValueError(
+                f"`prompt` has to be of type `str` or `list` but is {type(prompt)}"
+            )
 
         if prompt is not None and negative_prompt_embeds is not None:
             raise ValueError(
@@ -404,7 +568,11 @@ class Wan2_2Pipeline(DiffusionPipeline):
         output_type: str = "numpy",
         return_dict: bool = False,
         callback_on_step_end: Optional[
-            Union[Callable[[int, int, Dict], None], PipelineCallback, MultiPipelineCallbacks]
+            Union[
+                Callable[[int, int, Dict], None],
+                PipelineCallback,
+                MultiPipelineCallbacks,
+            ]
         ] = None,
         attention_kwargs: Optional[Dict[str, Any]] = None,
         callback_on_step_end_tensor_inputs: List[str] = ["latents"],
@@ -412,6 +580,11 @@ class Wan2_2Pipeline(DiffusionPipeline):
         boundary: float = 0.875,
         comfyui_progressbar: bool = False,
         shift: int = 5,
+        sparse_time_mode: str = "none",  # {"none","start","start_last","linspace_k","explicit_latent"}
+        sparse_k: int = 2,
+        sparse_explicit: str = "",  # e.g. "0,-1" (latent indices; -1 means last)
+        sparse_return_anchors_only: bool = False,  # if True, return only anchor frames
+        anchor_upsample: str = "nearest",
     ) -> Union[WanPipelineOutput, Tuple]:
         """
         Function invoked when calling the pipeline for generation.
@@ -475,24 +648,51 @@ class Wan2_2Pipeline(DiffusionPipeline):
 
         # 4. Prepare timesteps
         if isinstance(self.scheduler, FlowMatchEulerDiscreteScheduler):
-            timesteps, num_inference_steps = retrieve_timesteps(self.scheduler, num_inference_steps, device, timesteps, mu=1)
+            timesteps, num_inference_steps = retrieve_timesteps(
+                self.scheduler, num_inference_steps, device, timesteps, mu=1
+            )
         elif isinstance(self.scheduler, FlowUniPCMultistepScheduler):
-            self.scheduler.set_timesteps(num_inference_steps, device=device, shift=shift)
+            self.scheduler.set_timesteps(
+                num_inference_steps, device=device, shift=shift
+            )
             timesteps = self.scheduler.timesteps
         elif isinstance(self.scheduler, FlowDPMSolverMultistepScheduler):
             sampling_sigmas = get_sampling_sigmas(num_inference_steps, shift)
             timesteps, _ = retrieve_timesteps(
-                self.scheduler,
-                device=device,
-                sigmas=sampling_sigmas)
+                self.scheduler, device=device, sigmas=sampling_sigmas
+            )
         else:
-            timesteps, num_inference_steps = retrieve_timesteps(self.scheduler, num_inference_steps, device, timesteps)
+            timesteps, num_inference_steps = retrieve_timesteps(
+                self.scheduler, num_inference_steps, device, timesteps
+            )
         self._num_timesteps = len(timesteps)
         if comfyui_progressbar:
             from comfy.utils import ProgressBar
+
             pbar = ProgressBar(num_inference_steps + 1)
 
         # 5. Prepare latents
+        device = self._execution_device
+        r = self.vae.temporal_compression_ratio
+
+        # full latent/pixel lengths implied by num_frames
+        T_lat_full = (num_frames - 1) // r + 1
+        T_pix_full = num_frames
+
+        # choose anchors
+        idx_lat = _choose_sparse_latents(
+            mode=sparse_time_mode,
+            k=sparse_k,
+            explicit=sparse_explicit,
+            r=r,
+            t_lat=T_lat_full,
+            t_pix=T_pix_full,
+            device=device,
+        )
+        if idx_lat.numel() == 0:
+            idx_lat = torch.tensor([0], device=device)
+
+        T_lat_anchor = int(idx_lat.numel())
         latent_channels = self.transformer.config.in_channels
         latents = self.prepare_latents(
             batch_size * num_videos_per_prompt,
@@ -504,17 +704,44 @@ class Wan2_2Pipeline(DiffusionPipeline):
             device,
             generator,
             latents,
+            num_latent_frames=T_lat_anchor,  # <= anchor count
         )
+        # latents = self.prepare_latents(
+        #     batch_size * num_videos_per_prompt,
+        #     latent_channels,
+        #     num_frames,
+        #     height,
+        #     width,
+        #     weight_dtype,
+        #     device,
+        #     generator,
+        #     latents,
+        # )
         if comfyui_progressbar:
             pbar.update(1)
 
         # 6. Prepare extra step kwargs. TODO: Logic should ideally just be moved out of the pipeline
         extra_step_kwargs = self.prepare_extra_step_kwargs(generator, eta)
 
-        target_shape = (self.vae.latent_channels, (num_frames - 1) // self.vae.temporal_compression_ratio + 1, width // self.vae.spatial_compression_ratio, height // self.vae.spatial_compression_ratio)
-        seq_len = math.ceil((target_shape[2] * target_shape[3]) / (self.transformer.config.patch_size[1] * self.transformer.config.patch_size[2]) * target_shape[1]) 
+        # target_shape = (self.vae.latent_channels, (num_frames - 1) // self.vae.temporal_compression_ratio + 1, width // self.vae.spatial_compression_ratio, height // self.vae.spatial_compression_ratio)
+        target_shape = (
+            self.vae.latent_channels,
+            T_lat_anchor,
+            width // self.vae.spatial_compression_ratio,
+            height // self.vae.spatial_compression_ratio,
+        )
+        seq_len = math.ceil(
+            (target_shape[2] * target_shape[3])
+            / (
+                self.transformer.config.patch_size[1]
+                * self.transformer.config.patch_size[2]
+            )
+            * target_shape[1]
+        )
         # 7. Denoising loop
-        num_warmup_steps = max(len(timesteps) - num_inference_steps * self.scheduler.order, 0)
+        num_warmup_steps = max(
+            len(timesteps) - num_inference_steps * self.scheduler.order, 0
+        )
         self.transformer.num_inference_steps = num_inference_steps
         with self.progress_bar(total=num_inference_steps) as progress_bar:
             for i, t in enumerate(timesteps):
@@ -523,13 +750,17 @@ class Wan2_2Pipeline(DiffusionPipeline):
                 if self.interrupt:
                     continue
 
-                latent_model_input = torch.cat([latents] * 2) if do_classifier_free_guidance else latents
+                latent_model_input = (
+                    torch.cat([latents] * 2) if do_classifier_free_guidance else latents
+                )
                 if hasattr(self.scheduler, "scale_model_input"):
-                    latent_model_input = self.scheduler.scale_model_input(latent_model_input, t)
+                    latent_model_input = self.scheduler.scale_model_input(
+                        latent_model_input, t
+                    )
 
                 # broadcast to batch dimension in a way that's compatible with ONNX/Core ML
                 timestep = t.expand(latent_model_input.shape[0])
-                
+
                 if self.transformer_2 is not None:
                     if t >= boundary * self.scheduler.config.num_train_timesteps:
                         local_transformer = self.transformer_2
@@ -539,7 +770,9 @@ class Wan2_2Pipeline(DiffusionPipeline):
                     local_transformer = self.transformer
 
                 # predict noise model_output
-                with torch.cuda.amp.autocast(dtype=weight_dtype), torch.cuda.device(device=device):
+                with torch.cuda.amp.autocast(dtype=weight_dtype), torch.cuda.device(
+                    device=device
+                ):
                     noise_pred = local_transformer(
                         x=latent_model_input,
                         context=in_prompt_embeds,
@@ -549,15 +782,27 @@ class Wan2_2Pipeline(DiffusionPipeline):
 
                 # perform guidance
                 if do_classifier_free_guidance:
-                    if self.transformer_2 is not None and (isinstance(self.guidance_scale, (list, tuple))):
-                        sample_guide_scale = self.guidance_scale[1] if t >= self.transformer_2.config.boundary * self.scheduler.config.num_train_timesteps else self.guidance_scale[0]
+                    if self.transformer_2 is not None and (
+                        isinstance(self.guidance_scale, (list, tuple))
+                    ):
+                        sample_guide_scale = (
+                            self.guidance_scale[1]
+                            if t
+                            >= self.transformer_2.config.boundary
+                            * self.scheduler.config.num_train_timesteps
+                            else self.guidance_scale[0]
+                        )
                     else:
                         sample_guide_scale = self.guidance_scale
                     noise_pred_uncond, noise_pred_text = noise_pred.chunk(2)
-                    noise_pred = noise_pred_uncond + sample_guide_scale * (noise_pred_text - noise_pred_uncond)
+                    noise_pred = noise_pred_uncond + sample_guide_scale * (
+                        noise_pred_text - noise_pred_uncond
+                    )
 
                 # compute the previous noisy sample x_t -> x_t-1
-                latents = self.scheduler.step(noise_pred, t, latents, **extra_step_kwargs, return_dict=False)[0]
+                latents = self.scheduler.step(
+                    noise_pred, t, latents, **extra_step_kwargs, return_dict=False
+                )[0]
 
                 if callback_on_step_end is not None:
                     callback_kwargs = {}
@@ -567,20 +812,54 @@ class Wan2_2Pipeline(DiffusionPipeline):
 
                     latents = callback_outputs.pop("latents", latents)
                     prompt_embeds = callback_outputs.pop("prompt_embeds", prompt_embeds)
-                    negative_prompt_embeds = callback_outputs.pop("negative_prompt_embeds", negative_prompt_embeds)
+                    negative_prompt_embeds = callback_outputs.pop(
+                        "negative_prompt_embeds", negative_prompt_embeds
+                    )
 
-                if i == len(timesteps) - 1 or ((i + 1) > num_warmup_steps and (i + 1) % self.scheduler.order == 0):
+                if i == len(timesteps) - 1 or (
+                    (i + 1) > num_warmup_steps and (i + 1) % self.scheduler.order == 0
+                ):
                     progress_bar.update()
                 if comfyui_progressbar:
                     pbar.update(1)
 
-        if output_type == "numpy":
-            video = self.decode_latents(latents)
-        elif not output_type == "latent":
-            video = self.decode_latents(latents)
-            video = self.video_processor.postprocess_video(video=video, output_type=output_type)
+        # if output_type == "numpy":
+        #     video = self.decode_latents(latents)
+        # elif not output_type == "latent":
+        #     video = self.decode_latents(latents)
+        #     video = self.video_processor.postprocess_video(video=video, output_type=output_type)
+        # else:
+        #     video = latents
+
+        if sparse_time_mode != "none":
+            # decode one pixel frame per anchor (preserves true anchor timestamps)
+            frames_anchor = _decode_anchor_latents_as_frames(
+                self.vae, latents
+            )  # (B,K,C,H,W)
+
+            if sparse_return_anchors_only:
+                video_torch = frames_anchor  # (B,K,C,H,W)
+            else:
+                # expand anchors back to requested num_frames using latent->pixel mapping (idx_lat * r)
+                video_torch = _upsample_anchors_to_full(
+                    frames_anchor, idx_lat, T_pix_full, r, mode=anchor_upsample
+                )  # (B,T_pix,C,H,W)
+
+            if output_type == "latent":
+                video = latents
+            else:
+                video = video_torch.cpu().numpy()  # (B,T,C,H,W) after numpy conversion
         else:
-            video = latents
+            # original path (full dense generation)
+            if output_type == "numpy":
+                video = self.decode_latents(latents)
+            elif output_type != "latent":
+                video = self.decode_latents(latents)
+                video = self.video_processor.postprocess_video(
+                    video=video, output_type=output_type
+                )
+            else:
+                video = latents
 
         # Offload all models
         self.maybe_free_model_hooks()

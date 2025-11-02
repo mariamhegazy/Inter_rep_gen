@@ -1,0 +1,2378 @@
+[
+  {
+    "caption": "A dog jumping rope and a cat watching.",
+    "phrase_0": [
+      "a dog?",
+      "a dog jumping rope?"
+    ],
+    "phrase_1": [
+      "a cat?",
+      "a cat watching?"
+    ]
+  },
+  {
+    "caption": "A cat jumping rope and a dog watching.",
+    "phrase_0": [
+      "a cat?",
+      "a cat jumping rope?"
+    ],
+    "phrase_1": [
+      "a dog?",
+      "a dog watching?"
+    ]
+  },
+  {
+    "caption": "A rabbit jumping rope and a squirrel watching.",
+    "phrase_0": [
+      "a rabbit?",
+      "a rabbit jumping rope?"
+    ],
+    "phrase_1": [
+      "a squirrel?",
+      "a squirrel watching?"
+    ]
+  },
+  {
+    "caption": "A squirrel jumping rope and a fox watching.",
+    "phrase_0": [
+      "a squirrel?",
+      "a squirrel jumping rope?"
+    ],
+    "phrase_1": [
+      "a fox?",
+      "a fox watching?"
+    ]
+  },
+  {
+    "caption": "A fox jumping rope and a rabbit watching.",
+    "phrase_0": [
+      "a fox?",
+      "a fox jumping rope?"
+    ],
+    "phrase_1": [
+      "a rabbit?",
+      "a rabbit watching?"
+    ]
+  },
+  {
+    "caption": "An owl jumping rope and a bear watching.",
+    "phrase_0": [
+      "an owl?",
+      "an owl jumping rope?"
+    ],
+    "phrase_1": [
+      "a bear?",
+      "a bear watching?"
+    ]
+  },
+  {
+    "caption": "A bear jumping rope and a wolf watching.",
+    "phrase_0": [
+      "a bear?",
+      "a bear jumping rope?"
+    ],
+    "phrase_1": [
+      "a wolf?",
+      "a wolf watching?"
+    ]
+  },
+  {
+    "caption": "A wolf jumping rope and a deer watching.",
+    "phrase_0": [
+      "a wolf?",
+      "a wolf jumping rope?"
+    ],
+    "phrase_1": [
+      "a deer?",
+      "a deer watching?"
+    ]
+  },
+  {
+    "caption": "A lion jumping rope and a zebra watching.",
+    "phrase_0": [
+      "a lion?",
+      "a lion jumping rope?"
+    ],
+    "phrase_1": [
+      "a zebra?",
+      "a zebra watching?"
+    ]
+  },
+  {
+    "caption": "A zebra jumping rope and a giraffe watching.",
+    "phrase_0": [
+      "a zebra?",
+      "a zebra jumping rope?"
+    ],
+    "phrase_1": [
+      "a giraffe?",
+      "a giraffe watching?"
+    ]
+  },
+  {
+    "caption": "A tiger jumping rope and a monkey watching.",
+    "phrase_0": [
+      "a tiger?",
+      "a tiger jumping rope?"
+    ],
+    "phrase_1": [
+      "a monkey?",
+      "a monkey watching?"
+    ]
+  },
+  {
+    "caption": "A monkey jumping rope and an orangutan watching.",
+    "phrase_0": [
+      "a monkey?",
+      "a monkey jumping rope?"
+    ],
+    "phrase_1": [
+      "an orangutan?",
+      "an orangutan watching?"
+    ]
+  },
+  {
+    "caption": "An elephant jumping rope and a rhino watching.",
+    "phrase_0": [
+      "an elephant?",
+      "an elephant jumping rope?"
+    ],
+    "phrase_1": [
+      "a rhino?",
+      "a rhino watching?"
+    ]
+  },
+  {
+    "caption": "A giraffe jumping rope and an elephant watching.",
+    "phrase_0": [
+      "a giraffe?",
+      "a giraffe jumping rope?"
+    ],
+    "phrase_1": [
+      "an elephant?",
+      "an elephant watching?"
+    ]
+  },
+  {
+    "caption": "A kangaroo jumping rope and a koala watching.",
+    "phrase_0": [
+      "a kangaroo?",
+      "a kangaroo jumping rope?"
+    ],
+    "phrase_1": [
+      "a koala?",
+      "a koala watching?"
+    ]
+  },
+  {
+    "caption": "A koala jumping rope and a wombat watching.",
+    "phrase_0": [
+      "a koala?",
+      "a koala jumping rope?"
+    ],
+    "phrase_1": [
+      "a wombat?",
+      "a wombat watching?"
+    ]
+  },
+  {
+    "caption": "A panda jumping rope and a red panda watching.",
+    "phrase_0": [
+      "a panda?",
+      "a panda jumping rope?"
+    ],
+    "phrase_1": [
+      "a red panda?",
+      "a red panda watching?"
+    ]
+  },
+  {
+    "caption": "A red panda jumping rope and a sloth watching.",
+    "phrase_0": [
+      "a red panda?",
+      "a red panda jumping rope?"
+    ],
+    "phrase_1": [
+      "a sloth?",
+      "a sloth watching?"
+    ]
+  },
+  {
+    "caption": "A penguin jumping rope and a seal watching.",
+    "phrase_0": [
+      "a penguin?",
+      "a penguin jumping rope?"
+    ],
+    "phrase_1": [
+      "a seal?",
+      "a seal watching?"
+    ]
+  },
+  {
+    "caption": "A seal jumping rope and a dolphin watching.",
+    "phrase_0": [
+      "a seal?",
+      "a seal jumping rope?"
+    ],
+    "phrase_1": [
+      "a dolphin?",
+      "a dolphin watching?"
+    ]
+  },
+  {
+    "caption": "A dolphin jumping rope and a shark watching.",
+    "phrase_0": [
+      "a dolphin?",
+      "a dolphin jumping rope?"
+    ],
+    "phrase_1": [
+      "a shark?",
+      "a shark watching?"
+    ]
+  },
+  {
+    "caption": "A fish jumping rope and a whale watching.",
+    "phrase_0": [
+      "a fish?",
+      "a fish jumping rope?"
+    ],
+    "phrase_1": [
+      "a whale?",
+      "a whale watching?"
+    ]
+  },
+  {
+    "caption": "A parrot jumping rope and a toucan watching.",
+    "phrase_0": [
+      "a parrot?",
+      "a parrot jumping rope?"
+    ],
+    "phrase_1": [
+      "a toucan?",
+      "a toucan watching?"
+    ]
+  },
+  {
+    "caption": "A toucan jumping rope and a flamingo watching.",
+    "phrase_0": [
+      "a toucan?",
+      "a toucan jumping rope?"
+    ],
+    "phrase_1": [
+      "a flamingo?",
+      "a flamingo watching?"
+    ]
+  },
+  {
+    "caption": "A horse jumping rope and a cow watching.",
+    "phrase_0": [
+      "a horse?",
+      "a horse jumping rope?"
+    ],
+    "phrase_1": [
+      "a cow?",
+      "a cow watching?"
+    ]
+  },
+  {
+    "caption": "A cow jumping rope and a sheep watching.",
+    "phrase_0": [
+      "a cow?",
+      "a cow jumping rope?"
+    ],
+    "phrase_1": [
+      "a sheep?",
+      "a sheep watching?"
+    ]
+  },
+  {
+    "caption": "A pig jumping rope and a chicken watching.",
+    "phrase_0": [
+      "a pig?",
+      "a pig jumping rope?"
+    ],
+    "phrase_1": [
+      "a chicken?",
+      "a chicken watching?"
+    ]
+  },
+  {
+    "caption": "A chicken jumping rope and a goat watching.",
+    "phrase_0": [
+      "a chicken?",
+      "a chicken jumping rope?"
+    ],
+    "phrase_1": [
+      "a goat?",
+      "a goat watching?"
+    ]
+  },
+  {
+    "caption": "A goat jumping rope and a badger watching.",
+    "phrase_0": [
+      "a goat?",
+      "a goat jumping rope?"
+    ],
+    "phrase_1": [
+      "a badger?",
+      "a badger watching?"
+    ]
+  },
+  {
+    "caption": "A sheep jumping rope and a hedgehog watching.",
+    "phrase_0": [
+      "a sheep?",
+      "a sheep jumping rope?"
+    ],
+    "phrase_1": [
+      "a hedgehog?",
+      "a hedgehog watching?"
+    ]
+  },
+  {
+    "caption": "A deer jumping rope and a moose watching.",
+    "phrase_0": [
+      "a deer?",
+      "a deer jumping rope?"
+    ],
+    "phrase_1": [
+      "a moose?",
+      "a moose watching?"
+    ]
+  },
+  {
+    "caption": "A badger jumping rope and a skunk watching.",
+    "phrase_0": [
+      "a badger?",
+      "a badger jumping rope?"
+    ],
+    "phrase_1": [
+      "a skunk?",
+      "a skunk watching?"
+    ]
+  },
+  {
+    "caption": "A raccoon jumping rope and an opossum watching.",
+    "phrase_0": [
+      "a raccoon?",
+      "a raccoon jumping rope?"
+    ],
+    "phrase_1": [
+      "an opossum?",
+      "an opossum watching?"
+    ]
+  },
+  {
+    "caption": "An opossum jumping rope and a ferret watching.",
+    "phrase_0": [
+      "an opossum?",
+      "an opossum jumping rope?"
+    ],
+    "phrase_1": [
+      "a ferret?",
+      "a ferret watching?"
+    ]
+  },
+  {
+    "caption": "A hedgehog jumping rope and a guinea pig watching.",
+    "phrase_0": [
+      "a hedgehog?",
+      "a hedgehog jumping rope?"
+    ],
+    "phrase_1": [
+      "a guinea pig?",
+      "a guinea pig watching?"
+    ]
+  },
+  {
+    "caption": "A ferret jumping rope and a gerbil watching.",
+    "phrase_0": [
+      "a ferret?",
+      "a ferret jumping rope?"
+    ],
+    "phrase_1": [
+      "a gerbil?",
+      "a gerbil watching?"
+    ]
+  },
+  {
+    "caption": "A beaver jumping rope and an otter watching.",
+    "phrase_0": [
+      "a beaver?",
+      "a beaver jumping rope?"
+    ],
+    "phrase_1": [
+      "an otter?",
+      "an otter watching?"
+    ]
+  },
+  {
+    "caption": "An otter jumping rope and a platypus watching.",
+    "phrase_0": [
+      "an otter?",
+      "an otter jumping rope?"
+    ],
+    "phrase_1": [
+      "a platypus?",
+      "a platypus watching?"
+    ]
+  },
+  {
+    "caption": "A snake jumping rope and a lizard watching.",
+    "phrase_0": [
+      "a snake?",
+      "a snake jumping rope?"
+    ],
+    "phrase_1": [
+      "a lizard?",
+      "a lizard watching?"
+    ]
+  },
+  {
+    "caption": "A lizard jumping rope and a gecko watching.",
+    "phrase_0": [
+      "a lizard?",
+      "a lizard jumping rope?"
+    ],
+    "phrase_1": [
+      "a gecko?",
+      "a gecko watching?"
+    ]
+  },
+  {
+    "caption": "A turtle jumping rope and a frog watching.",
+    "phrase_0": [
+      "a turtle?",
+      "a turtle jumping rope?"
+    ],
+    "phrase_1": [
+      "a frog?",
+      "a frog watching?"
+    ]
+  },
+  {
+    "caption": "A frog jumping rope and a toad watching.",
+    "phrase_0": [
+      "a frog?",
+      "a frog jumping rope?"
+    ],
+    "phrase_1": [
+      "a toad?",
+      "a toad watching?"
+    ]
+  },
+  {
+    "caption": "A duck jumping rope and a goose watching.",
+    "phrase_0": [
+      "a duck?",
+      "a duck jumping rope?"
+    ],
+    "phrase_1": [
+      "a goose?",
+      "a goose watching?"
+    ]
+  },
+  {
+    "caption": "A goose jumping rope and a swan watching.",
+    "phrase_0": [
+      "a goose?",
+      "a goose jumping rope?"
+    ],
+    "phrase_1": [
+      "a swan?",
+      "a swan watching?"
+    ]
+  },
+  {
+    "caption": "A gorilla jumping rope and a baboon watching.",
+    "phrase_0": [
+      "a gorilla?",
+      "a gorilla jumping rope?"
+    ],
+    "phrase_1": [
+      "a baboon?",
+      "a baboon watching?"
+    ]
+  },
+  {
+    "caption": "A chimpanzee jumping rope and a macaque watching.",
+    "phrase_0": [
+      "a chimpanzee?",
+      "a chimpanzee jumping rope?"
+    ],
+    "phrase_1": [
+      "a macaque?",
+      "a macaque watching?"
+    ]
+  },
+  {
+    "caption": "A hippo jumping rope and a crocodile watching.",
+    "phrase_0": [
+      "a hippo?",
+      "a hippo jumping rope?"
+    ],
+    "phrase_1": [
+      "a crocodile?",
+      "a crocodile watching?"
+    ]
+  },
+  {
+    "caption": "A camel jumping rope and a llama watching.",
+    "phrase_0": [
+      "a camel?",
+      "a camel jumping rope?"
+    ],
+    "phrase_1": [
+      "a llama?",
+      "a llama watching?"
+    ]
+  },
+  {
+    "caption": "An alpaca jumping rope and a vicu\u00f1a watching.",
+    "phrase_0": [
+      "an alpaca?",
+      "an alpaca jumping rope?"
+    ],
+    "phrase_1": [
+      "a vicu\u00f1a?",
+      "a vicu\u00f1a watching?"
+    ]
+  },
+  {
+    "caption": "A golden retriever jumping rope and a poodle watching.",
+    "phrase_0": [
+      "a golden retriever?",
+      "a golden retriever jumping rope?"
+    ],
+    "phrase_1": [
+      "a poodle?",
+      "a poodle watching?"
+    ]
+  },
+  {
+    "caption": "A pug jumping rope and a beagle watching.",
+    "phrase_0": [
+      "a pug?",
+      "a pug jumping rope?"
+    ],
+    "phrase_1": [
+      "a beagle?",
+      "a beagle watching?"
+    ]
+  },
+  {
+    "caption": "A Siamese cat jumping rope and a Persian cat watching.",
+    "phrase_0": [
+      "a siamese cat?",
+      "a siamese cat jumping rope?"
+    ],
+    "phrase_1": [
+      "a persian cat?",
+      "a persian cat watching?"
+    ]
+  },
+  {
+    "caption": "A bengal tiger jumping rope and a cougar watching.",
+    "phrase_0": [
+      "a bengal tiger?",
+      "a bengal tiger jumping rope?"
+    ],
+    "phrase_1": [
+      "a cougar?",
+      "a cougar watching?"
+    ]
+  },
+  {
+    "caption": "A black bear jumping rope and a brown bear watching.",
+    "phrase_0": [
+      "a black bear?",
+      "a black bear jumping rope?"
+    ],
+    "phrase_1": [
+      "a brown bear?",
+      "a brown bear watching?"
+    ]
+  },
+  {
+    "caption": "A husky jumping rope and a malamute watching.",
+    "phrase_0": [
+      "a husky?",
+      "a husky jumping rope?"
+    ],
+    "phrase_1": [
+      "a malamute?",
+      "a malamute watching?"
+    ]
+  },
+  {
+    "caption": "A cobra jumping rope and a viper watching.",
+    "phrase_0": [
+      "a cobra?",
+      "a cobra jumping rope?"
+    ],
+    "phrase_1": [
+      "a viper?",
+      "a viper watching?"
+    ]
+  },
+  {
+    "caption": "A chameleon jumping rope and an iguana watching.",
+    "phrase_0": [
+      "a chameleon?",
+      "a chameleon jumping rope?"
+    ],
+    "phrase_1": [
+      "an iguana?",
+      "an iguana watching?"
+    ]
+  },
+  {
+    "caption": "A squirrel jumping rope and a chipmunk watching.",
+    "phrase_0": [
+      "a squirrel?",
+      "a squirrel jumping rope?"
+    ],
+    "phrase_1": [
+      "a chipmunk?",
+      "a chipmunk watching?"
+    ]
+  },
+  {
+    "caption": "A vulture jumping rope and an eagle watching.",
+    "phrase_0": [
+      "a vulture?",
+      "a vulture jumping rope?"
+    ],
+    "phrase_1": [
+      "an eagle?",
+      "an eagle watching?"
+    ]
+  },
+  {
+    "caption": "A hawk jumping rope and a falcon watching.",
+    "phrase_0": [
+      "a hawk?",
+      "a hawk jumping rope?"
+    ],
+    "phrase_1": [
+      "a falcon?",
+      "a falcon watching?"
+    ]
+  },
+  {
+    "caption": "A robin jumping rope and a bluebird watching.",
+    "phrase_0": [
+      "a robin?",
+      "a robin jumping rope?"
+    ],
+    "phrase_1": [
+      "a bluebird?",
+      "a bluebird watching?"
+    ]
+  },
+  {
+    "caption": "A crow jumping rope and a raven watching.",
+    "phrase_0": [
+      "a crow?",
+      "a crow jumping rope?"
+    ],
+    "phrase_1": [
+      "a raven?",
+      "a raven watching?"
+    ]
+  },
+  {
+    "caption": "A pelican jumping rope and a seagull watching.",
+    "phrase_0": [
+      "a pelican?",
+      "a pelican jumping rope?"
+    ],
+    "phrase_1": [
+      "a seagull?",
+      "a seagull watching?"
+    ]
+  },
+  {
+    "caption": "A crab jumping rope and a lobster watching.",
+    "phrase_0": [
+      "a crab?",
+      "a crab jumping rope?"
+    ],
+    "phrase_1": [
+      "a lobster?",
+      "a lobster watching?"
+    ]
+  },
+  {
+    "caption": "A snail jumping rope and a slug watching.",
+    "phrase_0": [
+      "a snail?",
+      "a snail jumping rope?"
+    ],
+    "phrase_1": [
+      "a slug?",
+      "a slug watching?"
+    ]
+  },
+  {
+    "caption": "An ant jumping rope and a grasshopper watching.",
+    "phrase_0": [
+      "an ant?",
+      "an ant jumping rope?"
+    ],
+    "phrase_1": [
+      "a grasshopper?",
+      "a grasshopper watching?"
+    ]
+  },
+  {
+    "caption": "A bee jumping rope and a wasp watching.",
+    "phrase_0": [
+      "a bee?",
+      "a bee jumping rope?"
+    ],
+    "phrase_1": [
+      "a wasp?",
+      "a wasp watching?"
+    ]
+  },
+  {
+    "caption": "A spider jumping rope and a beetle watching.",
+    "phrase_0": [
+      "a spider?",
+      "a spider jumping rope?"
+    ],
+    "phrase_1": [
+      "a beetle?",
+      "a beetle watching?"
+    ]
+  },
+  {
+    "caption": "A tarantula jumping rope and a scorpion watching.",
+    "phrase_0": [
+      "a tarantula?",
+      "a tarantula jumping rope?"
+    ],
+    "phrase_1": [
+      "a scorpion?",
+      "a scorpion watching?"
+    ]
+  },
+  {
+    "caption": "A worm jumping rope and a caterpillar watching.",
+    "phrase_0": [
+      "a worm?",
+      "a worm jumping rope?"
+    ],
+    "phrase_1": [
+      "a caterpillar?",
+      "a caterpillar watching?"
+    ]
+  },
+  {
+    "caption": "A jellyfish jumping rope and a sea turtle watching.",
+    "phrase_0": [
+      "a jellyfish?",
+      "a jellyfish jumping rope?"
+    ],
+    "phrase_1": [
+      "a sea turtle?",
+      "a sea turtle watching?"
+    ]
+  },
+  {
+    "caption": "A manta ray jumping rope and a pufferfish watching.",
+    "phrase_0": [
+      "a manta ray?",
+      "a manta ray jumping rope?"
+    ],
+    "phrase_1": [
+      "a pufferfish?",
+      "a pufferfish watching?"
+    ]
+  },
+  {
+    "caption": "A swordfish jumping rope and a marlin watching.",
+    "phrase_0": [
+      "a swordfish?",
+      "a swordfish jumping rope?"
+    ],
+    "phrase_1": [
+      "a marlin?",
+      "a marlin watching?"
+    ]
+  },
+  {
+    "caption": "A jellyfish jumping rope and a sea otter watching.",
+    "phrase_0": [
+      "a jellyfish?",
+      "a jellyfish jumping rope?"
+    ],
+    "phrase_1": [
+      "a sea otter?",
+      "a sea otter watching?"
+    ]
+  },
+  {
+    "caption": "A dingo jumping rope and a coyote watching.",
+    "phrase_0": [
+      "a dingo?",
+      "a dingo jumping rope?"
+    ],
+    "phrase_1": [
+      "a coyote?",
+      "a coyote watching?"
+    ]
+  },
+  {
+    "caption": "A prairie dog jumping rope and a marmot watching.",
+    "phrase_0": [
+      "a prairie dog?",
+      "a prairie dog jumping rope?"
+    ],
+    "phrase_1": [
+      "a marmot?",
+      "a marmot watching?"
+    ]
+  },
+  {
+    "caption": "A hamster jumping rope and a mouse watching.",
+    "phrase_0": [
+      "a hamster?",
+      "a hamster jumping rope?"
+    ],
+    "phrase_1": [
+      "a mouse?",
+      "a mouse watching?"
+    ]
+  },
+  {
+    "caption": "A marmoset jumping rope and a tamarin watching.",
+    "phrase_0": [
+      "a marmoset?",
+      "a marmoset jumping rope?"
+    ],
+    "phrase_1": [
+      "a tamarin?",
+      "a tamarin watching?"
+    ]
+  },
+  {
+    "caption": "A baboon jumping rope and a chimpanzee watching.",
+    "phrase_0": [
+      "a baboon?",
+      "a baboon jumping rope?"
+    ],
+    "phrase_1": [
+      "a chimpanzee?",
+      "a chimpanzee watching?"
+    ]
+  },
+  {
+    "caption": "A tapir jumping rope and a capybara watching.",
+    "phrase_0": [
+      "a tapir?",
+      "a tapir jumping rope?"
+    ],
+    "phrase_1": [
+      "a capybara?",
+      "a capybara watching?"
+    ]
+  },
+  {
+    "caption": "A fennec fox jumping rope and a desert fox watching.",
+    "phrase_0": [
+      "a fennec fox?",
+      "a fennec fox jumping rope?"
+    ],
+    "phrase_1": [
+      "a desert fox?",
+      "a desert fox watching?"
+    ]
+  },
+  {
+    "caption": "A chinchilla jumping rope and a degu watching.",
+    "phrase_0": [
+      "a chinchilla?",
+      "a chinchilla jumping rope?"
+    ],
+    "phrase_1": [
+      "a degu?",
+      "a degu watching?"
+    ]
+  },
+  {
+    "caption": "A wallaby jumping rope and an emu watching.",
+    "phrase_0": [
+      "a wallaby?",
+      "a wallaby jumping rope?"
+    ],
+    "phrase_1": [
+      "an emu?",
+      "an emu watching?"
+    ]
+  },
+  {
+    "caption": "A kiwi jumping rope and a kakapo watching.",
+    "phrase_0": [
+      "a kiwi?",
+      "a kiwi jumping rope?"
+    ],
+    "phrase_1": [
+      "a kakapo?",
+      "a kakapo watching?"
+    ]
+  },
+  {
+    "caption": "A hummingbird jumping rope and a finch watching.",
+    "phrase_0": [
+      "a hummingbird?",
+      "a hummingbird jumping rope?"
+    ],
+    "phrase_1": [
+      "a finch?",
+      "a finch watching?"
+    ]
+  },
+  {
+    "caption": "A toucan jumping rope and a macaws watching.",
+    "phrase_0": [
+      "a toucan?",
+      "a toucan jumping rope?"
+    ],
+    "phrase_1": [
+      "a macaws?",
+      "a macaws watching?"
+    ]
+  },
+  {
+    "caption": "A Komodo dragon jumping rope and an alligator watching.",
+    "phrase_0": [
+      "a komodo dragon?",
+      "a komodo dragon jumping rope?"
+    ],
+    "phrase_1": [
+      "an alligator?",
+      "an alligator watching?"
+    ]
+  },
+  {
+    "caption": "A great white shark jumping rope and a hammerhead watching.",
+    "phrase_0": [
+      "a great white shark?",
+      "a great white shark jumping rope?"
+    ],
+    "phrase_1": [
+      "a hammerhead?",
+      "a hammerhead watching?"
+    ]
+  },
+  {
+    "caption": "A walrus jumping rope and a narwhal watching.",
+    "phrase_0": [
+      "a walrus?",
+      "a walrus jumping rope?"
+    ],
+    "phrase_1": [
+      "a narwhal?",
+      "a narwhal watching?"
+    ]
+  },
+  {
+    "caption": "A polar bear jumping rope and an arctic fox watching.",
+    "phrase_0": [
+      "a polar bear?",
+      "a polar bear jumping rope?"
+    ],
+    "phrase_1": [
+      "an arctic fox?",
+      "an arctic fox watching?"
+    ]
+  },
+  {
+    "caption": "A manatee jumping rope and a dugong watching.",
+    "phrase_0": [
+      "a manatee?",
+      "a manatee jumping rope?"
+    ],
+    "phrase_1": [
+      "a dugong?",
+      "a dugong watching?"
+    ]
+  },
+  {
+    "caption": "A bison jumping rope and a yak watching.",
+    "phrase_0": [
+      "a bison?",
+      "a bison jumping rope?"
+    ],
+    "phrase_1": [
+      "a yak?",
+      "a yak watching?"
+    ]
+  },
+  {
+    "caption": "A badger jumping rope and a weasel watching.",
+    "phrase_0": [
+      "a badger?",
+      "a badger jumping rope?"
+    ],
+    "phrase_1": [
+      "a weasel?",
+      "a weasel watching?"
+    ]
+  },
+  {
+    "caption": "A newt jumping rope and a salamander watching.",
+    "phrase_0": [
+      "a newt?",
+      "a newt jumping rope?"
+    ],
+    "phrase_1": [
+      "a salamander?",
+      "a salamander watching?"
+    ]
+  },
+  {
+    "caption": "A mongoose jumping rope and a meerkat watching.",
+    "phrase_0": [
+      "a mongoose?",
+      "a mongoose jumping rope?"
+    ],
+    "phrase_1": [
+      "a meerkat?",
+      "a meerkat watching?"
+    ]
+  },
+  {
+    "caption": "A civet jumping rope and a binturong watching.",
+    "phrase_0": [
+      "a civet?",
+      "a civet jumping rope?"
+    ],
+    "phrase_1": [
+      "a binturong?",
+      "a binturong watching?"
+    ]
+  },
+  {
+    "caption": "An okapi jumping rope and a kudu watching.",
+    "phrase_0": [
+      "an okapi?",
+      "an okapi jumping rope?"
+    ],
+    "phrase_1": [
+      "a kudu?",
+      "a kudu watching?"
+    ]
+  },
+  {
+    "caption": "A gazelle jumping rope and an impala watching.",
+    "phrase_0": [
+      "a gazelle?",
+      "a gazelle jumping rope?"
+    ],
+    "phrase_1": [
+      "an impala?",
+      "an impala watching?"
+    ]
+  },
+  {
+    "caption": "A muskox jumping rope and a reindeer watching.",
+    "phrase_0": [
+      "a muskox?",
+      "a muskox jumping rope?"
+    ],
+    "phrase_1": [
+      "a reindeer?",
+      "a reindeer watching?"
+    ]
+  },
+  {
+    "caption": "A mountain goat jumping rope and a bighorn sheep watching.",
+    "phrase_0": [
+      "a mountain goat?",
+      "a mountain goat jumping rope?"
+    ],
+    "phrase_1": [
+      "a bighorn sheep?",
+      "a bighorn sheep watching?"
+    ]
+  },
+  {
+    "caption": "A jackal jumping rope and a hyena watching.",
+    "phrase_0": [
+      "a jackal?",
+      "a jackal jumping rope?"
+    ],
+    "phrase_1": [
+      "a hyena?",
+      "a hyena watching?"
+    ]
+  },
+  {
+    "caption": "A ferret jumping rope and a stoat watching.",
+    "phrase_0": [
+      "a ferret?",
+      "a ferret jumping rope?"
+    ],
+    "phrase_1": [
+      "a stoat?",
+      "a stoat watching?"
+    ]
+  },
+  {
+    "caption": "A pug jumping rope and a bulldog watching.",
+    "phrase_0": [
+      "a pug?",
+      "a pug jumping rope?"
+    ],
+    "phrase_1": [
+      "a bulldog?",
+      "a bulldog watching?"
+    ]
+  },
+  {
+    "caption": "A tabby cat jumping rope and a sphinx cat watching.",
+    "phrase_0": [
+      "a tabby cat?",
+      "a tabby cat jumping rope?"
+    ],
+    "phrase_1": [
+      "a sphinx cat?",
+      "a sphinx cat watching?"
+    ]
+  },
+  {
+    "caption": "A snow leopard jumping rope and a cloud leopard watching.",
+    "phrase_0": [
+      "a snow leopard?",
+      "a snow leopard jumping rope?"
+    ],
+    "phrase_1": [
+      "a cloud leopard?",
+      "a cloud leopard watching?"
+    ]
+  },
+  {
+    "caption": "A Siberian tiger jumping rope and a Sumatran tiger watching.",
+    "phrase_0": [
+      "a siberian tiger?",
+      "a siberian tiger jumping rope?"
+    ],
+    "phrase_1": [
+      "a sumatran tiger?",
+      "a sumatran tiger watching?"
+    ]
+  },
+  {
+    "caption": "A boxer dog jumping rope and a rottweiler watching.",
+    "phrase_0": [
+      "a boxer dog?",
+      "a boxer dog jumping rope?"
+    ],
+    "phrase_1": [
+      "a rottweiler?",
+      "a rottweiler watching?"
+    ]
+  },
+  {
+    "caption": "A macaw jumping rope and a cockatoo watching.",
+    "phrase_0": [
+      "a macaw?",
+      "a macaw jumping rope?"
+    ],
+    "phrase_1": [
+      "a cockatoo?",
+      "a cockatoo watching?"
+    ]
+  },
+  {
+    "caption": "A bull jumping rope and a yak watching.",
+    "phrase_0": [
+      "a bull?",
+      "a bull jumping rope?"
+    ],
+    "phrase_1": [
+      "a yak?",
+      "a yak watching?"
+    ]
+  },
+  {
+    "caption": "A warthog jumping rope and a boar watching.",
+    "phrase_0": [
+      "a warthog?",
+      "a warthog jumping rope?"
+    ],
+    "phrase_1": [
+      "a boar?",
+      "a boar watching?"
+    ]
+  },
+  {
+    "caption": "A mandrill jumping rope and a baboon watching.",
+    "phrase_0": [
+      "a mandrill?",
+      "a mandrill jumping rope?"
+    ],
+    "phrase_1": [
+      "a baboon?",
+      "a baboon watching?"
+    ]
+  },
+  {
+    "caption": "A gannet jumping rope and a cormorant watching.",
+    "phrase_0": [
+      "a gannet?",
+      "a gannet jumping rope?"
+    ],
+    "phrase_1": [
+      "a cormorant?",
+      "a cormorant watching?"
+    ]
+  },
+  {
+    "caption": "A starfish jumping rope and a sea urchin watching.",
+    "phrase_0": [
+      "a starfish?",
+      "a starfish jumping rope?"
+    ],
+    "phrase_1": [
+      "a sea urchin?",
+      "a sea urchin watching?"
+    ]
+  },
+  {
+    "caption": "A clownfish jumping rope and an anemone watching.",
+    "phrase_0": [
+      "a clownfish?",
+      "a clownfish jumping rope?"
+    ],
+    "phrase_1": [
+      "an anemone?",
+      "an anemone watching?"
+    ]
+  },
+  {
+    "caption": "A beluga whale jumping rope and an orca watching.",
+    "phrase_0": [
+      "a beluga whale?",
+      "a beluga whale jumping rope?"
+    ],
+    "phrase_1": [
+      "an orca?",
+      "an orca watching?"
+    ]
+  },
+  {
+    "caption": "A lemur jumping rope and a bushbaby watching.",
+    "phrase_0": [
+      "a lemur?",
+      "a lemur jumping rope?"
+    ],
+    "phrase_1": [
+      "a bushbaby?",
+      "a bushbaby watching?"
+    ]
+  },
+  {
+    "caption": "A tarsier jumping rope and a slow loris watching.",
+    "phrase_0": [
+      "a tarsier?",
+      "a tarsier jumping rope?"
+    ],
+    "phrase_1": [
+      "a slow loris?",
+      "a slow loris watching?"
+    ]
+  },
+  {
+    "caption": "A red fox jumping rope and an arctic fox watching.",
+    "phrase_0": [
+      "a red fox?",
+      "a red fox jumping rope?"
+    ],
+    "phrase_1": [
+      "an arctic fox?",
+      "an arctic fox watching?"
+    ]
+  },
+  {
+    "caption": "A king cobra jumping rope and a python watching.",
+    "phrase_0": [
+      "a king cobra?",
+      "a king cobra jumping rope?"
+    ],
+    "phrase_1": [
+      "a python?",
+      "a python watching?"
+    ]
+  },
+  {
+    "caption": "A blue-ringed octopus jumping rope and a squid watching.",
+    "phrase_0": [
+      "a blue-ringed octopus?",
+      "a blue-ringed octopus jumping rope?"
+    ],
+    "phrase_1": [
+      "a squid?",
+      "a squid watching?"
+    ]
+  },
+  {
+    "caption": "A giant anteater jumping rope and an armadillo watching.",
+    "phrase_0": [
+      "a giant anteater?",
+      "a giant anteater jumping rope?"
+    ],
+    "phrase_1": [
+      "an armadillo?",
+      "an armadillo watching?"
+    ]
+  },
+  {
+    "caption": "A quokka jumping rope and a bandicoot watching.",
+    "phrase_0": [
+      "a quokka?",
+      "a quokka jumping rope?"
+    ],
+    "phrase_1": [
+      "a bandicoot?",
+      "a bandicoot watching?"
+    ]
+  },
+  {
+    "caption": "A kakapo jumping rope and a weka watching.",
+    "phrase_0": [
+      "a kakapo?",
+      "a kakapo jumping rope?"
+    ],
+    "phrase_1": [
+      "a weka?",
+      "a weka watching?"
+    ]
+  },
+  {
+    "caption": "A puffin jumping rope and a razorbill watching.",
+    "phrase_0": [
+      "a puffin?",
+      "a puffin jumping rope?"
+    ],
+    "phrase_1": [
+      "a razorbill?",
+      "a razorbill watching?"
+    ]
+  },
+  {
+    "caption": "A toucan jumping rope and a hornbill watching.",
+    "phrase_0": [
+      "a toucan?",
+      "a toucan jumping rope?"
+    ],
+    "phrase_1": [
+      "a hornbill?",
+      "a hornbill watching?"
+    ]
+  },
+  {
+    "caption": "A serval jumping rope and a caracal watching.",
+    "phrase_0": [
+      "a serval?",
+      "a serval jumping rope?"
+    ],
+    "phrase_1": [
+      "a caracal?",
+      "a caracal watching?"
+    ]
+  },
+  {
+    "caption": "An ocelot jumping rope and a jaguarundi watching.",
+    "phrase_0": [
+      "an ocelot?",
+      "an ocelot jumping rope?"
+    ],
+    "phrase_1": [
+      "a jaguarundi?",
+      "a jaguarundi watching?"
+    ]
+  },
+  {
+    "caption": "A bat jumping rope and a flying fox watching.",
+    "phrase_0": [
+      "a bat?",
+      "a bat jumping rope?"
+    ],
+    "phrase_1": [
+      "a flying fox?",
+      "a flying fox watching?"
+    ]
+  },
+  {
+    "caption": "A wombat jumping rope and a potoroo watching.",
+    "phrase_0": [
+      "a wombat?",
+      "a wombat jumping rope?"
+    ],
+    "phrase_1": [
+      "a potoroo?",
+      "a potoroo watching?"
+    ]
+  },
+  {
+    "caption": "A bilby jumping rope and a quenda watching.",
+    "phrase_0": [
+      "a bilby?",
+      "a bilby jumping rope?"
+    ],
+    "phrase_1": [
+      "a quenda?",
+      "a quenda watching?"
+    ]
+  },
+  {
+    "caption": "A cassowary jumping rope and an ostrich watching.",
+    "phrase_0": [
+      "a cassowary?",
+      "a cassowary jumping rope?"
+    ],
+    "phrase_1": [
+      "an ostrich?",
+      "an ostrich watching?"
+    ]
+  },
+  {
+    "caption": "A rhea jumping rope and an emu watching.",
+    "phrase_0": [
+      "a rhea?",
+      "a rhea jumping rope?"
+    ],
+    "phrase_1": [
+      "an emu?",
+      "an emu watching?"
+    ]
+  },
+  {
+    "caption": "A vicu\u00f1a jumping rope and a guanaco watching.",
+    "phrase_0": [
+      "a vicu\u00f1a?",
+      "a vicu\u00f1a jumping rope?"
+    ],
+    "phrase_1": [
+      "a guanaco?",
+      "a guanaco watching?"
+    ]
+  },
+  {
+    "caption": "A musk deer jumping rope and a water deer watching.",
+    "phrase_0": [
+      "a musk deer?",
+      "a musk deer jumping rope?"
+    ],
+    "phrase_1": [
+      "a water deer?",
+      "a water deer watching?"
+    ]
+  },
+  {
+    "caption": "A gibbon jumping rope and a siamang watching.",
+    "phrase_0": [
+      "a gibbon?",
+      "a gibbon jumping rope?"
+    ],
+    "phrase_1": [
+      "a siamang?",
+      "a siamang watching?"
+    ]
+  },
+  {
+    "caption": "A marmoset jumping rope and a squirrel monkey watching.",
+    "phrase_0": [
+      "a marmoset?",
+      "a marmoset jumping rope?"
+    ],
+    "phrase_1": [
+      "a squirrel monkey?",
+      "a squirrel monkey watching?"
+    ]
+  },
+  {
+    "caption": "A saki monkey jumping rope and a uakari watching.",
+    "phrase_0": [
+      "a saki monkey?",
+      "a saki monkey jumping rope?"
+    ],
+    "phrase_1": [
+      "a uakari?",
+      "a uakari watching?"
+    ]
+  },
+  {
+    "caption": "A coati jumping rope and a kinkajou watching.",
+    "phrase_0": [
+      "a coati?",
+      "a coati jumping rope?"
+    ],
+    "phrase_1": [
+      "a kinkajou?",
+      "a kinkajou watching?"
+    ]
+  },
+  {
+    "caption": "A tayra jumping rope and a grison watching.",
+    "phrase_0": [
+      "a tayra?",
+      "a tayra jumping rope?"
+    ],
+    "phrase_1": [
+      "a grison?",
+      "a grison watching?"
+    ]
+  },
+  {
+    "caption": "A zorilla jumping rope and a polecat watching.",
+    "phrase_0": [
+      "a zorilla?",
+      "a zorilla jumping rope?"
+    ],
+    "phrase_1": [
+      "a polecat?",
+      "a polecat watching?"
+    ]
+  },
+  {
+    "caption": "A civet jumping rope and a genet watching.",
+    "phrase_0": [
+      "a civet?",
+      "a civet jumping rope?"
+    ],
+    "phrase_1": [
+      "a genet?",
+      "a genet watching?"
+    ]
+  },
+  {
+    "caption": "A fossa jumping rope and a ring-tailed lemur watching.",
+    "phrase_0": [
+      "a fossa?",
+      "a fossa jumping rope?"
+    ],
+    "phrase_1": [
+      "a ring-tailed lemur?",
+      "a ring-tailed lemur watching?"
+    ]
+  },
+  {
+    "caption": "A tenrec jumping rope and a solenodon watching.",
+    "phrase_0": [
+      "a tenrec?",
+      "a tenrec jumping rope?"
+    ],
+    "phrase_1": [
+      "a solenodon?",
+      "a solenodon watching?"
+    ]
+  },
+  {
+    "caption": "A sugar glider jumping rope and a flying squirrel watching.",
+    "phrase_0": [
+      "a sugar glider?",
+      "a sugar glider jumping rope?"
+    ],
+    "phrase_1": [
+      "a flying squirrel?",
+      "a flying squirrel watching?"
+    ]
+  },
+  {
+    "caption": "A slow loris jumping rope and a potto watching.",
+    "phrase_0": [
+      "a slow loris?",
+      "a slow loris jumping rope?"
+    ],
+    "phrase_1": [
+      "a potto?",
+      "a potto watching?"
+    ]
+  },
+  {
+    "caption": "A caiman jumping rope and an alligator watching.",
+    "phrase_0": [
+      "a caiman?",
+      "a caiman jumping rope?"
+    ],
+    "phrase_1": [
+      "an alligator?",
+      "an alligator watching?"
+    ]
+  },
+  {
+    "caption": "A gharial jumping rope and a gavial watching.",
+    "phrase_0": [
+      "a gharial?",
+      "a gharial jumping rope?"
+    ],
+    "phrase_1": [
+      "a gavial?",
+      "a gavial watching?"
+    ]
+  },
+  {
+    "caption": "A basilisk jumping rope and a marine iguana watching.",
+    "phrase_0": [
+      "a basilisk?",
+      "a basilisk jumping rope?"
+    ],
+    "phrase_1": [
+      "a marine iguana?",
+      "a marine iguana watching?"
+    ]
+  },
+  {
+    "caption": "A frilled lizard jumping rope and a thorny devil watching.",
+    "phrase_0": [
+      "a frilled lizard?",
+      "a frilled lizard jumping rope?"
+    ],
+    "phrase_1": [
+      "a thorny devil?",
+      "a thorny devil watching?"
+    ]
+  },
+  {
+    "caption": "A Gila monster jumping rope and a Mexican beaded lizard watching.",
+    "phrase_0": [
+      "a gila monster?",
+      "a gila monster jumping rope?"
+    ],
+    "phrase_1": [
+      "a mexican beaded lizard?",
+      "a mexican beaded lizard watching?"
+    ]
+  },
+  {
+    "caption": "A hellbender jumping rope and a mudpuppy watching.",
+    "phrase_0": [
+      "a hellbender?",
+      "a hellbender jumping rope?"
+    ],
+    "phrase_1": [
+      "a mudpuppy?",
+      "a mudpuppy watching?"
+    ]
+  },
+  {
+    "caption": "A glass frog jumping rope and a poison dart frog watching.",
+    "phrase_0": [
+      "a glass frog?",
+      "a glass frog jumping rope?"
+    ],
+    "phrase_1": [
+      "a poison dart frog?",
+      "a poison dart frog watching?"
+    ]
+  },
+  {
+    "caption": "A caecilian jumping rope and a worm lizard watching.",
+    "phrase_0": [
+      "a caecilian?",
+      "a caecilian jumping rope?"
+    ],
+    "phrase_1": [
+      "a worm lizard?",
+      "a worm lizard watching?"
+    ]
+  },
+  {
+    "caption": "A sandpiper jumping rope and a plover watching.",
+    "phrase_0": [
+      "a sandpiper?",
+      "a sandpiper jumping rope?"
+    ],
+    "phrase_1": [
+      "a plover?",
+      "a plover watching?"
+    ]
+  },
+  {
+    "caption": "A turnstone jumping rope and a curlew watching.",
+    "phrase_0": [
+      "a turnstone?",
+      "a turnstone jumping rope?"
+    ],
+    "phrase_1": [
+      "a curlew?",
+      "a curlew watching?"
+    ]
+  },
+  {
+    "caption": "A kestrel jumping rope and a merlin watching.",
+    "phrase_0": [
+      "a kestrel?",
+      "a kestrel jumping rope?"
+    ],
+    "phrase_1": [
+      "a merlin?",
+      "a merlin watching?"
+    ]
+  },
+  {
+    "caption": "A goshawk jumping rope and a sparrowhawk watching.",
+    "phrase_0": [
+      "a goshawk?",
+      "a goshawk jumping rope?"
+    ],
+    "phrase_1": [
+      "a sparrowhawk?",
+      "a sparrowhawk watching?"
+    ]
+  },
+  {
+    "caption": "A roadrunner jumping rope and a quail watching.",
+    "phrase_0": [
+      "a roadrunner?",
+      "a roadrunner jumping rope?"
+    ],
+    "phrase_1": [
+      "a quail?",
+      "a quail watching?"
+    ]
+  },
+  {
+    "caption": "A hoopoe jumping rope and a kingfisher watching.",
+    "phrase_0": [
+      "a hoopoe?",
+      "a hoopoe jumping rope?"
+    ],
+    "phrase_1": [
+      "a kingfisher?",
+      "a kingfisher watching?"
+    ]
+  },
+  {
+    "caption": "A toucanet jumping rope and a barbet watching.",
+    "phrase_0": [
+      "a toucanet?",
+      "a toucanet jumping rope?"
+    ],
+    "phrase_1": [
+      "a barbet?",
+      "a barbet watching?"
+    ]
+  },
+  {
+    "caption": "A puffbird jumping rope and a jacamar watching.",
+    "phrase_0": [
+      "a puffbird?",
+      "a puffbird jumping rope?"
+    ],
+    "phrase_1": [
+      "a jacamar?",
+      "a jacamar watching?"
+    ]
+  },
+  {
+    "caption": "A motmot jumping rope and a tody watching.",
+    "phrase_0": [
+      "a motmot?",
+      "a motmot jumping rope?"
+    ],
+    "phrase_1": [
+      "a tody?",
+      "a tody watching?"
+    ]
+  },
+  {
+    "caption": "A cuckoo jumping rope and a roadrunner watching.",
+    "phrase_0": [
+      "a cuckoo?",
+      "a cuckoo jumping rope?"
+    ],
+    "phrase_1": [
+      "a roadrunner?",
+      "a roadrunner watching?"
+    ]
+  },
+  {
+    "caption": "A lyrebird jumping rope and a bowerbird watching.",
+    "phrase_0": [
+      "a lyrebird?",
+      "a lyrebird jumping rope?"
+    ],
+    "phrase_1": [
+      "a bowerbird?",
+      "a bowerbird watching?"
+    ]
+  },
+  {
+    "caption": "A paradise bird jumping rope and a hummingbird watching.",
+    "phrase_0": [
+      "a paradise bird?",
+      "a paradise bird jumping rope?"
+    ],
+    "phrase_1": [
+      "a hummingbird?",
+      "a hummingbird watching?"
+    ]
+  },
+  {
+    "caption": "A riflebird jumping rope and a sunbird watching.",
+    "phrase_0": [
+      "a riflebird?",
+      "a riflebird jumping rope?"
+    ],
+    "phrase_1": [
+      "a sunbird?",
+      "a sunbird watching?"
+    ]
+  },
+  {
+    "caption": "A honeyeater jumping rope and a wattlebird watching.",
+    "phrase_0": [
+      "a honeyeater?",
+      "a honeyeater jumping rope?"
+    ],
+    "phrase_1": [
+      "a wattlebird?",
+      "a wattlebird watching?"
+    ]
+  },
+  {
+    "caption": "A flycatcher jumping rope and a warbler watching.",
+    "phrase_0": [
+      "a flycatcher?",
+      "a flycatcher jumping rope?"
+    ],
+    "phrase_1": [
+      "a warbler?",
+      "a warbler watching?"
+    ]
+  },
+  {
+    "caption": "A shrike jumping rope and a butcherbird watching.",
+    "phrase_0": [
+      "a shrike?",
+      "a shrike jumping rope?"
+    ],
+    "phrase_1": [
+      "a butcherbird?",
+      "a butcherbird watching?"
+    ]
+  },
+  {
+    "caption": "A babbler jumping rope and a laughingthrush watching.",
+    "phrase_0": [
+      "a babbler?",
+      "a babbler jumping rope?"
+    ],
+    "phrase_1": [
+      "a laughingthrush?",
+      "a laughingthrush watching?"
+    ]
+  },
+  {
+    "caption": "A bulbul jumping rope and a thrush watching.",
+    "phrase_0": [
+      "a bulbul?",
+      "a bulbul jumping rope?"
+    ],
+    "phrase_1": [
+      "a thrush?",
+      "a thrush watching?"
+    ]
+  },
+  {
+    "caption": "A starling jumping rope and a grackle watching.",
+    "phrase_0": [
+      "a starling?",
+      "a starling jumping rope?"
+    ],
+    "phrase_1": [
+      "a grackle?",
+      "a grackle watching?"
+    ]
+  },
+  {
+    "caption": "An oriole jumping rope and a mockingbird watching.",
+    "phrase_0": [
+      "an oriole?",
+      "an oriole jumping rope?"
+    ],
+    "phrase_1": [
+      "a mockingbird?",
+      "a mockingbird watching?"
+    ]
+  },
+  {
+    "caption": "A cardinal jumping rope and a tanager watching.",
+    "phrase_0": [
+      "a cardinal?",
+      "a cardinal jumping rope?"
+    ],
+    "phrase_1": [
+      "a tanager?",
+      "a tanager watching?"
+    ]
+  },
+  {
+    "caption": "A bunting jumping rope and a sparrow watching.",
+    "phrase_0": [
+      "a bunting?",
+      "a bunting jumping rope?"
+    ],
+    "phrase_1": [
+      "a sparrow?",
+      "a sparrow watching?"
+    ]
+  },
+  {
+    "caption": "A finch jumping rope and a canary watching.",
+    "phrase_0": [
+      "a finch?",
+      "a finch jumping rope?"
+    ],
+    "phrase_1": [
+      "a canary?",
+      "a canary watching?"
+    ]
+  },
+  {
+    "caption": "A siskin jumping rope and a redpoll watching.",
+    "phrase_0": [
+      "a siskin?",
+      "a siskin jumping rope?"
+    ],
+    "phrase_1": [
+      "a redpoll?",
+      "a redpoll watching?"
+    ]
+  },
+  {
+    "caption": "A crossbill jumping rope and a grosbeak watching.",
+    "phrase_0": [
+      "a crossbill?",
+      "a crossbill jumping rope?"
+    ],
+    "phrase_1": [
+      "a grosbeak?",
+      "a grosbeak watching?"
+    ]
+  },
+  {
+    "caption": "A junco jumping rope and a towhee watching.",
+    "phrase_0": [
+      "a junco?",
+      "a junco jumping rope?"
+    ],
+    "phrase_1": [
+      "a towhee?",
+      "a towhee watching?"
+    ]
+  },
+  {
+    "caption": "A nuthatch jumping rope and a creeper watching.",
+    "phrase_0": [
+      "a nuthatch?",
+      "a nuthatch jumping rope?"
+    ],
+    "phrase_1": [
+      "a creeper?",
+      "a creeper watching?"
+    ]
+  },
+  {
+    "caption": "A woodpecker jumping rope and a flicker watching.",
+    "phrase_0": [
+      "a woodpecker?",
+      "a woodpecker jumping rope?"
+    ],
+    "phrase_1": [
+      "a flicker?",
+      "a flicker watching?"
+    ]
+  },
+  {
+    "caption": "A sapsucker jumping rope and a piculet watching.",
+    "phrase_0": [
+      "a sapsucker?",
+      "a sapsucker jumping rope?"
+    ],
+    "phrase_1": [
+      "a piculet?",
+      "a piculet watching?"
+    ]
+  },
+  {
+    "caption": "A swift jumping rope and a swallow watching.",
+    "phrase_0": [
+      "a swift?",
+      "a swift jumping rope?"
+    ],
+    "phrase_1": [
+      "a swallow?",
+      "a swallow watching?"
+    ]
+  },
+  {
+    "caption": "A nightjar jumping rope and a whip-poor-will watching.",
+    "phrase_0": [
+      "a nightjar?",
+      "a nightjar jumping rope?"
+    ],
+    "phrase_1": [
+      "a whip-poor-will?",
+      "a whip-poor-will watching?"
+    ]
+  },
+  {
+    "caption": "A penguin jumping rope and a seal watching.",
+    "phrase_0": [
+      "a penguin?",
+      "a penguin jumping rope?"
+    ],
+    "phrase_1": [
+      "a seal?",
+      "a seal watching?"
+    ]
+  },
+  {
+    "caption": "A seal jumping rope and a walrus watching.",
+    "phrase_0": [
+      "a seal?",
+      "a seal jumping rope?"
+    ],
+    "phrase_1": [
+      "a walrus?",
+      "a walrus watching?"
+    ]
+  },
+  {
+    "caption": "A puffin jumping rope and a murre watching.",
+    "phrase_0": [
+      "a puffin?",
+      "a puffin jumping rope?"
+    ],
+    "phrase_1": [
+      "a murre?",
+      "a murre watching?"
+    ]
+  },
+  {
+    "caption": "A guillemot jumping rope and an auk watching.",
+    "phrase_0": [
+      "a guillemot?",
+      "a guillemot jumping rope?"
+    ],
+    "phrase_1": [
+      "an auk?",
+      "an auk watching?"
+    ]
+  },
+  {
+    "caption": "A skua jumping rope and a jaeger watching.",
+    "phrase_0": [
+      "a skua?",
+      "a skua jumping rope?"
+    ],
+    "phrase_1": [
+      "a jaeger?",
+      "a jaeger watching?"
+    ]
+  },
+  {
+    "caption": "A petrel jumping rope and an albatross watching.",
+    "phrase_0": [
+      "a petrel?",
+      "a petrel jumping rope?"
+    ],
+    "phrase_1": [
+      "an albatross?",
+      "an albatross watching?"
+    ]
+  },
+  {
+    "caption": "A shearwater jumping rope and a fulmar watching.",
+    "phrase_0": [
+      "a shearwater?",
+      "a shearwater jumping rope?"
+    ],
+    "phrase_1": [
+      "a fulmar?",
+      "a fulmar watching?"
+    ]
+  },
+  {
+    "caption": "A storm petrel jumping rope and a diving petrel watching.",
+    "phrase_0": [
+      "a storm petrel?",
+      "a storm petrel jumping rope?"
+    ],
+    "phrase_1": [
+      "a diving petrel?",
+      "a diving petrel watching?"
+    ]
+  },
+  {
+    "caption": "A tropicbird jumping rope and a frigatebird watching.",
+    "phrase_0": [
+      "a tropicbird?",
+      "a tropicbird jumping rope?"
+    ],
+    "phrase_1": [
+      "a frigatebird?",
+      "a frigatebird watching?"
+    ]
+  },
+  {
+    "caption": "A booby jumping rope and a gannet watching.",
+    "phrase_0": [
+      "a booby?",
+      "a booby jumping rope?"
+    ],
+    "phrase_1": [
+      "a gannet?",
+      "a gannet watching?"
+    ]
+  },
+  {
+    "caption": "A pelican jumping rope and a cormorant watching.",
+    "phrase_0": [
+      "a pelican?",
+      "a pelican jumping rope?"
+    ],
+    "phrase_1": [
+      "a cormorant?",
+      "a cormorant watching?"
+    ]
+  },
+  {
+    "caption": "A tern jumping rope and a skimmer watching.",
+    "phrase_0": [
+      "a tern?",
+      "a tern jumping rope?"
+    ],
+    "phrase_1": [
+      "a skimmer?",
+      "a skimmer watching?"
+    ]
+  },
+  {
+    "caption": "A gull jumping rope and a kittiwake watching.",
+    "phrase_0": [
+      "a gull?",
+      "a gull jumping rope?"
+    ],
+    "phrase_1": [
+      "a kittiwake?",
+      "a kittiwake watching?"
+    ]
+  },
+  {
+    "caption": "A plover jumping rope and a turnstone watching.",
+    "phrase_0": [
+      "a plover?",
+      "a plover jumping rope?"
+    ],
+    "phrase_1": [
+      "a turnstone?",
+      "a turnstone watching?"
+    ]
+  },
+  {
+    "caption": "A sandpiper jumping rope and a dowitcher watching.",
+    "phrase_0": [
+      "a sandpiper?",
+      "a sandpiper jumping rope?"
+    ],
+    "phrase_1": [
+      "a dowitcher?",
+      "a dowitcher watching?"
+    ]
+  },
+  {
+    "caption": "A phalarope jumping rope and a stilt watching.",
+    "phrase_0": [
+      "a phalarope?",
+      "a phalarope jumping rope?"
+    ],
+    "phrase_1": [
+      "a stilt?",
+      "a stilt watching?"
+    ]
+  },
+  {
+    "caption": "An avocet jumping rope and a spoonbill watching.",
+    "phrase_0": [
+      "an avocet?",
+      "an avocet jumping rope?"
+    ],
+    "phrase_1": [
+      "a spoonbill?",
+      "a spoonbill watching?"
+    ]
+  },
+  {
+    "caption": "A spoonbill jumping rope and an ibis watching.",
+    "phrase_0": [
+      "a spoonbill?",
+      "a spoonbill jumping rope?"
+    ],
+    "phrase_1": [
+      "an ibis?",
+      "an ibis watching?"
+    ]
+  },
+  {
+    "caption": "A heron jumping rope and an egret watching.",
+    "phrase_0": [
+      "a heron?",
+      "a heron jumping rope?"
+    ],
+    "phrase_1": [
+      "an egret?",
+      "an egret watching?"
+    ]
+  },
+  {
+    "caption": "A stork jumping rope and a crane watching.",
+    "phrase_0": [
+      "a stork?",
+      "a stork jumping rope?"
+    ],
+    "phrase_1": [
+      "a crane?",
+      "a crane watching?"
+    ]
+  },
+  {
+    "caption": "A rail jumping rope and a coot watching.",
+    "phrase_0": [
+      "a rail?",
+      "a rail jumping rope?"
+    ],
+    "phrase_1": [
+      "a coot?",
+      "a coot watching?"
+    ]
+  },
+  {
+    "caption": "A gallinule jumping rope and a moorhen watching.",
+    "phrase_0": [
+      "a gallinule?",
+      "a gallinule jumping rope?"
+    ],
+    "phrase_1": [
+      "a moorhen?",
+      "a moorhen watching?"
+    ]
+  },
+  {
+    "caption": "A grebe jumping rope and a loon watching.",
+    "phrase_0": [
+      "a grebe?",
+      "a grebe jumping rope?"
+    ],
+    "phrase_1": [
+      "a loon?",
+      "a loon watching?"
+    ]
+  },
+  {
+    "caption": "A diver jumping rope and a scoter watching.",
+    "phrase_0": [
+      "a diver?",
+      "a diver jumping rope?"
+    ],
+    "phrase_1": [
+      "a scoter?",
+      "a scoter watching?"
+    ]
+  },
+  {
+    "caption": "A eider jumping rope and a harlequin duck watching.",
+    "phrase_0": [
+      "a eider?",
+      "a eider jumping rope?"
+    ],
+    "phrase_1": [
+      "a harlequin duck?",
+      "a harlequin duck watching?"
+    ]
+  },
+  {
+    "caption": "A canvasback jumping rope and a redhead watching.",
+    "phrase_0": [
+      "a canvasback?",
+      "a canvasback jumping rope?"
+    ],
+    "phrase_1": [
+      "a redhead?",
+      "a redhead watching?"
+    ]
+  },
+  {
+    "caption": "A goldeneye jumping rope and a bufflehead watching.",
+    "phrase_0": [
+      "a goldeneye?",
+      "a goldeneye jumping rope?"
+    ],
+    "phrase_1": [
+      "a bufflehead?",
+      "a bufflehead watching?"
+    ]
+  },
+  {
+    "caption": "A merganser jumping rope and a sawbill watching.",
+    "phrase_0": [
+      "a merganser?",
+      "a merganser jumping rope?"
+    ],
+    "phrase_1": [
+      "a sawbill?",
+      "a sawbill watching?"
+    ]
+  },
+  {
+    "caption": "A dog jumping rope and a sheepdog watching.",
+    "phrase_0": [
+      "a dog?",
+      "a dog jumping rope?"
+    ],
+    "phrase_1": [
+      "a sheepdog?",
+      "a sheepdog watching?"
+    ]
+  },
+  {
+    "caption": "A poodle jumping rope and a terrier watching.",
+    "phrase_0": [
+      "a poodle?",
+      "a poodle jumping rope?"
+    ],
+    "phrase_1": [
+      "a terrier?",
+      "a terrier watching?"
+    ]
+  },
+  {
+    "caption": "A basset hound jumping rope and a dachshund watching.",
+    "phrase_0": [
+      "a basset hound?",
+      "a basset hound jumping rope?"
+    ],
+    "phrase_1": [
+      "a dachshund?",
+      "a dachshund watching?"
+    ]
+  },
+  {
+    "caption": "A husky jumping rope and a German shepherd watching.",
+    "phrase_0": [
+      "a husky?",
+      "a husky jumping rope?"
+    ],
+    "phrase_1": [
+      "a german shepherd?",
+      "a german shepherd watching?"
+    ]
+  }
+]
