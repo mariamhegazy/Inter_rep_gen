@@ -110,7 +110,7 @@ accelerate launch --mixed_precision="bf16" scripts/wan2.2/train_lora.py \
 
 
 
-  accelerate launch --mixed_precision="bf16" scripts/wan2.2/train_lora_t2a.py \
+  accelerate launch  --mixed_precision="bf16" scripts/wan2.2/train_lora_inp.py \
     --config_path="config/wan2.2/wan_civitai_t2v.yaml" \
     --pretrained_model_name_or_path="models/Wan2.2-T2V-A14B" \
     --train_data_dir="/capstor/store/cscs/swissai/a144/datasets/UltraVideo/clips_short/clips_short" \
@@ -138,12 +138,14 @@ accelerate launch --mixed_precision="bf16" scripts/wan2.2/train_lora.py \
     --enable_bucket \
     --uniform_sampling \
     --boundary_type="low" \
-    --train_mode="normal" \
-    --tracker_project_name "wan2.2_finetune_T2A" \
-    --sparse_time_mode "start" \
+    --train_mode="ti2v" \
+    --tracker_project_name "wan2.2_finetune_INP" \
     --report_to "wandb" \
-    --rank 128 \
-    --network_alpha 64
+    --rank 256 \
+    --network_alpha 128 \
+    --lora_init_path "output_dir/wan2.2_14b_finetune_ultravideo_T2A_start_last_rank256_inp_high/checkpoint-5500.safetensors" \
+  
+
 
 # The Training Shell Code for Image to Video
 # You need to use "config/wan2.2/wan_civitai_i2v.yaml"

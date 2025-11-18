@@ -107,15 +107,15 @@ shift = 5
 # The transformer_path is used for low noise model, the transformer_high_path is used for high noise model.
 # Since Wan2.2-5b consists of only one model, only transformer_path is used.
 # transformer_path = "output_dir/wan2.2_5b_finetune_ultravideo_T2A_start_rank128_few_shot/checkpoint-980.safetensors"
-# transformer_path = "output_dir/wan2.2_5b_finetune_ultravideo_T2A_full/checkpoint-1500/transformer/diffusion_pytorch_model.safetensors"
-transformer_path = None
+transformer_path = "output_dir/wan2.2_5b_finetune_ultravideo_T2A_start_full_long/checkpoint-5000/transformer/diffusion_pytorch_model.safetensors"
+# transformer_path = None
 transformer_high_path = None
 vae_path = None
 # Load lora model if need
 # The lora_path is used for low noise model, the lora_high_path is used for high noise model.
 # Since Wan2.2-5b consists of only one model, only lora_path is used.
-lora_path = "/capstor/scratch/cscs/mhasan/VideoX-Fun/output_dir/wan2.2_5b_finetune_ultravideo_T2A_start_rank128_few_shot_long_5k/checkpoint-900.safetensors"
-# lora_path = None
+# lora_path = "output_dir/wan2.2_5b_finetune_ultravideo_T2A_start_last_rank256_few_shot_long_5k_2/checkpoint-7200.safetensors"
+lora_path = None
 lora_high_path = None
 
 # Other params
@@ -132,7 +132,12 @@ validation_image_start = None
 
 # prompts
 # prompt = "The video captures a moment where a tree leaf turning from green to red. It starts with a completely green leaf and eventually change to red"
-prompt = "The video captures a serene moment in a lush, green forest where two elephants are seen walking and interacting with their surroundings. It opens with a wide shot of a dense, verdant forest, setting the stage for the natural beauty that follows. As the camera slowly zooms in, two elephants come into view, their massive forms dominating the frame. The larger elephant, likely the matriarch, leads the way, her trunk occasionally reaching down to touch the ground or interact with the smaller elephant beside her. The smaller elephant follows closely, its youthful energy evident in its playful movements. The camera pans around the elephants, capturing their interactions from various angles. The sunlight streaming through the trees creates a dynamic interplay of light and shadow, enhancing the texture of the elephants' skin and the surrounding foliage. The scene transitions smoothly, maintaining a steady pace that mirrors the calm demeanor of the elephants. The video concludes with a close-up shot of the elephants' faces, their eyes conveying a sense of wisdom and tranquility. The forest provides a protective and nurturing environment, with tall trees and thick bushes surrounding the area. The ground is covered with dry grass and scattered leaves, adding to the natural setting. The video has a documentary style, focusing on capturing the natural behavior and beauty of the elephants in their habitat. The use of natural lighting and smooth camera movements adds to the authenticity and immersive quality of the footage. The overall atmosphere is serene and tranquil, with the warm lighting, gentle camera movements, and natural setting creating a sense of peace and harmony."
+# prompt = "In a serene agricultural setting, a man dressed in a white polo shirt with a logo on the chest walks through a vibrant field of chili peppers. The scene opens with a wide shot of the field, showcasing rows of lush green plants dotted with bright red chilies. As the man progresses, the camera follows him from behind, transitioning to a medium shot that focuses on his interactions with the plants. He bends down occasionally, gently touching and examining the chilies, demonstrating a keen interest in their growth and quality. The background features dense foliage and a few trees, suggesting a well-maintained farm environment. The natural, overcast lighting enhances the colors of the plants and creates a soft, even illumination. The camera movements are smooth, with subtle pans and tilts, maintaining a steady pace that mirrors the man's deliberate and careful actions. The video's documentary style and naturalistic approach capture the essence of agricultural life, highlighting the man's expertise and dedication, and fostering a peaceful, grounded atmosphere that evokes a sense of connection with nature."
+# prompt = "In a quiet woodland edge in early autumn, a single maple leaf hangs from a thin branch. The scene opens with a tight macro shot, shallow depth of field isolating the leaf’s veins and serrated edges. The camera is on a tripod, static, with only a subtle breathing of the frame. Over the clip, the leaf’s color gradually shifts from deep green to rich red, starting at the edges and moving toward the center, with mottled yellow-orange phases visible along the veins. The background is a soft bokeh of distant trunks and foliage. Overcast natural lighting provides soft, even illumination that preserves texture and avoids glare. The pacing is calm and unhurried, consistent with a naturalistic documentary style and a single continuous shot without cuts."
+# prompt = "The camera orbits around Mount Fuji in a smooth, clockwise direction, capturing its majestic beauty from various angles. Mount Fuji stands tall and snow-capped against a clear blue sky, with its symmetrical cone shape standing out prominently. The surrounding landscape features lush green forests and serene lakes reflecting the mountain's silhouette. The background gradually transitions from daytime to a gentle sunset, with soft, warm hues lighting up the scene. The camera movement is fluid and dynamic, highlighting the mountain's intricate details and the tranquil atmosphere around it. Close-up to medium shot, with a gradual zoom-out to reveal the expansive landscape."
+# prompt = "The race began, and the first runner from Team A quickly took off, leading the other teams. Everyone was intensely focused on his performance as he sprinted down the track. During the baton handoff, Team A nearly dropped the baton; however, the runner swiftly passed it to the second runner, who showed great determination. On the bend, the second runner chased hard and managed to overtake Team B, although the earlier mistake left Team A's lead only marginal. As the third runner from Team A nervously accelerated during the handoff, they managed to maintain the lead. However, Team C quickly caught up due to their excellent pace control. In the final sprint, the Team A runner accelerated in the second-to-last turn, gaining a burst of speed and widening the gap. Steadily running toward the finish line, the Team A runner crossed the line first, securing a thrilling victory. The intense atmosphere and close competition were captured in a dynamic, high-energy style, with smooth camera transitions between each handoff and sprint."
+# prompt = "A person is standing in a cozy kitchen, wearing a comfortable apron over a casual shirt and jeans. They are expertly chopping vegetables and stirring a pot on the stove, creating a warm and inviting atmosphere. Suddenly, they pause and turn to the pantry, where they begin to organize the shelves methodically, arranging cans and spices neatly. The kitchen is well-lit by warm, golden sunlight coming through the window behind them. The background shows clean countertops and other cooking utensils nearby, adding to the homey feel. The scene transitions smoothly from the active cooking to the focused organization, capturing the natural flow of daily life. Close-up shots of the person's face during both activities show their attentive and detail-oriented demeanor."
+prompt = "A white sheep stands in front of a tall, leafy tree, its wool fluffy and soft. The sheep then moves gracefully to the left side of the tree, its legs moving smoothly as it walks. The background features a serene countryside setting with a gentle hill in the distance and a clear blue sky with fluffy clouds. The scene is captured in a smooth, natural animation style, with the sheep’s movements fluid and lifelike. Close-up shots show the sheep’s expressive eyes and detailed wool, while medium shots capture the interaction between the sheep and the tree. The animation has a soft, realistic texture, enhancing the natural beauty of the environment."
 negative_prompt = (
     "overexposed, blurry, low quality, deformed hands, ugly, artifacts, static scene"
 )
@@ -140,13 +145,13 @@ negative_prompt = (
 # --- Sparse-time sampling (NEW) ---
 # Choose which latent time indices to denoise.
 # Options: "none", "start", "start_last", "linspace_k", "explicit_latent", "explicit_pixel"
-sparse_time_mode = "start_last"  # "start_last"  # or "start"
+sparse_time_mode = "start"  # "start_last"  # or "start"
 
 # How aggressively to trim before VAE encode:
 # "latent" = keep all pixels, drop non-anchor latents only
 # "pixel"  = trim pixels to a window covering anchors (faster VAE), still contiguous
 # "both"   = trim pixels (window) *and* drop non-anchor latents (fastest)
-sparse_apply_to = "both"
+sparse_apply_to = "latent"
 
 # Keep how many extra pixel frames on each side of the anchor window (0 = anchors only when possible)
 sparse_temporal_halo = 0

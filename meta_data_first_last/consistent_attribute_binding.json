@@ -1,0 +1,1602 @@
+[
+  {
+    "caption": "A blue car drives past a white picket fence on a sunny day",
+    "phrases": "a blue car; a white picket fence",
+    "frame_first": "A blue car approaches a white picket fence, the sun shining brightly in a clear blue sky.",
+    "frame_middle": "The car is now midway past the fence, casting a shadow on the white pickets as sunlight filters through.",
+    "frame_last": "The blue car has passed the white picket fence, leaving only the fence and the bright sunlit yard behind.",
+    "frame_json_raw": "{\"first\": \"A blue car approaches a white picket fence, the sun shining brightly in a clear blue sky.\", \"middle\": \"The car is now midway past the fence, casting a shadow on the white pickets as sunlight filters through.\", \"last\": \"The blue car has passed the white picket fence, leaving only the fence and the bright sunlit yard behind.\"}"
+  },
+  {
+    "caption": "A black dog sits beside a red vase on a table",
+    "phrases": "a black dog; a red vase",
+    "frame_first": "A black dog sits calmly beside a vibrant red vase on a wooden table, the room softly lit.",
+    "frame_middle": "The dog's ears perk up slightly, showing a hint of alertness while still remaining seated next to the red vase.",
+    "frame_last": "The black dog continues to sit quietly beside the red vase, the scene serene and still.",
+    "frame_json_raw": "{\"first\": \"A black dog sits calmly beside a vibrant red vase on a wooden table, the room softly lit.\", \"middle\": \"The dog's ears perk up slightly, showing a hint of alertness while still remaining seated next to the red vase.\", \"last\": \"The black dog continues to sit quietly beside the red vase, the scene serene and still.\"}"
+  },
+  {
+    "caption": "Red toaster toasting bread beside a white refrigerator",
+    "phrases": "red toaster; a gray refrigerator",
+    "frame_first": "A red toaster sits on a kitchen counter beside a white refrigerator, with two slices of bread inserted.",
+    "frame_middle": "The bread in the toaster begins to turn golden brown, with the toaster's heating elements glowing brightly.",
+    "frame_last": "The toaster pops up, revealing perfectly toasted bread slices, with the kitchen well-lit and serene.",
+    "frame_json_raw": "{\"first\": \"A red toaster sits on a kitchen counter beside a white refrigerator, with two slices of bread inserted.\", \"middle\": \"The bread in the toaster begins to turn golden brown, with the toaster's heating elements glowing brightly.\", \"last\": \"The toaster pops up, revealing perfectly toasted bread slices, with the kitchen well-lit and serene.\"}"
+  },
+  {
+    "caption": "Green parrot perching on a brown chair",
+    "phrases": "green parrot; a brown chair",
+    "frame_first": "A green parrot lands gracefully on the armrest of a brown chair, its feathers glistening.",
+    "frame_middle": "The parrot stands still on the chair, its head tilted curiously, surveying the room.",
+    "frame_last": "The parrot takes off from the chair, flapping its wings, leaving the brown chair empty and serene.",
+    "frame_json_raw": "{\"first\": \"A green parrot lands gracefully on the armrest of a brown chair, its feathers glistening.\", \"middle\": \"The parrot stands still on the chair, its head tilted curiously, surveying the room.\", \"last\": \"The parrot takes off from the chair, flapping its wings, leaving the brown chair empty and serene.\"}"
+  },
+  {
+    "caption": "Yellow rubber duck floating next to a blue bath towel",
+    "phrases": "yellow rubber duck; a blue bath towel",
+    "frame_first": "A bright yellow rubber duck floats peacefully in a bathtub, positioned next to a crisp blue bath towel hanging on the edge.",
+    "frame_middle": "The rubber duck bobs gently up and down in the water, while the blue towel remains still, slightly damp and folded neatly on the tub's edge.",
+    "frame_last": "The yellow rubber duck is now closer to the blue towel, almost touching it, with ripples fading in the water around it.",
+    "frame_json_raw": "{\"first\": \"A bright yellow rubber duck floats peacefully in a bathtub, positioned next to a crisp blue bath towel hanging on the edge.\", \"middle\": \"The rubber duck bobs gently up and down in the water, while the blue towel remains still, slightly damp and folded neatly on the tub's edge.\", \"last\": \"The yellow rubber duck is now closer to the blue towel, almost touching it, with ripples fading in the water around it.\"}"
+  },
+  {
+    "caption": "Blue umbrella shielding a pink picnic blanket",
+    "phrases": "blue umbrella; a pink picnic blanket",
+    "frame_first": "A blue umbrella stands tall over a vibrant pink picnic blanket spread out on a grassy field, casting a circular shadow.",
+    "frame_middle": "The umbrella sways slightly in a gentle breeze, its shadow moving across the pink blanket.",
+    "frame_last": "The pink blanket is neatly folded under the blue umbrella, which now stands upright as if ready to be packed away.",
+    "frame_json_raw": "{\"first\": \"A blue umbrella stands tall over a vibrant pink picnic blanket spread out on a grassy field, casting a circular shadow.\", \"middle\": \"The umbrella sways slightly in a gentle breeze, its shadow moving across the pink blanket.\", \"last\": \"The pink blanket is neatly folded under the blue umbrella, which now stands upright as if ready to be packed away.\"}"
+  },
+  {
+    "caption": "Green tractor plowing near a white farmhouse",
+    "phrases": "green tractor; a white farmhouse",
+    "frame_first": "A green tractor begins plowing a field, with a white farmhouse visible in the background.",
+    "frame_middle": "The tractor continues to plow, creating neat rows in the soil, while the farmhouse remains a constant in the distance.",
+    "frame_last": "The tractor finishes a row, turning slightly to start the next, with the white farmhouse still standing quietly in the background.",
+    "frame_json_raw": "{\"first\": \"A green tractor begins plowing a field, with a white farmhouse visible in the background.\", \"middle\": \"The tractor continues to plow, creating neat rows in the soil, while the farmhouse remains a constant in the distance.\", \"last\": \"The tractor finishes a row, turning slightly to start the next, with the white farmhouse still standing quietly in the background.\"}"
+  },
+  {
+    "caption": "Orange cat sleeping on a purple cushion",
+    "phrases": "orange cat; a purple cushion",
+    "frame_first": "An orange cat is curled up on a purple cushion, eyes closed in sleep.",
+    "frame_middle": "The cat's soft fur contrasts with the vibrant purple of the cushion, its tail wrapped around its body.",
+    "frame_last": "The cat stirs slightly but remains asleep, a serene expression on its face.",
+    "frame_json_raw": "{\"first\": \"An orange cat is curled up on a purple cushion, eyes closed in sleep.\", \"middle\": \"The cat's soft fur contrasts with the vibrant purple of the cushion, its tail wrapped around its body.\", \"last\": \"The cat stirs slightly but remains asleep, a serene expression on its face.\"}"
+  },
+  {
+    "caption": "Black swan gliding past a green lily pad",
+    "phrases": "black swan; a green lily pad",
+    "frame_first": "A black swan gracefully approaches a green lily pad, the calm water reflecting the serene scene.",
+    "frame_middle": "The swan's sleek black feathers contrast sharply with the vibrant green lily pad as it glides by.",
+    "frame_last": "The swan continues its smooth journey, leaving ripples in the water as the lily pad gently sways.",
+    "frame_json_raw": "{\"first\": \"A black swan gracefully approaches a green lily pad, the calm water reflecting the serene scene.\", \"middle\": \"The swan's sleek black feathers contrast sharply with the vibrant green lily pad as it glides by.\", \"last\": \"The swan continues its smooth journey, leaving ripples in the water as the lily pad gently sways.\"}"
+  },
+  {
+    "caption": "Brown squirrel climbing a black lamp post",
+    "phrases": "brown squirrel; a black lamp post",
+    "frame_first": "A brown squirrel is at the base of a black lamp post, preparing to climb.",
+    "frame_middle": "The brown squirrel is halfway up the black lamp post, gripping tightly with its claws and tail wrapped around the post for balance.",
+    "frame_last": "The brown squirrel reaches the top of the black lamp post, pausing to look around before settling down.",
+    "frame_json_raw": "{\"first\": \"A brown squirrel is at the base of a black lamp post, preparing to climb.\", \"middle\": \"The brown squirrel is halfway up the black lamp post, gripping tightly with its claws and tail wrapped around the post for balance.\", \"last\": \"The brown squirrel reaches the top of the black lamp post, pausing to look around before settling down.\"}"
+  },
+  {
+    "caption": "Green taxi drives past a yellow building",
+    "phrases": "green taxi; a yellow building",
+    "frame_first": "A green taxi approaches from the left, the yellow building standing tall on the right.",
+    "frame_middle": "The green taxi is now in the center of the frame, passing the yellow building with its bright facade.",
+    "frame_last": "The green taxi drives away to the right, leaving the yellow building behind.",
+    "frame_json_raw": "{\"first\": \"A green taxi approaches from the left, the yellow building standing tall on the right.\", \"middle\": \"The green taxi is now in the center of the frame, passing the yellow building with its bright facade.\", \"last\": \"The green taxi drives away to the right, leaving the yellow building behind.\"}"
+  },
+  {
+    "caption": "Blue jay swooping near a red maple tree",
+    "phrases": "blue jay; a red maple tree",
+    "frame_first": "A blue jay hovers briefly above a vibrant red maple tree, its wings spread wide.",
+    "frame_middle": "The blue jay swoops gracefully between the branches of the red maple, sunlight filtering through the leaves.",
+    "frame_last": "The blue jay lands on a branch of the red maple tree, its feathers contrasting sharply with the red foliage.",
+    "frame_json_raw": "{\"first\": \"A blue jay hovers briefly above a vibrant red maple tree, its wings spread wide.\", \"middle\": \"The blue jay swoops gracefully between the branches of the red maple, sunlight filtering through the leaves.\", \"last\": \"The blue jay lands on a branch of the red maple tree, its feathers contrasting sharply with the red foliage.\"}"
+  },
+  {
+    "caption": "Pink motorcycle weaving through orange traffic cones",
+    "phrases": "pink motorcycle; orange traffic cones",
+    "frame_first": "A pink motorcycle starts to weave through a line of orange traffic cones set up in a straight path.",
+    "frame_middle": "The motorcycle is now halfway through the cones, the rider leaning slightly into a turn, with cones visible on both sides.",
+    "frame_last": "The pink motorcycle exits the last orange traffic cone, the rider straightening up and accelerating away.",
+    "frame_json_raw": "{\"first\": \"A pink motorcycle starts to weave through a line of orange traffic cones set up in a straight path.\", \"middle\": \"The motorcycle is now halfway through the cones, the rider leaning slightly into a turn, with cones visible on both sides.\", \"last\": \"The pink motorcycle exits the last orange traffic cone, the rider straightening up and accelerating away.\"}"
+  },
+  {
+    "caption": "Yellow curtains swaying near a blue sofa",
+    "phrases": "yellow curtains; a blue sofa",
+    "frame_first": "Yellow curtains flutter gently in a breeze near a blue sofa, casting soft shadows on the room.",
+    "frame_middle": "The curtains continue to sway, framing the blue sofa which sits quietly in the sunlight.",
+    "frame_last": "As the breeze dies down, the yellow curtains settle, leaving the blue sofa in a calm, sunlit room.",
+    "frame_json_raw": "{\"first\": \"Yellow curtains flutter gently in a breeze near a blue sofa, casting soft shadows on the room.\", \"middle\": \"The curtains continue to sway, framing the blue sofa which sits quietly in the sunlight.\", \"last\": \"As the breeze dies down, the yellow curtains settle, leaving the blue sofa in a calm, sunlit room.\"}"
+  },
+  {
+    "caption": "Blue curtains swaying near a yellow sofa",
+    "phrases": "blue curtains; a yellow sofa",
+    "frame_first": "Blue curtains gently sway in a soft breeze near a yellow sofa, casting slight shadows on the floor.",
+    "frame_middle": "The curtains continue to flutter, framing the still and cozy yellow sofa against the blurred motion.",
+    "frame_last": "As the breeze subsides, the blue curtains settle, leaving the yellow sofa in a calm, sunlit room.",
+    "frame_json_raw": "{\"first\": \"Blue curtains gently sway in a soft breeze near a yellow sofa, casting slight shadows on the floor.\", \"middle\": \"The curtains continue to flutter, framing the still and cozy yellow sofa against the blurred motion.\", \"last\": \"As the breeze subsides, the blue curtains settle, leaving the yellow sofa in a calm, sunlit room.\"}"
+  },
+  {
+    "caption": "Yellow school bus stopping in front of a red building",
+    "phrases": "yellow school bus; a red building",
+    "frame_first": "A yellow school bus approaches and begins to stop in front of a red brick building, its wheels slowing down.",
+    "frame_middle": "The school bus is now stationary in front of the red building, with the engine idling and the door opening.",
+    "frame_last": "Children start to disembark from the yellow school bus, which remains parked in front of the red building.",
+    "frame_json_raw": "{\"first\": \"A yellow school bus approaches and begins to stop in front of a red brick building, its wheels slowing down.\", \"middle\": \"The school bus is now stationary in front of the red building, with the engine idling and the door opening.\", \"last\": \"Children start to disembark from the yellow school bus, which remains parked in front of the red building.\"}"
+  },
+  {
+    "caption": "White tractor plowing near a green farmhouse",
+    "phrases": "white tractor; a green farmhouse",
+    "frame_first": "A white tractor begins plowing a field, with a green farmhouse visible in the background.",
+    "frame_middle": "The tractor continues to plow, creating neat rows in the soil, while the farmhouse remains a constant in the distance.",
+    "frame_last": "The tractor finishes a row, leaving a freshly plowed field behind, with the green farmhouse still standing quietly in the background.",
+    "frame_json_raw": "{\"first\": \"A white tractor begins plowing a field, with a green farmhouse visible in the background.\", \"middle\": \"The tractor continues to plow, creating neat rows in the soil, while the farmhouse remains a constant in the distance.\", \"last\": \"The tractor finishes a row, leaving a freshly plowed field behind, with the green farmhouse still standing quietly in the background.\"}"
+  },
+  {
+    "caption": "Man in a black suit driving a red sports car",
+    "phrases": "a man in a black suit; a red sports car",
+    "frame_first": "A man in a black suit sits in the driver's seat of a red sports car, the car's engine roars to life.",
+    "frame_middle": "The man's hands grip the steering wheel tightly as he accelerates, the red sports car speeding down a straight road.",
+    "frame_last": "The red sports car disappears into the distance, leaving a trail of dust, with only the man's silhouette visible through the tinted window.",
+    "frame_json_raw": "{\"first\": \"A man in a black suit sits in the driver's seat of a red sports car, the car's engine roars to life.\", \"middle\": \"The man's hands grip the steering wheel tightly as he accelerates, the red sports car speeding down a straight road.\", \"last\": \"The red sports car disappears into the distance, leaving a trail of dust, with only the man's silhouette visible through the tinted window.\"}"
+  },
+  {
+    "caption": "Girl in pink sweater holding a golden trophy",
+    "phrases": "a girl in a pink sweater; a golden trophy",
+    "frame_first": "A girl wearing a pink sweater stands at the center of the stage, her hands reaching out to receive a golden trophy.",
+    "frame_middle": "The girl holds the golden trophy aloft, a broad smile on her face, as the stage lights shine down on her.",
+    "frame_last": "The girl in the pink sweater is now looking down at the golden trophy, her expression a mix of joy and disbelief, with the audience in the background applauding.",
+    "frame_json_raw": "{\"first\": \"A girl wearing a pink sweater stands at the center of the stage, her hands reaching out to receive a golden trophy.\", \"middle\": \"The girl holds the golden trophy aloft, a broad smile on her face, as the stage lights shine down on her.\", \"last\": \"The girl in the pink sweater is now looking down at the golden trophy, her expression a mix of joy and disbelief, with the audience in the background applauding.\"}"
+  },
+  {
+    "caption": "Man in a red suit driving a black sports car",
+    "phrases": "a man in a red suit; a black sports car",
+    "frame_first": "A man in a red suit sits in the driver's seat of a black sports car, the car's engine roars to life.",
+    "frame_middle": "The man accelerates, the black sports car speeding down a straight road, red suit flapping slightly with the wind.",
+    "frame_last": "The sports car disappears into the distance, leaving a trail of dust, the man's red suit a vibrant spot against the black vehicle.",
+    "frame_json_raw": "{\"first\": \"A man in a red suit sits in the driver's seat of a black sports car, the car's engine roars to life.\", \"middle\": \"The man accelerates, the black sports car speeding down a straight road, red suit flapping slightly with the wind.\", \"last\": \"The sports car disappears into the distance, leaving a trail of dust, the man's red suit a vibrant spot against the black vehicle.\"}"
+  },
+  {
+    "caption": "Yellow pencil writing on a green notebook",
+    "phrases": "yellow pencil; a green notebook",
+    "frame_first": "A yellow pencil tip touches the surface of a green notebook, about to start writing.",
+    "frame_middle": "The pencil moves across the page, leaving a trail of yellow lines on the green notebook.",
+    "frame_last": "The pencil stops, leaving a completed sentence in yellow ink on the green notebook page.",
+    "frame_json_raw": "{\"first\": \"A yellow pencil tip touches the surface of a green notebook, about to start writing.\", \"middle\": \"The pencil moves across the page, leaving a trail of yellow lines on the green notebook.\", \"last\": \"The pencil stops, leaving a completed sentence in yellow ink on the green notebook page.\"}"
+  },
+  {
+    "caption": "Round soccer ball bouncing near a square scoreboard",
+    "phrases": "round soccer ball; a square scoreboard",
+    "frame_first": "A round soccer ball bounces towards the corner of a square scoreboard under clear blue sky.",
+    "frame_middle": "The ball hits the scoreboard, causing a slight shadow to flicker across its surface.",
+    "frame_last": "The ball rolls away from the scoreboard, leaving the square display static against the bright sky.",
+    "frame_json_raw": "{\"first\": \"A round soccer ball bounces towards the corner of a square scoreboard under clear blue sky.\", \"middle\": \"The ball hits the scoreboard, causing a slight shadow to flicker across its surface.\", \"last\": \"The ball rolls away from the scoreboard, leaving the square display static against the bright sky.\"}"
+  },
+  {
+    "caption": "Cylindrical thermos pouring into a conical paper cup",
+    "phrases": "cylindrical thermos; a conical paper cup",
+    "frame_first": "A cylindrical thermos is held in hand, its spout positioned above an empty conical paper cup, ready to pour.",
+    "frame_middle": "Steam rises as hot liquid flows from the thermos into the conical paper cup, half-filled now.",
+    "frame_last": "The cylindrical thermos is nearly empty, with the conical paper cup now full, steam lingering above the surface of the liquid.",
+    "frame_json_raw": "{\"first\": \"A cylindrical thermos is held in hand, its spout positioned above an empty conical paper cup, ready to pour.\", \"middle\": \"Steam rises as hot liquid flows from the thermos into the conical paper cup, half-filled now.\", \"last\": \"The cylindrical thermos is nearly empty, with the conical paper cup now full, steam lingering above the surface of the liquid.\"}"
+  },
+  {
+    "caption": "Oblong canoe gliding past a circular buoy",
+    "phrases": "oblong canoe; a circular buoy",
+    "frame_first": "An oblong canoe slices through calm water, approaching a circular buoy in the foreground.",
+    "frame_middle": "The canoe continues its smooth journey, now parallel to the circular buoy, with ripples spreading out from its passage.",
+    "frame_last": "The canoe glides past the circular buoy, leaving it behind as it moves further into the distance.",
+    "frame_json_raw": "{\"first\": \"An oblong canoe slices through calm water, approaching a circular buoy in the foreground.\", \"middle\": \"The canoe continues its smooth journey, now parallel to the circular buoy, with ripples spreading out from its passage.\", \"last\": \"The canoe glides past the circular buoy, leaving it behind as it moves further into the distance.\"}"
+  },
+  {
+    "caption": "Pyramidal tent sheltering a round grill",
+    "phrases": "pyramidal tent; a round grill",
+    "frame_first": "A pyramidal tent stands tall in an open field, its peak reaching towards a clear blue sky. The round grill is positioned just outside the tent opening, ready for use.",
+    "frame_middle": "The grill is now lit, with charcoal glowing warmly, casting a soft orange glow on the tent's fabric and the surrounding ground.",
+    "frame_last": "Smoke rises gently from the grill, curling upwards against the sky, while the tent remains a silent, shadowy figure in the background.",
+    "frame_json_raw": "{\"first\": \"A pyramidal tent stands tall in an open field, its peak reaching towards a clear blue sky. The round grill is positioned just outside the tent opening, ready for use.\", \"middle\": \"The grill is now lit, with charcoal glowing warmly, casting a soft orange glow on the tent's fabric and the surrounding ground.\", \"last\": \"Smoke rises gently from the grill, curling upwards against the sky, while the tent remains a silent, shadowy figure in the background.\"}"
+  },
+  {
+    "caption": "Rectangular briefcase swinging near a hexagonal fountain",
+    "phrases": "rectangular briefcase; a hexagonal fountain",
+    "frame_first": "A rectangular briefcase swings through the air, arcing towards a hexagonal fountain in the foreground, with sunlight glinting off the water.",
+    "frame_middle": "The briefcase reaches the apex of its swing, momentarily suspended above the hexagonal fountain, casting a sharp shadow on the wet surface.",
+    "frame_last": "The briefcase lands softly on the edge of the hexagonal fountain, causing ripples in the water, as the sun casts long shadows in the late afternoon light.",
+    "frame_json_raw": "{\"first\": \"A rectangular briefcase swings through the air, arcing towards a hexagonal fountain in the foreground, with sunlight glinting off the water.\", \"middle\": \"The briefcase reaches the apex of its swing, momentarily suspended above the hexagonal fountain, casting a sharp shadow on the wet surface.\", \"last\": \"The briefcase lands softly on the edge of the hexagonal fountain, causing ripples in the water, as the sun casts long shadows in the late afternoon light.\"}"
+  },
+  {
+    "caption": "Conical hat spinning beside a square cake",
+    "phrases": "conical hat; a square cake",
+    "frame_first": "A conical hat sits motionless beside a square cake, both placed on a plain white table.",
+    "frame_middle": "The conical hat begins to spin slowly on the table, casting a slight shadow on the square cake.",
+    "frame_last": "The conical hat spins rapidly, blurring into a circular motion, while the square cake remains still and stable.",
+    "frame_json_raw": "{\"first\": \"A conical hat sits motionless beside a square cake, both placed on a plain white table.\", \"middle\": \"The conical hat begins to spin slowly on the table, casting a slight shadow on the square cake.\", \"last\": \"The conical hat spins rapidly, blurring into a circular motion, while the square cake remains still and stable.\"}"
+  },
+  {
+    "caption": "Cylindrical bin rolling towards a triangular sign",
+    "phrases": "cylindrical bin; a triangular sign",
+    "frame_first": "A cylindrical bin begins to roll across a flat, open ground, heading towards a triangular sign in the distance.",
+    "frame_middle": "The cylindrical bin is now halfway to the triangular sign, its motion steady and unimpeded by any obstacles.",
+    "frame_last": "The cylindrical bin comes to a stop right next to the triangular sign, casting a shadow on the ground under the bright sunlight.",
+    "frame_json_raw": "{\"first\": \"A cylindrical bin begins to roll across a flat, open ground, heading towards a triangular sign in the distance.\", \"middle\": \"The cylindrical bin is now halfway to the triangular sign, its motion steady and unimpeded by any obstacles.\", \"last\": \"The cylindrical bin comes to a stop right next to the triangular sign, casting a shadow on the ground under the bright sunlight.\"}"
+  },
+  {
+    "caption": "Oval bathtub filling near a rectangular towel",
+    "phrases": "oval bathtub; a rectangular towel",
+    "frame_first": "An oval bathtub is shown from a side angle, with water beginning to fill it from the faucet. A rectangular towel hangs neatly on a rack beside the tub.",
+    "frame_middle": "The oval bathtub is now half-filled with water, bubbles forming on the surface. The rectangular towel remains untouched on the rack nearby.",
+    "frame_last": "The oval bathtub is nearly full, with water almost reaching the top. The rectangular towel is still hanging beside the tub, awaiting use.",
+    "frame_json_raw": "{\"first\": \"An oval bathtub is shown from a side angle, with water beginning to fill it from the faucet. A rectangular towel hangs neatly on a rack beside the tub.\", \"middle\": \"The oval bathtub is now half-filled with water, bubbles forming on the surface. The rectangular towel remains untouched on the rack nearby.\", \"last\": \"The oval bathtub is nearly full, with water almost reaching the top. The rectangular towel is still hanging beside the tub, awaiting use.\"}"
+  },
+  {
+    "caption": "Spherical globe rotating next to a cube clock",
+    "phrases": "spherical globe; a cube clock",
+    "frame_first": "A spherical globe rotates slowly on its axis, positioned to the left of a large cube-shaped clock with visible ticking hands.",
+    "frame_middle": "The globe continues its rotation, showing a different part of the world, while the clock's second hand moves methodically around its face.",
+    "frame_last": "The rotation of the globe completes a full cycle, returning to its original position, with the clock having advanced its minute hand slightly.",
+    "frame_json_raw": "{\"first\": \"A spherical globe rotates slowly on its axis, positioned to the left of a large cube-shaped clock with visible ticking hands.\", \"middle\": \"The globe continues its rotation, showing a different part of the world, while the clock's second hand moves methodically around its face.\", \"last\": \"The rotation of the globe completes a full cycle, returning to its original position, with the clock having advanced its minute hand slightly.\"}"
+  },
+  {
+    "caption": "Star-shaped cookie resting on a round coaster",
+    "phrases": "star-shaped cookie; a round coaster",
+    "frame_first": "A star-shaped cookie sits centered on a round coaster, its edges crisp and golden.",
+    "frame_middle": "The cookie remains still on the coaster, casting a slight shadow in the ambient light.",
+    "frame_last": "The star-shaped cookie is still perfectly placed on the coaster, untouched and pristine.",
+    "frame_json_raw": "{\"first\": \"A star-shaped cookie sits centered on a round coaster, its edges crisp and golden.\", \"middle\": \"The cookie remains still on the coaster, casting a slight shadow in the ambient light.\", \"last\": \"The star-shaped cookie is still perfectly placed on the coaster, untouched and pristine.\"}"
+  },
+  {
+    "caption": "Spiral staircase winding beside a cubic stool",
+    "phrases": "spiral staircase; a cubic stool",
+    "frame_first": "A spiral staircase ascends from the bottom left corner of the frame, with a cubic stool positioned at the base, its edges sharp and clean.",
+    "frame_middle": "The staircase continues to coil upwards, with the cubic stool now partially obscured, showing the intricate detail of the staircase's construction.",
+    "frame_last": "The spiral staircase reaches its peak, with the cubic stool still visible at the bottom, creating a sense of vertical depth and symmetry.",
+    "frame_json_raw": "{\"first\": \"A spiral staircase ascends from the bottom left corner of the frame, with a cubic stool positioned at the base, its edges sharp and clean.\", \"middle\": \"The staircase continues to coil upwards, with the cubic stool now partially obscured, showing the intricate detail of the staircase's construction.\", \"last\": \"The spiral staircase reaches its peak, with the cubic stool still visible at the bottom, creating a sense of vertical depth and symmetry.\"}"
+  },
+  {
+    "caption": "Elliptical mirror hanging near a square window",
+    "phrases": "elliptical mirror; a square window",
+    "frame_first": "An elliptical mirror hangs on a wall next to a square window, reflecting the room's interior.",
+    "frame_middle": "Sunlight streams through the square window, casting a rectangular pool of light on the floor and illuminating dust particles.",
+    "frame_last": "The elliptical mirror captures a distorted view of the window, showing the outside world in a stretched perspective.",
+    "frame_json_raw": "{\"first\": \"An elliptical mirror hangs on a wall next to a square window, reflecting the room's interior.\", \"middle\": \"Sunlight streams through the square window, casting a rectangular pool of light on the floor and illuminating dust particles.\", \"last\": \"The elliptical mirror captures a distorted view of the window, showing the outside world in a stretched perspective.\"}"
+  },
+  {
+    "caption": "Diamond-shaped kite soaring above a flat roof",
+    "phrases": "diamond-shaped kite; a flat roof",
+    "frame_first": "A diamond-shaped kite is lifted off the flat roof, strings taut, against a clear blue sky.",
+    "frame_middle": "The kite soars high above the flat roof, its shadow moving across the surface as it catches the wind.",
+    "frame_last": "The kite reaches its peak altitude, hovering gracefully above the flat roof, strings gently fluttering in the breeze.",
+    "frame_json_raw": "{\"first\": \"A diamond-shaped kite is lifted off the flat roof, strings taut, against a clear blue sky.\", \"middle\": \"The kite soars high above the flat roof, its shadow moving across the surface as it catches the wind.\", \"last\": \"The kite reaches its peak altitude, hovering gracefully above the flat roof, strings gently fluttering in the breeze.\"}"
+  },
+  {
+    "caption": "Heart-shaped pillow tossed onto a circular bed",
+    "phrases": "heart-shaped pillow; a circular bed",
+    "frame_first": "A heart-shaped pillow is gently tossed towards a circular bed, mid-air.",
+    "frame_middle": "The heart-shaped pillow lands softly on the center of the circular bed, slightly sinking into the mattress.",
+    "frame_last": "The heart-shaped pillow rests peacefully on the circular bed, slightly off-center, with the bed's round edges visible.",
+    "frame_json_raw": "{\"first\": \"A heart-shaped pillow is gently tossed towards a circular bed, mid-air.\", \"middle\": \"The heart-shaped pillow lands softly on the center of the circular bed, slightly sinking into the mattress.\", \"last\": \"The heart-shaped pillow rests peacefully on the circular bed, slightly off-center, with the bed's round edges visible.\"}"
+  },
+  {
+    "caption": "Woolen scarf fluttering near a leather suitcase",
+    "phrases": "woolen scarf; a leather suitcase",
+    "frame_first": "A leather suitcase sits still on a hardwood floor, a woolen scarf begins to flutter near it as a gentle breeze enters the room.",
+    "frame_middle": "The woolen scarf dances around the leather suitcase, wrapping partially around it as the breeze continues to gust.",
+    "frame_last": "The scarf settles partially draped over the leather suitcase, the breeze subsides, leaving both objects at rest in the room.",
+    "frame_json_raw": "{\"first\": \"A leather suitcase sits still on a hardwood floor, a woolen scarf begins to flutter near it as a gentle breeze enters the room.\", \"middle\": \"The woolen scarf dances around the leather suitcase, wrapping partially around it as the breeze continues to gust.\", \"last\": \"The scarf settles partially draped over the leather suitcase, the breeze subsides, leaving both objects at rest in the room.\"}"
+  },
+  {
+    "caption": "Silk dress swaying beside a velvet curtain",
+    "phrases": "silk dress; a velvet curtain",
+    "frame_first": "A silk dress hangs gracefully beside a deep red velvet curtain, swaying gently in a soft breeze.",
+    "frame_middle": "The dress continues to move, its fabric catching the light and revealing subtle patterns as it brushes against the curtain.",
+    "frame_last": "The swaying slows, the dress settling into a calm position, slightly draped over the curtain's edge.",
+    "frame_json_raw": "{\"first\": \"A silk dress hangs gracefully beside a deep red velvet curtain, swaying gently in a soft breeze.\", \"middle\": \"The dress continues to move, its fabric catching the light and revealing subtle patterns as it brushes against the curtain.\", \"last\": \"The swaying slows, the dress settling into a calm position, slightly draped over the curtain's edge.\"}"
+  },
+  {
+    "caption": "Leather boots stepping on a marble floor",
+    "phrases": "leather boots; a marble floor",
+    "frame_first": "A pair of leather boots comes into view, about to step onto a pristine marble floor.",
+    "frame_middle": "The boot's heel makes contact with the marble, creating a sharp echo in the silent room.",
+    "frame_last": "The boots continue to walk, leaving a trail of faint shadows on the glossy marble surface.",
+    "frame_json_raw": "{\"first\": \"A pair of leather boots comes into view, about to step onto a pristine marble floor.\", \"middle\": \"The boot's heel makes contact with the marble, creating a sharp echo in the silent room.\", \"last\": \"The boots continue to walk, leaving a trail of faint shadows on the glossy marble surface.\"}"
+  },
+  {
+    "caption": "Wooden chair sliding across a slate tile",
+    "phrases": "wooden chair; a slate tile",
+    "frame_first": "A wooden chair begins to slide across a shiny slate tile floor, the tiles reflecting the ambient light.",
+    "frame_middle": "The chair continues to glide smoothly, leaving a slight scratch mark on the slate surface.",
+    "frame_last": "The chair comes to a stop on the slate tile floor, a faint trail of scratches visible in its path.",
+    "frame_json_raw": "{\"first\": \"A wooden chair begins to slide across a shiny slate tile floor, the tiles reflecting the ambient light.\", \"middle\": \"The chair continues to glide smoothly, leaving a slight scratch mark on the slate surface.\", \"last\": \"The chair comes to a stop on the slate tile floor, a faint trail of scratches visible in its path.\"}"
+  },
+  {
+    "caption": "Ceramic vase rotating on a copper table",
+    "phrases": "ceramic vase; a copper table",
+    "frame_first": "A copper table is seen from above, with a ceramic vase slowly rotating in the center.",
+    "frame_middle": "The ceramic vase continues its rotation, revealing intricate patterns on its surface under soft, even lighting.",
+    "frame_last": "The rotation completes, bringing the vase back to its starting position on the copper table.",
+    "frame_json_raw": "{\"first\": \"A copper table is seen from above, with a ceramic vase slowly rotating in the center.\", \"middle\": \"The ceramic vase continues its rotation, revealing intricate patterns on its surface under soft, even lighting.\", \"last\": \"The rotation completes, bringing the vase back to its starting position on the copper table.\"}"
+  },
+  {
+    "caption": "Denim jacket hanging on a metal coat rack",
+    "phrases": "denim jacket; a metal coat rack",
+    "frame_first": "A denim jacket hangs neatly on a metal coat rack, the fabric slightly creased from being folded.",
+    "frame_middle": "The jacket sways gently as a breeze from an open window catches it, casting a soft shadow on the wall behind.",
+    "frame_last": "The jacket remains still, the only movement the subtle play of light as the sun shifts, highlighting the texture of the denim.",
+    "frame_json_raw": "{\"first\": \"A denim jacket hangs neatly on a metal coat rack, the fabric slightly creased from being folded.\", \"middle\": \"The jacket sways gently as a breeze from an open window catches it, casting a soft shadow on the wall behind.\", \"last\": \"The jacket remains still, the only movement the subtle play of light as the sun shifts, highlighting the texture of the denim.\"}"
+  },
+  {
+    "caption": "Crystal chandelier swinging above a wooden table",
+    "phrases": "crystal chandelier; a wooden table",
+    "frame_first": "A crystal chandelier hangs motionless above a wooden table, casting intricate light patterns on the surface.",
+    "frame_middle": "The chandelier begins to swing gently, its crystals clinking softly as light dances across the table.",
+    "frame_last": "The swinging chandelier slows to a stop, leaving a serene glow over the wooden table.",
+    "frame_json_raw": "{\"first\": \"A crystal chandelier hangs motionless above a wooden table, casting intricate light patterns on the surface.\", \"middle\": \"The chandelier begins to swing gently, its crystals clinking softly as light dances across the table.\", \"last\": \"The swinging chandelier slows to a stop, leaving a serene glow over the wooden table.\"}"
+  },
+  {
+    "caption": "Corduroy cloth brushing against a glass table",
+    "phrases": "corduroy cloth; a glass table",
+    "frame_first": "A piece of corduroy cloth is slowly dragged across the surface of a glass table, leaving faint, parallel lines of texture.",
+    "frame_middle": "The corduroy continues its path, the fabric's ridges creating a rhythmic pattern on the glass, reflecting light in subtle variations.",
+    "frame_last": "The cloth reaches the edge of the table, the final strokes leaving a trail of gentle shadows and highlights on the glass surface.",
+    "frame_json_raw": "{\"first\": \"A piece of corduroy cloth is slowly dragged across the surface of a glass table, leaving faint, parallel lines of texture.\", \"middle\": \"The corduroy continues its path, the fabric's ridges creating a rhythmic pattern on the glass, reflecting light in subtle variations.\", \"last\": \"The cloth reaches the edge of the table, the final strokes leaving a trail of gentle shadows and highlights on the glass surface.\"}"
+  },
+  {
+    "caption": "Velvet ribbon tied on an iron fence",
+    "phrases": "velvet ribbon; an iron fence",
+    "frame_first": "A close-up of a velvet ribbon being carefully tied around an iron fence, the ribbon's texture and color contrasting with the metallic surface.",
+    "frame_middle": "The ribbon is now partially wrapped around the fence, with one end still free, showing the process of securing it in place.",
+    "frame_last": "The velvet ribbon is fully tied and draped elegantly over the iron fence, adding a soft touch of color against the stark iron.",
+    "frame_json_raw": "{\"first\": \"A close-up of a velvet ribbon being carefully tied around an iron fence, the ribbon's texture and color contrasting with the metallic surface.\", \"middle\": \"The ribbon is now partially wrapped around the fence, with one end still free, showing the process of securing it in place.\", \"last\": \"The velvet ribbon is fully tied and draped elegantly over the iron fence, adding a soft touch of color against the stark iron.\"}"
+  },
+  {
+    "caption": "Linen curtains blowing beside a bamboo wall",
+    "phrases": "linen curtains; a bamboo wall",
+    "frame_first": "Soft linen curtains flutter gently beside a tall bamboo wall, sunlight filtering through.",
+    "frame_middle": "The curtains continue to sway softly, casting delicate shadows on the bamboo surface.",
+    "frame_last": "The curtains settle slightly as the breeze dies down, the bamboo wall standing still and serene.",
+    "frame_json_raw": "{\"first\": \"Soft linen curtains flutter gently beside a tall bamboo wall, sunlight filtering through.\", \"middle\": \"The curtains continue to sway softly, casting delicate shadows on the bamboo surface.\", \"last\": \"The curtains settle slightly as the breeze dies down, the bamboo wall standing still and serene.\"}"
+  },
+  {
+    "caption": "Plush teddy bear tumbling next to a leather couch",
+    "phrases": "plush teddy bear; a leather couch",
+    "frame_first": "A plush teddy bear sits upright on a carpeted floor next to a leather couch, the living room is softly lit with afternoon sunlight streaming through a window.",
+    "frame_middle": "The teddy bear tumbles end over end across the floor, its arms and legs flailing comically, while the couch remains still and steady in the background.",
+    "frame_last": "The teddy bear comes to a rest on its side, its fur slightly ruffled, beside the leather couch, the room still bathed in the warm glow of sunlight.",
+    "frame_json_raw": "{\"first\": \"A plush teddy bear sits upright on a carpeted floor next to a leather couch, the living room is softly lit with afternoon sunlight streaming through a window.\", \"middle\": \"The teddy bear tumbles end over end across the floor, its arms and legs flailing comically, while the couch remains still and steady in the background.\", \"last\": \"The teddy bear comes to a rest on its side, its fur slightly ruffled, beside the leather couch, the room still bathed in the warm glow of sunlight.\"}"
+  },
+  {
+    "caption": "Furry dog fetching a rubber ball",
+    "phrases": "furry dog; a rubber ball",
+    "frame_first": "A golden retriever stands at the edge of a green field, eyes fixed on a red rubber ball thrown by its owner.",
+    "frame_middle": "The dog leaps through the air, mouth open, as it aims to catch the ball mid-flight under a bright, sunny sky.",
+    "frame_last": "The dog successfully catches the ball and returns to its owner, tail wagging, in a sunlit backyard.",
+    "frame_json_raw": "{\"first\": \"A golden retriever stands at the edge of a green field, eyes fixed on a red rubber ball thrown by its owner.\", \"middle\": \"The dog leaps through the air, mouth open, as it aims to catch the ball mid-flight under a bright, sunny sky.\", \"last\": \"The dog successfully catches the ball and returns to its owner, tail wagging, in a sunlit backyard.\"}"
+  },
+  {
+    "caption": "Slick seal sliding near a rubber mat",
+    "phrases": "slick seal; a rubber mat",
+    "frame_first": "A slick seal glides smoothly towards a rubber mat on a sandy beach under bright sunlight.",
+    "frame_middle": "The seal is now halfway across the rubber mat, its body glistening with moisture as it continues its slide.",
+    "frame_last": "The seal comes to a gentle stop at the end of the rubber mat, looking around curiously with its dark eyes.",
+    "frame_json_raw": "{\"first\": \"A slick seal glides smoothly towards a rubber mat on a sandy beach under bright sunlight.\", \"middle\": \"The seal is now halfway across the rubber mat, its body glistening with moisture as it continues its slide.\", \"last\": \"The seal comes to a gentle stop at the end of the rubber mat, looking around curiously with its dark eyes.\"}"
+  },
+  {
+    "caption": "Silver-haired woman admiring a black grand piano",
+    "phrases": "silver-haired woman; a black grand piano",
+    "frame_first": "A silver-haired woman stands in front of a gleaming black grand piano, her face reflecting curiosity and admiration.",
+    "frame_middle": "She leans slightly towards the piano, her hand almost touching the polished surface as she contemplates.",
+    "frame_last": "The woman steps back, a thoughtful expression on her face, her eyes still fixed on the elegant instrument.",
+    "frame_json_raw": "{\"first\": \"A silver-haired woman stands in front of a gleaming black grand piano, her face reflecting curiosity and admiration.\", \"middle\": \"She leans slightly towards the piano, her hand almost touching the polished surface as she contemplates.\", \"last\": \"The woman steps back, a thoughtful expression on her face, her eyes still fixed on the elegant instrument.\"}"
+  },
+  {
+    "caption": "Young boy tossing a leather baseball glove",
+    "phrases": "young boy; a leather baseball glove",
+    "frame_first": "A young boy stands on a grassy field, preparing to toss a leather baseball glove high into the air.",
+    "frame_middle": "The glove arcs through the sunlight, its brown leather catching glints of light as the boy watches it ascend.",
+    "frame_last": "The glove reaches its peak and begins to descend, the boy ready to catch it with a wide, excited grin.",
+    "frame_json_raw": "{\"first\": \"A young boy stands on a grassy field, preparing to toss a leather baseball glove high into the air.\", \"middle\": \"The glove arcs through the sunlight, its brown leather catching glints of light as the boy watches it ascend.\", \"last\": \"The glove reaches its peak and begins to descend, the boy ready to catch it with a wide, excited grin.\"}"
+  },
+  {
+    "caption": "Muscular man wielding an iron sword",
+    "phrases": "muscular man; an iron sword",
+    "frame_first": "A muscular man stands confidently, gripping an iron sword tightly in his hand, ready to strike.",
+    "frame_middle": "The man swings the iron sword with force, the blade gleaming in the sunlight.",
+    "frame_last": "The man pauses, holding the sword high above his head, muscles flexed and eyes focused.",
+    "frame_json_raw": "{\"first\": \"A muscular man stands confidently, gripping an iron sword tightly in his hand, ready to strike.\", \"middle\": \"The man swings the iron sword with force, the blade gleaming in the sunlight.\", \"last\": \"The man pauses, holding the sword high above his head, muscles flexed and eyes focused.\"}"
+  },
+  {
+    "caption": "Elderly artist with a white beard painting on a white canvas",
+    "phrases": "artist with a white beard; a white canvas",
+    "frame_first": "An elderly artist with a white beard stands in front of a blank white canvas, holding a paintbrush and contemplating his next stroke.",
+    "frame_middle": "The artist's hand moves across the canvas, leaving trails of color as he begins to paint a serene landscape.",
+    "frame_last": "The artist steps back, a satisfied smile on his face, as the painting on the white canvas now depicts a vivid sunset over rolling hills.",
+    "frame_json_raw": "{\"first\": \"An elderly artist with a white beard stands in front of a blank white canvas, holding a paintbrush and contemplating his next stroke.\", \"middle\": \"The artist's hand moves across the canvas, leaving trails of color as he begins to paint a serene landscape.\", \"last\": \"The artist steps back, a satisfied smile on his face, as the painting on the white canvas now depicts a vivid sunset over rolling hills.\"}"
+  },
+  {
+    "caption": "Girl with braids feeding a spotted deer",
+    "phrases": "girl with braids; a spotted deer",
+    "frame_first": "A girl with braided hair stands in a forest clearing, holding a handful of food, facing a spotted deer.",
+    "frame_middle": "The girl gently extends her hand towards the deer, which is now close enough to reach the food.",
+    "frame_last": "The spotted deer nibbles on the food from the girl's outstretched palm, both subjects calm and still.",
+    "frame_json_raw": "{\"first\": \"A girl with braided hair stands in a forest clearing, holding a handful of food, facing a spotted deer.\", \"middle\": \"The girl gently extends her hand towards the deer, which is now close enough to reach the food.\", \"last\": \"The spotted deer nibbles on the food from the girl's outstretched palm, both subjects calm and still.\"}"
+  },
+  {
+    "caption": "Boy in a blue shirt playing chess with a bearded man",
+    "phrases": "boy in a blue shirt; a bearded man",
+    "frame_first": "A boy in a blue shirt sits across from a bearded man, both focused on a chessboard between them.",
+    "frame_middle": "The boy's hand hovers over a chess piece, contemplating his next move under the watchful eye of the bearded man.",
+    "frame_last": "The boy confidently moves a piece on the chessboard, while the bearded man leans back, deep in thought about his response.",
+    "frame_json_raw": "{\"first\": \"A boy in a blue shirt sits across from a bearded man, both focused on a chessboard between them.\", \"middle\": \"The boy's hand hovers over a chess piece, contemplating his next move under the watchful eye of the bearded man.\", \"last\": \"The boy confidently moves a piece on the chessboard, while the bearded man leans back, deep in thought about his response.\"}"
+  },
+  {
+    "caption": "Tall woman discussing plans with a short woman",
+    "phrases": "tall woman; a short woman",
+    "frame_first": "A tall woman stands facing a short woman, both leaning against a conference table, engaged in a discussion.",
+    "frame_middle": "The tall woman gestures with her hands while the short woman nods, both focused on their conversation.",
+    "frame_last": "The two women part ways, the tall woman walking to the left and the short woman to the right, concluding their discussion.",
+    "frame_json_raw": "{\"first\": \"A tall woman stands facing a short woman, both leaning against a conference table, engaged in a discussion.\", \"middle\": \"The tall woman gestures with her hands while the short woman nods, both focused on their conversation.\", \"last\": \"The two women part ways, the tall woman walking to the left and the short woman to the right, concluding their discussion.\"}"
+  },
+  {
+    "caption": "Girl with curly hair riding a red bike",
+    "phrases": "girl with curly hair; a red bike",
+    "frame_first": "A girl with curly hair is pedaling a red bike, starting her journey down a tree-lined path.",
+    "frame_middle": "The girl on the red bike is now in the middle of a sunny park, her hair flowing behind her as she rides.",
+    "frame_last": "The girl comes to a gentle stop with her red bike, looking back over her shoulder with a smile on her face.",
+    "frame_json_raw": "{\"first\": \"A girl with curly hair is pedaling a red bike, starting her journey down a tree-lined path.\", \"middle\": \"The girl on the red bike is now in the middle of a sunny park, her hair flowing behind her as she rides.\", \"last\": \"The girl comes to a gentle stop with her red bike, looking back over her shoulder with a smile on her face.\"}"
+  },
+  {
+    "caption": "Woman in red dress painting with a man in a green shirt",
+    "phrases": "woman in red dress; a man in a green shirt",
+    "frame_first": "A woman in a red dress stands at an easel, beginning to paint a landscape. A man in a green shirt watches her from a few steps away.",
+    "frame_middle": "The woman continues to paint with focused intensity, her brush strokes visible. The man in the green shirt steps closer, leaning in to observe her technique.",
+    "frame_last": "The woman finishes her painting, stepping back to admire her work. The man in the green shirt stands beside her, both sharing a moment of quiet satisfaction.",
+    "frame_json_raw": "{\"first\": \"A woman in a red dress stands at an easel, beginning to paint a landscape. A man in a green shirt watches her from a few steps away.\", \"middle\": \"The woman continues to paint with focused intensity, her brush strokes visible. The man in the green shirt steps closer, leaning in to observe her technique.\", \"last\": \"The woman finishes her painting, stepping back to admire her work. The man in the green shirt stands beside her, both sharing a moment of quiet satisfaction.\"}"
+  },
+  {
+    "caption": "Golden retriever chasing a yellow frisbee in the park",
+    "phrases": "golden retriever; a yellow frisbee in the park",
+    "frame_first": "A golden retriever stands at the edge of a grassy park, eyes fixed on a yellow frisbee thrown by its owner.",
+    "frame_middle": "The golden retriever leaps through the air, mouth open, in pursuit of the spinning yellow frisbee.",
+    "frame_last": "The golden retriever successfully catches the yellow frisbee in its mouth, standing triumphantly in the middle of the park.",
+    "frame_json_raw": "{\"first\": \"A golden retriever stands at the edge of a grassy park, eyes fixed on a yellow frisbee thrown by its owner.\", \"middle\": \"The golden retriever leaps through the air, mouth open, in pursuit of the spinning yellow frisbee.\", \"last\": \"The golden retriever successfully catches the yellow frisbee in its mouth, standing triumphantly in the middle of the park.\"}"
+  },
+  {
+    "caption": "Red car racing past an old church",
+    "phrases": "red car; an old church",
+    "frame_first": "A red car speeds towards an old church, the sun setting behind it, casting long shadows.",
+    "frame_middle": "The red car is now parallel to the church, its headlights illuminating the old stone facade.",
+    "frame_last": "The red car races away from the church, leaving it in a trail of dust and fading headlights.",
+    "frame_json_raw": "{\"first\": \"A red car speeds towards an old church, the sun setting behind it, casting long shadows.\", \"middle\": \"The red car is now parallel to the church, its headlights illuminating the old stone facade.\", \"last\": \"The red car races away from the church, leaving it in a trail of dust and fading headlights.\"}"
+  },
+  {
+    "caption": "Green tree shedding leaves near a wooden cabin",
+    "phrases": "green tree; a wooden cabin",
+    "frame_first": "A green tree stands near a wooden cabin, with a few leaves gently falling from its branches.",
+    "frame_middle": "More leaves are seen drifting down from the tree, creating a soft rustling sound as they land on the ground.",
+    "frame_last": "The tree has shed several leaves, now scattered around the base, while the wooden cabin remains serene in the background.",
+    "frame_json_raw": "{\"first\": \"A green tree stands near a wooden cabin, with a few leaves gently falling from its branches.\", \"middle\": \"More leaves are seen drifting down from the tree, creating a soft rustling sound as they land on the ground.\", \"last\": \"The tree has shed several leaves, now scattered around the base, while the wooden cabin remains serene in the background.\"}"
+  },
+  {
+    "caption": "Fresh sushi served on a slate plate",
+    "phrases": "fresh sushi; a slate plate",
+    "frame_first": "A slate plate is centered in the frame, its smooth surface reflecting subtle light, awaiting the fresh sushi.",
+    "frame_middle": "Delicate slices of raw fish and perfectly molded rice are artfully arranged on the slate plate, showcasing vibrant colors and textures.",
+    "frame_last": "The completed sushi arrangement on the slate plate is beautifully presented, with each piece perfectly placed, ready to be enjoyed.",
+    "frame_json_raw": "{\"first\": \"A slate plate is centered in the frame, its smooth surface reflecting subtle light, awaiting the fresh sushi.\", \"middle\": \"Delicate slices of raw fish and perfectly molded rice are artfully arranged on the slate plate, showcasing vibrant colors and textures.\", \"last\": \"The completed sushi arrangement on the slate plate is beautifully presented, with each piece perfectly placed, ready to be enjoyed.\"}"
+  },
+  {
+    "caption": "Striped cat lounging on a velvet pillow",
+    "phrases": "striped cat; a velvet pillow",
+    "frame_first": "A striped cat stretches out lazily on a plush, velvet pillow, its tail curled around its body.",
+    "frame_middle": "The cat's eyes are half-closed, basking in the soft light, while it occasionally twitches a paw.",
+    "frame_last": "The cat settles into a deep sleep, completely relaxed on the velvet pillow, with sunlight filtering through a nearby window.",
+    "frame_json_raw": "{\"first\": \"A striped cat stretches out lazily on a plush, velvet pillow, its tail curled around its body.\", \"middle\": \"The cat's eyes are half-closed, basking in the soft light, while it occasionally twitches a paw.\", \"last\": \"The cat settles into a deep sleep, completely relaxed on the velvet pillow, with sunlight filtering through a nearby window.\"}"
+  },
+  {
+    "caption": "Blue truck hauling a load of orange pumpkins",
+    "phrases": "blue truck; a load of orange pumpkins",
+    "frame_first": "A blue truck is parked with a trailer filled with orange pumpkins, the sun is just rising, casting a warm glow over the scene.",
+    "frame_middle": "The truck begins to move down a rural road, the pumpkins slightly shifting in the trailer, the sky now a bright morning blue.",
+    "frame_last": "The truck drives off into the distance, the trailer still full of pumpkins, leaving a trail of dust behind on the country road.",
+    "frame_json_raw": "{\"first\": \"A blue truck is parked with a trailer filled with orange pumpkins, the sun is just rising, casting a warm glow over the scene.\", \"middle\": \"The truck begins to move down a rural road, the pumpkins slightly shifting in the trailer, the sky now a bright morning blue.\", \"last\": \"The truck drives off into the distance, the trailer still full of pumpkins, leaving a trail of dust behind on the country road.\"}"
+  },
+  {
+    "caption": "Woman with glasses reading to a little girl",
+    "phrases": "woman with glasses; a little girl",
+    "frame_first": "A woman with glasses sits on a cozy armchair, holding an open book, looking down at a little girl sitting on her lap.",
+    "frame_middle": "The woman's finger traces the words on the page as she reads aloud, the little girl's eyes wide with curiosity and engagement.",
+    "frame_last": "The girl smiles up at the woman, who gently strokes the child's hair, both lost in the story.",
+    "frame_json_raw": "{\"first\": \"A woman with glasses sits on a cozy armchair, holding an open book, looking down at a little girl sitting on her lap.\", \"middle\": \"The woman's finger traces the words on the page as she reads aloud, the little girl's eyes wide with curiosity and engagement.\", \"last\": \"The girl smiles up at the woman, who gently strokes the child's hair, both lost in the story.\"}"
+  },
+  {
+    "caption": "man in a white vest fixing a red bike",
+    "phrases": "man in a white vest; a red bike",
+    "frame_first": "A man in a white vest stands over a red bike, examining the front wheel closely.",
+    "frame_middle": "The man is crouched down, using a wrench to tighten a bolt on the bike's wheel.",
+    "frame_last": "The man straightens up, giving the red bike a final satisfied look before standing back.",
+    "frame_json_raw": "{\"first\": \"A man in a white vest stands over a red bike, examining the front wheel closely.\", \"middle\": \"The man is crouched down, using a wrench to tighten a bolt on the bike's wheel.\", \"last\": \"The man straightens up, giving the red bike a final satisfied look before standing back.\"}"
+  },
+  {
+    "caption": "Elderly woman watering red rose",
+    "phrases": "elderly woman; red rose",
+    "frame_first": "An elderly woman stands in a sunlit garden, holding a watering can, about to pour water on a vibrant red rose.",
+    "frame_middle": "Water droplets fall gently from the can, glinting in the sunlight as they land on the rose's petals.",
+    "frame_last": "The elderly woman steps back, admiring the now glistening red rose in the garden.",
+    "frame_json_raw": "{\"first\": \"An elderly woman stands in a sunlit garden, holding a watering can, about to pour water on a vibrant red rose.\", \"middle\": \"Water droplets fall gently from the can, glinting in the sunlight as they land on the rose's petals.\", \"last\": \"The elderly woman steps back, admiring the now glistening red rose in the garden.\"}"
+  },
+  {
+    "caption": "Boy with a cap playing soccer with a girl wearing a red shirt",
+    "phrases": "boy with a cap; a girl wearing a red shirt",
+    "frame_first": "A boy wearing a cap kicks a soccer ball towards a girl in a red shirt at a sunny park.",
+    "frame_middle": "The girl in the red shirt runs to intercept the ball, preparing to pass it back to the boy.",
+    "frame_last": "Both the boy with the cap and the girl in the red shirt celebrate after successfully scoring a goal together.",
+    "frame_json_raw": "{\"first\": \"A boy wearing a cap kicks a soccer ball towards a girl in a red shirt at a sunny park.\", \"middle\": \"The girl in the red shirt runs to intercept the ball, preparing to pass it back to the boy.\", \"last\": \"Both the boy with the cap and the girl in the red shirt celebrate after successfully scoring a goal together.\"}"
+  },
+  {
+    "caption": "Green beetle crawling on a gray rock",
+    "phrases": "green beetle; a gray rock",
+    "frame_first": "A green beetle begins to crawl on a gray rock under the bright sunlight.",
+    "frame_middle": "The beetle is halfway across the rock, its legs moving steadily.",
+    "frame_last": "The beetle reaches the edge of the rock and pauses, its body fully visible against the gray surface.",
+    "frame_json_raw": "{\"first\": \"A green beetle begins to crawl on a gray rock under the bright sunlight.\", \"middle\": \"The beetle is halfway across the rock, its legs moving steadily.\", \"last\": \"The beetle reaches the edge of the rock and pauses, its body fully visible against the gray surface.\"}"
+  },
+  {
+    "caption": "Fluffy squirrel playing on a metal bench",
+    "phrases": "fluffy squirrel; a metal bench",
+    "frame_first": "A fluffy squirrel scampers onto a shiny metal bench, pausing to look around.",
+    "frame_middle": "The squirrel playfully jumps and runs back and forth along the bench, its tail flicking.",
+    "frame_last": "The squirrel stops to nibble on a nut, sitting comfortably in the middle of the metal bench.",
+    "frame_json_raw": "{\"first\": \"A fluffy squirrel scampers onto a shiny metal bench, pausing to look around.\", \"middle\": \"The squirrel playfully jumps and runs back and forth along the bench, its tail flicking.\", \"last\": \"The squirrel stops to nibble on a nut, sitting comfortably in the middle of the metal bench.\"}"
+  },
+  {
+    "caption": "Orange truck hauling a load of blue pumpkins",
+    "phrases": "orange truck; a load of blue pumpkins",
+    "frame_first": "An orange truck is seen from behind, driving on a rural road with a trailer full of blue pumpkins attached.",
+    "frame_middle": "The truck continues down the road, the blue pumpkins swaying slightly on the trailer under a clear blue sky.",
+    "frame_last": "The truck slows down as it approaches a farm gate, the blue pumpkins now aligned neatly on the trailer.",
+    "frame_json_raw": "{\"first\": \"An orange truck is seen from behind, driving on a rural road with a trailer full of blue pumpkins attached.\", \"middle\": \"The truck continues down the road, the blue pumpkins swaying slightly on the trailer under a clear blue sky.\", \"last\": \"The truck slows down as it approaches a farm gate, the blue pumpkins now aligned neatly on the trailer.\"}"
+  },
+  {
+    "caption": "Golden sunlight piercing through dark clouds",
+    "phrases": "golden sunlight; dark clouds",
+    "frame_first": "Dark storm clouds dominate the sky with a single ray of golden sunlight breaking through, illuminating a small section of the scene.",
+    "frame_middle": "The beam of sunlight expands, casting a warm glow on the landscape below, contrasting sharply with the surrounding gloom of the clouds.",
+    "frame_last": "The sunlight continues to pierce through, now highlighting the edges of the clouds, creating a dramatic play of light and shadow across the sky.",
+    "frame_json_raw": "{\"first\": \"Dark storm clouds dominate the sky with a single ray of golden sunlight breaking through, illuminating a small section of the scene.\", \"middle\": \"The beam of sunlight expands, casting a warm glow on the landscape below, contrasting sharply with the surrounding gloom of the clouds.\", \"last\": \"The sunlight continues to pierce through, now highlighting the edges of the clouds, creating a dramatic play of light and shadow across the sky.\"}"
+  },
+  {
+    "caption": "Fluffy clouds drifting over a jagged mountain peak",
+    "phrases": "fluffy clouds; a jagged mountain peak",
+    "frame_first": "A wide shot of a jagged mountain peak with a single fluffy cloud beginning to drift across the sky above it.",
+    "frame_middle": "The fluffy cloud has moved halfway across the sky, casting a soft shadow on the mountain peak below.",
+    "frame_last": "The cloud continues its drift, now almost fully past the mountain peak, leaving the sunlit peak framed against a clear sky.",
+    "frame_json_raw": "{\"first\": \"A wide shot of a jagged mountain peak with a single fluffy cloud beginning to drift across the sky above it.\", \"middle\": \"The fluffy cloud has moved halfway across the sky, casting a soft shadow on the mountain peak below.\", \"last\": \"The cloud continues its drift, now almost fully past the mountain peak, leaving the sunlit peak framed against a clear sky.\"}"
+  },
+  {
+    "caption": "Murky water swirling around a shiny anchor",
+    "phrases": "murky water; a shiny anchor",
+    "frame_first": "A murky underwater scene with a shiny anchor at the center, water gently swirling around it.",
+    "frame_middle": "The swirling motion intensifies, creating a vortex effect around the anchor, highlighting its reflective surface.",
+    "frame_last": "The water begins to settle, the anchor remains still, and the swirls slowly dissipate, leaving the anchor prominently displayed in the murky depths.",
+    "frame_json_raw": "{\"first\": \"A murky underwater scene with a shiny anchor at the center, water gently swirling around it.\", \"middle\": \"The swirling motion intensifies, creating a vortex effect around the anchor, highlighting its reflective surface.\", \"last\": \"The water begins to settle, the anchor remains still, and the swirls slowly dissipate, leaving the anchor prominently displayed in the murky depths.\"}"
+  },
+  {
+    "caption": "Glistening waves crashing against a rugged cliffside",
+    "phrases": "glistening waves; a rugged cliffside",
+    "frame_first": "Glistening waves approach the rugged cliffside under the morning sun, creating a sparkling effect on the water surface.",
+    "frame_middle": "The waves crash against the cliff, spraying mist into the air and revealing the intricate texture of the rocky face.",
+    "frame_last": "The water recedes, leaving foam at the base of the cliff, with the sun's rays still catching the droplets in the air.",
+    "frame_json_raw": "{\"first\": \"Glistening waves approach the rugged cliffside under the morning sun, creating a sparkling effect on the water surface.\", \"middle\": \"The waves crash against the cliff, spraying mist into the air and revealing the intricate texture of the rocky face.\", \"last\": \"The water recedes, leaving foam at the base of the cliff, with the sun's rays still catching the droplets in the air.\"}"
+  },
+  {
+    "caption": "Bioluminescent jellyfish floating near red corals",
+    "phrases": "bioluminescent jellyfish; red corals",
+    "frame_first": "A bioluminescent jellyfish hovers near a cluster of vibrant red corals, its glow casting a soft, ethereal light in the dark ocean.",
+    "frame_middle": "The jellyfish gently pulses its light, illuminating the delicate structures of the red corals and the surrounding underwater environment.",
+    "frame_last": "The jellyfish drifts away, leaving the red corals to faintly reflect its lingering bioluminescent glow in the deep sea darkness.",
+    "frame_json_raw": "{\"first\": \"A bioluminescent jellyfish hovers near a cluster of vibrant red corals, its glow casting a soft, ethereal light in the dark ocean.\", \"middle\": \"The jellyfish gently pulses its light, illuminating the delicate structures of the red corals and the surrounding underwater environment.\", \"last\": \"The jellyfish drifts away, leaving the red corals to faintly reflect its lingering bioluminescent glow in the deep sea darkness.\"}"
+  },
+  {
+    "caption": "Blue apple bouncing near a pink tree",
+    "phrases": "blue apple; a pink tree",
+    "frame_first": "A blue apple bounces off the ground towards a pink tree under a clear sky.",
+    "frame_middle": "The blue apple reaches its highest point in the air, suspended momentarily near the branches of the pink tree.",
+    "frame_last": "The blue apple lands softly at the base of the pink tree, surrounded by a gentle glow of sunlight.",
+    "frame_json_raw": "{\"first\": \"A blue apple bounces off the ground towards a pink tree under a clear sky.\", \"middle\": \"The blue apple reaches its highest point in the air, suspended momentarily near the branches of the pink tree.\", \"last\": \"The blue apple lands softly at the base of the pink tree, surrounded by a gentle glow of sunlight.\"}"
+  },
+  {
+    "caption": "Green cat chasing a purple mouse",
+    "phrases": "green cat; a purple mouse",
+    "frame_first": "A green cat crouches in a sunlit room, eyes fixed on a purple mouse scurrying across the floor.",
+    "frame_middle": "The green cat leaps through the air, paws outstretched, as the purple mouse dashes under a piece of furniture.",
+    "frame_last": "The green cat sits by the piece of furniture, ears perked, as the purple mouse peeks out from its hiding spot.",
+    "frame_json_raw": "{\"first\": \"A green cat crouches in a sunlit room, eyes fixed on a purple mouse scurrying across the floor.\", \"middle\": \"The green cat leaps through the air, paws outstretched, as the purple mouse dashes under a piece of furniture.\", \"last\": \"The green cat sits by the piece of furniture, ears perked, as the purple mouse peeks out from its hiding spot.\"}"
+  },
+  {
+    "caption": "Purple banana hanging from a green vine",
+    "phrases": "purple banana; a green vine",
+    "frame_first": "A purple banana hangs from a green vine, suspended in the air.",
+    "frame_middle": "The purple banana sways slightly in the breeze, still attached to the green vine.",
+    "frame_last": "The green vine remains, with the purple banana now hanging more loosely, hinting at its readiness to fall.",
+    "frame_json_raw": "{\"first\": \"A purple banana hangs from a green vine, suspended in the air.\", \"middle\": \"The purple banana sways slightly in the breeze, still attached to the green vine.\", \"last\": \"The green vine remains, with the purple banana now hanging more loosely, hinting at its readiness to fall.\"}"
+  },
+  {
+    "caption": "Orange elephant standing on a blue ball",
+    "phrases": "orange elephant; a blue ball",
+    "frame_first": "An orange elephant stands on a blue ball, its trunk curled up.",
+    "frame_middle": "The elephant wobbles slightly, maintaining balance on the ball.",
+    "frame_last": "The elephant is steady, looking around with a curious expression while standing on the blue ball.",
+    "frame_json_raw": "{\"first\": \"An orange elephant stands on a blue ball, its trunk curled up.\", \"middle\": \"The elephant wobbles slightly, maintaining balance on the ball.\", \"last\": \"The elephant is steady, looking around with a curious expression while standing on the blue ball.\"}"
+  },
+  {
+    "caption": "A red dog chasing a green horse",
+    "phrases": "a red dog; a green horse",
+    "frame_first": "A red dog sprints across a green field, eyes locked on a green horse ahead.",
+    "frame_middle": "The red dog leaps towards the green horse, which continues galloping with a slight lead.",
+    "frame_last": "The red dog slows to a stop, watching the green horse disappear into the distance.",
+    "frame_json_raw": "{\"first\": \"A red dog sprints across a green field, eyes locked on a green horse ahead.\", \"middle\": \"The red dog leaps towards the green horse, which continues galloping with a slight lead.\", \"last\": \"The red dog slows to a stop, watching the green horse disappear into the distance.\"}"
+  },
+  {
+    "caption": "Pink giraffe eating from a brown bush",
+    "phrases": "pink giraffe; a brown bush",
+    "frame_first": "A pink giraffe stands in a sunlit savanna, reaching its long neck towards a brown bush.",
+    "frame_middle": "The giraffe's spotted tongue wraps around a leaf from the bush, pulling it gently.",
+    "frame_last": "The giraffe chews slowly, its head still bent towards the bush, surrounded by tall grasses swaying in the breeze.",
+    "frame_json_raw": "{\"first\": \"A pink giraffe stands in a sunlit savanna, reaching its long neck towards a brown bush.\", \"middle\": \"The giraffe's spotted tongue wraps around a leaf from the bush, pulling it gently.\", \"last\": \"The giraffe chews slowly, its head still bent towards the bush, surrounded by tall grasses swaying in the breeze.\"}"
+  },
+  {
+    "caption": "Ancient vase displayed next to a glass sculpture",
+    "phrases": "ancient vase; a glass sculpture",
+    "frame_first": "An ancient vase, intricately decorated, sits on a pedestal in a museum display case, with a modern glass sculpture positioned beside it, reflecting the ambient light.",
+    "frame_middle": "The vase and glass sculpture are bathed in soft museum lighting, highlighting the contrast between the aged pottery and the sleek, transparent glass.",
+    "frame_last": "A spotlight illuminates the glass sculpture, casting delicate shadows on the ancient vase, emphasizing the juxtaposition of old and new art forms.",
+    "frame_json_raw": "{\"first\": \"An ancient vase, intricately decorated, sits on a pedestal in a museum display case, with a modern glass sculpture positioned beside it, reflecting the ambient light.\", \"middle\": \"The vase and glass sculpture are bathed in soft museum lighting, highlighting the contrast between the aged pottery and the sleek, transparent glass.\", \"last\": \"A spotlight illuminates the glass sculpture, casting delicate shadows on the ancient vase, emphasizing the juxtaposition of old and new art forms.\"}"
+  },
+  {
+    "caption": "Chef in white apron slicing green cucumbers",
+    "phrases": "chef in white apron; green cucumbers",
+    "frame_first": "A chef in a white apron stands at a clean, well-lit kitchen counter, preparing to slice a green cucumber held firmly in place.",
+    "frame_middle": "The chef's hand moves swiftly, slicing through the cucumber with a sharp knife, the green flesh separating cleanly.",
+    "frame_last": "The chef lays down the knife, a series of neatly sliced green cucumbers now arranged in a line on the cutting board.",
+    "frame_json_raw": "{\"first\": \"A chef in a white apron stands at a clean, well-lit kitchen counter, preparing to slice a green cucumber held firmly in place.\", \"middle\": \"The chef's hand moves swiftly, slicing through the cucumber with a sharp knife, the green flesh separating cleanly.\", \"last\": \"The chef lays down the knife, a series of neatly sliced green cucumbers now arranged in a line on the cutting board.\"}"
+  },
+  {
+    "caption": "Star-shaped mirror reflecting a square moon",
+    "phrases": "star-shaped mirror; a square moon",
+    "frame_first": "A star-shaped mirror sits on a dark table, its surface glistening under the night sky.",
+    "frame_middle": "The mirror reflects a perfectly square moon, casting an eerie, symmetrical glow.",
+    "frame_last": "The reflection of the square moon in the star-shaped mirror becomes the focal point, surrounded by the dark, still night.",
+    "frame_json_raw": "{\"first\": \"A star-shaped mirror sits on a dark table, its surface glistening under the night sky.\", \"middle\": \"The mirror reflects a perfectly square moon, casting an eerie, symmetrical glow.\", \"last\": \"The reflection of the square moon in the star-shaped mirror becomes the focal point, surrounded by the dark, still night.\"}"
+  },
+  {
+    "caption": "Heart-shaped book opening next to a circular lamp",
+    "phrases": "heart-shaped book; a circular lamp",
+    "frame_first": "A heart-shaped book lies closed next to a circular lamp on a dark wooden table, the lamp casting a warm, circular pool of light on the surface.",
+    "frame_middle": "The book slowly opens, revealing blank pages inside, while the circular lamp continues to emit a soft, ambient glow.",
+    "frame_last": "The book is fully open, displaying the first page where faint outlines of a heart can be seen, with the circular lamp still illuminating the scene warmly.",
+    "frame_json_raw": "{\"first\": \"A heart-shaped book lies closed next to a circular lamp on a dark wooden table, the lamp casting a warm, circular pool of light on the surface.\", \"middle\": \"The book slowly opens, revealing blank pages inside, while the circular lamp continues to emit a soft, ambient glow.\", \"last\": \"The book is fully open, displaying the first page where faint outlines of a heart can be seen, with the circular lamp still illuminating the scene warmly.\"}"
+  },
+  {
+    "caption": "Triangular pizza slicing next to a round plate",
+    "phrases": "triangular pizza; a round plate",
+    "frame_first": "A chef stands over a cutting board, holding a pizza cutter above a triangular slice of pizza, with a round plate waiting beside it.",
+    "frame_middle": "The chef slices through the pizza, the triangular slice separating cleanly from the rest as it lies next to the round plate.",
+    "frame_last": "The triangular slice of pizza rests neatly on the round plate, the chef's precise cut evident in the clean edges of the slice.",
+    "frame_json_raw": "{\"first\": \"A chef stands over a cutting board, holding a pizza cutter above a triangular slice of pizza, with a round plate waiting beside it.\", \"middle\": \"The chef slices through the pizza, the triangular slice separating cleanly from the rest as it lies next to the round plate.\", \"last\": \"The triangular slice of pizza rests neatly on the round plate, the chef's precise cut evident in the clean edges of the slice.\"}"
+  },
+  {
+    "caption": "L-shaped sofa placed next to a round window",
+    "phrases": "L-shaped sofa; a round window",
+    "frame_first": "An L-shaped sofa is positioned next to a large round window, allowing natural daylight to illuminate the room.",
+    "frame_middle": "The round window frames a view of a serene, green garden, with sunlight casting soft shadows on the sofa.",
+    "frame_last": "A gentle breeze causes the curtains by the round window to flutter slightly, while the L-shaped sofa remains inviting and cozy.",
+    "frame_json_raw": "{\"first\": \"An L-shaped sofa is positioned next to a large round window, allowing natural daylight to illuminate the room.\", \"middle\": \"The round window frames a view of a serene, green garden, with sunlight casting soft shadows on the sofa.\", \"last\": \"A gentle breeze causes the curtains by the round window to flutter slightly, while the L-shaped sofa remains inviting and cozy.\"}"
+  },
+  {
+    "caption": "Crystal cake shimmering beside a metal apple",
+    "phrases": "crystal cake; a metal apple",
+    "frame_first": "A crystal cake sparkles on a white table, its facets catching the light. Beside it, a polished metal apple reflects the room's ambient glow.",
+    "frame_middle": "The crystal cake and metal apple are bathed in soft, diffused lighting, emphasizing their reflective surfaces and the contrast between the clear cake and the metallic fruit.",
+    "frame_last": "The scene fades to a close-up of the crystal cake, with the metal apple now partially obscured, highlighting the intricate details of the cake's crystalline structure.",
+    "frame_json_raw": "{\"first\": \"A crystal cake sparkles on a white table, its facets catching the light. Beside it, a polished metal apple reflects the room's ambient glow.\", \"middle\": \"The crystal cake and metal apple are bathed in soft, diffused lighting, emphasizing their reflective surfaces and the contrast between the clear cake and the metallic fruit.\", \"last\": \"The scene fades to a close-up of the crystal cake, with the metal apple now partially obscured, highlighting the intricate details of the cake's crystalline structure.\"}"
+  },
+  {
+    "caption": "Metallic tree rustling near a paper bench",
+    "phrases": "metallic tree; a paper bench",
+    "frame_first": "A metallic tree with shiny leaves gently sways in the breeze, casting glints of light. Nearby, a paper bench sits untouched, its edges crisp and clean.",
+    "frame_middle": "The metallic leaves rustle more vigorously, reflecting the sunlight in a dance of shimmering patterns. The paper bench remains still, contrasting with the dynamic tree.",
+    "frame_last": "The metallic tree's leaves settle, their rustling fading to a soft whisper. The paper bench stands serene, a stark yet elegant companion to the metallic foliage.",
+    "frame_json_raw": "{\"first\": \"A metallic tree with shiny leaves gently sways in the breeze, casting glints of light. Nearby, a paper bench sits untouched, its edges crisp and clean.\", \"middle\": \"The metallic leaves rustle more vigorously, reflecting the sunlight in a dance of shimmering patterns. The paper bench remains still, contrasting with the dynamic tree.\", \"last\": \"The metallic tree's leaves settle, their rustling fading to a soft whisper. The paper bench stands serene, a stark yet elegant companion to the metallic foliage.\"}"
+  },
+  {
+    "caption": "A paper plane flying above a knitted vase",
+    "phrases": "a paper plane; a knitted vase",
+    "frame_first": "A paper plane glides smoothly above a knitted vase sitting on a desk, sunlight streaming through a window illuminates the scene.",
+    "frame_middle": "The paper plane is now directly above the vase, casting a slight shadow on its handcrafted surface, the light reflecting off its creased edges.",
+    "frame_last": "The paper plane gently lands on the desk beside the knitted vase, both objects now still under the soft glow of the daylight.",
+    "frame_json_raw": "{\"first\": \"A paper plane glides smoothly above a knitted vase sitting on a desk, sunlight streaming through a window illuminates the scene.\", \"middle\": \"The paper plane is now directly above the vase, casting a slight shadow on its handcrafted surface, the light reflecting off its creased edges.\", \"last\": \"The paper plane gently lands on the desk beside the knitted vase, both objects now still under the soft glow of the daylight.\"}"
+  },
+  {
+    "caption": "Wooden car speeding past a porcelain tree",
+    "phrases": "wooden car; a porcelain tree",
+    "frame_first": "A wooden car approaches from the distance, heading towards a tall porcelain tree.",
+    "frame_middle": "The wooden car is now beside the porcelain tree, its wheels spinning quickly on the road.",
+    "frame_last": "The wooden car speeds away, leaving the porcelain tree behind in the background.",
+    "frame_json_raw": "{\"first\": \"A wooden car approaches from the distance, heading towards a tall porcelain tree.\", \"middle\": \"The wooden car is now beside the porcelain tree, its wheels spinning quickly on the road.\", \"last\": \"The wooden car speeds away, leaving the porcelain tree behind in the background.\"}"
+  },
+  {
+    "caption": "Man with a balloon head juggling transparent apples",
+    "phrases": "man with a balloon head; transparent apples",
+    "frame_first": "A man with a large, red balloon head stands in a brightly lit room, preparing to juggle three transparent apples.",
+    "frame_middle": "The man is in the middle of his juggling act, with transparent apples floating in mid-air, creating a surreal and whimsical scene.",
+    "frame_last": "The man catches the last transparent apple, completing his juggling routine, with a look of satisfaction on his balloon head.",
+    "frame_json_raw": "{\"first\": \"A man with a large, red balloon head stands in a brightly lit room, preparing to juggle three transparent apples.\", \"middle\": \"The man is in the middle of his juggling act, with transparent apples floating in mid-air, creating a surreal and whimsical scene.\", \"last\": \"The man catches the last transparent apple, completing his juggling routine, with a look of satisfaction on his balloon head.\"}"
+  },
+  {
+    "caption": "Dancer with metallic skin twirling near a glowing tree",
+    "phrases": "dancer with metallic skin; a glowing tree",
+    "frame_first": "A dancer with metallic skin stands poised near a glowing tree, preparing to twirl.",
+    "frame_middle": "The dancer is mid-twirl, metallic skin reflecting the light from the glowing tree, creating a mesmerizing effect.",
+    "frame_last": "The dancer completes the twirl, coming to a graceful stop near the glowing tree, metallic skin shimmering in the ambient light.",
+    "frame_json_raw": "{\"first\": \"A dancer with metallic skin stands poised near a glowing tree, preparing to twirl.\", \"middle\": \"The dancer is mid-twirl, metallic skin reflecting the light from the glowing tree, creating a mesmerizing effect.\", \"last\": \"The dancer completes the twirl, coming to a graceful stop near the glowing tree, metallic skin shimmering in the ambient light.\"}"
+  },
+  {
+    "caption": "Pig with wings flying above a diamond mountain",
+    "phrases": "pig with wings; a diamond mountain",
+    "frame_first": "A pig with wings flaps them vigorously, lifting off from the ground towards a towering, sparkling diamond mountain.",
+    "frame_middle": "The pig soars mid-air, its shadow briefly crossing the glittering facets of the diamond mountain below.",
+    "frame_last": "The pig reaches the peak of the mountain, hovering above the dazzling, snow-capped summit of the gemstone peak.",
+    "frame_json_raw": "{\"first\": \"A pig with wings flaps them vigorously, lifting off from the ground towards a towering, sparkling diamond mountain.\", \"middle\": \"The pig soars mid-air, its shadow briefly crossing the glittering facets of the diamond mountain below.\", \"last\": \"The pig reaches the peak of the mountain, hovering above the dazzling, snow-capped summit of the gemstone peak.\"}"
+  },
+  {
+    "caption": "Cubic watermelon rolling towards a rainbow river",
+    "phrases": "cubic watermelon; a rainbow river",
+    "frame_first": "A cubic watermelon sits at the edge of a lush green field, sunlight glinting off its smooth, geometric surface.",
+    "frame_middle": "The cubic watermelon rolls down a gentle slope, picking up speed, with a vibrant rainbow river coming into view in the distance.",
+    "frame_last": "The cubic watermelon reaches the banks of the rainbow river, its colors reflecting off the water, as it gently comes to a stop at the water's edge.",
+    "frame_json_raw": "{\"first\": \"A cubic watermelon sits at the edge of a lush green field, sunlight glinting off its smooth, geometric surface.\", \"middle\": \"The cubic watermelon rolls down a gentle slope, picking up speed, with a vibrant rainbow river coming into view in the distance.\", \"last\": \"The cubic watermelon reaches the banks of the rainbow river, its colors reflecting off the water, as it gently comes to a stop at the water's edge.\"}"
+  },
+  {
+    "caption": "Paper car racing a crystal snail",
+    "phrases": "paper car; a crystal snail",
+    "frame_first": "A paper car, resembling a tiny origami vehicle, sits at the starting line on a wooden table, ready to race against a crystal-clear snail with a slow, deliberate stance.",
+    "frame_middle": "The paper car speeds across the table, its wheels spinning rapidly, while the crystal snail moves in a slow, steady glide, leaving a faint trail of moisture on the surface.",
+    "frame_last": "The paper car crosses the finish line, a tape made of string, with the crystal snail far behind, its antennae still waving methodically as it continues its unhurried pace.",
+    "frame_json_raw": "{\"first\": \"A paper car, resembling a tiny origami vehicle, sits at the starting line on a wooden table, ready to race against a crystal-clear snail with a slow, deliberate stance.\", \"middle\": \"The paper car speeds across the table, its wheels spinning rapidly, while the crystal snail moves in a slow, steady glide, leaving a faint trail of moisture on the surface.\", \"last\": \"The paper car crosses the finish line, a tape made of string, with the crystal snail far behind, its antennae still waving methodically as it continues its unhurried pace.\"}"
+  },
+  {
+    "caption": "Porcelain rabbit hopping by a golden cactus",
+    "phrases": "porcelain rabbit; a golden cactus",
+    "frame_first": "A porcelain rabbit stands at the base of a towering golden cactus under a clear blue sky.",
+    "frame_middle": "The porcelain rabbit leaps gracefully, its delicate form contrasting with the static golden cactus.",
+    "frame_last": "The rabbit lands lightly on the other side of the cactus, its movement creating a serene and whimsical scene.",
+    "frame_json_raw": "{\"first\": \"A porcelain rabbit stands at the base of a towering golden cactus under a clear blue sky.\", \"middle\": \"The porcelain rabbit leaps gracefully, its delicate form contrasting with the static golden cactus.\", \"last\": \"The rabbit lands lightly on the other side of the cactus, its movement creating a serene and whimsical scene.\"}"
+  },
+  {
+    "caption": "Purple ballon floating near a yellow car",
+    "phrases": "purple balloon; a yellow car",
+    "frame_first": "A purple balloon hovers just above the ground near the front tire of a yellow car, the sun shining brightly in a clear blue sky.",
+    "frame_middle": "The purple balloon drifts slowly towards the yellow car, its shadow cast on the pavement as the sun remains high.",
+    "frame_last": "The purple balloon comes to rest gently against the side of the yellow car, swaying slightly in the breeze under the bright, clear sky.",
+    "frame_json_raw": "{\"first\": \"A purple balloon hovers just above the ground near the front tire of a yellow car, the sun shining brightly in a clear blue sky.\", \"middle\": \"The purple balloon drifts slowly towards the yellow car, its shadow cast on the pavement as the sun remains high.\", \"last\": \"The purple balloon comes to rest gently against the side of the yellow car, swaying slightly in the breeze under the bright, clear sky.\"}"
+  },
+  {
+    "caption": "Yellow rose swaying near a green bench",
+    "phrases": "yellow rose; a green bench",
+    "frame_first": "A yellow rose gently sways in the breeze, positioned near a green bench under a clear sky.",
+    "frame_middle": "The rose continues to sway, its petals catching the light, while the green bench remains still and empty.",
+    "frame_last": "The rose settles slightly, still near the green bench, as the sun casts a warm glow over the scene.",
+    "frame_json_raw": "{\"first\": \"A yellow rose gently sways in the breeze, positioned near a green bench under a clear sky.\", \"middle\": \"The rose continues to sway, its petals catching the light, while the green bench remains still and empty.\", \"last\": \"The rose settles slightly, still near the green bench, as the sun casts a warm glow over the scene.\"}"
+  },
+  {
+    "caption": "Big hearts and small stars floating upwards",
+    "phrases": "big hearts; small stars",
+    "frame_first": "A close-up of big, red hearts and small, twinkling stars begin to float upwards from the bottom of the frame.",
+    "frame_middle": "The hearts and stars continue to rise, now filling the middle of the screen, with a soft glow around them.",
+    "frame_last": "The hearts and stars reach the top of the frame, slowly dispersing into the sky, leaving a trail of faint light behind.",
+    "frame_json_raw": "{\"first\": \"A close-up of big, red hearts and small, twinkling stars begin to float upwards from the bottom of the frame.\", \"middle\": \"The hearts and stars continue to rise, now filling the middle of the screen, with a soft glow around them.\", \"last\": \"The hearts and stars reach the top of the frame, slowly dispersing into the sky, leaving a trail of faint light behind.\"}"
+  },
+  {
+    "caption": "A red bicycle races alongside a yellow taxi through the bustling streets",
+    "phrases": "A red bicycle races; a yellow taxi",
+    "frame_first": "A red bicycle speeds down a busy street, closely followed by a yellow taxi, both vehicles weaving through traffic.",
+    "frame_middle": "The red bicycle and yellow taxi are neck and neck, with the bicycle slightly ahead, as they race past pedestrians and other cars.",
+    "frame_last": "The yellow taxi narrowly overtakes the red bicycle at an intersection, with both vehicles disappearing into the distance among the city's moving vehicles.",
+    "frame_json_raw": "{\"first\": \"A red bicycle speeds down a busy street, closely followed by a yellow taxi, both vehicles weaving through traffic.\", \"middle\": \"The red bicycle and yellow taxi are neck and neck, with the bicycle slightly ahead, as they race past pedestrians and other cars.\", \"last\": \"The yellow taxi narrowly overtakes the red bicycle at an intersection, with both vehicles disappearing into the distance among the city's moving vehicles.\"}"
+  },
+  {
+    "caption": "A silver rocket launches past a blue skyscraper under a bright sky",
+    "phrases": "A silver rocket; a blue skyscraper",
+    "frame_first": "A silver rocket sits on a launchpad, with a blue skyscraper visible in the background under a bright, clear sky.",
+    "frame_middle": "The silver rocket ascends rapidly, leaving a trail of smoke, as it passes the midpoint of the blue skyscraper.",
+    "frame_last": "The silver rocket is now a small, distant speck in the sky, having surpassed the blue skyscraper, with the bright sky still clear and unobstructed.",
+    "frame_json_raw": "{\"first\": \"A silver rocket sits on a launchpad, with a blue skyscraper visible in the background under a bright, clear sky.\", \"middle\": \"The silver rocket ascends rapidly, leaving a trail of smoke, as it passes the midpoint of the blue skyscraper.\", \"last\": \"The silver rocket is now a small, distant speck in the sky, having surpassed the blue skyscraper, with the bright sky still clear and unobstructed.\"}"
+  },
+  {
+    "caption": "A green bird flutters near a blue window on a sunny day",
+    "phrases": "A green bird; a blue window",
+    "frame_first": "A green bird hovers just outside a blue window, its wings fluttering rapidly in the sunlight.",
+    "frame_middle": "The bird pauses, perched momentarily on the window sill, casting a small shadow inside the room.",
+    "frame_last": "The bird takes flight again, its green feathers glinting as it moves away from the blue window into the bright, sunny sky.",
+    "frame_json_raw": "{\"first\": \"A green bird hovers just outside a blue window, its wings fluttering rapidly in the sunlight.\", \"middle\": \"The bird pauses, perched momentarily on the window sill, casting a small shadow inside the room.\", \"last\": \"The bird takes flight again, its green feathers glinting as it moves away from the blue window into the bright, sunny sky.\"}"
+  },
+  {
+    "caption": "A pink balloon drifts past a green traffic light on the street",
+    "phrases": "A pink balloon; a green traffic light",
+    "frame_first": "A pink balloon floats into view from the left, approaching a green traffic light mounted on a pole.",
+    "frame_middle": "The pink balloon hovers in front of the green traffic light, slightly swaying in the breeze.",
+    "frame_last": "The pink balloon continues its drift, moving past the green traffic light towards the right of the frame.",
+    "frame_json_raw": "{\"first\": \"A pink balloon floats into view from the left, approaching a green traffic light mounted on a pole.\", \"middle\": \"The pink balloon hovers in front of the green traffic light, slightly swaying in the breeze.\", \"last\": \"The pink balloon continues its drift, moving past the green traffic light towards the right of the frame.\"}"
+  },
+  {
+    "caption": "A black motorcycle zooms alongside a green bus on a busy road",
+    "phrases": "A black motorcycle; a green bus",
+    "frame_first": "A black motorcycle speeds up from behind, gaining on a green bus as they travel down a busy, bustling road.",
+    "frame_middle": "The motorcycle is now level with the bus, both vehicles racing side by side on the crowded street.",
+    "frame_last": "The motorcycle pulls ahead, leaving the green bus behind as they continue down the busy road.",
+    "frame_json_raw": "{\"first\": \"A black motorcycle speeds up from behind, gaining on a green bus as they travel down a busy, bustling road.\", \"middle\": \"The motorcycle is now level with the bus, both vehicles racing side by side on the crowded street.\", \"last\": \"The motorcycle pulls ahead, leaving the green bus behind as they continue down the busy road.\"}"
+  },
+  {
+    "caption": "A white horse gallops past a brown fence, kicking up dust",
+    "phrases": "A white horse; a brown fence",
+    "frame_first": "A white horse begins to gallop towards a brown fence, hooves just lifting off the ground.",
+    "frame_middle": "The white horse leaps over the brown fence, dust swirling around its hooves.",
+    "frame_last": "The white horse lands on the other side of the brown fence, kicking up a cloud of dust behind it.",
+    "frame_json_raw": "{\"first\": \"A white horse begins to gallop towards a brown fence, hooves just lifting off the ground.\", \"middle\": \"The white horse leaps over the brown fence, dust swirling around its hooves.\", \"last\": \"The white horse lands on the other side of the brown fence, kicking up a cloud of dust behind it.\"}"
+  },
+  {
+    "caption": "A white pigeon circles above a blue suitcase, preparing to land",
+    "phrases": "A white pigeon; a blue suitcase",
+    "frame_first": "A white pigeon hovers above a blue suitcase, its wings flapping to maintain its position.",
+    "frame_middle": "The pigeon descends slowly, its feet extending towards the lid of the blue suitcase.",
+    "frame_last": "The pigeon lands gently on the blue suitcase, its wings folding as it settles.",
+    "frame_json_raw": "{\"first\": \"A white pigeon hovers above a blue suitcase, its wings flapping to maintain its position.\", \"middle\": \"The pigeon descends slowly, its feet extending towards the lid of the blue suitcase.\", \"last\": \"The pigeon lands gently on the blue suitcase, its wings folding as it settles.\"}"
+  },
+  {
+    "caption": "A blue boat sails past a white lighthouse, waves crashing around it",
+    "phrases": "A blue boat; a white lighthouse",
+    "frame_first": "A blue boat approaches a towering white lighthouse, waves splashing against its sides.",
+    "frame_middle": "The boat is now parallel to the lighthouse, with waves crashing rhythmically around it.",
+    "frame_last": "The blue boat sails away from the white lighthouse, leaving behind a trail of white-capped waves.",
+    "frame_json_raw": "{\"first\": \"A blue boat approaches a towering white lighthouse, waves splashing against its sides.\", \"middle\": \"The boat is now parallel to the lighthouse, with waves crashing rhythmically around it.\", \"last\": \"The blue boat sails away from the white lighthouse, leaving behind a trail of white-capped waves.\"}"
+  },
+  {
+    "caption": "A green soccer ball bounces near a yellow bench in the playground",
+    "phrases": "A green soccer ball; a yellow bench",
+    "frame_first": "A green soccer ball bounces towards a yellow bench under the bright sun in a playground.",
+    "frame_middle": "The ball pauses momentarily near the bench, casting a small shadow on the playground surface.",
+    "frame_last": "The ball rolls away from the bench, leaving the yellow bench static under the clear sky.",
+    "frame_json_raw": "{\"first\": \"A green soccer ball bounces towards a yellow bench under the bright sun in a playground.\", \"middle\": \"The ball pauses momentarily near the bench, casting a small shadow on the playground surface.\", \"last\": \"The ball rolls away from the bench, leaving the yellow bench static under the clear sky.\"}"
+  },
+  {
+    "caption": "A red fox sneaks past a green statue in the garden",
+    "phrases": "A red fox; a green statue",
+    "frame_first": "A red fox tiptoes quietly around a green statue, the garden is lush and serene under morning sunlight.",
+    "frame_middle": "The fox pauses, ears perked, in front of the green statue, the garden's shadows lengthen as the sun climbs.",
+    "frame_last": "The red fox darts past the green statue, leaving the tranquil garden behind as the light begins to soften in the afternoon.",
+    "frame_json_raw": "{\"first\": \"A red fox tiptoes quietly around a green statue, the garden is lush and serene under morning sunlight.\", \"middle\": \"The fox pauses, ears perked, in front of the green statue, the garden's shadows lengthen as the sun climbs.\", \"last\": \"The red fox darts past the green statue, leaving the tranquil garden behind as the light begins to soften in the afternoon.\"}"
+  },
+  {
+    "caption": "A yellow car passed by a red stop sign on a street",
+    "phrases": "A yellow car; a red stop sign",
+    "frame_first": "A yellow car approaches a red stop sign at the side of a street, the sun shining brightly.",
+    "frame_middle": "The yellow car slows down, passing by the red stop sign, with trees casting shadows on the road.",
+    "frame_last": "The yellow car continues down the street, leaving the red stop sign behind, with clear blue sky overhead.",
+    "frame_json_raw": "{\"first\": \"A yellow car approaches a red stop sign at the side of a street, the sun shining brightly.\", \"middle\": \"The yellow car slows down, passing by the red stop sign, with trees casting shadows on the road.\", \"last\": \"The yellow car continues down the street, leaving the red stop sign behind, with clear blue sky overhead.\"}"
+  },
+  {
+    "caption": "A blue ladder leans against a red farmhouse, feet stomping up each rung",
+    "phrases": "A blue ladder; a red farmhouse",
+    "frame_first": "A blue ladder leans against the white siding of a red farmhouse, the bottom rung just touching the grass.",
+    "frame_middle": "A figure's feet can be seen climbing up the ladder, each step causing a slight creak.",
+    "frame_last": "The figure reaches the top rung of the ladder, standing on it with one foot on the farmhouse roof.",
+    "frame_json_raw": "{\"first\": \"A blue ladder leans against the white siding of a red farmhouse, the bottom rung just touching the grass.\", \"middle\": \"A figure's feet can be seen climbing up the ladder, each step causing a slight creak.\", \"last\": \"The figure reaches the top rung of the ladder, standing on it with one foot on the farmhouse roof.\"}"
+  },
+  {
+    "caption": "A yellow pencil rolls off a purple notebook on the desk",
+    "phrases": "A yellow pencil; a purple notebook",
+    "frame_first": "A purple notebook sits on a desk, a yellow pencil perched on its edge.",
+    "frame_middle": "The yellow pencil begins to roll off the notebook, slowly descending towards the desk.",
+    "frame_last": "The yellow pencil comes to a stop on the desk surface after rolling off the purple notebook.",
+    "frame_json_raw": "{\"first\": \"A purple notebook sits on a desk, a yellow pencil perched on its edge.\", \"middle\": \"The yellow pencil begins to roll off the notebook, slowly descending towards the desk.\", \"last\": \"The yellow pencil comes to a stop on the desk surface after rolling off the purple notebook.\"}"
+  },
+  {
+    "caption": "A pink basket tumbles away from a blue picnic blanket, blown by a strong wind",
+    "phrases": "A pink basket; a blue picnic blanket",
+    "frame_first": "A blue picnic blanket is spread out in a field, and a pink basket sits at its edge, about to be caught by a gust of wind.",
+    "frame_middle": "The pink basket is airborne, tumbling end over end as a strong wind sweeps across the field.",
+    "frame_last": "The pink basket comes to a stop a few feet away from the blue picnic blanket, with the wind now dying down.",
+    "frame_json_raw": "{\"first\": \"A blue picnic blanket is spread out in a field, and a pink basket sits at its edge, about to be caught by a gust of wind.\", \"middle\": \"The pink basket is airborne, tumbling end over end as a strong wind sweeps across the field.\", \"last\": \"The pink basket comes to a stop a few feet away from the blue picnic blanket, with the wind now dying down.\"}"
+  },
+  {
+    "caption": "A blue umbrella spins near a green door, rain splattering all around",
+    "phrases": "A blue umbrella; a green door",
+    "frame_first": "A blue umbrella spins slowly in the air, hovering just in front of a green door, with raindrops splattering against the ground and door.",
+    "frame_middle": "The spinning umbrella casts a dynamic blur of blue, while rain continues to fall heavily, creating a misty veil around the green door.",
+    "frame_last": "The umbrella comes to a stop, now resting against the green door, with rain still splattering and creating puddles around it.",
+    "frame_json_raw": "{\"first\": \"A blue umbrella spins slowly in the air, hovering just in front of a green door, with raindrops splattering against the ground and door.\", \"middle\": \"The spinning umbrella casts a dynamic blur of blue, while rain continues to fall heavily, creating a misty veil around the green door.\", \"last\": \"The umbrella comes to a stop, now resting against the green door, with rain still splattering and creating puddles around it.\"}"
+  },
+  {
+    "caption": "A yellow hair drier blasts air onto a purple towel, making the fabric ripple gracefully",
+    "phrases": "A yellow hair drier; a purple towel",
+    "frame_first": "A purple towel lies flat on a white surface, and a yellow hair drier is positioned above it, about to turn on.",
+    "frame_middle": "The yellow hair drier starts blasting air, causing the purple towel to ripple and dance gently with the force of the air.",
+    "frame_last": "The purple towel is now fully rippled and lifted slightly by the continuous airstream from the yellow hair drier, creating a dynamic and flowing effect.",
+    "frame_json_raw": "{\"first\": \"A purple towel lies flat on a white surface, and a yellow hair drier is positioned above it, about to turn on.\", \"middle\": \"The yellow hair drier starts blasting air, causing the purple towel to ripple and dance gently with the force of the air.\", \"last\": \"The purple towel is now fully rippled and lifted slightly by the continuous airstream from the yellow hair drier, creating a dynamic and flowing effect.\"}"
+  },
+  {
+    "caption": "A red cushion flies through the air as a gray cat leaps to catch it",
+    "phrases": "A red cushion; a gray cat",
+    "frame_first": "A red cushion hovers in mid-air, launched from an unseen source, as a gray cat crouches, ready to pounce.",
+    "frame_middle": "The gray cat is in mid-leap, claws extended, aiming to catch the red cushion that's still floating above the floor.",
+    "frame_last": "The gray cat successfully catches the red cushion, now cradled in its paws, as it lands gracefully on the floor.",
+    "frame_json_raw": "{\"first\": \"A red cushion hovers in mid-air, launched from an unseen source, as a gray cat crouches, ready to pounce.\", \"middle\": \"The gray cat is in mid-leap, claws extended, aiming to catch the red cushion that's still floating above the floor.\", \"last\": \"The gray cat successfully catches the red cushion, now cradled in its paws, as it lands gracefully on the floor.\"}"
+  },
+  {
+    "caption": "A brown raccoon tips over a yellow bin, scavenging for snacks",
+    "phrases": "A brown raccoon; a yellow bin",
+    "frame_first": "A brown raccoon approaches a yellow bin, standing on its hind legs.",
+    "frame_middle": "The raccoon uses its paws to tip over the yellow bin, scattering contents.",
+    "frame_last": "The raccoon rummages through the spilled contents of the bin, searching for food.",
+    "frame_json_raw": "{\"first\": \"A brown raccoon approaches a yellow bin, standing on its hind legs.\", \"middle\": \"The raccoon uses its paws to tip over the yellow bin, scattering contents.\", \"last\": \"The raccoon rummages through the spilled contents of the bin, searching for food.\"}"
+  },
+  {
+    "caption": "A gray squirrel climbs onto a black remote, accidentally changing the channel",
+    "phrases": "A gray squirrel; a black remote",
+    "frame_first": "A gray squirrel approaches a black remote control sitting on a coffee table, its tiny paws reaching out.",
+    "frame_middle": "The squirrel's claws grip the buttons on the remote, pressing one accidentally as it tries to balance.",
+    "frame_last": "The squirrel sits atop the remote, looking confused as the TV flickers to a new channel behind it.",
+    "frame_json_raw": "{\"first\": \"A gray squirrel approaches a black remote control sitting on a coffee table, its tiny paws reaching out.\", \"middle\": \"The squirrel's claws grip the buttons on the remote, pressing one accidentally as it tries to balance.\", \"last\": \"The squirrel sits atop the remote, looking confused as the TV flickers to a new channel behind it.\"}"
+  },
+  {
+    "caption": "A golden monkey plays tennis with a blue tennis racket",
+    "phrases": "A golden monkey; a blue tennis racket",
+    "frame_first": "A golden monkey stands at the baseline of a tennis court, gripping a bright blue tennis racket, preparing to serve.",
+    "frame_middle": "The golden monkey swings the blue racket, hitting the tennis ball with precision, sending it flying towards the opposite side of the court.",
+    "frame_last": "The golden monkey watches the tennis ball land on the other side of the net, then grins triumphantly, holding the blue racket aloft.",
+    "frame_json_raw": "{\"first\": \"A golden monkey stands at the baseline of a tennis court, gripping a bright blue tennis racket, preparing to serve.\", \"middle\": \"The golden monkey swings the blue racket, hitting the tennis ball with precision, sending it flying towards the opposite side of the court.\", \"last\": \"The golden monkey watches the tennis ball land on the other side of the net, then grins triumphantly, holding the blue racket aloft.\"}"
+  },
+  {
+    "caption": "A white rabbit hops across a red carpet in a living room",
+    "phrases": "A white rabbit; a red carpet",
+    "frame_first": "A white rabbit stands at the edge of a red carpet in a cozy living room, about to hop.",
+    "frame_middle": "The white rabbit is mid-hop across the red carpet, its ears flopping as it moves.",
+    "frame_last": "The white rabbit lands gracefully on the red carpet, looking around the living room with curiosity.",
+    "frame_json_raw": "{\"first\": \"A white rabbit stands at the edge of a red carpet in a cozy living room, about to hop.\", \"middle\": \"The white rabbit is mid-hop across the red carpet, its ears flopping as it moves.\", \"last\": \"The white rabbit lands gracefully on the red carpet, looking around the living room with curiosity.\"}"
+  },
+  {
+    "caption": "A yellow teddy bear has breakfast from a blue bowl, sitting on the dining table",
+    "phrases": "A yellow teddy bear; a blue bowl",
+    "frame_first": "A yellow teddy bear sits at a dining table, a blue bowl in front of it, filled with cereal and milk.",
+    "frame_middle": "The teddy bear is using small plastic utensils to eat from the blue bowl, its paws wrapped around the spoon.",
+    "frame_last": "The teddy bear finishes breakfast, placing the now empty blue bowl on the table and wiping its mouth with a napkin.",
+    "frame_json_raw": "{\"first\": \"A yellow teddy bear sits at a dining table, a blue bowl in front of it, filled with cereal and milk.\", \"middle\": \"The teddy bear is using small plastic utensils to eat from the blue bowl, its paws wrapped around the spoon.\", \"last\": \"The teddy bear finishes breakfast, placing the now empty blue bowl on the table and wiping its mouth with a napkin.\"}"
+  },
+  {
+    "caption": "A green spaceship zooms past a purple airplane in the sky",
+    "phrases": "A green spaceship; a purple airplane",
+    "frame_first": "A green spaceship approaches from the left, its sleek design catching the sunlight.",
+    "frame_middle": "The spaceship and a purple airplane pass each other mid-air, their contrasting colors vivid against the blue sky.",
+    "frame_last": "The purple airplane is left behind as the green spaceship speeds off to the right, disappearing into the distance.",
+    "frame_json_raw": "{\"first\": \"A green spaceship approaches from the left, its sleek design catching the sunlight.\", \"middle\": \"The spaceship and a purple airplane pass each other mid-air, their contrasting colors vivid against the blue sky.\", \"last\": \"The purple airplane is left behind as the green spaceship speeds off to the right, disappearing into the distance.\"}"
+  },
+  {
+    "caption": "A pink teddy bear sits on a black oven in the kitchen",
+    "phrases": "A pink teddy bear; a black oven",
+    "frame_first": "A pink teddy bear sits centered on a black oven, the kitchen backdrop filled with morning light.",
+    "frame_middle": "The teddy bear remains still on the oven, with sunlight streaming through a nearby window, casting a soft glow.",
+    "frame_last": "The pink teddy bear is still perched on the black oven, the kitchen gradually dimming as the day turns to evening.",
+    "frame_json_raw": "{\"first\": \"A pink teddy bear sits centered on a black oven, the kitchen backdrop filled with morning light.\", \"middle\": \"The teddy bear remains still on the oven, with sunlight streaming through a nearby window, casting a soft glow.\", \"last\": \"The pink teddy bear is still perched on the black oven, the kitchen gradually dimming as the day turns to evening.\"}"
+  },
+  {
+    "caption": "A white kitten naps in a purple bathtub, paws stretched out as it dreams peacefully",
+    "phrases": "A white kitten; a purple bathtub",
+    "frame_first": "A white kitten lies asleep in a purple bathtub, paws stretched out.",
+    "frame_middle": "The kitten's chest rises and falls gently, indicating peaceful dreaming.",
+    "frame_last": "Soft light filters into the room, casting a gentle glow on the kitten and the purple tub.",
+    "frame_json_raw": "{\"first\": \"A white kitten lies asleep in a purple bathtub, paws stretched out.\", \"middle\": \"The kitten's chest rises and falls gently, indicating peaceful dreaming.\", \"last\": \"Soft light filters into the room, casting a gentle glow on the kitten and the purple tub.\"}"
+  },
+  {
+    "caption": "A girl in a red dress rides a blue bicycle in the park",
+    "phrases": "A girl in a red dress; a blue bicycle",
+    "frame_first": "A girl wearing a red dress mounts a blue bicycle at the entrance of a park.",
+    "frame_middle": "The girl pedals the blue bicycle down a winding path, surrounded by lush green trees and flowers in full bloom.",
+    "frame_last": "The girl in the red dress comes to a gentle stop under a large oak tree, her blue bicycle steady beside her.",
+    "frame_json_raw": "{\"first\": \"A girl wearing a red dress mounts a blue bicycle at the entrance of a park.\", \"middle\": \"The girl pedals the blue bicycle down a winding path, surrounded by lush green trees and flowers in full bloom.\", \"last\": \"The girl in the red dress comes to a gentle stop under a large oak tree, her blue bicycle steady beside her.\"}"
+  },
+  {
+    "caption": "A little boy wearing a green jacket have a meal with a red spoon",
+    "phrases": "A little boy; a red spoon",
+    "frame_first": "A little boy in a green jacket sits at a small table, picking up a red spoon.",
+    "frame_middle": "The boy brings the red spoon filled with food to his mouth, his eyes focused on the meal.",
+    "frame_last": "The boy pauses, looking satisfied, with the red spoon halfway between his plate and mouth.",
+    "frame_json_raw": "{\"first\": \"A little boy in a green jacket sits at a small table, picking up a red spoon.\", \"middle\": \"The boy brings the red spoon filled with food to his mouth, his eyes focused on the meal.\", \"last\": \"The boy pauses, looking satisfied, with the red spoon halfway between his plate and mouth.\"}"
+  },
+  {
+    "caption": "A lady wearing a pink dress holds a green umbrella, twirling it as she dances in the rain",
+    "phrases": "A lady wearing a pink dress; a green umbrella",
+    "frame_first": "A lady in a pink dress stands under a green umbrella, beginning to twirl it as raindrops fall around her.",
+    "frame_middle": "The lady continues to dance and twirl the green umbrella, with rain splashing lightly around her.",
+    "frame_last": "The lady finishes her twirl, holding the green umbrella high above her head, smiling as raindrops glisten in the air around her.",
+    "frame_json_raw": "{\"first\": \"A lady in a pink dress stands under a green umbrella, beginning to twirl it as raindrops fall around her.\", \"middle\": \"The lady continues to dance and twirl the green umbrella, with rain splashing lightly around her.\", \"last\": \"The lady finishes her twirl, holding the green umbrella high above her head, smiling as raindrops glisten in the air around her.\"}"
+  },
+  {
+    "caption": "A grandmother in a purple shawl knits beside a golden fireplace",
+    "phrases": "A grandmother in a purple shawl; a golden fireplace",
+    "frame_first": "A grandmother sits in a cozy armchair, wrapped in a deep purple shawl, her hands deftly working knitting needles.",
+    "frame_middle": "The golden glow of the fireplace casts a warm light on the grandmother's serene face, highlighting the intricate pattern forming on her knitting.",
+    "frame_last": "The grandmother pauses, looking fondly at her knitting project, the fire crackling softly in the background, filling the room with a gentle warmth.",
+    "frame_json_raw": "{\"first\": \"A grandmother sits in a cozy armchair, wrapped in a deep purple shawl, her hands deftly working knitting needles.\", \"middle\": \"The golden glow of the fireplace casts a warm light on the grandmother's serene face, highlighting the intricate pattern forming on her knitting.\", \"last\": \"The grandmother pauses, looking fondly at her knitting project, the fire crackling softly in the background, filling the room with a gentle warmth.\"}"
+  },
+  {
+    "caption": "A father in a green vest pitches a yellow tent, securing each peg with careful precision",
+    "phrases": "A father in a green vest; a yellow tent",
+    "frame_first": "A father wearing a green vest stands outside, unfolding a bright yellow tent on a clear, sunny day.",
+    "frame_middle": "The father crouches down, meticulously hammering in a tent peg with a small mallet, ensuring it's secure.",
+    "frame_last": "With the final peg secured, the father steps back, surveying the fully pitched yellow tent with a satisfied nod.",
+    "frame_json_raw": "{\"first\": \"A father wearing a green vest stands outside, unfolding a bright yellow tent on a clear, sunny day.\", \"middle\": \"The father crouches down, meticulously hammering in a tent peg with a small mallet, ensuring it's secure.\", \"last\": \"With the final peg secured, the father steps back, surveying the fully pitched yellow tent with a satisfied nod.\"}"
+  },
+  {
+    "caption": "A mother in a pink blouse pushes a brown stroller in a park",
+    "phrases": "A mother in a pink blouse; a brown stroller",
+    "frame_first": "A mother wearing a pink blouse pushes a brown stroller along a park path, surrounded by lush green trees.",
+    "frame_middle": "The mother glances back over her shoulder, smiling, as she continues to push the stroller past a playground.",
+    "frame_last": "Stopping by a flowering bush, the mother leans to smell a flower, the stroller parked beside her.",
+    "frame_json_raw": "{\"first\": \"A mother wearing a pink blouse pushes a brown stroller along a park path, surrounded by lush green trees.\", \"middle\": \"The mother glances back over her shoulder, smiling, as she continues to push the stroller past a playground.\", \"last\": \"Stopping by a flowering bush, the mother leans to smell a flower, the stroller parked beside her.\"}"
+  },
+  {
+    "caption": "A king dressed in gold swings a blue sword in the palace",
+    "phrases": "A king dressed in gold; a blue sword",
+    "frame_first": "In a grand palace hall, a king in a golden robe stands at the center, raising a blue sword above his head.",
+    "frame_middle": "The king swings the blue sword with force, the blade gleaming under the chandelier's light, creating a dramatic arc.",
+    "frame_last": "The king pauses, the blue sword held horizontally in front of him, his eyes scanning the hall with a regal presence.",
+    "frame_json_raw": "{\"first\": \"In a grand palace hall, a king in a golden robe stands at the center, raising a blue sword above his head.\", \"middle\": \"The king swings the blue sword with force, the blade gleaming under the chandelier's light, creating a dramatic arc.\", \"last\": \"The king pauses, the blue sword held horizontally in front of him, his eyes scanning the hall with a regal presence.\"}"
+  },
+  {
+    "caption": "A cowboy in a white hat lassos a black bull on a sunny day",
+    "phrases": "A cowboy in a white hat; a black bull",
+    "frame_first": "A cowboy wearing a white hat stands in a sunlit arena, preparing to lasso a black bull.",
+    "frame_middle": "The cowboy swings the lasso, the rope spinning in the air as the black bull charges towards him.",
+    "frame_last": "The lasso tightens around the bull's neck, the cowboy holds the rope steady, both subjects silhouetted against the bright, sunny sky.",
+    "frame_json_raw": "{\"first\": \"A cowboy wearing a white hat stands in a sunlit arena, preparing to lasso a black bull.\", \"middle\": \"The cowboy swings the lasso, the rope spinning in the air as the black bull charges towards him.\", \"last\": \"The lasso tightens around the bull's neck, the cowboy holds the rope steady, both subjects silhouetted against the bright, sunny sky.\"}"
+  },
+  {
+    "caption": "A girl in a black dress watering a green rose in the garden",
+    "phrases": "A girl in a black dress; a green rose",
+    "frame_first": "A girl in a black dress stands in a garden, holding a watering can, about to water a green rose.",
+    "frame_middle": "The girl bends slightly, pouring water gently onto the green rose, which stands out vividly against the garden backdrop.",
+    "frame_last": "The girl straightens up, the green rose now glistening with water droplets, as she smiles at her care for the plant.",
+    "frame_json_raw": "{\"first\": \"A girl in a black dress stands in a garden, holding a watering can, about to water a green rose.\", \"middle\": \"The girl bends slightly, pouring water gently onto the green rose, which stands out vividly against the garden backdrop.\", \"last\": \"The girl straightens up, the green rose now glistening with water droplets, as she smiles at her care for the plant.\"}"
+  },
+  {
+    "caption": "A baby in a yellow onesie claps happily as a blue robot dances in front of them",
+    "phrases": "A baby in a yellow onesie; a blue robot",
+    "frame_first": "A baby in a bright yellow onesie sits on a soft rug, eyes wide with joy, about to clap.",
+    "frame_middle": "The blue robot, with glowing eyes, performs an energetic dance move in front of the baby, who is clapping happily.",
+    "frame_last": "The baby, now laughing, continues to clap while the robot strikes a playful pose, completing its dance routine.",
+    "frame_json_raw": "{\"first\": \"A baby in a bright yellow onesie sits on a soft rug, eyes wide with joy, about to clap.\", \"middle\": \"The blue robot, with glowing eyes, performs an energetic dance move in front of the baby, who is clapping happily.\", \"last\": \"The baby, now laughing, continues to clap while the robot strikes a playful pose, completing its dance routine.\"}"
+  },
+  {
+    "caption": "A girl in a pink hat chases a white kitten, her laughter filling the garden",
+    "phrases": "A girl in a pink hat; a white kitten",
+    "frame_first": "A girl wearing a pink hat runs across a sunlit garden, her eyes fixed on a white kitten darting ahead.",
+    "frame_middle": "The girl's laughter echoes as she continues the chase, the kitten playfully weaving between colorful flower beds.",
+    "frame_last": "Breathless and smiling, the girl finally catches up to the kitten under a blooming tree, both pausing to rest.",
+    "frame_json_raw": "{\"first\": \"A girl wearing a pink hat runs across a sunlit garden, her eyes fixed on a white kitten darting ahead.\", \"middle\": \"The girl's laughter echoes as she continues the chase, the kitten playfully weaving between colorful flower beds.\", \"last\": \"Breathless and smiling, the girl finally catches up to the kitten under a blooming tree, both pausing to rest.\"}"
+  },
+  {
+    "caption": "A toddler in a red onesie hugs a white teddy bear, snuggling it tightly",
+    "phrases": "A toddler in a red onesie; a white teddy bear",
+    "frame_first": "A toddler wearing a red onesie is reaching out to a white teddy bear, about to hug it.",
+    "frame_middle": "The toddler is hugging the white teddy bear tightly, snuggling it close to their chest.",
+    "frame_last": "The toddler, still in the red onesie, is holding the teddy bear securely, both sitting on a soft, cozy rug.",
+    "frame_json_raw": "{\"first\": \"A toddler wearing a red onesie is reaching out to a white teddy bear, about to hug it.\", \"middle\": \"The toddler is hugging the white teddy bear tightly, snuggling it close to their chest.\", \"last\": \"The toddler, still in the red onesie, is holding the teddy bear securely, both sitting on a soft, cozy rug.\"}"
+  },
+  {
+    "caption": "A DJ in a purple hoodie adjusts a green turntable, music echoing through the venue",
+    "phrases": "A DJ in a purple hoodie; a green turntable",
+    "frame_first": "A DJ wearing a purple hoodie stands in front of a green turntable, his hands hovering over the vinyl.",
+    "frame_middle": "The DJ's fingers deftly manipulate the turntable, adjusting the music as the venue fills with the echoing beats.",
+    "frame_last": "The DJ steps back, a satisfied look on his face, as the music continues to resonate through the space.",
+    "frame_json_raw": "{\"first\": \"A DJ wearing a purple hoodie stands in front of a green turntable, his hands hovering over the vinyl.\", \"middle\": \"The DJ's fingers deftly manipulate the turntable, adjusting the music as the venue fills with the echoing beats.\", \"last\": \"The DJ steps back, a satisfied look on his face, as the music continues to resonate through the space.\"}"
+  },
+  {
+    "caption": "A girl in a yellow dress races a boy in a blue hoodie, both laughing as they run through the park",
+    "phrases": "A girl in a yellow dress; a boy in a blue hoodie",
+    "frame_first": "A girl in a yellow dress and a boy in a blue hoodie start running side by side, both laughing, in a sunlit park.",
+    "frame_middle": "The girl in the yellow dress and the boy in the blue hoodie are mid-laugh, sprinting past a row of trees in the park.",
+    "frame_last": "The laughing girl in the yellow dress and the boy in the blue hoodie reach a grassy clearing, still racing each other in the park.",
+    "frame_json_raw": "{\"first\": \"A girl in a yellow dress and a boy in a blue hoodie start running side by side, both laughing, in a sunlit park.\", \"middle\": \"The girl in the yellow dress and the boy in the blue hoodie are mid-laugh, sprinting past a row of trees in the park.\", \"last\": \"The laughing girl in the yellow dress and the boy in the blue hoodie reach a grassy clearing, still racing each other in the park.\"}"
+  },
+  {
+    "caption": "A boy in a yellow shirt tosses a football to a girl in a blue shirt, both focused on the game",
+    "phrases": "A boy in a yellow shirt; a girl in a blue shirt",
+    "frame_first": "A boy in a yellow shirt stands on a sunny field, preparing to toss a football to a girl in a blue shirt who is running towards him.",
+    "frame_middle": "The football arcs through the air, sunlight glinting off it as the boy watches intently and the girl extends her arms to catch it.",
+    "frame_last": "The girl in the blue shirt successfully catches the football, both children smiling and looking at each other, the field bathed in warm afternoon light.",
+    "frame_json_raw": "{\"first\": \"A boy in a yellow shirt stands on a sunny field, preparing to toss a football to a girl in a blue shirt who is running towards him.\", \"middle\": \"The football arcs through the air, sunlight glinting off it as the boy watches intently and the girl extends her arms to catch it.\", \"last\": \"The girl in the blue shirt successfully catches the football, both children smiling and looking at each other, the field bathed in warm afternoon light.\"}"
+  },
+  {
+    "caption": "A blue scarf flutters away from a yellow handbag, carried by the wind",
+    "phrases": "A blue scarf; a yellow handbag",
+    "frame_first": "A yellow handbag sits on a bench as a blue scarf begins to flutter away, caught by a gentle breeze.",
+    "frame_middle": "The blue scarf dances in the air, fully detached from the handbag, twisting and turning with the wind.",
+    "frame_last": "The blue scarf lands gracefully on a nearby bush, while the yellow handbag remains stationary on the bench.",
+    "frame_json_raw": "{\"first\": \"A yellow handbag sits on a bench as a blue scarf begins to flutter away, caught by a gentle breeze.\", \"middle\": \"The blue scarf dances in the air, fully detached from the handbag, twisting and turning with the wind.\", \"last\": \"The blue scarf lands gracefully on a nearby bush, while the yellow handbag remains stationary on the bench.\"}"
+  },
+  {
+    "caption": "A yellow scarf flutters away from a blue handbag, carried by the wind",
+    "phrases": "A yellow scarf; a blue handbag",
+    "frame_first": "A blue handbag sits on a bench as a yellow scarf begins to flutter away, caught by a gentle breeze.",
+    "frame_middle": "The yellow scarf dances in the air, fully detached from the handbag, as the wind carries it further away.",
+    "frame_last": "The yellow scarf lands gracefully on a nearby bush, while the blue handbag remains stationary on the bench.",
+    "frame_json_raw": "{\"first\": \"A blue handbag sits on a bench as a yellow scarf begins to flutter away, caught by a gentle breeze.\", \"middle\": \"The yellow scarf dances in the air, fully detached from the handbag, as the wind carries it further away.\", \"last\": \"The yellow scarf lands gracefully on a nearby bush, while the blue handbag remains stationary on the bench.\"}"
+  },
+  {
+    "caption": "A blue ball rolls near a red backpack on the playground field",
+    "phrases": "A blue ball; a red backpack",
+    "frame_first": "A blue ball rolls slowly across the playground field, approaching a red backpack.",
+    "frame_middle": "The ball pauses briefly beside the red backpack, casting a small shadow in the afternoon sun.",
+    "frame_last": "The blue ball rolls away from the red backpack, leaving it alone on the playground field.",
+    "frame_json_raw": "{\"first\": \"A blue ball rolls slowly across the playground field, approaching a red backpack.\", \"middle\": \"The ball pauses briefly beside the red backpack, casting a small shadow in the afternoon sun.\", \"last\": \"The blue ball rolls away from the red backpack, leaving it alone on the playground field.\"}"
+  },
+  {
+    "caption": "A red ball rolls near a blue backpack on the playground field",
+    "phrases": "A red ball; a blue backpack",
+    "frame_first": "A red ball rolls slowly across the playground field, approaching a blue backpack.",
+    "frame_middle": "The red ball pauses briefly beside the blue backpack, casting a small shadow in the afternoon sun.",
+    "frame_last": "The red ball rolls away from the blue backpack, leaving it alone on the playground field.",
+    "frame_json_raw": "{\"first\": \"A red ball rolls slowly across the playground field, approaching a blue backpack.\", \"middle\": \"The red ball pauses briefly beside the blue backpack, casting a small shadow in the afternoon sun.\", \"last\": \"The red ball rolls away from the blue backpack, leaving it alone on the playground field.\"}"
+  },
+  {
+    "caption": "A yellow frisbee spins away from a blue dog, the dog leaping to catch it mid-air",
+    "phrases": "A yellow frisbee; a blue dog",
+    "frame_first": "A blue dog stands alert in a sunny field, a yellow frisbee begins to spin away from it.",
+    "frame_middle": "The blue dog leaps high into the air, mouth open, the yellow frisbee still spinning towards it.",
+    "frame_last": "The blue dog catches the yellow frisbee mid-air, suspended briefly in a victorious pose.",
+    "frame_json_raw": "{\"first\": \"A blue dog stands alert in a sunny field, a yellow frisbee begins to spin away from it.\", \"middle\": \"The blue dog leaps high into the air, mouth open, the yellow frisbee still spinning towards it.\", \"last\": \"The blue dog catches the yellow frisbee mid-air, suspended briefly in a victorious pose.\"}"
+  },
+  {
+    "caption": "A blue frisbee spins away from a yellow dog, the dog leaping to catch it mid-air",
+    "phrases": "A blue frisbee; a yellow dog",
+    "frame_first": "A yellow dog stands alert in a sunny field, a blue frisbee begins to spin away from it.",
+    "frame_middle": "The dog leaps high into the air, mouth open, the blue frisbee spinning closer to its reach.",
+    "frame_last": "The dog catches the frisbee mid-air, suspended briefly in a victorious leap.",
+    "frame_json_raw": "{\"first\": \"A yellow dog stands alert in a sunny field, a blue frisbee begins to spin away from it.\", \"middle\": \"The dog leaps high into the air, mouth open, the blue frisbee spinning closer to its reach.\", \"last\": \"The dog catches the frisbee mid-air, suspended briefly in a victorious leap.\"}"
+  },
+  {
+    "caption": "A green potted plant sways as an orange cat darts by, leaves rustling in the sudden movement",
+    "phrases": "A green potted plant; an orange cat",
+    "frame_first": "A green potted plant stands still in a sunlit room, its leaves gently illuminated.",
+    "frame_middle": "An orange cat darts past the plant, causing the leaves to rustle and sway with its sudden movement.",
+    "frame_last": "The plant settles back, leaves slowly returning to rest as the cat disappears out of frame.",
+    "frame_json_raw": "{\"first\": \"A green potted plant stands still in a sunlit room, its leaves gently illuminated.\", \"middle\": \"An orange cat darts past the plant, causing the leaves to rustle and sway with its sudden movement.\", \"last\": \"The plant settles back, leaves slowly returning to rest as the cat disappears out of frame.\"}"
+  },
+  {
+    "caption": "An orange potted plant sways as a green cat darts by, leaves rustling in the sudden movement",
+    "phrases": "An orange potted plant; a green cat",
+    "frame_first": "An orange potted plant stands still in a sunlit room, its leaves gently illuminated.",
+    "frame_middle": "A green cat darts past the plant, causing the leaves to rustle and sway with its sudden movement.",
+    "frame_last": "The plant settles back, leaves slightly moving from the residual air from the cat's swift passage.",
+    "frame_json_raw": "{\"first\": \"An orange potted plant stands still in a sunlit room, its leaves gently illuminated.\", \"middle\": \"A green cat darts past the plant, causing the leaves to rustle and sway with its sudden movement.\", \"last\": \"The plant settles back, leaves slightly moving from the residual air from the cat's swift passage.\"}"
+  },
+  {
+    "caption": "A green parrot perches atop a red fire hydrant, fluttering its wings to stay balanced",
+    "phrases": "A green parrot; a red fire hydrant",
+    "frame_first": "A green parrot perches on top of a red fire hydrant, its wings slightly spread for balance.",
+    "frame_middle": "The parrot flutters its wings more vigorously, maintaining its balance on the narrow top of the hydrant.",
+    "frame_last": "The parrot settles down, wings now still, as it comfortably rests on the red fire hydrant.",
+    "frame_json_raw": "{\"first\": \"A green parrot perches on top of a red fire hydrant, its wings slightly spread for balance.\", \"middle\": \"The parrot flutters its wings more vigorously, maintaining its balance on the narrow top of the hydrant.\", \"last\": \"The parrot settles down, wings now still, as it comfortably rests on the red fire hydrant.\"}"
+  },
+  {
+    "caption": "A red parrot perches atop a green fire hydrant, fluttering its wings to stay balanced",
+    "phrases": "A red parrot; a green fire hydrant",
+    "frame_first": "A red parrot perches on top of a green fire hydrant, its wings slightly spread.",
+    "frame_middle": "The parrot flutters its wings rapidly, maintaining its balance on the narrow top of the hydrant.",
+    "frame_last": "The parrot settles down, wings now still, as it looks around from its high perch on the green fire hydrant.",
+    "frame_json_raw": "{\"first\": \"A red parrot perches on top of a green fire hydrant, its wings slightly spread.\", \"middle\": \"The parrot flutters its wings rapidly, maintaining its balance on the narrow top of the hydrant.\", \"last\": \"The parrot settles down, wings now still, as it looks around from its high perch on the green fire hydrant.\"}"
+  },
+  {
+    "caption": "A bride in a white gown holds a blue bouquet, petals fluttering as she walks down the aisle",
+    "phrases": "A bride in a white gown; a blue bouquet",
+    "frame_first": "A bride in a flowing white gown stands at the altar, holding a blue bouquet with petals gently fluttering around her.",
+    "frame_middle": "The bride walks down the aisle, her train trailing behind her, with sunlight streaming through the stained glass windows.",
+    "frame_last": "The bride reaches the end of the aisle, turning to face the congregation, her bouquet now slightly less full as more petals have fluttered away.",
+    "frame_json_raw": "{\"first\": \"A bride in a flowing white gown stands at the altar, holding a blue bouquet with petals gently fluttering around her.\", \"middle\": \"The bride walks down the aisle, her train trailing behind her, with sunlight streaming through the stained glass windows.\", \"last\": \"The bride reaches the end of the aisle, turning to face the congregation, her bouquet now slightly less full as more petals have fluttered away.\"}"
+  },
+  {
+    "caption": "A bride in a blue gown holds a white bouquet, petals fluttering as she walks down the aisle",
+    "phrases": "A bride in a blue gown; a white bouquet",
+    "frame_first": "A bride in a stunning blue gown stands at the altar, holding a white bouquet, with the church aisle stretching ahead.",
+    "frame_middle": "The bride walks gracefully down the aisle, petals from her bouquet fluttering gently around her.",
+    "frame_last": "The bride reaches the end of the aisle, her dress flowing behind her, as she faces her groom.",
+    "frame_json_raw": "{\"first\": \"A bride in a stunning blue gown stands at the altar, holding a white bouquet, with the church aisle stretching ahead.\", \"middle\": \"The bride walks gracefully down the aisle, petals from her bouquet fluttering gently around her.\", \"last\": \"The bride reaches the end of the aisle, her dress flowing behind her, as she faces her groom.\"}"
+  },
+  {
+    "caption": "A blue dolphin leaping over a pink sailboat, splashing sparkling droplets everywhere",
+    "phrases": "A blue dolphin; a pink sailboat",
+    "frame_first": "A blue dolphin arcs gracefully out of the ocean, just about to leap over a pink sailboat, with the sun glinting off its wet skin.",
+    "frame_middle": "The dolphin is at the peak of its leap, its tail just grazing the pink sailboat, causing a burst of sparkling droplets to scatter in the air.",
+    "frame_last": "The dolphin lands back into the water with a splash, creating ripples around the pink sailboat, while droplets glisten in the sunlight.",
+    "frame_json_raw": "{\"first\": \"A blue dolphin arcs gracefully out of the ocean, just about to leap over a pink sailboat, with the sun glinting off its wet skin.\", \"middle\": \"The dolphin is at the peak of its leap, its tail just grazing the pink sailboat, causing a burst of sparkling droplets to scatter in the air.\", \"last\": \"The dolphin lands back into the water with a splash, creating ripples around the pink sailboat, while droplets glisten in the sunlight.\"}"
+  },
+  {
+    "caption": "A pink dolphin leaping over a blue sailboat, splashing sparkling droplets everywhere",
+    "phrases": "A pink dolphin; a blue sailboat",
+    "frame_first": "A pink dolphin arcs gracefully out of the water, just about to clear a blue sailboat, with sunlight glinting off its sleek body.",
+    "frame_middle": "The dolphin is at the peak of its leap, a blue sailboat with flapping sails beneath it, as droplets of water scatter in all directions.",
+    "frame_last": "The dolphin re-enters the water with a loud splash, creating a spray of sparkling droplets that glisten in the sunlight, while the sailboat continues its serene journey.",
+    "frame_json_raw": "{\"first\": \"A pink dolphin arcs gracefully out of the water, just about to clear a blue sailboat, with sunlight glinting off its sleek body.\", \"middle\": \"The dolphin is at the peak of its leap, a blue sailboat with flapping sails beneath it, as droplets of water scatter in all directions.\", \"last\": \"The dolphin re-enters the water with a loud splash, creating a spray of sparkling droplets that glisten in the sunlight, while the sailboat continues its serene journey.\"}"
+  },
+  {
+    "caption": "A yellow crab scuttling beside a red surfboard on the sandy shore",
+    "phrases": "A yellow crab; a red surfboard",
+    "frame_first": "A yellow crab scuttles along the sandy shore, its claws clicking against the grains, beside a stationary red surfboard.",
+    "frame_middle": "The crab pauses briefly, its eyes darting around, still in close proximity to the vibrant red surfboard.",
+    "frame_last": "The crab continues its journey, moving further away from the red surfboard, leaving it alone on the sandy shore.",
+    "frame_json_raw": "{\"first\": \"A yellow crab scuttles along the sandy shore, its claws clicking against the grains, beside a stationary red surfboard.\", \"middle\": \"The crab pauses briefly, its eyes darting around, still in close proximity to the vibrant red surfboard.\", \"last\": \"The crab continues its journey, moving further away from the red surfboard, leaving it alone on the sandy shore.\"}"
+  },
+  {
+    "caption": "A red crab scuttling beside a yellow surfboard on the sandy shore",
+    "phrases": "A red crab; a yellow surfboard",
+    "frame_first": "A red crab scuttles along the sandy shore, its claws clicking against the grains, beside a bright yellow surfboard tilted slightly in the sand.",
+    "frame_middle": "The crab pauses, its eyes darting around, while the surfboard remains still under a clear blue sky, the sun casting long shadows.",
+    "frame_last": "The red crab continues its journey away from the surfboard, leaving behind the yellow board and the soft footprints in the sand.",
+    "frame_json_raw": "{\"first\": \"A red crab scuttles along the sandy shore, its claws clicking against the grains, beside a bright yellow surfboard tilted slightly in the sand.\", \"middle\": \"The crab pauses, its eyes darting around, while the surfboard remains still under a clear blue sky, the sun casting long shadows.\", \"last\": \"The red crab continues its journey away from the surfboard, leaving behind the yellow board and the soft footprints in the sand.\"}"
+  },
+  {
+    "caption": "A purple tractor pulling a cart of orange carrots",
+    "phrases": "A purple tractor; a cart of orange carrots",
+    "frame_first": "A purple tractor stands at the edge of a carrot field, the cart attached behind it empty, ready to be filled.",
+    "frame_middle": "The purple tractor moves through the field, pulling a cart now filled with freshly harvested orange carrots.",
+    "frame_last": "The tractor slows to a stop, the cart brimming with orange carrots, as the last row of the field is harvested.",
+    "frame_json_raw": "{\"first\": \"A purple tractor stands at the edge of a carrot field, the cart attached behind it empty, ready to be filled.\", \"middle\": \"The purple tractor moves through the field, pulling a cart now filled with freshly harvested orange carrots.\", \"last\": \"The tractor slows to a stop, the cart brimming with orange carrots, as the last row of the field is harvested.\"}"
+  },
+  {
+    "caption": "An orange tractor pulling a cart of purple carrots",
+    "phrases": "An orange tractor; a cart of purple carrots",
+    "frame_first": "An orange tractor stands at the edge of a field, the sun rising behind it, with a cart filled with purple carrots attached to the back.",
+    "frame_middle": "The tractor moves steadily across the field, the cart of purple carrots swaying slightly behind it, casting long shadows in the morning light.",
+    "frame_last": "The tractor reaches the end of the field, the cart of purple carrots now empty, with the tractor operator getting off to inspect the harvested carrots.",
+    "frame_json_raw": "{\"first\": \"An orange tractor stands at the edge of a field, the sun rising behind it, with a cart filled with purple carrots attached to the back.\", \"middle\": \"The tractor moves steadily across the field, the cart of purple carrots swaying slightly behind it, casting long shadows in the morning light.\", \"last\": \"The tractor reaches the end of the field, the cart of purple carrots now empty, with the tractor operator getting off to inspect the harvested carrots.\"}"
+  },
+  {
+    "caption": "A girl in green dress playing a black piano",
+    "phrases": "A girl in green dress; a black piano",
+    "frame_first": "A girl in a green dress sits at a black piano, her fingers poised above the keys.",
+    "frame_middle": "The girl's fingers dance across the black and white keys of the piano, creating a melody.",
+    "frame_last": "The girl concludes her performance, lifting her hands from the piano keys with a satisfied smile.",
+    "frame_json_raw": "{\"first\": \"A girl in a green dress sits at a black piano, her fingers poised above the keys.\", \"middle\": \"The girl's fingers dance across the black and white keys of the piano, creating a melody.\", \"last\": \"The girl concludes her performance, lifting her hands from the piano keys with a satisfied smile.\"}"
+  },
+  {
+    "caption": "A girl in black dress playing a green piano",
+    "phrases": "A girl in black dress; a green piano",
+    "frame_first": "A girl in a black dress sits at a green piano, her fingers poised above the keys.",
+    "frame_middle": "The girl's hands move gracefully across the green piano keys, her dress swaying slightly with her motion.",
+    "frame_last": "The girl finishes playing, her hands resting on the green piano, a satisfied smile on her face as she looks up.",
+    "frame_json_raw": "{\"first\": \"A girl in a black dress sits at a green piano, her fingers poised above the keys.\", \"middle\": \"The girl's hands move gracefully across the green piano keys, her dress swaying slightly with her motion.\", \"last\": \"The girl finishes playing, her hands resting on the green piano, a satisfied smile on her face as she looks up.\"}"
+  },
+  {
+    "caption": "A heart-shaped balloon floats near an oblong bench, tugging at its string with the breeze",
+    "phrases": "A heart-shaped balloon; an oblong bench",
+    "frame_first": "A heart-shaped balloon hovers just above an oblong bench, its string taut as a gentle breeze tugs at it.",
+    "frame_middle": "The balloon drifts slightly to the left, the string now slack as the wind changes direction, still near the bench.",
+    "frame_last": "The balloon settles back into place, close to the bench, swaying gently in the intermittent breeze, its string occasionally touching the bench's surface.",
+    "frame_json_raw": "{\"first\": \"A heart-shaped balloon hovers just above an oblong bench, its string taut as a gentle breeze tugs at it.\", \"middle\": \"The balloon drifts slightly to the left, the string now slack as the wind changes direction, still near the bench.\", \"last\": \"The balloon settles back into place, close to the bench, swaying gently in the intermittent breeze, its string occasionally touching the bench's surface.\"}"
+  },
+  {
+    "caption": "A star-shaped lantern glows over a rectangular table, casting intricate patterns on the surface",
+    "phrases": "A star-shaped lantern; a rectangular table",
+    "frame_first": "A star-shaped lantern hangs above a rectangular table, its warm light casting intricate shadows and patterns onto the table's surface.",
+    "frame_middle": "The lantern continues to glow, the patterns on the table shifting subtly as if dancing with the light.",
+    "frame_last": "The star-shaped lantern remains suspended, its light still creating mesmerizing, interwoven patterns on the table below.",
+    "frame_json_raw": "{\"first\": \"A star-shaped lantern hangs above a rectangular table, its warm light casting intricate shadows and patterns onto the table's surface.\", \"middle\": \"The lantern continues to glow, the patterns on the table shifting subtly as if dancing with the light.\", \"last\": \"The star-shaped lantern remains suspended, its light still creating mesmerizing, interwoven patterns on the table below.\"}"
+  },
+  {
+    "caption": "A bell-shaped glass covers a triangular cake",
+    "phrases": "A bell-shaped glass; a triangular cake",
+    "frame_first": "A bell-shaped glass dome is carefully placed over a triangular cake, highlighting its layers and decorations.",
+    "frame_middle": "The glass dome fully encases the triangular cake, showcasing its vibrant colors and intricate design under a soft, ambient light.",
+    "frame_last": "The triangular cake remains perfectly preserved under the bell-shaped glass, with a slight condensation forming on the inside of the dome.",
+    "frame_json_raw": "{\"first\": \"A bell-shaped glass dome is carefully placed over a triangular cake, highlighting its layers and decorations.\", \"middle\": \"The glass dome fully encases the triangular cake, showcasing its vibrant colors and intricate design under a soft, ambient light.\", \"last\": \"The triangular cake remains perfectly preserved under the bell-shaped glass, with a slight condensation forming on the inside of the dome.\"}"
+  },
+  {
+    "caption": "A spherical drone hovers around a circular monument, scanning each detail with a soft hum",
+    "phrases": "A spherical drone; a circular monument",
+    "frame_first": "A spherical drone hovers above a circular monument at dusk, its lights casting a soft glow on the stone.",
+    "frame_middle": "The drone moves around the monument, its scanning lights highlighting intricate carvings and details.",
+    "frame_last": "The drone completes its circuit, hovering quietly above the monument, the lights dimming as it finishes its scan.",
+    "frame_json_raw": "{\"first\": \"A spherical drone hovers above a circular monument at dusk, its lights casting a soft glow on the stone.\", \"middle\": \"The drone moves around the monument, its scanning lights highlighting intricate carvings and details.\", \"last\": \"The drone completes its circuit, hovering quietly above the monument, the lights dimming as it finishes its scan.\"}"
+  },
+  {
+    "caption": "A triangular leaf flutters down, landing softly next onto an L-shaped sofa in the living room",
+    "phrases": "A triangular leaf; an L-shaped sofa",
+    "frame_first": "A triangular leaf descends slowly from above, sunlight filtering through the window, casting a warm glow on the living room.",
+    "frame_middle": "The leaf floats gracefully, almost hovering, before it gently touches the corner of an L-shaped sofa, its green hue contrasting with the beige fabric.",
+    "frame_last": "The leaf rests peacefully on the sofa, a small ripple in the otherwise still living room, as the room remains bathed in soft, natural light.",
+    "frame_json_raw": "{\"first\": \"A triangular leaf descends slowly from above, sunlight filtering through the window, casting a warm glow on the living room.\", \"middle\": \"The leaf floats gracefully, almost hovering, before it gently touches the corner of an L-shaped sofa, its green hue contrasting with the beige fabric.\", \"last\": \"The leaf rests peacefully on the sofa, a small ripple in the otherwise still living room, as the room remains bathed in soft, natural light.\"}"
+  },
+  {
+    "caption": "A spherical cow grazes near a triangular hut",
+    "phrases": "A spherical cow; a triangular hut",
+    "frame_first": "A spherical cow stands in a field, its head lowered towards the grass near a triangular hut with a thatched roof.",
+    "frame_middle": "The spherical cow lifts its head from grazing, looking around the serene landscape with the triangular hut in the background.",
+    "frame_last": "The spherical cow continues to graze, moving slightly closer to the triangular hut, which remains quiet and still in the distance.",
+    "frame_json_raw": "{\"first\": \"A spherical cow stands in a field, its head lowered towards the grass near a triangular hut with a thatched roof.\", \"middle\": \"The spherical cow lifts its head from grazing, looking around the serene landscape with the triangular hut in the background.\", \"last\": \"The spherical cow continues to graze, moving slightly closer to the triangular hut, which remains quiet and still in the distance.\"}"
+  },
+  {
+    "caption": "A cube-shaped planet drifts near a cylindrical space station, orbiting with a mysterious grace",
+    "phrases": "A cube-shaped planet; a cylindrical space station",
+    "frame_first": "A cube-shaped planet hovers in the vast darkness of space, its edges sharp against the starry background, as it approaches a towering cylindrical space station.",
+    "frame_middle": "The cube-shaped planet and the cylindrical space station are side by side, their surfaces reflecting each other's light, with the planet slowly orbiting the station with a serene, almost mystical movement.",
+    "frame_last": "The cube-shaped planet completes its orbit around the cylindrical space station, drifting away into the cosmic expanse, maintaining its graceful and enigmatic trajectory.",
+    "frame_json_raw": "{\"first\": \"A cube-shaped planet hovers in the vast darkness of space, its edges sharp against the starry background, as it approaches a towering cylindrical space station.\", \"middle\": \"The cube-shaped planet and the cylindrical space station are side by side, their surfaces reflecting each other's light, with the planet slowly orbiting the station with a serene, almost mystical movement.\", \"last\": \"The cube-shaped planet completes its orbit around the cylindrical space station, drifting away into the cosmic expanse, maintaining its graceful and enigmatic trajectory.\"}"
+  },
+  {
+    "caption": "A cube-shaped ice block slides across a round plate",
+    "phrases": "A cube-shaped ice block; a round plate",
+    "frame_first": "A cube-shaped ice block begins to slide across a shiny, round plate, reflecting the surroundings.",
+    "frame_middle": "The ice block glides smoothly in the middle of the plate, its edges glistening as it moves.",
+    "frame_last": "The ice block reaches the edge of the round plate, slowing down as it prepares to fall off.",
+    "frame_json_raw": "{\"first\": \"A cube-shaped ice block begins to slide across a shiny, round plate, reflecting the surroundings.\", \"middle\": \"The ice block glides smoothly in the middle of the plate, its edges glistening as it moves.\", \"last\": \"The ice block reaches the edge of the round plate, slowing down as it prepares to fall off.\"}"
+  },
+  {
+    "caption": "An S-shaped logo spins above a cube-shaped building",
+    "phrases": "An S-shaped logo; a cube-shaped building",
+    "frame_first": "An S-shaped logo begins to rotate slowly above a cube-shaped building, casting a slight shadow on its surface.",
+    "frame_middle": "The S-shaped logo is now perpendicular to the ground, hovering above the cube-shaped building with its shadow stretching across the building's face.",
+    "frame_last": "The S-shaped logo completes its spin, returning to its original position above the cube-shaped building, with the shadow returning to its initial alignment.",
+    "frame_json_raw": "{\"first\": \"An S-shaped logo begins to rotate slowly above a cube-shaped building, casting a slight shadow on its surface.\", \"middle\": \"The S-shaped logo is now perpendicular to the ground, hovering above the cube-shaped building with its shadow stretching across the building's face.\", \"last\": \"The S-shaped logo completes its spin, returning to its original position above the cube-shaped building, with the shadow returning to its initial alignment.\"}"
+  },
+  {
+    "caption": "A circular mirror reflects a cat lounging on a square cushion",
+    "phrases": "A circular mirror; a square cushion",
+    "frame_first": "A circular mirror hangs on a plain white wall, reflecting a square cushion placed on a windowsill.",
+    "frame_middle": "In the reflection, a cat stretches out lazily on the square cushion, basking in the sunlight.",
+    "frame_last": "The cat curls into a cozy ball on the cushion, its form clearly visible in the mirror's reflection.",
+    "frame_json_raw": "{\"first\": \"A circular mirror hangs on a plain white wall, reflecting a square cushion placed on a windowsill.\", \"middle\": \"In the reflection, a cat stretches out lazily on the square cushion, basking in the sunlight.\", \"last\": \"The cat curls into a cozy ball on the cushion, its form clearly visible in the mirror's reflection.\"}"
+  },
+  {
+    "caption": "A cylindrical vase tips over as a playful kitten with a triangular hat pounces on it",
+    "phrases": "A cylindrical vase; a triangular hat",
+    "frame_first": "A cylindrical vase stands upright on a table, moments before a playful kitten with a triangular hat approaches.",
+    "frame_middle": "The playful kitten pounces on the cylindrical vase, causing it to tip over and wobble.",
+    "frame_last": "The cylindrical vase lies on its side, and the playful kitten with the triangular hat sits back, staring at the fallen vase.",
+    "frame_json_raw": "{\"first\": \"A cylindrical vase stands upright on a table, moments before a playful kitten with a triangular hat approaches.\", \"middle\": \"The playful kitten pounces on the cylindrical vase, causing it to tip over and wobble.\", \"last\": \"The cylindrical vase lies on its side, and the playful kitten with the triangular hat sits back, staring at the fallen vase.\"}"
+  },
+  {
+    "caption": "A round Rubik's cube spins beside a heart-shaped alarm clock",
+    "phrases": "A round Rubik's cube; a heart-shaped alarm clock",
+    "frame_first": "A round Rubik's cube sits motionless beside a heart-shaped alarm clock on a flat surface, with soft morning light illuminating the scene.",
+    "frame_middle": "The Rubik's cube begins to spin rapidly, its colors blurring while the heart-shaped alarm clock remains still, casting a slight shadow.",
+    "frame_last": "The spinning Rubik's cube slows to a stop, aligning with the heart-shaped alarm clock, both objects bathed in the warm glow of dawn.",
+    "frame_json_raw": "{\"first\": \"A round Rubik's cube sits motionless beside a heart-shaped alarm clock on a flat surface, with soft morning light illuminating the scene.\", \"middle\": \"The Rubik's cube begins to spin rapidly, its colors blurring while the heart-shaped alarm clock remains still, casting a slight shadow.\", \"last\": \"The spinning Rubik's cube slows to a stop, aligning with the heart-shaped alarm clock, both objects bathed in the warm glow of dawn.\"}"
+  },
+  {
+    "caption": "A fan-shaped window casts light onto a star-shaped bottle",
+    "phrases": "A fan-shaped window; a star-shaped bottle",
+    "frame_first": "A fan-shaped window allows light to stream into a dim room, illuminating a star-shaped bottle sitting on a table.",
+    "frame_middle": "The light from the window creates a pattern on the star-shaped bottle, highlighting its facets and casting a star-shaped shadow on the wall behind it.",
+    "frame_last": "As the light shifts slightly, the star-shaped bottle gleams, with its shape now more prominently displayed on the wall as the central focus of the scene.",
+    "frame_json_raw": "{\"first\": \"A fan-shaped window allows light to stream into a dim room, illuminating a star-shaped bottle sitting on a table.\", \"middle\": \"The light from the window creates a pattern on the star-shaped bottle, highlighting its facets and casting a star-shaped shadow on the wall behind it.\", \"last\": \"As the light shifts slightly, the star-shaped bottle gleams, with its shape now more prominently displayed on the wall as the central focus of the scene.\"}"
+  },
+  {
+    "caption": "A square watermelon and a heart-shaped peach balance carefully on a stool, wobbling with each movement",
+    "phrases": "A square watermelon; a heart-shaped peach",
+    "frame_first": "A square watermelon and a heart-shaped peach teeter on a wooden stool, their precarious positions emphasized by slight wobbling.",
+    "frame_middle": "The watermelon and peach continue to wobble as the stool shifts slightly, highlighting their unstable balance.",
+    "frame_last": "The fruits stabilize momentarily on the stool, their unusual shapes contrasting sharply as they settle into a balanced position.",
+    "frame_json_raw": "{\"first\": \"A square watermelon and a heart-shaped peach teeter on a wooden stool, their precarious positions emphasized by slight wobbling.\", \"middle\": \"The watermelon and peach continue to wobble as the stool shifts slightly, highlighting their unstable balance.\", \"last\": \"The fruits stabilize momentarily on the stool, their unusual shapes contrasting sharply as they settle into a balanced position.\"}"
+  },
+  {
+    "caption": "A cuboid balloon drifts past a circular window, sunlight streaming through the glass panes",
+    "phrases": "A cuboid balloon; a circular window",
+    "frame_first": "A cuboid balloon hovers outside a circular window, sunlight filtering through the glass, casting a soft glow.",
+    "frame_middle": "The balloon moves across the window, its shadow briefly darkening the pane as it passes.",
+    "frame_last": "The cuboid balloon drifts away from the circular window, leaving the sunlight streaming in unobstructed.",
+    "frame_json_raw": "{\"first\": \"A cuboid balloon hovers outside a circular window, sunlight filtering through the glass, casting a soft glow.\", \"middle\": \"The balloon moves across the window, its shadow briefly darkening the pane as it passes.\", \"last\": \"The cuboid balloon drifts away from the circular window, leaving the sunlight streaming in unobstructed.\"}"
+  },
+  {
+    "caption": "A metallic apple rolls across a woven picnic blanket in a garden",
+    "phrases": "A metallic apple; a woven picnic blanket",
+    "frame_first": "A metallic apple begins to roll across a brightly woven picnic blanket, set in a sunlit garden.",
+    "frame_middle": "The apple continues its roll, catching glints of sunlight as it moves over the colorful patterns of the blanket.",
+    "frame_last": "The metallic apple comes to a stop at the edge of the picnic blanket, surrounded by blooming flowers in the garden.",
+    "frame_json_raw": "{\"first\": \"A metallic apple begins to roll across a brightly woven picnic blanket, set in a sunlit garden.\", \"middle\": \"The apple continues its roll, catching glints of sunlight as it moves over the colorful patterns of the blanket.\", \"last\": \"The metallic apple comes to a stop at the edge of the picnic blanket, surrounded by blooming flowers in the garden.\"}"
+  },
+  {
+    "caption": "A spongy ball bounces near a marble bench",
+    "phrases": "A spongy ball; a marble bench",
+    "frame_first": "A spongy ball approaches a marble bench, about to bounce.",
+    "frame_middle": "The spongy ball bounces off the marble bench, reaching its peak height.",
+    "frame_last": "The spongy ball lands softly on the ground near the marble bench, coming to rest.",
+    "frame_json_raw": "{\"first\": \"A spongy ball approaches a marble bench, about to bounce.\", \"middle\": \"The spongy ball bounces off the marble bench, reaching its peak height.\", \"last\": \"The spongy ball lands softly on the ground near the marble bench, coming to rest.\"}"
+  },
+  {
+    "caption": "A marble teapot pours tea into a parchment cup, steam rising into the crisp morning air",
+    "phrases": "A marble teapot; a parchment cup",
+    "frame_first": "A marble teapot sits on a wooden table, about to pour tea into a delicate parchment cup, with the sun just rising in the background.",
+    "frame_middle": "Tea flows from the spout of the marble teapot into the parchment cup, creating a warm, golden stream, while steam rises gently into the cool morning air.",
+    "frame_last": "The parchment cup is now filled with tea, steam continues to rise, and the early morning light casts a soft glow over the scene.",
+    "frame_json_raw": "{\"first\": \"A marble teapot sits on a wooden table, about to pour tea into a delicate parchment cup, with the sun just rising in the background.\", \"middle\": \"Tea flows from the spout of the marble teapot into the parchment cup, creating a warm, golden stream, while steam rises gently into the cool morning air.\", \"last\": \"The parchment cup is now filled with tea, steam continues to rise, and the early morning light casts a soft glow over the scene.\"}"
+  },
+  {
+    "caption": "A leathery umbrella spins beside a bamboo bridge",
+    "phrases": "A leathery umbrella; a bamboo bridge",
+    "frame_first": "A bamboo bridge stretches over a serene stream, sunlight filtering through the trees. A leathery umbrella spins gracefully beside the bridge, caught in a gentle breeze.",
+    "frame_middle": "The spinning umbrella casts dancing shadows on the bridge's surface, the light and shadow play highlighting the intricate weave of the bamboo.",
+    "frame_last": "The umbrella slows its spin, coming to rest against the bridge railing, as the stream continues to flow peacefully below.",
+    "frame_json_raw": "{\"first\": \"A bamboo bridge stretches over a serene stream, sunlight filtering through the trees. A leathery umbrella spins gracefully beside the bridge, caught in a gentle breeze.\", \"middle\": \"The spinning umbrella casts dancing shadows on the bridge's surface, the light and shadow play highlighting the intricate weave of the bamboo.\", \"last\": \"The umbrella slows its spin, coming to rest against the bridge railing, as the stream continues to flow peacefully below.\"}"
+  },
+  {
+    "caption": "A feathered pillow floats beside a clay sculpture, drifting peacefully in the gentle breeze",
+    "phrases": "A feathered pillow; a clay sculpture",
+    "frame_first": "A feathered pillow hovers gently beside a clay sculpture, both illuminated by soft daylight.",
+    "frame_middle": "The pillow drifts slowly to the right, the breeze causing slight ripples in the fabric.",
+    "frame_last": "The pillow comes to rest near the base of the sculpture, the breeze calming to a whisper.",
+    "frame_json_raw": "{\"first\": \"A feathered pillow hovers gently beside a clay sculpture, both illuminated by soft daylight.\", \"middle\": \"The pillow drifts slowly to the right, the breeze causing slight ripples in the fabric.\", \"last\": \"The pillow comes to rest near the base of the sculpture, the breeze calming to a whisper.\"}"
+  },
+  {
+    "caption": "A lacy curtain billows beside a wooden vase, catching the breeze from the open window",
+    "phrases": "A lacy curtain; a wooden vase",
+    "frame_first": "A lacy curtain gently sways beside a wooden vase, with sunlight streaming through an open window.",
+    "frame_middle": "The curtain continues to billow softly, casting delicate shadows on the wooden vase as a gentle breeze flows through the room.",
+    "frame_last": "The curtain settles slightly, still fluttering occasionally, as the wooden vase remains steady, bathed in the warm, natural light from the open window.",
+    "frame_json_raw": "{\"first\": \"A lacy curtain gently sways beside a wooden vase, with sunlight streaming through an open window.\", \"middle\": \"The curtain continues to billow softly, casting delicate shadows on the wooden vase as a gentle breeze flows through the room.\", \"last\": \"The curtain settles slightly, still fluttering occasionally, as the wooden vase remains steady, bathed in the warm, natural light from the open window.\"}"
+  },
+  {
+    "caption": "A cardboard plane glides over a woven rug",
+    "phrases": "A cardboard plane; a woven rug",
+    "frame_first": "A cardboard plane, with wings spread wide, hovers just above a colorful woven rug, its shadow barely touching the intricate patterns below.",
+    "frame_middle": "The plane continues its smooth glide, its shadow now clearly visible as it crosses over a particularly bright section of the rug.",
+    "frame_last": "The cardboard plane gently touches down on the rug, its journey coming to a serene end amidst the rug's vibrant tapestry.",
+    "frame_json_raw": "{\"first\": \"A cardboard plane, with wings spread wide, hovers just above a colorful woven rug, its shadow barely touching the intricate patterns below.\", \"middle\": \"The plane continues its smooth glide, its shadow now clearly visible as it crosses over a particularly bright section of the rug.\", \"last\": \"The cardboard plane gently touches down on the rug, its journey coming to a serene end amidst the rug's vibrant tapestry.\"}"
+  },
+  {
+    "caption": "A glass apple tumbles from a wicker basket",
+    "phrases": "A glass apple; a wicker basket",
+    "frame_first": "A wicker basket sits on a wooden table, and a glass apple, sparkling in the sunlight, begins to roll out.",
+    "frame_middle": "The glass apple tumbles end over end, its reflections dancing across the table and walls.",
+    "frame_last": "The glass apple comes to a rest beside the basket, its surface now still and clear.",
+    "frame_json_raw": "{\"first\": \"A wicker basket sits on a wooden table, and a glass apple, sparkling in the sunlight, begins to roll out.\", \"middle\": \"The glass apple tumbles end over end, its reflections dancing across the table and walls.\", \"last\": \"The glass apple comes to a rest beside the basket, its surface now still and clear.\"}"
+  },
+  {
+    "caption": "A woolen hat flies off a wooden bench, carried away by a sudden gust of wind",
+    "phrases": "A woolen hat; a wooden bench",
+    "frame_first": "A woolen hat sits on a wooden bench in a park as dark clouds gather overhead.",
+    "frame_middle": "The hat leaps off the bench, swirling in the air as a strong gust of wind sweeps through the park.",
+    "frame_last": "The hat is carried far from the bench, flapping in the wind against a backdrop of swaying trees and turbulent skies.",
+    "frame_json_raw": "{\"first\": \"A woolen hat sits on a wooden bench in a park as dark clouds gather overhead.\", \"middle\": \"The hat leaps off the bench, swirling in the air as a strong gust of wind sweeps through the park.\", \"last\": \"The hat is carried far from the bench, flapping in the wind against a backdrop of swaying trees and turbulent skies.\"}"
+  },
+  {
+    "caption": "A rubbery duck swims in a marble pool",
+    "phrases": "A rubbery duck; a marble pool",
+    "frame_first": "A rubber duck bobs gently on the surface of a pristine marble pool, the light reflecting off the smooth, white stone.",
+    "frame_middle": "The duck paddles slowly across the pool, creating tiny ripples that disturb the otherwise still water.",
+    "frame_last": "The duck reaches the edge of the pool, its vibrant yellow color contrasting against the cool, marble backdrop.",
+    "frame_json_raw": "{\"first\": \"A rubber duck bobs gently on the surface of a pristine marble pool, the light reflecting off the smooth, white stone.\", \"middle\": \"The duck paddles slowly across the pool, creating tiny ripples that disturb the otherwise still water.\", \"last\": \"The duck reaches the edge of the pool, its vibrant yellow color contrasting against the cool, marble backdrop.\"}"
+  },
+  {
+    "caption": "A wooden ladder tips over beside a clay statue",
+    "phrases": "A wooden ladder; a clay statue",
+    "frame_first": "A wooden ladder stands upright beside a clay statue in a dimly lit room, shadows stretching across the floor.",
+    "frame_middle": "The ladder begins to tilt, its bottom rung scraping against the ground as it falls towards the statue.",
+    "frame_last": "The ladder lies sprawled on the ground beside the clay statue, which remains unharmed and upright in the corner of the room.",
+    "frame_json_raw": "{\"first\": \"A wooden ladder stands upright beside a clay statue in a dimly lit room, shadows stretching across the floor.\", \"middle\": \"The ladder begins to tilt, its bottom rung scraping against the ground as it falls towards the statue.\", \"last\": \"The ladder lies sprawled on the ground beside the clay statue, which remains unharmed and upright in the corner of the room.\"}"
+  },
+  {
+    "caption": "A cardboard castle collapses as a rubbery ball crashes into it",
+    "phrases": "A cardboard castle; a rubbery ball",
+    "frame_first": "A meticulously crafted cardboard castle stands tall in a sunlit room, its turrets and walls intact, as a rubbery ball rolls towards it.",
+    "frame_middle": "The rubbery ball makes contact with the castle's main tower, causing the structure to wobble and pieces of cardboard to scatter.",
+    "frame_last": "The cardboard castle lies in ruins on the floor, its walls and towers collapsed, with the rubbery ball now resting amidst the debris.",
+    "frame_json_raw": "{\"first\": \"A meticulously crafted cardboard castle stands tall in a sunlit room, its turrets and walls intact, as a rubbery ball rolls towards it.\", \"middle\": \"The rubbery ball makes contact with the castle's main tower, causing the structure to wobble and pieces of cardboard to scatter.\", \"last\": \"The cardboard castle lies in ruins on the floor, its walls and towers collapsed, with the rubbery ball now resting amidst the debris.\"}"
+  },
+  {
+    "caption": "A man in the leather jacket pours coffee into a ceramic mug, steam rising in gentle curls",
+    "phrases": "A man in the leather jacket; a ceramic mug",
+    "frame_first": "A man in a leather jacket stands by a kitchen counter, lifting a coffee pot to pour into a ceramic mug.",
+    "frame_middle": "Steam rises in gentle curls from the mug as the dark liquid fills it.",
+    "frame_last": "The man sets down the coffee pot, holding the steaming mug, with a serene expression.",
+    "frame_json_raw": "{\"first\": \"A man in a leather jacket stands by a kitchen counter, lifting a coffee pot to pour into a ceramic mug.\", \"middle\": \"Steam rises in gentle curls from the mug as the dark liquid fills it.\", \"last\": \"The man sets down the coffee pot, holding the steaming mug, with a serene expression.\"}"
+  },
+  {
+    "caption": "A glass teapot pours tea into a ceramic teacup",
+    "phrases": "A glass teapot; a ceramic teacup",
+    "frame_first": "A glass teapot sits on a wooden table, its spout positioned above a ceramic teacup, with steam rising from the opening.",
+    "frame_middle": "Tea flows steadily from the glass teapot's spout into the teacup, creating a gentle sound as it fills.",
+    "frame_last": "The teapot is nearly empty, with the last drops of tea trickling into the now full ceramic teacup.",
+    "frame_json_raw": "{\"first\": \"A glass teapot sits on a wooden table, its spout positioned above a ceramic teacup, with steam rising from the opening.\", \"middle\": \"Tea flows steadily from the glass teapot's spout into the teacup, creating a gentle sound as it fills.\", \"last\": \"The teapot is nearly empty, with the last drops of tea trickling into the now full ceramic teacup.\"}"
+  },
+  {
+    "caption": "A paper cup pours milk into a glass vase, the liquid swirling and splashing inside",
+    "phrases": "A paper cup; a glass vase",
+    "frame_first": "A paper cup, held by unseen hands, begins to pour milk into a glass vase, the white liquid forming a steady stream.",
+    "frame_middle": "The milk swirls and splashes inside the vase, creating a dynamic pattern as more liquid continues to pour in.",
+    "frame_last": "The paper cup is nearly empty, with the last few drops of milk falling into the vase, causing small ripples on the surface.",
+    "frame_json_raw": "{\"first\": \"A paper cup, held by unseen hands, begins to pour milk into a glass vase, the white liquid forming a steady stream.\", \"middle\": \"The milk swirls and splashes inside the vase, creating a dynamic pattern as more liquid continues to pour in.\", \"last\": \"The paper cup is nearly empty, with the last few drops of milk falling into the vase, causing small ripples on the surface.\"}"
+  },
+  {
+    "caption": "A grandmother wearing pearl earrings next to her granddaughter in a colorful sweater, sharing family stories",
+    "phrases": "A grandmother wearing pearl earrings; a granddaughter in a colorful sweater",
+    "frame_first": "A grandmother with pearl earrings sits next to her granddaughter, who wears a bright, colorful sweater, both facing each other in a cozy living room.",
+    "frame_middle": "The grandmother leans slightly forward, her hands gesturing as she shares a story, while her granddaughter listens intently with a warm smile.",
+    "frame_last": "Both grandmother and granddaughter laugh together, the warm light from a nearby lamp casting a gentle glow on their happy faces.",
+    "frame_json_raw": "{\"first\": \"A grandmother with pearl earrings sits next to her granddaughter, who wears a bright, colorful sweater, both facing each other in a cozy living room.\", \"middle\": \"The grandmother leans slightly forward, her hands gesturing as she shares a story, while her granddaughter listens intently with a warm smile.\", \"last\": \"Both grandmother and granddaughter laugh together, the warm light from a nearby lamp casting a gentle glow on their happy faces.\"}"
+  },
+  {
+    "caption": "A man in a suit and tie talks with a woman in a blouse and trousers at a networking event",
+    "phrases": "A man in a suit and tie; a woman in a blouse and trousers",
+    "frame_first": "A man in a dark suit and tie stands facing a woman in a blouse and trousers, both smiling and engaged in conversation at a dimly lit networking event.",
+    "frame_middle": "The man gestures with his hand while the woman leans slightly forward, listening intently, with a backdrop of other attendees mingling in the background.",
+    "frame_last": "The man and woman exchange business cards, their hands meeting in the center as they continue to converse, the room filled with the hum of ongoing conversations.",
+    "frame_json_raw": "{\"first\": \"A man in a dark suit and tie stands facing a woman in a blouse and trousers, both smiling and engaged in conversation at a dimly lit networking event.\", \"middle\": \"The man gestures with his hand while the woman leans slightly forward, listening intently, with a backdrop of other attendees mingling in the background.\", \"last\": \"The man and woman exchange business cards, their hands meeting in the center as they continue to converse, the room filled with the hum of ongoing conversations.\"}"
+  },
+  {
+    "caption": "A girl wearing a colorful scarf giggles with a boy in a cute hat as they play with a puppy in the park",
+    "phrases": "A girl wearing a colorful scarf; a boy in a cute hat",
+    "frame_first": "A girl with a vibrant scarf laughs joyfully, standing next to a boy wearing a cute hat, both looking down at a playful puppy in a sunlit park.",
+    "frame_middle": "The puppy jumps between the girl and the boy, its tail wagging rapidly, while they continue to giggle and interact with it on the grass.",
+    "frame_last": "The scene fades as the girl and boy, still smiling, toss a ball for the puppy, capturing the essence of a perfect day in the park.",
+    "frame_json_raw": "{\"first\": \"A girl with a vibrant scarf laughs joyfully, standing next to a boy wearing a cute hat, both looking down at a playful puppy in a sunlit park.\", \"middle\": \"The puppy jumps between the girl and the boy, its tail wagging rapidly, while they continue to giggle and interact with it on the grass.\", \"last\": \"The scene fades as the girl and boy, still smiling, toss a ball for the puppy, capturing the essence of a perfect day in the park.\"}"
+  },
+  {
+    "caption": "A boy in a superhero costume jumps excitedly next to a girl with long braids",
+    "phrases": "A boy in a superhero costume; a girl with long braids",
+    "frame_first": "A boy dressed as a superhero stands on the grass, about to jump, next to a girl with long braided hair smiling at him.",
+    "frame_middle": "The boy is mid-air, arms outstretched like wings, with the girl laughing and reaching out towards him.",
+    "frame_last": "The boy lands back on the grass, both children laughing, the girl now standing closer to the boy with a joyful expression.",
+    "frame_json_raw": "{\"first\": \"A boy dressed as a superhero stands on the grass, about to jump, next to a girl with long braided hair smiling at him.\", \"middle\": \"The boy is mid-air, arms outstretched like wings, with the girl laughing and reaching out towards him.\", \"last\": \"The boy lands back on the grass, both children laughing, the girl now standing closer to the boy with a joyful expression.\"}"
+  },
+  {
+    "caption": "A grandmother wearing a cozy sweater shares cookies with her grandson in pajamas, both enjoying a quiet afternoon at home",
+    "phrases": "A grandmother wearing a cozy sweater; a grandson in pajamas",
+    "frame_first": "A grandmother in a red cozy sweater sits on a living room couch, a plate of cookies between her and her grandson who is wearing blue pajamas.",
+    "frame_middle": "The grandmother smiles warmly as she hands a cookie to her grandson, both sharing a moment of quiet joy.",
+    "frame_last": "Both grandmother and grandson are relaxed, sitting side by side on the couch, enjoying their cookies in the soft, afternoon light.",
+    "frame_json_raw": "{\"first\": \"A grandmother in a red cozy sweater sits on a living room couch, a plate of cookies between her and her grandson who is wearing blue pajamas.\", \"middle\": \"The grandmother smiles warmly as she hands a cookie to her grandson, both sharing a moment of quiet joy.\", \"last\": \"Both grandmother and grandson are relaxed, sitting side by side on the couch, enjoying their cookies in the soft, afternoon light.\"}"
+  },
+  {
+    "caption": "A girl wearing sunglasses plays a guitar next to a boy in tank top, strumming along in the summer breeze",
+    "phrases": "A girl wearing sunglasses; a boy in tank top",
+    "frame_first": "A girl in sunglasses stands playing a guitar under the bright summer sun, with a boy in a tank top beside her, beginning to strum along.",
+    "frame_middle": "The girl's fingers deftly move across the guitar strings, while the boy in the tank top finds his rhythm, both silhouetted by the warm sunlight.",
+    "frame_last": "Both the girl and the boy continue to play their guitars, their music carried away by the gentle summer breeze, the sun casting a soft glow over them.",
+    "frame_json_raw": "{\"first\": \"A girl in sunglasses stands playing a guitar under the bright summer sun, with a boy in a tank top beside her, beginning to strum along.\", \"middle\": \"The girl's fingers deftly move across the guitar strings, while the boy in the tank top finds his rhythm, both silhouetted by the warm sunlight.\", \"last\": \"Both the girl and the boy continue to play their guitars, their music carried away by the gentle summer breeze, the sun casting a soft glow over them.\"}"
+  },
+  {
+    "caption": "A woman with curly hair helps a toddler in a cute onesie pick flowers in a sunny garden",
+    "phrases": "A woman with curly hair; a toddler in a cute onesie",
+    "frame_first": "A woman with curly hair bends down to assist a toddler wearing a cute onesie in a vibrant, sunny garden filled with colorful flowers.",
+    "frame_middle": "The toddler, with the woman's guidance, reaches out to pluck a flower, both figures bathed in warm sunlight.",
+    "frame_last": "The toddler holds a small bouquet of picked flowers, smiling widely, while the woman stands behind, looking content and proud in the garden's bright, sunlit setting.",
+    "frame_json_raw": "{\"first\": \"A woman with curly hair bends down to assist a toddler wearing a cute onesie in a vibrant, sunny garden filled with colorful flowers.\", \"middle\": \"The toddler, with the woman's guidance, reaches out to pluck a flower, both figures bathed in warm sunlight.\", \"last\": \"The toddler holds a small bouquet of picked flowers, smiling widely, while the woman stands behind, looking content and proud in the garden's bright, sunlit setting.\"}"
+  },
+  {
+    "caption": "A prince in formal attire greets a princess in a beautiful gown, both smiling at the royal ball",
+    "phrases": "A prince in formal attire; a princess in a beautiful gown",
+    "frame_first": "A grand ballroom filled with chandeliers and guests in elegant attire. A prince in formal attire stands at the entrance, looking expectantly towards the princess.",
+    "frame_middle": "The princess, dressed in a beautiful gown, walks gracefully towards the prince. Both are smiling warmly at each other.",
+    "frame_last": "The prince and princess meet in the center of the ballroom, their hands clasped together, smiling brightly as the crowd watches.",
+    "frame_json_raw": "{\"first\": \"A grand ballroom filled with chandeliers and guests in elegant attire. A prince in formal attire stands at the entrance, looking expectantly towards the princess.\", \"middle\": \"The princess, dressed in a beautiful gown, walks gracefully towards the prince. Both are smiling warmly at each other.\", \"last\": \"The prince and princess meet in the center of the ballroom, their hands clasped together, smiling brightly as the crowd watches.\"}"
+  },
+  {
+    "caption": "An artist in a paint-splattered apron demonstrates techniques to a boy in a t-shirt and jeans, both engaged in a creative workshop.",
+    "phrases": "An artist in a paint-splattered apron; a boy in a t-shirt and jeans",
+    "frame_first": "An artist wearing a paint-splattered apron stands in front of an easel, holding a paintbrush, while a boy in a t-shirt and jeans watches attentively in a well-lit workshop.",
+    "frame_middle": "The artist is now showing the boy how to mix colors on a palette, their hands close together as they work, surrounded by various art supplies.",
+    "frame_last": "The boy, now more confident, is painting on his own canvas while the artist looks on with a supportive smile, both standing in a room filled with drying paintings.",
+    "frame_json_raw": "{\"first\": \"An artist wearing a paint-splattered apron stands in front of an easel, holding a paintbrush, while a boy in a t-shirt and jeans watches attentively in a well-lit workshop.\", \"middle\": \"The artist is now showing the boy how to mix colors on a palette, their hands close together as they work, surrounded by various art supplies.\", \"last\": \"The boy, now more confident, is painting on his own canvas while the artist looks on with a supportive smile, both standing in a room filled with drying paintings.\"}"
+  },
+  {
+    "caption": "A scientist in safety goggles examines a sample next to a girl in a scrub top, both working diligently in a laboratory",
+    "phrases": "A scientist in safety goggles; a girl in a scrub top",
+    "frame_first": "A scientist wearing safety goggles leans over a lab table, closely examining a sample under a microscope, while a girl in a scrub top stands beside, attentively observing.",
+    "frame_middle": "The scientist and the girl continue their work, the scientist adjusting the microscope's focus, the girl jotting down notes, with lab equipment and glassware visible on the cluttered table.",
+    "frame_last": "The scientist and the girl share a moment of insight, looking at each other with a nod of understanding, the lab's fluorescent lights casting a cool glow over their focused expressions.",
+    "frame_json_raw": "{\"first\": \"A scientist wearing safety goggles leans over a lab table, closely examining a sample under a microscope, while a girl in a scrub top stands beside, attentively observing.\", \"middle\": \"The scientist and the girl continue their work, the scientist adjusting the microscope's focus, the girl jotting down notes, with lab equipment and glassware visible on the cluttered table.\", \"last\": \"The scientist and the girl share a moment of insight, looking at each other with a nod of understanding, the lab's fluorescent lights casting a cool glow over their focused expressions.\"}"
+  }
+]

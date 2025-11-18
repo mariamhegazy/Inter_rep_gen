@@ -16,6 +16,10 @@ project_roots = [
 for project_root in project_roots:
     sys.path.insert(0, project_root) if project_root not in sys.path else None
 
+import numpy as np
+import torch
+from PIL import Image
+
 from videox_fun.dist import set_multi_gpus_devices, shard_model
 from videox_fun.models import (
     AutoencoderKLWan,
@@ -39,6 +43,52 @@ from videox_fun.utils.utils import (
     get_image_to_video_latent,
     save_videos_grid,
 )
+
+
+def load_ref_image_as_video(path, H, W, device):
+    """
+    Returns a tensor of shape [1, 1, 3, H, W] in [0,1], RGB, center-cropped to (H,W).
+    """
+    img = Image.open(path).convert("RGB")
+
+    # simple resize + center-crop to exactly HxW (match how your pipeline expects sizes)
+    # if you prefer letterbox, swap this for a pad; if you prefer keeping aspect, do resize+center-crop.
+    img = img.resize((W, H), Image.BICUBIC)
+
+    arr = np.array(img).astype(np.float32) / 255.0  # [H, W, 3] in [0,1]
+    arr = torch.from_numpy(arr).permute(2, 0, 1).contiguous()  # [3, H, W]
+    vid = arr.unsqueeze(0).unsqueeze(0)  # [1, 1, 3, H, W]
+    return vid.to(device)
+
+
+def resolve_module_device(module, fallback_device):
+    """
+    Returns a concrete torch.device for a module, falling back when parameters
+    are currently offloaded to meta due to accelerate hooks.
+    """
+
+    def to_device(d):
+        if d is None:
+            return None
+        try:
+            return torch.device(d)
+        except (TypeError, ValueError):
+            return None
+
+    device = to_device(getattr(module, "device", None))
+    if device is not None and device.type != "meta":
+        return device
+
+    try:
+        param_device = to_device(next(module.parameters()).device)
+        if param_device is not None and param_device.type != "meta":
+            return param_device
+    except (StopIteration, AttributeError):
+        pass
+
+    fallback = to_device(fallback_device)
+    return fallback if fallback is not None else torch.device("cpu")
+
 
 # GPU memory mode, which can be chosen in [model_full_load, model_full_load_and_qfloat8, model_cpu_offload, model_cpu_offload_and_qfloat8, sequential_cpu_offload].
 # model_full_load means that the entire model will be moved to the GPU.
@@ -110,9 +160,14 @@ transformer_high_path = None
 vae_path = None
 # Load lora model if need
 # The lora_path is used for low noise model, the lora_high_path is used for high noise model.
-lora_path = None
-# lora_path = "/capstor/scratch/cscs/mhasan/VideoX-Fun/output_dir/wan2.2_14b_finetune_ultravideo_T2A_start_rank128_few_shot/checkpoint-120.safetensors"
-# lora_high_path = "/capstor/scratch/cscs/mhasan/VideoX-Fun/output_dir/wan2.2_14b_finetune_ultravideo_T2A_start_rank128_few_shot/checkpoint-120.safetensors"
+# lora_path = None
+
+# ref_path = "samples_test/wan-videos-ti2v-startimg/00000027.png"
+# ref_path = "/capstor/store/cscs/swissai/a144/mariam/T2V_compbench_images/2_dynamic_attr/state_0/0/1664_928_16:9_A_green_leaf_gpu0_img00.png"
+# ref_path = "/capstor/store/cscs/swissai/a144/mariam/T2V_compbench_images/2_dynamic_attr/0/1664_928_16:9_A_timelapse_of_a_leaf_transitioning_from_green_to__gpu0_img00.png"
+ref_path = "/capstor/store/cscs/swissai/a144/mariam/T2V_compbench_images/2_dynamic_attr/state_0/7/1664_928_16:9_Solid_ice_cream_gpu3_img00.png"
+lora_path = "output_dir/wan2.2_14b_finetune_ultravideo_T2A_start_last_rank256_inp_low/checkpoint-5500.safetensors"
+lora_high_path = "output_dir/wan2.2_14b_finetune_ultravideo_T2A_start_last_rank256_inp_high/checkpoint-5500.safetensors"
 
 # Other params
 sample_size = [480, 832]
@@ -122,17 +177,19 @@ fps = 16
 # Use torch.float16 if GPU does not support torch.bfloat16
 # ome graphics cards, such as v100, 2080ti, do not support torch.bfloat16
 weight_dtype = torch.bfloat16
-prompt = "a video of a tree leaf turning from green to red"
+# prompt = "a tree leaf turning from green to red"
+prompt = "an ice cream melting on a hot day"
 negative_prompt = (
     "overexposed, blurry, low quality, deformed hands, ugly, artifacts, static scene"
 )
 guidance_scale = 6.0
-seed = 43
+seed = 150
 num_inference_steps = 50
 # The lora_weight is used for low noise model, the lora_high_weight is used for high noise model.
 lora_weight = 0.55
 lora_high_weight = 0.55
-save_path = "samples_test/wan-videos-t2v-startimg"
+save_path = "samples_test_inp/wan-videos-t2v-starting"
+ti2v_mode = "start"  # choose from ["start", "mid", "last", "random"]
 
 device = set_multi_gpus_devices(ulysses_degree, ring_degree)
 config = OmegaConf.load(config_path)
@@ -200,7 +257,7 @@ Chosen_AutoencoderKL = {
 vae = Chosen_AutoencoderKL.from_pretrained(
     os.path.join(model_name, config["vae_kwargs"].get("vae_subpath", "vae")),
     additional_kwargs=OmegaConf.to_container(config["vae_kwargs"]),
-).to(weight_dtype)
+).to(device=device, dtype=weight_dtype)
 
 if vae_path is not None:
     print(f"From checkpoint: {vae_path}")
@@ -390,6 +447,12 @@ with torch.no_grad():
         pipeline.transformer.enable_riflex(k=riflex_k, L_test=latent_frames)
         pipeline.transformer_2.enable_riflex(k=riflex_k, L_test=latent_frames)
 
+    H, W = sample_size[0], sample_size[1]  # must match pipeline height/width
+    ref_video = load_ref_image_as_video(ref_path, H, W, device)
+    vae_device = resolve_module_device(vae, device)
+    vae_dtype = getattr(vae, "dtype", None) or weight_dtype
+    ref_video = ref_video.to(device=vae_device, dtype=vae_dtype)
+
     sample = pipeline(
         prompt,
         num_frames=video_length,
@@ -401,6 +464,8 @@ with torch.no_grad():
         num_inference_steps=num_inference_steps,
         boundary=boundary,
         shift=shift,
+        ti2v_mode=ti2v_mode,
+        video=ref_video,
     ).videos
 
 if lora_path is not None:

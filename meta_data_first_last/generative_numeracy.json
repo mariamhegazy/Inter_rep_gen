@@ -1,0 +1,1802 @@
+[
+  {
+    "caption": "One tree stands tall, swaying gently in the breeze.",
+    "objects": "tree",
+    "numbers": "1",
+    "frame_first": "A solitary tree stands prominently in the foreground, its leaves rustling softly as a gentle breeze passes through.",
+    "frame_middle": "The tree continues to sway, branches moving in a harmonious dance with the wind, casting dynamic shadows.",
+    "frame_last": "The breeze subsides slightly, and the tree settles, its leaves now gently settling into a calmer rhythm.",
+    "frame_json_raw": "{\"first\": \"A solitary tree stands prominently in the foreground, its leaves rustling softly as a gentle breeze passes through.\", \"middle\": \"The tree continues to sway, branches moving in a harmonious dance with the wind, casting dynamic shadows.\", \"last\": \"The breeze subsides slightly, and the tree settles, its leaves now gently settling into a calmer rhythm.\"}"
+  },
+  {
+    "caption": "One flower stands in the vase, petals opening gracefully.",
+    "objects": "flower",
+    "numbers": "1",
+    "frame_first": "A single flower is centered in a vase, its petals beginning to unfurl.",
+    "frame_middle": "The flower's petals are partially open, revealing its delicate structure in soft daylight.",
+    "frame_last": "The flower in the vase is fully bloomed, its petals spread wide in a graceful display.",
+    "frame_json_raw": "{\"first\": \"A single flower is centered in a vase, its petals beginning to unfurl.\", \"middle\": \"The flower's petals are partially open, revealing its delicate structure in soft daylight.\", \"last\": \"The flower in the vase is fully bloomed, its petals spread wide in a graceful display.\"}"
+  },
+  {
+    "caption": "One book lies open on the desk, pages curl gently in the breeze.",
+    "objects": "book",
+    "numbers": "1",
+    "frame_first": "A desk is set in a room with sunlight streaming through an open window. One book is open, its pages beginning to curl slightly as a gentle breeze enters the room.",
+    "frame_middle": "The breeze picks up, causing the book's pages to flutter and curl more noticeably, while the sunlight highlights the texture of the paper.",
+    "frame_last": "The pages settle, slightly crinkled from the breeze, as the book remains open on the desk, bathed in the warm, steady light of the room.",
+    "frame_json_raw": "{\"first\": \"A desk is set in a room with sunlight streaming through an open window. One book is open, its pages beginning to curl slightly as a gentle breeze enters the room.\", \"middle\": \"The breeze picks up, causing the book's pages to flutter and curl more noticeably, while the sunlight highlights the texture of the paper.\", \"last\": \"The pages settle, slightly crinkled from the breeze, as the book remains open on the desk, bathed in the warm, steady light of the room.\"}"
+  },
+  {
+    "caption": "One star twinkles in the dark sky.",
+    "objects": "star",
+    "numbers": "1",
+    "frame_first": "A single star shines brightly in the vast, dark night sky.",
+    "frame_middle": "The star continues to twinkle softly against the backdrop of the inky blackness.",
+    "frame_last": "The star remains a solitary, shimmering point of light in the endless night sky.",
+    "frame_json_raw": "{\"first\": \"A single star shines brightly in the vast, dark night sky.\", \"middle\": \"The star continues to twinkle softly against the backdrop of the inky blackness.\", \"last\": \"The star remains a solitary, shimmering point of light in the endless night sky.\"}"
+  },
+  {
+    "caption": "One leaf floats down a stream.",
+    "objects": "leaf",
+    "numbers": "1",
+    "frame_first": "A single leaf, golden and crisp, begins its descent from the bank into a gently flowing stream under a clear, blue sky.",
+    "frame_middle": "The leaf floats gracefully in the center of the stream, carried by the current beneath a canopy of autumn trees.",
+    "frame_last": "The leaf approaches a calm pool, gently spinning as it reaches the still water under the fading light of dusk.",
+    "frame_json_raw": "{\"first\": \"A single leaf, golden and crisp, begins its descent from the bank into a gently flowing stream under a clear, blue sky.\", \"middle\": \"The leaf floats gracefully in the center of the stream, carried by the current beneath a canopy of autumn trees.\", \"last\": \"The leaf approaches a calm pool, gently spinning as it reaches the still water under the fading light of dusk.\"}"
+  },
+  {
+    "caption": "One skyscraper pierces the sky, shimmering in the sun.",
+    "objects": "skyscraper",
+    "numbers": "1",
+    "frame_first": "A solitary skyscraper stands tall against the bright blue sky, its glass facade reflecting the sunlight.",
+    "frame_middle": "The sun's rays highlight the building's sleek design, casting sharp shadows on the ground below.",
+    "frame_last": "The skyscraper continues to gleam under the sun, dominating the cityscape with its imposing presence.",
+    "frame_json_raw": "{\"first\": \"A solitary skyscraper stands tall against the bright blue sky, its glass facade reflecting the sunlight.\", \"middle\": \"The sun's rays highlight the building's sleek design, casting sharp shadows on the ground below.\", \"last\": \"The skyscraper continues to gleam under the sun, dominating the cityscape with its imposing presence.\"}"
+  },
+  {
+    "caption": "One butterfly flutters by, wings dancing through the air.",
+    "objects": "butterfly",
+    "numbers": "1",
+    "frame_first": "A butterfly with vibrant wings hovers at the edge of a sunlit garden, preparing to take flight.",
+    "frame_middle": "The butterfly flutters its wings rapidly, creating a mesmerizing dance of colors as it moves gracefully through the air.",
+    "frame_last": "The butterfly alights gently on a flower, its wings still quivering slightly from the flight.",
+    "frame_json_raw": "{\"first\": \"A butterfly with vibrant wings hovers at the edge of a sunlit garden, preparing to take flight.\", \"middle\": \"The butterfly flutters its wings rapidly, creating a mesmerizing dance of colors as it moves gracefully through the air.\", \"last\": \"The butterfly alights gently on a flower, its wings still quivering slightly from the flight.\"}"
+  },
+  {
+    "caption": "One bee buzzes nearby, hovering over wildflowers.",
+    "objects": "bee",
+    "numbers": "1",
+    "frame_first": "A bee hovers above a vibrant patch of wildflowers, its wings a blur.",
+    "frame_middle": "The bee lands gently on a purple wildflower, its body contrasting against the petals.",
+    "frame_last": "The bee takes off again, buzzing towards another flower in the field.",
+    "frame_json_raw": "{\"first\": \"A bee hovers above a vibrant patch of wildflowers, its wings a blur.\", \"middle\": \"The bee lands gently on a purple wildflower, its body contrasting against the petals.\", \"last\": \"The bee takes off again, buzzing towards another flower in the field.\"}"
+  },
+  {
+    "caption": "One shoe lies on the sidewalk, laces trailing loosely.",
+    "objects": "shoe",
+    "numbers": "1",
+    "frame_first": "A single shoe rests on the sidewalk, its laces untied and trailing behind it.",
+    "frame_middle": "The shoe remains on the sidewalk, with its laces still loosely trailing, catching a slight breeze.",
+    "frame_last": "The shoe is still on the sidewalk, laces now slightly tangled from the wind.",
+    "frame_json_raw": "{\"first\": \"A single shoe rests on the sidewalk, its laces untied and trailing behind it.\", \"middle\": \"The shoe remains on the sidewalk, with its laces still loosely trailing, catching a slight breeze.\", \"last\": \"The shoe is still on the sidewalk, laces now slightly tangled from the wind.\"}"
+  },
+  {
+    "caption": "One bubble floats above the grass.",
+    "objects": "bubble",
+    "numbers": "1",
+    "frame_first": "A single bubble rises slowly above a lush green grass field, sunlight glinting off its surface.",
+    "frame_middle": "The bubble hovers momentarily, reflecting the blue sky and white clouds above.",
+    "frame_last": "The bubble gently descends back towards the grass, its iridescent colors fading as it touches down.",
+    "frame_json_raw": "{\"first\": \"A single bubble rises slowly above a lush green grass field, sunlight glinting off its surface.\", \"middle\": \"The bubble hovers momentarily, reflecting the blue sky and white clouds above.\", \"last\": \"The bubble gently descends back towards the grass, its iridescent colors fading as it touches down.\"}"
+  },
+  {
+    "caption": "One tree swaying in the breeze, and one bee flies nearby.",
+    "objects": "tree, bee",
+    "numbers": "1, 1",
+    "frame_first": "A lone tree gently sways under a clear blue sky, with a bee hovering near its trunk.",
+    "frame_middle": "The bee flutters its wings, moving from the trunk towards a blossoming branch.",
+    "frame_last": "The bee lands on a flower, while the tree continues to sway softly in the breeze.",
+    "frame_json_raw": "{\"first\": \"A lone tree gently sways under a clear blue sky, with a bee hovering near its trunk.\", \"middle\": \"The bee flutters its wings, moving from the trunk towards a blossoming branch.\", \"last\": \"The bee lands on a flower, while the tree continues to sway softly in the breeze.\"}"
+  },
+  {
+    "caption": "One flower in the vase and one bubble floats above.",
+    "objects": "flower, bubble",
+    "numbers": "1, 1",
+    "frame_first": "A single flower sits in a vase, its petals gently swaying. A bubble begins to rise from the vase, floating upwards.",
+    "frame_middle": "The flower remains still in the vase, its vibrant colors standing out. The bubble hovers above the vase, reflecting the light.",
+    "frame_last": "The flower is peacefully settled in the vase. The bubble is at its peak, about to pop, casting a final shimmering light.",
+    "frame_json_raw": "{\"first\": \"A single flower sits in a vase, its petals gently swaying. A bubble begins to rise from the vase, floating upwards.\", \"middle\": \"The flower remains still in the vase, its vibrant colors standing out. The bubble hovers above the vase, reflecting the light.\", \"last\": \"The flower is peacefully settled in the vase. The bubble is at its peak, about to pop, casting a final shimmering light.\"}"
+  },
+  {
+    "caption": "One book on the bench, and one leaf falls onto its cover, landing softly.",
+    "objects": "book, leaf",
+    "numbers": "1, 1",
+    "frame_first": "A solitary book rests on a wooden bench under a tree, its cover open to a page of text.",
+    "frame_middle": "A single leaf drifts slowly from the tree above, nearing the book's cover.",
+    "frame_last": "The leaf lands softly on the book's cover, settling gently without disturbing the pages.",
+    "frame_json_raw": "{\"first\": \"A solitary book rests on a wooden bench under a tree, its cover open to a page of text.\", \"middle\": \"A single leaf drifts slowly from the tree above, nearing the book's cover.\", \"last\": \"The leaf lands softly on the book's cover, settling gently without disturbing the pages.\"}"
+  },
+  {
+    "caption": "One tree by the river, and one bubble rises drifting upwards.",
+    "objects": "tree, bubble",
+    "numbers": "1, 1",
+    "frame_first": "A lone tree stands by the riverbank, its reflection rippling in the water as a bubble begins to rise from the depths.",
+    "frame_middle": "The bubble drifts upwards, catching the sunlight, while the tree's branches sway gently in the breeze.",
+    "frame_last": "The bubble reaches the surface, bursts with a gentle pop, leaving the tree silhouetted against the serene river.",
+    "frame_json_raw": "{\"first\": \"A lone tree stands by the riverbank, its reflection rippling in the water as a bubble begins to rise from the depths.\", \"middle\": \"The bubble drifts upwards, catching the sunlight, while the tree's branches sway gently in the breeze.\", \"last\": \"The bubble reaches the surface, bursts with a gentle pop, leaving the tree silhouetted against the serene river.\"}"
+  },
+  {
+    "caption": "One skyscraper gleams in the sun, and one butterfly flies past.",
+    "objects": "skyscraper, butterfly",
+    "numbers": "1, 1",
+    "frame_first": "A skyscraper stands tall and gleaming under the bright sun, with a butterfly just beginning to fly past its lower levels.",
+    "frame_middle": "The butterfly flutters gracefully in front of the skyscraper's reflective glass, highlighting its vibrant colors against the building's shine.",
+    "frame_last": "The butterfly continues its flight, moving away from the skyscraper as the sun continues to illuminate the building's towering structure.",
+    "frame_json_raw": "{\"first\": \"A skyscraper stands tall and gleaming under the bright sun, with a butterfly just beginning to fly past its lower levels.\", \"middle\": \"The butterfly flutters gracefully in front of the skyscraper's reflective glass, highlighting its vibrant colors against the building's shine.\", \"last\": \"The butterfly continues its flight, moving away from the skyscraper as the sun continues to illuminate the building's towering structure.\"}"
+  },
+  {
+    "caption": "One star falls slowly, and one flower catches it in its petals.",
+    "objects": "star, flower",
+    "numbers": "1, 1",
+    "frame_first": "A single star descends slowly from a clear, dark sky, glowing softly against the backdrop of twinkling stars.",
+    "frame_middle": "The star, now closer to earth, hovers above a delicate flower with wide-open petals, illuminated by the star's gentle light.",
+    "frame_last": "The star gently lands within the flower's petals, which close softly around it, cradling the celestial light.",
+    "frame_json_raw": "{\"first\": \"A single star descends slowly from a clear, dark sky, glowing softly against the backdrop of twinkling stars.\", \"middle\": \"The star, now closer to earth, hovers above a delicate flower with wide-open petals, illuminated by the star's gentle light.\", \"last\": \"The star gently lands within the flower's petals, which close softly around it, cradling the celestial light.\"}"
+  },
+  {
+    "caption": "One flower floats on a cloud, and one star hovers nearby.",
+    "objects": "flower, star",
+    "numbers": "1, 1",
+    "frame_first": "A single flower floats peacefully on a soft, white cloud, with a star glowing gently nearby in the vast, dark sky.",
+    "frame_middle": "The flower and the star maintain their serene positions, the star casting a subtle light on the delicate petals of the flower.",
+    "frame_last": "The cloud gently drifts, carrying the flower with it, while the star remains a constant, luminous presence in the sky above.",
+    "frame_json_raw": "{\"first\": \"A single flower floats peacefully on a soft, white cloud, with a star glowing gently nearby in the vast, dark sky.\", \"middle\": \"The flower and the star maintain their serene positions, the star casting a subtle light on the delicate petals of the flower.\", \"last\": \"The cloud gently drifts, carrying the flower with it, while the star remains a constant, luminous presence in the sky above.\"}"
+  },
+  {
+    "caption": "One bee and one butterfly fly in the garden.",
+    "objects": "bee, butterfly",
+    "numbers": "1, 1",
+    "frame_first": "A bee hovers near a vibrant red flower in the sunlit garden, its wings a blur.",
+    "frame_middle": "The bee moves on to a cluster of yellow flowers, while a butterfly gracefully flutters into frame.",
+    "frame_last": "Both the bee and the butterfly rest momentarily on adjacent flowers, basking in the garden's serene afternoon light.",
+    "frame_json_raw": "{\"first\": \"A bee hovers near a vibrant red flower in the sunlit garden, its wings a blur.\", \"middle\": \"The bee moves on to a cluster of yellow flowers, while a butterfly gracefully flutters into frame.\", \"last\": \"Both the bee and the butterfly rest momentarily on adjacent flowers, basking in the garden's serene afternoon light.\"}"
+  },
+  {
+    "caption": "One star hangs from a tree, twinkling softly.",
+    "objects": "star, tree",
+    "numbers": "1, 1",
+    "frame_first": "A single star hangs from a tree branch, its light gently flickering against the dark backdrop of the night sky.",
+    "frame_middle": "The star continues to twinkle softly, casting a subtle glow on the leaves and branches around it.",
+    "frame_last": "The star's gentle light remains steady, twinkling peacefully as the night deepens around the tree.",
+    "frame_json_raw": "{\"first\": \"A single star hangs from a tree branch, its light gently flickering against the dark backdrop of the night sky.\", \"middle\": \"The star continues to twinkle softly, casting a subtle glow on the leaves and branches around it.\", \"last\": \"The star's gentle light remains steady, twinkling peacefully as the night deepens around the tree.\"}"
+  },
+  {
+    "caption": "One bubble floats in front of a shoe.",
+    "objects": "bubble, shoe",
+    "numbers": "1, 1",
+    "frame_first": "A single bubble emerges from the ground, hovering just in front of a shoe.",
+    "frame_middle": "The bubble remains suspended, reflecting the shoe's laces and sole.",
+    "frame_last": "The bubble slowly drifts away from the shoe, maintaining its spherical shape.",
+    "frame_json_raw": "{\"first\": \"A single bubble emerges from the ground, hovering just in front of a shoe.\", \"middle\": \"The bubble remains suspended, reflecting the shoe's laces and sole.\", \"last\": \"The bubble slowly drifts away from the shoe, maintaining its spherical shape.\"}"
+  },
+  {
+    "caption": "Two cars speed along a road.",
+    "objects": "car",
+    "numbers": "2",
+    "frame_first": "Two cars accelerate onto a straight, sunlit road, the morning sun glinting off their windshields.",
+    "frame_middle": "The cars are now in the middle of the road, speeding past trees and signs on either side, with the road stretching out ahead.",
+    "frame_last": "The cars race towards the horizon, the road narrowing in the distance as they disappear into the far end of the frame.",
+    "frame_json_raw": "{\"first\": \"Two cars accelerate onto a straight, sunlit road, the morning sun glinting off their windshields.\", \"middle\": \"The cars are now in the middle of the road, speeding past trees and signs on either side, with the road stretching out ahead.\", \"last\": \"The cars race towards the horizon, the road narrowing in the distance as they disappear into the far end of the frame.\"}"
+  },
+  {
+    "caption": "Two cats walking on the floor.",
+    "objects": "cat",
+    "numbers": "2",
+    "frame_first": "Two cats begin walking side by side on a wooden floor, their fur glistening under the soft indoor lighting.",
+    "frame_middle": "The cats continue their stroll, one slightly ahead of the other, their tails swaying gently with each step.",
+    "frame_last": "The cats reach the end of the room, pausing briefly before disappearing from view, their paws leaving soft imprints on the floor.",
+    "frame_json_raw": "{\"first\": \"Two cats begin walking side by side on a wooden floor, their fur glistening under the soft indoor lighting.\", \"middle\": \"The cats continue their stroll, one slightly ahead of the other, their tails swaying gently with each step.\", \"last\": \"The cats reach the end of the room, pausing briefly before disappearing from view, their paws leaving soft imprints on the floor.\"}"
+  },
+  {
+    "caption": "Two dogs running through a field.",
+    "objects": "dog",
+    "numbers": "2",
+    "frame_first": "Two dogs bound into a sunlit green field, their tails wagging.",
+    "frame_middle": "The dogs are now in the middle of the field, leaping over small tufts of grass.",
+    "frame_last": "The dogs reach the far side of the field, stopping to look back at their path.",
+    "frame_json_raw": "{\"first\": \"Two dogs bound into a sunlit green field, their tails wagging.\", \"middle\": \"The dogs are now in the middle of the field, leaping over small tufts of grass.\", \"last\": \"The dogs reach the far side of the field, stopping to look back at their path.\"}"
+  },
+  {
+    "caption": "Two robots dance rhythmically in the lab.",
+    "objects": "robot",
+    "numbers": "2",
+    "frame_first": "Two robots stand in the center of a well-lit laboratory, preparing to dance, their metallic surfaces reflecting the bright overhead lights.",
+    "frame_middle": "The robots move in sync, their arms and legs performing a complex dance routine, with the lab's equipment and monitors in the background.",
+    "frame_last": "The robots finish their dance with a synchronized pose, their movements fluid and precise, as the lab's lights cast shadows around them.",
+    "frame_json_raw": "{\"first\": \"Two robots stand in the center of a well-lit laboratory, preparing to dance, their metallic surfaces reflecting the bright overhead lights.\", \"middle\": \"The robots move in sync, their arms and legs performing a complex dance routine, with the lab's equipment and monitors in the background.\", \"last\": \"The robots finish their dance with a synchronized pose, their movements fluid and precise, as the lab's lights cast shadows around them.\"}"
+  },
+  {
+    "caption": "Two oranges roll across the table.",
+    "objects": "orange",
+    "numbers": "2",
+    "frame_first": "Two bright oranges sit at the edge of a wooden table, about to roll.",
+    "frame_middle": "The oranges are rolling across the table, one slightly ahead of the other, creating a slight bouncing motion.",
+    "frame_last": "The oranges come to a stop near the opposite edge of the table, one resting just ahead of the other.",
+    "frame_json_raw": "{\"first\": \"Two bright oranges sit at the edge of a wooden table, about to roll.\", \"middle\": \"The oranges are rolling across the table, one slightly ahead of the other, creating a slight bouncing motion.\", \"last\": \"The oranges come to a stop near the opposite edge of the table, one resting just ahead of the other.\"}"
+  },
+  {
+    "caption": "Two birds soar through the sky.",
+    "objects": "bird",
+    "numbers": "2",
+    "frame_first": "Two birds take flight, their wings outstretched against the vast blue sky.",
+    "frame_middle": "The birds are now in the middle of their flight, gliding effortlessly with the sun shining behind them.",
+    "frame_last": "The birds continue to soar, gradually moving away, leaving only their figures in the sky.",
+    "frame_json_raw": "{\"first\": \"Two birds take flight, their wings outstretched against the vast blue sky.\", \"middle\": \"The birds are now in the middle of their flight, gliding effortlessly with the sun shining behind them.\", \"last\": \"The birds continue to soar,渐渐远离，天空中只剩下他们的身影。\"} \n\n(Note: The last sentence was initially in English, but I've continued it in Chinese by mistake. The correct English version should be: \"The birds continue to soar, gradually moving away, leaving only their figures in the sky.\") \n\nCorrected response:\n{\"first\": \"Two birds take flight, their wings outstretched against the vast blue sky.\", \"middle\": \"The birds are now in the middle of their flight, gliding effortlessly with the sun shining behind them.\", \"last\": \"The birds continue to soar, gradually moving away, leaving only their figures in the sky.\"}"
+  },
+  {
+    "caption": "Two horses gallop across the beach.",
+    "objects": "horse",
+    "numbers": "2",
+    "frame_first": "Two horses begin to gallop across a sandy beach, their hooves kicking up small clouds of sand.",
+    "frame_middle": "The horses are now in the middle of the beach, their manes and tails flowing freely in the sea breeze.",
+    "frame_last": "The horses continue their gallop, their silhouettes framed by the vast ocean and the setting sun.",
+    "frame_json_raw": "{\"first\": \"Two horses begin to gallop across a sandy beach, their hooves kicking up small clouds of sand.\", \"middle\": \"The horses are now in the middle of the beach, their manes and tails flowing freely in the sea breeze.\", \"last\": \"The horses continue their gallop, their silhouettes framed by the vast ocean and the setting sun.\"}"
+  },
+  {
+    "caption": "Two ships drift into the harbor.",
+    "objects": "ship",
+    "numbers": "2",
+    "frame_first": "Two ships approach the harbor entrance, their sails billowing in the breeze as the sun rises over the water.",
+    "frame_middle": "The ships are now in the harbor, their masts towering over the smaller boats, with the light of day fully illuminating the scene.",
+    "frame_last": "The ships have come to a stop, anchored in the harbor, as seagulls circle above and the water ripples gently in the morning light.",
+    "frame_json_raw": "{\"first\": \"Two ships approach the harbor entrance, their sails billowing in the breeze as the sun rises over the water.\", \"middle\": \"The ships are now in the harbor, their masts towering over the smaller boats, with the light of day fully illuminating the scene.\", \"last\": \"The ships have come to a stop, anchored in the harbor, as seagulls circle above and the water ripples gently in the morning light.\"}"
+  },
+  {
+    "caption": "Two rabbits hop through a meadow.",
+    "objects": "rabbit",
+    "numbers": "2",
+    "frame_first": "Two rabbits, one brown and one white, hop into a sunlit meadow filled with tall green grass and wildflowers.",
+    "frame_middle": "The rabbits pause briefly, ears perked, in the middle of the meadow, surrounded by swaying grass under a clear blue sky.",
+    "frame_last": "The rabbits continue their journey, disappearing into a patch of wildflowers at the edge of the meadow as the sun begins to set.",
+    "frame_json_raw": "{\"first\": \"Two rabbits, one brown and one white, hop into a sunlit meadow filled with tall green grass and wildflowers.\", \"middle\": \"The rabbits pause briefly, ears perked, in the middle of the meadow, surrounded by swaying grass under a clear blue sky.\", \"last\": \"The rabbits continue their journey, disappearing into a patch of wildflowers at the edge of the meadow as the sun begins to set.\"}"
+  },
+  {
+    "caption": "Two balls bounce across a playground.",
+    "objects": "ball",
+    "numbers": "2",
+    "frame_first": "Two colorful balls are seen bouncing towards the center of a sunny playground, surrounded by swings and slides.",
+    "frame_middle": "The balls reach the midpoint of the playground, their shadows stretching as the sun begins to dip.",
+    "frame_last": "The balls come to a rest near the sandbox, their energy spent, as children approach with curiosity.",
+    "frame_json_raw": "{\"first\": \"Two colorful balls are seen bouncing towards the center of a sunny playground, surrounded by swings and slides.\", \"middle\": \"The balls reach the midpoint of the playground, their shadows stretching as the sun begins to dip.\", \"last\": \"The balls come to a rest near the sandbox, their energy spent, as children approach with curiosity.\"}"
+  },
+  {
+    "caption": "Two fish swim gracefully in the sea.",
+    "objects": "fish",
+    "numbers": "2",
+    "frame_first": "Two fish glide through the clear blue sea, sunlight filtering through the water.",
+    "frame_middle": "The fish swim side by side, their scales shimmering in the underwater light.",
+    "frame_last": "The fish dart away from each other, their tails flicking as they explore the vast ocean.",
+    "frame_json_raw": "{\"first\": \"Two fish glide through the clear blue sea, sunlight filtering through the water.\", \"middle\": \"The fish swim side by side, their scales shimmering in the underwater light.\", \"last\": \"The fish dart away from each other, their tails flicking as they explore the vast ocean.\"}"
+  },
+  {
+    "caption": "Two bears lumber through the woods.",
+    "objects": "bear",
+    "numbers": "2",
+    "frame_first": "Two large bears emerge from the dense forest underbrush, their fur blending with the shadows of the trees.",
+    "frame_middle": "The bears walk side by side on a narrow woodland path, their paws making soft thuds on the forest floor.",
+    "frame_last": "The bears disappear into the thick foliage, leaving only the rustling of leaves as a sign of their passage.",
+    "frame_json_raw": "{\"first\": \"Two large bears emerge from the dense forest underbrush, their fur blending with the shadows of the trees.\", \"middle\": \"The bears walk side by side on a narrow woodland path, their paws making soft thuds on the forest floor.\", \"last\": \"The bears disappear into the thick foliage, leaving only the rustling of leaves as a sign of their passage.\"}"
+  },
+  {
+    "caption": "Two motorcycles glide down the highway.",
+    "objects": "motorcycle",
+    "numbers": "2",
+    "frame_first": "Two motorcycles, their chrome gleaming under the sun, enter the frame from the left, speeding down a wide, straight highway.",
+    "frame_middle": "The motorcycles are now in the center of the frame, the wind whipping around the riders as they maintain a steady pace, the highway stretching endlessly ahead.",
+    "frame_last": "The motorcycles exit the frame to the right, leaving behind a trail of dust and the distant sound of their engines fading into the horizon.",
+    "frame_json_raw": "{\"first\": \"Two motorcycles, their chrome gleaming under the sun, enter the frame from the left, speeding down a wide, straight highway.\", \"middle\": \"The motorcycles are now in the center of the frame, the wind whipping around the riders as they maintain a steady pace, the highway stretching endlessly ahead.\", \"last\": \"The motorcycles exit the frame to the right, leaving behind a trail of dust and the distant sound of their engines fading into the horizon.\"}"
+  },
+  {
+    "caption": "Two chairs rock on a porch, creaking with the breeze.",
+    "objects": "chair",
+    "numbers": "2",
+    "frame_first": "Two old wooden rocking chairs sit on a weathered porch, gently swaying back and forth in the soft evening breeze.",
+    "frame_middle": "The chairs continue to rock, their creaks mingling with the rustling of leaves from nearby trees, casting dancing shadows on the porch floor.",
+    "frame_last": "As the breeze slows, the rocking chairs come to a gentle stop, their final creaks fading into the calm of the night.",
+    "frame_json_raw": "{\"first\": \"Two old wooden rocking chairs sit on a weathered porch, gently swaying back and forth in the soft evening breeze.\", \"middle\": \"The chairs continue to rock, their creaks mingling with the rustling of leaves from nearby trees, casting dancing shadows on the porch floor.\", \"last\": \"As the breeze slows, the rocking chairs come to a gentle stop, their final creaks fading into the calm of the night.\"}"
+  },
+  {
+    "caption": "Two cups sit on a table, steaming with fresh coffee.",
+    "objects": "cup",
+    "numbers": "2",
+    "frame_first": "Two cups of steaming coffee sit on a table, the steam rising gently.",
+    "frame_middle": "The steam from the coffee cups begins to dissipate, revealing the rich brown liquid inside.",
+    "frame_last": "The coffee cups remain on the table, now with only a faint wisp of steam above them.",
+    "frame_json_raw": "{\"first\": \"Two cups of steaming coffee sit on a table, the steam rising gently.\", \"middle\": \"The steam from the coffee cups begins to dissipate, revealing the rich brown liquid inside.\", \"last\": \"The coffee cups remain on the table, now with only a faint wisp of steam above them.\"}"
+  },
+  {
+    "caption": "Two apples rolling over the grass.",
+    "objects": "apple",
+    "numbers": "2",
+    "frame_first": "Two red apples begin rolling across a lush green grassy field under a clear blue sky.",
+    "frame_middle": "The apples continue their journey, one slightly ahead of the other, with blades of grass visible beneath them.",
+    "frame_last": "The apples come to a stop on the grass, a few inches apart, under the bright sunlight of the afternoon.",
+    "frame_json_raw": "{\"first\": \"Two red apples begin rolling across a lush green grassy field under a clear blue sky.\", \"middle\": \"The apples continue their journey, one slightly ahead of the other, with blades of grass visible beneath them.\", \"last\": \"The apples come to a stop on the grass, a few inches apart, under the bright sunlight of the afternoon.\"}"
+  },
+  {
+    "caption": "Two boxes are placed on the table.",
+    "objects": "box",
+    "numbers": "2",
+    "frame_first": "Two boxes sit side by side on a table, their surfaces reflecting the ambient light.",
+    "frame_middle": "The boxes remain stationary on the table, casting slight shadows on the surface.",
+    "frame_last": "The two boxes are still",
+    "frame_json_raw": "{\"first\": \"Two boxes sit side by side on a table, their surfaces reflecting the ambient light.\", \"middle\": \"The boxes remain stationary on the table, casting slight shadows on the surface.\", \"last\": \"The two boxes are still on the table, the scene寂静中文字幕：\n\n{\"first\": \"桌子上有两个盒子并排放置，表面反射着周围的光线。\", \"middle\": \"盒子在桌子上保持静止，投下轻微的阴影。\", \"last\": \"两个盒子仍然放在桌子上，场景保持不变。\"} \n\n请注意，原始要求是英文的，我提供了中文翻译以供参考。根据要求，我将仅提供英文的严格JSON格式答案：\n\n{\"first\": \"Two boxes sit side by side on a table, their surfaces reflecting the ambient light.\", \"middle\": \"The boxes remain stationary on the table, casting slight shadows on the surface.\", \"last\": \"The two boxes are still"
+  },
+  {
+    "caption": "Two pairs of sunglasses glint under the sun on a beach towel.",
+    "objects": "sunglasses",
+    "numbers": "2",
+    "frame_first": "Two pairs of sunglasses lie side by side, glinting in the sunlight on a colorful beach towel.",
+    "frame_middle": "The sunglasses continue to reflect the bright sun, casting small glimmers across the sandy beach.",
+    "frame_last": "The beach towel begins to fold, with the sunglasses still glinting, as they are about to be packed away.",
+    "frame_json_raw": "{\"first\": \"Two pairs of sunglasses lie side by side, glinting in the sunlight on a colorful beach towel.\", \"middle\": \"The sunglasses continue to reflect the bright sun, casting small glimmers across the sandy beach.\", \"last\": \"The beach towel begins to fold, with the sunglasses still glinting, as they are about to be packed away.\"}"
+  },
+  {
+    "caption": "Two buses travel down the street.",
+    "objects": "bus",
+    "numbers": "2",
+    "frame_first": "Two buses, side by side, begin their journey down a bustling city street, the morning sun casting long shadows.",
+    "frame_middle": "The buses continue down the street, passengers visible through the windows, the city's skyline towering in the background.",
+    "frame_last": "The buses pull away from the camera, heading towards the distant intersection, the street returning to its usual flow of traffic.",
+    "frame_json_raw": "{\"first\": \"Two buses, side by side, begin their journey down a bustling city street, the morning sun casting long shadows.\", \"middle\": \"The buses continue down the street, passengers visible through the windows, the city's skyline towering in the background.\", \"last\": \"The buses pull away from the camera, heading towards the distant intersection, the street returning to its usual flow of traffic.\"}"
+  },
+  {
+    "caption": "Two pandas munch bamboo in the garden.",
+    "objects": "panda",
+    "numbers": "2",
+    "frame_first": "Two pandas are standing in a lush garden, each holding a stalk of bamboo in their hands, about to take a bite.",
+    "frame_middle": "The pandas are now chewing contentedly, surrounded by green bamboo stalks, with sunlight filtering through the leaves.",
+    "frame_last": "The pandas finish their meal, dropping the remaining bamboo stalks, and look around the garden, satisfied.",
+    "frame_json_raw": "{\"first\": \"Two pandas are standing in a lush garden, each holding a stalk of bamboo in their hands, about to take a bite.\", \"middle\": \"The pandas are now chewing contentedly, surrounded by green bamboo stalks, with sunlight filtering through the leaves.\", \"last\": \"The pandas finish their meal, dropping the remaining bamboo stalks, and look around the garden, satisfied.\"}"
+  },
+  {
+    "caption": "Two elephants splash water from a river.",
+    "objects": "elephant",
+    "numbers": "2",
+    "frame_first": "Two elephants stand at the river's edge, one bending down to scoop water with its trunk.",
+    "frame_middle": "Both elephants are now splashing water, spraying it high into the air with their trunks.",
+    "frame_last": "The elephants step back, shaking their trunks to remove excess water, droplets glistening in the sunlight.",
+    "frame_json_raw": "{\"first\": \"Two elephants stand at the river's edge, one bending down to scoop water with its trunk.\", \"middle\": \"Both elephants are now splashing water, spraying it high into the air with their trunks.\", \"last\": \"The elephants step back, shaking their trunks to remove excess water, droplets glistening in the sunlight.\"}"
+  },
+  {
+    "caption": "Two cows amble through the pasture.",
+    "objects": "cow",
+    "numbers": "2",
+    "frame_first": "Two cows lazily walk into the frame from the left, grazing as they move through the lush green pasture.",
+    "frame_middle": "The cows continue to amble across the pasture, their tails swishing gently as they munch on the grass.",
+    "frame_last": "The cows reach the right side of the pasture, still moving at a leisurely pace, with the sun casting a warm glow over the scene.",
+    "frame_json_raw": "{\"first\": \"Two cows lazily walk into the frame from the left, grazing as they move through the lush green pasture.\", \"middle\": \"The cows continue to amble across the pasture, their tails swishing gently as they munch on the grass.\", \"last\": \"The cows reach the right side of the pasture, still moving at a leisurely pace, with the sun casting a warm glow over the scene.\"}"
+  },
+  {
+    "caption": "Two trucks move along the road.",
+    "objects": "truck",
+    "numbers": "2",
+    "frame_first": "Two trucks are seen at the beginning of the road, driving towards the viewer under a clear, bright sky.",
+    "frame_middle": "The trucks are now in the middle of the road, moving parallel to each other with the sun casting long shadows.",
+    "frame_last": "The trucks continue down the road, gradually moving away from the viewer, leaving the road empty behind them.",
+    "frame_json_raw": "{\"first\": \"Two trucks are seen at the beginning of the road, driving towards the viewer under a clear, bright sky.\", \"middle\": \"The trucks are now in the middle of the road, moving parallel to each other with the sun casting long shadows.\", \"last\": \"The trucks continue down the road, gradually moving away from the viewer, leaving the road empty behind them.\"}"
+  },
+  {
+    "caption": "Two airplanes fly across the sky.",
+    "objects": "airplane",
+    "numbers": "2",
+    "frame_first": "Two airplanes, side by side, begin their flight across a clear blue sky.",
+    "frame_middle": "The airplanes continue to fly parallel to each other, their contrails forming white lines in the sky.",
+    "frame_last": "The airplanes are now distant specks in the sky, their flight paths still visible as thin white streaks.",
+    "frame_json_raw": "{\"first\": \"Two airplanes, side by side, begin their flight across a clear blue sky.\", \"middle\": \"The airplanes continue to fly parallel to each other, their contrails forming white lines in the sky.\", \"last\": \"The airplanes are now distant specks in the sky, their flight paths still visible as thin white streaks.\"}"
+  },
+  {
+    "caption": "Two bicycles glide down a park path.",
+    "objects": "bicycle",
+    "numbers": "2",
+    "frame_first": "Two bicycles, one red and one blue, begin to glide down a sunlit park path surrounded by lush green trees.",
+    "frame_middle": "The bicycles continue their smooth journey down the path, with the red one slightly ahead, passing by a small wooden bridge.",
+    "frame_last": "The bicycles reach the end of the path, with the blue one now leading, as they approach a wide, open grassy area where children are playing.",
+    "frame_json_raw": "{\"first\": \"Two bicycles, one red and one blue, begin to glide down a sunlit park path surrounded by lush green trees.\", \"middle\": \"The bicycles continue their smooth journey down the path, with the red one slightly ahead, passing by a small wooden bridge.\", \"last\": \"The bicycles reach the end of the path, with the blue one now leading, as they approach a wide, open grassy area where children are playing.\"}"
+  },
+  {
+    "caption": "Two sheep graze on a hillside.",
+    "objects": "sheep",
+    "numbers": "2",
+    "frame_first": "Two sheep stand at the bottom of a hillside, beginning to graze on the lush green grass.",
+    "frame_middle": "The sheep are now in the middle of the hillside, heads down, munching contentedly on the grass.",
+    "frame_last": "The sheep reach the top of the hillside, still grazing, with the sun shining brightly behind them.",
+    "frame_json_raw": "{\"first\": \"Two sheep stand at the bottom of a hillside, beginning to graze on the lush green grass.\", \"middle\": \"The sheep are now in the middle of the hillside, heads down, munching contentedly on the grass.\", \"last\": \"The sheep reach the top of the hillside, still grazing, with the sun shining brightly behind them.\"}"
+  },
+  {
+    "caption": "Two people sit around a table, chatting as they share their meal.",
+    "objects": "person",
+    "numbers": "2",
+    "frame_first": "Two people sit across from each other at a small, round table, their faces illuminated by the soft glow of a nearby lamp, engaged in conversation.",
+    "frame_middle": "One person laughs, gesturing with their hand while holding a glass of wine, the other leans in, listening intently with a forkful of food halfway to their mouth.",
+    "frame_last": "Both individuals pause, looking at each other with warm smiles, the table filled with half-eaten dishes and empty glasses, the scene bathed in the warm, ambient light of the room.",
+    "frame_json_raw": "{\"first\": \"Two people sit across from each other at a small, round table, their faces illuminated by the soft glow of a nearby lamp, engaged in conversation.\", \"middle\": \"One person laughs, gesturing with their hand while holding a glass of wine, the other leans in, listening intently with a forkful of food halfway to their mouth.\", \"last\": \"Both individuals pause, looking at each other with warm smiles, the table filled with half-eaten dishes and empty glasses, the scene bathed in the warm, ambient light of the room.\"}"
+  },
+  {
+    "caption": "Two boys play soccer on a grassy field.",
+    "objects": "boy",
+    "numbers": "2",
+    "frame_first": "Two boys stand on a green grassy field, one boy kicks the soccer ball towards the other.",
+    "frame_middle": "The ball flies through the air as the boys chase after it, the sun shining brightly in a clear blue sky.",
+    "frame_last": "One of the boys successfully traps the ball with his foot, both boys smile and continue their game.",
+    "frame_json_raw": "{\"first\": \"Two boys stand on a green grassy field, one boy kicks the soccer ball towards the other.\", \"middle\": \"The ball flies through the air as the boys chase after it, the sun shining brightly in a clear blue sky.\", \"last\": \"One of the boys successfully traps the ball with his foot, both boys smile and continue their game.\"}"
+  },
+  {
+    "caption": "Two girls paint a large canvas together.",
+    "objects": "girl",
+    "numbers": "2",
+    "frame_first": "Two girls stand side by side in front of a large blank canvas, each holding a paintbrush, preparing to start painting.",
+    "frame_middle": "The girls are now deeply engaged in painting, their brushes moving swiftly across the canvas, creating a colorful abstract design.",
+    "frame_last": "The girls step back, admiring their completed artwork on the now vibrant and colorful canvas, smiles on their faces.",
+    "frame_json_raw": "{\"first\": \"Two girls stand side by side in front of a large blank canvas, each holding a paintbrush, preparing to start painting.\", \"middle\": \"The girls are now deeply engaged in painting, their brushes moving swiftly across the canvas, creating a colorful abstract design.\", \"last\": \"The girls step back, admiring their completed artwork on the now vibrant and colorful canvas, smiles on their faces.\"}"
+  },
+  {
+    "caption": "Two children run along the tracks.",
+    "objects": "child",
+    "numbers": "2",
+    "frame_first": "Two children, a boy and a girl, start running side by side on the railway tracks, their faces lit up with excitement.",
+    "frame_middle": "The children continue running along the tracks, the sun shining overhead, casting short shadows behind them.",
+    "frame_last": "The children slow down, still on the tracks, looking back over their shoulders with big grins.",
+    "frame_json_raw": "{\"first\": \"Two children, a boy and a girl, start running side by side on the railway tracks, their faces lit up with excitement.\", \"middle\": \"The children continue running along the tracks, the sun shining overhead, casting short shadows behind them.\", \"last\": \"The children slow down, still on the tracks, looking back over their shoulders with big grins.\"}"
+  },
+  {
+    "caption": "Three cars speed along a road.",
+    "objects": "car",
+    "numbers": "3",
+    "frame_first": "Three cars are seen speeding down a straight, sunlit road, with the horizon showing a clear blue sky.",
+    "frame_middle": "The cars are now in the middle of a curve, with the road winding through a scenic landscape, each car maintaining high speed.",
+    "frame_last": "The cars exit the curve and continue straight, with the road fading into the distance, suggesting they will keep speeding away.",
+    "frame_json_raw": "{\"first\": \"Three cars are seen speeding down a straight, sunlit road, with the horizon showing a clear blue sky.\", \"middle\": \"The cars are now in the middle of a curve, with the road winding through a scenic landscape, each car maintaining high speed.\", \"last\": \"The cars exit the curve and continue straight, with the road fading into the distance, suggesting they will keep speeding away.\"}"
+  },
+  {
+    "caption": "Three cats walking on the floor.",
+    "objects": "cat",
+    "numbers": "3",
+    "frame_first": "Three cats, each with distinct fur colors, begin walking across a clean wooden floor.",
+    "frame_middle": "The cats are now in the middle of the room, their paws making soft thumping sounds.",
+    "frame_last": "The cats reach the end of the floor, pausing briefly before disappearing behind a corner.",
+    "frame_json_raw": "{\"first\": \"Three cats, each with distinct fur colors, begin walking across a clean wooden floor.\", \"middle\": \"The cats are now in the middle of the room, their paws making soft thumping sounds.\", \"last\": \"The cats reach the end of the floor, pausing briefly before disappearing behind a corner.\"}"
+  },
+  {
+    "caption": "Three dogs running through a field.",
+    "objects": "dog",
+    "numbers": "3",
+    "frame_first": "Three dogs, a golden retriever, a border collie, and a labrador, are seen at the edge of a vast green field, about to start running.",
+    "frame_middle": "The dogs are now in full sprint, their tongues out, bounding across the field with the golden retriever slightly ahead.",
+    "frame_last": "The dogs slow down, panting and looking around, having reached the other side of the field.",
+    "frame_json_raw": "{\"first\": \"Three dogs, a golden retriever, a border collie, and a labrador, are seen at the edge of a vast green field, about to start running.\", \"middle\": \"The dogs are now in full sprint, their tongues out, bounding across the field with the golden retriever slightly ahead.\", \"last\": \"The dogs slow down, panting and looking around, having reached the other side of the field.\"}"
+  },
+  {
+    "caption": "Three robots dance rhythmically in the lab.",
+    "objects": "robot",
+    "numbers": "3",
+    "frame_first": "Three robots stand in a line, preparing to dance, in a brightly lit laboratory filled with various scientific equipment.",
+    "frame_middle": "The robots are now in the middle of their dance, moving rhythmically with synchronized gestures, their metallic surfaces reflecting the lab lights.",
+    "frame_last": "The robots finish their dance routine, returning to a still pose, with a sense of accomplishment as the lab's fluorescent lights cast a calm glow around them.",
+    "frame_json_raw": "{\"first\": \"Three robots stand in a line, preparing to dance, in a brightly lit laboratory filled with various scientific equipment.\", \"middle\": \"The robots are now in the middle of their dance, moving rhythmically with synchronized gestures, their metallic surfaces reflecting the lab lights.\", \"last\": \"The robots finish their dance routine, returning to a still pose, with a sense of accomplishment as the lab's fluorescent lights cast a calm glow around them.\"}"
+  },
+  {
+    "caption": "Three oranges roll across the table.",
+    "objects": "orange",
+    "numbers": "3",
+    "frame_first": "Three bright oranges sit at the edge of a wooden table, about to roll.",
+    "frame_middle": "The oranges are in motion, rolling across the table's surface, creating a slight friction sound.",
+    "frame_last": "The oranges come to a stop at the opposite edge of the table, slightly apart from each other.",
+    "frame_json_raw": "{\"first\": \"Three bright oranges sit at the edge of a wooden table, about to roll.\", \"middle\": \"The oranges are in motion, rolling across the table's surface, creating a slight friction sound.\", \"last\": \"The oranges come to a stop at the opposite edge of the table, slightly apart from each other.\"}"
+  },
+  {
+    "caption": "Three birds soar through the sky.",
+    "objects": "bird",
+    "numbers": "3",
+    "frame_first": "Three birds take flight, their wings outstretched against the bright blue sky.",
+    "frame_middle": "The birds are now in the middle of their flight, gliding effortlessly with the sun shining behind them.\", \"last\": \"The birds continue to soar,渐渐远离，天空中只剩下他们的身影。\"} \n\n(Note: The last sentence was initially in English, but I've continued it in Chinese by mistake at the end. The correct version should be in English as per the instruction. Here's the corrected version:)\n\n{\"first\": \"Three birds take flight, their wings outstretched against the bright blue sky.\", \"middle\": \"The birds are now in the middle of their flight, gliding effortlessly with the sun shining behind them.",
+    "frame_last": "The birds continue to soar, gradually moving apart as they navigate the vast sky.",
+    "frame_json_raw": "{\"first\": \"Three birds take flight, their wings outstretched against the bright blue sky.\", \"middle\": \"The birds are now in the middle of their flight, gliding effortlessly with the sun shining behind them.\", \"last\": \"The birds continue to soar,渐渐远离，天空中只剩下他们的身影。\"} \n\n(Note: The last sentence was initially in English, but I've continued it in Chinese by mistake at the end. The correct version should be in English as per the instruction. Here's the corrected version:)\n\n{\"first\": \"Three birds take flight, their wings outstretched against the bright blue sky.\", \"middle\": \"The birds are now in the middle of their flight, gliding effortlessly with the sun shining behind them.\", \"last\": \"The birds continue to soar, gradually moving apart as they navigate the vast sky.\"}"
+  },
+  {
+    "caption": "Three horses gallop across the beach.",
+    "objects": "horse",
+    "numbers": "3",
+    "frame_first": "Three horses begin to gallop across a sandy beach, their hooves kicking up small clouds of sand.",
+    "frame_middle": "The horses are now in the middle of the beach, their manes and tails flowing freely as they run under a bright, sunny sky.",
+    "frame_last": "The horses reach the edge of the beach, the ocean waves splashing near their hooves as they continue their gallop.",
+    "frame_json_raw": "{\"first\": \"Three horses begin to gallop across a sandy beach, their hooves kicking up small clouds of sand.\", \"middle\": \"The horses are now in the middle of the beach, their manes and tails flowing freely as they run under a bright, sunny sky.\", \"last\": \"The horses reach the edge of the beach, the ocean waves splashing near their hooves as they continue their gallop.\"}"
+  },
+  {
+    "caption": "Three ships drift into the harbor.",
+    "objects": "ship",
+    "numbers": "3",
+    "frame_first": "Three ships approach the harbor entrance, their sails billowing in the breeze as the sun rises over the water.",
+    "frame_middle": "The ships are now in the harbor, their masts towering over the smaller boats as they carefully navigate towards the docks.",
+    "frame_last": "The ships have anchored, their figures idle against the calm harbor waters as the morning light fills the scene.",
+    "frame_json_raw": "{\"first\": \"Three ships approach the harbor entrance, their sails billowing in the breeze as the sun rises over the water.\", \"middle\": \"The ships are now in the harbor, their masts towering over the smaller boats as they carefully navigate towards the docks.\", \"last\": \"The ships have anchored, their figures idle against the calm harbor waters as the morning light fills the scene.\"}"
+  },
+  {
+    "caption": "Three rabbits hop through a meadow.",
+    "objects": "rabbit",
+    "numbers": "3",
+    "frame_first": "Three rabbits, two brown and one white, hop into a sunlit meadow filled with tall green grass.",
+    "frame_middle": "The rabbits scatter playfully, their ears flopping as they bound over small wildflowers.",
+    "frame_last": "The rabbits pause, looking around curiously, their noses twitching in the soft, grassy field.",
+    "frame_json_raw": "{\"first\": \"Three rabbits, two brown and one white, hop into a sunlit meadow filled with tall green grass.\", \"middle\": \"The rabbits scatter playfully, their ears flopping as they bound over small wildflowers.\", \"last\": \"The rabbits pause, looking around curiously, their noses twitching in the soft, grassy field.\"}"
+  },
+  {
+    "caption": "Three balls bounce across a playground.",
+    "objects": "ball",
+    "numbers": "3",
+    "frame_first": "Three colorful balls are thrown into a playground, each beginning to bounce across the sunlit, empty space.",
+    "frame_middle": "The balls continue their erratic bounces, scattering in different directions across the playground's smooth surface.",
+    "frame_last": "The balls come to a stop, scattered around the playground, their bouncing energy finally exhausted.",
+    "frame_json_raw": "{\"first\": \"Three colorful balls are thrown into a playground, each beginning to bounce across the sunlit, empty space.\", \"middle\": \"The balls continue their erratic bounces, scattering in different directions across the playground's smooth surface.\", \"last\": \"The balls come to a stop, scattered around the playground, their bouncing energy finally exhausted.\"}"
+  },
+  {
+    "caption": "Three fish swim gracefully in the sea.",
+    "objects": "fish",
+    "numbers": "3",
+    "frame_first": "Three fish glide smoothly through the clear blue sea, sunlight filtering through the water.",
+    "frame_middle": "The fish weave around each other, their scales shimmering in the underwater light.",
+    "frame_last": "The fish swim off into the distance, their tails flicking rhythmically as they go.",
+    "frame_json_raw": "{\"first\": \"Three fish glide smoothly through the clear blue sea, sunlight filtering through the water.\", \"middle\": \"The fish weave around each other, their scales shimmering in the underwater light.\", \"last\": \"The fish swim off into the distance, their tails flicking rhythmically as they go.\"}"
+  },
+  {
+    "caption": "Three bears lumber through the woods.",
+    "objects": "bear",
+    "numbers": "3",
+    "frame_first": "Three bears, large and shaggy, emerge from the dense underbrush of a forest, sunlight filtering through the canopy above.",
+    "frame_middle": "The bears are now in the middle of the woods, walking side by side, their paws thudding softly on the forest floor.",
+    "frame_last": "The bears disappear into the shadows of the trees, leaving only the rustling of leaves and the distant sound of their movement as evidence of their passage.",
+    "frame_json_raw": "{\"first\": \"Three bears, large and shaggy, emerge from the dense underbrush of a forest, sunlight filtering through the canopy above.\", \"middle\": \"The bears are now in the middle of the woods, walking side by side, their paws thudding softly on the forest floor.\", \"last\": \"The bears disappear into the shadows of the trees, leaving only the rustling of leaves and the distant sound of their movement as evidence of their passage.\"}"
+  },
+  {
+    "caption": "Three motorcycles glide down the highway.",
+    "objects": "motorcycle",
+    "numbers": "3",
+    "frame_first": "Three motorcycles, each with a rider in a leather jacket, enter the frame from the left, moving smoothly down a wide, straight highway.",
+    "frame_middle": "The motorcycles are now in the center of the frame, the highway stretching out into the distance, with the sun shining brightly overhead.",
+    "frame_last": "The motorcycles exit the frame to the right, leaving a trail of dust and the sound of engines fading into the distance.",
+    "frame_json_raw": "{\"first\": \"Three motorcycles, each with a rider in a leather jacket, enter the frame from the left, moving smoothly down a wide, straight highway.\", \"middle\": \"The motorcycles are now in the center of the frame, the highway stretching out into the distance, with the sun shining brightly overhead.\", \"last\": \"The motorcycles exit the frame to the right, leaving a trail of dust and the sound of engines fading into the distance.\"}"
+  },
+  {
+    "caption": "Three chairs rock on a porch, creaking with the breeze.",
+    "objects": "chair",
+    "numbers": "3",
+    "frame_first": "Three old wooden chairs rock gently back and forth on a weathered porch, their legs scraping against the wooden floor with each movement.",
+    "frame_middle": "The breeze picks up slightly, causing the chairs to sway more noticeably, their creaks mingling with the rustling leaves.",
+    "frame_last": "The chairs come to a slow stop as the breeze dies down, leaving only the quiet of the porch at dusk.",
+    "frame_json_raw": "{\"first\": \"Three old wooden chairs rock gently back and forth on a weathered porch, their legs scraping against the wooden floor with each movement.\", \"middle\": \"The breeze picks up slightly, causing the chairs to sway more noticeably, their creaks mingling with the rustling leaves.\", \"last\": \"The chairs come to a slow stop as the breeze dies down, leaving only the quiet of the porch at dusk.\"}"
+  },
+  {
+    "caption": "Three cups sit on a table, steaming with fresh coffee.",
+    "objects": "cup",
+    "numbers": "3",
+    "frame_first": "Three steaming cups of fresh coffee are arranged neatly on a table, emitting a warm aroma.",
+    "frame_middle": "Steam rises gently from each cup, creating a soft, misty haze above the table.",
+    "frame_last": "The steam begins to dissipate, revealing the rich, dark liquid within each cup.",
+    "frame_json_raw": "{\"first\": \"Three steaming cups of fresh coffee are arranged neatly on a table, emitting a warm aroma.\", \"middle\": \"Steam rises gently from each cup, creating a soft, misty haze above the table.\", \"last\": \"The steam begins to dissipate, revealing the rich, dark liquid within each cup.\"}"
+  },
+  {
+    "caption": "Three apples rolling over the grass.",
+    "objects": "apple",
+    "numbers": "3",
+    "frame_first": "Three bright red apples are released onto a lush green grassy field, beginning to roll.",
+    "frame_middle": "The apples are now in the middle of the frame, each at a different stage of their roll, with the sun casting gentle shadows.",
+    "frame_last": "The apples come to a stop, scattered across the grass, with one slightly ahead of the others.",
+    "frame_json_raw": "{\"first\": \"Three bright red apples are released onto a lush green grassy field, beginning to roll.\", \"middle\": \"The apples are now in the middle of the frame, each at a different stage of their roll, with the sun casting gentle shadows.\", \"last\": \"The apples come to a stop, scattered across the grass, with one slightly ahead of the others.\"}"
+  },
+  {
+    "caption": "Three boxes are placed on the table.",
+    "objects": "box",
+    "numbers": "3",
+    "frame_first": "Three boxes are neatly arranged on a table, sitting still under a well-lit room.",
+    "frame_middle": "The boxes remain stationary on the table, casting slight shadows as the light continues to illuminate the scene.",
+    "frame_last": "The three boxes are still on the table, the only movement being the subtle play of light on their surfaces.",
+    "frame_json_raw": "{\"first\": \"Three boxes are neatly arranged on a table, sitting still under a well-lit room.\", \"middle\": \"The boxes remain stationary on the table, casting slight shadows as the light continues to illuminate the scene.\", \"last\": \"The three boxes are still on the table, the only movement being the subtle play of light on their surfaces.\"}"
+  },
+  {
+    "caption": "Three pairs of sunglasses glint under the sun on a beach towel.",
+    "objects": "sunglasses",
+    "numbers": "3",
+    "frame_first": "Three pairs of sunglasses, each a different style, are neatly arranged on a bright beach towel, glinting under the intense sunlight.",
+    "frame_middle": "The sunglasses continue to reflect the sun's rays, casting small, dancing light patterns on the surrounding sand.",
+    "frame_last": "The beach towel begins to fold slightly, with the sunglasses still positioned atop, catching the last strong rays of the setting sun.",
+    "frame_json_raw": "{\"first\": \"Three pairs of sunglasses, each a different style, are neatly arranged on a bright beach towel, glinting under the intense sunlight.\", \"middle\": \"The sunglasses continue to reflect the sun's rays, casting small, dancing light patterns on the surrounding sand.\", \"last\": \"The beach towel begins to fold slightly, with the sunglasses still positioned atop, catching the last strong rays of the setting sun.\"}"
+  },
+  {
+    "caption": "Three buses travel down the street.",
+    "objects": "bus",
+    "numbers": "3",
+    "frame_first": "Three buses, painted in bright yellow with black stripes, are lined up at a traffic light on a busy city street.",
+    "frame_middle": "The buses are now in motion, each a few car lengths apart, traveling down the street with people visible through their windows.",
+    "frame_last": "The buses continue down the street, gradually becoming smaller as they move further away, with the cityscape filling the background.",
+    "frame_json_raw": "{\"first\": \"Three buses, painted in bright yellow with black stripes, are lined up at a traffic light on a busy city street.\", \"middle\": \"The buses are now in motion, each a few car lengths apart, traveling down the street with people visible through their windows.\", \"last\": \"The buses continue down the street, gradually becoming smaller as they move further away, with the cityscape filling the background.\"}"
+  },
+  {
+    "caption": "Three pandas munch bamboo in the garden.",
+    "objects": "panda",
+    "numbers": "3",
+    "frame_first": "Three pandas are standing in a lush garden, each holding a stalk of bamboo in their hands, about to take a bite.",
+    "frame_middle": "The pandas are now chewing contentedly, surrounded by green bamboo stalks, with sunlight filtering through the leaves.",
+    "frame_last": "The pandas finish their meal, bamboo leaves scattered around them, as they look up, satisfied, in the serene garden.",
+    "frame_json_raw": "{\"first\": \"Three pandas are standing in a lush garden, each holding a stalk of bamboo in their hands, about to take a bite.\", \"middle\": \"The pandas are now chewing contentedly, surrounded by green bamboo stalks, with sunlight filtering through the leaves.\", \"last\": \"The pandas finish their meal, bamboo leaves scattered around them, as they look up, satisfied, in the serene garden.\"}"
+  },
+  {
+    "caption": "Three elephants splash water from a river.",
+    "objects": "elephant",
+    "numbers": "3",
+    "frame_first": "Three elephants stand at the river's edge, their trunks submerged in the water.",
+    "frame_middle": "One elephant raises its trunk, filled with water, while the others watch.",
+    "frame_last": "Water cascades down from the elephant's trunk, creating a splash as it hits the river surface.",
+    "frame_json_raw": "{\"first\": \"Three elephants stand at the river's edge, their trunks submerged in the water.\", \"middle\": \"One elephant raises its trunk, filled with water, while the others watch.\", \"last\": \"Water cascades down from the elephant's trunk, creating a splash as it hits the river surface.\"}"
+  },
+  {
+    "caption": "Three cows amble through the pasture.",
+    "objects": "cow",
+    "numbers": "3",
+    "frame_first": "Three cows graze peacefully at the edge of a lush green pasture under a clear blue sky.",
+    "frame_middle": "The cows wander towards the middle of the pasture, their tails swishing lazily as they munch on the grass.",
+    "frame_last": "The cows reach a shady spot under a large oak tree, continuing to graze contentedly in the soft afternoon light.",
+    "frame_json_raw": "{\"first\": \"Three cows graze peacefully at the edge of a lush green pasture under a clear blue sky.\", \"middle\": \"The cows wander towards the middle of the pasture, their tails swishing lazily as they munch on the grass.\", \"last\": \"The cows reach a shady spot under a large oak tree, continuing to graze contentedly in the soft afternoon light.\"}"
+  },
+  {
+    "caption": "Three trucks move along the road.",
+    "objects": "truck",
+    "numbers": "3",
+    "frame_first": "Three trucks, one after another, begin to drive down a straight, wide road under a clear blue sky.",
+    "frame_middle": "The trucks are now in the middle of the road, kicking up dust as they continue their journey.",
+    "frame_last": "The trucks approach the end of the visible road, their taillights glowing as they disappear into the distance.",
+    "frame_json_raw": "{\"first\": \"Three trucks, one after another, begin to drive down a straight, wide road under a clear blue sky.\", \"middle\": \"The trucks are now in the middle of the road, kicking up dust as they continue their journey.\", \"last\": \"The trucks approach the end of the visible road, their taillights glowing as they disappear into the distance.\"}"
+  },
+  {
+    "caption": "Three airplanes fly across the sky.",
+    "objects": "airplane",
+    "numbers": "3",
+    "frame_first": "Three airplanes, in a staggered formation, appear on the horizon against a clear blue sky.",
+    "frame_middle": "The airplanes are now directly overhead, their wings catching the sunlight as they continue their flight.",
+    "frame_last": "The airplanes are distant specks, disappearing into the clouds as they continue their journey across the sky.",
+    "frame_json_raw": "{\"first\": \"Three airplanes, in a staggered formation, appear on the horizon against a clear blue sky.\", \"middle\": \"The airplanes are now directly overhead, their wings catching the sunlight as they continue their flight.\", \"last\": \"The airplanes are distant specks, disappearing into the clouds as they continue their journey across the sky.\"}"
+  },
+  {
+    "caption": "Three bicycles glide down a park path.",
+    "objects": "bicycle",
+    "numbers": "3",
+    "frame_first": "Three bicycles, their wheels spinning, enter a sunlit park path lined with trees.",
+    "frame_middle": "The bicycles continue down the path, the cyclists leaning slightly into a gentle curve.",
+    "frame_last": "The bicycles exit the frame, leaving the tranquil park path empty and serene.",
+    "frame_json_raw": "{\"first\": \"Three bicycles, their wheels spinning, enter a sunlit park path lined with trees.\", \"middle\": \"The bicycles continue down the path, the cyclists leaning slightly into a gentle curve.\", \"last\": \"The bicycles exit the frame, leaving the tranquil park path empty and serene.\"}"
+  },
+  {
+    "caption": "Three sheep graze on a hillside.",
+    "objects": "sheep",
+    "numbers": "3",
+    "frame_first": "Three sheep are scattered across a green hillside, heads down as they graze peacefully under a clear blue sky.",
+    "frame_middle": "The sheep continue to graze, one lifting its head to look around before returning to the grass.",
+    "frame_last": "The sheep are still grazing, contentedly munching on the lush hillside, the sun beginning to dip towards the horizon.",
+    "frame_json_raw": "{\"first\": \"Three sheep are scattered across a green hillside, heads down as they graze peacefully under a clear blue sky.\", \"middle\": \"The sheep continue to graze, one lifting its head to look around before returning to the grass.\", \"last\": \"The sheep are still grazing, contentedly munching on the lush hillside, the sun beginning to dip towards the horizon.\"}"
+  },
+  {
+    "caption": "Three people sit around a table, chatting as they share their meal.",
+    "objects": "person",
+    "numbers": "3",
+    "frame_first": "Three people are seated around a table, plates in front of them, engaged in lively conversation.",
+    "frame_middle": "One person laughs while the others smile, their hands gesturing as they continue to chat over their meal.",
+    "frame_last": "The group leans in slightly, their attention focused on one person who is speaking, with half-eaten dishes still on the table.",
+    "frame_json_raw": "{\"first\": \"Three people are seated around a table, plates in front of them, engaged in lively conversation.\", \"middle\": \"One person laughs while the others smile, their hands gesturing as they continue to chat over their meal.\", \"last\": \"The group leans in slightly, their attention focused on one person who is speaking, with half-eaten dishes still on the table.\"}"
+  },
+  {
+    "caption": "Three boys play soccer on a grassy field.",
+    "objects": "boy",
+    "numbers": "3",
+    "frame_first": "Three boys in soccer uniforms stand on a lush, green field, preparing to start a game.",
+    "frame_middle": "One boy kicks the ball, sending it flying towards another boy who is about to attempt a header.",
+    "frame_last": "The third boy, lying on the ground, laughs as the ball narrowly misses him, the sun shining brightly overhead.",
+    "frame_json_raw": "{\"first\": \"Three boys in soccer uniforms stand on a lush, green field, preparing to start a game.\", \"middle\": \"One boy kicks the ball, sending it flying towards another boy who is about to attempt a header.\", \"last\": \"The third boy, lying on the ground, laughs as the ball narrowly misses him, the sun shining brightly overhead.\"}"
+  },
+  {
+    "caption": "Three girls paint a large canvas together.",
+    "objects": "girl",
+    "numbers": "3",
+    "frame_first": "Three girls stand in front of a large blank canvas, each holding a paintbrush, preparing to start painting.",
+    "frame_middle": "The girls are now actively painting, their brushes moving across the canvas, creating a colorful abstract design.",
+    "frame_last": "The girls step back, admiring their completed artwork on the now vibrant and colorful canvas.",
+    "frame_json_raw": "{\"first\": \"Three girls stand in front of a large blank canvas, each holding a paintbrush, preparing to start painting.\", \"middle\": \"The girls are now actively painting, their brushes moving across the canvas, creating a colorful abstract design.\", \"last\": \"The girls step back, admiring their completed artwork on the now vibrant and colorful canvas.\"}"
+  },
+  {
+    "caption": "Three children run along the tracks.",
+    "objects": "child",
+    "numbers": "3",
+    "frame_first": "Three children, dressed in colorful clothes, start running along a set of railroad tracks under a clear blue sky.",
+    "frame_middle": "The children are now in the middle of a long stretch of track, laughing and playing as they run.",
+    "frame_last": "The children reach the end of the visible track, stopping to catch their breath and look back at the distance they've covered.",
+    "frame_json_raw": "{\"first\": \"Three children, dressed in colorful clothes, start running along a set of railroad tracks under a clear blue sky.\", \"middle\": \"The children are now in the middle of a long stretch of track, laughing and playing as they run.\", \"last\": \"The children reach the end of the visible track, stopping to catch their breath and look back at the distance they've covered.\"}"
+  },
+  {
+    "caption": "Four cars speed along a road.",
+    "objects": "car",
+    "numbers": "4",
+    "frame_first": "Four cars, each a different color, accelerate onto a straight, sunlit road at dawn.",
+    "frame_middle": "The cars are now racing side by side, with the leading car slightly ahead, creating a trail of dust behind them.",
+    "frame_last": "The cars approach a distant curve, their taillights glowing as they continue to speed away into the horizon.",
+    "frame_json_raw": "{\"first\": \"Four cars, each a different color, accelerate onto a straight, sunlit road at dawn.\", \"middle\": \"The cars are now racing side by side, with the leading car slightly ahead, creating a trail of dust behind them.\", \"last\": \"The cars approach a distant curve, their taillights glowing as they continue to speed away into the horizon.\"}"
+  },
+  {
+    "caption": "Four cats walking on the floor.",
+    "objects": "cat",
+    "numbers": "4",
+    "frame_first": "Four cats begin walking in a line across a light-colored floor, each cat a step behind the other.",
+    "frame_middle": "The cats are now in the middle of the frame, continuing their steady walk, their tails swaying gently from side to side.",
+    "frame_last": "The last cat in the line reaches the end of the floor, and all four cats pause briefly before disappearing out of frame.",
+    "frame_json_raw": "{\"first\": \"Four cats begin walking in a line across a light-colored floor, each cat a step behind the other.\", \"middle\": \"The cats are now in the middle of the frame, continuing their steady walk, their tails swaying gently from side to side.\", \"last\": \"The last cat in the line reaches the end of the floor, and all four cats pause briefly before disappearing out of frame.\"}"
+  },
+  {
+    "caption": "Four dogs running through a field.",
+    "objects": "dog",
+    "numbers": "4",
+    "frame_first": "Four dogs, a golden retriever, a border collie, a labrador, and a dachshund, are seen at the edge of a vast green field, about to start running.",
+    "frame_middle": "The dogs are now in full sprint, their legs a blur, scattering wildflowers as they race across the sunlit field.",
+    "frame_last": "The dogs slow to a trot, tails wagging, as they reach the far end of the field, panting and looking back towards where they started.",
+    "frame_json_raw": "{\"first\": \"Four dogs, a golden retriever, a border collie, a labrador, and a dachshund, are seen at the edge of a vast green field, about to start running.\", \"middle\": \"The dogs are now in full sprint, their legs a blur, scattering wildflowers as they race across the sunlit field.\", \"last\": \"The dogs slow to a trot, tails wagging, as they reach the far end of the field, panting and looking back towards where they started.\"}"
+  },
+  {
+    "caption": "Four robots dance rhythmically in the lab.",
+    "objects": "robot",
+    "numbers": "4",
+    "frame_first": "Four robots stand in a line, their metallic limbs poised to begin a synchronized dance in a brightly lit laboratory.",
+    "frame_middle": "The robots are now in the middle of their dance, their movements fluid and rhythmic, creating a mesmerizing pattern in the lab.",
+    "frame_last": "The robots finish their dance routine, returning to their starting positions, with a sense of accomplishment in their mechanical expressions as the lab lights dim slightly.",
+    "frame_json_raw": "{\"first\": \"Four robots stand in a line, their metallic limbs poised to begin a synchronized dance in a brightly lit laboratory.\", \"middle\": \"The robots are now in the middle of their dance, their movements fluid and rhythmic, creating a mesmerizing pattern in the lab.\", \"last\": \"The robots finish their dance routine, returning to their starting positions, with a sense of accomplishment in their mechanical expressions as the lab lights dim slightly.\"}"
+  },
+  {
+    "caption": "Four oranges roll across the table.",
+    "objects": "orange",
+    "numbers": "4",
+    "frame_first": "Four bright oranges sit at one end of a wooden table, about to roll.",
+    "frame_middle": "The oranges are in mid-roll, scattered across the table with one nearing the edge.",
+    "frame_last": "All four oranges have rolled to the other end of the table, three have stopped while one is about to fall off the edge.",
+    "frame_json_raw": "{\"first\": \"Four bright oranges sit at one end of a wooden table, about to roll.\", \"middle\": \"The oranges are in mid-roll, scattered across the table with one nearing the edge.\", \"last\": \"All four oranges have rolled to the other end of the table, three have stopped while one is about to fall off the edge.\"}"
+  },
+  {
+    "caption": "Four birds soar through the sky.",
+    "objects": "bird",
+    "numbers": "4",
+    "frame_first": "Four birds take flight, their wings outstretched against the bright morning sky.",
+    "frame_middle": "The birds are now in the middle of their flight, gliding effortlessly with the sun's rays shining through their feathers.",
+    "frame_last": "The birds continue to soar, gradually fading into the distance as they navigate the vast, open sky.",
+    "frame_json_raw": "{\"first\": \"Four birds take flight, their wings outstretched against the bright morning sky.\", \"middle\": \"The birds are now in the middle of their flight, gliding effortlessly with the sun's rays shining through their feathers.\", \"last\": \"The birds continue to soar, gradually fading into the distance as they navigate the vast, open sky.\"}"
+  },
+  {
+    "caption": "Four horses gallop across the beach.",
+    "objects": "horse",
+    "numbers": "4",
+    "frame_first": "Four horses begin to gallop across a sandy beach, their hooves kicking up small plumes of sand.",
+    "frame_middle": "The horses are now in the middle of the beach, their manes and tails flowing freely in the sea breeze.",
+    "frame_last": "The horses reach the edge of the water, their powerful legs still moving in unison as they approach the sea.",
+    "frame_json_raw": "{\"first\": \"Four horses begin to gallop across a sandy beach, their hooves kicking up small plumes of sand.\", \"middle\": \"The horses are now in the middle of the beach, their manes and tails flowing freely in the sea breeze.\", \"last\": \"The horses reach the edge of the water, their powerful legs still moving in unison as they approach the sea.\"}"
+  },
+  {
+    "caption": "Four ships drift into the harbor.",
+    "objects": "ship",
+    "numbers": "4",
+    "frame_first": "Four ships, their sails billowing slightly in the breeze, approach the harbor entrance against a backdrop of a calm, early morning sky.",
+    "frame_middle": "The ships are now in the harbor, their masts towering over the smaller boats, with sunlight glinting off the water and the harbor's bustling activity.",
+    "frame_last": "The ships have anchored, their figures motionless in the harbor, as the sun climbs higher, casting long shadows from the dockside structures.",
+    "frame_json_raw": "{\"first\": \"Four ships, their sails billowing slightly in the breeze, approach the harbor entrance against a backdrop of a calm, early morning sky.\", \"middle\": \"The ships are now in the harbor, their masts towering over the smaller boats, with sunlight glinting off the water and the harbor's bustling activity.\", \"last\": \"The ships have anchored, their figures motionless in the harbor, as the sun climbs higher, casting long shadows from the dockside structures.\"}"
+  },
+  {
+    "caption": "Four rabbits hop through a meadow.",
+    "objects": "rabbit",
+    "numbers": "4",
+    "frame_first": "Four rabbits, two brown and two white, hop into a sunlit meadow filled with tall green grass and wildflowers.",
+    "frame_middle": "The rabbits scatter in different directions, their ears flopping as they bound over small hillocks and around wildflower clusters.",
+    "frame_last": "The rabbits pause, looking around curiously, their noses twitching in the peaceful meadow bathed in late afternoon light.",
+    "frame_json_raw": "{\"first\": \"Four rabbits, two brown and two white, hop into a sunlit meadow filled with tall green grass and wildflowers.\", \"middle\": \"The rabbits scatter in different directions, their ears flopping as they bound over small hillocks and around wildflower clusters.\", \"last\": \"The rabbits pause, looking around curiously, their noses twitching in the peaceful meadow bathed in late afternoon light.\"}"
+  },
+  {
+    "caption": "Four balls bounce across a playground.",
+    "objects": "ball",
+    "numbers": "4",
+    "frame_first": "Four colorful balls are scattered on a sunny playground, with one ball just beginning to bounce off the ground.",
+    "frame_middle": "The balls are in mid-air, showing different stages of their bounce, with children's playground equipment visible in the background.",
+    "frame_last": "All four balls have settled on the ground after a series of bounces, with the playground now quiet and empty around them.",
+    "frame_json_raw": "{\"first\": \"Four colorful balls are scattered on a sunny playground, with one ball just beginning to bounce off the ground.\", \"middle\": \"The balls are in mid-air, showing different stages of their bounce, with children's playground equipment visible in the background.\", \"last\": \"All four balls have settled on the ground after a series of bounces, with the playground now quiet and empty around them.\"}"
+  },
+  {
+    "caption": "Four fish swim gracefully in the sea.",
+    "objects": "fish",
+    "numbers": "4",
+    "frame_first": "Four fish glide smoothly through the clear blue sea, sunlight filtering through the water.",
+    "frame_middle": "The fish weave around each other, their scales shimmering in the underwater light.",
+    "frame_last": "The fish continue their serene journey, disappearing into the vast, azure depths of the ocean.",
+    "frame_json_raw": "{\"first\": \"Four fish glide smoothly through the clear blue sea, sunlight filtering through the water.\", \"middle\": \"The fish weave around each other, their scales shimmering in the underwater light.\", \"last\": \"The fish continue their serene journey, disappearing into the vast, azure depths of the ocean.\"}"
+  },
+  {
+    "caption": "Four bears lumber through the woods.",
+    "objects": "bear",
+    "numbers": "4",
+    "frame_first": "Four bears emerge from the dense forest undergrowth, the early morning light filtering through the trees.",
+    "frame_middle": "The bears are in the middle of the frame, walking side by side on a narrow woodland path, their fur glistening with dew.",
+    "frame_last": "The last bear disappears into the shadows of the forest, leaving only the rustling of leaves and the faint sound of their footsteps echoing in the woods.",
+    "frame_json_raw": "{\"first\": \"Four bears emerge from the dense forest undergrowth, the early morning light filtering through the trees.\", \"middle\": \"The bears are in the middle of the frame, walking side by side on a narrow woodland path, their fur glistening with dew.\", \"last\": \"The last bear disappears into the shadows of the forest, leaving only the rustling of leaves and the faint sound of their footsteps echoing in the woods.\"}"
+  },
+  {
+    "caption": "Four motorcycles glide down the highway.",
+    "objects": "motorcycle",
+    "numbers": "4",
+    "frame_first": "Four motorcycles, each with a rider in a leather jacket, enter the frame from the left, moving smoothly down a wide, straight highway.",
+    "frame_middle": "The motorcycles are now in the center of the frame, the highway stretching out into the distance, with the sun shining brightly overhead.",
+    "frame_last": "The motorcycles exit the frame to the right, their taillights glowing as they continue down the highway, leaving a trail of dust in their wake.",
+    "frame_json_raw": "{\"first\": \"Four motorcycles, each with a rider in a leather jacket, enter the frame from the left, moving smoothly down a wide, straight highway.\", \"middle\": \"The motorcycles are now in the center of the frame, the highway stretching out into the distance, with the sun shining brightly overhead.\", \"last\": \"The motorcycles exit the frame to the right, their taillights glowing as they continue down the highway, leaving a trail of dust in their wake.\"}"
+  },
+  {
+    "caption": "Four chairs rock on a porch, creaking with the breeze.",
+    "objects": "chair",
+    "numbers": "4",
+    "frame_first": "Four old wooden chairs sit on a weathered porch, gently swaying back and forth in the soft evening breeze.",
+    "frame_middle": "The chairs continue to rock, their creaks mingling with the rustling of leaves from nearby trees.",
+    "frame_last": "As the breeze dies down, the rocking slows, and the chairs come to a gentle stop, silent against the porch floor.",
+    "frame_json_raw": "{\"first\": \"Four old wooden chairs sit on a weathered porch, gently swaying back and forth in the soft evening breeze.\", \"middle\": \"The chairs continue to rock, their creaks mingling with the rustling of leaves from nearby trees.\", \"last\": \"As the breeze dies down, the rocking slows, and the chairs come to a gentle stop, silent against the porch floor.\"}"
+  },
+  {
+    "caption": "Four cups sit on a table, steaming with fresh coffee.",
+    "objects": "cup",
+    "numbers": "4",
+    "frame_first": "Four cups of steaming coffee are neatly arranged on a table, the steam rising gently.",
+    "frame_middle": "Steam continues to rise from each cup, creating a slight haze above the table.",
+    "frame_last": "The steam from the coffee cups begins to dissipate, leaving only a faint trace above the table.",
+    "frame_json_raw": "{\"first\": \"Four cups of steaming coffee are neatly arranged on a table, the steam rising gently.\", \"middle\": \"Steam continues to rise from each cup, creating a slight haze above the table.\", \"last\": \"The steam from the coffee cups begins to dissipate, leaving only a faint trace above the table.\"}"
+  },
+  {
+    "caption": "Four apples rolling over the grass.",
+    "objects": "apple",
+    "numbers": "4",
+    "frame_first": "Four bright red apples lie scattered on a lush green grassy field under a clear blue sky.",
+    "frame_middle": "The apples are in motion, each rolling in slightly different directions across the grass, with the sun casting short shadows behind them.",
+    "frame_last": "The apples come to a stop, scattered across the grass, their varied positions showing the end of their playful journey.",
+    "frame_json_raw": "{\"first\": \"Four bright red apples lie scattered on a lush green grassy field under a clear blue sky.\", \"middle\": \"The apples are in motion, each rolling in slightly different directions across the grass, with the sun casting short shadows behind them.\", \"last\": \"The apples come to a stop, scattered across the grass, their varied positions showing the end of their playful journey.\"}"
+  },
+  {
+    "caption": "Four boxes are placed on the table.",
+    "objects": "box",
+    "numbers": "4",
+    "frame_first": "Four boxes are neatly arranged on a table, each one a different color.",
+    "frame_middle": "The boxes remain stationary on the table.",
+    "frame_last": "The four boxes are still on the table.",
+    "frame_json_raw": "{\"first\": \"Four boxes are neatly arranged on a table, each one a different color.\", \"middle\": \"The boxes remain stationary on the table, casting slight shadows.\", \"last\": \"The four boxes are still on the table, the scene寂静使场景显得平静。由于提示中没有提供关于时间、天气或光线的详细信息，我将保持描述简洁，仅基于提供的信息。以下是调整后的JSON响应：\n\n{\"first\": \"Four boxes are neatly arranged on a table, each one a different color.\", \"middle\": \"The boxes remain stationary on the table.\", \"last\": \"The four boxes are still on the table.\"}"
+  },
+  {
+    "caption": "Four pairs of sunglasses glint under the sun on a beach towel.",
+    "objects": "sunglasses",
+    "numbers": "4",
+    "frame_first": "Four pairs of sunglasses, each reflecting the bright sun, are neatly arranged on a colorful beach towel spread out on the sand.",
+    "frame_middle": "Sunlight continues to glint off the sunglasses, casting small, dancing reflections on the surrounding sand.",
+    "frame_last": "The sunglasses remain still on the towel, their reflections shifting slightly as the sun moves across the sky.",
+    "frame_json_raw": "{\"first\": \"Four pairs of sunglasses, each reflecting the bright sun, are neatly arranged on a colorful beach towel spread out on the sand.\", \"middle\": \"Sunlight continues to glint off the sunglasses, casting small, dancing reflections on the surrounding sand.\", \"last\": \"The sunglasses remain still on the towel, their reflections shifting slightly as the sun moves across the sky.\"}"
+  },
+  {
+    "caption": "Four buses travel down the street.",
+    "objects": "bus",
+    "numbers": "4",
+    "frame_first": "Four buses, painted in bright yellow with black stripes, are lined up at a traffic light on a busy city street.",
+    "frame_middle": "The buses are now in motion, each one a few car lengths apart, traveling down the street with pedestrians watching them pass by.",
+    "frame_last": "The buses continue down the street, gradually becoming smaller as they head towards the horizon, with the last bus almost out of sight.",
+    "frame_json_raw": "{\"first\": \"Four buses, painted in bright yellow with black stripes, are lined up at a traffic light on a busy city street.\", \"middle\": \"The buses are now in motion, each one a few car lengths apart, traveling down the street with pedestrians watching them pass by.\", \"last\": \"The buses continue down the street, gradually becoming smaller as they head towards the horizon, with the last bus almost out of sight.\"}"
+  },
+  {
+    "caption": "Four pandas munch bamboo in the garden.",
+    "objects": "panda",
+    "numbers": "4",
+    "frame_first": "Four pandas are scattered across a lush garden, each starting to munch on bamboo shoots.",
+    "frame_middle": "The pandas continue to eat, their heads bobbing up and down as they chew contentedly among the greenery.",
+    "frame_last": "The pandas finish their meal, bamboo leaves scattered around them, and they sit peacefully in the garden.",
+    "frame_json_raw": "{\"first\": \"Four pandas are scattered across a lush garden, each starting to munch on bamboo shoots.\", \"middle\": \"The pandas continue to eat, their heads bobbing up and down as they chew contentedly among the greenery.\", \"last\": \"The pandas finish their meal, bamboo leaves scattered around them, and they sit peacefully in the garden.\"}"
+  },
+  {
+    "caption": "Four elephants splash water from a river.",
+    "objects": "elephant",
+    "numbers": "4",
+    "frame_first": "Four elephants stand at the river's edge, the largest one begins to scoop water with its trunk.",
+    "frame_middle": "Water splashes as each elephant takes turns spraying water onto themselves and each other, creating a playful scene.",
+    "frame_last": "The elephants, now wet and gleaming, continue to play in the shallow water, their trunks reaching out for more.",
+    "frame_json_raw": "{\"first\": \"Four elephants stand at the river's edge, the largest one begins to scoop water with its trunk.\", \"middle\": \"Water splashes as each elephant takes turns spraying water onto themselves and each other, creating a playful scene.\", \"last\": \"The elephants, now wet and gleaming, continue to play in the shallow water, their trunks reaching out for more.\"}"
+  },
+  {
+    "caption": "Four cows amble through the pasture.",
+    "objects": "cow",
+    "numbers": "4",
+    "frame_first": "Four cows lazily graze, scattered across a lush green pasture under a clear blue sky.",
+    "frame_middle": "The cows continue to amble, one lifting its head to look at the viewer while the others keep grazing.",
+    "frame_last": "The cows gather near a shaded area under an old oak tree, still and content in the serene pasture.",
+    "frame_json_raw": "{\"first\": \"Four cows lazily graze, scattered across a lush green pasture under a clear blue sky.\", \"middle\": \"The cows continue to amble, one lifting its head to look at the viewer while the others keep grazing.\", \"last\": \"The cows gather near a shaded area under an old oak tree, still and content in the serene pasture.\"}"
+  },
+  {
+    "caption": "Four trucks move along the road.",
+    "objects": "truck",
+    "numbers": "4",
+    "frame_first": "Four trucks are seen at the beginning of the road, approaching from the distance.",
+    "frame_middle": "The trucks are now in the middle of the road, evenly spaced, driving with steady lights.",
+    "frame_last": "The trucks reach the end of the visible road, gradually disappearing into the horizon.",
+    "frame_json_raw": "{\"first\": \"Four trucks are seen at the beginning of the road, approaching from the distance.\", \"middle\": \"The trucks are now in the middle of the road, evenly spaced, driving with steady lights.\", \"last\": \"The trucks reach the end of the visible road, gradually disappearing into the horizon.\"}"
+  },
+  {
+    "caption": "Four airplanes fly across the sky.",
+    "objects": "airplane",
+    "numbers": "4",
+    "frame_first": "Four airplanes, in a staggered formation, begin to enter the frame from the left, their silver bodies glinting in the sunlight.",
+    "frame_middle": "The airplanes are now centered in the frame, each one slightly offset from the other, their contrails visible against the clear blue sky.",
+    "frame_last": "The airplanes exit the frame to the right, their wings still catching the light as they disappear into the distance, leaving behind fading contrails.",
+    "frame_json_raw": "{\"first\": \"Four airplanes, in a staggered formation, begin to enter the frame from the left, their silver bodies glinting in the sunlight.\", \"middle\": \"The airplanes are now centered in the frame, each one slightly offset from the other, their contrails visible against the clear blue sky.\", \"last\": \"The airplanes exit the frame to the right, their wings still catching the light as they disappear into the distance, leaving behind fading contrails.\"}"
+  },
+  {
+    "caption": "Four bicycles glide down a park path.",
+    "objects": "bicycle",
+    "numbers": "4",
+    "frame_first": "Four bicycles, their wheels spinning, enter a sunlit park path lined with trees.",
+    "frame_middle": "The bicycles continue down the path, the riders leaning slightly into a gentle curve, with sunlight filtering through the leaves.",
+    "frame_last": "The bicycles exit the frame, leaving the tranquil park path empty except for the soft shadows of the trees.",
+    "frame_json_raw": "{\"first\": \"Four bicycles, their wheels spinning, enter a sunlit park path lined with trees.\", \"middle\": \"The bicycles continue down the path, the riders leaning slightly into a gentle curve, with sunlight filtering through the leaves.\", \"last\": \"The bicycles exit the frame, leaving the tranquil park path empty except for the soft shadows of the trees.\"}"
+  },
+  {
+    "caption": "Four sheep graze on a hillside.",
+    "objects": "sheep",
+    "numbers": "4",
+    "frame_first": "Four sheep scatter across a sunlit hillside, grazing on the lush green grass.",
+    "frame_middle": "The sheep continue to munch on the grass, occasionally lifting their heads to look around.",
+    "frame_last": "The sheep gather closer together, still grazing, as the hillside remains peaceful and serene.",
+    "frame_json_raw": "{\"first\": \"Four sheep scatter across a sunlit hillside, grazing on the lush green grass.\", \"middle\": \"The sheep continue to munch on the grass, occasionally lifting their heads to look around.\", \"last\": \"The sheep gather closer together, still grazing, as the hillside remains peaceful and serene.\"}"
+  },
+  {
+    "caption": "Four people sit around a table, chatting as they share their meal.",
+    "objects": "person",
+    "numbers": "4",
+    "frame_first": "Four people are seated around a table, engaged in conversation, with plates of food in front of them.",
+    "frame_middle": "One person laughs while another gestures with a fork, their meal half-eaten.",
+    "frame_last": "The group leans in closer, continuing their animated discussion over the last bites of their meal.",
+    "frame_json_raw": "{\"first\": \"Four people are seated around a table, engaged in conversation, with plates of food in front of them.\", \"middle\": \"One person laughs while another gestures with a fork, their meal half-eaten.\", \"last\": \"The group leans in closer, continuing their animated discussion over the last bites of their meal.\"}"
+  },
+  {
+    "caption": "Four boys play soccer on a grassy field.",
+    "objects": "boy",
+    "numbers": "4",
+    "frame_first": "Four boys stand on a grassy field, ready to start a soccer game, with one boy kicking off the ball.",
+    "frame_middle": "Two boys sprint towards the ball in the middle of the field, while the others watch and position themselves for the play.",
+    "frame_last": "One boy scores a goal, celebrating with his teammates at the end of the field.",
+    "frame_json_raw": "{\"first\": \"Four boys stand on a grassy field, ready to start a soccer game, with one boy kicking off the ball.\", \"middle\": \"Two boys sprint towards the ball in the middle of the field, while the others watch and position themselves for the play.\", \"last\": \"One boy scores a goal, celebrating with his teammates at the end of the field.\"}"
+  },
+  {
+    "caption": "Four girls paint a large canvas together.",
+    "objects": "girl",
+    "numbers": "4",
+    "frame_first": "Four girls stand around a large canvas, each holding paintbrushes and opening paint tubes, preparing to start painting.",
+    "frame_middle": "The girls are actively painting the canvas, their brushes moving in synchronized strokes, colors blending together.",
+    "frame_last": "The girls step back, admiring the completed large canvas filled with vibrant colors and patterns, smiles on their faces.",
+    "frame_json_raw": "{\"first\": \"Four girls stand around a large canvas, each holding paintbrushes and opening paint tubes, preparing to start painting.\", \"middle\": \"The girls are actively painting the canvas, their brushes moving in synchronized strokes, colors blending together.\", \"last\": \"The girls step back, admiring the completed large canvas filled with vibrant colors and patterns, smiles on their faces.\"}"
+  },
+  {
+    "caption": "Four children run along the tracks.",
+    "objects": "child",
+    "numbers": "4",
+    "frame_first": "Four children, dressed in bright summer clothes, start running along a set of railroad tracks, their laughter echoing in the open air.",
+    "frame_middle": "In the middle of the frame, the children are now in full sprint, their figures scattered along the tracks, with the sun casting long shadows behind them.",
+    "frame_last": "The last child reaches a bend in the tracks, looking back over their shoulder, the others trailing behind, their playful chase coming to an end.",
+    "frame_json_raw": "{\"first\": \"Four children, dressed in bright summer clothes, start running along a set of railroad tracks, their laughter echoing in the open air.\", \"middle\": \"In the middle of the frame, the children are now in full sprint, their figures scattered along the tracks, with the sun casting long shadows behind them.\", \"last\": \"The last child reaches a bend in the tracks, looking back over their shoulder, the others trailing behind, their playful chase coming to an end.\"}"
+  },
+  {
+    "caption": "Five cars speed along a road.",
+    "objects": "car",
+    "numbers": "5",
+    "frame_first": "Five cars, each a different color, accelerate onto a straight, sunlit road.",
+    "frame_middle": "The cars are now in the middle of the road, speeding past trees and signs on either side.",
+    "frame_last": "The cars race towards the horizon, blurring into streaks as they disappear from view.",
+    "frame_json_raw": "{\"first\": \"Five cars, each a different color, accelerate onto a straight, sunlit road.\", \"middle\": \"The cars are now in the middle of the road, speeding past trees and signs on either side.\", \"last\": \"The cars race towards the horizon, blurring into streaks as they disappear from view.\"}"
+  },
+  {
+    "caption": "Five cats walking on the floor.",
+    "objects": "cat",
+    "numbers": "5",
+    "frame_first": "Five cats begin walking in a line across a light-colored floor, each cat a step behind the other.",
+    "frame_middle": "The cats are now in the middle of the frame, continuing their steady walk, their tails swaying gently from side to side.",
+    "frame_last": "The last cat in the line reaches the end of the floor, and all five cats pause briefly before disappearing out of frame.",
+    "frame_json_raw": "{\"first\": \"Five cats begin walking in a line across a light-colored floor, each cat a step behind the other.\", \"middle\": \"The cats are now in the middle of the frame, continuing their steady walk, their tails swaying gently from side to side.\", \"last\": \"The last cat in the line reaches the end of the floor, and all five cats pause briefly before disappearing out of frame.\"}"
+  },
+  {
+    "caption": "Five dogs running through a field.",
+    "objects": "dog",
+    "numbers": "5",
+    "frame_first": "Five dogs sprint across a lush green field, their tails wagging with excitement.",
+    "frame_middle": "The dogs are now in the middle of the field, leaping over small bumps and patches of wildflowers.",
+    "frame_last": "The dogs reach the far end of the field, slowing down to catch their breath under a tree.",
+    "frame_json_raw": "{\"first\": \"Five dogs sprint across a lush green field, their tails wagging with excitement.\", \"middle\": \"The dogs are now in the middle of the field, leaping over small bumps and patches of wildflowers.\", \"last\": \"The dogs reach the far end of the field, slowing down to catch their breath under a tree.\"}"
+  },
+  {
+    "caption": "Five robots dance rhythmically in the lab.",
+    "objects": "robot",
+    "numbers": "5",
+    "frame_first": "Five robots stand in a line, their metallic limbs poised to begin a synchronized dance in a brightly lit laboratory.",
+    "frame_middle": "The robots are now in the middle of their dance, their movements fluid and rhythmic, with arms and legs moving in unison.",
+    "frame_last": "The robots finish their dance routine, returning to a still position, with a sense of accomplishment in their mechanical expressions as the lab lights flicker slightly.",
+    "frame_json_raw": "{\"first\": \"Five robots stand in a line, their metallic limbs poised to begin a synchronized dance in a brightly lit laboratory.\", \"middle\": \"The robots are now in the middle of their dance, their movements fluid and rhythmic, with arms and legs moving in unison.\", \"last\": \"The robots finish their dance routine, returning to a still position, with a sense of accomplishment in their mechanical expressions as the lab lights flicker slightly.\"}"
+  },
+  {
+    "caption": "Five oranges roll across the table.",
+    "objects": "orange",
+    "numbers": "5",
+    "frame_first": "Five bright oranges sit at one end of a wooden table, about to roll.",
+    "frame_middle": "The oranges are in mid-roll, scattered across the table with one nearly falling off the edge.",
+    "frame_last": "The oranges have come to a stop at the opposite end of the table, slightly apart from each other.",
+    "frame_json_raw": "{\"first\": \"Five bright oranges sit at one end of a wooden table, about to roll.\", \"middle\": \"The oranges are in mid-roll, scattered across the table with one nearly falling off the edge.\", \"last\": \"The oranges have come to a stop at the opposite end of the table, slightly apart from each other.\"}"
+  },
+  {
+    "caption": "Five birds soar through the sky.",
+    "objects": "bird",
+    "numbers": "5",
+    "frame_first": "Five birds take flight from a tree, their wings catching the morning light.",
+    "frame_middle": "The birds are now in the middle of the sky, gracefully gliding against a backdrop of fluffy white clouds.",
+    "frame_last": "The birds continue to soar, now in the distance, their silhouettes fading against the bright blue sky.",
+    "frame_json_raw": "{\"first\": \"Five birds take flight from a tree, their wings catching the morning light.\", \"middle\": \"The birds are now in the middle of the sky, gracefully gliding against a backdrop of fluffy white clouds.\", \"last\": \"The birds continue to soar, now in the distance, their silhouettes fading against the bright blue sky.\"}"
+  },
+  {
+    "caption": "Five horses gallop across the beach.",
+    "objects": "horse",
+    "numbers": "5",
+    "frame_first": "Five horses begin to gallop across a sandy beach, their hooves kicking up small clouds of sand.",
+    "frame_middle": "The horses are now in the middle of the beach, their manes and tails flowing freely in the sea breeze.",
+    "frame_last": "The horses reach the edge of the water, their powerful legs splashing into the waves as they continue their gallop.",
+    "frame_json_raw": "{\"first\": \"Five horses begin to gallop across a sandy beach, their hooves kicking up small clouds of sand.\", \"middle\": \"The horses are now in the middle of the beach, their manes and tails flowing freely in the sea breeze.\", \"last\": \"The horses reach the edge of the water, their powerful legs splashing into the waves as they continue their gallop.\"}"
+  },
+  {
+    "caption": "Five ships drift into the harbor.",
+    "objects": "ship",
+    "numbers": "5",
+    "frame_first": "Five ships approach the harbor entrance, their sails billowing in the breeze.",
+    "frame_middle": "The ships are now in the harbor, their masts towering over the calm water.",
+    "frame_last": "The ships have anchored, with their bows facing the dock as seagulls circle above.",
+    "frame_json_raw": "{\"first\": \"Five ships approach the harbor entrance, their sails billowing in the breeze.\", \"middle\": \"The ships are now in the harbor, their masts towering over the calm water.\", \"last\": \"The ships have anchored, with their bows facing the dock as seagulls circle above.\"}"
+  },
+  {
+    "caption": "Five rabbits hop through a meadow.",
+    "objects": "rabbit",
+    "numbers": "5",
+    "frame_first": "Five rabbits, with their fluffy white tails bobbing, hop into a sunlit meadow filled with wildflowers.",
+    "frame_middle": "The rabbits scatter in different directions, their ears perked as they explore the lush green grass.",
+    "frame_last": "The rabbits pause, grazing on the tender shoots of grass, under a clear blue sky.",
+    "frame_json_raw": "{\"first\": \"Five rabbits, with their fluffy white tails bobbing, hop into a sunlit meadow filled with wildflowers.\", \"middle\": \"The rabbits scatter in different directions, their ears perked as they explore the lush green grass.\", \"last\": \"The rabbits pause, grazing on the tender shoots of grass, under a clear blue sky.\"}"
+  },
+  {
+    "caption": "Five balls bounce across a playground.",
+    "objects": "ball",
+    "numbers": "5",
+    "frame_first": "Five colorful balls are scattered on a sunny playground, beginning to bounce as if animated by an unseen force.",
+    "frame_middle": "The balls are now in mid-bounce, creating a dynamic and lively scene with each one reaching different heights.",
+    "frame_last": "The balls come to rest after a series of bounces, scattered across the playground, their movement gradually slowing to a stop.",
+    "frame_json_raw": "{\"first\": \"Five colorful balls are scattered on a sunny playground, beginning to bounce as if animated by an unseen force.\", \"middle\": \"The balls are now in mid-bounce, creating a dynamic and lively scene with each one reaching different heights.\", \"last\": \"The balls come to rest after a series of bounces, scattered across the playground, their movement gradually slowing to a stop.\"}"
+  },
+  {
+    "caption": "Five fish swim gracefully in the sea.",
+    "objects": "fish",
+    "numbers": "5",
+    "frame_first": "Five fish swim in a synchronized pattern, their scales glinting under the sunlight breaking through the water surface.",
+    "frame_middle": "The fish dart around a coral reef, their movements fluid and harmonious with the gentle sway of the seaweed.",
+    "frame_last": "The fish gather closely, their shadows blending together as they continue their graceful swim in the vast blue sea.",
+    "frame_json_raw": "{\"first\": \"Five fish swim in a synchronized pattern, their scales glinting under the sunlight breaking through the water surface.\", \"middle\": \"The fish dart around a coral reef, their movements fluid and harmonious with the gentle sway of the seaweed.\", \"last\": \"The fish gather closely, their shadows blending together as they continue their graceful swim in the vast blue sea.\"}"
+  },
+  {
+    "caption": "Five bears lumber through the woods.",
+    "objects": "bear",
+    "numbers": "5",
+    "frame_first": "Five large bears emerge from the dense forest undergrowth, their fur blending with the shadows of the trees.",
+    "frame_middle": "The bears are now in the middle of a clearing, their heavy paws creating deep impressions in the soft earth.",
+    "frame_last": "The bears disappear back into the woods, leaving only the rustling of leaves and snapping twigs as evidence of their passage.",
+    "frame_json_raw": "{\"first\": \"Five large bears emerge from the dense forest undergrowth, their fur blending with the shadows of the trees.\", \"middle\": \"The bears are now in the middle of a clearing, their heavy paws creating deep impressions in the soft earth.\", \"last\": \"The bears disappear back into the woods, leaving only the rustling of leaves and snapping twigs as evidence of their passage.\"}"
+  },
+  {
+    "caption": "Five motorcycles glide down the highway.",
+    "objects": "motorcycle",
+    "numbers": "5",
+    "frame_first": "Five motorcycles, their engines humming softly, enter the frame from the left, moving smoothly down a wide, straight highway.",
+    "frame_middle": "The motorcycles are now in the center of the frame, evenly spaced, with the highway stretching out into the distance.",
+    "frame_last": "The motorcycles exit the frame to the right, leaving a trail of exhaust smoke in the air, with the highway continuing to fade into the horizon.",
+    "frame_json_raw": "{\"first\": \"Five motorcycles, their engines humming softly, enter the frame from the left, moving smoothly down a wide, straight highway.\", \"middle\": \"The motorcycles are now in the center of the frame, evenly spaced, with the highway stretching out into the distance.\", \"last\": \"The motorcycles exit the frame to the right, leaving a trail of exhaust smoke in the air, with the highway continuing to fade into the horizon.\"}"
+  },
+  {
+    "caption": "Five chairs rock on a porch, creaking with the breeze.",
+    "objects": "chair",
+    "numbers": "5",
+    "frame_first": "Five old wooden chairs are arranged on a weathered porch, swaying slightly in the gentle evening breeze.",
+    "frame_middle": "The breeze picks up, causing the chairs to rock more noticeably, their legs scraping against the wooden floor with a soft creak.",
+    "frame_last": "As the breeze settles, the chairs come to a gentle stop, their shadows lengthening as the sun sets behind them.",
+    "frame_json_raw": "{\"first\": \"Five old wooden chairs are arranged on a weathered porch, swaying slightly in the gentle evening breeze.\", \"middle\": \"The breeze picks up, causing the chairs to rock more noticeably, their legs scraping against the wooden floor with a soft creak.\", \"last\": \"As the breeze settles, the chairs come to a gentle stop, their shadows lengthening as the sun sets behind them.\"}"
+  },
+  {
+    "caption": "Five cups sit on a table, steaming with fresh coffee.",
+    "objects": "cup",
+    "numbers": "5",
+    "frame_first": "Five cups of steaming coffee are neatly arranged on a table, the steam rising gently.",
+    "frame_middle": "The steam from the coffee cups begins to dissipate, revealing the rich, dark liquid inside.",
+    "frame_last": "The five cups of coffee sit quietly on the table, steam now barely visible, hinting at the warmth within.",
+    "frame_json_raw": "{\"first\": \"Five cups of steaming coffee are neatly arranged on a table, the steam rising gently.\", \"middle\": \"The steam from the coffee cups begins to dissipate, revealing the rich, dark liquid inside.\", \"last\": \"The five cups of coffee sit quietly on the table, steam now barely visible, hinting at the warmth within.\"}"
+  },
+  {
+    "caption": "Five apples rolling over the grass.",
+    "objects": "apple",
+    "numbers": "5",
+    "frame_first": "Five bright red apples begin to roll across a lush green grassy field under a clear blue sky.",
+    "frame_middle": "The apples scatter in different directions, their red skins glistening in the sunlight as they tumble over the grass.",
+    "frame_last": "The apples come to a stop, scattered across the grass, their motionless forms contrasting with the gentle sway of the blades in the breeze.",
+    "frame_json_raw": "{\"first\": \"Five bright red apples begin to roll across a lush green grassy field under a clear blue sky.\", \"middle\": \"The apples scatter in different directions, their red skins glistening in the sunlight as they tumble over the grass.\", \"last\": \"The apples come to a stop, scattered across the grass, their motionless forms contrasting with the gentle sway of the blades in the breeze.\"}"
+  },
+  {
+    "caption": "Five boxes are placed on the table.",
+    "objects": "box",
+    "numbers": "5",
+    "frame_first": "Five neatly arranged boxes sit on a table, their surfaces reflecting the ambient light.",
+    "frame_middle": "The boxes remain stationary on the table, casting slight shadows on the surface.",
+    "frame_last": "The five boxes are still on the table, the scene unchanged and寂静的。",
+    "frame_json_raw": "{\"first\": \"Five neatly arranged boxes sit on a table, their surfaces reflecting the ambient light.\", \"middle\": \"The boxes remain stationary on the table, casting slight shadows on the surface.\", \"last\": \"The five boxes are still on the table, the scene unchanged and寂静的。\"}"
+  },
+  {
+    "caption": "Five pairs of sunglasses glint under the sun on a beach towel.",
+    "objects": "sunglasses",
+    "numbers": "5",
+    "frame_first": "Five pairs of sunglasses, each glinting in the sunlight, are neatly arranged on a bright beach towel spread out on the sand.",
+    "frame_middle": "The sun's rays continue to reflect off the sunglasses, creating a dazzling effect against the contrasting colors of the beach towel.",
+    "frame_last": "The beach towel remains still, with the sunglasses still glinting under the unrelenting sun, casting small, dancing shadows on the sand.",
+    "frame_json_raw": "{\"first\": \"Five pairs of sunglasses, each glinting in the sunlight, are neatly arranged on a bright beach towel spread out on the sand.\", \"middle\": \"The sun's rays continue to reflect off the sunglasses, creating a dazzling effect against the contrasting colors of the beach towel.\", \"last\": \"The beach towel remains still, with the sunglasses still glinting under the unrelenting sun, casting small, dancing shadows on the sand.\"}"
+  },
+  {
+    "caption": "Five buses travel down the street.",
+    "objects": "bus",
+    "numbers": "5",
+    "frame_first": "Five buses, each painted in a different vibrant color, line up at the start of a busy street under a clear blue sky.",
+    "frame_middle": "The buses are now in motion, evenly spaced, driving down the street with people watching from the sidewalks.",
+    "frame_last": "The buses have reached the end of the street, gradually slowing down as they prepare to stop at their respective destinations.",
+    "frame_json_raw": "{\"first\": \"Five buses, each painted in a different vibrant color, line up at the start of a busy street under a clear blue sky.\", \"middle\": \"The buses are now in motion, evenly spaced, driving down the street with people watching from the sidewalks.\", \"last\": \"The buses have reached the end of the street, gradually slowing down as they prepare to stop at their respective destinations.\"}"
+  },
+  {
+    "caption": "Five pandas munch bamboo in the garden.",
+    "objects": "panda",
+    "numbers": "5",
+    "frame_first": "Five pandas are scattered across a lush garden, each starting to munch on bamboo shoots they've gathered.",
+    "frame_middle": "The pandas continue to eat, some sitting on their haunches while others are in a relaxed lying position, surrounded by bamboo.",
+    "frame_last": "The pandas finish their meal, bamboo leaves scattered around them, as they look content and start to wander off in different directions within the garden.",
+    "frame_json_raw": "{\"first\": \"Five pandas are scattered across a lush garden, each starting to munch on bamboo shoots they've gathered.\", \"middle\": \"The pandas continue to eat, some sitting on their haunches while others are in a relaxed lying position, surrounded by bamboo.\", \"last\": \"The pandas finish their meal, bamboo leaves scattered around them, as they look content and start to wander off in different directions within the garden.\"}"
+  },
+  {
+    "caption": "Five elephants splash water from a river.",
+    "objects": "elephant",
+    "numbers": "5",
+    "frame_first": "Five elephants stand at the river's edge, their trunks submerged in the water.",
+    "frame_middle": "Water splashes up as the elephants use their trunks to throw water onto their backs.",
+    "frame_last": "The elephants continue to play, creating a spray of water that glistens in the sunlight.",
+    "frame_json_raw": "{\"first\": \"Five elephants stand at the river's edge, their trunks submerged in the water.\", \"middle\": \"Water splashes up as the elephants use their trunks to throw water onto their backs.\", \"last\": \"The elephants continue to play, creating a spray of water that glistens in the sunlight.\"}"
+  },
+  {
+    "caption": "Five cows amble through the pasture.",
+    "objects": "cow",
+    "numbers": "5",
+    "frame_first": "Five cows, grazing peacefully, are scattered across a lush green pasture under a clear blue sky.",
+    "frame_middle": "The cows continue to amble through the pasture, their tails swishing lazily as they move.",
+    "frame_last": "The cows gather near a shaded area under an old oak tree, finishing their leisurely stroll through the pasture.",
+    "frame_json_raw": "{\"first\": \"Five cows, grazing peacefully, are scattered across a lush green pasture under a clear blue sky.\", \"middle\": \"The cows continue to amble through the pasture, their tails swishing lazily as they move.\", \"last\": \"The cows gather near a shaded area under an old oak tree, finishing their leisurely stroll through the pasture.\"}"
+  },
+  {
+    "caption": "Five trucks move along the road.",
+    "objects": "truck",
+    "numbers": "5",
+    "frame_first": "Five trucks are seen at the beginning of the road, all aligned and ready to start their journey.",
+    "frame_middle": "The trucks are now in the middle of the road, moving steadily with the lead truck slightly ahead of the others.",
+    "frame_last": "The trucks reach the end of the visible road, gradually disappearing into the distance, maintaining their formation.",
+    "frame_json_raw": "{\"first\": \"Five trucks are seen at the beginning of the road, all aligned and ready to start their journey.\", \"middle\": \"The trucks are now in the middle of the road, moving steadily with the lead truck slightly ahead of the others.\", \"last\": \"The trucks reach the end of the visible road, gradually disappearing into the distance, maintaining their formation.\"}"
+  },
+  {
+    "caption": "Five airplanes fly across the sky.",
+    "objects": "airplane",
+    "numbers": "5",
+    "frame_first": "Five airplanes, in a staggered formation, begin to enter the frame from the left, their silver bodies glinting in the sunlight.",
+    "frame_middle": "The airplanes are now centered in the frame, their contrails stretching behind them, creating a crisscross pattern in the clear blue sky.",
+    "frame_last": "The airplanes exit the frame to the right, leaving only their fading contrails to mark their passage across the sky.",
+    "frame_json_raw": "{\"first\": \"Five airplanes, in a staggered formation, begin to enter the frame from the left, their silver bodies glinting in the sunlight.\", \"middle\": \"The airplanes are now centered in the frame, their contrails stretching behind them, creating a crisscross pattern in the clear blue sky.\", \"last\": \"The airplanes exit the frame to the right, leaving only their fading contrails to mark their passage across the sky.\"}"
+  },
+  {
+    "caption": "Five bicycles glide down a park path.",
+    "objects": "bicycle",
+    "numbers": "5",
+    "frame_first": "Five bicycles, their wheels spinning smoothly, enter a sunlit park path lined with trees.",
+    "frame_middle": "The bicycles continue down the path, the riders leaning slightly into a gentle curve, with sunlight filtering through the leaves above.",
+    "frame_last": "The bicycles exit the frame, leaving the tranquil park path empty, with the soft rustle of leaves in the background.",
+    "frame_json_raw": "{\"first\": \"Five bicycles, their wheels spinning smoothly, enter a sunlit park path lined with trees.\", \"middle\": \"The bicycles continue down the path, the riders leaning slightly into a gentle curve, with sunlight filtering through the leaves above.\", \"last\": \"The bicycles exit the frame, leaving the tranquil park path empty, with the soft rustle of leaves in the background.\"}"
+  },
+  {
+    "caption": "Five sheep graze on a hillside.",
+    "objects": "sheep",
+    "numbers": "5",
+    "frame_first": "Five sheep scatter across a green hillside, heads down as they graze.",
+    "frame_middle": "The sheep continue to munch on the grass, occasionally lifting their heads to look around.",
+    "frame_last": "The sheep gather closer together, still grazing, as the sun begins to set behind the hill.",
+    "frame_json_raw": "{\"first\": \"Five sheep scatter across a green hillside, heads down as they graze.\", \"middle\": \"The sheep continue to munch on the grass, occasionally lifting their heads to look around.\", \"last\": \"The sheep gather closer together, still grazing, as the sun begins to set behind the hill.\"}"
+  },
+  {
+    "caption": "Five people sit around a table, chatting as they share their meal.",
+    "objects": "person",
+    "numbers": "5",
+    "frame_first": "Five people are seated around a table, engaged in conversation, with plates of food in front of them.",
+    "frame_middle": "The group continues to chat animatedly, occasionally glancing at each other and gesturing with their hands.",
+    "frame_last": "The meal winds down as the group leans back in their chairs, still talking and laughing, with empty plates on the table.",
+    "frame_json_raw": "{\"first\": \"Five people are seated around a table, engaged in conversation, with plates of food in front of them.\", \"middle\": \"The group continues to chat animatedly, occasionally glancing at each other and gesturing with their hands.\", \"last\": \"The meal winds down as the group leans back in their chairs, still talking and laughing, with empty plates on the table.\"}"
+  },
+  {
+    "caption": "Five boys play soccer on a grassy field.",
+    "objects": "boy",
+    "numbers": "5",
+    "frame_first": "Five boys in soccer uniforms stand on a grassy field, ready to start the game, with the sun shining brightly in a clear blue sky.",
+    "frame_middle": "Two boys are chasing after the ball in the middle of the field, while the others watch and prepare to join the play.",
+    "frame_last": "One boy kicks the ball towards the goal, with the goalie diving to make a save, as the other players and spectators watch intently.",
+    "frame_json_raw": "{\"first\": \"Five boys in soccer uniforms stand on a grassy field, ready to start the game, with the sun shining brightly in a clear blue sky.\", \"middle\": \"Two boys are chasing after the ball in the middle of the field, while the others watch and prepare to join the play.\", \"last\": \"One boy kicks the ball towards the goal, with the goalie diving to make a save, as the other players and spectators watch intently.\"}"
+  },
+  {
+    "caption": "Five girls paint a large canvas together.",
+    "objects": "girl",
+    "numbers": "5",
+    "frame_first": "Five girls gather around a large canvas, each holding a paintbrush, ready to start painting.",
+    "frame_middle": "The girls are actively painting, their brushes moving across the canvas, creating a colorful and collaborative artwork.",
+    "frame_last": "The girls step back, admiring their completed large canvas painting, smiles on their faces as they see the result of their teamwork.",
+    "frame_json_raw": "{\"first\": \"Five girls gather around a large canvas, each holding a paintbrush, ready to start painting.\", \"middle\": \"The girls are actively painting, their brushes moving across the canvas, creating a colorful and collaborative artwork.\", \"last\": \"The girls step back, admiring their completed large canvas painting, smiles on their faces as they see the result of their teamwork.\"}"
+  },
+  {
+    "caption": "Five children run along the tracks.",
+    "objects": "child",
+    "numbers": "5",
+    "frame_first": "Five children, dressed in colorful clothes, start running along the train tracks, their faces filled with excitement.",
+    "frame_middle": "The children are now in the middle of the tracks, laughing and playing, with the sun shining brightly overhead.",
+    "frame_last": "The children reach the end of the visible track, still running, with the tracks disappearing into the distance behind them.",
+    "frame_json_raw": "{\"first\": \"Five children, dressed in colorful clothes, start running along the train tracks, their faces filled with excitement.\", \"middle\": \"The children are now in the middle of the tracks, laughing and playing, with the sun shining brightly overhead.\", \"last\": \"The children reach the end of the visible track, still running, with the tracks disappearing into the distance behind them.\"}"
+  },
+  {
+    "caption": "Six cars speed along a road.",
+    "objects": "car",
+    "numbers": "6",
+    "frame_first": "Six cars, each a different color, accelerate onto a straight, sunlit road at dawn.",
+    "frame_middle": "The cars are now racing side by side, blurring the lines between them as they kick up dust and debris.",
+    "frame_last": "The cars disappear into the distance, leaving only a trail of exhaust smoke in the early morning light.",
+    "frame_json_raw": "{\"first\": \"Six cars, each a different color, accelerate onto a straight, sunlit road at dawn.\", \"middle\": \"The cars are now racing side by side, blurring the lines between them as they kick up dust and debris.\", \"last\": \"The cars disappear into the distance, leaving only a trail of exhaust smoke in the early morning light.\"}"
+  },
+  {
+    "caption": "Six cats walking on the floor.",
+    "objects": "cat",
+    "numbers": "6",
+    "frame_first": "Six cats begin walking in a line across a light-colored floor, their fur contrasting against the background.",
+    "frame_middle": "The cats are now in the middle of the frame, each one moving at a steady pace, their tails swaying from side to side.",
+    "frame_last": "The last of the six cats reaches the end of the frame, their paws softly touching the floor, completing their walk.",
+    "frame_json_raw": "{\"first\": \"Six cats begin walking in a line across a light-colored floor, their fur contrasting against the background.\", \"middle\": \"The cats are now in the middle of the frame, each one moving at a steady pace, their tails swaying from side to side.\", \"last\": \"The last of the six cats reaches the end of the frame, their paws softly touching the floor, completing their walk.\"}"
+  },
+  {
+    "caption": "Six dogs running through a field.",
+    "objects": "dog",
+    "numbers": "6",
+    "frame_first": "Six dogs sprint across a lush green field, their tails high and tongues out, under a bright sun.",
+    "frame_middle": "The dogs are now in the middle of the field, leaping over small bumps and patches of wildflowers.",
+    "frame_last": "The dogs slow to a stop at the far end of the field, panting and looking back at where they started.",
+    "frame_json_raw": "{\"first\": \"Six dogs sprint across a lush green field, their tails high and tongues out, under a bright sun.\", \"middle\": \"The dogs are now in the middle of the field, leaping over small bumps and patches of wildflowers.\", \"last\": \"The dogs slow to a stop at the far end of the field, panting and looking back at where they started.\"}"
+  },
+  {
+    "caption": "Six robots dance rhythmically in the lab.",
+    "objects": "robot",
+    "numbers": "6",
+    "frame_first": "Six robots stand in a circle in a brightly lit lab, preparing to dance.",
+    "frame_middle": "The robots move in sync, their metallic limbs glinting under the lab lights as they perform a complex dance routine.",
+    "frame_last": "The robots finish their dance with a synchronized pose, their arms raised, in the center of the lab.",
+    "frame_json_raw": "{\"first\": \"Six robots stand in a circle in a brightly lit lab, preparing to dance.\", \"middle\": \"The robots move in sync, their metallic limbs glinting under the lab lights as they perform a complex dance routine.\", \"last\": \"The robots finish their dance with a synchronized pose, their arms raised, in the center of the lab.\"}"
+  },
+  {
+    "caption": "Six oranges roll across the table.",
+    "objects": "orange",
+    "numbers": "6",
+    "frame_first": "Six bright oranges begin rolling from one end of a wooden table, their vibrant colors contrasting with the warm wood.",
+    "frame_middle": "The oranges are now scattered across the table, some rolling faster than others, creating a dynamic and lively scene.",
+    "frame_last": "The oranges come to a stop at various points on the table, some touching, others isolated, the last one gently spinning to a halt.",
+    "frame_json_raw": "{\"first\": \"Six bright oranges begin rolling from one end of a wooden table, their vibrant colors contrasting with the warm wood.\", \"middle\": \"The oranges are now scattered across the table, some rolling faster than others, creating a dynamic and lively scene.\", \"last\": \"The oranges come to a stop at various points on the table, some touching, others isolated, the last one gently spinning to a halt.\"}"
+  },
+  {
+    "caption": "Six birds soar through the sky.",
+    "objects": "bird",
+    "numbers": "6",
+    "frame_first": "Six birds take flight, their wings outstretched against the bright morning sky.",
+    "frame_middle": "The birds are now in the middle of their flight, gliding effortlessly with the sun's rays shining through their feathers.",
+    "frame_last": "The birds are distant specks in the sky, their silhouettes fading as they continue their journey.",
+    "frame_json_raw": "{\"first\": \"Six birds take flight, their wings outstretched against the bright morning sky.\", \"middle\": \"The birds are now in the middle of their flight, gliding effortlessly with the sun's rays shining through their feathers.\", \"last\": \"The birds are distant specks in the sky, their silhouettes fading as they continue their journey.\"}"
+  },
+  {
+    "caption": "Six horses gallop across the beach.",
+    "objects": "horse",
+    "numbers": "6",
+    "frame_first": "Six horses begin to gallop across a sandy beach, their hooves kicking up small clouds of sand.",
+    "frame_middle": "The horses are now in the middle of the beach, their manes and tails flowing in the wind as they run.",
+    "frame_last": "The horses reach the end of the beach, their powerful legs still moving in unison as they continue their gallop.",
+    "frame_json_raw": "{\"first\": \"Six horses begin to gallop across a sandy beach, their hooves kicking up small clouds of sand.\", \"middle\": \"The horses are now in the middle of the beach, their manes and tails flowing in the wind as they run.\", \"last\": \"The horses reach the end of the beach, their powerful legs still moving in unison as they continue their gallop.\"}"
+  },
+  {
+    "caption": "Seven cars speed along a road.",
+    "objects": "car",
+    "numbers": "7",
+    "frame_first": "Seven cars are lined up at the starting point of a straight, sunlit road, engines revving, ready to race.",
+    "frame_middle": "The cars are now in the middle of the race, speeding down the road with dust and gravel flying up behind their tires.",
+    "frame_last": "The cars approach the finish line, with the lead car just crossing it, while the others are close behind, still racing hard.",
+    "frame_json_raw": "{\"first\": \"Seven cars are lined up at the starting point of a straight, sunlit road, engines revving, ready to race.\", \"middle\": \"The cars are now in the middle of the race, speeding down the road with dust and gravel flying up behind their tires.\", \"last\": \"The cars approach the finish line, with the lead car just crossing it, while the others are close behind, still racing hard.\"}"
+  },
+  {
+    "caption": "Seven cats walking on the floor.",
+    "objects": "cat",
+    "numbers": "7",
+    "frame_first": "Seven cats begin walking in a line across a sunlit living room floor.",
+    "frame_middle": "The cats are now in the middle of the room, each one stepping carefully and curiously.",
+    "frame_last": "The seven cats reach the end of the room, pausing briefly before disappearing behind a couch.",
+    "frame_json_raw": "{\"first\": \"Seven cats begin walking in a line across a sunlit living room floor.\", \"middle\": \"The cats are now in the middle of the room, each one stepping carefully and curiously.\", \"last\": \"The seven cats reach the end of the room, pausing briefly before disappearing behind a couch.\"}"
+  },
+  {
+    "caption": "Seven dogs running through a field.",
+    "objects": "dog",
+    "numbers": "7",
+    "frame_first": "Seven dogs sprint across a lush green field, their tails wagging with excitement.",
+    "frame_middle": "The dogs are now in the middle of the field, leaping over small bumps and patches of wildflowers.",
+    "frame_last": "The dogs slow to a stop at the far end of the field, panting and looking back at where they started.",
+    "frame_json_raw": "{\"first\": \"Seven dogs sprint across a lush green field, their tails wagging with excitement.\", \"middle\": \"The dogs are now in the middle of the field, leaping over small bumps and patches of wildflowers.\", \"last\": \"The dogs slow to a stop at the far end of the field, panting and looking back at where they started.\"}"
+  },
+  {
+    "caption": "Seven robots dance rhythmically in the lab.",
+    "objects": "robot",
+    "numbers": "7",
+    "frame_first": "Seven robots stand in a circle in a brightly lit lab, preparing to dance.",
+    "frame_middle": "The robots are now in the middle of their dance, their metallic limbs moving in synchronized rhythm.",
+    "frame_last": "The dance concludes with the robots returning to their starting positions, their movements perfectly aligned.",
+    "frame_json_raw": "{\"first\": \"Seven robots stand in a circle in a brightly lit lab, preparing to dance.\", \"middle\": \"The robots are now in the middle of their dance, their metallic limbs moving in synchronized rhythm.\", \"last\": \"The dance concludes with the robots returning to their starting positions, their movements perfectly aligned.\"}"
+  },
+  {
+    "caption": "Seven oranges roll across the table.",
+    "objects": "orange",
+    "numbers": "7",
+    "frame_first": "Seven bright oranges begin rolling from one end of a wooden table, their vibrant colors contrasting with the dark wood.",
+    "frame_middle": "The oranges are now scattered across the table, some rolling faster than others, creating a dynamic and lively scene.",
+    "frame_last": "The oranges come to a stop at various points on the table, some touching, others isolated, with a few still wobbling slightly.",
+    "frame_json_raw": "{\"first\": \"Seven bright oranges begin rolling from one end of a wooden table, their vibrant colors contrasting with the dark wood.\", \"middle\": \"The oranges are now scattered across the table, some rolling faster than others, creating a dynamic and lively scene.\", \"last\": \"The oranges come to a stop at various points on the table, some touching, others isolated, with a few still wobbling slightly.\"}"
+  },
+  {
+    "caption": "Seven birds soar through the sky.",
+    "objects": "bird",
+    "numbers": "7",
+    "frame_first": "Seven birds take flight from a tree, their wings catching the morning light.",
+    "frame_middle": "The birds are now in full flight, gliding gracefully against a clear blue sky.",
+    "frame_last": "The birds disappear into the distance, their silhouettes fading against the horizon.",
+    "frame_json_raw": "{\"first\": \"Seven birds take flight from a tree, their wings catching the morning light.\", \"middle\": \"The birds are now in full flight, gliding gracefully against a clear blue sky.\", \"last\": \"The birds disappear into the distance, their silhouettes fading against the horizon.\"}"
+  },
+  {
+    "caption": "Seven horses gallop across the beach.",
+    "objects": "horse",
+    "numbers": "7",
+    "frame_first": "Seven horses begin to gallop across a sandy beach, their hooves kicking up small plumes of sand.",
+    "frame_middle": "The horses are now in the middle of the beach, their manes and tails flowing freely in the sea breeze.",
+    "frame_last": "The horses reach the water's edge, their powerful legs splashing into the waves as they continue their gallop.",
+    "frame_json_raw": "{\"first\": \"Seven horses begin to gallop across a sandy beach, their hooves kicking up small plumes of sand.\", \"middle\": \"The horses are now in the middle of the beach, their manes and tails flowing freely in the sea breeze.\", \"last\": \"The horses reach the water's edge, their powerful legs splashing into the waves as they continue their gallop.\"}"
+  },
+  {
+    "caption": "Eight cars speed along a road.",
+    "objects": "car",
+    "numbers": "8",
+    "frame_first": "Eight cars are lined up, speeding down a straight, sunlit road.",
+    "frame_middle": "The cars are now in the middle of a curve, still moving at high speed, with trees and a blue sky in the background.",
+    "frame_last": "The cars have spread out slightly, with the last car trailing behind, all still racing on the road towards the horizon.",
+    "frame_json_raw": "{\"first\": \"Eight cars are lined up, speeding down a straight, sunlit road.\", \"middle\": \"The cars are now in the middle of a curve, still moving at high speed, with trees and a blue sky in the background.\", \"last\": \"The cars have spread out slightly, with the last car trailing behind, all still racing on the road towards the horizon.\"}"
+  },
+  {
+    "caption": "Eight cats walking on the floor.",
+    "objects": "cat",
+    "numbers": "8",
+    "frame_first": "Eight cats, each with distinct fur patterns, begin walking in a line across a sunlit wooden floor.",
+    "frame_middle": "The cats are now in the middle of the room, some pausing to sniff while others continue walking.",
+    "frame_last": "The cats reach the end of the floor, all stopping to look out a nearby window, their tails swishing with curiosity.",
+    "frame_json_raw": "{\"first\": \"Eight cats, each with distinct fur patterns, begin walking in a line across a sunlit wooden floor.\", \"middle\": \"The cats are now in the middle of the room, some pausing to sniff while others continue walking.\", \"last\": \"The cats reach the end of the floor, all stopping to look out a nearby window, their tails swishing with curiosity.\"}"
+  },
+  {
+    "caption": "Eight dogs running through a field.",
+    "objects": "dog",
+    "numbers": "8",
+    "frame_first": "Eight dogs, a mix of breeds, burst into a sunlit green field, their tails wagging with excitement.",
+    "frame_middle": "The dogs are now in the middle of the field, leaping over small hillocks and chasing each other with playful barks.",
+    "frame_last": "The dogs slow down at the far end of the field, panting and looking back towards where they started, tails still high with joy.",
+    "frame_json_raw": "{\"first\": \"Eight dogs, a mix of breeds, burst into a sunlit green field, their tails wagging with excitement.\", \"middle\": \"The dogs are now in the middle of the field, leaping over small hillocks and chasing each other with playful barks.\", \"last\": \"The dogs slow down at the far end of the field, panting and looking back towards where they started, tails still high with joy.\"}"
+  },
+  {
+    "caption": "Eight robots dance rhythmically in the lab.",
+    "objects": "robot",
+    "numbers": "8",
+    "frame_first": "Eight robots stand in a circle in a well-lit laboratory, preparing to start their synchronized dance.",
+    "frame_middle": "The robots are now in the middle of their dance, moving their arms and legs in a coordinated, rhythmic pattern.",
+    "frame_last": "The robots finish their dance routine, returning to their starting positions in the lab, their movements perfectly synchronized.",
+    "frame_json_raw": "{\"first\": \"Eight robots stand in a circle in a well-lit laboratory, preparing to start their synchronized dance.\", \"middle\": \"The robots are now in the middle of their dance, moving their arms and legs in a coordinated, rhythmic pattern.\", \"last\": \"The robots finish their dance routine, returning to their starting positions in the lab, their movements perfectly synchronized.\"}"
+  },
+  {
+    "caption": "Eight oranges roll across the table.",
+    "objects": "orange",
+    "numbers": "8",
+    "frame_first": "Eight bright oranges begin rolling from one end of a wooden table, creating a slight friction sound.",
+    "frame_middle": "The oranges scatter in different directions on the table, some slowing down as they approach the edges.",
+    "frame_last": "The oranges come to a stop at various points on the table, a few dangerously close to the edge.",
+    "frame_json_raw": "{\"first\": \"Eight bright oranges begin rolling from one end of a wooden table, creating a slight friction sound.\", \"middle\": \"The oranges scatter in different directions on the table, some slowing down as they approach the edges.\", \"last\": \"The oranges come to a stop at various points on the table, a few dangerously close to the edge.\"}"
+  },
+  {
+    "caption": "Eight birds soar through the sky.",
+    "objects": "bird",
+    "numbers": "8",
+    "frame_first": "Eight birds take flight from a tree line, their wings catching the morning light.",
+    "frame_middle": "The birds are now in full flight, gracefully gliding across a clear blue sky.",
+    "frame_last": "The birds begin to circle and descend, preparing to land on a distant hilltop.",
+    "frame_json_raw": "{\"first\": \"Eight birds take flight from a tree line, their wings catching the morning light.\", \"middle\": \"The birds are now in full flight, gracefully gliding across a clear blue sky.\", \"last\": \"The birds begin to circle and descend, preparing to land on a distant hilltop.\"}"
+  },
+  {
+    "caption": "One car drives down the track, and one motorcycle follows.",
+    "objects": "car, motorcycle",
+    "numbers": "1, 1",
+    "frame_first": "A car speeds down a straight racetrack, the sun gleaming off its sleek surface.",
+    "frame_middle": "The motorcycle, with its rider in full gear, closely follows the car, the wind whipping around them both.",
+    "frame_last": "The car and motorcycle continue down the track, the distance between them narrowing slightly as they race forward.",
+    "frame_json_raw": "{\"first\": \"A car speeds down a straight racetrack, the sun gleaming off its sleek surface.\", \"middle\": \"The motorcycle, with its rider in full gear, closely follows the car, the wind whipping around them both.\", \"last\": \"The car and motorcycle continue down the track, the distance between them narrowing slightly as they race forward.\"}"
+  },
+  {
+    "caption": "One cat lounges in the garden, and two birds swoop overhead.",
+    "objects": "cat, bird",
+    "numbers": "1, 2",
+    "frame_first": "A cat stretches lazily on a sunlit garden path, eyes half-closed, while two birds begin to swoop from the sky.",
+    "frame_middle": "The cat perks up slightly, ears twitching, as the birds pass just above its head, their wings beating rapidly.",
+    "frame_last": "The cat returns to its relaxed position as the birds disappear into the distance, leaving the garden peaceful once more.",
+    "frame_json_raw": "{\"first\": \"A cat stretches lazily on a sunlit garden path, eyes half-closed, while two birds begin to swoop from the sky.\", \"middle\": \"The cat perks up slightly, ears twitching, as the birds pass just above its head, their wings beating rapidly.\", \"last\": \"The cat returns to its relaxed position as the birds disappear into the distance, leaving the garden peaceful once more.\"}"
+  },
+  {
+    "caption": "One dog races through the field, and three children run behind them.",
+    "objects": "dog, child",
+    "numbers": "1, 3",
+    "frame_first": "A dog sprints across a lush green field, its tail streaming behind it, with three children starting to chase after it in the background.",
+    "frame_middle": "The dog is now in the middle of the field, bounding with energy, while the children are halfway through the field, laughing and running with excitement.",
+    "frame_last": "The dog reaches the far end of the field, turning to look back, as the children approach, breathless and grinning from their chase.",
+    "frame_json_raw": "{\"first\": \"A dog sprints across a lush green field, its tail streaming behind it, with three children starting to chase after it in the background.\", \"middle\": \"The dog is now in the middle of the field, bounding with energy, while the children are halfway through the field, laughing and running with excitement.\", \"last\": \"The dog reaches the far end of the field, turning to look back, as the children approach, breathless and grinning from their chase.\"}"
+  },
+  {
+    "caption": "Two oranges roll on the counter near one cup.",
+    "objects": "orange, cup",
+    "numbers": "2, 1",
+    "frame_first": "Two bright oranges sit side by side on a clean kitchen counter, with a single cup positioned a few inches away.",
+    "frame_middle": "One orange begins to roll towards the cup while the other orange remains stationary on the counter.",
+    "frame_last": "Both oranges have rolled close to the cup, coming to a stop as they touch each other near the cup's base.",
+    "frame_json_raw": "{\"first\": \"Two bright oranges sit side by side on a clean kitchen counter, with a single cup positioned a few inches away.\", \"middle\": \"One orange begins to roll towards the cup while the other orange remains stationary on the counter.\", \"last\": \"Both oranges have rolled close to the cup, coming to a stop as they touch each other near the cup's base.\"}"
+  },
+  {
+    "caption": "Two fish swim in the pond, and two frogs sit on lily pads.",
+    "objects": "fish, frog",
+    "numbers": "2, 2",
+    "frame_first": "Two fish glide gracefully beneath the surface of a tranquil pond, their scales shimmering in the sunlight.",
+    "frame_middle": "Two frogs perch on overlapping lily pads, their eyes alert and fixed on the water's edge.",
+    "frame_last": "The pond reflects the serene sky, with fish and frogs coexisting peacefully in their aquatic world.",
+    "frame_json_raw": "{\"first\": \"Two fish glide gracefully beneath the surface of a tranquil pond, their scales shimmering in the sunlight.\", \"middle\": \"Two frogs perch on overlapping lily pads, their eyes alert and fixed on the water's edge.\", \"last\": \"The pond reflects the serene sky, with fish and frogs coexisting peacefully in their aquatic world.\"}"
+  },
+  {
+    "caption": "Two pandas munch on bamboo, and three elephants spray water.",
+    "objects": "panda, elephant",
+    "numbers": "2, 3",
+    "frame_first": "Two pandas sit side by side, each holding a stalk of bamboo in their paws, munching contentedly.",
+    "frame_middle": "Three elephants stand in a shallow pond, their trunks submerged, squirting water into the air with playful force.",
+    "frame_last": "The pandas continue to eat their bamboo, now framed by the background of elephants, who are now spraying each other with water, creating a misty atmosphere.",
+    "frame_json_raw": "{\"first\": \"Two pandas sit side by side, each holding a stalk of bamboo in their paws, munching contentedly.\", \"middle\": \"Three elephants stand in a shallow pond, their trunks submerged, squirting water into the air with playful force.\", \"last\": \"The pandas continue to eat their bamboo, now framed by the background of elephants, who are now spraying each other with water, creating a misty atmosphere.\"}"
+  },
+  {
+    "caption": "Three cows graze in the pasture, and one sheep wanders nearby.",
+    "objects": "cow, sheep",
+    "numbers": "3, 1",
+    "frame_first": "Three cows are scattered across a green pasture, heads down in concentration as they graze. A lone sheep stands slightly apart, nibbling at the grass.",
+    "frame_middle": "The cows continue to graze, occasionally lifting their heads to chew their cud, while the sheep moves closer to the cows, still focused on the grass.",
+    "frame_last": "All four animals are now grouped together in the pasture, peacefully grazing under a clear blue sky, with the cows and sheep blending into the serene landscape.",
+    "frame_json_raw": "{\"first\": \"Three cows are scattered across a green pasture, heads down in concentration as they graze. A lone sheep stands slightly apart, nibbling at the grass.\", \"middle\": \"The cows continue to graze, occasionally lifting their heads to chew their cud, while the sheep moves closer to the cows, still focused on the grass.\", \"last\": \"All four animals are now grouped together in the pasture, peacefully grazing under a clear blue sky, with the cows and sheep blending into the serene landscape.\"}"
+  },
+  {
+    "caption": "Three airplanes soar high above, and two birds circle below.",
+    "objects": "airplane, bird",
+    "numbers": "3, 2",
+    "frame_first": "Three airplanes glide in a clear blue sky, their silver bodies catching the sunlight, while two birds circle lower, flapping their wings against the serene backdrop.",
+    "frame_middle": "The airplanes continue their steady flight, their contrails forming white streaks across the sky, as the birds below seem to play, diving and soaring in the air currents.",
+    "frame_last": "The airplanes are now distant specks in the sky, their flight paths converging, while the two birds have risen higher, almost meeting the planes in the vast expanse of the sky.",
+    "frame_json_raw": "{\"first\": \"Three airplanes glide in a clear blue sky, their silver bodies catching the sunlight, while two birds circle lower, flapping their wings against the serene backdrop.\", \"middle\": \"The airplanes continue their steady flight, their contrails forming white streaks across the sky, as the birds below seem to play, diving and soaring in the air currents.\", \"last\": \"The airplanes are now distant specks in the sky, their flight paths converging, while the two birds have risen higher, almost meeting the planes in the vast expanse of the sky.\"}"
+  },
+  {
+    "caption": "Three dogs dig in the sand, and three cats walking nearby.",
+    "objects": "dog, cat",
+    "numbers": "3, 3",
+    "frame_first": "Three dogs energetically dig in the sand, sending grains flying, while three cats walk casually nearby, observing the scene.",
+    "frame_middle": "The dogs continue to dig, creating a small pit, while the cats sit together, watching the dogs' activity with curiosity.",
+    "frame_last": "The dogs rest from digging, lying in the small hole they created, and the cats approach, sniffing around the edge of the sand pit.",
+    "frame_json_raw": "{\"first\": \"Three dogs energetically dig in the sand, sending grains flying, while three cats walk casually nearby, observing the scene.\", \"middle\": \"The dogs continue to dig, creating a small pit, while the cats sit together, watching the dogs' activity with curiosity.\", \"last\": \"The dogs rest from digging, lying in the small hole they created, and the cats approach, sniffing around the edge of the sand pit.\"}"
+  },
+  {
+    "caption": "Two chairs sit around a campfire, and three people roasting marshmallows.",
+    "objects": "chair, person",
+    "numbers": "2, 3",
+    "frame_first": "Two chairs are positioned around a crackling campfire, with three people gathered, holding marshmallows on sticks.",
+    "frame_middle": "The people are leaning over the fire, the marshmallows turning golden brown, with the glow of the flames casting warm, flickering light on their faces.",
+    "frame_last": "The marshmallows are fully roasted, puffed up and gooey, as the people pull them away from the fire, smiling and preparing to eat.",
+    "frame_json_raw": "{\"first\": \"Two chairs are positioned around a crackling campfire, with three people gathered, holding marshmallows on sticks.\", \"middle\": \"The people are leaning over the fire, the marshmallows turning golden brown, with the glow of the flames casting warm, flickering light on their faces.\", \"last\": \"The marshmallows are fully roasted, puffed up and gooey, as the people pull them away from the fire, smiling and preparing to eat.\"}"
+  },
+  {
+    "caption": "Two rabbits dash across the garden, and three butterflies flutter nearby.",
+    "objects": "rabbit, butterfly",
+    "numbers": "2, 3",
+    "frame_first": "Two rabbits sprint across a lush garden, their ears flopping as they run, with three butterflies hovering above the flowers nearby.",
+    "frame_middle": "The rabbits pause briefly, one nibbling on a leaf while the other looks around警惕地，三只蝴蝶在它们周围轻盈地飞舞。",
+    "frame_last": "The rabbits continue their dash, disappearing into a dense bush, while the butterflies settle on some colorful flowers.",
+    "frame_json_raw": "{\"first\": \"Two rabbits sprint across a lush garden, their ears flopping as they run, with three butterflies hovering above the flowers nearby.\", \"middle\": \"The rabbits pause briefly, one nibbling on a leaf while the other looks around警惕地，三只蝴蝶在它们周围轻盈地飞舞。\", \"last\": \"The rabbits continue their dash, disappearing into a dense bush, while the butterflies settle on some colorful flowers.\"}"
+  },
+  {
+    "caption": "Three ships sail into the harbor, and two seagulls circle above.",
+    "objects": "ship, seagull",
+    "numbers": "3, 2",
+    "frame_first": "Three ships approach the harbor entrance, their sails catching the breeze, with two seagulls circling high above.",
+    "frame_middle": "The ships are now in the harbor, their masts towering over the water, while the seagulls glide gracefully above the vessels.",
+    "frame_last": "The ships have anchored in the harbor, and the seagulls are perched on the rigging, surveying the scene.",
+    "frame_json_raw": "{\"first\": \"Three ships approach the harbor entrance, their sails catching the breeze, with two seagulls circling high above.\", \"middle\": \"The ships are now in the harbor, their masts towering over the water, while the seagulls glide gracefully above the vessels.\", \"last\": \"The ships have anchored in the harbor, and the seagulls are perched on the rigging, surveying the scene.\"}"
+  },
+  {
+    "caption": "Two horses trot along the fence line, and two cows chewing grass nearby.",
+    "objects": "horse, cow",
+    "numbers": "2, 2",
+    "frame_first": "Two horses trot side by side along a fence line, their manes flowing in the wind, while two cows nearby graze peacefully.",
+    "frame_middle": "The horses continue their steady trot, their hooves kicking up small clouds of dust, as the cows remain focused on their grazing.",
+    "frame_last": "The horses pass by the cows, still munching on grass, as the fence line stretches into the distance behind the horses.",
+    "frame_json_raw": "{\"first\": \"Two horses trot side by side along a fence line, their manes flowing in the wind, while two cows nearby graze peacefully.\", \"middle\": \"The horses continue their steady trot, their hooves kicking up small clouds of dust, as the cows remain focused on their grazing.\", \"last\": \"The horses pass by the cows, still munching on grass, as the fence line stretches into the distance behind the horses.\"}"
+  },
+  {
+    "caption": "Three apples hang heavy on the tree branch, and three birds perch nearby.",
+    "objects": "apple, bird",
+    "numbers": "3, 3",
+    "frame_first": "Three ripe apples dangle from a tree branch, their red skins glistening in the sunlight. Nearby, three birds perch quietly on another branch, their heads cocked curiously.",
+    "frame_middle": "The apples sway gently in a breeze, casting slight shadows on the ground below. The birds remain still, their eyes fixed on the movement of the fruit.",
+    "frame_last": "The apples hang motionless once more, bathed in the warm afternoon light. The birds, now alert, take flight from the branch, their wings beating against the air.",
+    "frame_json_raw": "{\"first\": \"Three ripe apples dangle from a tree branch, their red skins glistening in the sunlight. Nearby, three birds perch quietly on another branch, their heads cocked curiously.\", \"middle\": \"The apples sway gently in a breeze, casting slight shadows on the ground below. The birds remain still, their eyes fixed on the movement of the fruit.\", \"last\": \"The apples hang motionless once more, bathed in the warm afternoon light. The birds, now alert, take flight from the branch, their wings beating against the air.\"}"
+  },
+  {
+    "caption": "Two kites soar high in the sky, and three balloons drift in the breeze.",
+    "objects": "kite, balloon",
+    "numbers": "2, 3",
+    "frame_first": "Two colorful kites dance against a clear blue sky, with three balloons slowly ascending in the background.",
+    "frame_middle": "The kites are now directly above the balloons, their strings taut as they catch the wind, the scene bathed in the warm light of the afternoon sun.",
+    "frame_last": "The kites and balloons are now high in the sky, almost out of sight, with the sun beginning to set, casting a golden glow over the scene.",
+    "frame_json_raw": "{\"first\": \"Two colorful kites dance against a clear blue sky, with three balloons slowly ascending in the background.\", \"middle\": \"The kites are now directly above the balloons, their strings taut as they catch the wind, the scene bathed in the warm light of the afternoon sun.\", \"last\": \"The kites and balloons are now high in the sky, almost out of sight, with the sun beginning to set, casting a golden glow over the scene.\"}"
+  },
+  {
+    "caption": "Two cars speed down the track, and five motorcycles follow.",
+    "objects": "car, motorcycle",
+    "numbers": "2, 5",
+    "frame_first": "Two cars race ahead on a straight track, their headlights cutting through the night.",
+    "frame_middle": "Five motorcycles trail behind, weaving closely as they accelerate down the track.",
+    "frame_last": "The vehicles continue to speed away, the track stretching into the distance under the glow of track lights.",
+    "frame_json_raw": "{\"first\": \"Two cars race ahead on a straight track, their headlights cutting through the night.\", \"middle\": \"Five motorcycles trail behind, weaving closely as they accelerate down the track.\", \"last\": \"The vehicles continue to speed away, the track stretching into the distance under the glow of track lights.\"}"
+  },
+  {
+    "caption": "Three cats lounge in the garden, and seven birds swoop overhead.",
+    "objects": "cat, bird",
+    "numbers": "3, 7",
+    "frame_first": "Three cats bask in the sun, sprawled lazily on the soft grass of a garden, while seven birds circle high above.",
+    "frame_middle": "The cats remain relaxed, their tails occasionally flicking, as the birds continue their swooping flight overhead, casting fleeting shadows.",
+    "frame_last": "As the birds gradually disperse, the cats start to stir, one yawns widely, still in the tranquil garden setting.",
+    "frame_json_raw": "{\"first\": \"Three cats bask in the sun, sprawled lazily on the soft grass of a garden, while seven birds circle high above.\", \"middle\": \"The cats remain relaxed, their tails occasionally flicking, as the birds continue their swooping flight overhead, casting fleeting shadows.\", \"last\": \"As the birds gradually disperse, the cats start to stir, one yawns widely, still in the tranquil garden setting.\"}"
+  },
+  {
+    "caption": "Eight dogs race through the field, and two children run behind them.",
+    "objects": "dog, child",
+    "numbers": "8, 2",
+    "frame_first": "Eight dogs sprint across a lush green field, their tails wagging, with two children chasing after them in the background.",
+    "frame_middle": "The dogs are now halfway across the field, leaping over small hillocks, while the children continue to run, laughing and shouting.",
+    "frame_last": "The dogs reach the far end of the field, turning to look back, as the children slow to a stop, catching their breath and smiling.",
+    "frame_json_raw": "{\"first\": \"Eight dogs sprint across a lush green field, their tails wagging, with two children chasing after them in the background.\", \"middle\": \"The dogs are now halfway across the field, leaping over small hillocks, while the children continue to run, laughing and shouting.\", \"last\": \"The dogs reach the far end of the field, turning to look back, as the children slow to a stop, catching their breath and smiling.\"}"
+  },
+  {
+    "caption": "Seven oranges roll on the counter near three cups.",
+    "objects": "orange, cup",
+    "numbers": "7, 3",
+    "frame_first": "Seven oranges begin to roll across a kitchen counter, near three stationary cups.",
+    "frame_middle": "The oranges are now scattered around the counter, with some close to the cups, still rolling.",
+    "frame_last": "The oranges have come to a stop on the counter, now resting near the three cups without touching them.",
+    "frame_json_raw": "{\"first\": \"Seven oranges begin to roll across a kitchen counter, near three stationary cups.\", \"middle\": \"The oranges are now scattered around the counter, with some close to the cups, still rolling.\", \"last\": \"The oranges have come to a stop on the counter, now resting near the three cups without touching them.\"}"
+  },
+  {
+    "caption": "Two fish swim in the pond, and five frogs sit on lily pads.",
+    "objects": "fish, frog",
+    "numbers": "2, 5",
+    "frame_first": "Two fish glide gracefully beneath the surface of a serene pond, their scales shimmering in the sunlight.",
+    "frame_middle": "Five frogs, each perched on a lily pad, watch the fish with still, attentive eyes.",
+    "frame_last": "The pond's surface ripples slightly as a fish swims close to the edge, while the frogs remain motionless on their pads.",
+    "frame_json_raw": "{\"first\": \"Two fish glide gracefully beneath the surface of a serene pond, their scales shimmering in the sunlight.\", \"middle\": \"Five frogs, each perched on a lily pad, watch the fish with still, attentive eyes.\", \"last\": \"The pond's surface ripples slightly as a fish swims close to the edge, while the frogs remain motionless on their pads.\"}"
+  },
+  {
+    "caption": "Three pandas munch on bamboo, and four elephants spray water.",
+    "objects": "panda, elephant",
+    "numbers": "3, 4",
+    "frame_first": "Three pandas sit on a lush green meadow, each holding a stalk of bamboo, munching contentedly.",
+    "frame_middle": "Four elephants stand near a pond, their trunks curled up as they spray water playfully over their backs.",
+    "frame_last": "The pandas continue to eat their bamboo, now surrounded by splashes and ripples from the elephants' water play in the background.",
+    "frame_json_raw": "{\"first\": \"Three pandas sit on a lush green meadow, each holding a stalk of bamboo, munching contentedly.\", \"middle\": \"Four elephants stand near a pond, their trunks curled up as they spray water playfully over their backs.\", \"last\": \"The pandas continue to eat their bamboo, now surrounded by splashes and ripples from the elephants' water play in the background.\"}"
+  },
+  {
+    "caption": "Four cows graze in the pasture, and two sheep wander nearby.",
+    "objects": "cow, sheep",
+    "numbers": "4, 2",
+    "frame_first": "Four cows are scattered across a lush green pasture, heads down as they graze peacefully under a clear blue sky.",
+    "frame_middle": "Two sheep meander near the cows, their white wool contrasting against the green grass, while the cows continue to graze.",
+    "frame_last": "The cows and sheep coexist harmoniously in the pasture, the cows still grazing, and the sheep resting under a tree.",
+    "frame_json_raw": "{\"first\": \"Four cows are scattered across a lush green pasture, heads down as they graze peacefully under a clear blue sky.\", \"middle\": \"Two sheep meander near the cows, their white wool contrasting against the green grass, while the cows continue to graze.\", \"last\": \"The cows and sheep coexist harmoniously in the pasture, the cows still grazing, and the sheep resting under a tree.\"}"
+  },
+  {
+    "caption": "Four airplanes soar high above, and three birds circle below.",
+    "objects": "airplane, bird",
+    "numbers": "4, 3",
+    "frame_first": "Four airplanes glide in a clear blue sky, their silver bodies catching the sunlight, while three small birds circle much lower, close to the earth.",
+    "frame_middle": "The airplanes continue their steady flight, their contrails forming white streaks across the sky, as the birds flutter below, occasionally flapping their wings to maintain their circling pattern.",
+    "frame_last": "The airplanes are now distant specks in the vast sky, their flight paths almost parallel, while the birds have spread out slightly, still circling in a smaller formation beneath them.",
+    "frame_json_raw": "{\"first\": \"Four airplanes glide in a clear blue sky, their silver bodies catching the sunlight, while three small birds circle much lower, close to the earth.\", \"middle\": \"The airplanes continue their steady flight, their contrails forming white streaks across the sky, as the birds flutter below, occasionally flapping their wings to maintain their circling pattern.\", \"last\": \"The airplanes are now distant specks in the vast sky, their flight paths almost parallel, while the birds have spread out slightly, still circling in a smaller formation beneath them.\"}"
+  },
+  {
+    "caption": "Two dogs dig in the sand, and four cats walking nearby.",
+    "objects": "dog, cat",
+    "numbers": "2, 4",
+    "frame_first": "Two dogs energetically dig in the sand, sending grains flying, while four cats walk casually nearby, observing the dogs' activity.",
+    "frame_middle": "The dogs continue to dig, creating a small pit, while the cats gather closer, their tails flicking with curiosity.",
+    "frame_last": "One dog pauses, looking at the cats, while the other keeps digging, the cats now form a semi-circle around the digging site, watching intently.",
+    "frame_json_raw": "{\"first\": \"Two dogs energetically dig in the sand, sending grains flying, while four cats walk casually nearby, observing the dogs' activity.\", \"middle\": \"The dogs continue to dig, creating a small pit, while the cats gather closer, their tails flicking with curiosity.\", \"last\": \"One dog pauses, looking at the cats, while the other keeps digging, the cats now form a semi-circle around the digging site, watching intently.\"}"
+  },
+  {
+    "caption": "Three chairs sit around a campfire, and seven people roasting marshmallows.",
+    "objects": "chair, person",
+    "numbers": "3, 7",
+    "frame_first": "Three chairs are arranged around a crackling campfire, with seven people gathered, holding marshmallows on sticks.",
+    "frame_middle": "People are leaning over the fire, marshmallows glowing golden as they roast, faces lit up with warmth and joy.",
+    "frame_last": "The marshmallows are puffed and golden brown, people pull them away from the fire, smiling and preparing to enjoy their treats.",
+    "frame_json_raw": "{\"first\": \"Three chairs are arranged around a crackling campfire, with seven people gathered, holding marshmallows on sticks.\", \"middle\": \"People are leaning over the fire, marshmallows glowing golden as they roast, faces lit up with warmth and joy.\", \"last\": \"The marshmallows are puffed and golden brown, people pull them away from the fire, smiling and preparing to enjoy their treats.\"}"
+  },
+  {
+    "caption": "Two rabbits dash across the garden, and eight butterflies flutter nearby.",
+    "objects": "rabbit, butterfly",
+    "numbers": "2, 8",
+    "frame_first": "Two rabbits bound into the garden, their white tails flashing as they run left to right.",
+    "frame_middle": "Eight butterflies flutter around the rabbits, their wings casting dappled shadows on the garden plants.",
+    "frame_last": "The rabbits pause briefly, ears perked, before continuing their dash, with butterflies still circling nearby.",
+    "frame_json_raw": "{\"first\": \"Two rabbits bound into the garden, their white tails flashing as they run left to right.\", \"middle\": \"Eight butterflies flutter around the rabbits, their wings casting dappled shadows on the garden plants.\", \"last\": \"The rabbits pause briefly, ears perked, before continuing their dash, with butterflies still circling nearby.\"}"
+  },
+  {
+    "caption": "One ship sails into the harbor, and six seagulls circle above.",
+    "objects": "ship, seagull",
+    "numbers": "1, 6",
+    "frame_first": "A lone ship approaches the harbor, its sails billowing in the breeze, with six seagulls circling high above.",
+    "frame_middle": "The ship is now in the center of the harbor, its hull gliding smoothly through the water, while the seagulls continue to circle, their wings catching the light.",
+    "frame_last": "The ship comes to a gentle stop at the dock, and the seagulls, now lower, hover expectantly, ready to swoop down for any scraps.",
+    "frame_json_raw": "{\"first\": \"A lone ship approaches the harbor, its sails billowing in the breeze, with six seagulls circling high above.\", \"middle\": \"The ship is now in the center of the harbor, its hull gliding smoothly through the water, while the seagulls continue to circle, their wings catching the light.\", \"last\": \"The ship comes to a gentle stop at the dock, and the seagulls, now lower, hover expectantly, ready to swoop down for any scraps.\"}"
+  },
+  {
+    "caption": "Four horses trot along the fence line, and one cow chewing grass nearby.",
+    "objects": "horse, cow",
+    "numbers": "4, 1",
+    "frame_first": "Four horses trot in unison along a fence line under a clear blue sky, with a cow peacefully chewing grass in the background.",
+    "frame_middle": "The horses continue their steady trot, their manes flowing in the breeze, while the cow remains still, its head lowered to the lush green grass.",
+    "frame_last": "The horses approach the end of the fence line, their hooves kicking up small clouds of dust, with the cow now in the distance, still grazing.",
+    "frame_json_raw": "{\"first\": \"Four horses trot in unison along a fence line under a clear blue sky, with a cow peacefully chewing grass in the background.\", \"middle\": \"The horses continue their steady trot, their manes flowing in the breeze, while the cow remains still, its head lowered to the lush green grass.\", \"last\": \"The horses approach the end of the fence line, their hooves kicking up small clouds of dust, with the cow now in the distance, still grazing.\"}"
+  },
+  {
+    "caption": "Seven apples hang heavy on the tree branch, and one bird perches nearby.",
+    "objects": "apple, bird",
+    "numbers": "7, 1",
+    "frame_first": "A tree branch is laden with seven ripe apples, hanging heavy. A bird perches on a nearby branch, observing.",
+    "frame_middle": "The apples glisten in the sunlight, their red hues vibrant against the green leaves. The bird shifts its position, eyeing the apples with interest.",
+    "frame_last": "The apples remain motionless on the branch, while the bird takes flight, leaving the tree and its bounty behind.",
+    "frame_json_raw": "{\"first\": \"A tree branch is laden with seven ripe apples, hanging heavy. A bird perches on a nearby branch, observing.\", \"middle\": \"The apples glisten in the sunlight, their red hues vibrant against the green leaves. The bird shifts its position, eyeing the apples with interest.\", \"last\": \"The apples remain motionless on the branch, while the bird takes flight, leaving the tree and its bounty behind.\"}"
+  },
+  {
+    "caption": "Two kites soar high in the sky, and one balloon drifts in the breeze.",
+    "objects": "kite, balloon",
+    "numbers": "2, 1",
+    "frame_first": "Two colorful kites ascend into a clear blue sky, their strings taut as they catch the wind, with a single balloon floating below them, moving gently with the breeze.",
+    "frame_middle": "The kites are now at their peak height, dancing against the sky, while the balloon continues its leisurely ascent, slightly to the side of the kites.",
+    "frame_last": "The kites begin their descent, circling lower in the sky, and the balloon, having risen higher, now floats above one of the kites, all against a backdrop of a setting sun.",
+    "frame_json_raw": "{\"first\": \"Two colorful kites ascend into a clear blue sky, their strings taut as they catch the wind, with a single balloon floating below them, moving gently with the breeze.\", \"middle\": \"The kites are now at their peak height, dancing against the sky, while the balloon continues its leisurely ascent, slightly to the side of the kites.\", \"last\": \"The kites begin their descent, circling lower in the sky, and the balloon, having risen higher, now floats above one of the kites, all against a backdrop of a setting sun.\"}"
+  },
+  {
+    "caption": "Four cars speed down the track, and five motorcycles follow.",
+    "objects": "car, motorcycle",
+    "numbers": "4, 5",
+    "frame_first": "Four cars race down a straight track, engines roaring, with motorcycles lined up behind them.",
+    "frame_middle": "The cars are now at the curve, tires screeching, while the motorcycles approach the straight section.",
+    "frame_last": "The motorcycles are now on the curve, leaning into the turn, as the cars speed away in the distance.",
+    "frame_json_raw": "{\"first\": \"Four cars race down a straight track, engines roaring, with motorcycles lined up behind them.\", \"middle\": \"The cars are now at the curve, tires screeching, while the motorcycles approach the straight section.\", \"last\": \"The motorcycles are now on the curve, leaning into the turn, as the cars speed away in the distance.\"}"
+  },
+  {
+    "caption": "Six cats lounge in the garden, and seven birds swoop overhead.",
+    "objects": "cat, bird",
+    "numbers": "6, 7",
+    "frame_first": "Six cats sprawl lazily on the sun-dappled grass of a garden, their tails flicking idly.",
+    "frame_middle": "Seven birds glide gracefully overhead, their wings catching the sunlight as they swoop in unison.",
+    "frame_last": "The cats' ears perk up, eyes tracking the birds' movements above, yet they remain relaxed in the garden.",
+    "frame_json_raw": "{\"first\": \"Six cats sprawl lazily on the sun-dappled grass of a garden, their tails flicking idly.\", \"middle\": \"Seven birds glide gracefully overhead, their wings catching the sunlight as they swoop in unison.\", \"last\": \"The cats' ears perk up, eyes tracking the birds' movements above, yet they remain relaxed in the garden.\"}"
+  },
+  {
+    "caption": "Eight dogs race through the field, and four children run behind them.",
+    "objects": "dog, child",
+    "numbers": "8, 4",
+    "frame_first": "Eight dogs sprint across a sunlit green field, their tails wagging, with four children just starting to chase after them in the background.",
+    "frame_middle": "The dogs are now halfway across the field, bounding over small hillocks, while the children are gaining ground, their faces alight with excitement.",
+    "frame_last": "The dogs reach the far end of the field, turning to look back, as the children, now at the center of the field, continue their pursuit with wide grins.",
+    "frame_json_raw": "{\"first\": \"Eight dogs sprint across a sunlit green field, their tails wagging, with four children just starting to chase after them in the background.\", \"middle\": \"The dogs are now halfway across the field, bounding over small hillocks, while the children are gaining ground, their faces alight with excitement.\", \"last\": \"The dogs reach the far end of the field, turning to look back, as the children, now at the center of the field, continue their pursuit with wide grins.\"}"
+  },
+  {
+    "caption": "Seven oranges roll on the counter near five cups.",
+    "objects": "orange, cup",
+    "numbers": "7, 5",
+    "frame_first": "Seven oranges are rolling towards five cups lined up on a kitchen counter.",
+    "frame_middle": "The oranges have reached the cups, with some bouncing off and others rolling between them.",
+    "frame_last": "The oranges have come to a stop scattered around the cups, some still touching them.",
+    "frame_json_raw": "{\"first\": \"Seven oranges are rolling towards five cups lined up on a kitchen counter.\", \"middle\": \"The oranges have reached the cups, with some bouncing off and others rolling between them.\", \"last\": \"The oranges have come to a stop scattered around the cups, some still touching them.\"}"
+  },
+  {
+    "caption": "Four fish swim in the pond, and five frogs sit on lily pads.",
+    "objects": "fish, frog",
+    "numbers": "4, 5",
+    "frame_first": "Four fish glide gracefully beneath the surface of a tranquil pond, their scales shimmering in the sunlight.",
+    "frame_middle": "Five frogs, each perched on a lily pad, watch the fish with their wide, curious eyes.",
+    "frame_last": "The pond's surface ripples slightly as a fish swims close to the edge, while the frogs remain still, silhouetted against the green lily pads.",
+    "frame_json_raw": "{\"first\": \"Four fish glide gracefully beneath the surface of a tranquil pond, their scales shimmering in the sunlight.\", \"middle\": \"Five frogs, each perched on a lily pad, watch the fish with their wide, curious eyes.\", \"last\": \"The pond's surface ripples slightly as a fish swims close to the edge, while the frogs remain still, silhouetted against the green lily pads.\"}"
+  },
+  {
+    "caption": "Seven pandas munch on bamboo, and four elephants spray water.",
+    "objects": "panda, elephant",
+    "numbers": "7, 4",
+    "frame_first": "Seven pandas are clustered around a bamboo grove, each munching on bamboo shoots, while in the background, four elephants are approaching a waterhole.",
+    "frame_middle": "The pandas continue to eat peacefully, while two of the elephants have reached the waterhole and are using their trunks to spray water onto themselves and each other.",
+    "frame_last": "The pandas are still engrossed in their meal, and the elephants are now all gathered at the waterhole, spraying water joyfully, creating a misty atmosphere around them.",
+    "frame_json_raw": "{\"first\": \"Seven pandas are clustered around a bamboo grove, each munching on bamboo shoots, while in the background, four elephants are approaching a waterhole.\", \"middle\": \"The pandas continue to eat peacefully, while two of the elephants have reached the waterhole and are using their trunks to spray water onto themselves and each other.\", \"last\": \"The pandas are still engrossed in their meal, and the elephants are now all gathered at the waterhole, spraying water joyfully, creating a misty atmosphere around them.\"}"
+  },
+  {
+    "caption": "Four cows graze in the pasture, and seven sheep wander nearby.",
+    "objects": "cow, sheep",
+    "numbers": "4, 7",
+    "frame_first": "Four cows are scattered across a lush green pasture, heads down in concentration as they graze. Seven sheep are nearby, moving slowly in a loose group.",
+    "frame_middle": "The cows continue to graze, occasionally lifting their heads to chew their cud, while the sheep scatter slightly, some nibbling on grass and others looking alert.",
+    "frame_last": "The cows and sheep coexist peacefully in the pasture, some cows now standing and looking around, while the sheep form a tighter cluster, all under a serene, open sky.",
+    "frame_json_raw": "{\"first\": \"Four cows are scattered across a lush green pasture, heads down in concentration as they graze. Seven sheep are nearby, moving slowly in a loose group.\", \"middle\": \"The cows continue to graze, occasionally lifting their heads to chew their cud, while the sheep scatter slightly, some nibbling on grass and others looking alert.\", \"last\": \"The cows and sheep coexist peacefully in the pasture, some cows now standing and looking around, while the sheep form a tighter cluster, all under a serene, open sky.\"}"
+  },
+  {
+    "caption": "Four airplanes soar high above, and six birds circle below.",
+    "objects": "airplane, bird",
+    "numbers": "4, 6",
+    "frame_first": "Four airplanes glide in a clear blue sky, their silver bodies catching the sunlight, while six birds circle below, their wings flapping in unison.",
+    "frame_middle": "The airplanes are now in the distance, their contrails stretching behind them, as the birds continue their circling, occasionally flitting upwards.",
+    "frame_last": "The airplanes are mere specks in the vast sky, while the birds, now flying in a loose formation, are heading towards a distant tree line.",
+    "frame_json_raw": "{\"first\": \"Four airplanes glide in a clear blue sky, their silver bodies catching the sunlight, while six birds circle below, their wings flapping in unison.\", \"middle\": \"The airplanes are now in the distance, their contrails stretching behind them, as the birds continue their circling, occasionally flitting upwards.\", \"last\": \"The airplanes are mere specks in the vast sky, while the birds, now flying in a loose formation, are heading towards a distant tree line.\"}"
+  },
+  {
+    "caption": "Six dogs dig in the sand, and four cats walking nearby.",
+    "objects": "dog, cat",
+    "numbers": "6, 4",
+    "frame_first": "Six dogs energetically dig in the sand, sending waves of sand flying, while four cats walk casually nearby, observing the scene.",
+    "frame_middle": "The dogs continue to dig, creating a large sandy pit, while the cats sit together, watching the dogs' activity with curiosity.",
+    "frame_last": "The dogs rest beside their sandy excavation, panting and looking satisfied, while the cats begin to walk away, turning their heads back occasionally to glance at the playful scene.",
+    "frame_json_raw": "{\"first\": \"Six dogs energetically dig in the sand, sending waves of sand flying, while four cats walk casually nearby, observing the scene.\", \"middle\": \"The dogs continue to dig, creating a large sandy pit, while the cats sit together, watching the dogs' activity with curiosity.\", \"last\": \"The dogs rest beside their sandy excavation, panting and looking satisfied, while the cats begin to walk away, turning their heads back occasionally to glance at the playful scene.\"}"
+  },
+  {
+    "caption": "Five chairs sit around a campfire, and seven people roasting marshmallows.",
+    "objects": "chair, person",
+    "numbers": "5, 7",
+    "frame_first": "Five chairs are arranged in a circle around a crackling campfire, with seven people gathered, some holding sticks with marshmallows.",
+    "frame_middle": "People are leaning over the fire, turning their marshmallows, their faces illuminated by the warm glow of the flames.",
+    "frame_last": "The marshmallows are golden brown, and people are smiling, preparing to enjoy their roasted treats around the fire.",
+    "frame_json_raw": "{\"first\": \"Five chairs are arranged in a circle around a crackling campfire, with seven people gathered, some holding sticks with marshmallows.\", \"middle\": \"People are leaning over the fire, turning their marshmallows, their faces illuminated by the warm glow of the flames.\", \"last\": \"The marshmallows are golden brown, and people are smiling, preparing to enjoy their roasted treats around the fire.\"}"
+  }
+]

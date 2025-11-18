@@ -558,7 +558,10 @@ def main():
         save_caption = it.get("orig_cap")
         save_stem = save_caption if save_caption else prompt
         save_stem = save_stem[:180] if len(save_stem) > 180 else save_stem
-        out_path = out_root / f"{save_stem}.mp4"
+        base_name = save_stem if save_stem else fallback_stem
+        base_name = base_name[:180] if len(base_name) > 180 else base_name
+        name_with_rank = f"{base_name}_idx{it['id']:05d}_r{rank}"
+        out_path = out_root / f"{name_with_rank}.mp4"
 
         if args.resume and out_path.exists():
             _log(f"[Skip] exists: {out_path}")

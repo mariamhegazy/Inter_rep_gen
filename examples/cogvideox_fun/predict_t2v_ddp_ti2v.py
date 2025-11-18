@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # generate_cogvideox_t2v_ddp.py
 import argparse
+import gc
 import json
 import os
 import re
@@ -107,7 +108,7 @@ def parse_args():
     p.add_argument(
         "--gpu_memory_mode",
         type=str,
-        default="model_cpu_offload_and_qfloat8",
+        default="model_cpu_offload",
         choices=[
             "model_full_load",
             "model_full_load_and_qfloat8",
@@ -163,7 +164,20 @@ def parse_args():
     p.add_argument(
         "--weight_dtype",
         type=str,
-        default="bfloat16",
+        default="float32",
+        choices=["bfloat16", "float16", "float32"],
+    )
+    p.add_argument(
+        "--text_encoder_dtype",
+        type=str,
+        default="float32",
+        choices=["bfloat16", "float16", "float32"],
+    )
+    p.add_argument(
+        "--vae_dtype",
+        type=str,
+        default="float32",
+        choices=["bfloat16", "float16", "float32"],
     )
 
     # LoRA (optional)
@@ -280,7 +294,8 @@ def load_ref_image_as_video(
     tensor = (
         torch.from_numpy(arr).permute(2, 0, 1).unsqueeze(0).unsqueeze(0).contiguous()
     )
-    return tensor.to(device=device, dtype=dtype, non_blocking=True)
+    target_dtype = torch.float32 if dtype in (torch.float16, torch.bfloat16) else dtype
+    return tensor.to(device=device, dtype=target_dtype, non_blocking=True)
 
 
 # ---------------------------
@@ -307,6 +322,8 @@ def build_scheduler(name: str, model_dir: str):
 # ---------------------------
 def load_models(args, device):
     weight_dtype = getattr(torch, args.weight_dtype)
+    text_encoder_dtype = getattr(torch, args.text_encoder_dtype)
+    vae_dtype = getattr(torch, args.vae_dtype)
 
     transformer = CogVideoXTransformer3DModel.from_pretrained(
         args.model_dir,
@@ -316,12 +333,12 @@ def load_models(args, device):
     ).to(weight_dtype)
 
     vae = AutoencoderKLCogVideoX.from_pretrained(args.model_dir, subfolder="vae").to(
-        weight_dtype
+        vae_dtype
     )
 
     tokenizer = T5Tokenizer.from_pretrained(args.model_dir, subfolder="tokenizer")
     text_encoder = T5EncoderModel.from_pretrained(
-        args.model_dir, subfolder="text_encoder", torch_dtype=weight_dtype
+        args.model_dir, subfolder="text_encoder", torch_dtype=text_encoder_dtype
     )
 
     scheduler = build_scheduler(args.sampler, args.model_dir)
@@ -448,6 +465,21 @@ def main():
     # Load models
     pipe, transformer, vae = load_models(args, device=device)
 
+    weight_dtype = getattr(torch, args.weight_dtype)
+    text_encoder_dtype = getattr(torch, args.text_encoder_dtype)
+    vae_dtype = getattr(torch, args.vae_dtype)
+
+    lora_merged = False
+    if args.lora_path:
+        pipe = merge_lora(
+            pipe,
+            args.lora_path,
+            args.lora_weight,
+            device=device,
+            dtype=weight_dtype,
+        )
+        lora_merged = True
+
     supports_ti2v = transformer.config.in_channels == vae.config.latent_channels
     if ti2v_requested and not supports_ti2v:
         raise ValueError(
@@ -455,7 +487,26 @@ def main():
         )
 
     vae_device = resolve_module_device(vae, device)
-    vae_dtype = getattr(vae, "dtype", torch.float32)
+
+    if supports_ti2v:
+
+        def _encode_conditioning_pixels_on_cpu(cond_pixels_lat: torch.Tensor):
+            cond_cpu = cond_pixels_lat.to("cpu", dtype=torch.float32, non_blocking=True)
+            vae_cpu = AutoencoderKLCogVideoX.from_pretrained(
+                args.model_dir, subfolder="vae"
+            ).to("cpu", dtype=torch.float32)
+            with torch.autocast(device_type="cpu", enabled=False):
+                lat = vae_cpu.encode(cond_cpu)[0].sample()
+            sf = float(getattr(vae_cpu.config, "scaling_factor", 1.0))
+            lat = lat * sf
+            del vae_cpu
+            gc.collect()
+
+            target_device = resolve_module_device(pipe.vae, device)
+            target_dtype = getattr(pipe.vae, "dtype", lat.dtype)
+            return lat.to(device=target_device, dtype=target_dtype, non_blocking=True)
+
+        pipe._encode_conditioning_pixels = _encode_conditioning_pixels_on_cpu
 
     static_ref_video = None
     if args.ref_frame and supports_ti2v:
@@ -471,7 +522,6 @@ def main():
         )
 
     # dtype + generator
-    weight_dtype = getattr(torch, args.weight_dtype)
     base_gen = torch.Generator(device=device)
 
     # Adjust temporal length to VAE stride and transformer multiple
@@ -506,7 +556,9 @@ def main():
         save_caption = it.get("orig_cap")
         save_stem = save_caption if save_caption else prompt
         save_stem = save_stem[:180] if len(save_stem) > 180 else save_stem
-        out_path = out_root / f"{save_stem}.mp4"
+        base_name = save_stem if save_stem else f"sample_{it['id']:05d}"
+        name_with_rank = f"{base_name}_idx{it['id']:05d}_r{rank}"
+        out_path = out_root / f"{name_with_rank}.mp4"
 
         if args.resume and out_path.exists():
             _log(f"[Skip] exists: {out_path}")
@@ -515,7 +567,7 @@ def main():
             # Append _1, _2, ...
             i = 1
             while True:
-                cand = out_root / f"{save_stem}_{i}.mp4"
+                cand = out_root / f"{name_with_rank}_{i}.mp4"
                 if not cand.exists():
                     out_path = cand
                     break
@@ -578,6 +630,15 @@ def main():
         out_path.parent.mkdir(parents=True, exist_ok=True)
         save_videos_grid(sample, str(out_path), fps=args.fps)
         _log(f"[OK] {it['id']:05d} -> {out_path}")
+
+    if lora_merged:
+        pipe = unmerge_lora(
+            pipe,
+            args.lora_path,
+            args.lora_weight,
+            device=device,
+            dtype=weight_dtype,
+        )
 
     # Finish
     if dist.is_initialized():

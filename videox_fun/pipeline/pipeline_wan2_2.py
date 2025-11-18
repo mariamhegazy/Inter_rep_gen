@@ -113,107 +113,6 @@ class WanPipelineOutput(BaseOutput):
     videos: torch.Tensor
 
 
-def _unique_sorted_int(xs):
-    return sorted(list({int(x) for x in xs}))
-
-
-def _choose_sparse_latents(mode, k, explicit, r, t_lat, t_pix=None, device="cpu"):
-    # r = VAE temporal compression ratio; t_lat = total latent frames; t_pix = total pixel frames
-    if mode == "none":
-        return torch.arange(t_lat, device=device)
-
-    if mode == "start":
-        return torch.tensor([0], device=device)
-
-    if mode == "start_last":
-        if t_lat == 1:
-            return torch.tensor([0], device=device)
-        return torch.tensor([0, t_lat - 1], device=device)
-
-    if mode == "linspace_k":
-        k = max(1, min(int(k), t_lat))
-        return (
-            torch.linspace(0, t_lat - 1, steps=k, device=device)
-            .round()
-            .to(torch.long)
-            .unique(sorted=True)
-        )
-
-    if mode == "explicit_latent":
-        raw = [s for s in str(explicit).split(",") if s.strip() != ""]
-        vals = []
-        for s in raw:
-            vals.append(t_lat - 1 if s.strip() == "-1" else int(s))
-        vals = [max(0, min(t_lat - 1, v)) for v in vals]
-        return torch.tensor(_unique_sorted_int(vals), device=device)
-
-    raise ValueError(f"Unknown sparse_time_mode {mode}")
-
-
-def _decode_anchor_latents_as_frames(vae, latents):
-    # latents: (B, C, K, H, W) -> decode each anchor separately as T=1 to get (B, K, C, H, W)
-    B, C, K, H, W = latents.shape
-    x = latents.permute(0, 2, 1, 3, 4).reshape(B * K, C, 1, H, W)  # (B*K, C, 1, H, W)
-    frames = vae.decode(x.to(vae.dtype)).sample  # (B*K, 1, C, H, W)
-    frames = (frames / 2 + 0.5).clamp(0, 1).float().cpu()  # keep torch here
-    frames = frames.reshape(
-        B, K, 1, frames.shape[-3], frames.shape[-2], frames.shape[-1]
-    )
-    frames = frames.squeeze(2)  # (B, K, C, H, W)
-    return frames
-
-
-def _upsample_anchors_to_full(frames_anchor, anchor_lat_idx, T_pix, r, mode="nearest"):
-    """
-    frames_anchor: (B, K, C, H, W) decoded pixel frames for anchors (one per latent)
-    anchor_lat_idx: (K,) latent indices (0..T_lat-1)
-    T_pix: desired pixel frames (num_frames arg)
-    r: temporal compression ratio (>=1)
-    mode: "nearest" or "linear"
-    Returns: (B, T_pix, C, H, W)
-    """
-    B, K, C, H, W = frames_anchor.shape
-    # map latent anchors to pixel frame indices
-    anchor_pix = (anchor_lat_idx.long() * int(r)).tolist()
-
-    # initialize output and fill anchor positions
-    out = torch.empty(
-        B, T_pix, C, H, W, dtype=frames_anchor.dtype, device=frames_anchor.device
-    )
-    # start by nearest fill for all positions
-    if mode == "nearest":
-        for t in range(T_pix):
-            # find nearest anchor
-            nearest = min(range(K), key=lambda j: abs(t - anchor_pix[j]))
-            out[:, t] = frames_anchor[:, nearest]
-        return out
-
-    # linear interpolation along time
-    # left/right neighbors per t
-    for t in range(T_pix):
-        # exact anchor?
-        if t in anchor_pix:
-            j = anchor_pix.index(t)
-            out[:, t] = frames_anchor[:, j]
-            continue
-        # find left and right anchors
-        right_candidates = [ap for ap in anchor_pix if ap > t]
-        left_candidates = [ap for ap in anchor_pix if ap < t]
-        if not left_candidates:
-            out[:, t] = frames_anchor[:, 0]
-            continue
-        if not right_candidates:
-            out[:, t] = frames_anchor[:, -1]
-            continue
-        l = max(left_candidates)
-        rgt = min(right_candidates)
-        jl = anchor_pix.index(l)
-        jr = anchor_pix.index(rgt)
-        w = (t - l) / float(rgt - l)
-        out[:, t] = (1 - w) * frames_anchor[:, jl] + w * frames_anchor[:, jr]
-    return out
-
-
 class Wan2_2Pipeline(DiffusionPipeline):
     r"""
     Pipeline for text-to-video generation using Wan.
@@ -411,22 +310,10 @@ class Wan2_2Pipeline(DiffusionPipeline):
                 f" size of {batch_size}. Make sure the batch size matches the length of the generators."
             )
 
-        # shape = (
-        #     batch_size,
-        #     num_channels_latents,
-        #     (num_frames - 1) // self.vae.temporal_compression_ratio + 1,
-        #     height // self.vae.spatial_compression_ratio,
-        #     width // self.vae.spatial_compression_ratio,
-        # )
-        T_lat = (
-            num_latent_frames
-            if num_latent_frames is not None
-            else ((num_frames - 1) // self.vae.temporal_compression_ratio + 1)
-        )
         shape = (
             batch_size,
             num_channels_latents,
-            T_lat,
+            (num_frames - 1) // self.vae.temporal_compression_ratio + 1,
             height // self.vae.spatial_compression_ratio,
             width // self.vae.spatial_compression_ratio,
         )
@@ -580,11 +467,8 @@ class Wan2_2Pipeline(DiffusionPipeline):
         boundary: float = 0.875,
         comfyui_progressbar: bool = False,
         shift: int = 5,
-        sparse_time_mode: str = "none",  # {"none","start","start_last","linspace_k","explicit_latent"}
-        sparse_k: int = 2,
-        sparse_explicit: str = "",  # e.g. "0,-1" (latent indices; -1 means last)
-        sparse_return_anchors_only: bool = False,  # if True, return only anchor frames
-        anchor_upsample: str = "nearest",
+        video: Optional[torch.Tensor] = None,  # [B, 1, C, H, W] in [0,1], RGB
+        ti2v_mode: Optional[str] = None,  # "start"|"mid"|"last"|"random"
     ) -> Union[WanPipelineOutput, Tuple]:
         """
         Function invoked when calling the pipeline for generation.
@@ -672,27 +556,6 @@ class Wan2_2Pipeline(DiffusionPipeline):
             pbar = ProgressBar(num_inference_steps + 1)
 
         # 5. Prepare latents
-        device = self._execution_device
-        r = self.vae.temporal_compression_ratio
-
-        # full latent/pixel lengths implied by num_frames
-        T_lat_full = (num_frames - 1) // r + 1
-        T_pix_full = num_frames
-
-        # choose anchors
-        idx_lat = _choose_sparse_latents(
-            mode=sparse_time_mode,
-            k=sparse_k,
-            explicit=sparse_explicit,
-            r=r,
-            t_lat=T_lat_full,
-            t_pix=T_pix_full,
-            device=device,
-        )
-        if idx_lat.numel() == 0:
-            idx_lat = torch.tensor([0], device=device)
-
-        T_lat_anchor = int(idx_lat.numel())
         latent_channels = self.transformer.config.in_channels
         latents = self.prepare_latents(
             batch_size * num_videos_per_prompt,
@@ -704,29 +567,13 @@ class Wan2_2Pipeline(DiffusionPipeline):
             device,
             generator,
             latents,
-            num_latent_frames=T_lat_anchor,  # <= anchor count
         )
-        # latents = self.prepare_latents(
-        #     batch_size * num_videos_per_prompt,
-        #     latent_channels,
-        #     num_frames,
-        #     height,
-        #     width,
-        #     weight_dtype,
-        #     device,
-        #     generator,
-        #     latents,
-        # )
         if comfyui_progressbar:
             pbar.update(1)
 
-        # 6. Prepare extra step kwargs. TODO: Logic should ideally just be moved out of the pipeline
-        extra_step_kwargs = self.prepare_extra_step_kwargs(generator, eta)
-
-        # target_shape = (self.vae.latent_channels, (num_frames - 1) // self.vae.temporal_compression_ratio + 1, width // self.vae.spatial_compression_ratio, height // self.vae.spatial_compression_ratio)
         target_shape = (
             self.vae.latent_channels,
-            T_lat_anchor,
+            (num_frames - 1) // self.vae.temporal_compression_ratio + 1,
             width // self.vae.spatial_compression_ratio,
             height // self.vae.spatial_compression_ratio,
         )
@@ -738,6 +585,79 @@ class Wan2_2Pipeline(DiffusionPipeline):
             )
             * target_shape[1]
         )
+
+        # --- TI2V at inference (optional) ---
+        if video is not None and ti2v_mode is not None:
+            # 1) choose keyframe index in pixel space
+            modes = ("start", "mid", "last")
+            if ti2v_mode == "random":
+                ti2v_mode = modes[np.random.randint(0, 3)]
+            F_pix = video.shape[1]  # expected 1 if you pass a single keyframe video
+            if ti2v_mode == "start":
+                i_pix = 0
+            elif ti2v_mode == "mid":
+                i_pix = (F_pix - 1) // 2
+            else:  # "last"
+                i_pix = F_pix - 1
+
+            # 2) map pixel frame index -> latent temporal index
+            T_lat = latents.shape[2]
+            r = int(getattr(self.vae.config, "temporal_compression_ratio", 4))
+            if F_pix == 1 and ti2v_mode != "start":
+                if ti2v_mode == "mid":
+                    li = max(0, T_lat // 2)
+                else:
+                    li = T_lat - 1
+            else:
+                li = i_pix // max(r, 1)
+            li = max(0, min(li, T_lat - 1))
+
+            # 3) encode clean conditioning frame to latent
+            with torch.no_grad():
+                # video expected in [B, F, C, H, W], here use the selected single frame
+                cond_pixels = video[:, i_pix : i_pix + 1]  # [B, 1, C, H, W], [0,1]
+                cond_pixels = cond_pixels * 2.0 - 1.0  # to [-1,1]
+                cond_pixels_lat = cond_pixels.permute(
+                    0, 2, 1, 3, 4
+                ).contiguous()  # [B, C, 1, H, W]
+                cond_dist = self.vae.encode(cond_pixels_lat).latent_dist
+                cond_lat = cond_dist.mode()  # [B, C, 1, h', w']
+                cond_lat_tiled = cond_lat.repeat(1, 1, T_lat, 1, 1).to(
+                    device=latents.device, dtype=latents.dtype
+                )  # [B, C, T, h', w']
+
+            # 4) splice clean keyframe into current (noisy) latents at li
+            M = torch.ones(
+                (latents.shape[0], 1, T_lat, 1, 1),
+                device=latents.device,
+                dtype=latents.dtype,
+            )
+            M[:, :, li, :, :] = 0.0
+            latents = M * latents + (1.0 - M) * cond_lat_tiled
+
+            # 5) build per-token timestep map: keyframe tokens at min sigma
+            # Note: we replace the scalar per-step t with a flattened map used inside the loop.
+            S_frame = math.ceil(seq_len / T_lat)
+            # Treat the conditioned frame as fully denoised (sigma = 0).
+            min_sigma = torch.zeros((), device=latents.device, dtype=latents.dtype)
+
+            # Cache for the denoising loop:
+            _ti2v = {
+                "enabled": True,
+                "li": li,
+                "T_lat": T_lat,
+                "S_frame": S_frame,
+                "min_sigma": min_sigma,
+                "seq_len": seq_len,
+                "mask": M,
+                "cond_lat": cond_lat_tiled,
+            }
+        else:
+            _ti2v = {"enabled": False}
+
+        # 6. Prepare extra step kwargs. TODO: Logic should ideally just be moved out of the pipeline
+        extra_step_kwargs = self.prepare_extra_step_kwargs(generator, eta)
+
         # 7. Denoising loop
         num_warmup_steps = max(
             len(timesteps) - num_inference_steps * self.scheduler.order, 0
@@ -757,9 +677,54 @@ class Wan2_2Pipeline(DiffusionPipeline):
                     latent_model_input = self.scheduler.scale_model_input(
                         latent_model_input, t
                     )
+                if _ti2v["enabled"]:
+                    mask = _ti2v["mask"]
+                    cond_lat = _ti2v["cond_lat"]
+                    if do_classifier_free_guidance:
+                        mask = torch.cat([mask, mask], dim=0)
+                        cond_lat = torch.cat([cond_lat, cond_lat], dim=0)
+                    mask = mask.to(dtype=latent_model_input.dtype)
+                    cond_lat = cond_lat.to(dtype=latent_model_input.dtype)
+                    latent_model_input = mask * latent_model_input + (
+                        1.0 - mask
+                    ) * cond_lat
 
                 # broadcast to batch dimension in a way that's compatible with ONNX/Core ML
-                timestep = t.expand(latent_model_input.shape[0])
+                # timestep = t.expand(latent_model_input.shape[0])
+
+                if not _ti2v["enabled"]:
+                    timestep = t.expand(
+                        latent_model_input.shape[0]
+                    )  # scalar per-sample
+                    t_for_model = timestep
+                else:
+                    # build (B, T_lat) per-frame sigma map at this global step, then expand to (B, seq_len)
+                    bsz = latents.shape[0]
+                    T_lat = _ti2v["T_lat"]
+                    S_frame = _ti2v["S_frame"]
+                    min_sigma = _ti2v["min_sigma"]
+                    li = _ti2v["li"]
+                    seq_len = _ti2v["seq_len"]
+
+                    # (B, T_lat) all = current scalar t; keyframe = min_sigma
+                    tmap_T = (
+                        torch.ones(
+                            (bsz, T_lat),
+                            device=latents.device,
+                            dtype=self.text_encoder.dtype,
+                        )
+                        * t
+                    )
+                    tmap_T[:, li] = min_sigma
+                    # (B, T_lat, S_frame) -> (B, seq_len)
+                    tmap = (
+                        tmap_T.unsqueeze(-1)
+                        .expand(bsz, T_lat, S_frame)
+                        .reshape(bsz, -1)[:, :seq_len]
+                    )
+
+                    # The transformer expects a per-token t of shape (B, seq_len)
+                    t_for_model = tmap
 
                 if self.transformer_2 is not None:
                     if t >= boundary * self.scheduler.config.num_train_timesteps:
@@ -776,7 +741,7 @@ class Wan2_2Pipeline(DiffusionPipeline):
                     noise_pred = local_transformer(
                         x=latent_model_input,
                         context=in_prompt_embeds,
-                        t=timestep,
+                        t=t_for_model,
                         seq_len=seq_len,
                     )
 
@@ -803,6 +768,10 @@ class Wan2_2Pipeline(DiffusionPipeline):
                 latents = self.scheduler.step(
                     noise_pred, t, latents, **extra_step_kwargs, return_dict=False
                 )[0]
+                if _ti2v["enabled"]:
+                    mask = _ti2v["mask"].to(dtype=latents.dtype)
+                    cond_lat = _ti2v["cond_lat"].to(dtype=latents.dtype)
+                    latents = mask * latents + (1.0 - mask) * cond_lat
 
                 if callback_on_step_end is not None:
                     callback_kwargs = {}
@@ -823,43 +792,15 @@ class Wan2_2Pipeline(DiffusionPipeline):
                 if comfyui_progressbar:
                     pbar.update(1)
 
-        # if output_type == "numpy":
-        #     video = self.decode_latents(latents)
-        # elif not output_type == "latent":
-        #     video = self.decode_latents(latents)
-        #     video = self.video_processor.postprocess_video(video=video, output_type=output_type)
-        # else:
-        #     video = latents
-
-        if sparse_time_mode != "none":
-            # decode one pixel frame per anchor (preserves true anchor timestamps)
-            frames_anchor = _decode_anchor_latents_as_frames(
-                self.vae, latents
-            )  # (B,K,C,H,W)
-
-            if sparse_return_anchors_only:
-                video_torch = frames_anchor  # (B,K,C,H,W)
-            else:
-                # expand anchors back to requested num_frames using latent->pixel mapping (idx_lat * r)
-                video_torch = _upsample_anchors_to_full(
-                    frames_anchor, idx_lat, T_pix_full, r, mode=anchor_upsample
-                )  # (B,T_pix,C,H,W)
-
-            if output_type == "latent":
-                video = latents
-            else:
-                video = video_torch.cpu().numpy()  # (B,T,C,H,W) after numpy conversion
+        if output_type == "numpy":
+            video = self.decode_latents(latents)
+        elif not output_type == "latent":
+            video = self.decode_latents(latents)
+            video = self.video_processor.postprocess_video(
+                video=video, output_type=output_type
+            )
         else:
-            # original path (full dense generation)
-            if output_type == "numpy":
-                video = self.decode_latents(latents)
-            elif output_type != "latent":
-                video = self.decode_latents(latents)
-                video = self.video_processor.postprocess_video(
-                    video=video, output_type=output_type
-                )
-            else:
-                video = latents
+            video = latents
 
         # Offload all models
         self.maybe_free_model_hooks()

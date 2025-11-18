@@ -15,7 +15,11 @@ from PIL import Image
 from transformers import T5EncoderModel
 
 current_file_path = os.path.abspath(__file__)
-project_roots = [os.path.dirname(current_file_path), os.path.dirname(os.path.dirname(current_file_path)), os.path.dirname(os.path.dirname(os.path.dirname(current_file_path)))]
+project_roots = [
+    os.path.dirname(current_file_path),
+    os.path.dirname(os.path.dirname(current_file_path)),
+    os.path.dirname(os.path.dirname(os.path.dirname(current_file_path))),
+]
 for project_root in project_roots:
     sys.path.insert(0, project_root) if project_root not in sys.path else None
 
@@ -37,64 +41,66 @@ from videox_fun.utils.utils import get_image_to_video_latent, save_videos_grid
 
 # GPU memory mode, which can be chosen in [model_full_load, model_full_load_and_qfloat8, model_cpu_offload, model_cpu_offload_and_qfloat8, sequential_cpu_offload].
 # model_full_load means that the entire model will be moved to the GPU.
-# 
+#
 # model_full_load_and_qfloat8 means that the entire model will be moved to the GPU,
-# and the transformer model has been quantized to float8, which can save more GPU memory. 
-# 
+# and the transformer model has been quantized to float8, which can save more GPU memory.
+#
 # model_cpu_offload means that the entire model will be moved to the CPU after use, which can save some GPU memory.
-# 
-# model_cpu_offload_and_qfloat8 indicates that the entire model will be moved to the CPU after use, 
-# and the transformer model has been quantized to float8, which can save more GPU memory. 
-# 
-# sequential_cpu_offload means that each layer of the model will be moved to the CPU after use, 
+#
+# model_cpu_offload_and_qfloat8 indicates that the entire model will be moved to the CPU after use,
+# and the transformer model has been quantized to float8, which can save more GPU memory.
+#
+# sequential_cpu_offload means that each layer of the model will be moved to the CPU after use,
 # resulting in slower speeds but saving a large amount of GPU memory.
-GPU_memory_mode     = "model_cpu_offload_and_qfloat8"
+GPU_memory_mode = "model_cpu_offload_and_qfloat8"
 # Multi GPUs config
-# Please ensure that the product of ulysses_degree and ring_degree equals the number of GPUs used. 
+# Please ensure that the product of ulysses_degree and ring_degree equals the number of GPUs used.
 # For example, if you are using 8 GPUs, you can set ulysses_degree = 2 and ring_degree = 4.
 # If you are using 1 GPU, you can set ulysses_degree = 1 and ring_degree = 1.
-ulysses_degree      = 1
-ring_degree         = 1
+ulysses_degree = 1
+ring_degree = 1
 # Use FSDP to save more GPU memory in multi gpus.
-fsdp_dit            = False
-fsdp_text_encoder   = True
-# Compile will give a speedup in fixed resolution and need a little GPU memory. 
+fsdp_dit = False
+fsdp_text_encoder = True
+# Compile will give a speedup in fixed resolution and need a little GPU memory.
 # The compile_dit is not compatible with the fsdp_dit and sequential_cpu_offload.
-compile_dit         = False
+compile_dit = False
 
 # model path
-model_name          = "/capstor/scratch/cscs/mhasan/VideoX-Fun-ours/models/CogVideoX-Fun-V1.5-5b-InP"
+model_name = (
+    "models/CogVideoX1.5-5B"
+)
 
 # Choose the sampler in "Euler" "Euler A" "DPM++" "PNDM" "DDIM_Cog" and "DDIM_Origin"
-sampler_name        = "DDIM_Origin"
+sampler_name = "DDIM_Origin"
 
 # Load pretrained model if need
-transformer_path    = None
-vae_path            = None
-lora_path           = None
+transformer_path = None
+vae_path = None
+lora_path = None
 
 # Other params
-sample_size         = [384, 672]
+sample_size = [384, 672]
 # V1.0 and V1.1 support up to 49 frames of video generation,
-# while V1.5 supports up to 85 frames.  
-video_length        = 49
-fps                 = 8
+# while V1.5 supports up to 85 frames.
+video_length = 49
+fps = 8
 
 # Use torch.float16 if GPU does not support torch.bfloat16
 # ome graphics cards, such as v100, 2080ti, do not support torch.bfloat16
-weight_dtype        = torch.bfloat16
-prompt              = "A young woman with beautiful and clear eyes and blonde hair standing and white dress in a forest wearing a crown. She seems to be lost in thought, and the camera focuses on her face. The video is of high quality, and the view is very clear. High quality, masterpiece, best quality, highres, ultra-detailed, fantastic."
-negative_prompt     = "The video is not of a high quality, it has a low resolution. Watermark present in each frame. The background is solid. Strange body and strange trajectory. Distortion. "
-guidance_scale      = 6.0
-seed                = 43
+weight_dtype = torch.bfloat16
+prompt = "A young woman with beautiful and clear eyes and blonde hair standing and white dress in a forest wearing a crown. She seems to be lost in thought, and the camera focuses on her face. The video is of high quality, and the view is very clear. High quality, masterpiece, best quality, highres, ultra-detailed, fantastic."
+negative_prompt = "The video is not of a high quality, it has a low resolution. Watermark present in each frame. The background is solid. Strange body and strange trajectory. Distortion. "
+guidance_scale = 6.0
+seed = 43
 num_inference_steps = 50
-lora_weight         = 0.55
-save_path           = "samples/cogvideox-fun-videos-t2v"
+lora_weight = 0.55
+save_path = "samples/cogvideox-fun-videos-t2v"
 
 device = set_multi_gpus_devices(ulysses_degree, ring_degree)
 
 transformer = CogVideoXTransformer3DModel.from_pretrained(
-    model_name, 
+    model_name,
     subfolder="transformer",
     low_cpu_mem_usage=True,
     torch_dtype=weight_dtype,
@@ -104,6 +110,7 @@ if transformer_path is not None:
     print(f"From checkpoint: {transformer_path}")
     if transformer_path.endswith("safetensors"):
         from safetensors.torch import load_file, safe_open
+
         state_dict = load_file(transformer_path)
     else:
         state_dict = torch.load(transformer_path, map_location="cpu")
@@ -113,15 +120,15 @@ if transformer_path is not None:
     print(f"missing keys: {len(m)}, unexpected keys: {len(u)}")
 
 # Get Vae
-vae = AutoencoderKLCogVideoX.from_pretrained(
-    model_name, 
-    subfolder="vae"
-).to(weight_dtype)
+vae = AutoencoderKLCogVideoX.from_pretrained(model_name, subfolder="vae").to(
+    weight_dtype
+)
 
 if vae_path is not None:
     print(f"From checkpoint: {vae_path}")
     if vae_path.endswith("safetensors"):
         from safetensors.torch import load_file, safe_open
+
         state_dict = load_file(vae_path)
     else:
         state_dict = torch.load(vae_path, map_location="cpu")
@@ -131,9 +138,7 @@ if vae_path is not None:
     print(f"missing keys: {len(m)}, unexpected keys: {len(u)}")
 
 # Get tokenizer and text_encoder
-tokenizer = T5Tokenizer.from_pretrained(
-    model_name, subfolder="tokenizer"
-)
+tokenizer = T5Tokenizer.from_pretrained(model_name, subfolder="tokenizer")
 text_encoder = T5EncoderModel.from_pretrained(
     model_name, subfolder="text_encoder", torch_dtype=weight_dtype
 )
@@ -142,15 +147,12 @@ text_encoder = T5EncoderModel.from_pretrained(
 Chosen_Scheduler = scheduler_dict = {
     "Euler": EulerDiscreteScheduler,
     "Euler A": EulerAncestralDiscreteScheduler,
-    "DPM++": DPMSolverMultistepScheduler, 
+    "DPM++": DPMSolverMultistepScheduler,
     "PNDM": PNDMScheduler,
     "DDIM_Cog": CogVideoXDDIMScheduler,
     "DDIM_Origin": DDIMScheduler,
 }[sampler_name]
-scheduler = Chosen_Scheduler.from_pretrained(
-    model_name, 
-    subfolder="scheduler"
-)
+scheduler = Chosen_Scheduler.from_pretrained(model_name, subfolder="scheduler")
 
 if transformer.config.in_channels != vae.config.latent_channels:
     pipeline = CogVideoXFunInpaintPipeline(
@@ -170,6 +172,7 @@ else:
     )
 if ulysses_degree > 1 or ring_degree > 1:
     from functools import partial
+
     transformer.enable_multi_gpus_inference()
     if fsdp_dit:
         shard_fn = partial(shard_model, device_id=device, param_dtype=weight_dtype)
@@ -182,7 +185,9 @@ if ulysses_degree > 1 or ring_degree > 1:
 
 if compile_dit:
     for i in range(len(pipeline.transformer.transformer_blocks)):
-        pipeline.transformer.transformer_blocks[i] = torch.compile(pipeline.transformer.transformer_blocks[i])
+        pipeline.transformer.transformer_blocks[i] = torch.compile(
+            pipeline.transformer.transformer_blocks[i]
+        )
     print("Add Compile")
 
 if GPU_memory_mode == "sequential_cpu_offload":
@@ -203,45 +208,67 @@ else:
 generator = torch.Generator(device=device).manual_seed(seed)
 
 if lora_path is not None:
-    pipeline = merge_lora(pipeline, lora_path, lora_weight, device=device, dtype=weight_dtype)
+    pipeline = merge_lora(
+        pipeline, lora_path, lora_weight, device=device, dtype=weight_dtype
+    )
 
 with torch.no_grad():
-    video_length = int((video_length - 1) // vae.config.temporal_compression_ratio * vae.config.temporal_compression_ratio) + 1 if video_length != 1 else 1
+    video_length = (
+        int(
+            (video_length - 1)
+            // vae.config.temporal_compression_ratio
+            * vae.config.temporal_compression_ratio
+        )
+        + 1
+        if video_length != 1
+        else 1
+    )
     latent_frames = (video_length - 1) // vae.config.temporal_compression_ratio + 1
-    if video_length != 1 and transformer.config.patch_size_t is not None and latent_frames % transformer.config.patch_size_t != 0:
-        additional_frames = transformer.config.patch_size_t - latent_frames % transformer.config.patch_size_t
+    if (
+        video_length != 1
+        and transformer.config.patch_size_t is not None
+        and latent_frames % transformer.config.patch_size_t != 0
+    ):
+        additional_frames = (
+            transformer.config.patch_size_t
+            - latent_frames % transformer.config.patch_size_t
+        )
         video_length += additional_frames * vae.config.temporal_compression_ratio
 
     if transformer.config.in_channels != vae.config.latent_channels:
-        input_video, input_video_mask, _ = get_image_to_video_latent(None, None, video_length=video_length, sample_size=sample_size)
+        input_video, input_video_mask, _ = get_image_to_video_latent(
+            None, None, video_length=video_length, sample_size=sample_size
+        )
 
         sample = pipeline(
-            prompt, 
-            num_frames = video_length,
-            negative_prompt = negative_prompt,
-            height      = sample_size[0],
-            width       = sample_size[1],
-            generator   = generator,
-            guidance_scale = guidance_scale,
-            num_inference_steps = num_inference_steps,
-
-            video        = input_video,
-            mask_video   = input_video_mask,
+            prompt,
+            num_frames=video_length,
+            negative_prompt=negative_prompt,
+            height=sample_size[0],
+            width=sample_size[1],
+            generator=generator,
+            guidance_scale=guidance_scale,
+            num_inference_steps=num_inference_steps,
+            video=input_video,
+            mask_video=input_video_mask,
         ).videos
     else:
         sample = pipeline(
-            prompt, 
-            num_frames = video_length,
-            negative_prompt = negative_prompt,
-            height      = sample_size[0],
-            width       = sample_size[1],
-            generator   = generator,
-            guidance_scale = guidance_scale,
-            num_inference_steps = num_inference_steps,
+            prompt,
+            num_frames=video_length,
+            negative_prompt=negative_prompt,
+            height=sample_size[0],
+            width=sample_size[1],
+            generator=generator,
+            guidance_scale=guidance_scale,
+            num_inference_steps=num_inference_steps,
         ).videos
 
 if lora_path is not None:
-    pipeline = unmerge_lora(pipeline, lora_path, lora_weight, device=device, dtype=weight_dtype)
+    pipeline = unmerge_lora(
+        pipeline, lora_path, lora_weight, device=device, dtype=weight_dtype
+    )
+
 
 def save_results():
     if not os.path.exists(save_path):
@@ -261,16 +288,10 @@ def save_results():
         video_path = os.path.join(save_path, prefix + ".mp4")
         save_videos_grid(sample, video_path, fps=fps)
 
-if ulysses_degree * ring_degree > 1:
-    import torch.distributed as dist
-    if dist.get_rank() == 0:
-        save_results()
-else:
-    save_results()        video_path = os.path.join(save_path, prefix + ".mp4")
-        save_videos_grid(sample, video_path, fps=fps)
 
 if ulysses_degree * ring_degree > 1:
     import torch.distributed as dist
+
     if dist.get_rank() == 0:
         save_results()
 else:

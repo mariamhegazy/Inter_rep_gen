@@ -485,7 +485,9 @@ def main():
         save_caption = it.get("orig_cap")
         save_stem = save_caption if save_caption else prompt
         save_stem = save_stem[:180] if len(save_stem) > 180 else save_stem
-        out_path = out_root / f"{save_stem}.mp4"
+        # keep per-rank outputs unique even when prompts/captions collide
+        name_with_rank = f"{save_stem}_idx{it['id']:05d}_r{rank}"
+        out_path = out_root / f"{name_with_rank}.mp4"
 
         if args.resume and out_path.exists():
             _log(f"[Skip] exists: {out_path}")
@@ -494,7 +496,7 @@ def main():
             # Append _1, _2, ...
             i = 1
             while True:
-                cand = out_root / f"{save_stem}_{i}.mp4"
+                cand = out_root / f"{name_with_rank}_{i}.mp4"
                 if not cand.exists():
                     out_path = cand
                     break

@@ -93,7 +93,7 @@ def parse_args():
     p.add_argument(
         "--model_dir",
         type=str,
-        default="models/CogVideoX1.5-5B",
+        default="/capstor/scratch/cscs/mhasan/VideoX-Fun-ours/models/CogVideoX-Fun-V1.5-5b-InP",
         help="Path to CogVideoX model folder that contains subfolders: transformer, vae, tokenizer, text_encoder, scheduler",
     )
     p.add_argument(
@@ -136,34 +136,13 @@ def parse_args():
     p.add_argument("--steps", type=int, default=50)
     p.add_argument("--guidance", type=float, default=6.0)
     p.add_argument(
-        "--ref_field",
-        type=str,
-        default=None,
-        help="JSON key that contains per-item reference images (e.g., 'file_name').",
-    )
-    p.add_argument(
-        "--ref_frame",
-        type=str,
-        default=None,
-        help="Optional path to a reference image. When omitted, generation stays pure T2V.",
-    )
-    p.add_argument(
-        "--ti2v_mode",
-        type=str,
-        default="start",
-        choices=["start", "mid", "last", "random"],
-        help="Placement of the reference image when --ref_frame is provided.",
-    )
-    p.add_argument(
         "--negative_prompt",
         type=str,
         default="overexposed, blurry, low quality, watermark, solid background, distorted body/trajectory",
     )
     p.add_argument("--seed", type=int, default=43)
     p.add_argument(
-        "--weight_dtype",
-        type=str,
-        default="bfloat16",
+        "--weight_dtype", type=str, default="bfloat16", choices=["bfloat16", "float16"]
     )
 
     # LoRA (optional)
@@ -236,51 +215,6 @@ def pick_caption(it, caption_field: str) -> tuple[str, str]:
         if cap:
             return cap, tag
     return "", "BASE"
-
-
-def resolve_module_device(module, fallback_device: torch.device) -> torch.device:
-    """
-    Try to infer the real device of a module, accounting for potential offload/meta devices.
-    """
-
-    def _to_device(obj):
-        if obj is None:
-            return None
-        try:
-            return torch.device(obj)
-        except (TypeError, ValueError):
-            return None
-
-    dev = _to_device(getattr(module, "device", None))
-    if dev is not None and dev.type != "meta":
-        return dev
-
-    try:
-        param_dev = next(module.parameters()).device  # type: ignore[attr-defined]
-        dev = _to_device(param_dev)
-        if dev is not None and dev.type != "meta":
-            return dev
-    except (StopIteration, AttributeError):
-        pass
-
-    return _to_device(fallback_device) or torch.device("cpu")
-
-
-def load_ref_image_as_video(
-    path: str, height: int, width: int, device: torch.device, dtype: torch.dtype
-) -> torch.Tensor:
-    """Return tensor shaped [1,1,3,H,W] with pixel values in [0,1]."""
-    img = Image.open(path).convert("RGB")
-    try:
-        resample = Image.Resampling.BICUBIC  # type: ignore[attr-defined]
-    except AttributeError:
-        resample = Image.BICUBIC
-    img = img.resize((width, height), resample)
-    arr = np.asarray(img, dtype=np.float32) / 255.0
-    tensor = (
-        torch.from_numpy(arr).permute(2, 0, 1).unsqueeze(0).unsqueeze(0).contiguous()
-    )
-    return tensor.to(device=device, dtype=dtype, non_blocking=True)
 
 
 # ---------------------------
@@ -413,20 +347,7 @@ def main():
         cap, tag = pick_caption(it, args.caption_field)
         if not cap:
             continue
-        ref_value = ""
-        if args.ref_field:
-            ref_value = (it.get(args.ref_field) or "").strip()
-            if not ref_value:
-                continue
-        items.append(
-            {
-                "id": i,
-                "caption": cap,
-                "cap_tag": tag,
-                "orig_cap": (it.get("original_caption") or "").strip(),
-                "ref_value": ref_value,
-            }
-        )  # BASE / AUG / CONTRA
+        items.append({"id": i, "caption": cap, "cap_tag": tag})  # BASE / AUG / CONTRA
 
     if args.max_videos is not None:
         items = items[: args.max_videos]
@@ -435,9 +356,8 @@ def main():
     sharded = [it for i, it in enumerate(items) if i % world_size == rank]
     _log(f"[Shard] rank {rank} got {len(sharded)} / {len(items)} items")
 
-    # Prepare output dir (T2V/TI2V/<CAPSRC>/[category])
-    ti2v_requested = bool(args.ref_frame or args.ref_field)
-    mode_dir = "TI2V" if ti2v_requested else "T2V"
+    # Prepare output dir (T2V/<CAPSRC>/[category])
+    mode_dir = "T2V"
     cap_tag_for_dir = sharded[0]["cap_tag"] if sharded else "BASE"
     if args.prompt_category is not None:
         out_root = Path(args.outdir) / mode_dir / cap_tag_for_dir / args.prompt_category
@@ -447,28 +367,6 @@ def main():
 
     # Load models
     pipe, transformer, vae = load_models(args, device=device)
-
-    supports_ti2v = transformer.config.in_channels == vae.config.latent_channels
-    if ti2v_requested and not supports_ti2v:
-        raise ValueError(
-            "TI2V references (--ref_frame/--ref_field) require the base pipeline where transformer and VAE latent channels match."
-        )
-
-    vae_device = resolve_module_device(vae, device)
-    vae_dtype = getattr(vae, "dtype", torch.float32)
-
-    static_ref_video = None
-    if args.ref_frame and supports_ti2v:
-        ref_path = os.path.abspath(os.path.expanduser(args.ref_frame.strip()))
-        if not os.path.exists(ref_path):
-            raise FileNotFoundError(f"Reference image not found: {ref_path}")
-        static_ref_video = load_ref_image_as_video(
-            ref_path, args.height, args.width, vae_device, vae_dtype
-        )
-        log(
-            rank,
-            f"[TI2V] Loaded reference frame {ref_path} with mode '{args.ti2v_mode}'.",
-        )
 
     # dtype + generator
     weight_dtype = getattr(torch, args.weight_dtype)
@@ -503,10 +401,7 @@ def main():
         # Filename: slugified prompt (same as TI2V)
         # prompt_stem = slugify(prompt) if prompt else f"sample_{it['id']:05d}"
         # prompt_stem = prompt_stem[:180] if len(prompt_stem) > 180 else prompt_stem
-        save_caption = it.get("orig_cap")
-        save_stem = save_caption if save_caption else prompt
-        save_stem = save_stem[:180] if len(save_stem) > 180 else save_stem
-        out_path = out_root / f"{save_stem}.mp4"
+        out_path = out_root / f"{prompt}.mp4"
 
         if args.resume and out_path.exists():
             _log(f"[Skip] exists: {out_path}")
@@ -515,7 +410,7 @@ def main():
             # Append _1, _2, ...
             i = 1
             while True:
-                cand = out_root / f"{save_stem}_{i}.mp4"
+                cand = out_root / f"{prompt_stem}_{i}.mp4"
                 if not cand.exists():
                     out_path = cand
                     break
@@ -543,25 +438,8 @@ def main():
                     mask_video=input_video_mask,
                 ).videos
             else:
-                item_ref_video = None
-                if supports_ti2v:
-                    if static_ref_video is not None:
-                        item_ref_video = static_ref_video
-                    elif args.ref_field:
-                        raw_ref = (it.get("ref_value") or "").strip()
-                        resolved_ref = os.path.abspath(os.path.expanduser(raw_ref))
-                        if not resolved_ref or not os.path.exists(resolved_ref):
-                            log(
-                                rank,
-                                f"[Skip] reference image missing for item {it['id']}: {resolved_ref or '(empty)'}",
-                            )
-                            continue
-                        item_ref_video = load_ref_image_as_video(
-                            resolved_ref, args.height, args.width, vae_device, vae_dtype
-                        )
-
-                pipe_kwargs = dict(
-                    prompt=prompt,
+                sample = pipe(
+                    prompt,
                     num_frames=T,
                     negative_prompt=args.negative_prompt,
                     height=args.height,
@@ -569,11 +447,7 @@ def main():
                     generator=gen,
                     guidance_scale=args.guidance,
                     num_inference_steps=args.steps,
-                )
-                if item_ref_video is not None:
-                    pipe_kwargs["video"] = item_ref_video
-                    pipe_kwargs["ti2v_mode"] = args.ti2v_mode
-                sample = pipe(**pipe_kwargs).videos
+                ).videos
 
         out_path.parent.mkdir(parents=True, exist_ok=True)
         save_videos_grid(sample, str(out_path), fps=args.fps)

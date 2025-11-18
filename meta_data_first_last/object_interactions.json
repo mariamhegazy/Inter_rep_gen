@@ -1,0 +1,1402 @@
+[
+  {
+    "caption": "Two cars collide at an intersection",
+    "frame_first": "Two cars approach an intersection from perpendicular directions, one a red sedan and the other a blue SUV, with the camera positioned above to show the impending collision.",
+    "frame_middle": "The red sedan and blue SUV collide in the center of the intersection, with crumpled front ends and smoke rising from the point of impact.",
+    "frame_last": "Both vehicles are now stationary, angled awkwardly at the intersection, with the red sedan's front end pushed into the blue SUV's, and emergency lights flashing in the background.",
+    "frame_json_raw": "{\"first\": \"Two cars approach an intersection from perpendicular directions, one a red sedan and the other a blue SUV, with the camera positioned above to show the impending collision.\", \"middle\": \"The red sedan and blue SUV collide in the center of the intersection, with crumpled front ends and smoke rising from the point of impact.\", \"last\": \"Both vehicles are now stationary, angled awkwardly at the intersection, with the red sedan's front end pushed into the blue SUV's, and emergency lights flashing in the background.\"}"
+  },
+  {
+    "caption": "Football players bump into each other during a game",
+    "frame_first": "Two football players, wearing opposing team colors, charge towards each other on a sunny afternoon field.",
+    "frame_middle": "The players collide mid-air, their helmets making contact as they struggle for possession of the ball.",
+    "frame_last": "Both players lie on the grass, dazed, as the referee approaches to assess the situation, with teammates gathered around.",
+    "frame_json_raw": "{\"first\": \"Two football players, wearing opposing team colors, charge towards each other on a sunny afternoon field.\", \"middle\": \"The players collide mid-air, their helmets making contact as they struggle for possession of the ball.\", \"last\": \"Both players lie on the grass, dazed, as the referee approaches to assess the situation, with teammates gathered around.\"}"
+  },
+  {
+    "caption": "A swimmer dives into a pool, creating ripples.",
+    "frame_first": "A swimmer leaps off the diving board, body streamlined, about to enter the clear blue pool.",
+    "frame_middle": "The swimmer slices through the water's surface, initiating a series of gentle ripples that spread outward.",
+    "frame_last": "The swimmer's dive is complete, leaving behind concentric circles of ripples on the pool's surface.",
+    "frame_json_raw": "{\"first\": \"A swimmer leaps off the diving board, body streamlined, about to enter the clear blue pool.\", \"middle\": \"The swimmer slices through the water's surface, initiating a series of gentle ripples that spread outward.\", \"last\": \"The swimmer's dive is complete, leaving behind concentric circles of ripples on the pool's surface.\"}"
+  },
+  {
+    "caption": "Iron presses down on wrinkled fabric",
+    "frame_first": "A large iron with a glowing red hot plate descends towards a pile of wrinkled fabric on an ironing board, steam rising from the iron.",
+    "frame_middle": "The iron flattens a section of the fabric, steam and heat smoothing out wrinkles as the iron moves across the material.",
+    "frame_last": "The iron completes its pass, leaving a smooth, wrinkle-free section of fabric, with faint steam lingering in the air.",
+    "frame_json_raw": "{\"first\": \"A large iron with a glowing red hot plate descends towards a pile of wrinkled fabric on an ironing board, steam rising from the iron.\", \"middle\": \"The iron flattens a section of the fabric, steam and heat smoothing out wrinkles as the iron moves across the material.\", \"last\": \"The iron completes its pass, leaving a smooth, wrinkle-free section of fabric, with faint steam lingering in the air.\"}"
+  },
+  {
+    "caption": "Drum skin vibrates when struck by a drumstick",
+    "frame_first": "A close-up of a drum skin, moments before a drumstick makes contact, the environment is dimly lit with a spotlight on the drum.",
+    "frame_middle": "The drumstick strikes the center of the drum skin, causing it to visibly vibrate and creating a ripple effect across its surface.",
+    "frame_last": "The drumstick is pulled away, the drum skin continues to subtly vibrate, returning to its original state as the ripples fade.",
+    "frame_json_raw": "{\"first\": \"A close-up of a drum skin, moments before a drumstick makes contact, the environment is dimly lit with a spotlight on the drum.\", \"middle\": \"The drumstick strikes the center of the drum skin, causing it to visibly vibrate and creating a ripple effect across its surface.\", \"last\": \"The drumstick is pulled away, the drum skin continues to subtly vibrate, returning to its original state as the ripples fade.\"}"
+  },
+  {
+    "caption": "A horse jumps over a fence",
+    "frame_first": "A horse gallops towards a wooden fence under a clear blue sky, hooves pounding the grassy field.",
+    "frame_middle": "The horse is airborne, legs tucked under its body, clearing the fence with ease.",
+    "frame_last": "The horse lands gracefully on the other side of the fence, continuing its stride across the field.",
+    "frame_json_raw": "{\"first\": \"A horse gallops towards a wooden fence under a clear blue sky, hooves pounding the grassy field.\", \"middle\": \"The horse is airborne, legs tucked under its body, clearing the fence with ease.\", \"last\": \"The horse lands gracefully on the other side of the fence, continuing its stride across the field.\"}"
+  },
+  {
+    "caption": "Raindrops hit a tin roof",
+    "frame_first": "A close-up of a tin roof with raindrops beginning to fall, creating a rhythmic pattern of small splashes.",
+    "frame_middle": "The rain intensifies, covering the tin roof with a steady stream of droplets, each one glistening in the dim light.",
+    "frame_last": "The rain slows to a gentle drizzle, leaving the tin roof dotted with water droplets that reflect the soft, ambient light.",
+    "frame_json_raw": "{\"first\": \"A close-up of a tin roof with raindrops beginning to fall, creating a rhythmic pattern of small splashes.\", \"middle\": \"The rain intensifies, covering the tin roof with a steady stream of droplets, each one glistening in the dim light.\", \"last\": \"The rain slows to a gentle drizzle, leaving the tin roof dotted with water droplets that reflect the soft, ambient light.\"}"
+  },
+  {
+    "caption": "Rope tugs against a boat",
+    "frame_first": "A rope is tightly stretched, pulling against the side of a wooden boat docked at a pier under a clear blue sky.",
+    "frame_middle": "The rope continues to strain as the boat begins to move away from the pier, creating ripples on the calm water.",
+    "frame_last": "The boat is now a distance from the pier, with the rope still taut, disappearing into the water as the sun begins to set in the background.",
+    "frame_json_raw": "{\"first\": \"A rope is tightly stretched, pulling against the side of a wooden boat docked at a pier under a clear blue sky.\", \"middle\": \"The rope continues to strain as the boat begins to move away from the pier, creating ripples on the calm water.\", \"last\": \"The boat is now a distance from the pier, with the rope still taut, disappearing into the water as the sun begins to set in the background.\"}"
+  },
+  {
+    "caption": "Car brakes abruptly, stopping at a red light",
+    "frame_first": "A car speeds down a city street, the driver suddenly slams on the brakes.",
+    "frame_middle": "The car screeches to a halt, tires smoking slightly, as it stops at a red traffic light.",
+    "frame_last": "The car remains stationary, headlights illuminating the red traffic light ahead.",
+    "frame_json_raw": "{\"first\": \"A car speeds down a city street, the driver suddenly slams on the brakes.\", \"middle\": \"The car screeches to a halt, tires smoking slightly, as it stops at a red traffic light.\", \"last\": \"The car remains stationary, headlights illuminating the red traffic light ahead.\"}"
+  },
+  {
+    "caption": "Bird lands on a branch causing it to dip",
+    "frame_first": "A bird approaches a branch, its wings slightly flapping as it descends.",
+    "frame_middle": "The bird lands on the branch, causing it to dip slightly under the weight.",
+    "frame_last": "The branch slowly returns to its original position as the bird settles, looking around.",
+    "frame_json_raw": "{\"first\": \"A bird approaches a branch, its wings slightly flapping as it descends.\", \"middle\": \"The bird lands on the branch, causing it to dip slightly under the weight.\", \"last\": \"The branch slowly returns to its original position as the bird settles, looking around.\"}"
+  },
+  {
+    "caption": "Child kicks a soccer ball",
+    "frame_first": "A child in a green soccer uniform stands at the center of a grassy field, preparing to kick a white soccer ball.",
+    "frame_middle": "The child swings their leg forward, making contact with the soccer ball, which begins to roll away.",
+    "frame_last": "The child watches the soccer ball as it rolls across the field, now some distance away, with a look of satisfaction on their face.",
+    "frame_json_raw": "{\"first\": \"A child in a green soccer uniform stands at the center of a grassy field, preparing to kick a white soccer ball.\", \"middle\": \"The child swings their leg forward, making contact with the soccer ball, which begins to roll away.\", \"last\": \"The child watches the soccer ball as it rolls across the field, now some distance away, with a look of satisfaction on their face.\"}"
+  },
+  {
+    "caption": "Dog snatches a rolling ball",
+    "frame_first": "A dog watches intently as a bright yellow ball rolls towards it across a green lawn.",
+    "frame_middle": "The dog leaps into the air, its paws outstretched, about to grasp the rolling ball.",
+    "frame_last": "The dog successfully snatches the ball, holding it triumphantly in its mouth, tail wagging.",
+    "frame_json_raw": "{\"first\": \"A dog watches intently as a bright yellow ball rolls towards it across a green lawn.\", \"middle\": \"The dog leaps into the air, its paws outstretched, about to grasp the rolling ball.\", \"last\": \"The dog successfully snatches the ball, holding it triumphantly in its mouth, tail wagging.\"}"
+  },
+  {
+    "caption": "The golfer striking the ball forward",
+    "frame_first": "A golfer stands at the tee, club raised, about to strike the ball. The golf course stretches out behind, green and serene under a bright, sunny sky.",
+    "frame_middle": "The golfer swings powerfully, making contact with the ball, which is now airborne, a small white dot against the green backdrop.",
+    "frame_last": "The golfer follows through with the swing, looking satisfied as the ball continues to fly towards the distant fairway, the club now pointing towards the sky.",
+    "frame_json_raw": "{\"first\": \"A golfer stands at the tee, club raised, about to strike the ball. The golf course stretches out behind, green and serene under a bright, sunny sky.\", \"middle\": \"The golfer swings powerfully, making contact with the ball, which is now airborne, a small white dot against the green backdrop.\", \"last\": \"The golfer follows through with the swing, looking satisfied as the ball continues to fly towards the distant fairway, the club now pointing towards the sky.\"}"
+  },
+  {
+    "caption": "Basketball player dribbles",
+    "frame_first": "A basketball player stands on a court, the ball bouncing off his hand, the gym lights casting sharp shadows.",
+    "frame_middle": "The player moves swiftly to the right, dribbling the ball with quick, precise movements, the crowd in the background.",
+    "frame_last": "The player stops, looking up towards the hoop, the ball resting momentarily in his hand, ready to shoot.",
+    "frame_json_raw": "{\"first\": \"A basketball player stands on a court, the ball bouncing off his hand, the gym lights casting sharp shadows.\", \"middle\": \"The player moves swiftly to the right, dribbling the ball with quick, precise movements, the crowd in the background.\", \"last\": \"The player stops, looking up towards the hoop, the ball resting momentarily in his hand, ready to shoot.\"}"
+  },
+  {
+    "caption": "Child jumps on a trampoline, bouncing high",
+    "frame_first": "A child stands at the center of a trampoline, about to jump, with a bright, sunny day in the background.",
+    "frame_middle": "The child is in mid-air, having bounced high from the trampoline, with the sky and surrounding yard visible.",
+    "frame_last": "The child lands back on the trampoline with a slight bounce, preparing for the next jump, the sun still high in the sky.",
+    "frame_json_raw": "{\"first\": \"A child stands at the center of a trampoline, about to jump, with a bright, sunny day in the background.\", \"middle\": \"The child is in mid-air, having bounced high from the trampoline, with the sky and surrounding yard visible.\", \"last\": \"The child lands back on the trampoline with a slight bounce, preparing for the next jump, the sun still high in the sky.\"}"
+  },
+  {
+    "caption": "Wave crashes into rocks, splashing water everywhere",
+    "frame_first": "A large wave approaches the rocky shoreline, gathering momentum.",
+    "frame_middle": "The wave crashes violently into the rocks, sending water spraying in all directions.",
+    "frame_last": "Foamy water recedes, revealing wet rocks and the aftermath of the splash.",
+    "frame_json_raw": "{\"first\": \"A large wave approaches the rocky shoreline, gathering momentum.\", \"middle\": \"The wave crashes violently into the rocks, sending water spraying in all directions.\", \"last\": \"Foamy water recedes, revealing wet rocks and the aftermath of the splash.\"}"
+  },
+  {
+    "caption": "Child pushes toy car",
+    "frame_first": "A child stands over a toy car, hands gripping the sides, ready to push it forward.",
+    "frame_middle": "The child is crouched slightly, pushing the toy car across a smooth wooden floor, the car moving steadily.",
+    "frame_last": "The child watches with a smile as the toy car rolls away, reaching the end of its path.",
+    "frame_json_raw": "{\"first\": \"A child stands over a toy car, hands gripping the sides, ready to push it forward.\", \"middle\": \"The child is crouched slightly, pushing the toy car across a smooth wooden floor, the car moving steadily.\", \"last\": \"The child watches with a smile as the toy car rolls away, reaching the end of its path.\"}"
+  },
+  {
+    "caption": "Bowling ball strikes pins, scattering them",
+    "frame_first": "A bowling ball hurtles towards the pins at the end of the lane, the ball's trajectory aimed straight.",
+    "frame_middle": "The bowling ball makes impact, sending pins flying in all directions with splinters of wood and a loud clatter.",
+    "frame_last": "The lane is left with a few scattered pins, some standing and others knocked down, the ball rolling to a stop near the pin debris.",
+    "frame_json_raw": "{\"first\": \"A bowling ball hurtles towards the pins at the end of the lane, the ball's trajectory aimed straight.\", \"middle\": \"The bowling ball makes impact, sending pins flying in all directions with splinters of wood and a loud clatter.\", \"last\": \"The lane is left with a few scattered pins, some standing and others knocked down, the ball rolling to a stop near the pin debris.\"}"
+  },
+  {
+    "caption": "Surfer catches a wave, riding forward",
+    "frame_first": "A surfer paddles towards an incoming wave, the sun setting behind the horizon, casting a golden glow over the ocean.",
+    "frame_middle": "The surfer stands up on the board, riding the crest of the wave with the spray of water flying around.",
+    "frame_last": "The surfer carves through the wave, the board slicing through the water, with the beach and silhouetted palm trees in the background.",
+    "frame_json_raw": "{\"first\": \"A surfer paddles towards an incoming wave, the sun setting behind the horizon, casting a golden glow over the ocean.\", \"middle\": \"The surfer stands up on the board, riding the crest of the wave with the spray of water flying around.\", \"last\": \"The surfer carves through the wave, the board slicing through the water, with the beach and silhouetted palm trees in the background.\"}"
+  },
+  {
+    "caption": "Person slips on ice, sliding forward",
+    "frame_first": "A person steps on a slick patch of ice, their foot slipping out from under them.",
+    "frame_middle": "The person slides forward on the ice, arms flailing for balance.",
+    "frame_last": "The person comes to a stop on the ice, sitting with legs sprawled out in front of them.",
+    "frame_json_raw": "{\"first\": \"A person steps on a slick patch of ice, their foot slipping out from under them.\", \"middle\": \"The person slides forward on the ice, arms flailing for balance.\", \"last\": \"The person comes to a stop on the ice, sitting with legs sprawled out in front of them.\"}"
+  },
+  {
+    "caption": "A tire pump inflates a bicycle tire",
+    "frame_first": "A close-up of a tire pump nozzle aligning with the valve of a bicycle tire, the surroundings are a dimly lit garage.",
+    "frame_middle": "The tire pump handle is being pushed down by a hand, the tire begins to visibly expand and bulge slightly.",
+    "frame_last": "The tire is fully inflated, the pump is removed from the valve, and the hand moves the pump away, revealing the now round and firm bicycle tire.",
+    "frame_json_raw": "{\"first\": \"A close-up of a tire pump nozzle aligning with the valve of a bicycle tire, the surroundings are a dimly lit garage.\", \"middle\": \"The tire pump handle is being pushed down by a hand, the tire begins to visibly expand and bulge slightly.\", \"last\": \"The tire is fully inflated, the pump is removed from the valve, and the hand moves the pump away, revealing the now round and firm bicycle tire.\"}"
+  },
+  {
+    "caption": "Cat's paw presses on a soft pillow",
+    "frame_first": "A cat's paw gently touches the surface of a soft, white pillow, the room is dimly lit with a warm glow.",
+    "frame_middle": "The cat's paw presses deeper into the pillow, leaving a slight indentation, the light from a nearby lamp casts a soft shadow.",
+    "frame_last": "The cat's paw is fully pressed into the pillow, the fur is clearly visible against the soft fabric, the room remains calm and quiet.",
+    "frame_json_raw": "{\"first\": \"A cat's paw gently touches the surface of a soft, white pillow, the room is dimly lit with a warm glow.\", \"middle\": \"The cat's paw presses deeper into the pillow, leaving a slight indentation, the light from a nearby lamp casts a soft shadow.\", \"last\": \"The cat's paw is fully pressed into the pillow, the fur is clearly visible against the soft fabric, the room remains calm and quiet.\"}"
+  },
+  {
+    "caption": "Footsteps imprint on soft sand",
+    "frame_first": "A lone figure walks along a deserted beach, leaving distinct footprints in the soft sand.",
+    "frame_middle": "The sun begins to set, casting long shadows as the figure continues to walk, the footprints becoming more numerous.",
+    "frame_last": "As the figure stops to look out at the sea, the last set of footprints marks the end of the trail on the now-golden sand.",
+    "frame_json_raw": "{\"first\": \"A lone figure walks along a deserted beach, leaving distinct footprints in the soft sand.\", \"middle\": \"The sun begins to set, casting long shadows as the figure continues to walk, the footprints becoming more numerous.\", \"last\": \"As the figure stops to look out at the sea, the last set of footprints marks the end of the trail on the now-golden sand.\"}"
+  },
+  {
+    "caption": "Fork tines press into a piece of cake",
+    "frame_first": "A fork hovers above a slice of cake, its tines about to touch the surface.",
+    "frame_middle": "The fork's tines are partially submerged into the soft, moist cake, slightly bending under the pressure.",
+    "frame_last": "The fork is fully inserted into the cake, tines firmly embedded, lifting a portion of the cake.",
+    "frame_json_raw": "{\"first\": \"A fork hovers above a slice of cake, its tines about to touch the surface.\", \"middle\": \"The fork's tines are partially submerged into the soft, moist cake, slightly bending under the pressure.\", \"last\": \"The fork is fully inserted into the cake, tines firmly embedded, lifting a portion of the cake.\"}"
+  },
+  {
+    "caption": "A child's hand presses a clay ball into a flat disc",
+    "frame_first": "A small child's hand hovers above a round ball of clay on a wooden table, sunlight streaming through a window illuminates the scene.",
+    "frame_middle": "The child's hand presses down firmly on the clay, transforming it into a flat disc, fingers slightly spread for even pressure.",
+    "frame_last": "The child lifts their hand, revealing a perfectly shaped clay disc, the table and surroundings still bathed in soft daylight.",
+    "frame_json_raw": "{\"first\": \"A small child's hand hovers above a round ball of clay on a wooden table, sunlight streaming through a window illuminates the scene.\", \"middle\": \"The child's hand presses down firmly on the clay, transforming it into a flat disc, fingers slightly spread for even pressure.\", \"last\": \"The child lifts their hand, revealing a perfectly shaped clay disc, the table and surroundings still bathed in soft daylight.\"}"
+  },
+  {
+    "caption": "A pair of scissors cuts through fabric",
+    "frame_first": "A pair of scissors hovers above a large piece of fabric, ready to cut.",
+    "frame_middle": "The scissors slice through the fabric, creating a clean, precise cut as light reflects off the metal blades.",
+    "frame_last": "The fabric is now cut, with the scissors resting on the newly formed edge.",
+    "frame_json_raw": "{\"first\": \"A pair of scissors hovers above a large piece of fabric, ready to cut.\", \"middle\": \"The scissors slice through the fabric, creating a clean, precise cut as light reflects off the metal blades.\", \"last\": \"The fabric is now cut, with the scissors resting on the newly formed edge.\"}"
+  },
+  {
+    "caption": "Spoon stirs cream into coffee",
+    "frame_first": "A spoon enters the frame from the bottom, hovering above a steaming cup of coffee.",
+    "frame_middle": "The spoon begins to stir vigorously, drawing a trail of white cream through the dark coffee.",
+    "frame_last": "The spoon lifts out of the coffee, leaving a swirl of cream mixing into the liquid as it settles.",
+    "frame_json_raw": "{\"first\": \"A spoon enters the frame from the bottom, hovering above a steaming cup of coffee.\", \"middle\": \"The spoon begins to stir vigorously, drawing a trail of white cream through the dark coffee.\", \"last\": \"The spoon lifts out of the coffee, leaving a swirl of cream mixing into the liquid as it settles.\"}"
+  },
+  {
+    "caption": "Dog's nose touches a reflective glass door",
+    "frame_first": "A dog approaches a reflective glass door, its nose nearly touching the surface.",
+    "frame_middle": "The dog sniffs curiously at the glass, its reflection staring back.",
+    "frame_last": "The dog steps back, looking puzzled by the unyielding surface of the glass door.",
+    "frame_json_raw": "{\"first\": \"A dog approaches a reflective glass door, its nose nearly touching the surface.\", \"middle\": \"The dog sniffs curiously at the glass, its reflection staring back.\", \"last\": \"The dog steps back, looking puzzled by the unyielding surface of the glass door.\"}"
+  },
+  {
+    "caption": "An eraser removes marks from paper",
+    "frame_first": "A hand holds an eraser above a sheet of paper covered in pencil marks, preparing to erase.",
+    "frame_middle": "The eraser is pressed onto the paper, smudging the pencil marks as it moves across the surface.",
+    "frame_last": "The eraser lifts off the paper, revealing a clean spot where the marks once were, with eraser shavings scattered around.",
+    "frame_json_raw": "{\"first\": \"A hand holds an eraser above a sheet of paper covered in pencil marks, preparing to erase.\", \"middle\": \"The eraser is pressed onto the paper, smudging the pencil marks as it moves across the surface.\", \"last\": \"The eraser lifts off the paper, revealing a clean spot where the marks once were, with eraser shavings scattered around.\"}"
+  },
+  {
+    "caption": "A knife slices through a ripe tomato",
+    "frame_first": "A sharp knife hovers above a bright red, ripe tomato sitting on a cutting board.",
+    "frame_middle": "The knife slices through the tomato, juice beginning to spill out as it cuts through the flesh.",
+    "frame_last": "The knife completes its motion, the tomato now halved, revealing its juicy interior and seeds.",
+    "frame_json_raw": "{\"first\": \"A sharp knife hovers above a bright red, ripe tomato sitting on a cutting board.\", \"middle\": \"The knife slices through the tomato, juice beginning to spill out as it cuts through the flesh.\", \"last\": \"The knife completes its motion, the tomato now halved, revealing its juicy interior and seeds.\"}"
+  },
+  {
+    "caption": "Chef slices cucumber",
+    "frame_first": "A chef stands in a well-lit kitchen, cucumber placed on a clean cutting board in front of him.",
+    "frame_middle": "The chef's hand holds a sharp knife, slicing through the cucumber with precision.",
+    "frame_last": "The chef completes the slice, revealing two halves of the cucumber on the cutting board.",
+    "frame_json_raw": "{\"first\": \"A chef stands in a well-lit kitchen, cucumber placed on a clean cutting board in front of him.\", \"middle\": \"The chef's hand holds a sharp knife, slicing through the cucumber with precision.\", \"last\": \"The chef completes the slice, revealing two halves of the cucumber on the cutting board.\"}"
+  },
+  {
+    "caption": "Soccer ball strikes window, causing it to crack",
+    "frame_first": "A soccer ball approaches a large, clear window from the outside, sunlight glinting off its surface.",
+    "frame_middle": "The soccer ball makes impact with a loud bang, sending spider-web cracks radiating from the point of contact.",
+    "frame_last": "The window is now visibly cracked, with the soccer ball lying still on the ground outside, a small cloud of dust floating from the impact site.",
+    "frame_json_raw": "{\"first\": \"A soccer ball approaches a large, clear window from the outside, sunlight glinting off its surface.\", \"middle\": \"The soccer ball makes impact with a loud bang, sending spider-web cracks radiating from the point of contact.\", \"last\": \"The window is now visibly cracked, with the soccer ball lying still on the ground outside, a small cloud of dust floating from the impact site.\"}"
+  },
+  {
+    "caption": "Knife sharpens pencil",
+    "frame_first": "A knife is positioned above a pencil, ready to sharpen its lead.",
+    "frame_middle": "The knife carefully scrapes the pencil's wood, revealing the graphite underneath.",
+    "frame_last": "The pencil is now sharpened, with the knife resting beside it, highlighting the freshly exposed graphite point.",
+    "frame_json_raw": "{\"first\": \"A knife is positioned above a pencil, ready to sharpen its lead.\", \"middle\": \"The knife carefully scrapes the pencil's wood, revealing the graphite underneath.\", \"last\": \"The pencil is now sharpened, with the knife resting beside it, highlighting the freshly exposed graphite point.\"}"
+  },
+  {
+    "caption": "Lightning strikes tree, splitting it in half",
+    "frame_first": "A tall, ancient oak tree stands in a dark, stormy forest at night. Lightning begins to illuminate the sky, drawing a path towards the tree.",
+    "frame_middle": "The lightning strikes the tree, a blinding flash of light splitting the tree down the middle, sending sparks and wood shards flying.",
+    "frame_last": "The tree now lies in two large halves, smoke rising from the point of impact, as the storm continues to rage around the charred remains.",
+    "frame_json_raw": "{\"first\": \"A tall, ancient oak tree stands in a dark, stormy forest at night. Lightning begins to illuminate the sky, drawing a path towards the tree.\", \"middle\": \"The lightning strikes the tree, a blinding flash of light splitting the tree down the middle, sending sparks and wood shards flying.\", \"last\": \"The tree now lies in two large halves, smoke rising from the point of impact, as the storm continues to rage around the charred remains.\"}"
+  },
+  {
+    "caption": "Glass shatters when hit by a rock",
+    "frame_first": "A rock hurtles towards a large glass window in the evening light, casting a shadow on the glass.",
+    "frame_middle": "The glass cracks violently upon impact, shards radiating outward from the point where the rock struck.",
+    "frame_last": "The once intact window is now a jagged, empty frame, the rock lying among the scattered glass shards.",
+    "frame_json_raw": "{\"first\": \"A rock hurtles towards a large glass window in the evening light, casting a shadow on the glass.\", \"middle\": \"The glass cracks violently upon impact, shards radiating outward from the point where the rock struck.\", \"last\": \"The once intact window is now a jagged, empty frame, the rock lying静止在碎玻璃中。\"} \n\n(Note: The last part of the JSON was translated to English to ensure it adheres to the instruction for strict JSON and only contains information strongly implied by the prompt.) \n\nCorrected: {\"first\": \"A rock hurtles towards a large glass window in the evening light, casting a shadow on the glass.\", \"middle\": \"The glass cracks violently upon impact, shards radiating outward from the point where the rock struck.\", \"last\": \"The once intact window is now a jagged, empty frame, the rock lying among the scattered glass shards.\"}"
+  },
+  {
+    "caption": "A mirror breaks when struck by a thrown rock",
+    "frame_first": "A rock flies through the air, heading towards a large wall mirror.",
+    "frame_middle": "The rock strikes the mirror, causing it to shatter into numerous pieces.",
+    "frame_last": "The mirror lies in fragments on the floor, the rock embedded in the center of the broken glass.",
+    "frame_json_raw": "{\"first\": \"A rock flies through the air, heading towards a large wall mirror.\", \"middle\": \"The rock strikes the mirror, causing it to shatter into numerous pieces.\", \"last\": \"The mirror lies in fragments on the floor, the rock embedded in the center of the broken glass.\"}"
+  },
+  {
+    "caption": "Firewood splits under axe's chop",
+    "frame_first": "A man stands over a log, axe raised high, sunlight glinting off the blade.",
+    "frame_middle": "The axe descends with force, splitting the log with a sharp crack, wood fibers splintering.",
+    "frame_last": "The axe is withdrawn, smoke rises slightly from the fresh cut, and the man prepares for the next chop.",
+    "frame_json_raw": "{\"first\": \"A man stands over a log, axe raised high, sunlight glinting off the blade.\", \"middle\": \"The axe descends with force, splitting the log with a sharp crack, wood fibers splintering.\", \"last\": \"The axe is withdrawn, smoke rises slightly from the fresh cut, and the man prepares for the next chop.\"}"
+  },
+  {
+    "caption": "Pottery shatters on the floor",
+    "frame_first": "A pottery vase hovers above a wooden floor, about to fall.",
+    "frame_middle": "The vase smashes into pieces, sending shards scattering in all directions.",
+    "frame_last": "The floor is littered with the remnants of the shattered pottery, dust settling.",
+    "frame_json_raw": "{\"first\": \"A pottery vase hovers above a wooden floor, about to fall.\", \"middle\": \"The vase smashes into pieces, sending shards scattering in all directions.\", \"last\": \"The floor is littered with the remnants of the shattered pottery, dust settling.\"}"
+  },
+  {
+    "caption": "Paper burns in a fire",
+    "frame_first": "A sheet of paper is placed near a small flame, beginning to curl and blacken at the edges.",
+    "frame_middle": "The paper is fully engulfed in flames, crackling as it burns, with only a small portion remaining unscorched.",
+    "frame_last": "Only ashes remain, gently drifting to the ground as the fire subsides.",
+    "frame_json_raw": "{\"first\": \"A sheet of paper is placed near a small flame, beginning to curl and blacken at the edges.\", \"middle\": \"The paper is fully engulfed in flames, crackling as it burns, with only a small portion remaining unscorched.\", \"last\": \"Only ashes remain, gently drifting to the ground as the fire subsides.\"}"
+  },
+  {
+    "caption": "Balloon pops when pricked with a needle",
+    "frame_first": "A hand holds a needle poised to touch a bright red balloon floating in a sunlit room.",
+    "frame_middle": "The needle pierces the balloon, and a small, sudden burst of air escapes, creating a brief, sharp sound.",
+    "frame_last": "The balloon deflates rapidly, its once-round shape collapsing into a crumpled, limp form on the floor.",
+    "frame_json_raw": "{\"first\": \"A hand holds a needle poised to touch a bright red balloon floating in a sunlit room.\", \"middle\": \"The needle pierces the balloon, and a small, sudden burst of air escapes, creating a brief, sharp sound.\", \"last\": \"The balloon deflates rapidly, its once-round shape collapsing into a crumpled, limp form on the floor.\"}"
+  },
+  {
+    "caption": "Blue ink drops into water and disperses",
+    "frame_first": "A single drop of blue ink falls into a clear glass of water, creating a small splash.",
+    "frame_middle": "The blue ink begins to spread out in the water, forming a cloud-like shape.",
+    "frame_last": "The ink fully disperses, turning the entire glass of water a uniform light blue color.",
+    "frame_json_raw": "{\"first\": \"A single drop of blue ink falls into a clear glass of water, creating a small splash.\", \"middle\": \"The blue ink begins to spread out in the water, forming a cloud-like shape.\", \"last\": \"The ink fully disperses, turning the entire glass of water a uniform light blue color.\"}"
+  },
+  {
+    "caption": "Butter melts on hot toast",
+    "frame_first": "A slice of hot toast sits on a plate, with a cube of butter placed on top, beginning to soften.",
+    "frame_middle": "The butter has started to melt, forming a golden pool spreading across the surface of the toast.",
+    "frame_last": "The butter has fully melted, seamlessly blending into the toast, creating a glistening, warm surface.",
+    "frame_json_raw": "{\"first\": \"A slice of hot toast sits on a plate, with a cube of butter placed on top, beginning to soften.\", \"middle\": \"The butter has started to melt, forming a golden pool spreading across the surface of the toast.\", \"last\": \"The butter has fully melted, seamlessly blending into the toast, creating a glistening, warm surface.\"}"
+  },
+  {
+    "caption": "Mage conjures fireball in palm, controlling the flames",
+    "frame_first": "A mage stands in a dimly lit room, his hand outstretched with a small, flickering flame appearing in his palm.",
+    "frame_middle": "The mage's concentration intensifies, the flame in his palm growing into a glowing, orange fireball, casting an intense light around the room.",
+    "frame_last": "With a flick of his wrist, the mage releases the fireball, which hovers in the air, responding to his gestures as he controls its movement.",
+    "frame_json_raw": "{\"first\": \"A mage stands in a dimly lit room, his hand outstretched with a small, flickering flame appearing in his palm.\", \"middle\": \"The mage's concentration intensifies, the flame in his palm growing into a glowing, orange fireball, casting an intense light around the room.\", \"last\": \"With a flick of his wrist, the mage releases the fireball, which hovers in the air, responding to his gestures as he controls its movement.\"}"
+  },
+  {
+    "caption": "A magician pulls a rabbit out of a hat",
+    "frame_first": "A magician in a classic red cape stands center stage, holding a top hat in his hand, the audience leaning forward in anticipation.",
+    "frame_middle": "The magician slowly opens the hat revealing it to be empty, a look of surprise and wonder spreading across the audience's faces.",
+    "frame_last": "With a flourish, the magician pulls a live, white rabbit out of the hat, the rabbit hopping around in his hands as the audience applauds.",
+    "frame_json_raw": "{\"first\": \"A magician in a classic red cape stands center stage, holding a top hat in his hand, the audience leaning forward in anticipation.\", \"middle\": \"The magician slowly opens the hat revealing it to be empty, a look of surprise and wonder spreading across the audience's faces.\", \"last\": \"With a flourish, the magician pulls a live, white rabbit out of the hat, the rabbit hopping around in his hands as the audience applauds.\"}"
+  },
+  {
+    "caption": "Alice shrinks after drinking mysterious potion",
+    "frame_first": "Alice stands in a dimly lit room, a small table in front of her with a shimmering potion. She hesitantly lifts the potion to her lips.",
+    "frame_middle": "Alice's body begins to shrink rapidly, her clothes becoming oversized as she looks up at the now towering table and potion bottle.",
+    "frame_last": "Alice, now the size of a toy, stands beside the table, looking up at the room that seems like a giant's world, her eyes wide with astonishment.",
+    "frame_json_raw": "{\"first\": \"Alice stands in a dimly lit room, a small table in front of her with a shimmering potion. She hesitantly lifts the potion to her lips.\", \"middle\": \"Alice's body begins to shrink rapidly, her clothes becoming oversized as she looks up at the now towering table and potion bottle.\", \"last\": \"Alice, now the size of a toy, stands beside the table, looking up at the room that seems like a giant's world, her eyes wide with astonishment.\"}"
+  },
+  {
+    "caption": "Warrior controls wind, creating a tornado",
+    "frame_first": "A warrior stands confidently in an open field, arms raised towards the sky, as the wind begins to swirl around them.",
+    "frame_middle": "The swirling wind intensifies, forming a small tornado at the warrior's feet, which they control with precise gestures.",
+    "frame_last": "The tornado grows in size and power, spinning rapidly as the warrior directs it with focused energy, leaving a trail of dust and debris in its wake.",
+    "frame_json_raw": "{\"first\": \"A warrior stands confidently in an open field, arms raised towards the sky, as the wind begins to swirl around them.\", \"middle\": \"The swirling wind intensifies, forming a small tornado at the warrior's feet, which they control with precise gestures.\", \"last\": \"The tornado grows in size and power, spinning rapidly as the warrior directs it with focused energy, leaving a trail of dust and debris in its wake.\"}"
+  },
+  {
+    "caption": "Sorcerer summons water from thin air, flooding room",
+    "frame_first": "A sorcerer stands in the center of a dimly lit room, arms raised, eyes closed, as a shimmering orb of water begins to form in the air before him.",
+    "frame_middle": "The orb grows larger, water swirling within it, and suddenly bursts, sending a torrent of water cascading across the room, drenching the floor and splashing against the walls.",
+    "frame_last": "The room is now flooded, water reaching halfway up the sorcerer's legs, who stands calmly amidst the chaos, the source of the water now a steady stream from his outstretched hands.",
+    "frame_json_raw": "{\"first\": \"A sorcerer stands in the center of a dimly lit room, arms raised, eyes closed, as a shimmering orb of water begins to form in the air before him.\", \"middle\": \"The orb grows larger, water swirling within it, and suddenly bursts, sending a torrent of water cascading across the room, drenching the floor and splashing against the walls.\", \"last\": \"The room is now flooded, water reaching halfway up the sorcerer's legs, who stands calmly amidst the chaos, the source of the water now a steady stream from his outstretched hands.\"}"
+  },
+  {
+    "caption": "Superhero phases through falling debris unharmed",
+    "frame_first": "A superhero stands in the middle of a city street as debris begins to fall from the sky, creating a sense of impending danger.",
+    "frame_middle": "The superhero phases through the falling debris effortlessly, his figure shimmering as objects pass through him without causing any harm.",
+    "frame_last": "The debris settles on the ground, and the superhero stands unscathed, looking calm and in control as the dust begins to settle around him.",
+    "frame_json_raw": "{\"first\": \"A superhero stands in the middle of a city street as debris begins to fall from the sky, creating a sense of impending danger.\", \"middle\": \"The superhero phases through the falling debris effortlessly, his figure shimmering as objects pass through him without causing any harm.\", \"last\": \"The debris settles on the ground, and the superhero stands unscathed, looking calm and in control as the dust begins to settle around him.\"}"
+  },
+  {
+    "caption": "Water sprite freezes lake with a touch",
+    "frame_first": "A water sprite with shimmering, translucent skin approaches the surface of a serene, dark lake at dusk.",
+    "frame_middle": "The sprite's hand touches the water, and ripples of frost spread outwards, ice forming rapidly around its fingers.",
+    "frame_last": "The entire lake is now frozen, reflecting the moonlit sky, with the sprite standing calmly on the newly formed ice.",
+    "frame_json_raw": "{\"first\": \"A water sprite with shimmering, translucent skin approaches the surface of a serene, dark lake at dusk.\", \"middle\": \"The sprite's hand touches the water, and ripples of frost spread outwards, ice forming rapidly around its fingers.\", \"last\": \"The entire lake is now frozen, reflecting the moonlit sky, with the sprite standing calmly on the newly formed ice.\"}"
+  },
+  {
+    "caption": "Man teaches robot to play chess",
+    "frame_first": "A man sits across from a robot at a chessboard, explaining the rules of chess with a patient expression.",
+    "frame_middle": "The man gently moves a chess piece, demonstrating a strategy, while the robot observes intently with its camera eyes.",
+    "frame_last": "The robot, now with a more confident posture, makes a move on the chessboard as the man watches approvingly, a small smile on his face.",
+    "frame_json_raw": "{\"first\": \"A man sits across from a robot at a chessboard, explaining the rules of chess with a patient expression.\", \"middle\": \"The man gently moves a chess piece, demonstrating a strategy, while the robot observes intently with its camera eyes.\", \"last\": \"The robot, now with a more confident posture, makes a move on the chessboard as the man watches approvingly, a small smile on his face.\"}"
+  },
+  {
+    "caption": "Woman discusses project with colleague over coffee",
+    "frame_first": "A woman sits at a small outdoor table, facing her colleague, both holding mugs of steaming coffee.",
+    "frame_middle": "The woman gestures with her hand while speaking, her colleague listens attentively, sipping coffee.",
+    "frame_last": "Both women lean slightly towards each other, engaged in a deep discussion, sunlight filtering through trees casts dappled shadows on their table.",
+    "frame_json_raw": "{\"first\": \"A woman sits at a small outdoor table, facing her colleague, both holding mugs of steaming coffee.\", \"middle\": \"The woman gestures with her hand while speaking, her colleague listens attentively, sipping coffee.\", \"last\": \"Both women lean slightly towards each other, engaged in a deep discussion, sunlight filtering through trees casts dappled shadows on their table.\"}"
+  },
+  {
+    "caption": "Boy shares ice cream with his dog",
+    "frame_first": "A young boy stands in a sunny backyard, holding an ice cream cone, looking down at his dog who is sitting expectantly.",
+    "frame_middle": "The boy bends down, offering a spoonful of ice cream to his dog, who eagerly licks at the treat.",
+    "frame_last": "Both the boy and the dog are sitting on the grass, the ice cream container now empty, with the dog looking contentedly at the boy.",
+    "frame_json_raw": "{\"first\": \"A young boy stands in a sunny backyard, holding an ice cream cone, looking down at his dog who is sitting expectantly.\", \"middle\": \"The boy bends down, offering a spoonful of ice cream to his dog, who eagerly licks at the treat.\", \"last\": \"Both the boy and the dog are sitting on the grass, the ice cream container now empty, with the dog looking contentedly at the boy.\"}"
+  },
+  {
+    "caption": "Cats chase each other around the living room",
+    "frame_first": "Two cats dart across the living room floor, one chasing the other near the couch.",
+    "frame_middle": "The cats leap over a small rug, paws extended, their eyes locked on each other.",
+    "frame_last": "The chase ends by the window, one cat playfully pounces, the other rolls away, both panting and tails flicking.",
+    "frame_json_raw": "{\"first\": \"Two cats dart across the living room floor, one chasing the other near the couch.\", \"middle\": \"The cats leap over a small rug, paws extended, their eyes locked on each other.\", \"last\": \"The chase ends by the window, one cat playfully pounces, the other rolls away, both panting and tails flicking.\"}"
+  },
+  {
+    "caption": "Girl reads bedtime story to her stuffed bear",
+    "frame_first": "A young girl sits on her bed, holding a stuffed bear and opening a storybook, the room softly lit by a nightlight.",
+    "frame_middle": "The girl is engrossed in reading, her voice gentle and soothing, the bear resting comfortably in her arms.",
+    "frame_last": "The girl finishes the story, closes the book, and gives the bear a tender hug, the room now dimly lit as the night progresses.",
+    "frame_json_raw": "{\"first\": \"A young girl sits on her bed, holding a stuffed bear and opening a storybook, the room softly lit by a nightlight.\", \"middle\": \"The girl is engrossed in reading, her voice gentle and soothing, the bear resting comfortably in her arms.\", \"last\": \"The girl finishes the story, closes the book, and gives the bear a tender hug, the room now dimly lit as the night progresses.\"}"
+  },
+  {
+    "caption": "Business partners shake hands on a new deal",
+    "frame_first": "Two men stand facing each other in a modern office, one extends his hand towards the other.",
+    "frame_middle": "Both men firmly shake hands, smiling and looking into each other's eyes, with a conference table and chairs in the background.",
+    "frame_last": "The men step back, still smiling, as they finalize their new business deal with a handshake.",
+    "frame_json_raw": "{\"first\": \"Two men stand facing each other in a modern office, one extends his hand towards the other.\", \"middle\": \"Both men firmly shake hands, smiling and looking into each other's eyes, with a conference table and chairs in the background.\", \"last\": \"The men step back, still smiling, as they finalize their new business deal with a handshake.\"}"
+  },
+  {
+    "caption": "Child plays with family dog at the beach",
+    "frame_first": "A child runs towards the waves on a sandy beach, a playful family dog bounding alongside.",
+    "frame_middle": "The child tosses a ball into the surf while the dog eagerly watches, ready to fetch.",
+    "frame_last": "The dog splashes through the water, retrieving the ball, as the child waits on the shore, smiling.",
+    "frame_json_raw": "{\"first\": \"A child runs towards the waves on a sandy beach, a playful family dog bounding alongside.\", \"middle\": \"The child tosses a ball into the surf while the dog eagerly watches, ready to fetch.\", \"last\": \"The dog splashes through the water, retrieving the ball, as the child waits on the shore, smiling.\"}"
+  },
+  {
+    "caption": "Old friends hug each other at a reunion",
+    "frame_first": "Two middle-aged friends approach each other, smiling broadly, under the warm glow of a reunion hall's lights.",
+    "frame_middle": "They embrace tightly, their faces close, sharing a moment of joy and nostalgia.",
+    "frame_last": "Stepping back, they hold each other at arm's length, laughing and looking into each other's eyes, the background filled with the blurred figures of other guests.",
+    "frame_json_raw": "{\"first\": \"Two middle-aged friends approach each other, smiling broadly, under the warm glow of a reunion hall's lights.\", \"middle\": \"They embrace tightly, their faces close, sharing a moment of joy and nostalgia.\", \"last\": \"Stepping back, they hold each other at arm's length, laughing and looking into each other's eyes, the background filled with the blurred figures of other guests.\"}"
+  },
+  {
+    "caption": "Couple dances closely at a dimly lit party",
+    "frame_first": "A couple stands in the center of a dimly lit room, the man leads with his hand on the woman's waist, and they begin to sway to the music.",
+    "frame_middle": "The couple moves gracefully, their bodies close and synchronized, as the party guests watch from the shadows.",
+    "frame_last": "The dance slows, the couple's faces close together, the dim lights casting a romantic glow over them as the music fades.",
+    "frame_json_raw": "{\"first\": \"A couple stands in the center of a dimly lit room, the man leads with his hand on the woman's waist, and they begin to sway to the music.\", \"middle\": \"The couple moves gracefully, their bodies close and synchronized, as the party guests watch from the shadows.\", \"last\": \"The dance slows, the couple's faces close together, the dim lights casting a romantic glow over them as the music fades.\"}"
+  },
+  {
+    "caption": "Fisherman feeds seagulls at the dock",
+    "frame_first": "A fisherman stands at the edge of a wooden dock, holding a handful of fish scraps, with seagulls gathering around him.",
+    "frame_middle": "The fisherman tosses a scrap into the air, and a seagull catches it mid-flight, other seagulls squawk and jostle for position.",
+    "frame_last": "Seagulls are scattered across the dock, pecking at the scattered food, while the fisherman watches contentedly with an empty hand.",
+    "frame_json_raw": "{\"first\": \"A fisherman stands at the edge of a wooden dock, holding a handful of fish scraps, with seagulls gathering around him.\", \"middle\": \"The fisherman tosses a scrap into the air, and a seagull catches it mid-flight, other seagulls squawk and jostle for position.\", \"last\": \"Seagulls are scattered across the dock, pecking at the scattered food, while the fisherman watches contentedly with an empty hand.\"}"
+  },
+  {
+    "caption": "Mother teaches son how to tie his shoes",
+    "frame_first": "A mother and her son sit on a living room rug, the son's shoes in front of him, the mother demonstrating the first step of tying shoelaces.",
+    "frame_middle": "The son, with focused eyes, attempts to loop the shoelaces as his mother guides his hands from above.",
+    "frame_last": "Both smiling, the son successfully ties the bow on his shoe, the mother giving him a gentle thumbs up.",
+    "frame_json_raw": "{\"first\": \"A mother and her son sit on a living room rug, the son's shoes in front of him, the mother demonstrating the first step of tying shoelaces.\", \"middle\": \"The son, with focused eyes, attempts to loop the shoelaces as his mother guides his hands from above.\", \"last\": \"Both smiling, the son successfully ties the bow on his shoe, the mother giving him a gentle thumbs up.\"}"
+  },
+  {
+    "caption": "Two wolves howl together under a full moon",
+    "frame_first": "Two wolves stand side by side in a forest clearing, their heads thrown back as they begin to howl.",
+    "frame_middle": "The wolves' howls echo through the trees, their bodies still as they gaze up at the bright full moon.",
+    "frame_last": "The wolves lower their heads, ending their howl, and share a glance before turning to trot away into the night.",
+    "frame_json_raw": "{\"first\": \"Two wolves stand side by side in a forest clearing, their heads thrown back as they begin to howl.\", \"middle\": \"The wolves' howls echo through the trees, their bodies still as they gaze up at the bright full moon.\", \"last\": \"The wolves lower their heads, ending their howl, and share a glance before turning to trot away into the night.\"}"
+  },
+  {
+    "caption": "Two monkeys groom each other on a tree branch",
+    "frame_first": "Two monkeys sit side by side on a thick tree branch, one begins to groom the other's fur.",
+    "frame_middle": "The monkeys are now deeply engaged in mutual grooming, their hands meticulously combing through each other's fur.",
+    "frame_last": "The grooming session concludes as the monkeys part ways, one jumping to another branch while the other remains, looking content.",
+    "frame_json_raw": "{\"first\": \"Two monkeys sit side by side on a thick tree branch, one begins to groom the other's fur.\", \"middle\": \"The monkeys are now deeply engaged in mutual grooming, their hands meticulously combing through each other's fur.\", \"last\": \"The grooming session concludes as the monkeys part ways, one jumping to another branch while the other remains, looking content.\"}"
+  },
+  {
+    "caption": "Coach motivates athlete during a tough workout",
+    "frame_first": "A coach stands beside an athlete, both drenched in sweat, as the sun sets over a track field.",
+    "frame_middle": "The coach leans in, hands on hips, eyes locked with the athlete, gesturing emphatically to drive home a point.",
+    "frame_last": "The athlete nods, takes a deep breath, and sprints off, with the coach cheering loudly from the sidelines.",
+    "frame_json_raw": "{\"first\": \"A coach stands beside an athlete, both drenched in sweat, as the sun sets over a track field.\", \"middle\": \"The coach leans in, hands on hips, eyes locked with the athlete, gesturing emphatically to drive home a point.\", \"last\": \"The athlete nods, takes a deep breath, and sprints off, with the coach cheering loudly from the sidelines.\"}"
+  },
+  {
+    "caption": "Customer negotiates price with a street vendor",
+    "frame_first": "A customer stands in front of a street vendor, examining goods while the vendor leans forward, ready to discuss prices.",
+    "frame_middle": "The customer and vendor are engaged in animated discussion, hands gesturing as they negotiate over a pile of items on the vendor's stall.",
+    "frame_last": "The customer nods in agreement, handing over money to the vendor who smiles and places the purchased items into a bag.",
+    "frame_json_raw": "{\"first\": \"A customer stands in front of a street vendor, examining goods while the vendor leans forward, ready to discuss prices.\", \"middle\": \"The customer and vendor are engaged in animated discussion, hands gesturing as they negotiate over a pile of items on the vendor's stall.\", \"last\": \"The customer nods in agreement, handing over money to the vendor who smiles and places the purchased items into a bag.\"}"
+  },
+  {
+    "caption": "Rabbit in a suit negotiates carrot deal with farmer",
+    "frame_first": "A rabbit dressed in a formal suit sits across from a farmer at a rustic wooden table, both looking at a contract.",
+    "frame_middle": "The rabbit points at the contract条款,农夫点头同意。",
+    "frame_last": "The rabbit shakes hands with the farmer, both smiling as they finalize the carrot deal.",
+    "frame_json_raw": "{\"first\": \"A rabbit dressed in a formal suit sits across from a farmer at a rustic wooden table, both looking at a contract.\", \"middle\": \"The rabbit points at the contract条款,农夫点头同意。\", \"last\": \"The rabbit shakes hands with the farmer, both smiling as they finalize the carrot deal.\"}"
+  },
+  {
+    "caption": "Business cat types on laptop",
+    "frame_first": "A well-groomed cat sits in front of a laptop, paws resting on the keyboard, looking intently at the screen.",
+    "frame_middle": "The cat's paw moves across the keyboard, typing with precision, while its ears are alert and focused.",
+    "frame_last": "The cat pauses, looking satisfied, with text appearing on the laptop screen behind it, indicating successful typing.",
+    "frame_json_raw": "{\"first\": \"A well-groomed cat sits in front of a laptop, paws resting on the keyboard, looking intently at the screen.\", \"middle\": \"The cat's paw moves across the keyboard, typing with precision, while its ears are alert and focused.\", \"last\": \"The cat pauses, looking satisfied, with text appearing on the laptop screen behind it, indicating successful typing.\"}"
+  },
+  {
+    "caption": "Owl teacher explains math to squirrel students",
+    "frame_first": "An owl stands at a chalkboard filled with math equations, facing a row of attentive squirrel students.",
+    "frame_middle": "The owl points to a complex equation on the board, while the squirrel students lean forward, some holding pencils and notebooks.",
+    "frame_last": "The owl smiles as one of the squirrel students raises a paw, ready to answer a question, with the chalkboard still covered in math problems behind them.",
+    "frame_json_raw": "{\"first\": \"An owl stands at a chalkboard filled with math equations, facing a row of attentive squirrel students.\", \"middle\": \"The owl points to a complex equation on the board, while the squirrel students lean forward, some holding pencils and notebooks.\", \"last\": \"The owl smiles as one of the squirrel students raises a paw, ready to answer a question, with the chalkboard still covered in math problems behind them.\"}"
+  },
+  {
+    "caption": "Bear chef tastes honey from his gourmet kitchen",
+    "frame_first": "A bear chef stands at a polished wooden kitchen island, surrounded by stainless steel appliances and an array of gourmet ingredients. He leans in, about to taste honey from a pristine glass jar with a silver spoon.",
+    "frame_middle": "The bear chef closes his eyes, savoring the sweet taste of honey on his tongue, while the kitchen's warm, ambient lighting highlights the rich golden color of the honey.",
+    "frame_last": "The bear chef smiles contentedly, putting down the spoon, as sunlight streams through a large window behind him, illuminating the spotless, modern kitchen.",
+    "frame_json_raw": "{\"first\": \"A bear chef stands at a polished wooden kitchen island, surrounded by stainless steel appliances and an array of gourmet ingredients. He leans in, about to taste honey from a pristine glass jar with a silver spoon.\", \"middle\": \"The bear chef closes his eyes, savoring the sweet taste of honey on his tongue, while the kitchen's warm, ambient lighting highlights the rich golden color of the honey.\", \"last\": \"The bear chef smiles contentedly, putting down the spoon, as sunlight streams through a large window behind him, illuminating the spotless, modern kitchen.\"}"
+  },
+  {
+    "caption": "Dapper wolf discusses stock market trends",
+    "frame_first": "A dapper wolf in a tailored suit sits at a polished wooden desk, surrounded by financial charts and a laptop displaying stock market data.",
+    "frame_middle": "The wolf points to a chart with a pen, explaining market trends with animated gestures.",
+    "frame_last": "The wolf leans back in a leather chair, looking thoughtful as he concludes his analysis, with the city skyline visible through a window behind him.",
+    "frame_json_raw": "{\"first\": \"A dapper wolf in a tailored suit sits at a polished wooden desk, surrounded by financial charts and a laptop displaying stock market data.\", \"middle\": \"The wolf points to a chart with a pen, explaining market trends with animated gestures.\", \"last\": \"The wolf leans back in a leather chair, looking thoughtful as he concludes his analysis, with the city skyline visible through a window behind him.\"}"
+  },
+  {
+    "caption": "Giraffe painter reaches high walls without a ladder",
+    "frame_first": "A giraffe stands in a spacious studio, its long neck stretched upwards, holding a paintbrush in its mouth, facing a blank white wall.",
+    "frame_middle": "The giraffe's tongue dexterously guides the brush, creating abstract strokes on the wall, its large eyes focused intently on the canvas.",
+    "frame_last": "The wall is now covered in vibrant, swirling patterns of paint, the giraffe steps back, surveying its artwork with a contented expression.",
+    "frame_json_raw": "{\"first\": \"A giraffe stands in a spacious studio, its long neck stretched upwards, holding a paintbrush in its mouth, facing a blank white wall.\", \"middle\": \"The giraffe's tongue dexterously guides the brush, creating abstract strokes on the wall, its large eyes focused intently on the canvas.\", \"last\": \"The wall is now covered in vibrant, swirling patterns of paint, the giraffe steps back, surveying its artwork with a contented expression.\"}"
+  },
+  {
+    "caption": "Mouse detective investigates cheese theft",
+    "frame_first": "A small mouse in a detective hat stands at the entrance of a cheese shop, examining a broken lock under a magnifying glass.",
+    "frame_middle": "The mouse detective scurries through the shop, peering at shelves of cheese, with a flashlight in hand, casting shadows on the walls.",
+    "frame_last": "The mouse, triumphant, holds a clue—a tiny footprint next to a wheel of cheese, sunlight streaming through the window highlighting the discovery.",
+    "frame_json_raw": "{\"first\": \"A small mouse in a detective hat stands at the entrance of a cheese shop, examining a broken lock under a magnifying glass.\", \"middle\": \"The mouse detective scurries through the shop, peering at shelves of cheese, with a flashlight in hand, casting shadows on the walls.\", \"last\": \"The mouse, triumphant, holds a clue—a tiny footprint next to a wheel of cheese, sunlight streaming through the window highlighting the discovery.\"}"
+  },
+  {
+    "caption": "Duck journalist interviews a famous goose",
+    "frame_first": "A duck wearing a suit and holding a microphone stands in front of a backdrop with a news logo, facing a famous goose sitting in a chair.",
+    "frame_middle": "The duck journalist leans in, asking a question, while the goose, with a confident smile, looks directly into the camera.",
+    "frame_last": "The interview concludes with the duck and goose shaking hands, with the duck nodding appreciatively and the goose standing tall.",
+    "frame_json_raw": "{\"first\": \"A duck wearing a suit and holding a microphone stands in front of a backdrop with a news logo, facing a famous goose sitting in a chair.\", \"middle\": \"The duck journalist leans in, asking a question, while the goose, with a confident smile, looks directly into the camera.\", \"last\": \"The interview concludes with the duck and goose shaking hands, with the duck nodding appreciatively and the goose standing tall.\"}"
+  },
+  {
+    "caption": "Tiger coach whistles at soccer practice",
+    "frame_first": "A tiger mascot stands at the edge of a soccer field, looking towards the coach who is whistling, signaling the start of practice.",
+    "frame_middle": "The coach, wearing a whistle around his neck, directs players during a drill, while the tiger mascot watches from the sidelines.",
+    "frame_last": "The coach blows the whistle one last time, signaling the end of practice, as the tiger mascot waves goodbye to the departing players.",
+    "frame_json_raw": "{\"first\": \"A tiger mascot stands at the edge of a soccer field, looking towards the coach who is whistling, signaling the start of practice.\", \"middle\": \"The coach, wearing a whistle around his neck, directs players during a drill, while the tiger mascot watches from the sidelines.\", \"last\": \"The coach blows the whistle one last time, signaling the end of practice, as the tiger mascot waves goodbye to the departing players.\"}"
+  },
+  {
+    "caption": "Raccoon trash collector cleans up the park",
+    "frame_first": "A raccoon wearing a small trash collector uniform stands at the entrance of a park, surrounded by scattered trash. The sun is just rising, casting a warm glow over the scene.",
+    "frame_middle": "The raccoon is seen in the middle of the park, bending down to pick up a plastic bottle, with a trash bin nearby filled with various discarded items. The sky is bright blue with a few fluffy clouds.",
+    "frame_last": "The raccoon finishes its task, standing amidst a clean park with all the trash collected. It looks satisfied, the park now looks neat and tidy under the setting sun.",
+    "frame_json_raw": "{\"first\": \"A raccoon wearing a small trash collector uniform stands at the entrance of a park, surrounded by scattered trash. The sun is just rising, casting a warm glow over the scene.\", \"middle\": \"The raccoon is seen in the middle of the park, bending down to pick up a plastic bottle, with a trash bin nearby filled with various discarded items. The sky is bright blue with a few fluffy clouds.\", \"last\": \"The raccoon finishes its task, standing amidst a clean park with all the trash collected. It looks satisfied, the park now looks neat and tidy under the setting sun.\"}"
+  },
+  {
+    "caption": "Penguin waiter slides dinner to customers",
+    "frame_first": "A penguin waiter glides smoothly across a polished wooden floor, a silver tray balanced on its flipper, approaching a table of surprised customers.",
+    "frame_middle": "The penguin carefully places a gourmet dinner plate in front of a customer, who is smiling in delight, while other diners watch in amazement.",
+    "frame_last": "The penguin waiter waddles away gracefully, the customers at the table engaged in animated conversation, clearly impressed by the unique service.",
+    "frame_json_raw": "{\"first\": \"A penguin waiter glides smoothly across a polished wooden floor, a silver tray balanced on its flipper, approaching a table of surprised customers.\", \"middle\": \"The penguin carefully places a gourmet dinner plate in front of a customer, who is smiling in delight, while other diners watch in amazement.\", \"last\": \"The penguin waiter waddles away gracefully, the customers at the table engaged in animated conversation, clearly impressed by the unique service.\"}"
+  },
+  {
+    "caption": "Rabbit tailor sews fabric into a dress",
+    "frame_first": "A small, white rabbit with glasses sits at a sewing table, holding fabric and a needle, preparing to sew.",
+    "frame_middle": "The rabbit tailor is in the middle of sewing, the fabric taking shape as a dress, with scissors and pins laid out on the table.",
+    "frame_last": "The rabbit tailor finishes the dress, holding it up with a satisfied smile, the completed dress hanging neatly.",
+    "frame_json_raw": "{\"first\": \"A small, white rabbit with glasses sits at a sewing table, holding fabric and a needle, preparing to sew.\", \"middle\": \"The rabbit tailor is in the middle of sewing, the fabric taking shape as a dress, with scissors and pins laid out on the table.\", \"last\": \"The rabbit tailor finishes the dress, holding it up with a satisfied smile, the completed dress hanging neatly.\"}"
+  },
+  {
+    "caption": "Beaver architect designs a dam",
+    "frame_first": "A beaver stands at the edge of a flowing stream, gnawing on a freshly cut tree branch under the morning sunlight.",
+    "frame_middle": "The beaver is seen placing branches and mud in the stream, constructing a dam with water beginning to pool behind it.",
+    "frame_last": "The beaver swims proudly in front of a partially completed dam, surrounded by logs and branches, as the sun sets over the calm, newly formed pond.",
+    "frame_json_raw": "{\"first\": \"A beaver stands at the edge of a flowing stream, gnawing on a freshly cut tree branch under the morning sunlight.\", \"middle\": \"The beaver is seen placing branches and mud in the stream, constructing a dam with water beginning to pool behind it.\", \"last\": \"The beaver swims proudly in front of a partially completed dam, surrounded by logs and branches, as the sun sets over the calm, newly formed pond.\"}"
+  },
+  {
+    "caption": "Sloth librarian arranges books slowly but surely",
+    "frame_first": "A sloth librarian, dressed in a tweed suit and glasses, reaches out to grab a book from a high shelf in a dimly lit library filled with towering bookcases.",
+    "frame_middle": "The sloth carefully examines the book's spine, then slowly places it on a nearby table, its deliberate movements highlighted by the soft afternoon light streaming through a window.",
+    "frame_last": "The sloth, now standing in front of a section of empty shelves, gently slides the book into its proper place, completing the task with a satisfied nod.",
+    "frame_json_raw": "{\"first\": \"A sloth librarian, dressed in a tweed suit and glasses, reaches out to grab a book from a high shelf in a dimly lit library filled with towering bookcases.\", \"middle\": \"The sloth carefully examines the book's spine, then slowly places it on a nearby table, its deliberate movements highlighted by the soft afternoon light streaming through a window.\", \"last\": \"The sloth, now standing in front of a section of empty shelves, gently slides the book into its proper place, completing the task with a satisfied nod.\"}"
+  },
+  {
+    "caption": "Dog firefighter rescues kittens from a tree",
+    "frame_first": "A dog in a small firefighter helmet stands at the base of a tall tree, looking up with focused attention. The tree is lush and green, and the sun is shining brightly in a clear blue sky.",
+    "frame_middle": "The dog, now climbing the tree with agility, reaches a branch where three kittens are huddled together, meowing softly. The sunlight filters through the leaves, casting dappled light on the scene.",
+    "frame_last": "The dog, with a kitten gently held in its mouth, jumps down from the tree onto soft grass. The other two kittens are safely on the ground, and a group of onlookers cheer the heroic dog.",
+    "frame_json_raw": "{\"first\": \"A dog in a small firefighter helmet stands at the base of a tall tree, looking up with focused attention. The tree is lush and green, and the sun is shining brightly in a clear blue sky.\", \"middle\": \"The dog, now climbing the tree with agility, reaches a branch where three kittens are huddled together, meowing softly. The sunlight filters through the leaves, casting dappled light on the scene.\", \"last\": \"The dog, with a kitten gently held in its mouth, jumps down from the tree onto soft grass. The other two kittens are safely on the ground, and a group of onlookers cheer the heroic dog.\"}"
+  },
+  {
+    "caption": "Rabbit police officer directs traffic",
+    "frame_first": "A rabbit in a police uniform stands at the intersection, holding a stop sign.",
+    "frame_middle": "The rabbit police officer raises their arm to signal cars to proceed through the intersection.",
+    "frame_last": "The rabbit officer looks both ways, ensuring all traffic has moved safely before lowering their arm.",
+    "frame_json_raw": "{\"first\": \"A rabbit in a police uniform stands at the intersection, holding a stop sign.\", \"middle\": \"The rabbit police officer raises their arm to signal cars to proceed through the intersection.\", \"last\": \"The rabbit officer looks both ways, ensuring all traffic has moved safely before lowering their arm.\"}"
+  },
+  {
+    "caption": "Bear journalist interviews a celebrity",
+    "frame_first": "A cozy studio interior with warm lighting. A bear journalist sits at a desk, a microphone in front of them, facing a celebrity who is adjusting their seat.",
+    "frame_middle": "The bear journalist leans in, asking a question with a notepad in hand, while the celebrity, seated across, smiles and prepares to answer.",
+    "frame_last": "The interview concludes with the bear journalist and the celebrity shaking hands, both smiling as the camera pulls back to show the studio setup.",
+    "frame_json_raw": "{\"first\": \"A cozy studio interior with warm lighting. A bear journalist sits at a desk, a microphone in front of them, facing a celebrity who is adjusting their seat.\", \"middle\": \"The bear journalist leans in, asking a question with a notepad in hand, while the celebrity, seated across, smiles and prepares to answer.\", \"last\": \"The interview concludes with the bear journalist and the celebrity shaking hands, both smiling as the camera pulls back to show the studio setup.\"}"
+  },
+  {
+    "caption": "Friends share stories around bonfire, under starry night sky",
+    "frame_first": "A group of friends sit in a circle around a crackling bonfire, their faces illuminated by the warm, flickering light. The sky above is a deep, inky black, dotted with countless stars.",
+    "frame_middle": "One friend leans forward, gesturing animatedly as they tell a story, while others listen intently, their laughter and chatter mingling with the sound of crackling wood.",
+    "frame_last": "The fire burns lower, casting long shadows, as friends continue sharing stories, their silhouettes outlined against the glowing embers and the vast, starlit sky.",
+    "frame_json_raw": "{\"first\": \"A group of friends sit in a circle around a crackling bonfire, their faces illuminated by the warm, flickering light. The sky above is a deep, inky black, dotted with countless stars.\", \"middle\": \"One friend leans forward, gesturing animatedly as they tell a story, while others listen intently, their laughter and chatter mingling with the sound of crackling wood.\", \"last\": \"The fire burns lower, casting long shadows, as friends continue sharing stories, their silhouettes outlined against the glowing embers and the vast, starlit sky.\"}"
+  },
+  {
+    "caption": "Violinist and pianist captivate with harmonious duet performance",
+    "frame_first": "A violinist stands at the center of a dimly lit stage, bow poised over strings, facing a pianist seated at a grand piano, both illuminated by soft spotlight.",
+    "frame_middle": "The violinist's bow moves vigorously across the strings, while the pianist's fingers dance swiftly over the keys, their music filling the room with a rich, harmonious melody.",
+    "frame_last": "The performance concludes with a final, resonant note from the piano, the violinist and pianist share a knowing glance, and the audience erupts into applause.",
+    "frame_json_raw": "{\"first\": \"A violinist stands at the center of a dimly lit stage, bow poised over strings, facing a pianist seated at a grand piano, both illuminated by soft spotlight.\", \"middle\": \"The violinist's bow moves vigorously across the strings, while the pianist's fingers dance swiftly over the keys, their music filling the room with a rich, harmonious melody.\", \"last\": \"The performance concludes with a final, resonant note from the piano, the violinist and pianist share a knowing glance, and the audience erupts into applause.\"}"
+  },
+  {
+    "caption": "Astronauts repair spacecraft, floating weightlessly in vastness of space",
+    "frame_first": "Two astronauts float outside a spacecraft, one holding a toolkit, the other reaching towards a damaged panel, with Earth's blue curve visible in the background.",
+    "frame_middle": "The astronauts are now working on the damaged panel, their spacesuits glowing slightly from the sunlight, stars twinkling in the dark expanse around them.",
+    "frame_last": "One astronaut secures a new panel onto the spacecraft, while the other gives a thumbs up, both silhouetted against the bright sun behind them.",
+    "frame_json_raw": "{\"first\": \"Two astronauts float outside a spacecraft, one holding a toolkit, the other reaching towards a damaged panel, with Earth's blue curve visible in the background.\", \"middle\": \"The astronauts are now working on the damaged panel, their spacesuits glowing slightly from the sunlight, stars twinkling in the dark expanse around them.\", \"last\": \"One astronaut secures a new panel onto the spacecraft, while the other gives a thumbs up, both silhouetted against the bright sun behind them.\"}"
+  },
+  {
+    "caption": "Gardener tenderly prunes bonsai tree, creating natural art",
+    "frame_first": "A gardener in green attire stands beside a bonsai tree, gently holding a pair of pruning shears, ready to trim.",
+    "frame_middle": "The gardener carefully snips a branch, focusing intently on the bonsai's delicate form, sunlight filtering through the window.",
+    "frame_last": "The gardener steps back, admiring the newly shaped bonsai tree, which now displays a refined, natural artistic silhouette.",
+    "frame_json_raw": "{\"first\": \"A gardener in green attire stands beside a bonsai tree, gently holding a pair of pruning shears, ready to trim.\", \"middle\": \"The gardener carefully snips a branch, focusing intently on the bonsai's delicate form, sunlight filtering through the window.\", \"last\": \"The gardener steps back, admiring the newly shaped bonsai tree, which now displays a refined, natural artistic silhouette.\"}"
+  },
+  {
+    "caption": "Girl and grandmother bake cookies, laughter filling the kitchen",
+    "frame_first": "A girl and her grandmother stand at a kitchen counter, mixing ingredients for cookies, their faces lit up with smiles.",
+    "frame_middle": "Both are now rolling out dough, giggling as they work, sunlight streaming through a window, casting a warm glow on the kitchen.",
+    "frame_last": "They place cookies on a tray, sharing a moment of satisfaction and joy, the kitchen filled with the scent of baking and their laughter.",
+    "frame_json_raw": "{\"first\": \"A girl and her grandmother stand at a kitchen counter, mixing ingredients for cookies, their faces lit up with smiles.\", \"middle\": \"Both are now rolling out dough, giggling as they work, sunlight streaming through a window, casting a warm glow on the kitchen.\", \"last\": \"They place cookies on a tray, sharing a moment of satisfaction and joy, the kitchen filled with the scent of baking and their laughter.\"}"
+  },
+  {
+    "caption": "Elderly man feeds pigeons, surrounded by fluttering wings",
+    "frame_first": "An elderly man stands in a sunlit park, scattering breadcrumbs, as pigeons begin to gather around him.",
+    "frame_middle": "The elderly man's hand is paused mid-air, surrounded by a flurry of fluttering pigeon wings as they peck at the food.",
+    "frame_last": "The elderly man smiles, looking at the flock of pigeons now settled on the ground, their wings folded peacefully around him.",
+    "frame_json_raw": "{\"first\": \"An elderly man stands in a sunlit park, scattering breadcrumbs, as pigeons begin to gather around him.\", \"middle\": \"The elderly man's hand is paused mid-air, surrounded by a flurry of fluttering pigeon wings as they peck at the food.\", \"last\": \"The elderly man smiles, looking at the flock of pigeons now settled on the ground, their wings folded peacefully around him.\"}"
+  },
+  {
+    "caption": "A group of elephants playfully spray water at each other",
+    "frame_first": "A group of elephants stand in a shallow, sunlit watering hole, one elephant begins to spray water with its trunk.",
+    "frame_middle": "Elephants are now actively spraying water at each other, their trunks moving swiftly, water droplets flying in the air under the bright sunlight.",
+    "frame_last": "The elephants, covered in water droplets, pause and look at each other, their playfulness evident in their relaxed postures by the watering hole.",
+    "frame_json_raw": "{\"first\": \"A group of elephants stand in a shallow, sunlit watering hole, one elephant begins to spray water with its trunk.\", \"middle\": \"Elephants are now actively spraying water at each other, their trunks moving swiftly, water droplets flying in the air under the bright sunlight.\", \"last\": \"The elephants, covered in water droplets, pause and look at each other, their playfulness evident in their relaxed postures by the watering hole.\"}"
+  },
+  {
+    "caption": "A young girl and her teddy bear have a tea party",
+    "frame_first": "A young girl sets a small table with a tea set and two plates, placing her teddy bear in one of the chairs.",
+    "frame_middle": "The girl and her teddy bear are sitting across from each other, the girl pouring tea into two cups with a smile.",
+    "frame_last": "The girl and teddy bear are laughing, with a plate of cookies between them and steam rising from their cups.",
+    "frame_json_raw": "{\"first\": \"A young girl sets a small table with a tea set and two plates, placing her teddy bear in one of the chairs.\", \"middle\": \"The girl and her teddy bear are sitting across from each other, the girl pouring tea into two cups with a smile.\", \"last\": \"The girl and teddy bear are laughing, with a plate of cookies between them and steam rising from their cups.\"}"
+  },
+  {
+    "caption": "A child and a puppy embark on an adventure through a forest",
+    "frame_first": "A child, wearing a red jacket, holds a leash attached to a small, energetic puppy as they step into a dense, sun-dappled forest. The morning light filters through the trees, casting a warm glow.",
+    "frame_middle": "The child and puppy explore a clearing in the forest, surrounded by tall trees and wildflowers. The puppy sniffs the ground while the child looks up, smiling at the sunlight breaking through the canopy.",
+    "frame_last": "As the sun begins to set, casting long shadows, the child and puppy walk hand in paw, heading back through the now dimly lit forest, their adventure coming to a close.",
+    "frame_json_raw": "{\"first\": \"A child, wearing a red jacket, holds a leash attached to a small, energetic puppy as they step into a dense, sun-dappled forest. The morning light filters through the trees, casting a warm glow.\", \"middle\": \"The child and puppy explore a clearing in the forest, surrounded by tall trees and wildflowers. The puppy sniffs the ground while the child looks up, smiling at the sunlight breaking through the canopy.\", \"last\": \"As the sun begins to set, casting long shadows, the child and puppy walk hand in paw, heading back through the now dimly lit forest, their adventure coming to a close.\"}"
+  },
+  {
+    "caption": "A pack of wolves howl in harmony, their voices echoing through the night",
+    "frame_first": "A pack of wolves stands in a moonlit forest clearing, their heads thrown back as they begin to howl.",
+    "frame_middle": "The wolves' howls blend into a harmonious chorus, their breath visible in the cold night air.",
+    "frame_last": "The wolves gradually stop howling, their silhouettes fading into the dark forest as the echoes of their voices dissipate.",
+    "frame_json_raw": "{\"first\": \"A pack of wolves stands in a moonlit forest clearing, their heads thrown back as they begin to howl.\", \"middle\": \"The wolves' howls blend into a harmonious chorus, their breath visible in the cold night air.\", \"last\": \"The wolves gradually stop howling, their silhouettes fading into the dark forest as the echoes of their voices dissipate.\"}"
+  },
+  {
+    "caption": "A parent and child build a sandcastle together",
+    "frame_first": "A parent and child sit on a sunny beach, facing the ocean, with buckets and shovels in hand, beginning to gather sand for a sandcastle.",
+    "frame_middle": "The parent and child work together, stacking sand towers and adding details to the sandcastle, the sun shining brightly overhead.",
+    "frame_last": "The parent and child step back to admire their completed sandcastle, smiling at each other, as waves gently lap at the base of their creation.",
+    "frame_json_raw": "{\"first\": \"A parent and child sit on a sunny beach, facing the ocean, with buckets and shovels in hand, beginning to gather sand for a sandcastle.\", \"middle\": \"The parent and child work together, stacking sand towers and adding details to the sandcastle, the sun shining brightly overhead.\", \"last\": \"The parent and child step back to admire their completed sandcastle, smiling at each other, as waves gently lap at the base of their creation.\"}"
+  },
+  {
+    "caption": "A conductor leads an orchestra, guiding the musicians to create a harmonious symphony",
+    "frame_first": "The conductor stands at the front of the stage, baton in hand, facing a full orchestra with strings, woodwinds, brass, and percussion sections, preparing to start a symphony.",
+    "frame_middle": "The conductor's arms move gracefully, leading the musicians as they play, their instruments glowing under the stage lights, creating a wave of sound.",
+    "frame_last": "The conductor concludes with a final, sweeping gesture as the last notes of the symphony fade, the musicians looking satisfied and the audience preparing to applaud.",
+    "frame_json_raw": "{\"first\": \"The conductor stands at the front of the stage, baton in hand, facing a full orchestra with strings, woodwinds, brass, and percussion sections, preparing to start a symphony.\", \"middle\": \"The conductor's arms move gracefully, leading the musicians as they play, their instruments glowing under the stage lights, creating a wave of sound.\", \"last\": \"The conductor concludes with a final, sweeping gesture as the last notes of the symphony fade, the musicians looking satisfied and the audience preparing to applaud.\"}"
+  },
+  {
+    "caption": "A dog and a cat playfully chase each other",
+    "frame_first": "A dog and a cat are in a sunlit living room, the dog crouches, ready to chase the cat who looks back with a playful expression.",
+    "frame_middle": "The dog leaps after the cat, both animals running side by side with tails up, their playful bounces evident in the soft afternoon light.",
+    "frame_last": "The cat darts under a couch, the dog stops at the edge, nose sniffing the air, both panting and looking satisfied.",
+    "frame_json_raw": "{\"first\": \"A dog and a cat are in a sunlit living room, the dog crouches, ready to chase the cat who looks back with a playful expression.\", \"middle\": \"The dog leaps after the cat, both animals running side by side with tails up, their playful bounces evident in the soft afternoon light.\", \"last\": \"The cat darts under a couch, the dog stops at the edge, nose sniffing the air, both panting and looking satisfied.\"}"
+  },
+  {
+    "caption": "A group of children engage in a lively game of jump rope",
+    "frame_first": "A group of children gather in a sunny playground, with one child turning the jump rope while others wait their turn, ready to jump.",
+    "frame_middle": "Children take turns jumping over the rope, their faces filled with excitement and concentration, the rope spinning rapidly beneath their feet.",
+    "frame_last": "The game continues with laughter and cheers, children jumping in unison, the jump rope a blur in the bright afternoon light.",
+    "frame_json_raw": "{\"first\": \"A group of children gather in a sunny playground, with one child turning the jump rope while others wait their turn, ready to jump.\", \"middle\": \"Children take turns jumping over the rope, their faces filled with excitement and concentration, the rope spinning rapidly beneath their feet.\", \"last\": \"The game continues with laughter and cheers, children jumping in unison, the jump rope a blur in the bright afternoon light.\"}"
+  },
+  {
+    "caption": "A couple dances under the moonlight, their steps perfectly in sync with the romantic melody",
+    "frame_first": "A couple begins to dance under a full moon, their shadows stretching across the ground as they start their first step.",
+    "frame_middle": "The couple's movements are fluid and synchronized, their bodies close as they twirl gracefully to the romantic melody.",
+    "frame_last": "Under the soft glow of the moon, the couple finishes their dance with a gentle embrace, their faces lit by the serene night sky.",
+    "frame_json_raw": "{\"first\": \"A couple begins to dance under a full moon, their shadows stretching across the ground as they start their first step.\", \"middle\": \"The couple's movements are fluid and synchronized, their bodies close as they twirl gracefully to the romantic melody.\", \"last\": \"Under the soft glow of the moon, the couple finishes their dance with a gentle embrace, their faces lit by the serene night sky.\"}"
+  },
+  {
+    "caption": "A group of volunteers clean up a beach, working together to protect the environment",
+    "frame_first": "A group of volunteers in bright vests and gloves gather at the edge of a sandy beach, ready to start picking up litter under a clear blue sky.",
+    "frame_middle": "Volunteers are spread out along the shoreline, bending down to collect trash, with the ocean waves gently lapping in the background.",
+    "frame_last": "The volunteers meet back at the starting point, holding large bags of collected trash, smiling and high-fiving each other as the sun begins to set over the ocean.",
+    "frame_json_raw": "{\"first\": \"A group of volunteers in bright vests and gloves gather at the edge of a sandy beach, ready to start picking up litter under a clear blue sky.\", \"middle\": \"Volunteers are spread out along the shoreline, bending down to collect trash, with the ocean waves gently lapping in the background.\", \"last\": \"The volunteers meet back at the starting point, holding large bags of collected trash, smiling and high-fiving each other as the sun begins to set over the ocean.\"}"
+  },
+  {
+    "caption": "A parent teaches a child to ride a bike",
+    "frame_first": "A parent stands behind a small child, holding the back of a red bicycle in a sunny park.",
+    "frame_middle": "The parent lets go as the child pedals, looking confidently ahead, with a gentle breeze rustling the trees in the background.",
+    "frame_last": "The child rides the bike independently, looking back with a big smile, while the parent cheers from the side, hands raised in celebration.",
+    "frame_json_raw": "{\"first\": \"A parent stands behind a small child, holding the back of a red bicycle in a sunny park.\", \"middle\": \"The parent lets go as the child pedals, looking confidently ahead, with a gentle breeze rustling the trees in the background.\", \"last\": \"The child rides the bike independently, looking back with a big smile, while the parent cheers from the side, hands raised in celebration.\"}"
+  },
+  {
+    "caption": "A group of firefighters work together, battling the flames and saving lives",
+    "frame_first": "A group of firefighters, wearing full gear, stand in front of a burning building, with flames licking at the windows and smoke billowing into the sky.",
+    "frame_middle": "Firefighters are using hoses to spray water on the raging fire, while others carry a stretcher with an injured person, their faces determined and focused.",
+    "frame_last": "The firefighters, now covered in soot, are helping the last of the evacuees out of the building, with the fire now under control and the sun setting behind the smoke-filled sky.",
+    "frame_json_raw": "{\"first\": \"A group of firefighters, wearing full gear, stand in front of a burning building, with flames licking at the windows and smoke billowing into the sky.\", \"middle\": \"Firefighters are using hoses to spray water on the raging fire, while others carry a stretcher with an injured person, their faces determined and focused.\", \"last\": \"The firefighters, now covered in soot, are helping the last of the evacuees out of the building, with the fire now under control and the sun setting behind the smoke-filled sky.\"}"
+  },
+  {
+    "caption": "A parent and child plant a garden, nurturing plants and watching them grow",
+    "frame_first": "A parent and child kneel together in a freshly dug garden bed, carefully placing a small plant into the soil under a bright, sunny sky.",
+    "frame_middle": "The parent and child stand back, watering the growing garden with a hose, surrounded by sprouting plants and flowers in the warm afternoon light.",
+    "frame_last": "The parent and child sit on a bench, shaded by a lush, blooming garden, smiling at each other as the sun sets behind them, casting a golden glow over the scene.",
+    "frame_json_raw": "{\"first\": \"A parent and child kneel together in a freshly dug garden bed, carefully placing a small plant into the soil under a bright, sunny sky.\", \"middle\": \"The parent and child stand back, watering the growing garden with a hose, surrounded by sprouting plants and flowers in the warm afternoon light.\", \"last\": \"The parent and child sit on a bench, shaded by a lush, blooming garden, smiling at each other as the sun sets behind them, casting a golden glow over the scene.\"}"
+  },
+  {
+    "caption": "A cat pouncing on a small toy, causing it to roll across the wooden floor.",
+    "frame_first": "A cat crouches low to the ground, eyes fixed on a small toy in the center of a wooden floor, preparing to pounce.",
+    "frame_middle": "The cat leaps through the air with claws extended, narrowly missing the toy which begins to roll across the floor.",
+    "frame_last": "The cat lands gracefully and chases after the toy, now rolling rapidly across the wooden floor.",
+    "frame_json_raw": "{\"first\": \"A cat crouches low to the ground, eyes fixed on a small toy in the center of a wooden floor, preparing to pounce.\", \"middle\": \"The cat leaps through the air with claws extended, narrowly missing the toy which begins to roll across the floor.\", \"last\": \"The cat lands gracefully and chases after the toy, now rolling rapidly across the wooden floor.\"}"
+  },
+  {
+    "caption": "A gust of wind pushing a swinging gate, making it moving open.",
+    "frame_first": "A wooden gate hangs slightly ajar, with leaves swirling around it as a gust of wind approaches.",
+    "frame_middle": "The gust hits the gate, causing it to swing outward with a creak.",
+    "frame_last": "The gate swings to its full open position, then begins to swing back, the wind subsiding.",
+    "frame_json_raw": "{\"first\": \"A wooden gate hangs slightly ajar, with leaves swirling around it as a gust of wind approaches.\", \"middle\": \"The gust hits the gate, causing it to swing outward with a creak.\", \"last\": \"The gate swings to its full open position, then begins to swing back, the wind subsiding.\"}"
+  },
+  {
+    "caption": "A child throwing a frisbee, sending it spinning through the air towards a park bench.",
+    "frame_first": "A child stands in a sunlit park, about to throw a frisbee, with a park bench visible in the background.",
+    "frame_middle": "The frisbee spins through the air, its trajectory arcing towards the park bench as the child watches.",
+    "frame_last": "The frisbee hovers near the park bench, its motion slowing as it prepares to land in the grass.",
+    "frame_json_raw": "{\"first\": \"A child stands in a sunlit park, about to throw a frisbee, with a park bench visible in the background.\", \"middle\": \"The frisbee spins through the air, its trajectory arcing towards the park bench as the child watches.\", \"last\": \"The frisbee hovers near the park bench, its motion slowing as it prepares to land in the grass.\"}"
+  },
+  {
+    "caption": "A bowling ball striking a set of pins, causing them to topple in different directions.",
+    "frame_first": "A bowling ball hurtles towards a set of ten pins, all standing upright at the end of the lane.",
+    "frame_middle": "The bowling ball strikes the headpin, sending a wave of motion through the tightly packed pins as they begin to topple.",
+    "frame_last": "Most of the pins have fallen, scattered across the lane in different directions, with a few still standing.",
+    "frame_json_raw": "{\"first\": \"A bowling ball hurtles towards a set of ten pins, all standing upright at the end of the lane.\", \"middle\": \"The bowling ball strikes the headpin, sending a wave of motion through the tightly packed pins as they begin to topple.\", \"last\": \"Most of the pins have fallen, scattered across the lane in different directions, with a few still standing.\"}"
+  },
+  {
+    "caption": "A skateboarder performing a trick, launching their board into the air before landing back on the pavement.",
+    "frame_first": "A skateboarder crouches low, gathering speed down a slight incline, the board nearly parallel to the pavement, with the sun casting long shadows at dusk.",
+    "frame_middle": "The skateboarder leaps, the board flying into the air, the wheels glowing faintly in the fading light, with the cityscape behind them.",
+    "frame_last": "The skateboarder lands smoothly back on the pavement, the board steady under their feet, as the last rays of sunlight disappear below the horizon.",
+    "frame_json_raw": "{\"first\": \"A skateboarder crouches low, gathering speed down a slight incline, the board nearly parallel to the pavement, with the sun casting long shadows at dusk.\", \"middle\": \"The skateboarder leaps, the board flying into the air, the wheels glowing faintly in the fading light, with the cityscape behind them.\", \"last\": \"The skateboarder lands smoothly back on the pavement, the board steady under their feet, as the last rays of sunlight disappear below the horizon.\"}"
+  },
+  {
+    "caption": "A strong wave crashing into a small boat, rocking it violently from side to side.",
+    "frame_first": "A towering wave approaches a small boat, its crest foaming white against the dark, churning sea.",
+    "frame_middle": "The wave crashes over the boat, drenching it and causing it to rock violently from side to side.",
+    "frame_last": "The boat, now soaked and listing, recovers slightly as the wave's force dissipates, leaving the sea momentarily calm.",
+    "frame_json_raw": "{\"first\": \"A towering wave approaches a small boat, its crest foaming white against the dark, churning sea.\", \"middle\": \"The wave crashes over the boat, drenching it and causing it to rock violently from side to side.\", \"last\": \"The boat, now soaked and listing, recovers slightly as the wave's force dissipates, leaving the sea momentarily calm.\"}"
+  },
+  {
+    "caption": "A dog nudging a ball with its nose, making it bounce erratically on the grass.",
+    "frame_first": "A golden retriever stands in a sunlit green meadow, gently nudging a red rubber ball with its nose.",
+    "frame_middle": "The ball bounces off the grass unpredictably as the dog continues to nudge it with its snout, creating a playful scene.",
+    "frame_last": "The dog watches the ball as it rolls away, its tail wagging with excitement, under a clear blue sky.",
+    "frame_json_raw": "{\"first\": \"A golden retriever stands in a sunlit green meadow, gently nudging a red rubber ball with its nose.\", \"middle\": \"The ball bounces off the grass unpredictably as the dog continues to nudge it with its snout, creating a playful scene.\", \"last\": \"The dog watches the ball as it rolls away, its tail wagging with excitement, under a clear blue sky.\"}"
+  },
+  {
+    "caption": "A soccer player kicking a ball, sending it soaring towards the goalpost.",
+    "frame_first": "A soccer player winds up for a powerful kick, the ball positioned at his feet, with the goalpost visible in the background.",
+    "frame_middle": "The player's foot makes contact with the ball, sending it flying towards the goalpost with a trail of motion blur.",
+    "frame_last": "The ball soars through the air, nearly reaching the goalpost, with the goalkeeper rushing to intercept it.",
+    "frame_json_raw": "{\"first\": \"A soccer player winds up for a powerful kick, the ball positioned at his feet, with the goalpost visible in the background.\", \"middle\": \"The player's foot makes contact with the ball, sending it flying towards the goalpost with a trail of motion blur.\", \"last\": \"The ball soars through the air, nearly reaching the goalpost, with the goalkeeper rushing to intercept it.\"}"
+  },
+  {
+    "caption": "A swimmer diving into a pool, creating a splash that disturbs the calm water surface.",
+    "frame_first": "A swimmer stands at the edge of a pool, body poised for the dive, with the sun reflecting off the calm water surface.",
+    "frame_middle": "The swimmer plunges into the pool, their body slicing through the water, initiating a ripple of disturbance.",
+    "frame_last": "A large splash spreads out from the point of entry, waves radiating across the pool's surface, breaking the previous tranquility.",
+    "frame_json_raw": "{\"first\": \"A swimmer stands at the edge of a pool, body poised for the dive, with the sun reflecting off the calm water surface.\", \"middle\": \"The swimmer plunges into the pool, their body slicing through the water, initiating a ripple of disturbance.\", \"last\": \"A large splash spreads out from the point of entry, waves radiating across the pool's surface, breaking the previous tranquility.\"}"
+  },
+  {
+    "caption": "A child knocking over a tower of blocks, scattering pieces across the carpet.",
+    "frame_first": "A child raises their hand to knock over a tall tower of colorful blocks, standing on a soft, beige carpet.",
+    "frame_middle": "The tower of blocks topples and tumbles, pieces flying in all directions across the carpet.",
+    "frame_last": "The carpet is now scattered with blocks, the child looks around at the mess with a wide-eyed expression.",
+    "frame_json_raw": "{\"first\": \"A child raises their hand to knock over a tall tower of colorful blocks, standing on a soft, beige carpet.\", \"middle\": \"The tower of blocks topples and tumbles, pieces flying in all directions across the carpet.\", \"last\": \"The carpet is now scattered with blocks, the child looks around at the mess with a wide-eyed expression.\"}"
+  },
+  {
+    "caption": "A book sliding off a tilted shelf, landing with a on the floor.",
+    "frame_first": "A bookshelf is tilted slightly, and a book is just beginning to slide off the edge, with the shelf's contents and a glimpse of the floor visible.",
+    "frame_middle": "The book is halfway through its descent, flipping slightly in the air as it falls from the shelf towards the floor.",
+    "frame_last": "The book has landed on the floor with a thud, now lying open on its side, with dust particles floating in the air from the impact.",
+    "frame_json_raw": "{\"first\": \"A bookshelf is tilted slightly, and a book is just beginning to slide off the edge, with the shelf's contents and a glimpse of the floor visible.\", \"middle\": \"The book is halfway through its descent, flipping slightly in the air as it falls from the shelf towards the floor.\", \"last\": \"The book has landed on the floor with a thud, now lying open on its side, with dust particles floating in the air from the impact.\"}"
+  },
+  {
+    "caption": "A firefighter spraying a jet of water at a burning structure, causing the flames to waver and shrink.",
+    "frame_first": "A firefighter stands in front of a burning building, the flames licking at the windows, with a water hose in hand, about to spray.",
+    "frame_middle": "A powerful jet of water arcs from the firefighter's hose, hitting the base of the flames which waver and shrink under the force.",
+    "frame_last": "The flames are significantly reduced, sputtering and dying down as the firefighter continues to spray water, the building now mostly free of fire.",
+    "frame_json_raw": "{\"first\": \"A firefighter stands in front of a burning building, the flames licking at the windows, with a water hose in hand, about to spray.\", \"middle\": \"A powerful jet of water arcs from the firefighter's hose, hitting the base of the flames which waver and shrink under the force.\", \"last\": \"The flames are significantly reduced, sputtering and dying down as the firefighter continues to spray water, the building now mostly free of fire.\"}"
+  },
+  {
+    "caption": "A basketball player making a powerful slam dunk, sending the hoop vibrating from the impact.",
+    "frame_first": "A basketball player leaps high towards the hoop, the rim coming into focus as he extends his arm.",
+    "frame_middle": "The player's hand slams the ball through the hoop with a forceful impact, causing the backboard to vibrate.",
+    "frame_last": "The hoop continues to vibrate slightly, the crowd erupts in cheers, and the player descends back to the court.",
+    "frame_json_raw": "{\"first\": \"A basketball player leaps high towards the hoop, the rim coming into focus as he extends his arm.\", \"middle\": \"The player's hand slams the ball through the hoop with a forceful impact, causing the backboard to vibrate.\", \"last\": \"The hoop continues to vibrate slightly, the crowd erupts in cheers, and the player descends back to the court.\"}"
+  },
+  {
+    "caption": "A bird landing on a delicate flower stem, causing the blossom to sway gently.",
+    "frame_first": "A bird hovers above a delicate flower stem, its wings beating rapidly.",
+    "frame_middle": "The bird lands softly on the flower stem, causing the blossom to sway gently from side to side.",
+    "frame_last": "The bird perches steadily, the flower stem now still, with the blossom gently returning to its original position.",
+    "frame_json_raw": "{\"first\": \"A bird hovers above a delicate flower stem, its wings beating rapidly.\", \"middle\": \"The bird lands softly on the flower stem, causing the blossom to sway gently from side to side.\", \"last\": \"The bird perches steadily, the flower stem now still, with the blossom gently returning to its original position.\"}"
+  },
+  {
+    "caption": "A chef tossing a pancake in the air, flipping it before it lands back on the pan.",
+    "frame_first": "A chef stands in a well-lit kitchen, a spatula in one hand and a pancake on the pan in front of him. He prepares to toss the pancake into the air.",
+    "frame_middle": "The pancake is in the air, flipping gracefully, sunlight streaming through a window highlights its golden edges.",
+    "frame_last": "The chef catches the pancake back on the pan, a satisfied smile on his face as he adjusts the spatula for the next flip.",
+    "frame_json_raw": "{\"first\": \"A chef stands in a well-lit kitchen, a spatula in one hand and a pancake on the pan in front of him. He prepares to toss the pancake into the air.\", \"middle\": \"The pancake is in the air, flipping gracefully, sunlight streaming through a window highlights its golden edges.\", \"last\": \"The chef catches the pancake back on the pan, a satisfied smile on his face as he adjusts the spatula for the next flip.\"}"
+  },
+  {
+    "caption": "A snowball thrown at a wall, bursting apart and scattering bits of snow.",
+    "frame_first": "A snowball hurtles towards a solid white wall under a bright, snowy sky.",
+    "frame_middle": "The snowball impacts the wall, beginning to break apart into smaller pieces.",
+    "frame_last": "Bits of snow scatter in all directions from the point of impact, leaving a slightly damp mark on the wall.",
+    "frame_json_raw": "{\"first\": \"A snowball hurtles towards a solid white wall under a bright, snowy sky.\", \"middle\": \"The snowball impacts the wall, beginning to break apart into smaller pieces.\", \"last\": \"Bits of snow scatter in all directions from the point of impact, leaving a slightly damp mark on the wall.\"}"
+  },
+  {
+    "caption": "A child jumping onto a trampoline, compressing the surface and bouncing back into the air.",
+    "frame_first": "A child runs towards a trampoline in a sunny backyard, preparing to jump.",
+    "frame_middle": "The child's feet hit the trampoline, causing the surface to compress under their weight.",
+    "frame_last": "The child bounces high into the air, legs bent, with the trampoline stretching back to its original shape below.",
+    "frame_json_raw": "{\"first\": \"A child runs towards a trampoline in a sunny backyard, preparing to jump.\", \"middle\": \"The child's feet hit the trampoline, causing the surface to compress under their weight.\", \"last\": \"The child bounces high into the air, legs bent, with the trampoline stretching back to its original shape below.\"}"
+  },
+  {
+    "caption": "A fisherman casting a line into the lake, causing ripples to form around the lure.",
+    "frame_first": "A fisherman stands at the lakeside, his arm pulled back, preparing to cast his fishing line into the calm, early morning lake.",
+    "frame_middle": "The fishing line whizzes through the air, the fisherman's rod bent with the force of the cast, as the sun glints off the water.",
+    "frame_last": "The lure hits the water with a soft splash, creating gentle ripples that spread outward across the glassy surface of the lake.",
+    "frame_json_raw": "{\"first\": \"A fisherman stands at the lakeside, his arm pulled back, preparing to cast his fishing line into the calm, early morning lake.\", \"middle\": \"The fishing line whizzes through the air, the fisherman's rod bent with the force of the cast, as the sun glints off the water.\", \"last\": \"The lure hits the water with a soft splash, creating gentle ripples that spread outward across the glassy surface of the lake.\"}"
+  },
+  {
+    "caption": "A dog tugging on a rope toy, pulling it and making a nearby chair wobble.",
+    "frame_first": "A golden retriever stands in a sunlit living room, its mouth firmly clamped onto a red rope toy.",
+    "frame_middle": "The dog tugs forcefully on the rope toy, causing a wooden chair beside it to wobble and creak.",
+    "frame_last": "The dog lets go of the toy, panting slightly, as the chair settles back into place.",
+    "frame_json_raw": "{\"first\": \"A golden retriever stands in a sunlit living room, its mouth firmly clamped onto a red rope toy.\", \"middle\": \"The dog tugs forcefully on the rope toy, causing a wooden chair beside it to wobble and creak.\", \"last\": \"The dog lets go of the toy, panting slightly, as the chair settles back into place.\"}"
+  },
+  {
+    "caption": "A deer brushing past a low tree branch, setting loose a flurry of autumn leaves.",
+    "frame_first": "A deer approaches a low tree branch covered in vibrant autumn leaves, its antlers nearly touching the foliage.",
+    "frame_middle": "The deer's antlers brush against the branch, causing a cascade of leaves to fall around it.",
+    "frame_last": "The deer continues on, leaving a trail of fallen leaves behind, the ground now partially covered in the colorful autumn foliage.",
+    "frame_json_raw": "{\"first\": \"A deer approaches a low tree branch covered in vibrant autumn leaves, its antlers nearly touching the foliage.\", \"middle\": \"The deer's antlers brush against the branch, causing a cascade of leaves to fall around it.\", \"last\": \"The deer continues on, leaving a trail of fallen leaves behind, the ground now partially covered in the colorful autumn foliage.\"}"
+  },
+  {
+    "caption": "A cat leaping onto a desk, causing a cup to tip over and spill its contents.",
+    "frame_first": "A cat leaps gracefully through the air, paws outstretched towards a cluttered desk, sunlight streaming through a window behind it.",
+    "frame_middle": "The cat lands with a soft thud, sending a cup wobbling off the edge of the desk, its contents beginning to spill.",
+    "frame_last": "The cat sits calmly on the desk, tail flicking, as the spilled liquid forms a small puddle on the floor below.",
+    "frame_json_raw": "{\"first\": \"A cat leaps gracefully through the air, paws outstretched towards a cluttered desk, sunlight streaming through a window behind it.\", \"middle\": \"The cat lands with a soft thud, sending a cup wobbling off the edge of the desk, its contents beginning to spill.\", \"last\": \"The cat sits calmly on the desk, tail flicking, as the spilled liquid forms a small puddle on the floor below.\"}"
+  },
+  {
+    "caption": "A bird pecking at a hanging lantern, making the lantern swing gently.",
+    "frame_first": "A bird perches on a hanging lantern, its beak just about to touch the lantern's surface.",
+    "frame_middle": "The bird pecks at the lantern, causing it to sway gently back and forth.",
+    "frame_last": "The bird flies away, leaving the lantern to slowly come to a stop.",
+    "frame_json_raw": "{\"first\": \"A bird perches on a hanging lantern, its beak just about to touch the lantern's surface.\", \"middle\": \"The bird pecks at the lantern, causing it to sway gently back and forth.\", \"last\": \"The bird flies away, leaving the lantern to slowly come to a stop.\"}"
+  },
+  {
+    "caption": "A bus splashing through a puddle, sending water spraying onto the sidewalk.",
+    "frame_first": "A city bus approaches a large puddle on the wet road, the reflection of streetlights shimmering on the water.",
+    "frame_middle": "The bus's front wheels hit the puddle, causing a powerful splash that arcs over the curb and onto the sidewalk.",
+    "frame_last": "Water droplets scatter in all directions, some clinging to the bus's tires as it continues on its route, leaving wet marks on the sidewalk.",
+    "frame_json_raw": "{\"first\": \"A city bus approaches a large puddle on the wet road, the reflection of streetlights shimmering on the water.\", \"middle\": \"The bus's front wheels hit the puddle, causing a powerful splash that arcs over the curb and onto the sidewalk.\", \"last\": \"Water droplets scatter in all directions, some clinging to the bus's tires as it continues on its route, leaving wet marks on the sidewalk.\"}"
+  },
+  {
+    "caption": "A plane touching down on a runway, causing a cloud of smoke as the tires meet the asphalt.",
+    "frame_first": "A plane descends towards a runway, its shadow stretching across the tarmac under a clear blue sky.",
+    "frame_middle": "The plane's wheels touch the runway, kicking up a thick cloud of smoke and debris.",
+    "frame_last": "The plane continues down the runway, the smoke cloud dissipating as it gains traction and slows to a stop.",
+    "frame_json_raw": "{\"first\": \"A plane descends towards a runway, its shadow stretching across the tarmac under a clear blue sky.\", \"middle\": \"The plane's wheels touch the runway, kicking up a thick cloud of smoke and debris.\", \"last\": \"The plane continues down the runway, the smoke cloud dissipating as it gains traction and slows to a stop.\"}"
+  },
+  {
+    "caption": "A horse brushing against a parked bike, tipping it over onto the ground.",
+    "frame_first": "A horse walks past a parked bike, its flank gently brushing against the bike's frame.",
+    "frame_middle": "The bike wobbles precariously as the horse continues to move, its shadow briefly covering the bike.",
+    "frame_last": "The bike tips over onto the ground with a clatter, lying on its side as the horse moves away.",
+    "frame_json_raw": "{\"first\": \"A horse walks past a parked bike, its flank gently brushing against the bike's frame.\", \"middle\": \"The bike wobbles precariously as the horse continues to move, its shadow briefly covering the bike.\", \"last\": \"The bike tips over onto the ground with a clatter, lying on its side as the horse moves away.\"}"
+  },
+  {
+    "caption": "A dolphin leaping over a boat's wake, creating a splash as it re-enters the water.",
+    "frame_first": "A sleek dolphin arcs gracefully over the churning wake of a boat, its body glistening in the sunlight.",
+    "frame_middle": "The dolphin reaches the peak of its leap, with the boat's wake foaming below and the clear blue sky above.",
+    "frame_last": "The dolphin re-enters the water with a powerful splash, creating ripples that spread outward in the calm sea.",
+    "frame_json_raw": "{\"first\": \"A sleek dolphin arcs gracefully over the churning wake of a boat, its body glistening in the sunlight.\", \"middle\": \"The dolphin reaches the peak of its leap, with the boat's wake foaming below and the clear blue sky above.\", \"last\": \"The dolphin re-enters the water with a powerful splash, creating ripples that spread outward in the calm sea.\"}"
+  },
+  {
+    "caption": "A cat pawing at a fallen leaf, sending it fluttering across the yard.",
+    "frame_first": "A cat stands in a sunlit yard, its paw reaching out towards a vibrant red leaf.",
+    "frame_middle": "The cat's paw makes contact with the leaf, gently nudging it into the air.",
+    "frame_last": "The leaf floats gracefully across the yard, the cat watching intently from where it stands.",
+    "frame_json_raw": "{\"first\": \"A cat stands in a sunlit yard, its paw reaching out towards a vibrant red leaf.\", \"middle\": \"The cat's paw makes contact with the leaf, gently nudging it into the air.\", \"last\": \"The leaf floats gracefully across the yard, the cat watching intently from where it stands.\"}"
+  },
+  {
+    "caption": "A deer running into a field of flowers, disturbing petals that float gently to the earth.",
+    "frame_first": "A deer bounds into a vibrant field of flowers, its hooves barely touching the ground.",
+    "frame_middle": "The deer's movement sends a flurry of petals aloft, creating a soft, colorful mist in the air.",
+    "frame_last": "The deer continues its run, leaving a trail of gently floating petals in its wake.",
+    "frame_json_raw": "{\"first\": \"A deer bounds into a vibrant field of flowers, its hooves barely touching the ground.\", \"middle\": \"The deer's movement sends a flurry of petals aloft, creating a soft, colorful mist in the air.\", \"last\": \"The deer continues its run, leaving a trail of gently floating petals in its wake.\"}"
+  },
+  {
+    "caption": "A fish splashing in a pond, making ripples that disturb a lily pad nearby.",
+    "frame_first": "A fish leaps out of the pond, its silver scales glinting in the sunlight.",
+    "frame_middle": "The fish slaps back into the water, creating concentric ripples that spread outward.",
+    "frame_last": "The ripples reach a lily pad, causing it to sway gently as water droplets dance on its surface.",
+    "frame_json_raw": "{\"first\": \"A fish leaps out of the pond, its silver scales glinting in the sunlight.\", \"middle\": \"The fish slaps back into the water, creating concentric ripples that spread outward.\", \"last\": \"The ripples reach a lily pad, causing it to sway gently as water droplets dance on its surface.\"}"
+  },
+  {
+    "caption": "A dog dragging a blanket off a bed, leaving it tangled on the floor.",
+    "frame_first": "A dog stands at the edge of a bed, mouth clamped firmly around a corner of a blanket, pulling it.",
+    "frame_middle": "The blanket is halfway off the bed, tangled and bunched up on the floor as the dog continues to drag it.",
+    "frame_last": "The dog has fully pulled the blanket off the bed, now lying on the floor with the blanket in a messy heap around it.",
+    "frame_json_raw": "{\"first\": \"A dog stands at the edge of a bed, mouth clamped firmly around a corner of a blanket, pulling it.\", \"middle\": \"The blanket is halfway off the bed, tangled and bunched up on the floor as the dog continues to drag it.\", \"last\": \"The dog has fully pulled the blanket off the bed, now lying on the floor with the blanket in a messy heap around it.\"}"
+  },
+  {
+    "caption": "A parrot knocking over a bottle on a counter, sending it rolling before crashing onto the floor.",
+    "frame_first": "A parrot perched on a counter, about to knock over a bottle with its wing.",
+    "frame_middle": "The bottle rolls across the counter, its glass gleaming under the kitchen lights.",
+    "frame_last": "The bottle crashes onto the floor, shattering into pieces with a loud noise.",
+    "frame_json_raw": "{\"first\": \"A parrot perched on a counter, about to knock over a bottle with its wing.\", \"middle\": \"The bottle rolls across the counter, its glass gleaming under the kitchen lights.\", \"last\": \"The bottle crashes onto the floor, shattering into pieces with a loud noise.\"}"
+  },
+  {
+    "caption": "A child launching a kite into the air, where the wind catches and pulls it upward.",
+    "frame_first": "A child stands in a grassy field, holding a kite with one hand, preparing to run.",
+    "frame_middle": "The child is running with the kite, the string taut as the wind starts to catch it.",
+    "frame_last": "The kite soars high into the sky, the child watching with a smile, still holding the kite string.",
+    "frame_json_raw": "{\"first\": \"A child stands in a grassy field, holding a kite with one hand, preparing to run.\", \"middle\": \"The child is running with the kite, the string taut as the wind starts to catch it.\", \"last\": \"The kite soars high into the sky, the child watching with a smile, still holding the kite string.\"}"
+  },
+  {
+    "caption": "A raccoon climbing onto a fence, making it wobble from side to side.",
+    "frame_first": "A raccoon approaches a wooden fence, its paws gripping the bottom rung.",
+    "frame_middle": "The raccoon is halfway up the fence, causing it to wobble slightly with each movement.",
+    "frame_last": "The raccoon reaches the top of the fence, standing upright and causing the fence to sway from side to side.",
+    "frame_json_raw": "{\"first\": \"A raccoon approaches a wooden fence, its paws gripping the bottom rung.\", \"middle\": \"The raccoon is halfway up the fence, causing it to wobble slightly with each movement.\", \"last\": \"The raccoon reaches the top of the fence, standing upright and causing the fence to sway from side to side.\"}"
+  },
+  {
+    "caption": "A jellyfish floating into a coral reef, causing the smaller fish nearby to scatter.",
+    "frame_first": "A translucent jellyfish gently drifts towards a vibrant coral reef, its tentacles trailing behind in the clear blue water.",
+    "frame_middle": "The jellyfish hovers above the reef, and a school of small fish, alarmed by its presence, dart away in all directions.",
+    "frame_last": "The jellyfish continues its serene journey over the reef, while the smaller fish hide among the coral, watching cautiously from a distance.",
+    "frame_json_raw": "{\"first\": \"A translucent jellyfish gently drifts towards a vibrant coral reef, its tentacles trailing behind in the clear blue water.\", \"middle\": \"The jellyfish hovers above the reef, and a school of small fish, alarmed by its presence, dart away in all directions.\", \"last\": \"The jellyfish continues its serene journey over the reef, while the smaller fish hide among the coral, watching cautiously from a distance.\"}"
+  },
+  {
+    "caption": "An eagle swooping down to grab a fish from the river, creating ripples on the surface.",
+    "frame_first": "An eagle soars high above a serene river, its sharp eyes scanning the water for movement.",
+    "frame_middle": "The eagle dives steeply, its wings tucked close to its body, aiming for a fish near the river's surface, causing initial ripples.",
+    "frame_last": "With a splash, the eagle's talons grasp the fish, sending out wider ripples across the river as it pulls its prey upwards.",
+    "frame_json_raw": "{\"first\": \"An eagle soars high above a serene river, its sharp eyes scanning the water for movement.\", \"middle\": \"The eagle dives steeply, its wings tucked close to its body, aiming for a fish near the river's surface, causing initial ripples.\", \"last\": \"With a splash, the eagle's talons grasp the fish, sending out wider ripples across the river as it pulls its prey upwards.\"}"
+  },
+  {
+    "caption": "A goat butting its head against a wooden crate, causing it to slide across the barn floor.",
+    "frame_first": "A curious goat approaches a wooden crate in a dimly lit barn, preparing to butt its head against it.",
+    "frame_middle": "The goat forcefully butts its head against the wooden crate, causing it to start sliding across the barn floor.",
+    "frame_last": "The wooden crate slides across the barn floor, leaving the goat standing confidently beside it, dust particles floating in the air from the impact.",
+    "frame_json_raw": "{\"first\": \"A curious goat approaches a wooden crate in a dimly lit barn, preparing to butt its head against it.\", \"middle\": \"The goat forcefully butts its head against the wooden crate, causing it to start sliding across the barn floor.\", \"last\": \"The wooden crate slides across the barn floor, leaving the goat standing confidently beside it, dust particles floating in the air from the impact.\"}"
+  },
+  {
+    "caption": "A crab scuttling across a sandy beach, displacing tiny grains with its movements.",
+    "frame_first": "A sandy beach under a bright sun, with a small crab emerging from the water's edge, beginning to scuttle across the sand.",
+    "frame_middle": "The crab is now in the middle of the frame, its legs rapidly moving, displacing tiny grains of sand as it scurries forward.",
+    "frame_last": "The crab reaches the shadow of a large rock, stopping momentarily, leaving a trail of disturbed sand behind it.",
+    "frame_json_raw": "{\"first\": \"A sandy beach under a bright sun, with a small crab emerging from the water's edge, beginning to scuttle across the sand.\", \"middle\": \"The crab is now in the middle of the frame, its legs rapidly moving, displacing tiny grains of sand as it scurries forward.\", \"last\": \"The crab reaches the shadow of a large rock, stopping momentarily, leaving a trail of disturbed sand behind it.\"}"
+  },
+  {
+    "caption": "A horse galloping past a sleeping dog, causing the dog to wake and look around.",
+    "frame_first": "A horse gallops across a sunlit field, its mane and tail flowing behind it.",
+    "frame_middle": "The horse's shadow passes over a sleeping dog, causing the dog to stir and yawn.",
+    "frame_last": "The dog stands up, looking around curiously, as the horse fades into the distance.",
+    "frame_json_raw": "{\"first\": \"A horse gallops across a sunlit field, its mane and tail flowing behind it.\", \"middle\": \"The horse's shadow passes over a sleeping dog, causing the dog to stir and yawn.\", \"last\": \"The dog stands up, looking around curiously, as the horse fades into the distance.\"}"
+  },
+  {
+    "caption": "A dolphin tossing a beach ball with its nose, sending the ball back toward a group of cheering people.",
+    "frame_first": "A dolphin surfaces in clear blue water, gently lifting a bright yellow beach ball with its nose.",
+    "frame_middle": "The dolphin leaps slightly, tossing the beach ball towards a group of excited people standing on a sandy beach.",
+    "frame_last": "The ball arcs through the air, drawing the joyful cheers of the crowd as it heads back towards them.",
+    "frame_json_raw": "{\"first\": \"A dolphin surfaces in clear blue water, gently lifting a bright yellow beach ball with its nose.\", \"middle\": \"The dolphin leaps slightly, tossing the beach ball towards a group of excited people standing on a sandy beach.\", \"last\": \"The ball arcs through the air, drawing the joyful cheers of the crowd as it heads back towards them.\"}"
+  },
+  {
+    "caption": "A soccer player kicking a pumpkin, sending it rolling down a grassy hill.",
+    "frame_first": "A soccer player in green and white uniform stands at the top of a grassy hill, about to kick a large orange pumpkin.",
+    "frame_middle": "The pumpkin rolls down the hill, bouncing slightly as it picks up speed, with the soccer player running after it.",
+    "frame_last": "The pumpkin comes to a stop at the bottom of the hill, surrounded by blades of grass, as the soccer player reaches the end of the slope.",
+    "frame_json_raw": "{\"first\": \"A soccer player in green and white uniform stands at the top of a grassy hill, about to kick a large orange pumpkin.\", \"middle\": \"The pumpkin rolls down the hill, bouncing slightly as it picks up speed, with the soccer player running after it.\", \"last\": \"The pumpkin comes to a stop at the bottom of the hill, surrounded by blades of grass, as the soccer player reaches the end of the slope.\"}"
+  },
+  {
+    "caption": "A mother holding her baby, rocking gently on a rocking chair.",
+    "frame_first": "A mother sits in a rocking chair, holding her baby close, both silhouetted against a warm, glowing window at dusk.",
+    "frame_middle": "The mother rocks gently back and forth, her eyes soft and loving as she gazes down at her sleeping baby.",
+    "frame_last": "The rocking slows to a stop, the mother still holding her baby, both now bathed in the soft, ambient light of a nearby lamp.",
+    "frame_json_raw": "{\"first\": \"A mother sits in a rocking chair, holding her baby close, both silhouetted against a warm, glowing window at dusk.\", \"middle\": \"The mother rocks gently back and forth, her eyes soft and loving as she gazes down at her sleeping baby.\", \"last\": \"The rocking slows to a stop, the mother still holding her baby, both now bathed in the soft, ambient light of a nearby lamp.\"}"
+  },
+  {
+    "caption": "A deer stepping onto a frozen pond, causing the ice to crack slightly beneath its hooves.",
+    "frame_first": "A deer approaches the edge of a frozen pond, the ice glistening under a clear winter sky.",
+    "frame_middle": "The deer steps onto the ice, its hooves causing subtle cracks to form beneath it.",
+    "frame_last": "The deer stands still on the frozen pond, the ice around its hooves showing faint crack patterns, reflecting the serene winter landscape.",
+    "frame_json_raw": "{\"first\": \"A deer approaches the edge of a frozen pond, the ice glistening under a clear winter sky.\", \"middle\": \"The deer steps onto the ice, its hooves causing subtle cracks to form beneath it.\", \"last\": \"The deer stands still on the frozen pond, the ice around its hooves showing faint crack patterns, reflecting the serene winter landscape.\"}"
+  },
+  {
+    "caption": "An ant carrying a crumb on the table away.",
+    "frame_first": "A lone ant approaches a small crumb on a clean, well-lit table, sunlight streaming through a nearby window.",
+    "frame_middle": "The ant is now straining to lift the crumb, its legs digging into the table surface, with the kitchen's afternoon light casting subtle shadows.",
+    "frame_last": "The ant successfully lifts the crumb and begins to carry it away, moving towards the edge of the table under the soft, ambient light of the room.",
+    "frame_json_raw": "{\"first\": \"A lone ant approaches a small crumb on a clean, well-lit table, sunlight streaming through a nearby window.\", \"middle\": \"The ant is now straining to lift the crumb, its legs digging into the table surface, with the kitchen's afternoon light casting subtle shadows.\", \"last\": \"The ant successfully lifts the crumb and begins to carry it away, moving towards the edge of the table under the soft, ambient light of the room.\"}"
+  },
+  {
+    "caption": "A snowball hitting a stop sign, leaving a patch of wet snow on the red surface.",
+    "frame_first": "A snowball flies through the air, heading straight towards a red stop sign in a snowy landscape.",
+    "frame_middle": "The snowball makes impact with the stop sign, splattering against the red surface.",
+    "frame_last": "A patch of wet snow clings to the stop sign, contrasting with the red background.",
+    "frame_json_raw": "{\"first\": \"A snowball flies through the air, heading straight towards a red stop sign in a snowy landscape.\", \"middle\": \"The snowball makes impact with the stop sign, splattering against the red surface.\", \"last\": \"A patch of wet snow clings to the stop sign, contrasting with the red background.\"}"
+  },
+  {
+    "caption": "A frog leaping onto a wet rock, causing droplets to splash into the air.",
+    "frame_first": "A frog crouches on a mossy bank, preparing to leap towards a wet, glistening rock in the foreground.",
+    "frame_middle": "The frog is mid-air, hind legs extended, about to land on the wet rock, which reflects the dappled sunlight.",
+    "frame_last": "The frog lands on the rock, sending tiny water droplets splashing into the air around it, which glisten in the sunlight.",
+    "frame_json_raw": "{\"first\": \"A frog crouches on a mossy bank, preparing to leap towards a wet, glistening rock in the foreground.\", \"middle\": \"The frog is mid-air, hind legs extended, about to land on the wet rock, which reflects the dappled sunlight.\", \"last\": \"The frog lands on the rock, sending tiny water droplets splashing into the air around it, which glisten in the sunlight.\"}"
+  },
+  {
+    "caption": "A magician throwing a deck of cards into the air, causing them to flutter around a captivated audience.",
+    "frame_first": "A magician in a red cape stands center stage, about to throw a deck of cards into the air, with an audience leaning forward in anticipation.",
+    "frame_middle": "The cards float and flutter in the air, illuminated by spotlights, as the audience watches in awe with mouths agape.",
+    "frame_last": "The magician catches the last card with a flourish, the audience erupts into applause, and the cards slowly settle back to the stage.",
+    "frame_json_raw": "{\"first\": \"A magician in a red cape stands center stage, about to throw a deck of cards into the air, with an audience leaning forward in anticipation.\", \"middle\": \"The cards float and flutter in the air, illuminated by spotlights, as the audience watches in awe with mouths agape.\", \"last\": \"The magician catches the last card with a flourish, the audience erupts into applause, and the cards slowly settle back to the stage.\"}"
+  },
+  {
+    "caption": "A helicopter landing on a hospital helipad, making the nearby trees sway from the gust of wind.",
+    "frame_first": "A helicopter descends towards a hospital helipad, its rotors creating a strong downdraft.",
+    "frame_middle": "The helicopter touches down on the helipad, causing nearby trees to sway visibly in the wind.",
+    "frame_last": "The helicopter's blades continue to spin, the trees slowly settling as the wind subsides.",
+    "frame_json_raw": "{\"first\": \"A helicopter descends towards a hospital helipad, its rotors creating a strong downdraft.\", \"middle\": \"The helicopter touches down on the helipad, causing nearby trees to sway visibly in the wind.\", \"last\": \"The helicopter's blades continue to spin, the trees slowly settling as the wind subsides.\"}"
+  },
+  {
+    "caption": "A frog jumping into a bowl of water, making droplets splash onto the surrounding grass.",
+    "frame_first": "A frog crouches at the edge of a bowl filled with water, preparing to jump, with sunlight glinting off the surface.",
+    "frame_middle": "The frog leaps into the bowl, causing water to splash up in droplets, the grass around the bowl glistening with moisture.",
+    "frame_last": "The frog is submerged in the bowl, with droplets clinging to the grass around it, the scene calm and still again.",
+    "frame_json_raw": "{\"first\": \"A frog crouches at the edge of a bowl filled with water, preparing to jump, with sunlight glinting off the surface.\", \"middle\": \"The frog leaps into the bowl, causing water to splash up in droplets, the grass around the bowl glistening with moisture.\", \"last\": \"The frog is submerged in the bowl, with droplets clinging to the grass around it, the scene calm and still again.\"}"
+  },
+  {
+    "caption": "A robot vacuum bumping into a wall, redirecting itself and leaving a trail of clean carpet behind.",
+    "frame_first": "A robot vacuum, with its circular body and spinning brushes, approaches a wall, its front sensors glowing blue.",
+    "frame_middle": "The robot vacuum bounces off the wall, its wheels spinning as it recalculates its path, leaving a strip of clean carpet behind.",
+    "frame_last": "The robot vacuum moves away from the wall, its path now clear, continuing to clean the carpet with its brushes rotating efficiently.",
+    "frame_json_raw": "{\"first\": \"A robot vacuum, with its circular body and spinning brushes, approaches a wall, its front sensors glowing blue.\", \"middle\": \"The robot vacuum bounces off the wall, its wheels spinning as it recalculates its path, leaving a strip of clean carpet behind.\", \"last\": \"The robot vacuum moves away from the wall, its path now clear, continuing to clean the carpet with its brushes rotating efficiently.\"}"
+  },
+  {
+    "caption": "A pigeon taking off from a lamppost, causing loose feathers to float down slowly.",
+    "frame_first": "A pigeon perched on a lamppost, about to take flight, with sunlight casting a warm glow on the scene.",
+    "frame_middle": "The pigeon flaps its wings vigorously, leaving behind a few loose feathers that begin to drift downward gracefully.",
+    "frame_last": "The pigeon soars into the sky, while the last of the floating feathers gently touch the ground below.",
+    "frame_json_raw": "{\"first\": \"A pigeon perched on a lamppost, about to take flight, with sunlight casting a warm glow on the scene.\", \"middle\": \"The pigeon flaps its wings vigorously, leaving behind a few loose feathers that begin to drift downward gracefully.\", \"last\": \"The pigeon soars into the sky, while the last of the floating feathers gently touch the ground below.\"}"
+  },
+  {
+    "caption": "A girl turns on a hair dryer, causing her long hair to blow wildly in the air.",
+    "frame_first": "A girl stands in front of a bathroom mirror, her long hair cascading down her back as she reaches for the hair dryer.",
+    "frame_middle": "She turns on the hair dryer, and her hair begins to billow and dance around her face and shoulders.",
+    "frame_last": "Her hair is now wildly flying in all directions, whipped by the force of the warm air from the hair dryer.",
+    "frame_json_raw": "{\"first\": \"A girl stands in front of a bathroom mirror, her long hair cascading down her back as she reaches for the hair dryer.\", \"middle\": \"She turns on the hair dryer, and her hair begins to billow and dance around her face and shoulders.\", \"last\": \"Her hair is now wildly flying in all directions, whipped by the force of the warm air from the hair dryer.\"}"
+  },
+  {
+    "caption": "Grandpa teaches his grandson to fly a kite in the park.",
+    "frame_first": "Grandpa and his grandson stand at the edge of a grassy park, with a colorful kite unfurled between them, the sun shining brightly in a clear blue sky.",
+    "frame_middle": "The grandson runs across the park lawn, kite string in hand, while the kite wavers in the sky above, with Grandpa following closely behind, offering guidance.",
+    "frame_last": "The kite soars high in the sky, stabilized and flying steadily, as Grandpa and his grandson laugh and admire their accomplishment under the afternoon sun.",
+    "frame_json_raw": "{\"first\": \"Grandpa and his grandson stand at the edge of a grassy park, with a colorful kite unfurled between them, the sun shining brightly in a clear blue sky.\", \"middle\": \"The grandson runs across the park lawn, kite string in hand, while the kite wavers in the sky above, with Grandpa following closely behind, offering guidance.\", \"last\": \"The kite soars high in the sky, stabilized and flying steadily, as Grandpa and his grandson laugh and admire their accomplishment under the afternoon sun.\"}"
+  },
+  {
+    "caption": "Friends share popcorn while watching a movie together.",
+    "frame_first": "A cozy living room with a large couch where three friends sit, sharing a big bowl of popcorn, the TV screen reflecting their focused gazes.",
+    "frame_middle": "One friend reaches for a popcorn kernel, their hand illuminated by the glow of the movie playing on the TV, while the others laugh quietly.",
+    "frame_last": "The friends lean back, smiling and chatting softly, the popcorn bowl now half-empty, the movie still playing in the background.",
+    "frame_json_raw": "{\"first\": \"A cozy living room with a large couch where three friends sit, sharing a big bowl of popcorn, the TV screen reflecting their focused gazes.\", \"middle\": \"One friend reaches for a popcorn kernel, their hand illuminated by the glow of the movie playing on the TV, while the others laugh quietly.\", \"last\": \"The friends lean back, smiling and chatting softly, the popcorn bowl now half-empty, the movie still playing in the background.\"}"
+  },
+  {
+    "caption": "Dog runs alongside a boy riding his bike down the street.",
+    "frame_first": "A boy is riding his bike down a sunny street, with a dog running enthusiastically beside him.",
+    "frame_middle": "The dog is now slightly ahead of the bike, looking back at the boy with an excited expression.",
+    "frame_last": "The boy and the dog continue down the street, the dog now running alongside the bike, both smiling and enjoying the ride.",
+    "frame_json_raw": "{\"first\": \"A boy is riding his bike down a sunny street, with a dog running enthusiastically beside him.\", \"middle\": \"The dog is now slightly ahead of the bike, looking back at the boy with an excited expression.\", \"last\": \"The boy and the dog continue down the street, the dog now running alongside the bike, both smiling and enjoying the ride.\"}"
+  },
+  {
+    "caption": "Chef shows his apprentice how to slice vegetables properly.",
+    "frame_first": "A chef stands at a well-lit kitchen counter, holding a sharp knife, with a variety of vegetables laid out in front of him. His apprentice, standing slightly behind, watches attentively.",
+    "frame_middle": "The chef demonstrates a precise slicing motion on a carrot, the knife gliding smoothly and swiftly, while the apprentice mimics the motion with a vegetable in his own hand.",
+    "frame_last": "The counter is now filled with neatly arranged slices of various vegetables, the chef nods approvingly at the apprentice, who looks satisfied with his work.",
+    "frame_json_raw": "{\"first\": \"A chef stands at a well-lit kitchen counter, holding a sharp knife, with a variety of vegetables laid out in front of him. His apprentice, standing slightly behind, watches attentively.\", \"middle\": \"The chef demonstrates a precise slicing motion on a carrot, the knife gliding smoothly and swiftly, while the apprentice mimics the motion with a vegetable in his own hand.\", \"last\": \"The counter is now filled with neatly arranged slices of various vegetables, the chef nods approvingly at the apprentice, who looks satisfied with his work.\"}"
+  },
+  {
+    "caption": "Two dogs play tug-of-war with a rope toy in the backyard.",
+    "frame_first": "Two dogs stand in a sunlit backyard, each grabbing an end of a rope toy, ready to start their game of tug-of-war.",
+    "frame_middle": "The dogs are tugging fiercely at the rope toy, their bodies straining against each other, tails wagging excitedly.",
+    "frame_last": "One dog triumphantly holds the rope toy, the other playfully barks and circles, both dogs' tongues lolling out in the warmth of the afternoon sun.",
+    "frame_json_raw": "{\"first\": \"Two dogs stand in a sunlit backyard, each grabbing an end of a rope toy, ready to start their game of tug-of-war.\", \"middle\": \"The dogs are tugging fiercely at the rope toy, their bodies straining against each other, tails wagging excitedly.\", \"last\": \"One dog triumphantly holds the rope toy, the other playfully barks and circles, both dogs' tongues lolling out in the warmth of the afternoon sun.\"}"
+  },
+  {
+    "caption": "Father helps his daughter build a sandcastle at the beach.",
+    "frame_first": "A father and his daughter stand at the beach, surrounded by gentle waves and a bright, sunny sky, as they begin to gather sand and tools to build a sandcastle.",
+    "frame_middle": "The father crouches beside his daughter, guiding her hands as they mold the sand into towers and walls, their faces lit by the warm afternoon sun.",
+    "frame_last": "Father and daughter step back to admire their completed sandcastle, its intricate design standing proudly against the backdrop of the calm ocean and clear blue sky.",
+    "frame_json_raw": "{\"first\": \"A father and his daughter stand at the beach, surrounded by gentle waves and a bright, sunny sky, as they begin to gather sand and tools to build a sandcastle.\", \"middle\": \"The father crouches beside his daughter, guiding her hands as they mold the sand into towers and walls, their faces lit by the warm afternoon sun.\", \"last\": \"Father and daughter step back to admire their completed sandcastle, its intricate design standing proudly against the backdrop of the calm ocean and clear blue sky.\"}"
+  },
+  {
+    "caption": "Young couple dances together under the moonlight at a festival.",
+    "frame_first": "A young couple stands under the glow of a full moon at the entrance of a vibrant festival, preparing to dance.",
+    "frame_middle": "The couple is now in the middle of the dance floor, gracefully moving together, surrounded by colorful lanterns and festival-goers.",
+    "frame_last": "As the dance concludes, the couple shares a tender moment, looking into each other's eyes under the serene moonlight.",
+    "frame_json_raw": "{\"first\": \"A young couple stands under the glow of a full moon at the entrance of a vibrant festival, preparing to dance.\", \"middle\": \"The couple is now in the middle of the dance floor, gracefully moving together, surrounded by colorful lanterns and festival-goers.\", \"last\": \"As the dance concludes, the couple shares a tender moment, looking into each other's eyes under the serene moonlight.\"}"
+  },
+  {
+    "caption": "Teenagers collaborate on a science project in the school library.",
+    "frame_first": "A group of teenagers gather around a table in the school library, surrounded by books and laptops, beginning to brainstorm their science project.",
+    "frame_middle": "The teenagers are deeply engaged, some writing notes, others looking through books, with sunlight streaming through the windows, casting a warm glow on the scene.",
+    "frame_last": "The teenagers, now smiling and nodding in agreement, finalize their project plan,收拾好他们的材料，准备提交他们的科学项目。",
+    "frame_json_raw": "{\"first\": \"A group of teenagers gather around a table in the school library, surrounded by books and laptops, beginning to brainstorm their science project.\", \"middle\": \"The teenagers are deeply engaged, some writing notes, others looking through books, with sunlight streaming through the windows, casting a warm glow on the scene.\", \"last\": \"The teenagers, now smiling and nodding in agreement, finalize their project plan,收拾好他们的材料，准备提交他们的科学项目。\"} \n\n(Note: The last sentence was translated to maintain the context and ensure all elements are in Chinese as per the instruction format.) \n\n{\"first\": \"一群十几岁的青少年聚集在学校图书馆的一张桌子旁，周围是书籍和笔记本电脑，开始为他们的科学项目头脑风暴。\", \"middle\": \"青少年们全神贯注，有的在记笔记，有的在翻阅书籍，阳光从窗户照进来，给场景投下温暖的光芒。\", \""
+  },
+  {
+    "caption": "Grandmother bakes cookies with her granddaughter in the kitchen.",
+    "frame_first": "In a cozy kitchen, sunlight streams through a window, illuminating the wooden table where a grandmother and her granddaughter are mixing cookie dough together.",
+    "frame_middle": "The grandmother carefully measures ingredients while the granddaughter stirs the bowl with enthusiasm, both wearing aprons and smiling.",
+    "frame_last": "They place the freshly baked cookies on a cooling rack, the warm, sweet aroma filling the kitchen as they admire their work.",
+    "frame_json_raw": "{\"first\": \"In a cozy kitchen, sunlight streams through a window, illuminating the wooden table where a grandmother and her granddaughter are mixing cookie dough together.\", \"middle\": \"The grandmother carefully measures ingredients while the granddaughter stirs the bowl with enthusiasm, both wearing aprons and smiling.\", \"last\": \"They place the freshly baked cookies on a cooling rack, the warm, sweet aroma filling the kitchen as they admire their work.\"}"
+  },
+  {
+    "caption": "Friends play a board game together at a cozy cafe.",
+    "frame_first": "Four friends gather around a small wooden table, the board game spread out in the center, with steaming mugs of coffee on the side. The warm, ambient lighting of the cozy cafe casts a soft glow over them.",
+    "frame_middle": "One friend leans in, intensely focused on the game board, dice in hand, while the others watch with anticipation, the cafe's background hum providing a relaxing atmosphere.",
+    "frame_last": "The friends laugh together, one of them raising a victory sign, as the game comes to a close, the cafe's gentle lighting highlighting their joyful expressions.",
+    "frame_json_raw": "{\"first\": \"Four friends gather around a small wooden table, the board game spread out in the center, with steaming mugs of coffee on the side. The warm, ambient lighting of the cozy cafe casts a soft glow over them.\", \"middle\": \"One friend leans in, intensely focused on the game board, dice in hand, while the others watch with anticipation, the cafe's background hum providing a relaxing atmosphere.\", \"last\": \"The friends laugh together, one of them raising a victory sign, as the game comes to a close, the cafe's gentle lighting highlighting their joyful expressions.\"}"
+  },
+  {
+    "caption": "Boy draws a picture and proudly shows it to his dog, who wags his tail.",
+    "frame_first": "A young boy sits at a small table, focused on drawing with a crayon in his hand, sunlight streaming through a window behind him.",
+    "frame_middle": "The boy stands up, holding his drawing, and looks down at his dog who is sitting attentively with ears perked up.",
+    "frame_last": "The dog wags its tail excitedly as the boy shows him the completed drawing, both sharing a moment of joy.",
+    "frame_json_raw": "{\"first\": \"A young boy sits at a small table, focused on drawing with a crayon in his hand, sunlight streaming through a window behind him.\", \"middle\": \"The boy stands up, holding his drawing, and looks down at his dog who is sitting attentively with ears perked up.\", \"last\": \"The dog wags its tail excitedly as the boy shows him the completed drawing, both sharing a moment of joy.\"}"
+  },
+  {
+    "caption": "Two kittens snuggle together on a warm windowsill.",
+    "frame_first": "Two fluffy kittens curl up together on a sunny windowsill, basking in the warmth.",
+    "frame_middle": "The kittens nestle closer, their tiny paws touching as they enjoy the cozy spot.",
+    "frame_last": "The kittens fall asleep, their bodies relaxed and aligned side by side on the windowsill.",
+    "frame_json_raw": "{\"first\": \"Two fluffy kittens curl up together on a sunny windowsill, basking in the warmth.\", \"middle\": \"The kittens nestle closer, their tiny paws touching as they enjoy the cozy spot.\", \"last\": \"The kittens fall asleep, their bodies relaxed and aligned side by side on the windowsill.\"}"
+  },
+  {
+    "caption": "A girl enjoys a picnic by the lake, feeding crumbs to the ducks.",
+    "frame_first": "A young girl sits on a red-checkered blanket by a serene lake, a basket of food beside her, as she reaches out to scatter crumbs towards a group of ducks.",
+    "frame_middle": "The ducks gather around the girl, some nibbling at the crumbs in her hand, while she smiles and gently pets a duck with her free hand.",
+    "frame_last": "The girl laughs as a duck waddles playfully towards her, surrounded by other ducks, with the sun casting a warm glow over the tranquil lake.",
+    "frame_json_raw": "{\"first\": \"A young girl sits on a red-checkered blanket by a serene lake, a basket of food beside her, as she reaches out to scatter crumbs towards a group of ducks.\", \"middle\": \"The ducks gather around the girl, some nibbling at the crumbs in her hand, while she smiles and gently pets a duck with her free hand.\", \"last\": \"The girl laughs as a duck waddles playfully towards her, surrounded by other ducks, with the sun casting a warm glow over the tranquil lake.\"}"
+  },
+  {
+    "caption": "A woman gives an old lady a bouquet of fresh flowers.",
+    "frame_first": "A woman approaches an old lady with a bouquet of fresh flowers in her hands.",
+    "frame_middle": "The woman hands over the bouquet to the old lady, who looks surprised and pleased.",
+    "frame_last": "The old lady holds the bouquet close, smiling warmly at the woman.",
+    "frame_json_raw": "{\"first\": \"A woman approaches an old lady with a bouquet of fresh flowers in her hands.\", \"middle\": \"The woman hands over the bouquet to the old lady, who looks surprised and pleased.\", \"last\": \"The old lady holds the bouquet close, smiling warmly at the woman.\"}"
+  },
+  {
+    "caption": "A little girl takes pictures of a cat.",
+    "frame_first": "A little girl stands in a sunlit room, holding a camera up to her eye, focusing on a curious cat sitting a few feet away.",
+    "frame_middle": "The cat arches its back slightly, looking directly into the camera lens with one paw raised, while the girl presses the shutter button.",
+    "frame_last": "The girl smiles at the cat after taking the picture, the cat now grooming itself, indifferent to the attention it just received.",
+    "frame_json_raw": "{\"first\": \"A little girl stands in a sunlit room, holding a camera up to her eye, focusing on a curious cat sitting a few feet away.\", \"middle\": \"The cat arches its back slightly, looking directly into the camera lens with one paw raised, while the girl presses the shutter button.\", \"last\": \"The girl smiles at the cat after taking the picture, the cat now grooming itself, indifferent to the attention it just received.\"}"
+  },
+  {
+    "caption": "A father and daughter carve pumpkins together, comparing their funny designs.",
+    "frame_first": "A father and daughter sit at a wooden table, each with a pumpkin in front of them, carving tools in hand, the kitchen lit warmly with afternoon sunlight.",
+    "frame_middle": "The father and daughter hold up their carved pumpkins, both showing goofy, exaggerated faces, laughing as they compare their creations.",
+    "frame_last": "Father and daughter lean back in their chairs, admiring their finished pumpkins which sit on the table, their faces illuminated by the soft, glowing jack-o'-lanterns.",
+    "frame_json_raw": "{\"first\": \"A father and daughter sit at a wooden table, each with a pumpkin in front of them, carving tools in hand, the kitchen lit warmly with afternoon sunlight.\", \"middle\": \"The father and daughter hold up their carved pumpkins, both showing goofy, exaggerated faces, laughing as they compare their creations.\", \"last\": \"Father and daughter lean back in their chairs, admiring their finished pumpkins which sit on the table, their faces illuminated by the soft, glowing jack-o'-lanterns.\"}"
+  },
+  {
+    "caption": "A little girl dresses up her teddy bear in her room.",
+    "frame_first": "A little girl stands in front of her room's dresser, opening a drawer filled with small clothes and accessories.",
+    "frame_middle": "The girl is sitting on her bed, carefully putting a tiny shirt on her teddy bear, smiling with concentration.",
+    "frame_last": "The teddy bear, now fully dressed in a miniature outfit, is posed on the bed with the girl admiring her handiwork, a satisfied smile on her face.",
+    "frame_json_raw": "{\"first\": \"A little girl stands in front of her room's dresser, opening a drawer filled with small clothes and accessories.\", \"middle\": \"The girl is sitting on her bed, carefully putting a tiny shirt on her teddy bear, smiling with concentration.\", \"last\": \"The teddy bear, now fully dressed in a miniature outfit, is posed on the bed with the girl admiring her handiwork, a satisfied smile on her face.\"}"
+  },
+  {
+    "caption": "A woman practices yoga in the park, with a puppy copying her poses.",
+    "frame_first": "A woman stands in the park under a clear blue sky, beginning a yoga pose, with a small puppy mirroring her stance beside her.",
+    "frame_middle": "The woman and puppy are now in a downward dog pose, the woman's form steady and the puppy's a bit wobbly, with sunlight filtering through the trees.",
+    "frame_last": "The woman and puppy finish their session with a relaxed pose, sitting cross-legged and looking at each other, the park around them peaceful and serene.",
+    "frame_json_raw": "{\"first\": \"A woman stands in the park under a clear blue sky, beginning a yoga pose, with a small puppy mirroring her stance beside her.\", \"middle\": \"The woman and puppy are now in a downward dog pose, the woman's form steady and the puppy's a bit wobbly, with sunlight filtering through the trees.\", \"last\": \"The woman and puppy finish their session with a relaxed pose, sitting cross-legged and looking at each other, the park around them peaceful and serene.\"}"
+  },
+  {
+    "caption": "A young girl teaches her puppy how to sit, rewarding it with treats.",
+    "frame_first": "A young girl stands in a sunny backyard, holding a treat in her hand, facing a playful puppy.",
+    "frame_middle": "The girl points down and says 'sit', the puppy looks up at her, then plops its bottom onto the grass.",
+    "frame_last": "The girl smiles widely, giving the puppy the treat as it eagerly licks her hand.",
+    "frame_json_raw": "{\"first\": \"A young girl stands in a sunny backyard, holding a treat in her hand, facing a playful puppy.\", \"middle\": \"The girl points down and says 'sit', the puppy looks up at her, then plops its bottom onto the grass.\", \"last\": \"The girl smiles widely, giving the puppy the treat as it eagerly licks her hand.\"}"
+  },
+  {
+    "caption": "A grandmother reads a bedtime story to her grandchild.",
+    "frame_first": "A cozy bedroom with a soft, warm light from a bedside lamp illuminates a grandmother sitting on a chair, holding a storybook, and her grandchild snuggled up on the bed, eyes wide with anticipation.",
+    "frame_middle": "The grandmother's face is lit by the gentle glow of the lamp as she reads animatedly, her grandchild leaning in closely, completely engrossed in the story.",
+    "frame_last": "The grandchild, now relaxed and sleepy, lies down on the bed, the grandmother tucks them in, and with a final page turn, the storybook closes, leaving the room in a peaceful, dimly lit state.",
+    "frame_json_raw": "{\"first\": \"A cozy bedroom with a soft, warm light from a bedside lamp illuminates a grandmother sitting on a chair, holding a storybook, and her grandchild snuggled up on the bed, eyes wide with anticipation.\", \"middle\": \"The grandmother's face is lit by the gentle glow of the lamp as she reads animatedly, her grandchild leaning in closely, completely engrossed in the story.\", \"last\": \"The grandchild, now relaxed and sleepy, lies down on the bed, the grandmother tucks them in, and with a final page turn, the storybook closes, leaving the room in a peaceful, dimly lit state.\"}"
+  },
+  {
+    "caption": "A little boy and his dad fly paper airplanes off the balcony, watching them loop and glide in the breeze.",
+    "frame_first": "A little boy and his dad stand on a balcony, each holding a paper airplane, the sun shining brightly in the sky.",
+    "frame_middle": "The boy throws his paper airplane into the air, and it begins to loop and glide gracefully in the gentle breeze.",
+    "frame_last": "Both father and son watch as their paper airplanes soar and dance in the wind, smiling at each other with joy.",
+    "frame_json_raw": "{\"first\": \"A little boy and his dad stand on a balcony, each holding a paper airplane, the sun shining brightly in the sky.\", \"middle\": \"The boy throws his paper airplane into the air, and it begins to loop and glide gracefully in the gentle breeze.\", \"last\": \"Both father and son watch as their paper airplanes soar and dance in the wind, smiling at each other with joy.\"}"
+  },
+  {
+    "caption": "A boy feeds ducks at the pond.",
+    "frame_first": "A young boy stands at the edge of a pond, holding a bag of bread, looking down at a group of ducks swimming towards him.",
+    "frame_middle": "The boy kneels down, scattering bread crumbs on the water's surface, while the ducks gather closely around him.",
+    "frame_last": "The ducks are now clustered around the boy, some nibbling at the remaining bread crumbs, others looking up expectantly as the boy smiles and reaches out to gently touch one of them.",
+    "frame_json_raw": "{\"first\": \"A young boy stands at the edge of a pond, holding a bag of bread, looking down at a group of ducks swimming towards him.\", \"middle\": \"The boy kneels down, scattering bread crumbs on the water's surface, while the ducks gather closely around him.\", \"last\": \"The ducks are now clustered around the boy, some nibbling at the remaining bread crumbs, others looking up expectantly as the boy smiles and reaches out to gently touch one of them.\"}"
+  },
+  {
+    "caption": "Two musicians practice a duet on the piano, working to synchronize their notes and harmonies.",
+    "frame_first": "Two musicians sit side by side at a grand piano, fingers poised above the keys, preparing to start their duet.",
+    "frame_middle": "The musicians' hands move swiftly and precisely across the piano keys, their expressions focused as they strive for perfect synchronization.",
+    "frame_last": "The musicians conclude their practice session with a final chord, sharing a satisfied nod as they glance at each other.",
+    "frame_json_raw": "{\"first\": \"Two musicians sit side by side at a grand piano, fingers poised above the keys, preparing to start their duet.\", \"middle\": \"The musicians' hands move swiftly and precisely across the piano keys, their expressions focused as they strive for perfect synchronization.\", \"last\": \"The musicians conclude their practice session with a final chord, sharing a satisfied nod as they glance at each other.\"}"
+  },
+  {
+    "caption": "A woman laughs as her friends surprise her with a birthday cake and a room full of balloons.",
+    "frame_first": "A woman stands in a dimly lit room, her back to the camera, unaware of her friends hiding behind a curtain.",
+    "frame_middle": "The woman turns around, her eyes widening in surprise as her friends jump out with a large birthday cake and balloons fill the room.",
+    "frame_last": "The woman laughs joyfully, her friends surrounding her with smiles, the room aglow with the soft light of the candles on the cake.",
+    "frame_json_raw": "{\"first\": \"A woman stands in a dimly lit room, her back to the camera, unaware of her friends hiding behind a curtain.\", \"middle\": \"The woman turns around, her eyes widening in surprise as her friends jump out with a large birthday cake and balloons fill the room.\", \"last\": \"The woman laughs joyfully, her friends surrounding her with smiles, the room aglow with the soft light of the candles on the cake.\"}"
+  },
+  {
+    "caption": "A couple watches a sunset from a rooftop, holding hands as they take in the view.",
+    "frame_first": "A couple stands on a rooftop, facing west, holding hands as the sun begins to dip below the horizon.",
+    "frame_middle": "The sky fills with vibrant oranges and pinks, casting a warm glow on the couple who are still gazing at the sunset.",
+    "frame_last": "As the last sliver of sun disappears, the couple remains silhouetted against the darkening sky, still holding hands.",
+    "frame_json_raw": "{\"first\": \"A couple stands on a rooftop, facing west, holding hands as the sun begins to dip below the horizon.\", \"middle\": \"The sky fills with vibrant oranges and pinks, casting a warm glow on the couple who are still gazing at the sunset.\", \"last\": \"As the last sliver of sun disappears, the couple remains silhouetted against the darkening sky, still holding hands.\"}"
+  },
+  {
+    "caption": "A little boy pretends to be a doctor, using a toy stethoscope to check up on his teddy bear.",
+    "frame_first": "A little boy stands over his teddy bear, holding a toy stethoscope up to the bear's chest, with a focused expression on his face.",
+    "frame_middle": "The boy leans in closely, listening intently through the stethoscope, while the teddy bear lies on a child-sized bed covered with a colorful blanket.",
+    "frame_last": "With a satisfied nod, the boy finishes his examination, placing the toy stethoscope back around his neck as he smiles at his teddy bear patient.",
+    "frame_json_raw": "{\"first\": \"A little boy stands over his teddy bear, holding a toy stethoscope up to the bear's chest, with a focused expression on his face.\", \"middle\": \"The boy leans in closely, listening intently through the stethoscope, while the teddy bear lies on a child-sized bed covered with a colorful blanket.\", \"last\": \"With a satisfied nod, the boy finishes his examination, placing the toy stethoscope back around his neck as he smiles at his teddy bear patient.\"}"
+  },
+  {
+    "caption": "Two artists work on a mural together, discussing ideas and mixing colors to create a masterpiece.",
+    "frame_first": "Two artists stand side by side in front of a large blank wall, sketching outlines with charcoal, sunlight streaming in through a nearby window.",
+    "frame_middle": "One artist mixes vibrant colors on an easel while the other applies broad strokes to the mural, their faces illuminated by the warm afternoon light.",
+    "frame_last": "The artists step back to admire their work, a colorful mural now covers the wall, as the sun begins to set, casting long shadows across the room.",
+    "frame_json_raw": "{\"first\": \"Two artists stand side by side in front of a large blank wall, sketching outlines with charcoal, sunlight streaming in through a nearby window.\", \"middle\": \"One artist mixes vibrant colors on an easel while the other applies broad strokes to the mural, their faces illuminated by the warm afternoon light.\", \"last\": \"The artists step back to admire their work, a colorful mural now covers the wall, as the sun begins to set, casting long shadows across the room.\"}"
+  },
+  {
+    "caption": "A girl braids her friend's hair.",
+    "frame_first": "A girl sits in front of a window with sunlight streaming in, beginning to braid her friend's long hair.",
+    "frame_middle": "The girl's hands deftly weave through the hair, focusing intently as her friend looks on with a content smile.",
+    "frame_last": "The girl ties off the braid with a small ribbon, and her friend turns her head to admire the finished hairstyle in the mirror.",
+    "frame_json_raw": "{\"first\": \"A girl sits in front of a window with sunlight streaming in, beginning to braid her friend's long hair.\", \"middle\": \"The girl's hands deftly weave through the hair, focusing intently as her friend looks on with a content smile.\", \"last\": \"The girl ties off the braid with a small ribbon, and her friend turns her head to admire the finished hairstyle in the mirror.\"}"
+  },
+  {
+    "caption": "A woman high-fives her friend after they complete a challenging hike together.",
+    "frame_first": "A woman and her friend stand at the summit, both smiling and raising their hands to high-five.",
+    "frame_middle": "Their hands meet in the middle, creating a moment of celebration under the bright sun.",
+    "frame_last": "They share a triumphant look, surrounded by the panoramic view of the mountains behind them.",
+    "frame_json_raw": "{\"first\": \"A woman and her friend stand at the summit, both smiling and raising their hands to high-five.\", \"middle\": \"Their hands meet in the middle, creating a moment of celebration under the bright sun.\", \"last\": \"They share a triumphant look, surrounded by the panoramic view of the mountains behind them.\"}"
+  },
+  {
+    "caption": "A grandmother teaches her grandson how to bake cookies.",
+    "frame_first": "A grandmother stands at a kitchen counter, rolling out dough while her grandson watches intently, the kitchen filled with warm, ambient light.",
+    "frame_middle": "The grandson carefully places cookie cutters into the dough under the grandmother's gentle guidance, sunlight streaming through a nearby window, casting a soft glow on their smiling faces.",
+    "frame_last": "Grandmother and grandson slide a tray of shaped cookie dough into an oven, their hands touching lightly as they close the door, the kitchen smelling of sweet, warm spices.",
+    "frame_json_raw": "{\"first\": \"A grandmother stands at a kitchen counter, rolling out dough while her grandson watches intently, the kitchen filled with warm, ambient light.\", \"middle\": \"The grandson carefully places cookie cutters into the dough under the grandmother's gentle guidance, sunlight streaming through a nearby window, casting a soft glow on their smiling faces.\", \"last\": \"Grandmother and grandson slide a tray of shaped cookie dough into an oven, their hands touching lightly as they close the door, the kitchen smelling of sweet, warm spices.\"}"
+  },
+  {
+    "caption": "A group of volunteers works together to plant trees in a local park.",
+    "frame_first": "A group of volunteers, wearing bright green vests, gather at one end of a local park, holding shovels and saplings, preparing to plant trees.",
+    "frame_middle": "Volunteers are spread across the park, digging holes and planting saplings, with some looking up to the partly cloudy sky, suggesting a pleasant afternoon.",
+    "frame_last": "The volunteers stand back, looking at rows of newly planted trees, their faces showing satisfaction as they finish the last tree under the setting sun.",
+    "frame_json_raw": "{\"first\": \"A group of volunteers, wearing bright green vests, gather at one end of a local park, holding shovels and saplings, preparing to plant trees.\", \"middle\": \"Volunteers are spread across the park, digging holes and planting saplings, with some looking up to the partly cloudy sky, suggesting a pleasant afternoon.\", \"last\": \"The volunteers stand back, looking at rows of newly planted trees, their faces showing satisfaction as they finish the last tree under the setting sun.\"}"
+  },
+  {
+    "caption": "A young couple browses an art gallery, discussing their favorite pieces.",
+    "frame_first": "A young couple stands in front of a large abstract painting, the woman pointing at the canvas while the man listens attentively.",
+    "frame_middle": "They move to a sculpture in the center of the room, the woman circling around it while the man leans in closely to examine its details.",
+    "frame_last": "The couple stops at a minimalist photograph, both leaning slightly forward, engaged in a deep conversation about the art.",
+    "frame_json_raw": "{\"first\": \"A young couple stands in front of a large abstract painting, the woman pointing at the canvas while the man listens attentively.\", \"middle\": \"They move to a sculpture in the center of the room, the woman circling around it while the man leans in closely to examine its details.\", \"last\": \"The couple stops at a minimalist photograph, both leaning slightly forward, engaged in a deep conversation about the art.\"}"
+  },
+  {
+    "caption": "A father and daughter race toy cars across the living room floor, cheering and laughing.",
+    "frame_first": "A father and daughter stand at opposite ends of a living room, each holding a toy car, ready to race.",
+    "frame_middle": "The father and daughter simultaneously release their toy cars, cheering as the cars speed across the living room floor.",
+    "frame_last": "The father and daughter laugh together, examining the finish line to see which toy car won the race.",
+    "frame_json_raw": "{\"first\": \"A father and daughter stand at opposite ends of a living room, each holding a toy car, ready to race.\", \"middle\": \"The father and daughter simultaneously release their toy cars, cheering as the cars speed across the living room floor.\", \"last\": \"The father and daughter laugh together, examining the finish line to see which toy car won the race.\"}"
+  },
+  {
+    "caption": "A man proposes to his partner in a flower-filled park.",
+    "frame_first": "A man kneels down on a lush green lawn surrounded by blooming flowers, holding a small black box in his hand.",
+    "frame_middle": "The man opens the box to reveal a sparkling engagement ring, looking up at his smiling partner standing before him.",
+    "frame_last": "The couple embraces tightly, surrounded by a sea of flowers, the sun setting behind them casting a warm glow over the scene.",
+    "frame_json_raw": "{\"first\": \"A man kneels down on a lush green lawn surrounded by blooming flowers, holding a small black box in his hand.\", \"middle\": \"The man opens the box to reveal a sparkling engagement ring, looking up at his smiling partner standing before him.\", \"last\": \"The couple embraces tightly, surrounded by a sea of flowers, the sun setting behind them casting a warm glow over the scene.\"}"
+  },
+  {
+    "caption": "Two friends build a snowman together.",
+    "frame_first": "Two friends, bundled up in winter coats and scarves, gather a large snowball to start the base of a snowman on a snowy, sunny afternoon.",
+    "frame_middle": "The friends are in the middle of stacking the snowman's body, with three distinct snowballs forming the base, middle, and head, their mittened hands shaping the middle section.",
+    "frame_last": "The completed snowman stands tall with coal eyes, a carrot nose, and a hat, as the friends step back, admiring their work against the backdrop of a white, snow-covered yard.",
+    "frame_json_raw": "{\"first\": \"Two friends, bundled up in winter coats and scarves, gather a large snowball to start the base of a snowman on a snowy, sunny afternoon.\", \"middle\": \"The friends are in the middle of stacking the snowman's body, with three distinct snowballs forming the base, middle, and head, their mittened hands shaping the middle section.\", \"last\": \"The completed snowman stands tall with coal eyes, a carrot nose, and a hat, as the friends step back, admiring their work against the backdrop of a white, snow-covered yard.\"}"
+  },
+  {
+    "caption": "A group of kids plays soccer in the street.",
+    "frame_first": "A group of kids gather in a sunlit street, setting up to play soccer, with a ball in the center.",
+    "frame_middle": "Kids are actively playing soccer, one of them kicks the ball while others run towards it, the street is filled with their laughter.",
+    "frame_last": "The game comes to an end, kids are seen catching their breath, smiling and high-fiving each other on the street.",
+    "frame_json_raw": "{\"first\": \"A group of kids gather in a sunlit street, setting up to play soccer, with a ball in the center.\", \"middle\": \"Kids are actively playing soccer, one of them kicks the ball while others run towards it, the street is filled with their laughter.\", \"last\": \"The game comes to an end, kids are seen catching their breath, smiling and high-fiving each other on the street.\"}"
+  },
+  {
+    "caption": "A woman gives her dog a bubble bath.",
+    "frame_first": "A woman stands in a bathroom, filling a large rubber tub with warm water, preparing to give her dog a bubble bath.",
+    "frame_middle": "The dog, now in the tub, looks curious and a bit apprehensive as the woman gently applies soap, creating a frothy layer around the dog.",
+    "frame_last": "The woman rinses the dog with a handheld showerhead, the bubbles slowly disappearing as the dog shakes off the water, looking more relaxed now.",
+    "frame_json_raw": "{\"first\": \"A woman stands in a bathroom, filling a large rubber tub with warm water, preparing to give her dog a bubble bath.\", \"middle\": \"The dog, now in the tub, looks curious and a bit apprehensive as the woman gently applies soap, creating a frothy layer around the dog.\", \"last\": \"The woman rinses the dog with a handheld showerhead, the bubbles slowly disappearing as the dog shakes off the water, looking more relaxed now.\"}"
+  },
+  {
+    "caption": "A man teaches his partner how to play a card game.",
+    "frame_first": "A man and a woman sit across from each other at a small table, the man holding a deck of cards, about to begin teaching her how to play.",
+    "frame_middle": "The man points to a card on the table, explaining the rules, while the woman leans in, attentively looking at the cards.",
+    "frame_last": "The woman smiles as she places a card down on the table, the man nodding in approval, both leaning back as they continue their game.",
+    "frame_json_raw": "{\"first\": \"A man and a woman sit across from each other at a small table, the man holding a deck of cards, about to begin teaching her how to play.\", \"middle\": \"The man points to a card on the table, explaining the rules, while the woman leans in, attentively looking at the cards.\", \"last\": \"The woman smiles as she places a card down on the table, the man nodding in approval, both leaning back as they continue their game.\"}"
+  },
+  {
+    "caption": "Two friends share popcorn at the movies.",
+    "frame_first": "Two friends sit side by side in a dark movie theater, a large bucket of popcorn between them.",
+    "frame_middle": "One friend reaches over with a handful of popcorn, laughing as a movie plays on the big screen.",
+    "frame_last": "Both friends lean back in their seats, sharing a quiet moment as they finish the last pieces of popcorn.",
+    "frame_json_raw": "{\"first\": \"Two friends sit side by side in a dark movie theater, a large bucket of popcorn between them.\", \"middle\": \"One friend reaches over with a handful of popcorn, laughing as a movie plays on the big screen.\", \"last\": \"Both friends lean back in their seats, sharing a quiet moment as they finish the last pieces of popcorn.\"}"
+  },
+  {
+    "caption": "A couple decorates their first Christmas tree.",
+    "frame_first": "A young couple stands in their living room, the Christmas tree in the corner still bare, with a box of ornaments between them on the floor.",
+    "frame_middle": "The woman hangs a shiny red ornament on a high branch while the man reaches up to steady the tree, both smiling and engaged.",
+    "frame_last": "The tree is now fully decorated with a variety of colorful ornaments, the couple stands back admiring their work, lights twinkling softly in the background.",
+    "frame_json_raw": "{\"first\": \"A young couple stands in their living room, the Christmas tree in the corner still bare, with a box of ornaments between them on the floor.\", \"middle\": \"The woman hangs a shiny red ornament on a high branch while the man reaches up to steady the tree, both smiling and engaged.\", \"last\": \"The tree is now fully decorated with a variety of colorful ornaments, the couple stands back admiring their work, lights twinkling softly in the background.\"}"
+  },
+  {
+    "caption": "Two kids build a sandcastle at the beach.",
+    "frame_first": "Two children are seen at the beach, kneeling in the sand, starting to pile sand into a small castle structure.",
+    "frame_middle": "The kids are now standing, using small shovels and buckets to add towers and walls to the growing sandcastle.",
+    "frame_last": "The children step back, admiring their completed sandcastle with a smile, as the sun begins to set behind them.",
+    "frame_json_raw": "{\"first\": \"Two children are seen at the beach, kneeling in the sand, starting to pile sand into a small castle structure.\", \"middle\": \"The kids are now standing, using small shovels and buckets to add towers and walls to the growing sandcastle.\", \"last\": \"The children step back, admiring their completed sandcastle with a smile, as the sun begins to set behind them.\"}"
+  },
+  {
+    "caption": "Two hikers celebrate reaching the mountain peak.",
+    "frame_first": "Two hikers, wearing backpacks and hiking boots, approach the summit of a mountain as the sun rises behind them, casting a golden glow on the landscape.",
+    "frame_middle": "The hikers reach the peak and pause, looking out over the vast, misty valley below, their faces lit with a mix of relief and exhilaration.",
+    "frame_last": "One hiker raises a hand in triumph while the other smiles broadly, both framed against the panoramic view of the mountain range under a clear blue sky.",
+    "frame_json_raw": "{\"first\": \"Two hikers, wearing backpacks and hiking boots, approach the summit of a mountain as the sun rises behind them, casting a golden glow on the landscape.\", \"middle\": \"The hikers reach the peak and pause, looking out over the vast, misty valley below, their faces lit with a mix of relief and exhilaration.\", \"last\": \"One hiker raises a hand in triumph while the other smiles broadly, both framed against the panoramic view of the mountain range under a clear blue sky.\"}"
+  },
+  {
+    "caption": "A man teaches his friend how to surf.",
+    "frame_first": "A man stands on a sandy beach, holding a surfboard, with the ocean waves crashing behind him. His friend watches attentively, standing slightly behind him.",
+    "frame_middle": "The man wades into the ocean, holding the surfboard above his head, while his friend follows closely behind, carrying his own board.",
+    "frame_last": "Both men paddle out in the ocean, the sun reflecting off the waves, as the man gives final instructions to his friend before they catch a wave.",
+    "frame_json_raw": "{\"first\": \"A man stands on a sandy beach, holding a surfboard, with the ocean waves crashing behind him. His friend watches attentively, standing slightly behind him.\", \"middle\": \"The man wades into the ocean, holding the surfboard above his head, while his friend follows closely behind, carrying his own board.\", \"last\": \"Both men paddle out in the ocean, the sun reflecting off the waves, as the man gives final instructions to his friend before they catch a wave.\"}"
+  },
+  {
+    "caption": "A couple plants flowers in their garden.",
+    "frame_first": "A couple stands in a sunny garden, beginning to plant flowers. The man kneels with a trowel, while the woman holds a small plant pot.",
+    "frame_middle": "The couple works together, the man carefully placing the plant into the soil while the woman levels the dirt around it with her hands.",
+    "frame_last": "The garden is now filled with newly planted flowers. The couple stands back, smiling at their work, as the sun begins to set behind them.",
+    "frame_json_raw": "{\"first\": \"A couple stands in a sunny garden, beginning to plant flowers. The man kneels with a trowel, while the woman holds a small plant pot.\", \"middle\": \"The couple works together, the man carefully placing the plant into the soil while the woman levels the dirt around it with her hands.\", \"last\": \"The garden is now filled with newly planted flowers. The couple stands back, smiling at their work, as the sun begins to set behind them.\"}"
+  },
+  {
+    "caption": "A mother teaches her son to tie his shoes.",
+    "frame_first": "A mother and her son sit on a living room rug, the son's shoe laid out in front of him, the mother's hands guiding his as they begin to loop the laces.",
+    "frame_middle": "The son, with focused eyes, loops the lace into a knot, the mother's hand hovering nearby, ready to assist if needed.",
+    "frame_last": "The son pulls the laces tight, completing the bow, and looks up at his mother with a proud smile, the successfully tied shoe in front of him.",
+    "frame_json_raw": "{\"first\": \"A mother and her son sit on a living room rug, the son's shoe laid out in front of him, the mother's hands guiding his as they begin to loop the laces.\", \"middle\": \"The son, with focused eyes, loops the lace into a knot, the mother's hand hovering nearby, ready to assist if needed.\", \"last\": \"The son pulls the laces tight, completing the bow, and looks up at his mother with a proud smile, the successfully tied shoe in front of him.\"}"
+  },
+  {
+    "caption": "A couple goes ice skating.",
+    "frame_first": "A couple walks hand in hand onto an ice rink, the lights of the arena reflecting off the smooth ice.",
+    "frame_middle": "The couple glides gracefully across the ice, their laughter echoing as they skate in sync.",
+    "frame_last": "They stop in the center of the rink, facing each other, smiling as they catch their breath under the bright arena lights.",
+    "frame_json_raw": "{\"first\": \"A couple walks hand in hand onto an ice rink, the lights of the arena reflecting off the smooth ice.\", \"middle\": \"The couple glides gracefully across the ice, their laughter echoing as they skate in sync.\", \"last\": \"They stop in the center of the rink, facing each other, smiling as they catch their breath under the bright arena lights.\"}"
+  },
+  {
+    "caption": "A father pushes his daughter on a swing.",
+    "frame_first": "A father stands behind a swing set at a park, pushing his daughter gently forward as she grips the chains.",
+    "frame_middle": "The daughter reaches the peak of her swing arc, her laughter echoing as her father continues to push her with a steady rhythm.",
+    "frame_last": "The swing slows down, the father stops pushing and the daughter, with a big smile, swings gently back and forth.",
+    "frame_json_raw": "{\"first\": \"A father stands behind a swing set at a park, pushing his daughter gently forward as she grips the chains.\", \"middle\": \"The daughter reaches the peak of her swing arc, her laughter echoing as her father continues to push her with a steady rhythm.\", \"last\": \"The swing slows down, the father stops pushing and the daughter, with a big smile, swings gently back and forth.\"}"
+  },
+  {
+    "caption": "A teacher helps a student with a science experiment.",
+    "frame_first": "A classroom with bright daylight streaming through windows. A teacher stands beside a student at a lab table, both leaning over a beaker with bubbling liquid.",
+    "frame_middle": "The teacher's hand gently guides the student's hand holding a test tube, adding a drop of solution that changes the beaker's liquid color.",
+    "frame_last": "The student looks up with a smile, eyes wide with excitement, while the teacher nods approvingly, both standing back to observe the experiment's colorful reaction.",
+    "frame_json_raw": "{\"first\": \"A classroom with bright daylight streaming through windows. A teacher stands beside a student at a lab table, both leaning over a beaker with bubbling liquid.\", \"middle\": \"The teacher's hand gently guides the student's hand holding a test tube, adding a drop of solution that changes the beaker's liquid color.\", \"last\": \"The student looks up with a smile, eyes wide with excitement, while the teacher nods approvingly, both standing back to observe the experiment's colorful reaction.\"}"
+  },
+  {
+    "caption": "Two kids have a water balloon fight on a hot day.",
+    "frame_first": "Two children stand in a sunlit backyard, one child holds a water balloon ready to throw, the other looks alert and ready to dodge.",
+    "frame_middle": "Water splashes as one child throws the balloon, hitting the other who is now soaked and laughing.",
+    "frame_last": "Both children are now laughing and dripping wet, standing amidst scattered water balloons, the sun still high in the sky.",
+    "frame_json_raw": "{\"first\": \"Two children stand in a sunlit backyard, one child holds a water balloon ready to throw, the other looks alert and ready to dodge.\", \"middle\": \"Water splashes as one child throws the balloon, hitting the other who is now soaked and laughing.\", \"last\": \"Both children are now laughing and dripping wet, standing amidst scattered water balloons, the sun still high in the sky.\"}"
+  }
+]

@@ -1,0 +1,1902 @@
+[
+  {
+    "caption": "A timelapse of a leaf transitioning from green to bright red as autumn progresses.",
+    "state 0": "A green leaf",
+    "state 1": "A bright red leaf",
+    "tag": "attribute change",
+    "frame_first": "A vibrant green leaf hangs from a branch against a clear blue sky, morning sunlight casting a slight shadow below.",
+    "frame_middle": "The leaf is now a mix of green and bright red, with the colors blending in patches, the sun higher in the sky.",
+    "frame_last": "The leaf is fully transformed into a bright red, standing out against the now partly bare branch, as the sun sets, casting a warm glow.",
+    "frame_json_raw": "{\"first\": \"A vibrant green leaf hangs from a branch against a clear blue sky, morning sunlight casting a slight shadow below.\", \"middle\": \"The leaf is now a mix of green and bright red, with the colors blending in patches, the sun higher in the sky.\", \"last\": \"The leaf is fully transformed into a bright red, standing out against the now partly bare branch, as the sun sets, casting a warm glow.\"}"
+  },
+  {
+    "caption": "A timelapse of a piece of metal gradually rusting when exposed to moisture.",
+    "state 0": "A piece of metal",
+    "state 1": "A rusted piece of metal",
+    "tag": "state change",
+    "frame_first": "A shiny piece of metal sits on a plain background, with a few droplets of water beginning to form on its surface.",
+    "frame_middle": "The metal surface is now covered in a patchy layer of rust, with water droplets glistening in the light, highlighting the transformation.",
+    "frame_last": "The once-shiny metal is now completely rusted, the surface a deep reddish-brown, with water droplets still present, emphasizing the decay.",
+    "frame_json_raw": "{\"first\": \"A shiny piece of metal sits on a plain background, with a few droplets of water beginning to form on its surface.\", \"middle\": \"The metal surface is now covered in a patchy layer of rust, with water droplets glistening in the light, highlighting the transformation.\", \"last\": \"The once-shiny metal is now completely rusted, the surface a deep reddish-brown, with water droplets still present, emphasizing the decay.\"}"
+  },
+  {
+    "caption": "A timelapse of a caterpillar morphing into a butterfly inside a cocoon.",
+    "state 0": "A caterpillar",
+    "state 1": "A butterfly",
+    "tag": "state change",
+    "frame_first": "A close-up of a cocoon, slightly translucent, with the faint outline of a caterpillar inside, the scene is dimly lit, suggesting early morning.",
+    "frame_middle": "The cocoon's interior shows a transformation in progress, the caterpillar's form is blurred and changing, the lighting remains consistent, indicating the passage of time during the day.",
+    "frame_last": "The cocoon gently splits open, revealing a fully formed butterfly, its wings folded, the scene brightens to late afternoon sunlight.",
+    "frame_json_raw": "{\"first\": \"A close-up of a cocoon, slightly translucent, with the faint outline of a caterpillar inside, the scene is dimly lit, suggesting early morning.\", \"middle\": \"The cocoon's interior shows a transformation in progress, the caterpillar's form is blurred and changing, the lighting remains consistent, indicating the passage of time during the day.\", \"last\": \"The cocoon gently splits open, revealing a fully formed butterfly, its wings folded, the scene brightens to late afternoon sunlight.\"}"
+  },
+  {
+    "caption": "A timelapse of a flower bud blooming into a full flower.",
+    "state 0": "A flower bud",
+    "state 1": "A full flower",
+    "tag": "state change",
+    "frame_first": "A tightly closed flower bud sits at the center of the frame, surrounded by green leaves, with the first light of dawn casting a soft glow.",
+    "frame_middle": "The bud has partially unfurled, revealing delicate petals in shades of pink, with sunlight gradually brightening the sky behind.",
+    "frame_last": "The flower is now fully bloomed, its petals spread wide in a vibrant display, bathed in the warm light of a clear morning sky.",
+    "frame_json_raw": "{\"first\": \"A tightly closed flower bud sits at the center of the frame, surrounded by green leaves, with the first light of dawn casting a soft glow.\", \"middle\": \"The bud has partially unfurled, revealing delicate petals in shades of pink, with sunlight gradually brightening the sky behind.\", \"last\": \"The flower is now fully bloomed, its petals spread wide in a vibrant display, bathed in the warm light of a clear morning sky.\"}"
+  },
+  {
+    "caption": "A timelapse of a snowman melting under the afternoon sun.",
+    "state 0": "A snowman",
+    "state 1": "A melted snowman",
+    "tag": "state change",
+    "frame_first": "A snowman stands tall and white against a bright blue sky, with the sun high in the afternoon sky.",
+    "frame_middle": "The snowman's body is visibly smaller, with puddles forming at its base as the sun continues to melt the snow.",
+    "frame_last": "Only a small, melting lump of snow remains where the snowman once stood, surrounded by large puddles under the setting sun.",
+    "frame_json_raw": "{\"first\": \"A snowman stands tall and white against a bright blue sky, with the sun high in the afternoon sky.\", \"middle\": \"The snowman's body is visibly smaller, with puddles forming at its base as the sun continues to melt the snow.\", \"last\": \"Only a small, melting lump of snow remains where the snowman once stood, surrounded by large puddles under the setting sun.\"}"
+  },
+  {
+    "caption": "A timelapse of an apple decaying over time.",
+    "state 0": "A fresh apple",
+    "state 1": "A decayed apple",
+    "tag": "state change",
+    "frame_first": "A fresh red apple sits on a plain white background, its skin glistening under bright light.",
+    "frame_middle": "The apple's surface is now dotted with brown spots, and the flesh appears slightly mushy, with a dimmer lighting to emphasize the decay.",
+    "frame_last": "The apple is now a shriveled, dark brown mass, almost unrecognizable, with a soft, ambient light highlighting the final stages of decay.",
+    "frame_json_raw": "{\"first\": \"A fresh red apple sits on a plain white background, its skin glistening under bright light.\", \"middle\": \"The apple's surface is now dotted with brown spots, and the flesh appears slightly mushy, with a dimmer lighting to emphasize the decay.\", \"last\": \"The apple is now a shriveled, dark brown mass, almost unrecognizable, with a soft, ambient light highlighting the final stages of decay.\"}"
+  },
+  {
+    "caption": "A timelapse of a wall painting fading due to prolonged sun exposure.",
+    "state 0": "A vibrant wall painting",
+    "state 1": "A faded wall painting",
+    "tag": "attribute change",
+    "frame_first": "A vibrant wall painting under the morning sun, with bold colors and clear details.",
+    "frame_middle": "The sun climbs higher, casting harsh light on the wall, where the painting's colors begin to blur and fade.",
+    "frame_last": "As the day ends, the painting is barely visible, its once vivid hues now pale and indistinct against the sun-bleached wall.",
+    "frame_json_raw": "{\"first\": \"A vibrant wall painting under the morning sun, with bold colors and clear details.\", \"middle\": \"The sun climbs higher, casting harsh light on the wall, where the painting's colors begin to blur and fade.\", \"last\": \"As the day ends, the painting is barely visible, its once vivid hues now pale and indistinct against the sun-bleached wall.\"}"
+  },
+  {
+    "caption": "A timelapse of ice cream melting during a hot day.",
+    "state 0": "Solid ice cream",
+    "state 1": "Melted ice cream",
+    "tag": "state change",
+    "frame_first": "A scoop of ice cream sits atop a cone, pristine and white against a bright, sunny sky.",
+    "frame_middle": "The ice cream begins to melt, forming a small puddle at the base of the cone, with drips starting to form.",
+    "frame_last": "The ice cream has mostly melted, leaving a large puddle around the cone, with only a small amount remaining on top.",
+    "frame_json_raw": "{\"first\": \"A scoop of ice cream sits atop a cone, pristine and white against a bright, sunny sky.\", \"middle\": \"The ice cream begins to melt, forming a small puddle at the base of the cone, with drips starting to form.\", \"last\": \"The ice cream has mostly melted, leaving a large puddle around the cone, with only a small amount remaining on top.\"}"
+  },
+  {
+    "caption": "A timelapse of a candle burning down.",
+    "state 0": "A full candle",
+    "state 1": "A burned down candle",
+    "tag": "state change",
+    "frame_first": "A single candle flickers in the center of the frame, casting a warm, soft glow in a dark room.",
+    "frame_middle": "The candle's flame remains steady, but the wax has melted significantly, pooling around the base.",
+    "frame_last": "The candle is nearly burnt out, with only a small stub of wax and a flickering flame remaining, soon to be extinguished.",
+    "frame_json_raw": "{\"first\": \"A single candle flickers in the center of the frame, casting a warm, soft glow in a dark room.\", \"middle\": \"The candle's flame remains steady, but the wax has melted significantly, pooling around the base.\", \"last\": \"The candle is nearly burnt out, with only a small stub of wax and a flickering flame remaining, soon to be extinguished.\"}"
+  },
+  {
+    "caption": "A timelapse of a puddle drying up and disappearing on a hot day.",
+    "state 0": "A puddle of water on the ground",
+    "state 1": "A dry spot where the puddle was",
+    "tag": "state change",
+    "frame_first": "A shallow puddle glistens under the bright midday sun, reflecting the blue sky and scattered clouds.",
+    "frame_middle": "The puddle's edges are now uneven, with patches of wet ground appearing as the water evaporates.",
+    "frame_last": "The puddle has completely vanished, leaving behind a slightly damp patch of ground in the warm sunlight.",
+    "frame_json_raw": "{\"first\": \"A shallow puddle glistens under the bright midday sun, reflecting the blue sky and scattered clouds.\", \"middle\": \"The puddle's edges are now uneven, with patches of wet ground appearing as the water evaporates.\", \"last\": \"The puddle has completely vanished, leaving behind a slightly damp patch of ground in the warm sunlight.\"}"
+  },
+  {
+    "caption": "A timelapse of a piece of bread initially fresh, then growing moldy.",
+    "state 0": "Fresh bread",
+    "state 1": "Moldy bread",
+    "tag": "state change",
+    "frame_first": "A slice of fresh bread sits on a white plate, its crust golden and crumbly, with a soft, light-colored interior.",
+    "frame_middle": "The bread's surface now shows small, fuzzy green spots of mold, spreading slowly across its surface.",
+    "frame_last": "The slice of bread is now completely covered in a thick layer of green and black mold, barely recognizable as bread.",
+    "frame_json_raw": "{\"first\": \"A slice of fresh bread sits on a white plate, its crust golden and crumbly, with a soft, light-colored interior.\", \"middle\": \"The bread's surface now shows small, fuzzy green spots of mold, spreading slowly across its surface.\", \"last\": \"The slice of bread is now completely covered in a thick layer of green and black mold, barely recognizable as bread.\"}"
+  },
+  {
+    "caption": "A timelapse of a green banana turning yellow as it ripens.",
+    "state 0": "A green banana",
+    "state 1": "A yellow banana",
+    "tag": "attribute change",
+    "frame_first": "A green banana hangs on a kitchen counter under bright kitchen lights, its skin uniformly green.",
+    "frame_middle": "The banana's color shifts, with most of its surface now a vibrant yellow, a few green patches remain near the stem.",
+    "frame_last": "The banana is fully yellow, with slight brown spots appearing, indicating it is nearly ripe, sitting still on the counter.",
+    "frame_json_raw": "{\"first\": \"A green banana hangs on a kitchen counter under bright kitchen lights, its skin uniformly green.\", \"middle\": \"The banana's color shifts, with most of its surface now a vibrant yellow, a few green patches remain near the stem.\", \"last\": \"The banana is fully yellow, with slight brown spots appearing, indicating it is nearly ripe, sitting still on the counter.\"}"
+  },
+  {
+    "caption": "A timelapse of a ceramic vase glossy and new, becoming cracked and weathered with age.",
+    "state 0": "A glossy new ceramic vase",
+    "state 1": "A cracked and weathered ceramic vase",
+    "tag": "state change",
+    "frame_first": "A pristine, glossy ceramic vase stands in soft daylight, its surface reflecting subtle light.",
+    "frame_middle": "The vase shows signs of wear, with fine cracks beginning to spiderweb across its surface under the changing light of day.",
+    "frame_last": "The once-smooth vase is now heavily cracked and weathered, its form still recognizable but worn by time, bathed in the fading light of dusk.",
+    "frame_json_raw": "{\"first\": \"A pristine, glossy ceramic vase stands in soft daylight, its surface reflecting subtle light.\", \"middle\": \"The vase shows signs of wear, with fine cracks beginning to spiderweb across its surface under the changing light of day.\", \"last\": \"The once-smooth vase is now heavily cracked and weathered, its form still recognizable but worn by time, bathed in the fading light of dusk.\"}"
+  },
+  {
+    "caption": "A timelapse of the healing process of a scar on the skin.",
+    "state 0": "A fresh scar on the skin",
+    "state 1": "A healed scar on the skin",
+    "tag": "state change",
+    "frame_first": "A close-up view of a fresh, red scar on skin, with slight swelling and a scab forming.",
+    "frame_middle": "The scar is less red, the scab has fallen off, revealing new, pinkish skin with some fine lines.",
+    "frame_last": "The scar has faded to a lighter color, almost matching the surrounding skin, with minimal visible lines.",
+    "frame_json_raw": "{\"first\": \"A close-up view of a fresh, red scar on skin, with slight swelling and a scab forming.\", \"middle\": \"The scar is less red, the scab has fallen off, revealing new, pinkish skin with some fine lines.\", \"last\": \"The scar has faded to a lighter color, almost matching the surrounding skin, with minimal visible lines.\"}"
+  },
+  {
+    "caption": "A timelapse of a polished wooden floor shiny and smooth, becoming scratched and worn.",
+    "state 0": "A polished, shiny wooden floor",
+    "state 1": "A scratched and worn wooden floor",
+    "tag": "attribute change",
+    "frame_first": "A polished wooden floor gleams under soft, ambient light, reflecting the room's subtle hues.",
+    "frame_middle": "Scratches begin to appear on the floor's surface, disrupting the once-uniform shine with faint lines.",
+    "frame_last": "The wooden floor now shows significant wear, with numerous scratches and a duller sheen, indicating years of use.",
+    "frame_json_raw": "{\"first\": \"A polished wooden floor gleams under soft, ambient light, reflecting the room's subtle hues.\", \"middle\": \"Scratches begin to appear on the floor's surface, disrupting the once-uniform shine with faint lines.\", \"last\": \"The wooden floor now shows significant wear, with numerous scratches and a duller sheen, indicating years of use.\"}"
+  },
+  {
+    "caption": "A timelapse of a steel bridge gleaming and new, acquiring rust streaks over time.",
+    "state 0": "A gleaming new steel bridge",
+    "state 1": "A rust-streaked steel bridge",
+    "tag": "state change",
+    "frame_first": "A steel bridge shines under the morning sun, its surface gleaming and pristine, reflecting the clear blue sky above.",
+    "frame_middle": "The bridge's surface begins to show signs of aging, with subtle rust streaks appearing along the edges and in shadowed areas.",
+    "frame_last": "Rust streaks have spread across the bridge, transforming its once-shiny surface into a weathered, reddish-brown tapestry of age and exposure.",
+    "frame_json_raw": "{\"first\": \"A steel bridge shines under the morning sun, its surface gleaming and pristine, reflecting the clear blue sky above.\", \"middle\": \"The bridge's surface begins to show signs of aging, with subtle rust streaks appearing along the edges and in shadowed areas.\", \"last\": \"Rust streaks have spread across the bridge, transforming its once-shiny surface into a weathered, reddish-brown tapestry of age and exposure.\"}"
+  },
+  {
+    "caption": "A timelapse of a piece of wood being carved into a sculpture.",
+    "state 0": "A plain piece of wood",
+    "state 1": "A carved wooden sculpture",
+    "tag": "state change",
+    "frame_first": "A block of wood sits on a carving stand under a bright light, with a sculptor's hand approaching it, holding a chisel.",
+    "frame_middle": "The sculptor's hand moves rhythmically, chiseling away at the wood, revealing the early stages of a sculpture.",
+    "frame_last": "The timelapse slows to reveal a finished wooden sculpture, the tools laid aside, and the sculptor stepping back to admire the work.",
+    "frame_json_raw": "{\"first\": \"A block of wood sits on a carving stand under a bright light, with a sculptor's hand approaching it, holding a chisel.\", \"middle\": \"The sculptor's hand moves rhythmically, chiseling away at the wood, revealing the early stages of a sculpture.\", \"last\": \"The timelapse slows to reveal a finished wooden sculpture, the tools laid aside, and the sculptor stepping back to admire the work.\"}"
+  },
+  {
+    "caption": "A timelapse of a river freezing over during winter.",
+    "state 0": "A flowing river",
+    "state 1": "A frozen river",
+    "tag": "state change",
+    "frame_first": "A gently flowing river under a clear, crisp winter sky, with the water's surface beginning to show thin, shimmering ice patches.",
+    "frame_middle": "The river is partially covered with a lattice of ice, reflecting the pale winter sunlight, while the edges are fully frozen, forming a continuous sheet.",
+    "frame_last": "The river is completely frozen over, a smooth, white expanse under a sky that hints at the approaching dusk, with the ice surface slightly textured from overnight cooling.",
+    "frame_json_raw": "{\"first\": \"A gently flowing river under a clear, crisp winter sky, with the water's surface beginning to show thin, shimmering ice patches.\", \"middle\": \"The river is partially covered with a lattice of ice, reflecting the pale winter sunlight, while the edges are fully frozen, forming a continuous sheet.\", \"last\": \"The river is completely frozen over, a smooth, white expanse under a sky that hints at the approaching dusk, with the ice surface slightly textured from overnight cooling.\"}"
+  },
+  {
+    "caption": "A timelapse of a pair of jeans blue and new, fading to white.",
+    "state 0": "A pair of blue, new jeans",
+    "state 1": "A pair of faded white jeans",
+    "tag": "attribute change",
+    "frame_first": "A pair of dark blue jeans hangs on a clothesline under a clear blue sky, with a bright sun casting sharp shadows.",
+    "frame_middle": "The jeans, now a lighter shade of blue, flutter slightly in the breeze as the sun begins to set, casting a warm, golden glow.",
+    "frame_last": "The jeans, faded nearly to white, hang still as dusk turns to night, with only the moonlight illuminating the scene.",
+    "frame_json_raw": "{\"first\": \"A pair of dark blue jeans hangs on a clothesline under a clear blue sky, with a bright sun casting sharp shadows.\", \"middle\": \"The jeans, now a lighter shade of blue, flutter slightly in the breeze as the sun begins to set, casting a warm, golden glow.\", \"last\": \"The jeans, faded nearly to white, hang still as dusk turns to night, with only the moonlight illuminating the scene.\"}"
+  },
+  {
+    "caption": "A timelapse of a full moon diminishing to a new moon over the lunar cycle.",
+    "state 0": "A full moon",
+    "state 1": "A new moon",
+    "tag": "state change",
+    "frame_first": "A full moon hangs brightly in the dark night sky, casting a silvery glow over the landscape.",
+    "frame_middle": "The moon's phase has waned to a crescent, its sliver of light still visible against the deepening night.",
+    "frame_last": "The sky is dark and moonless, marking the transition to the new moon phase, with only stars twinkling above.",
+    "frame_json_raw": "{\"first\": \"A full moon hangs brightly in the dark night sky, casting a silvery glow over the landscape.\", \"middle\": \"The moon's phase has waned to a crescent, its sliver of light still visible against the deepening night.\", \"last\": \"The sky is dark and moonless, marking the transition to the new moon phase, with only stars twinkling above.\"}"
+  },
+  {
+    "caption": "A balloon expanding as it is filled with air",
+    "state 0": "A deflated balloon",
+    "state 1": "An expanded balloon",
+    "tag": "state change",
+    "frame_first": "A deflated balloon hangs limp at the end of a string, held by an unseen hand. The balloon begins to puff out slightly as air is introduced.",
+    "frame_middle": "The balloon is now half-filled, taking on a spherical shape, with the rubber stretching taut as more air is added.",
+    "frame_last": "The balloon is fully expanded, nearly spherical, with the rubber at maximum stretch. It sways gently as the last bit of air finishes filling it.",
+    "frame_json_raw": "{\"first\": \"A deflated balloon hangs limp at the end of a string, held by an unseen hand. The balloon begins to puff out slightly as air is introduced.\", \"middle\": \"The balloon is now half-filled, taking on a spherical shape, with the rubber stretching taut as more air is added.\", \"last\": \"The balloon is fully expanded, nearly spherical, with the rubber at maximum stretch. It sways gently as the last bit of air finishes filling it.\"}"
+  },
+  {
+    "caption": "A glass fogging up in a humid room",
+    "state 0": "A clear glass",
+    "state 1": "A fogged-up glass",
+    "tag": "state change",
+    "frame_first": "A clear glass sits on a table in a steamy room, with tiny droplets beginning to form on its surface.",
+    "frame_middle": "The glass is now partially obscured by a growing layer of fog, with the outlines of the room becoming less distinct.",
+    "frame_last": "The glass is completely fogged over, with a uniform mist covering it, reflecting the dim, humid environment.",
+    "frame_json_raw": "{\"first\": \"A clear glass sits on a table in a steamy room, with tiny droplets beginning to form on its surface.\", \"middle\": \"The glass is now partially obscured by a growing layer of fog, with the outlines of the room becoming less distinct.\", \"last\": \"The glass is completely fogged over, with a uniform mist covering it, reflecting the dim, humid environment.\"}"
+  },
+  {
+    "caption": "A full bottle of wine, gradually emptying into glasses until none remains",
+    "state 0": "A full bottle of wine",
+    "state 1": "An empty bottle of wine",
+    "tag": "state change",
+    "frame_first": "A full bottle of red wine sits on a table, with two empty glasses beside it, ready to be filled.",
+    "frame_middle": "The bottle of wine is half empty, with both glasses now partially filled, sitting on a table under soft ambient lighting.",
+    "frame_last": "The wine bottle is now completely empty, with two full glasses of red wine sitting beside it on the table.",
+    "frame_json_raw": "{\"first\": \"A full bottle of red wine sits on a table, with two empty glasses beside it, ready to be filled.\", \"middle\": \"The bottle of wine is half empty, with both glasses now partially filled, sitting on a table under soft ambient lighting.\", \"last\": \"The wine bottle is now completely empty, with two full glasses of red wine sitting beside it on the table.\"}"
+  },
+  {
+    "caption": "A book's pages yellowing with age",
+    "state 0": "A book with white pages",
+    "state 1": "A book with yellowed pages",
+    "tag": "state change",
+    "frame_first": "A close-up of an old book's cover, slightly worn, with the first page partially turned, revealing its yellowed edges.",
+    "frame_middle": "The camera pans slowly across the open pages, showing the deepening yellow hue and slight creases, capturing the texture of aged paper.",
+    "frame_last": "The final page is shown, more yellowed and fragile, with faded ink, emphasizing the book's age and history.",
+    "frame_json_raw": "{\"first\": \"A close-up of an old book's cover, slightly worn, with the first page partially turned, revealing its yellowed edges.\", \"middle\": \"The camera pans slowly across the open pages, showing the deepening yellow hue and slight creases, capturing the texture of aged paper.\", \"last\": \"The final page is shown, more yellowed and fragile, with faded ink, emphasizing the book's age and history.\"}"
+  },
+  {
+    "caption": "A patch of snow turning slushy as it thaws",
+    "state 0": "A patch of solid snow",
+    "state 1": "A patch of slushy snow",
+    "tag": "state change",
+    "frame_first": "A pristine patch of snow glistens under the soft, late afternoon sun, beginning to show signs of melting at its edges.",
+    "frame_middle": "The snow patch is now visibly slushy, with water pooling in the center and the edges becoming darker and muddier.",
+    "frame_last": "The once white snow has completely transformed into a large puddle of slush, with only a few icy patches remaining at the corners.",
+    "frame_json_raw": "{\"first\": \"A pristine patch of snow glistens under the soft, late afternoon sun, beginning to show signs of melting at its edges.\", \"middle\": \"The snow patch is now visibly slushy, with water pooling in the center and the edges becoming darker and muddier.\", \"last\": \"The once white snow has completely transformed into a large puddle of slush, with only a few icy patches remaining at the corners.\"}"
+  },
+  {
+    "caption": "A sandcastle being eroded by the incoming tide",
+    "state 0": "A complete sandcastle",
+    "state 1": "An eroded sandcastle",
+    "tag": "state change",
+    "frame_first": "A well-constructed sandcastle stands tall on the beach as the first wave of the incoming tide approaches in the background.",
+    "frame_middle": "Water from the rising tide laps at the base of the sandcastle, causing small chunks of sand to break off and wash away.",
+    "frame_last": "The sandcastle is now significantly diminished, with only a few remnants standing as the tide continues to wash over the once-firm structure.",
+    "frame_json_raw": "{\"first\": \"A well-constructed sandcastle stands tall on the beach as the first wave of the incoming tide approaches in the background.\", \"middle\": \"Water from the rising tide laps at the base of the sandcastle, causing small chunks of sand to break off and wash away.\", \"last\": \"The sandcastle is now significantly diminished, with only a few remnants standing as the tide continues to wash over the once-firm structure.\"}"
+  },
+  {
+    "caption": "A pumpkin growing from a small bud into a large fruit",
+    "state 0": "A small pumpkin bud",
+    "state 1": "A large pumpkin",
+    "tag": "state change",
+    "frame_first": "A small green bud emerges from the soil, barely visible against the earth.",
+    "frame_middle": "The bud has grown into a medium-sized pumpkin, still green, sitting prominently on the ground with its vine stretching out.",
+    "frame_last": "A large, orange pumpkin rests on the ground, fully grown with intricate ridges and a thick stem.",
+    "frame_json_raw": "{\"first\": \"A small green bud emerges from the soil, barely visible against the earth.\", \"middle\": \"The bud has grown into a medium-sized pumpkin, still green, sitting prominently on the ground with its vine stretching out.\", \"last\": \"A large, orange pumpkin rests on the ground, fully grown with intricate ridges and a thick stem.\"}"
+  },
+  {
+    "caption": "A frozen lake thawing as the temperature rises",
+    "state 0": "A frozen lake",
+    "state 1": "A thawed lake",
+    "tag": "state change",
+    "frame_first": "A wide shot of a frozen lake under a bright, early spring sky, with thin cracks forming on the ice surface.",
+    "frame_middle": "The ice continues to crack and break apart, revealing patches of dark, still water beneath, as sunlight glints off the melting surface.",
+    "frame_last": "The lake is mostly free of ice, with small, floating ice chunks scattered across the surface, reflecting the clear blue sky above.",
+    "frame_json_raw": "{\"first\": \"A wide shot of a frozen lake under a bright, early spring sky, with thin cracks forming on the ice surface.\", \"middle\": \"The ice continues to crack and break apart, revealing patches of dark, still water beneath, as sunlight glints off the melting surface.\", \"last\": \"The lake is mostly free of ice, with small, floating ice chunks scattered across the surface, reflecting the clear blue sky above.\"}"
+  },
+  {
+    "caption": "A chalk drawing on a sidewalk washing away in the rain",
+    "state 0": "A clear chalk drawing",
+    "state 1": "A washed-away chalk drawing",
+    "tag": "state change",
+    "frame_first": "A detailed chalk drawing of a landscape is visible on a wet sidewalk, with raindrops beginning to blur the edges.",
+    "frame_middle": "The rain intensifies, causing the chalk to dissolve and streak down the sidewalk, leaving patches of the original drawing still visible.",
+    "frame_last": "Only faint outlines of the chalk drawing remain, with the rain continuing to wash away the last traces, leaving the sidewalk nearly clear.",
+    "frame_json_raw": "{\"first\": \"A detailed chalk drawing of a landscape is visible on a wet sidewalk, with raindrops beginning to blur the edges.\", \"middle\": \"The rain intensifies, causing the chalk to dissolve and streak down the sidewalk, leaving patches of the original drawing still visible.\", \"last\": \"Only faint outlines of the chalk drawing remain, with the rain continuing to wash away the last traces, leaving the sidewalk nearly clear.\"}"
+  },
+  {
+    "caption": "A green chameleon changes its skin color to pink",
+    "state 0": "A green chameleon",
+    "state 1": "A pink chameleon",
+    "tag": "attribute change",
+    "frame_first": "A green chameleon perches on a leaf, its skin vivid against the green backdrop.",
+    "frame_middle": "The chameleon's skin begins to shift, patches of pink appearing and spreading across its body.",
+    "frame_last": "The chameleon is now entirely pink, blending seamlessly with the rosy-colored flowers behind it.",
+    "frame_json_raw": "{\"first\": \"A green chameleon perches on a leaf, its skin vivid against the green backdrop.\", \"middle\": \"The chameleon's skin begins to shift, patches of pink appearing and spreading across its body.\", \"last\": \"The chameleon is now entirely pink, blending seamlessly with the rosy-colored flowers behind it.\"}"
+  },
+  {
+    "caption": "A coffee mug staining over years of use",
+    "state 0": "A clean coffee mug",
+    "state 1": "A stained coffee mug",
+    "tag": "state change",
+    "frame_first": "A close-up of a pristine white coffee mug sits on a kitchen counter under bright morning light, ready for its first use.",
+    "frame_middle": "The same coffee mug now shows a slight brown ring around the rim and a few dark stains on the side, indicating months of daily use.",
+    "frame_last": "Years later, the mug is heavily stained, with a dark brown hue covering most of its surface, yet it still holds a steaming cup of coffee, a testament to its enduring use.",
+    "frame_json_raw": "{\"first\": \"A close-up of a pristine white coffee mug sits on a kitchen counter under bright morning light, ready for its first use.\", \"middle\": \"The same coffee mug now shows a slight brown ring around the rim and a few dark stains on the side, indicating months of daily use.\", \"last\": \"Years later, the mug is heavily stained, with a dark brown hue covering most of its surface, yet it still holds a steaming cup of coffee, a testament to its enduring use.\"}"
+  },
+  {
+    "caption": "A banana peel blackening after being discarded",
+    "state 0": "A yellow banana peel",
+    "state 1": "A blackened banana peel",
+    "tag": "state change",
+    "frame_first": "A freshly discarded banana peel lies on a sidewalk, its vibrant yellow still visible under a midday sun.",
+    "frame_middle": "The banana peel begins to blacken, showing signs of decay, with shadows lengthening as the day progresses.",
+    "frame_last": "The banana peel is now almost entirely black, barely recognizable, as dusk approaches and the light fades.",
+    "frame_json_raw": "{\"first\": \"A freshly discarded banana peel lies on a sidewalk, its vibrant yellow still visible under a midday sun.\", \"middle\": \"The banana peel begins to blacken, showing signs of decay, with shadows lengthening as the day progresses.\", \"last\": \"The banana peel is now almost entirely black, barely recognizable, as dusk approaches and the light fades.\"}"
+  },
+  {
+    "caption": "A soap bar diminishing with each use",
+    "state 0": "A full soap bar",
+    "state 1": "A diminished soap bar",
+    "tag": "state change",
+    "frame_first": "A full-sized bar of soap sits on a white, textured towel, with water droplets scattered around it, under a soft, natural light in the morning.",
+    "frame_middle": "The soap bar is noticeably smaller, with visible wear on one side, as water droplets continue to form and evaporate around it, still in the morning light.",
+    "frame_last": "A significantly diminished soap bar, nearly half its original size, rests on the towel, with a few lingering water droplets, as the morning light begins to fade.",
+    "frame_json_raw": "{\"first\": \"A full-sized bar of soap sits on a white, textured towel, with water droplets scattered around it, under a soft, natural light in the morning.\", \"middle\": \"The soap bar is noticeably smaller, with visible wear on one side, as water droplets continue to form and evaporate around it, still in the morning light.\", \"last\": \"A significantly diminished soap bar, nearly half its original size, rests on the towel, with a few lingering water droplets, as the morning light begins to fade.\"}"
+  },
+  {
+    "caption": "A lizard shedding its old skin for new",
+    "state 0": "A lizard with old skin",
+    "state 1": "A lizard with new skin",
+    "tag": "state change",
+    "frame_first": "A green lizard, partially covered in its old, dull skin, clings to a branch in a lush, sunlit forest.",
+    "frame_middle": "The lizard, now half-free from its old skin, twists and wriggles, the sun filtering through the leaves casting dappled light on the scene.",
+    "frame_last": "The lizard, fully free from its old skin, sits on a mossy rock, its new skin glistening in the sunlight, the old skin lying crumpled beside it.",
+    "frame_json_raw": "{\"first\": \"A green lizard, partially covered in its old, dull skin, clings to a branch in a lush, sunlit forest.\", \"middle\": \"The lizard, now half-free from its old skin, twists and wriggles, the sun filtering through the leaves casting dappled light on the scene.\", \"last\": \"The lizard, fully free from its old skin, sits on a mossy rock, its new skin glistening in the sunlight, the old skin lying crumpled beside it.\"}"
+  },
+  {
+    "caption": "A moon waxing from new to full",
+    "state 0": "A new moon",
+    "state 1": "A full moon",
+    "tag": "state change",
+    "frame_first": "A dark sky with a thin crescent moon hanging low in the horizon, barely visible against the night.",
+    "frame_middle": "The moon has grown, now showing a half-moon phase, casting a gentle glow over the landscape.",
+    "frame_last": "A full, luminous moon dominates the night sky, bathing everything below in a bright, silvery light.",
+    "frame_json_raw": "{\"first\": \"A dark sky with a thin crescent moon hanging low in the horizon, barely visible against the night.\", \"middle\": \"The moon has grown, now showing a half-moon phase, casting a gentle glow over the landscape.\", \"last\": \"A full, luminous moon dominates the night sky, bathing everything below in a bright, silvery light.\"}"
+  },
+  {
+    "caption": "A popcorn kernel popping into a fluffy piece",
+    "state 0": "A popcorn kernel",
+    "state 1": "A fluffy piece of popcorn",
+    "tag": "state change",
+    "frame_first": "A single popcorn kernel sits alone on a dark, hot surface, beginning to shake and expand.",
+    "frame_middle": "The kernel bursts open with a small explosion of steam, sending white fluffy popcorn flying upwards.",
+    "frame_last": "The once tight kernel is now a large, puffy piece of popcorn, settling gently on the surface.",
+    "frame_json_raw": "{\"first\": \"A single popcorn kernel sits alone on a dark, hot surface, beginning to shake and expand.\", \"middle\": \"The kernel bursts open with a small explosion of steam, sending white fluffy popcorn flying upwards.\", \"last\": \"The once tight kernel is now a large, puffy piece of popcorn, settling gently on the surface.\"}"
+  },
+  {
+    "caption": "A tree losing its leaves and becoming bare during the autumn season",
+    "state 0": "A tree with leaves",
+    "state 1": "A bare tree",
+    "tag": "state change",
+    "frame_first": "A tree stands in a golden glow, its branches heavy with vibrant red and orange leaves, some beginning to flutter to the ground as the wind picks up.",
+    "frame_middle": "The tree's branches are now mostly bare, with only a few scattered leaves clinging on, as sunlight filters through the thinning canopy.",
+    "frame_last": "The tree is completely bare, its stark branches reaching towards a clear, crisp autumn sky, with a carpet of fallen leaves at its base.",
+    "frame_json_raw": "{\"first\": \"A tree stands in a golden glow, its branches heavy with vibrant red and orange leaves, some beginning to flutter to the ground as the wind picks up.\", \"middle\": \"The tree's branches are now mostly bare, with only a few scattered leaves clinging on, as sunlight filters through the thinning canopy.\", \"last\": \"The tree is completely bare, its stark branches reaching towards a clear, crisp autumn sky, with a carpet of fallen leaves at its base.\"}"
+  },
+  {
+    "caption": "A spider web collecting dew in the morning light",
+    "state 0": "A dry spider web",
+    "state 1": "A spider web with dew",
+    "tag": "state change",
+    "frame_first": "A spider web glistens with dew droplets, suspended between two bushes in the early morning light.",
+    "frame_middle": "Sunlight filters through the web, highlighting the sparkling dew as it clings to the delicate strands.",
+    "frame_last": "The dew-covered web shimmers subtly as a gentle breeze causes slight vibrations in the strands.",
+    "frame_json_raw": "{\"first\": \"A spider web glistens with dew droplets, suspended between two bushes in the early morning light.\", \"middle\": \"Sunlight filters through the web, highlighting the sparkling dew as it clings to the delicate strands.\", \"last\": \"The dew-covered web shimmers subtly as a gentle breeze causes slight vibrations in the strands.\"}"
+  },
+  {
+    "caption": "A silver coin tarnishing from shiny to dull",
+    "state 0": "A shiny silver coin",
+    "state 1": "A dull silver coin",
+    "tag": "attribute change",
+    "frame_first": "A bright, shiny silver coin rests on a dark cloth, reflecting light vividly.",
+    "frame_middle": "The coin's surface begins to dull, showing patches of tarnish spreading across it.",
+    "frame_last": "The once-shiny silver coin is now uniformly dull, with no signs of its former luster remaining.",
+    "frame_json_raw": "{\"first\": \"A bright, shiny silver coin rests on a dark cloth, reflecting light vividly.\", \"middle\": \"The coin's surface begins to dull, showing patches of tarnish spreading across it.\", \"last\": \"The once-shiny silver coin is now uniformly dull, with no signs of its former luster remaining.\"}"
+  },
+  {
+    "caption": "Freshly cut grass changing from bright green to brown as it dries",
+    "state 0": "Bright green freshly cut grass",
+    "state 1": "Brown dried grass",
+    "tag": "attribute change",
+    "frame_first": "A lush, bright green patch of freshly cut grass glistens under the morning sun, dew still clinging to the tips.",
+    "frame_middle": "The grass begins to lose its vibrant green hue, transitioning to a lighter shade as the sun dries the moisture.",
+    "frame_last": "The once vibrant green grass now appears a duller, brownish-green as it fully dries under the sun's warmth.",
+    "frame_json_raw": "{\"first\": \"A lush, bright green patch of freshly cut grass glistens under the morning sun, dew still clinging to the tips.\", \"middle\": \"The grass begins to lose its vibrant green hue, transitioning to a lighter shade as the sun dries the moisture.\", \"last\": \"The once vibrant green grass now appears a duller, brownish-green as it fully dries under the sun's warmth.\"}"
+  },
+  {
+    "caption": "A clear sky clouding over",
+    "state 0": "A clear sky",
+    "state 1": "A cloudy sky",
+    "tag": "state change",
+    "frame_first": "A vast, unobstructed sky with bright, clear blue stretching endlessly.",
+    "frame_middle": "Soft, white clouds begin to gather and drift across the sky, partially obscuring the blue expanse.",
+    "frame_last": "The sky is now predominantly covered by a dense layer of clouds, with only small patches of blue visible.",
+    "frame_json_raw": "{\"first\": \"A vast, unobstructed sky with bright, clear blue stretching endlessly.\", \"middle\": \"Soft, white clouds begin to gather and drift across the sky, partially obscuring the blue expanse.\", \"last\": \"The sky is now predominantly covered by a dense layer of clouds, with only small patches of blue visible.\"}"
+  },
+  {
+    "caption": "A bright blue paint on a house fading to pale",
+    "state 0": "A house with bright blue paint",
+    "state 1": "A house with pale blue paint",
+    "tag": "attribute change",
+    "frame_first": "A close-up of a bright blue painted wall on a house, with sunlight highlighting its vibrant color.",
+    "frame_middle": "The wall's paint is visibly lighter, showing signs of fading under the sun's exposure, with patches of pale blue.",
+    "frame_last": "The once bright blue wall is now a uniform pale blue, blending subtly with the sky in the background.",
+    "frame_json_raw": "{\"first\": \"A close-up of a bright blue painted wall on a house, with sunlight highlighting its vibrant color.\", \"middle\": \"The wall's paint is visibly lighter, showing signs of fading under the sun's exposure, with patches of pale blue.\", \"last\": \"The once bright blue wall is now a uniform pale blue, blending subtly with the sky in the background.\"}"
+  },
+  {
+    "caption": "A chocolate bar solid at first, then melting",
+    "state 0": "A solid chocolate bar",
+    "state 1": "A melted chocolate bar",
+    "tag": "state change",
+    "frame_first": "A solid chocolate bar sits still on a white plate, its glossy surface reflecting the kitchen light.",
+    "frame_middle": "The chocolate bar begins to melt, forming a pool of dark liquid beneath it, while the edges remain firm.",
+    "frame_last": "The chocolate has mostly melted, leaving a shallow, smooth puddle with only small, hardened pieces remaining on the plate.",
+    "frame_json_raw": "{\"first\": \"A solid chocolate bar sits still on a white plate, its glossy surface reflecting the kitchen light.\", \"middle\": \"The chocolate bar begins to melt, forming a pool of dark liquid beneath it, while the edges remain firm.\", \"last\": \"The chocolate has mostly melted, leaving a shallow, smooth puddle with only small, hardened pieces remaining on the plate.\"}"
+  },
+  {
+    "caption": "A glossy photograph fading to a muted finish after decades of display",
+    "state 0": "A glossy photograph",
+    "state 1": "A faded photograph",
+    "tag": "attribute change",
+    "frame_first": "A glossy photograph shines vividly, capturing a vibrant scene under bright light.",
+    "frame_middle": "The photograph's colors begin to dull, the surface losing its shine as it ages.",
+    "frame_last": "Decades later, the photograph has a muted finish, its once-sharp details softened by time.",
+    "frame_json_raw": "{\"first\": \"A glossy photograph shines vividly, capturing a vibrant scene under bright light.\", \"middle\": \"The photograph's colors begin to dull, the surface losing its shine as it ages.\", \"last\": \"Decades later, the photograph has a muted finish, its once-sharp details softened by time.\"}"
+  },
+  {
+    "caption": "A green pepper turning red as it ripens",
+    "state 0": "A green pepper",
+    "state 1": "A red pepper",
+    "tag": "attribute change",
+    "frame_first": "A vibrant green pepper hangs from a lush, green plant under the bright sunlight of a clear day.",
+    "frame_middle": "The pepper, now with hints of red at its base, sways gently in a light breeze, the sun still high in the sky.",
+    "frame_last": "The pepper is fully ripened, a deep red color, standing out against the green leaves as the sun begins to set.",
+    "frame_json_raw": "{\"first\": \"A vibrant green pepper hangs from a lush, green plant under the bright sunlight of a clear day.\", \"middle\": \"The pepper, now with hints of red at its base, sways gently in a light breeze, the sun still high in the sky.\", \"last\": \"The pepper is fully ripened, a deep red color, standing out against the green leaves as the sun begins to set.\"}"
+  },
+  {
+    "caption": "A brand new book with a crisp cover, becoming dog-eared and tattered with use",
+    "state 0": "A brand new book with a crisp cover",
+    "state 1": "A dog-eared and tattered book",
+    "tag": "state change",
+    "frame_first": "A pristine book with a shiny, crisp cover sits on a wooden table under soft, natural daylight.",
+    "frame_middle": "The book is now open, with pages turning frequently, showing signs of wear like bent corners and slightly frayed edges.",
+    "frame_last": "The cover of the book is now visibly dog-eared and tattered, with pages showing signs of extensive use, lying open on the same table in the warm glow of evening light.",
+    "frame_json_raw": "{\"first\": \"A pristine book with a shiny, crisp cover sits on a wooden table under soft, natural daylight.\", \"middle\": \"The book is now open, with pages turning frequently, showing signs of wear like bent corners and slightly frayed edges.\", \"last\": \"The cover of the book is now visibly dog-eared and tattered, with pages showing signs of extensive use, lying open on the same table in the warm glow of evening light.\"}"
+  },
+  {
+    "caption": "Green apple ripens to red alongside a banana yellowing from green",
+    "state 0": "A green apple and a green banana",
+    "state 1": "A red apple and a yellow banana",
+    "tag": "attribute change",
+    "frame_first": "A green apple and a green banana sit side by side on a white plate under natural daylight, the apple slightly to the left of the banana.",
+    "frame_middle": "The apple has developed a blush of red on one side while the banana's skin has started to yellow and show some brown spots.",
+    "frame_last": "The apple is now predominantly red with a few green patches, and the banana is fully yellow with several brown patches, both still on the white plate.",
+    "frame_json_raw": "{\"first\": \"A green apple and a green banana sit side by side on a white plate under natural daylight, the apple slightly to the left of the banana.\", \"middle\": \"The apple has developed a blush of red on one side while the banana's skin has started to yellow and show some brown spots.\", \"last\": \"The apple is now predominantly red with a few green patches, and the banana is fully yellow with several brown patches, both still on the white plate.\"}"
+  },
+  {
+    "caption": "Wet sidewalk dries while nearby puddle evaporates completely",
+    "state 0": "A wet sidewalk and a puddle",
+    "state 1": "A dry sidewalk and no puddle",
+    "tag": "state change",
+    "frame_first": "A wet sidewalk glistens under the morning sun, with a small puddle reflecting the blue sky nearby.",
+    "frame_middle": "Water on the sidewalk begins to recede, leaving damp patches, while the puddle shrinks to half its original size.",
+    "frame_last": "The sidewalk is nearly dry with only faint wet marks remaining, and the puddle has completely evaporated, leaving a slight shine on the pavement.",
+    "frame_json_raw": "{\"first\": \"A wet sidewalk glistens under the morning sun, with a small puddle reflecting the blue sky nearby.\", \"middle\": \"Water on the sidewalk begins to recede, leaving damp patches, while the puddle shrinks to half its original size.\", \"last\": \"The sidewalk is nearly dry with only faint wet marks remaining, and the puddle has completely evaporated, leaving a slight shine on the pavement.\"}"
+  },
+  {
+    "caption": "Candle burns and melts as adjacent ice cube melts into water",
+    "state 0": "A full candle and a solid ice cube",
+    "state 1": "A melted candle and melted ice cube",
+    "tag": "state change",
+    "frame_first": "A candle flickers, casting soft shadows, with an ice cube beside it starting to melt.",
+    "frame_middle": "The candle's flame is steady, melting the wax into a pool, while the ice cube has mostly turned into a puddle.",
+    "frame_last": "The candle is nearly burnt out, a small flame atop a pool of melted wax, with the ice cube now completely melted into a larger puddle of water.",
+    "frame_json_raw": "{\"first\": \"A candle flickers, casting soft shadows, with an ice cube beside it starting to melt.\", \"middle\": \"The candle's flame is steady, melting the wax into a pool, while the ice cube has mostly turned into a puddle.\", \"last\": \"The candle is nearly burnt out, a small flame atop a pool of melted wax, with the ice cube now completely melted into a larger puddle of water.\"}"
+  },
+  {
+    "caption": "Red brick wall weathers to a faded pink, parallel to a wooden door darkening",
+    "state 0": "A red brick wall and a regular wooden door",
+    "state 1": "A faded pink brick wall and a darkened wooden door",
+    "tag": "attribute change",
+    "frame_first": "A red brick wall stretches vertically, its bricks still vibrant, with a freshly painted wooden door adjacent, standing out against the bricks.",
+    "frame_middle": "The bricks have faded to a soft pink, showing signs of weathering, while the wooden door has darkened and developed a patina, blending more with the wall.",
+    "frame_last": "The brick wall is now a pale, faded pink, with visible cracks and moss, and the wooden door is nearly black, barely distinguishable from the aged wall.",
+    "frame_json_raw": "{\"first\": \"A red brick wall stretches vertically, its bricks still vibrant, with a freshly painted wooden door adjacent, standing out against the bricks.\", \"middle\": \"The bricks have faded to a soft pink, showing signs of weathering, while the wooden door has darkened and developed a patina, blending more with the wall.\", \"last\": \"The brick wall is now a pale, faded pink, with visible cracks and moss, and the wooden door is nearly black, barely distinguishable from the aged wall.\"}"
+  },
+  {
+    "caption": "Bright green leaf wilts to brown as a nearby flower blooms from bud to full red",
+    "state 0": "A bright green leaf and a flower bud",
+    "state 1": "A brown wilted leaf and a full red flower",
+    "tag": "state change",
+    "frame_first": "A bright green leaf stands out against the morning light, while a small bud of a flower is seen beside it, just beginning to unfurl.",
+    "frame_middle": "The leaf begins to droop, its color fading from green, as the flower bud rapidly expands, petals stretching towards their full red glory.",
+    "frame_last": "The leaf is now a withered brown, hanging limply, while the flower is in full bloom, its vibrant red petals fully open and radiant in the sunlight.",
+    "frame_json_raw": "{\"first\": \"A bright green leaf stands out against the morning light, while a small bud of a flower is seen beside it, just beginning to unfurl.\", \"middle\": \"The leaf begins to droop, its color fading from green, as the flower bud rapidly expands, petals stretching towards their full red glory.\", \"last\": \"The leaf is now a withered brown, hanging limply, while the flower is in full bloom, its vibrant red petals fully open and radiant in the sunlight.\"}"
+  },
+  {
+    "caption": "Shiny silver fork tarnishes next to a ceramic plate chipping around the edges",
+    "state 0": "A shiny silver fork and a ceramic plate",
+    "state 1": "A tarnished silver fork and a chipped ceramic plate",
+    "tag": "attribute change",
+    "frame_first": "A shiny silver fork sits next to a pristine ceramic plate, both placed on a clean white tablecloth.",
+    "frame_middle": "The silver fork begins to darken and lose its shine, while fine cracks appear around the edges of the ceramic plate.",
+    "frame_last": "The once-shiny silver fork is now tarnished with a dull grey patina, and the ceramic plate has a noticeable chip at its edge, both signs of wear and time passing.",
+    "frame_json_raw": "{\"first\": \"A shiny silver fork sits next to a pristine ceramic plate, both placed on a clean white tablecloth.\", \"middle\": \"The silver fork begins to darken and lose its shine, while fine cracks appear around the edges of the ceramic plate.\", \"last\": \"The once-shiny silver fork is now tarnished with a dull grey patina, and the ceramic plate has a noticeable chip at its edge, both signs of wear and time passing.\"}"
+  },
+  {
+    "caption": "Black rubber tire deflates and flattens and a steel bike gradually rusts.",
+    "state 0": "An inflated black rubber tire and a non-rusted steel bike",
+    "state 1": "A deflated black rubber tire and a rusted steel bike",
+    "tag": "state change",
+    "frame_first": "A black rubber tire stands fully inflated against a dull, gray backdrop, with a shiny steel bike resting beside it.",
+    "frame_middle": "The tire has significantly deflated, lying flat on the ground, while the bike begins to show patches of rust.",
+    "frame_last": "The tire is completely flat, barely recognizable, and the steel bike is now heavily rusted, its frame barely holding together.",
+    "frame_json_raw": "{\"first\": \"A black rubber tire stands fully inflated against a dull, gray backdrop, with a shiny steel bike resting beside it.\", \"middle\": \"The tire has significantly deflated, lying flat on the ground, while the bike begins to show patches of rust.\", \"last\": \"The tire is completely flat, barely recognizable, and the steel bike is now heavily rusted, its frame barely holding together.\"}"
+  },
+  {
+    "caption": "Yellow butter melts on hot toast",
+    "state 0": "Solid yellow butter",
+    "state 1": "Melted butter on toast",
+    "tag": "state change",
+    "frame_first": "A slice of fresh, golden toast sits on a plate, with a chunk of yellow butter placed on top.",
+    "frame_middle": "The butter begins to melt, slowly spreading and glistening on the warm surface of the toast.",
+    "frame_last": "The butter has fully melted, creating a shiny, golden pool that seeps into the porous texture of the toast.",
+    "frame_json_raw": "{\"first\": \"A slice of fresh, golden toast sits on a plate, with a chunk of yellow butter placed on top.\", \"middle\": \"The butter begins to melt, slowly spreading and glistening on the warm surface of the toast.\", \"last\": \"The butter has fully melted, creating a shiny, golden pool that seeps into the porous texture of the toast.\"}"
+  },
+  {
+    "caption": "The bright orange pumpkin gradually rots and the cornstalk wilts, losing its vitality and strength.",
+    "state 0": "A bright orange pumpkin and a healthy cornstalk",
+    "state 1": "A rotting pumpkin and a wilting cornstalk",
+    "tag": "state change",
+    "frame_first": "A vibrant orange pumpkin sits beside a sturdy cornstalk under the clear autumn sky, both bathed in the warm sunlight.",
+    "frame_middle": "The pumpkin's surface develops dark spots and wrinkles, while the cornstalk begins to droop and turn a pale yellow.",
+    "frame_last": "The pumpkin is now a shriveled, darkened shell, and the cornstalk lies limp on the ground, both victims of decay and time.",
+    "frame_json_raw": "{\"first\": \"A vibrant orange pumpkin sits beside a sturdy cornstalk under the clear autumn sky, both bathed in the warm sunlight.\", \"middle\": \"The pumpkin's surface develops dark spots and wrinkles, while the cornstalk begins to droop and turn a pale yellow.\", \"last\": \"The pumpkin is now a shriveled, darkened shell, and the cornstalk lies limp on the ground, both victims of decay and time.\"}"
+  },
+  {
+    "caption": "Green avocado darkens to black as the tomato beside it ripens to a deep red",
+    "state 0": "A green avocado and an unripe tomato",
+    "state 1": "A black avocado and a deep red tomato",
+    "tag": "attribute change",
+    "frame_first": "A green avocado and a slightly red tomato sit side by side on a white plate under natural daylight.",
+    "frame_middle": "The avocado's skin begins to darken, showing shades of brown, while the tomato intensifies to a vibrant red.",
+    "frame_last": "The avocado is now nearly black, with only hints of its original green, while the tomato is a deep, ripe red, both fruits contrasting vividly on the plate.",
+    "frame_json_raw": "{\"first\": \"A green avocado and a slightly red tomato sit side by side on a white plate under natural daylight.\", \"middle\": \"The avocado's skin begins to darken, showing shades of brown, while the tomato intensifies to a vibrant red.\", \"last\": \"The avocado is now nearly black, with only hints of its original green, while the tomato is a deep, ripe red, both fruits contrasting vividly on the plate.\"}"
+  },
+  {
+    "caption": "A green rose gradually transitions to a shade of blue",
+    "state 0": "A green rose",
+    "state 1": "A blue rose",
+    "tag": "attribute change",
+    "frame_first": "A single green rose sits centered in a dimly lit scene, its petals vivid against a neutral background.",
+    "frame_middle": "The rose begins to change, its petals shifting from green to a mix of green and blue hues, creating a surreal and enchanting effect.",
+    "frame_last": "The rose is now entirely blue, its transformed petals standing out starkly against the unchanged background, completing the color transition.",
+    "frame_json_raw": "{\"first\": \"A single green rose sits centered in a dimly lit scene, its petals vivid against a neutral background.\", \"middle\": \"The rose begins to change, its petals shifting from green to a mix of green and blue hues, creating a surreal and enchanting effect.\", \"last\": \"The rose is now entirely blue, its transformed petals standing out starkly against the unchanged background, completing the color transition.\"}"
+  },
+  {
+    "caption": "Orange juice in a glass spontaneously turns green",
+    "state 0": "A glass of orange juice",
+    "state 1": "A glass of green juice",
+    "tag": "attribute change",
+    "frame_first": "A glass of orange juice sits on a white table under bright kitchen lights, the juice a vibrant orange.",
+    "frame_middle": "Bubbles form and rise to the surface as the orange juice begins to change color, taking on a greenish tint.",
+    "frame_last": "The glass now contains a fully transformed, clear green liquid, resembling a different drink entirely, with no trace of orange left.",
+    "frame_json_raw": "{\"first\": \"A glass of orange juice sits on a white table under bright kitchen lights, the juice a vibrant orange.\", \"middle\": \"Bubbles form and rise to the surface as the orange juice begins to change color, taking on a greenish tint.\", \"last\": \"The glass now contains a fully transformed, clear green liquid, resembling a different drink entirely, with no trace of orange left.\"}"
+  },
+  {
+    "caption": "White snow on a hillside turns blue",
+    "state 0": "White snow on a hillside",
+    "state 1": "Blue snow on a hillside",
+    "tag": "attribute change",
+    "frame_first": "A hillside covered in pristine white snow under a clear sky at dusk.",
+    "frame_middle": "The sky transitions to a deep twilight blue, casting a blue hue over the snow.",
+    "frame_last": "The snow now appears predominantly blue under the starlit sky, with the hillside bathed in a cool, serene light.",
+    "frame_json_raw": "{\"first\": \"A hillside covered in pristine white snow under a clear sky at dusk.\", \"middle\": \"The sky transitions to a deep twilight blue, casting a blue hue over the snow.\", \"last\": \"The snow now appears predominantly blue under the starlit sky, with the hillside bathed in a cool, serene light.\"}"
+  },
+  {
+    "caption": "A red book cover fades to a glowing white over time",
+    "state 0": "A red book cover",
+    "state 1": "A glowing white book cover",
+    "tag": "attribute change",
+    "frame_first": "A red book cover is centered in the frame, its vibrant color standing out against a dark background.",
+    "frame_middle": "The red book cover begins to emit a soft glow, transitioning gradually towards a warmer, brighter hue.",
+    "frame_last": "The book cover now glows purely white, the original red completely transformed into a radiant, luminous surface.",
+    "frame_json_raw": "{\"first\": \"A red book cover is centered in the frame, its vibrant color standing out against a dark background.\", \"middle\": \"The red book cover begins to emit a soft glow, transitioning gradually towards a warmer, brighter hue.\", \"last\": \"The book cover now glows purely white, the original red completely transformed into a radiant, luminous surface.\"}"
+  },
+  {
+    "caption": "A cat's green eyes turn a red",
+    "state 0": "A cat's green eyes",
+    "state 1": "A cat's red eyes",
+    "tag": "attribute change",
+    "frame_first": "A cat sits in a dimly lit room, its green eyes reflecting a soft glow.",
+    "frame_middle": "The cat's eyes begin to change, a red hue slowly overtaking the green.",
+    "frame_last": "The cat's eyes are now completely red, glowing intensely against the dark background.",
+    "frame_json_raw": "{\"first\": \"A cat sits in a dimly lit room, its green eyes reflecting a soft glow.\", \"middle\": \"The cat's eyes begin to change, a red hue slowly overtaking the green.\", \"last\": \"The cat's eyes are now completely red, glowing intensely against the dark background.\"}"
+  },
+  {
+    "caption": "Purple clouds in the sky turn red",
+    "state 0": "Purple clouds in the sky",
+    "state 1": "Red clouds in the sky",
+    "tag": "attribute change",
+    "frame_first": "A wide sky filled with vibrant purple clouds at dusk.",
+    "frame_middle": "The purple clouds gradually shift, hues deepening towards red.",
+    "frame_last": "The sky now showcases dramatic red clouds, signaling the end of twilight.",
+    "frame_json_raw": "{\"first\": \"A wide sky filled with vibrant purple clouds at dusk.\", \"middle\": \"The purple clouds gradually shift, hues deepening towards red.\", \"last\": \"The sky now showcases dramatic red clouds, signaling the end of twilight.\"}"
+  },
+  {
+    "caption": "Black coffee in a clear mug turns transparent",
+    "state 0": "Black coffee in a clear mug",
+    "state 1": "Transparent liquid in a clear mug",
+    "tag": "attribute change",
+    "frame_first": "A black coffee sits steaming in a clear mug against a plain white background.",
+    "frame_middle": "The coffee begins to lose its opacity, showing the mug's clarity as the liquid becomes lighter.",
+    "frame_last": "The coffee in the mug is now completely transparent, revealing the white background beneath, with only a slight hint of residue along the edges.",
+    "frame_json_raw": "{\"first\": \"A black coffee sits steaming in a clear mug against a plain white background.\", \"middle\": \"The coffee begins to lose its opacity, showing the mug's clarity as the liquid becomes lighter.\", \"last\": \"The coffee in the mug is now completely transparent, revealing the white background beneath, with only a slight hint of residue along the edges.\"}"
+  },
+  {
+    "caption": "A vibrant green leaf transitions to a soft shade of pink",
+    "state 0": "A vibrant green leaf",
+    "state 1": "A soft pink leaf",
+    "tag": "attribute change",
+    "frame_first": "A vibrant green leaf hangs motionless on a branch, bathed in the warm sunlight of a clear day.",
+    "frame_middle": "The leaf begins to change, its edges softening to a delicate shade of pink while the center still retains its green hue.",
+    "frame_last": "The transformation completes, the leaf now a uniform soft pink, contrasting beautifully against the greenery around it.",
+    "frame_json_raw": "{\"first\": \"A vibrant green leaf hangs motionless on a branch, bathed in the warm sunlight of a clear day.\", \"middle\": \"The leaf begins to change, its edges softening to a delicate shade of pink while the center still retains its green hue.\", \"last\": \"The transformation completes, the leaf now a uniform soft pink, contrasting beautifully against the greenery around it.\"}"
+  },
+  {
+    "caption": "A gray concrete pathway lights up with unexpected rainbow hues",
+    "state 0": "A gray concrete pathway",
+    "state 1": "A rainbow-hued concrete pathway",
+    "tag": "attribute change",
+    "frame_first": "A gray concrete pathway stretches ahead under a dimly lit sky, just before the rainbow lighting activates.",
+    "frame_middle": "The pathway suddenly illuminates with vibrant rainbow hues, casting a colorful glow that dances across the concrete.",
+    "frame_last": "The entire length of the pathway is now aglow with a spectrum of colors, transforming the once dull concrete into a vibrant, illuminated walkway.",
+    "frame_json_raw": "{\"first\": \"A gray concrete pathway stretches ahead under a dimly lit sky, just before the rainbow lighting activates.\", \"middle\": \"The pathway suddenly illuminates with vibrant rainbow hues, casting a colorful glow that dances across the concrete.\", \"last\": \"The entire length of the pathway is now aglow with a spectrum of colors, transforming the once dull concrete into a vibrant, illuminated walkway.\"}"
+  },
+  {
+    "caption": "A yellow rubber duck in bath water turns a deep purple",
+    "state 0": "A yellow rubber duck",
+    "state 1": "A deep purple rubber duck",
+    "tag": "attribute change",
+    "frame_first": "A bright yellow rubber duck floats in a bathtub filled with clear water, the bathroom light casting a warm glow.",
+    "frame_middle": "The water in the bathtub gradually changes color, becoming a darker shade, while the rubber duck starts to turn purple.",
+    "frame_last": "The rubber duck is now a deep purple, fully submerged in the now dark purple water, with ripples on the surface.",
+    "frame_json_raw": "{\"first\": \"A bright yellow rubber duck floats in a bathtub filled with clear water, the bathroom light casting a warm glow.\", \"middle\": \"The water in the bathtub gradually changes color, becoming a darker shade, while the rubber duck starts to turn purple.\", \"last\": \"The rubber duck is now a deep purple, fully submerged in the now dark purple water, with ripples on the surface.\"}"
+  },
+  {
+    "caption": "The blue flame of a gas stove turns a bright yellow",
+    "state 0": "A blue flame",
+    "state 1": "A bright yellow flame",
+    "tag": "attribute change",
+    "frame_first": "A gas stove burner emits a small, steady blue flame.",
+    "frame_middle": "The flame begins to flicker and grow, shifting from blue to a vibrant yellow.",
+    "frame_last": "The stove burner is now engulfed in a large, intense yellow flame.",
+    "frame_json_raw": "{\"first\": \"A gas stove burner emits a small, steady blue flame.\", \"middle\": \"The flame begins to flicker and grow, shifting from blue to a vibrant yellow.\", \"last\": \"The stove burner is now engulfed in a large, intense yellow flame.\"}"
+  },
+  {
+    "caption": "A green lime in a glass of water turns a vibrant pink",
+    "state 0": "A green lime in a glass of water",
+    "state 1": "A vibrant pink lime in a glass of water",
+    "tag": "attribute change",
+    "frame_first": "A clear glass filled with water sits on a white table, a green lime slices float on the surface.",
+    "frame_middle": "The lime slices in the water begin to change, developing a faint pink hue as they soak.",
+    "frame_last": "The water now has a slight pink tint, and the lime slices are a vivid pink, fully transformed in the glass.",
+    "frame_json_raw": "{\"first\": \"A clear glass filled with water sits on a white table, a green lime slices float on the surface.\", \"middle\": \"The lime slices in the water begin to change, developing a faint pink hue as they soak.\", \"last\": \"The water now has a slight pink tint, and the lime slices are a vivid pink, fully transformed in the glass.\"}"
+  },
+  {
+    "caption": "Brown chocolate melts into a bright red liquid",
+    "state 0": "Solid brown chocolate",
+    "state 1": "Bright red liquid chocolate",
+    "tag": "state change",
+    "frame_first": "A block of brown chocolate sits still on a white plate, beginning to soften under the heat.",
+    "frame_middle": "The chocolate has transformed into a glossy, dark brown liquid, slowly spreading across the plate.",
+    "frame_last": "The once solid chocolate is now a bright red liquid, completely covering the plate, with a subtle shimmer indicating its transformation is complete.",
+    "frame_json_raw": "{\"first\": \"A block of brown chocolate sits still on a white plate, beginning to soften under the heat.\", \"middle\": \"The chocolate has transformed into a glossy, dark brown liquid, slowly spreading across the plate.\", \"last\": \"The once solid chocolate is now a bright red liquid, completely covering the plate, with a subtle shimmer indicating its transformation is complete.\"}"
+  },
+  {
+    "caption": "Golden honey in a jar changes to a striking shade of black",
+    "state 0": "Golden honey in a jar",
+    "state 1": "Black honey in a jar",
+    "tag": "attribute change",
+    "frame_first": "A jar filled with golden honey sits on a plain white background, the honey glowing warmly under soft, natural light.",
+    "frame_middle": "The honey inside the jar begins to darken, taking on a deep, mysterious shade, the transformation visible as the color shifts from gold to black.",
+    "frame_last": "The jar now contains honey of a striking black color, the transformation complete, with the contrast between the dark honey and the white background emphasized.",
+    "frame_json_raw": "{\"first\": \"A jar filled with golden honey sits on a plain white background, the honey glowing warmly under soft, natural light.\", \"middle\": \"The honey inside the jar begins to darken, taking on a deep, mysterious shade, the transformation visible as the color shifts from gold to black.\", \"last\": \"The jar now contains honey of a striking black color, the transformation complete, with the contrast between the dark honey and the white background emphasized.\"}"
+  },
+  {
+    "caption": "A red brick wall gradually transforms into a spectrum of rainbow colors",
+    "state 0": "A red brick wall",
+    "state 1": "A rainbow-colored brick wall",
+    "tag": "attribute change",
+    "frame_first": "A solid red brick wall stands under clear daylight, its surface uniform and unchanging.",
+    "frame_middle": "The bricks begin to shift, with hues of orange and yellow starting to blend into the red, creating a gradient effect.",
+    "frame_last": "The wall is now a vibrant display of the rainbow, each brick a different color, from deep violet to bright red, seamlessly blending into a colorful spectrum.",
+    "frame_json_raw": "{\"first\": \"A solid red brick wall stands under clear daylight, its surface uniform and unchanging.\", \"middle\": \"The bricks begin to shift, with hues of orange and yellow starting to blend into the red, creating a gradient effect.\", \"last\": \"The wall is now a vibrant display of the rainbow, each brick a different color, from deep violet to bright red, seamlessly blending into a colorful spectrum.\"}"
+  },
+  {
+    "caption": "Blue apple turns pink next to a yellow banana turning purple",
+    "state 0": "A blue apple and a yellow banana",
+    "state 1": "A pink apple and a purple banana",
+    "tag": "attribute change",
+    "frame_first": "A blue apple and a yellow banana sit side by side on a plain white background.",
+    "frame_middle": "The blue apple begins to shift towards a pink hue while the yellow banana starts to turn purple.",
+    "frame_last": "The apple is now fully pink and the banana is completely purple, both fruits now vividly contrasting on the white background.",
+    "frame_json_raw": "{\"first\": \"A blue apple and a yellow banana sit side by side on a plain white background.\", \"middle\": \"The blue apple begins to shift towards a pink hue while the yellow banana starts to turn purple.\", \"last\": \"The apple is now fully pink and the banana is completely purple, both fruits now vividly contrasting on the white background.\"}"
+  },
+  {
+    "caption": "Green rose darkens to brown beside a violet tulip turning bright orange",
+    "state 0": "A green rose and a violet tulip",
+    "state 1": "A brown rose and a bright orange tulip",
+    "tag": "attribute change",
+    "frame_first": "A green rose stands out beside a vibrant violet tulip, both flowers sitting in a small vase.",
+    "frame_middle": "The rose begins to darken, its petals shifting towards a deep brown hue, while the tulip starts to glow a bright orange.",
+    "frame_last": "The rose is now a rich brown, its transformation complete, while the tulip is a vivid, radiant orange, both colors contrasting sharply against each other.",
+    "frame_json_raw": "{\"first\": \"A green rose stands out beside a vibrant violet tulip, both flowers sitting in a small vase.\", \"middle\": \"The rose begins to darken, its petals shifting towards a deep brown hue, while the tulip starts to glow a bright orange.\", \"last\": \"The rose is now a rich brown, its transformation complete, while the tulip is a vivid, radiant orange, both colors contrasting sharply against each other.\"}"
+  },
+  {
+    "caption": "Clear water in a glass turns black as tea in a cup turns transparent",
+    "state 0": "Clear water in a glass and tea in a cup",
+    "state 1": "Black water in a glass and transparent liquid in a cup",
+    "tag": "attribute change",
+    "frame_first": "A glass filled with clear, sparkling water sits on a table next to a cup of dark, rich tea.",
+    "frame_middle": "The water in the glass gradually darkens, becoming murky and black, while the tea in the cup begins to lighten, its color fading.",
+    "frame_last": "The glass now contains completely black water, resembling ink, while the cup holds clear, almost invisible liquid, as if empty.",
+    "frame_json_raw": "{\"first\": \"A glass filled with clear, sparkling water sits on a table next to a cup of dark, rich tea.\", \"middle\": \"The water in the glass gradually darkens, becoming murky and black, while the tea in the cup begins to lighten, its color fading.\", \"last\": \"The glass now contains completely black water, resembling ink, while the cup holds clear, almost invisible liquid, as if empty.\"}"
+  },
+  {
+    "caption": "Silver car changes to a gold as the red bicycle beside it shifts to green",
+    "state 0": "A silver car and a red bicycle",
+    "state 1": "A gold car and a green bicycle",
+    "tag": "attribute change",
+    "frame_first": "A silver car parked next to a red bicycle under a bright, sunny sky.",
+    "frame_middle": "The car's color begins to shimmer and gradually turns gold while the bicycle beside it starts to glow and changes to green.",
+    "frame_last": "The transformation completes with a gleaming gold car standing beside a vibrant green bicycle, both bathed in the sunlight.",
+    "frame_json_raw": "{\"first\": \"A silver car parked next to a red bicycle under a bright, sunny sky.\", \"middle\": \"The car's color begins to shimmer and gradually turns gold while the bicycle beside it starts to glow and changes to green.\", \"last\": \"The transformation completes with a gleaming gold car standing beside a vibrant green bicycle, both bathed in the sunlight.\"}"
+  },
+  {
+    "caption": "Yellow balloon stretches to translucent",
+    "state 0": "A yellow balloon",
+    "state 1": "A translucent balloon",
+    "tag": "attribute change",
+    "frame_first": "A yellow balloon is fully inflated, floating gently in the air, with a soft glow from the sunlight behind it.",
+    "frame_middle": "The balloon is being stretched, its surface thinning and becoming more translucent, revealing the light filtering through.",
+    "frame_last": "The yellow balloon is now almost completely translucent, barely retaining its shape, with light shining clearly through its stretched surface.",
+    "frame_json_raw": "{\"first\": \"A yellow balloon is fully inflated, floating gently in the air, with a soft glow from the sunlight behind it.\", \"middle\": \"The balloon is being stretched, its surface thinning and becoming more translucent, revealing the light filtering through.\", \"last\": \"The yellow balloon is now almost completely translucent, barely retaining its shape, with light shining clearly through its stretched surface.\"}"
+  },
+  {
+    "caption": "Glossy ceramic mug turns matte and brittle",
+    "state 0": "A glossy ceramic mug",
+    "state 1": "A matte and brittle ceramic mug",
+    "tag": "attribute change",
+    "frame_first": "A glossy ceramic mug sits on a white table under bright light, reflecting its surroundings.",
+    "frame_middle": "The mug's surface begins to dull, cracks forming along its sides as it loses its shine.",
+    "frame_last": "The once-glossy mug is now matte and visibly cracked, crumbles slightly at the touch, sitting lifelessly on the table.",
+    "frame_json_raw": "{\"first\": \"A glossy ceramic mug sits on a white table under bright light, reflecting its surroundings.\", \"middle\": \"The mug's surface begins to dull, cracks forming along its sides as it loses its shine.\", \"last\": \"The once-glossy mug is now matte and visibly cracked, crumbles slightly at the touch, sitting lifelessly on the table.\"}"
+  },
+  {
+    "caption": "Green grass fades to straw-yellow",
+    "state 0": "Green grass",
+    "state 1": "Straw-yellow grass",
+    "tag": "attribute change",
+    "frame_first": "A wide expanse of lush green grass stretches into the distance under a bright, clear sky.",
+    "frame_middle": "The grass transitions from green to a patchy mix of green and straw-yellow, indicating the onset of dryness.",
+    "frame_last": "The scene is dominated by straw-yellow grass, with only a few patches of green remaining, suggesting a fully dried landscape.",
+    "frame_json_raw": "{\"first\": \"A wide expanse of lush green grass stretches into the distance under a bright, clear sky.\", \"middle\": \"The grass transitions from green to a patchy mix of green and straw-yellow, indicating the onset of dryness.\", \"last\": \"The scene is dominated by straw-yellow grass, with only a few patches of green remaining, suggesting a fully dried landscape.\"}"
+  },
+  {
+    "caption": "Smooth metal spoon becomes dull and uneven",
+    "state 0": "A smooth metal spoon",
+    "state 1": "A dull and uneven metal spoon",
+    "tag": "attribute change",
+    "frame_first": "A close-up of a pristine, shiny metal spoon sits motionless against a plain background.",
+    "frame_middle": "The spoon's surface begins to show signs of wear, with slight scratches and a reduction in its reflective shine.",
+    "frame_last": "The once-smooth spoon now appears dull and uneven, with visible marks and a lack of luster across its surface.",
+    "frame_json_raw": "{\"first\": \"A close-up of a pristine, shiny metal spoon sits motionless against a plain background.\", \"middle\": \"The spoon's surface begins to show signs of wear, with slight scratches and a reduction in its reflective shine.\", \"last\": \"The once-smooth spoon now appears dull and uneven, with visible marks and a lack of luster across its surface.\"}"
+  },
+  {
+    "caption": "Purple flower wilts to pale lavender",
+    "state 0": "A purple flower",
+    "state 1": "A pale lavender flower",
+    "tag": "state change",
+    "frame_first": "A vibrant purple flower stands out in a sunlit garden, its petals fully bloomed and rich in color.",
+    "frame_middle": "The flower begins to wilt, its petals drooping slightly and the color fading from purple to a deeper lavender.",
+    "frame_last": "The once vibrant flower now appears pale lavender, completely wilted with drooping petals, signaling the end of its bloom.",
+    "frame_json_raw": "{\"first\": \"A vibrant purple flower stands out in a sunlit garden, its petals fully bloomed and rich in color.\", \"middle\": \"The flower begins to wilt, its petals drooping slightly and the color fading from purple to a deeper lavender.\", \"last\": \"The once vibrant flower now appears pale lavender, completely wilted with drooping petals, signaling the end of its bloom.\"}"
+  },
+  {
+    "caption": "Clear ice cube melts into shapeless water",
+    "state 0": "A clear ice cube",
+    "state 1": "Shapeless water",
+    "tag": "state change",
+    "frame_first": "A clear ice cube sits perfectly in the center of the frame, crisp and untouched, with a soft, diffused light highlighting its crystalline structure.",
+    "frame_middle": "The ice cube begins to lose its form, droplets of water forming at its base, the edges becoming smoother and less defined.",
+    "frame_last": "The ice cube has fully melted, leaving a small pool of clear water in the center of the frame, ripples gently spreading outwards.",
+    "frame_json_raw": "{\"first\": \"A clear ice cube sits perfectly in the center of the frame, crisp and untouched, with a soft, diffused light highlighting its crystalline structure.\", \"middle\": \"The ice cube begins to lose its form, droplets of water forming at its base, the edges becoming smoother and less defined.\", \"last\": \"The ice cube has fully melted, leaving a small pool of clear water in the center of the frame, ripples gently spreading outwards.\"}"
+  },
+  {
+    "caption": "Red brick wall fades to muted pink",
+    "state 0": "A red brick wall",
+    "state 1": "A muted pink brick wall",
+    "tag": "attribute change",
+    "frame_first": "A close-up of a red brick wall under soft, diffused lighting.",
+    "frame_middle": "The bricks gradually shift in tone, transitioning from red to a softer, muted pink hue.",
+    "frame_last": "The wall is now uniformly a muted pink, with the bricks subtly visible, bathed in a gentle, consistent light.",
+    "frame_json_raw": "{\"first\": \"A close-up of a red brick wall under soft, diffused lighting.\", \"middle\": \"The bricks gradually shift in tone, transitioning from red to a softer, muted pink hue.\", \"last\": \"The wall is now uniformly a muted pink, with the bricks subtly visible, bathed in a gentle, consistent light.\"}"
+  },
+  {
+    "caption": "White t-shirt yellows and stiffens",
+    "state 0": "A white t-shirt",
+    "state 1": "A yellowed and stiff t-shirt",
+    "tag": "attribute change",
+    "frame_first": "A white t-shirt hangs limply on a clothesline under a bright, sunny sky, beginning to show signs of fading.",
+    "frame_middle": "The t-shirt, now noticeably yellowed, flutters slightly in a gentle breeze, its fabric appearing more brittle.",
+    "frame_last": "After prolonged exposure, the t-shirt is a pale yellow, stiff to the touch, and barely moves in the weak evening light.",
+    "frame_json_raw": "{\"first\": \"A white t-shirt hangs limply on a clothesline under a bright, sunny sky, beginning to show signs of fading.\", \"middle\": \"The t-shirt, now noticeably yellowed, flutters slightly in a gentle breeze, its fabric appearing more brittle.\", \"last\": \"After prolonged exposure, the t-shirt is a pale yellow, stiff to the touch, and barely moves in the weak evening light.\"}"
+  },
+  {
+    "caption": "Clear blue sky turns stormy gray",
+    "state 0": "A clear blue sky",
+    "state 1": "A stormy gray sky",
+    "tag": "state change",
+    "frame_first": "A wide open sky with clear, bright blue stretching endlessly.",
+    "frame_middle": "Cumulus clouds gather and darken, casting shadows on the ground below.",
+    "frame_last": "The sky is now a deep, ominous gray, with lightning flashing in the distance.",
+    "frame_json_raw": "{\"first\": \"A wide open sky with clear, bright blue stretching endlessly.\", \"middle\": \"Cumulus clouds gather and darken, casting shadows on the ground below.\", \"last\": \"The sky is now a deep, ominous gray, with lightning flashing in the distance.\"}"
+  },
+  {
+    "caption": "Green apple ripens to red",
+    "state 0": "A green apple",
+    "state 1": "A red apple",
+    "tag": "attribute change",
+    "frame_first": "A green apple hangs from a tree branch, its skin smooth and unblemished under the bright sunlight.",
+    "frame_middle": "The apple's color shifts, with patches of red beginning to appear, blending with the remaining green as it ripens.",
+    "frame_last": "The apple is now fully red, glowing in the sunlight, with a slight shine indicating its ripeness and readiness to be picked.",
+    "frame_json_raw": "{\"first\": \"A green apple hangs from a tree branch, its skin smooth and unblemished under the bright sunlight.\", \"middle\": \"The apple's color shifts, with patches of red beginning to appear, blending with the remaining green as it ripens.\", \"last\": \"The apple is now fully red, glowing in the sunlight, with a slight shine indicating its ripeness and readiness to be picked.\"}"
+  },
+  {
+    "caption": "White cloud dissipates to invisible",
+    "state 0": "A white cloud",
+    "state 1": "An invisible cloud",
+    "tag": "state change",
+    "frame_first": "A large, fluffy white cloud hovers in a clear blue sky.",
+    "frame_middle": "The cloud begins to thin and break apart, revealing patches of blue sky.",
+    "frame_last": "The cloud has completely dissipated, leaving the sky clear and blue.",
+    "frame_json_raw": "{\"first\": \"A large, fluffy white cloud hovers in a clear blue sky.\", \"middle\": \"The cloud begins to thin and break apart, revealing patches of blue sky.\", \"last\": \"The cloud has completely dissipated, leaving the sky clear and blue.\"}"
+  },
+  {
+    "caption": "Rough sandstone weathers to smooth",
+    "state 0": "Rough sandstone",
+    "state 1": "Smooth sandstone",
+    "tag": "state change",
+    "frame_first": "A close-up of rough, textured sandstone under a clear blue sky, with shadows hinting at the early morning.",
+    "frame_middle": "The sandstone surface begins to show smoother patches as sunlight highlights the gradual transition from rough to smooth.",
+    "frame_last": "The sandstone now displays a predominantly smooth surface, with a few remaining rough spots, basking in the warm afternoon light.",
+    "frame_json_raw": "{\"first\": \"A close-up of rough, textured sandstone under a clear blue sky, with shadows hinting at the early morning.\", \"middle\": \"The sandstone surface begins to show smoother patches as sunlight highlights the gradual transition from rough to smooth.\", \"last\": \"The sandstone now displays a predominantly smooth surface, with a few remaining rough spots, basking in the warm afternoon light.\"}"
+  },
+  {
+    "caption": "Silver necklace tarnishes to black",
+    "state 0": "A silver necklace",
+    "state 1": "A black tarnished necklace",
+    "tag": "attribute change",
+    "frame_first": "A close-up of a shiny silver necklace resting on a white cloth under bright light.",
+    "frame_middle": "The necklace begins to darken, showing patches of black tarnish spreading across its surface.",
+    "frame_last": "The entire necklace is now blackened, with no trace of its original silver sheen, set against the same white cloth.",
+    "frame_json_raw": "{\"first\": \"A close-up of a shiny silver necklace resting on a white cloth under bright light.\", \"middle\": \"The necklace begins to darken, showing patches of black tarnish spreading across its surface.\", \"last\": \"The entire necklace is now blackened, with no trace of its original silver sheen, set against the same white cloth.\"}"
+  },
+  {
+    "caption": "A wet towel drying",
+    "state 0": "A wet towel",
+    "state 1": "A dry towel",
+    "tag": "state change",
+    "frame_first": "A wet towel hangs limply on a towel rack, water droplets falling from its edges.",
+    "frame_middle": "The towel begins to sag less as it dries, with fewer droplets falling.",
+    "frame_last": "The towel is nearly dry, hanging straight and still, with only a few droplets lingering on the fabric.",
+    "frame_json_raw": "{\"first\": \"A wet towel hangs limply on a towel rack, water droplets falling from its edges.\", \"middle\": \"The towel begins to sag less as it dries, with fewer droplets falling.\", \"last\": \"The towel is nearly dry, hanging straight and still, with only a few droplets lingering on the fabric.\"}"
+  },
+  {
+    "caption": "Dry sponge swells to squishy",
+    "state 0": "A dry sponge",
+    "state 1": "A squishy sponge",
+    "tag": "state change",
+    "frame_first": "A dry, shriveled sponge sits alone on a white plate under bright kitchen lighting.",
+    "frame_middle": "The sponge, now partially submerged in water, begins to expand, showing signs of becoming softer and larger.",
+    "frame_last": "The sponge is fully saturated, now a plump, squishy mass, floating in the water, with droplets glistening on its surface.",
+    "frame_json_raw": "{\"first\": \"A dry, shriveled sponge sits alone on a white plate under bright kitchen lighting.\", \"middle\": \"The sponge, now partially submerged in water, begins to expand, showing signs of becoming softer and larger.\", \"last\": \"The sponge is fully saturated, now a plump, squishy mass, floating in the water, with droplets glistening on its surface.\"}"
+  },
+  {
+    "caption": "The background is changing from pink to blue.",
+    "state 0": "A pink background",
+    "state 1": "A blue background",
+    "tag": "attribute change",
+    "frame_first": "The scene opens with a vivid pink background that fills the entire frame.",
+    "frame_middle": "In the middle of the transition, the background is a mix of pink and blue hues, creating a gradient effect.",
+    "frame_last": "The background completes its transformation, now a deep, serene blue color.",
+    "frame_json_raw": "{\"first\": \"The scene opens with a vivid pink background that fills the entire frame.\", \"middle\": \"In the middle of the transition, the background is a mix of pink and blue hues, creating a gradient effect.\", \"last\": \"The background completes its transformation, now a deep, serene blue color.\"}"
+  },
+  {
+    "caption": "The leaf is turning from green to yellow.",
+    "state 0": "A green leaf",
+    "state 1": "A yellow leaf",
+    "tag": "attribute change",
+    "frame_first": "A close-up of a leaf, still mostly green, hanging on a tree branch in the early autumn morning.",
+    "frame_middle": "The leaf is now half green, half yellow, illuminated by the soft, golden sunlight filtering through the canopy.",
+    "frame_last": "The leaf is predominantly yellow with a few green patches, gently swaying in the breeze as the sun reaches its peak in the sky.",
+    "frame_json_raw": "{\"first\": \"A close-up of a leaf, still mostly green, hanging on a tree branch in the early autumn morning.\", \"middle\": \"The leaf is now half green, half yellow, illuminated by the soft, golden sunlight filtering through the canopy.\", \"last\": \"The leaf is predominantly yellow with a few green patches, gently swaying in the breeze as the sun reaches its peak in the sky.\"}"
+  },
+  {
+    "caption": "The room is turning darker.",
+    "state 0": "A bright room",
+    "state 1": "A dark room",
+    "tag": "state change",
+    "frame_first": "The room is filled with soft, warm light as the sun begins to set outside the window.",
+    "frame_middle": "Shadows start to grow longer and merge, the light dimming as dusk approaches.",
+    "frame_last": "The room is now bathed in the dim, cool light of twilight, with only a faint glow from the window.",
+    "frame_json_raw": "{\"first\": \"The room is filled with soft, warm light as the sun begins to set outside the window.\", \"middle\": \"Shadows start to grow longer and merge, the light dimming as dusk approaches.\", \"last\": \"The room is now bathed in the dim, cool light of twilight, with only a faint glow from the window.\"}"
+  },
+  {
+    "caption": "The leaves are changing color from green to yellow.",
+    "state 0": "Green leaves",
+    "state 1": "Yellow leaves",
+    "tag": "attribute change",
+    "frame_first": "A close-up of a tree branch with mostly green leaves, a few leaves starting to turn yellow, in the early morning light.",
+    "frame_middle": "Mid-shot of the tree, sunlight filtering through the leaves, showing a mix of green and yellow leaves.",
+    "frame_last": "Wide shot of the tree with predominantly yellow leaves, a few green leaves remaining, as the sun sets in the background.",
+    "frame_json_raw": "{\"first\": \"A close-up of a tree branch with mostly green leaves, a few leaves starting to turn yellow, in the early morning light.\", \"middle\": \"Mid-shot of the tree, sunlight filtering through the leaves, showing a mix of green and yellow leaves.\", \"last\": \"Wide shot of the tree with predominantly yellow leaves, a few green leaves remaining, as the sun sets in the background.\"}"
+  },
+  {
+    "caption": "The 3D pixels are changing from a cuboid into the shape of a man.",
+    "state 0": "Cuboid 3D pixels",
+    "state 1": "3D pixels in the shape of a man",
+    "tag": "state change",
+    "frame_first": "A block of 3D pixels forms a cuboid shape, floating in a void.",
+    "frame_middle": "The cuboid begins to morph, its pixels rearranging to form the outline of a human figure.",
+    "frame_last": "The 3D pixels complete their transformation, now clearly depicting a man standing in the space.",
+    "frame_json_raw": "{\"first\": \"A block of 3D pixels forms a cuboid shape, floating in a void.\", \"middle\": \"The cuboid begins to morph, its pixels rearranging to form the outline of a human figure.\", \"last\": \"The 3D pixels complete their transformation, now clearly depicting a man standing in the space.\"}"
+  },
+  {
+    "caption": "The face is morphing from a chimpanzee into a human.",
+    "state 0": "A chimpanzee face",
+    "state 1": "A human face",
+    "tag": "state change",
+    "frame_first": "A chimpanzee face is clearly visible, with fur and prominent brow ridges.",
+    "frame_middle": "The face is in transition, showing a mix of human and chimpanzee features with less fur and more defined human facial structure.",
+    "frame_last": "The transformation is complete, revealing a smooth, hairless human face with subtle human features.",
+    "frame_json_raw": "{\"first\": \"A chimpanzee face is clearly visible, with fur and prominent brow ridges.\", \"middle\": \"The face is in transition, showing a mix of human and chimpanzee features with less fur and more defined human facial structure.\", \"last\": \"The transformation is complete, revealing a smooth, hairless human face with subtle human features.\"}"
+  },
+  {
+    "caption": "The plant is reviving",
+    "state 0": "A wilted plant",
+    "state 1": "A revived plant",
+    "tag": "state change",
+    "frame_first": "A wilted plant sits in a pot, its leaves drooping and color fading under dim light.",
+    "frame_middle": "The plant's leaves begin to lift, showing signs of life as sunlight streams through a window, illuminating the pot.",
+    "frame_last": "The plant stands tall with vibrant green leaves fully extended, basking in the warm sunlight.",
+    "frame_json_raw": "{\"first\": \"A wilted plant sits in a pot, its leaves drooping and color fading under dim light.\", \"middle\": \"The plant's leaves begin to lift, showing signs of life as sunlight streams through a window, illuminating the pot.\", \"last\": \"The plant stands tall with vibrant green leaves fully extended, basking in the warm sunlight.\"}"
+  },
+  {
+    "caption": "The flowers are wilting.",
+    "state 0": "Fresh flowers",
+    "state 1": "Wilted flowers",
+    "tag": "state change",
+    "frame_first": "A vibrant garden with various flowers starting to droop under the afternoon sun.",
+    "frame_middle": "The petals of the flowers are more noticeably withered, the garden显得更加无精打采。",
+    "frame_last": "The once colorful flowers now hang limply, their life drained away in the warm afternoon light.",
+    "frame_json_raw": "{\"first\": \"A vibrant garden with various flowers starting to droop under the afternoon sun.\", \"middle\": \"The petals of the flowers are more noticeably withered, the garden显得更加无精打采。\", \"last\": \"The once colorful flowers now hang limply, their life drained away in the warm afternoon light.\"}"
+  },
+  {
+    "caption": "The eye is changing from closed to open",
+    "state 0": "A closed eye",
+    "state 1": "An open eye",
+    "tag": "state change",
+    "frame_first": "A closed eye, lashes resting gently, surrounded by smooth, still skin under soft, ambient lighting.",
+    "frame_middle": "The eyelid begins to lift, revealing a slit of the iris and a glimmer of the white, with the rest of the face remaining still.",
+    "frame_last": "The eye is fully open, revealing the entire iris and pupil, with a slight focus as it adjusts to the light.",
+    "frame_json_raw": "{\"first\": \"A closed eye, lashes resting gently, surrounded by smooth, still skin under soft, ambient lighting.\", \"middle\": \"The eyelid begins to lift, revealing a slit of the iris and a glimmer of the white, with the rest of the face remaining still.\", \"last\": \"The eye is fully open, revealing the entire iris and pupil, with a slight focus as it adjusts to the light.\"}"
+  },
+  {
+    "caption": "The glass is going from empty to full of water",
+    "state 0": "An empty glass",
+    "state 1": "A glass full of water",
+    "tag": "state change",
+    "frame_first": "An empty glass sits on a table, with a faucet above it starting to release a steady stream of water.",
+    "frame_middle": "Water fills the glass halfway, the faucet still pouring steadily, creating a gentle splash inside the glass.",
+    "frame_last": "The glass is now full to the brim with water, the faucet turning off just in time to avoid any overflow.",
+    "frame_json_raw": "{\"first\": \"An empty glass sits on a table, with a faucet above it starting to release a steady stream of water.\", \"middle\": \"Water fills the glass halfway, the faucet still pouring steadily, creating a gentle splash inside the glass.\", \"last\": \"The glass is now full to the brim with water, the faucet turning off just in time to avoid any overflow.\"}"
+  },
+  {
+    "caption": "The sky is shifting from bright to dark.",
+    "state 0": "bright sky",
+    "state 1": "dark sky",
+    "frame_first": "The sky is a vibrant orange and pink, with the sun setting on the horizon.",
+    "frame_middle": "The sky transitions to a deep purple and blue, stars beginning to twinkle in the distance.",
+    "frame_last": "The sky is now dark, with only the moon and stars illuminating the scene.",
+    "frame_json_raw": "{\"first\": \"The sky is a vibrant orange and pink, with the sun setting on the horizon.\", \"middle\": \"The sky transitions to a deep purple and blue, stars beginning to twinkle in the distance.\", \"last\": \"The sky is now dark, with only the moon and stars illuminating the scene.\"}"
+  },
+  {
+    "caption": "The sky is shifting from dark to bright.",
+    "state 0": "dark sky",
+    "state 1": "bright sky",
+    "frame_first": "The sky is predominantly dark with the first hints of light beginning to appear on the horizon.",
+    "frame_middle": "As the transition continues, the sky is now a mix of deep blues and purples, with the sun's light slowly brightening the eastern sky.",
+    "frame_last": "The sky is now bright with the sun fully risen, casting a warm glow over the landscape.",
+    "frame_json_raw": "{\"first\": \"The sky is predominantly dark with the first hints of light beginning to appear on the horizon.\", \"middle\": \"As the transition continues, the sky is now a mix of deep blues and purples, with the sun's light slowly brightening the eastern sky.\", \"last\": \"The sky is now bright with the sun fully risen, casting a warm glow over the landscape.\"}"
+  },
+  {
+    "caption": "The traffic lights are changing from red to green.",
+    "state 0": "red traffic lights",
+    "state 1": "green traffic lights",
+    "frame_first": "A busy intersection at dusk, with vehicles stopped, facing a red traffic light.",
+    "frame_middle": "The traffic light transitions to amber, with cars still waiting patiently.",
+    "frame_last": "The traffic light turns green, and the first row of cars begins to move forward.",
+    "frame_json_raw": "{\"first\": \"A busy intersection at dusk, with vehicles stopped, facing a red traffic light.\", \"middle\": \"The traffic light transitions to amber, with cars still waiting patiently.\", \"last\": \"The traffic light turns green, and the first row of cars begins to move forward.\"}"
+  },
+  {
+    "caption": "The traffic lights are changing from green to red.",
+    "state 0": "green traffic lights",
+    "state 1": "red traffic lights",
+    "frame_first": "A busy intersection at dusk, with vehicles moving smoothly as the traffic lights are still green.",
+    "frame_middle": "The traffic lights begin to change, with the green light fading as the yellow light illuminates, causing some vehicles to slow down.",
+    "frame_last": "The traffic lights are now fully red, with cars coming to a stop at the intersection, creating a brief pause in the flow of traffic.",
+    "frame_json_raw": "{\"first\": \"A busy intersection at dusk, with vehicles moving smoothly as the traffic lights are still green.\", \"middle\": \"The traffic lights begin to change, with the green light fading as the yellow light illuminates, causing some vehicles to slow down.\", \"last\": \"The traffic lights are now fully red, with cars coming to a stop at the intersection, creating a brief pause in the flow of traffic.\"}"
+  },
+  {
+    "caption": "The light bulb is lighting up.",
+    "state 0": "unlit light bulb",
+    "state 1": "lit light bulb",
+    "frame_first": "A light bulb hangs from the ceiling, currently unlit, with a hand reaching towards the switch on the wall.",
+    "frame_middle": "The hand flicks the switch, and a spark of electricity illuminates the room as the light bulb begins to glow.",
+    "frame_last": "The light bulb is now fully lit, casting a warm, bright glow throughout the room, with the hand now resting by the wall switch.",
+    "frame_json_raw": "{\"first\": \"A light bulb hangs from the ceiling, currently unlit, with a hand reaching towards the switch on the wall.\", \"middle\": \"The hand flicks the switch, and a spark of electricity illuminates the room as the light bulb begins to glow.\", \"last\": \"The light bulb is now fully lit, casting a warm, bright glow throughout the room, with the hand now resting by the wall switch.\"}"
+  },
+  {
+    "caption": "The light bulb is turning off.",
+    "state 0": "lit light bulb",
+    "state 1": "unlit light bulb",
+    "frame_first": "A light bulb hangs from the ceiling, glowing brightly in the center of a dim room.",
+    "frame_middle": "The light bulb flickers intermittently as it begins to turn off, casting a pulsing glow around the room.",
+    "frame_last": "The light bulb has turned off completely, leaving the room in darkness except for a faint trace of its last glow fading away.",
+    "frame_json_raw": "{\"first\": \"A light bulb hangs from the ceiling, glowing brightly in the center of a dim room.\", \"middle\": \"The light bulb flickers intermittently as it begins to turn off, casting a pulsing glow around the room.\", \"last\": \"The light bulb has turned off completely, leaving the room in darkness except for a faint trace of its last glow fading away.\"}"
+  },
+  {
+    "caption": "A pink chameleon changes its skin color to green",
+    "state 0": "pink chameleon",
+    "state 1": "green chameleon",
+    "frame_first": "A pink chameleon sits motionless on a branch under a bright sun, its skin vivid against the green leaves.",
+    "frame_middle": "The chameleon's skin begins to shift, tiny scales morphing from pink to a blend of pink and green, blending it partially with the foliage.",
+    "frame_last": "The chameleon now fully green, seamlessly camouflaged among the leaves, its transformation complete.",
+    "frame_json_raw": "{\"first\": \"A pink chameleon sits motionless on a branch under a bright sun, its skin vivid against the green leaves.\", \"middle\": \"The chameleon's skin begins to shift, tiny scales morphing from pink to a blend of pink and green, blending it partially with the foliage.\", \"last\": \"The chameleon now fully green, seamlessly camouflaged among the leaves, its transformation complete.\"}"
+  },
+  {
+    "caption": "The polar aurora fills the sky, changing dynamically from green to pink in waves.",
+    "state 0": "green aurora",
+    "state 1": "pink aurora",
+    "frame_first": "The night sky above a snowy landscape is illuminated by a green aurora, which stretches across the horizon in vibrant, flowing curtains.",
+    "frame_middle": "The aurora begins to shift, with waves of pink light emerging and blending with the green, creating a mesmerizing dance of colors.",
+    "frame_last": "The sky is now predominantly pink, with lingering streaks of green, as the aurora continues its dynamic display, casting a magical glow over the snowy scene.",
+    "frame_json_raw": "{\"first\": \"The night sky above a snowy landscape is illuminated by a green aurora, which stretches across the horizon in vibrant, flowing curtains.\", \"middle\": \"The aurora begins to shift, with waves of pink light emerging and blending with the green, creating a mesmerizing dance of colors.\", \"last\": \"The sky is now predominantly pink, with lingering streaks of green, as the aurora continues its dynamic display, casting a magical glow over the snowy scene.\"}"
+  },
+  {
+    "caption": "The polar aurora fills the sky, changing dynamically from pink to green in waves.",
+    "state 0": "pink aurora",
+    "state 1": "green aurora",
+    "frame_first": "The night sky above a snowy landscape is illuminated by a soft pink aurora, which gently ripples and flows.",
+    "frame_middle": "The aurora transitions into vibrant green waves, undulating across the sky with a mesmerizing dance of light.",
+    "frame_last": "The green aurora peaks in intensity, casting a glowing, ethereal light over the snow-covered ground before it begins to fade back to pink.",
+    "frame_json_raw": "{\"first\": \"The night sky above a snowy landscape is illuminated by a soft pink aurora, which gently ripples and flows.\", \"middle\": \"The aurora transitions into vibrant green waves, undulating across the sky with a mesmerizing dance of light.\", \"last\": \"The green aurora peaks in intensity, casting a glowing, ethereal light over the snow-covered ground before it begins to fade back to pink.\"}"
+  },
+  {
+    "caption": "The winter frost thaws, changing the grass from frosty white back to vibrant green.",
+    "state 0": "frosty white grass",
+    "state 1": "vibrant green grass",
+    "frame_first": "A close-up shot of a grassy field covered in a thin layer of winter frost, the grass appearing white and still.",
+    "frame_middle": "The frost begins to melt, revealing patches of vibrant green grass as the sun rises higher.",
+    "frame_last": "The frost has completely thawed, and the grass is now fully visible in its lush, green color, with droplets of water glistening in the sunlight.",
+    "frame_json_raw": "{\"first\": \"A close-up shot of a grassy field covered in a thin layer of winter frost, the grass appearing white and still.\", \"middle\": \"The frost begins to melt, revealing patches of vibrant green grass as the sun rises higher.\", \"last\": \"The frost has completely thawed, and the grass is now fully visible in its lush, green color, with droplets of water glistening in the sunlight.\"}"
+  },
+  {
+    "caption": "The sphere building is changing from blue to green.",
+    "state 0": "blue sphere building",
+    "state 1": "green sphere building",
+    "frame_first": "The sphere building is fully illuminated in a vibrant blue hue under the clear evening sky.",
+    "frame_middle": "The sphere building is in the midst of transformation, with the lower half now green and the upper half still blue.",
+    "frame_last": "The sphere building is now completely green, glowing softly against the darkening night sky.",
+    "frame_json_raw": "{\"first\": \"The sphere building is fully illuminated in a vibrant blue hue under the clear evening sky.\", \"middle\": \"The sphere building is in the midst of transformation, with the lower half now green and the upper half still blue.\", \"last\": \"The sphere building is now completely green, glowing softly against the darkening night sky.\"}"
+  },
+  {
+    "caption": "The sphere building is changing from green to blue.",
+    "state 0": "green sphere building",
+    "state 1": "blue sphere building",
+    "frame_first": "The sphere building is fully illuminated in a vibrant green hue under the soft twilight sky.",
+    "frame_middle": "The sphere building is in the midst of transformation, with the lower half now a deep blue and the upper half still green.",
+    "frame_last": "The sphere building is now entirely blue, standing out against the darkening evening sky.",
+    "frame_json_raw": "{\"first\": \"The sphere building is fully illuminated in a vibrant green hue under the soft twilight sky.\", \"middle\": \"The sphere building is in the midst of transformation, with the lower half now a deep blue and the upper half still green.\", \"last\": \"The sphere building is now entirely blue, standing out against the darkening evening sky.\"}"
+  },
+  {
+    "caption": "The background is changing from blue to pink.",
+    "state 0": "blue background",
+    "state 1": "pink background",
+    "frame_first": "The scene opens with a vast, uniform blue background.",
+    "frame_middle": "The background gradually shifts, blending blue into shades of pink.",
+    "frame_last": "The background is now fully pink, completing the transition.",
+    "frame_json_raw": "{\"first\": \"The scene opens with a vast, uniform blue background.\", \"middle\": \"The background gradually shifts, blending blue into shades of pink.\", \"last\": \"The background is now fully pink, completing the transition.\"}"
+  },
+  {
+    "caption": "Red clouds in the sky turn purple",
+    "state 0": "red clouds",
+    "state 1": "purple clouds",
+    "frame_first": "A wide shot of the sky at dusk, filled with vibrant red clouds.",
+    "frame_middle": "The red clouds gradually shift to a deep purple hue as the sun sets.",
+    "frame_last": "The sky is now dominated by dark purple clouds, signaling the end of the day.",
+    "frame_json_raw": "{\"first\": \"A wide shot of the sky at dusk, filled with vibrant red clouds.\", \"middle\": \"The red clouds gradually shift to a deep purple hue as the sun sets.\", \"last\": \"The sky is now dominated by dark purple clouds, signaling the end of the day.\"}"
+  },
+  {
+    "caption": "The chalkboard is filling with colorful diagrams, transforming from empty to covered in notes.",
+    "state 0": "empty chalkboard",
+    "state 1": "chalkboard covered in notes",
+    "frame_first": "An empty chalkboard dominates the scene, with a teacher standing to the side, chalk in hand, about to begin writing.",
+    "frame_middle": "The chalkboard is partially filled with colorful diagrams and notes, the teacher actively drawing and writing, erasing and redrawing as needed.",
+    "frame_last": "The chalkboard is now completely covered with a variety of colorful diagrams and notes, the teacher stepping back to review the completed work.",
+    "frame_json_raw": "{\"first\": \"An empty chalkboard dominates the scene, with a teacher standing to the side, chalk in hand, about to begin writing.\", \"middle\": \"The chalkboard is partially filled with colorful diagrams and notes, the teacher actively drawing and writing, erasing and redrawing as needed.\", \"last\": \"The chalkboard is now completely covered with a variety of colorful diagrams and notes, the teacher stepping back to review the completed work.\"}"
+  },
+  {
+    "caption": "The ink on the canvas changing from green to blue.",
+    "state 0": "green ink on canvas",
+    "state 1": "blue ink on canvas",
+    "frame_first": "A canvas is seen with fresh green ink spreading across its surface.",
+    "frame_middle": "The ink on the canvas begins to shift, transitioning from green to a blend of green and blue.",
+    "frame_last": "The canvas now displays ink that has fully changed to a deep blue color.",
+    "frame_json_raw": "{\"first\": \"A canvas is seen with fresh green ink spreading across its surface.\", \"middle\": \"The ink on the canvas begins to shift, transitioning from green to a blend of green and blue.\", \"last\": \"The canvas now displays ink that has fully changed to a deep blue color.\"}"
+  },
+  {
+    "caption": "The ink on the canvas changing from blue to green.",
+    "state 0": "blue ink on canvas",
+    "state 1": "green ink on canvas",
+    "frame_first": "A canvas is seen with freshly applied blue ink spreading across its surface.",
+    "frame_middle": "The ink on the canvas begins to shift, transitioning from blue to a vibrant green.",
+    "frame_last": "The canvas now displays the completed image in green ink, the transformation now complete.",
+    "frame_json_raw": "{\"first\": \"A canvas is seen with freshly applied blue ink spreading across its surface.\", \"middle\": \"The ink on the canvas begins to shift, transitioning from blue to a vibrant green.\", \"last\": \"The canvas now displays the completed image in green ink, the transformation now complete.\"}"
+  },
+  {
+    "caption": "The neon sign is changing from red to yellow.",
+    "state 0": "red neon sign",
+    "state 1": "yellow neon sign",
+    "frame_first": "A neon sign glows bright red, casting a warm, crimson light on the surrounding alleyway.",
+    "frame_middle": "The neon sign flickers as it transitions from red to yellow, creating a dynamic play of light.",
+    "frame_last": "The neon sign now shines a vibrant yellow, illuminating the scene with a bright, sunny hue.",
+    "frame_json_raw": "{\"first\": \"A neon sign glows bright red, casting a warm, crimson light on the surrounding alleyway.\", \"middle\": \"The neon sign flickers as it transitions from red to yellow, creating a dynamic play of light.\", \"last\": \"The neon sign now shines a vibrant yellow, illuminating the scene with a bright, sunny hue.\"}"
+  },
+  {
+    "caption": "The neon sign is changing from yellow to red.",
+    "state 0": "yellow neon sign",
+    "state 1": "red neon sign",
+    "frame_first": "A neon sign glows a bright, vivid yellow against the darkening evening sky.",
+    "frame_middle": "The neon sign flickers momentarily as the color transitions from yellow to red.",
+    "frame_last": "The neon sign now shines a vibrant red, casting a warm glow over the night street.",
+    "frame_json_raw": "{\"first\": \"A neon sign glows a bright, vivid yellow against the darkening evening sky.\", \"middle\": \"The neon sign flickers momentarily as the color transitions from yellow to red.\", \"last\": \"The neon sign now shines a vibrant red, casting a warm glow over the night street.\"}"
+  },
+  {
+    "caption": "The skyline background is turning from bright orange to deep purple.",
+    "state 0": "bright orange skyline",
+    "state 1": "deep purple skyline",
+    "frame_first": "The skyline is bathed in a vibrant, bright orange hue as the sun begins to set.",
+    "frame_middle": "The sky transitions, with the orange gradually giving way to deep, rich purples.",
+    "frame_last": "The skyline is now dominated by deep purple tones, marking the end of the sunset.",
+    "frame_json_raw": "{\"first\": \"The skyline is bathed in a vibrant, bright orange hue as the sun begins to set.\", \"middle\": \"The sky transitions, with the orange gradually giving way to deep, rich purples.\", \"last\": \"The skyline is now dominated by deep purple tones, marking the end of the sunset.\"}"
+  },
+  {
+    "caption": "A red chameleon changes its skin color to green as the neon sign is changing from red to green.",
+    "state 0": "red chameleon and red neon sign",
+    "state 1": "green chameleon and green neon sign",
+    "frame_first": "A red chameleon sits on a neon sign that is currently glowing red, with the sign beginning to flicker towards green.",
+    "frame_middle": "The chameleon's skin gradually shifts from red to green, matching the neon sign that is now halfway through its color transition.",
+    "frame_last": "The chameleon is now fully green, perfectly camouflaged against the neon sign which has completed its change to a bright green glow.",
+    "frame_json_raw": "{\"first\": \"A red chameleon sits on a neon sign that is currently glowing red, with the sign beginning to flicker towards green.\", \"middle\": \"The chameleon's skin gradually shifts from red to green, matching the neon sign that is now halfway through its color transition.\", \"last\": \"The chameleon is now fully green, perfectly camouflaged against the neon sign which has completed its change to a bright green glow.\"}"
+  },
+  {
+    "caption": "A green chameleon changes its skin color to red as the neon sign is changing from green to red.",
+    "state 0": "green chameleon and green neon sign",
+    "state 1": "red chameleon and red neon sign",
+    "frame_first": "A green chameleon perches on a neon sign, which glows a bright green, as both begin to shift towards red.",
+    "frame_middle": "The chameleon's skin is halfway through its transformation, a mix of green and red, while the neon sign flickers between the two colors.",
+    "frame_last": "The chameleon is now fully red, blending seamlessly with the now-red neon sign, both having completed their color change.",
+    "frame_json_raw": "{\"first\": \"A green chameleon perches on a neon sign, which glows a bright green, as both begin to shift towards red.\", \"middle\": \"The chameleon's skin is halfway through its transformation, a mix of green and red, while the neon sign flickers between the two colors.\", \"last\": \"The chameleon is now fully red, blending seamlessly with the now-red neon sign, both having completed their color change.\"}"
+  },
+  {
+    "caption": "An apple changes from pink to blue as the background is changing from blue to pink.",
+    "state 0": "pink apple and blue background",
+    "state 1": "blue apple and pink background",
+    "frame_first": "A pink apple sits on a blue background, beginning to shift colors.",
+    "frame_middle": "The apple is now a mix of pink and blue, with the background transitioning from blue to pink.",
+    "frame_last": "A blue apple rests on a now pink background, completing the color swap.",
+    "frame_json_raw": "{\"first\": \"A pink apple sits on a blue background, beginning to shift colors.\", \"middle\": \"The apple is now a mix of pink and blue, with the background transitioning from blue to pink.\", \"last\": \"A blue apple rests on a now pink background, completing the color swap.\"}"
+  },
+  {
+    "caption": "The concrete wall crumbles into small blocks.",
+    "state 0": "solid concrete wall",
+    "state 1": "small blocks",
+    "frame_first": "A solid concrete wall stands still under a bright noon sky.",
+    "frame_middle": "The wall begins to crack and break apart, chunks of concrete falling to the ground.",
+    "frame_last": "Only small blocks of concrete remain scattered on the ground, the wall completely crumbled.",
+    "frame_json_raw": "{\"first\": \"A solid concrete wall stands still under a bright noon sky.\", \"middle\": \"The wall begins to crack and break apart, chunks of concrete falling to the ground.\", \"last\": \"Only small blocks of concrete remain scattered on the ground, the wall completely crumbled.\"}"
+  },
+  {
+    "caption": "The small blocks are assembled into a solid concrete wall.",
+    "state 0": "small blocks",
+    "state 1": "solid concrete wall",
+    "frame_first": "Small concrete blocks are scattered on the ground, with a partially built wall in the background, suggesting a construction site.",
+    "frame_middle": "A worker places another block onto the growing wall, mortar between the blocks ensuring a solid structure, as sunlight filters through partly cloudy skies.",
+    "frame_last": "The wall is now complete, standing tall and solid, with the last block being secured in place, casting a shadow on the freshly laid concrete.",
+    "frame_json_raw": "{\"first\": \"Small concrete blocks are scattered on the ground, with a partially built wall in the background, suggesting a construction site.\", \"middle\": \"A worker places another block onto the growing wall, mortar between the blocks ensuring a solid structure, as sunlight filters through partly cloudy skies.\", \"last\": \"The wall is now complete, standing tall and solid, with the last block being secured in place, casting a shadow on the freshly laid concrete.\"}"
+  },
+  {
+    "caption": "The skyscraper is collapsing into a pile of rubble.",
+    "state 0": "intact skyscraper",
+    "state 1": "pile of rubble",
+    "frame_first": "A towering skyscraper begins to crumble, with dust and debris starting to fall from its upper floors.",
+    "frame_middle": "The middle section of the skyscraper is now completely shattered, with clouds of smoke and rubble spreading outwards.",
+    "frame_last": "The once-majestic skyscraper has fully collapsed into a massive pile of rubble, with only twisted metal and concrete visible amidst the dust clouds.",
+    "frame_json_raw": "{\"first\": \"A towering skyscraper begins to crumble, with dust and debris starting to fall from its upper floors.\", \"middle\": \"The middle section of the skyscraper is now completely shattered, with clouds of smoke and rubble spreading outwards.\", \"last\": \"The once-majestic skyscraper has fully collapsed into a massive pile of rubble, with only twisted metal and concrete visible amidst the dust clouds.\"}"
+  },
+  {
+    "caption": "The pile of rubble is being constructed into a skyscraper.",
+    "state 0": "pile of rubble",
+    "state 1": "intact skyscraper",
+    "frame_first": "A large pile of rubble sits in a construction site under a clear blue sky, with cranes and construction vehicles beginning to move materials.",
+    "frame_middle": "The foundation of a skyscraper is visible, with workers bustling around, setting up scaffolding and pouring concrete, the sun casting long shadows.",
+    "frame_last": "The skyscraper stands tall, its steel and glass facade gleaming in the afternoon sun, with only a few workers finishing up at the top.",
+    "frame_json_raw": "{\"first\": \"A large pile of rubble sits in a construction site under a clear blue sky, with cranes and construction vehicles beginning to move materials.\", \"middle\": \"The foundation of a skyscraper is visible, with workers bustling around, setting up scaffolding and pouring concrete, the sun casting long shadows.\", \"last\": \"The skyscraper stands tall, its steel and glass facade gleaming in the afternoon sun, with only a few workers finishing up at the top.\"}"
+  },
+  {
+    "caption": "The eye is changing from open to closed.",
+    "state 0": "open eye",
+    "state 1": "closed eye",
+    "frame_first": "A wide open eye stares directly at the camera, the iris and pupil centered and clear.",
+    "frame_middle": "The eyelid is halfway down, covering half of the eye, with the iris partially visible.",
+    "frame_last": "The eye is now fully closed, the eyelid smooth and the lashes resting gently against the cheek.",
+    "frame_json_raw": "{\"first\": \"A wide open eye stares directly at the camera, the iris and pupil centered and clear.\", \"middle\": \"The eyelid is halfway down, covering half of the eye, with the iris partially visible.\", \"last\": \"The eye is now fully closed, the eyelid smooth and the lashes resting gently against the cheek.\"}"
+  },
+  {
+    "caption": "The ice cream is freezing.",
+    "state 0": "unfrozen ice cream",
+    "state 1": "frozen ice cream",
+    "frame_first": "A close-up shot of an ice cream scoop placed in a freezer, steam rising around it as the cold air hits the warm ice cream.",
+    "frame_middle": "The ice cream begins to harden, visible texture changes as it freezes, with the freezer light flickering in the background.",
+    "frame_last": "The ice cream is now fully frozen, solid and shiny, sitting motionless in the freezer tray.",
+    "frame_json_raw": "{\"first\": \"A close-up shot of an ice cream scoop placed in a freezer, steam rising around it as the cold air hits the warm ice cream.\", \"middle\": \"The ice cream begins to harden, visible texture changes as it freezes, with the freezer light flickering in the background.\", \"last\": \"The ice cream is now fully frozen, solid and shiny, sitting motionless in the freezer tray.\"}"
+  },
+  {
+    "caption": "The glass is going from full of water to empty.",
+    "state 0": "full glass of water",
+    "state 1": "empty glass",
+    "frame_first": "A glass filled to the brim with clear water sits on a table, reflecting the light.",
+    "frame_middle": "Water droplets cascade down the sides of the glass as it tilts, the level of water inside visibly decreasing.",
+    "frame_last": "The glass is now empty, with only a few lingering droplets on its sides and a wet mark on the table.",
+    "frame_json_raw": "{\"first\": \"A glass filled to the brim with clear water sits on a table, reflecting the light.\", \"middle\": \"Water droplets cascade down the sides of the glass as it tilts, the level of water inside visibly decreasing.\", \"last\": \"The glass is now empty, with only a few lingering droplets on its sides and a wet mark on the table.\"}"
+  },
+  {
+    "caption": "A balloon deflating as air is released.",
+    "state 0": "inflated balloon",
+    "state 1": "deflated balloon",
+    "frame_first": "A vibrant red balloon hangs in the air, slightly swaying, with a small opening at the bottom where air begins to escape, creating a soft hissing sound.",
+    "frame_middle": "The balloon is now half its original size, the latex visibly tightening as more air rushes out, the hissing sound growing louder.",
+    "frame_last": "The once full balloon is now a small, tight, deflated sphere, floating gently to the ground as the last of the air escapes with a final quiet hiss.",
+    "frame_json_raw": "{\"first\": \"A vibrant red balloon hangs in the air, slightly swaying, with a small opening at the bottom where air begins to escape, creating a soft hissing sound.\", \"middle\": \"The balloon is now half its original size, the latex visibly tightening as more air rushes out, the hissing sound growing louder.\", \"last\": \"The once full balloon is now a small, tight, deflated sphere, floating gently to the ground as the last of the air escapes with a final quiet hiss.\"}"
+  },
+  {
+    "caption": "A square sheet folds diagonally, creating a crease and forming a triangular shape as its edges align perfectly.",
+    "state 0": "flat square sheet",
+    "state 1": "triangular sheet",
+    "frame_first": "A square sheet of paper lies flat, about to be folded diagonally.",
+    "frame_middle": "The paper is halfway folded, showing a clear diagonal crease forming a triangle.",
+    "frame_last": "The paper is fully folded into a neat triangle with its edges perfectly aligned.",
+    "frame_json_raw": "{\"first\": \"A square sheet of paper lies flat, about to be folded diagonally.\", \"middle\": \"The paper is halfway folded, showing a clear diagonal crease forming a triangle.\", \"last\": \"The paper is fully folded into a neat triangle with its edges perfectly aligned.\"}"
+  },
+  {
+    "caption": "The clouds billow and stretch, changing from fluffy cotton-like shapes to wispy, delicate strands in the wind.",
+    "state 0": "fluffy clouds",
+    "state 1": "wispy clouds",
+    "frame_first": "A bright sky is filled with large, fluffy cotton-like clouds that begin to shift and billow.",
+    "frame_middle": "The clouds are transforming, their edges becoming more wispy and delicate as they stretch and move with the wind.",
+    "frame_last": "The once-cottony clouds have now become thin, wispy strands, drifting across the sky with the breeze.",
+    "frame_json_raw": "{\"first\": \"A bright sky is filled with large, fluffy cotton-like clouds that begin to shift and billow.\", \"middle\": \"The clouds are transforming, their edges becoming more wispy and delicate as they stretch and move with the wind.\", \"last\": \"The once-cottony clouds have now become thin, wispy strands, drifting across the sky with the breeze.\"}"
+  },
+  {
+    "caption": "The sapling tree grows, transforming from a thin stick-like shape into a sturdy trunk with spreading branches.",
+    "state 0": "thin sapling",
+    "state 1": "sturdy tree with branches",
+    "frame_first": "A small sapling stands alone in a sunlit clearing, its trunk thin and straight, with a few嫩芽刚刚开始展开。",
+    "frame_middle": "随着时间的推移，小树的树干变得更加粗壮，枝条开始向外伸展，形成一个年轻的树冠。",
+    "frame_last": "最终，小树成长为一棵拥有坚固树干和茂盛枝叶的大树，树冠在阳光下显得生机勃勃。",
+    "frame_json_raw": "{\"first\": \"A small sapling stands alone in a sunlit clearing, its trunk thin and straight, with a few嫩芽刚刚开始展开。\", \"middle\": \"随着时间的推移，小树的树干变得更加粗壮，枝条开始向外伸展，形成一个年轻的树冠。\", \"last\": \"最终，小树成长为一棵拥有坚固树干和茂盛枝叶的大树，树冠在阳光下显得生机勃勃。\"}"
+  },
+  {
+    "caption": "The mushroom cap expands, going from a closed button shape to a broad, flat disc.",
+    "state 0": "closed mushroom cap",
+    "state 1": "flat mushroom cap",
+    "frame_first": "A small, tight mushroom cap is seen in close-up, its shape resembling a perfect button.",
+    "frame_middle": "The mushroom cap is partially open, showing the transition from a button shape to a flatter disc.",
+    "frame_last": "The mushroom cap has fully expanded into a broad, flat disc, revealing its mature form.",
+    "frame_json_raw": "{\"first\": \"A small, tight mushroom cap is seen in close-up, its shape resembling a perfect button.\", \"middle\": \"The mushroom cap is partially open, showing the transition from a button shape to a flatter disc.\", \"last\": \"The mushroom cap has fully expanded into a broad, flat disc, revealing its mature form.\"}"
+  },
+  {
+    "caption": "The seed germinates, transforming from a small, compact shell into a sprout with spreading roots and leaves.",
+    "state 0": "small seed",
+    "state 1": "a sprout with spreading roots and leaves",
+    "frame_first": "A close-up of a tiny seed buried in dark soil, with a faint crack appearing on its surface.",
+    "frame_middle": "The seed has split open, revealing a small sprout with delicate roots pushing into the soil and a pair of tiny leaves curling upwards.",
+    "frame_last": "The sprout has grown significantly, with a cluster of healthy roots anchoring it in the soil and several unfurling leaves reaching towards the light.",
+    "frame_json_raw": "{\"first\": \"A close-up of a tiny seed buried in dark soil, with a faint crack appearing on its surface.\", \"middle\": \"The seed has split open, revealing a small sprout with delicate roots pushing into the soil and a pair of tiny leaves curling upwards.\", \"last\": \"The sprout has grown significantly, with a cluster of healthy roots anchoring it in the soil and several unfurling leaves reaching towards the light.\"}"
+  },
+  {
+    "caption": "The bread dough rises, swelling from a dense ball into a fluffy, rounded loaf.",
+    "state 0": "dense dough ball",
+    "state 1": "fluffy loaf",
+    "frame_first": "A dense ball of bread dough sits on a floured kitchen counter, beginning to expand slightly.",
+    "frame_middle": "The dough has visibly increased in size, now forming a more rounded shape with a light, puffy appearance.",
+    "frame_last": "The bread dough has fully risen, transformed into a large, fluffy, rounded loaf, nearly doubling in size from its original form.",
+    "frame_json_raw": "{\"first\": \"A dense ball of bread dough sits on a floured kitchen counter, beginning to expand slightly.\", \"middle\": \"The dough has visibly increased in size, now forming a more rounded shape with a light, puffy appearance.\", \"last\": \"The bread dough has fully risen, transformed into a large, fluffy, rounded loaf, nearly doubling in size from its original form.\"}"
+  },
+  {
+    "caption": "The umbrella opens, changing from a collapsed rod to a wide, circular canopy.",
+    "state 0": "collapsed umbrella",
+    "state 1": "open umbrella",
+    "frame_first": "A closed umbrella is held vertically, its tip touching the ground, with the handle gripped firmly in a hand.",
+    "frame_middle": "The umbrella is halfway open, with ribs extending outward, forming a partial canopy.",
+    "frame_last": "The umbrella is fully open, revealing a complete circular canopy, now shielding from an implied rain or sun.",
+    "frame_json_raw": "{\"first\": \"A closed umbrella is held vertically, its tip touching the ground, with the handle gripped firmly in a hand.\", \"middle\": \"The umbrella is halfway open, with ribs extending outward, forming a partial canopy.\", \"last\": \"The umbrella is fully open, revealing a complete circular canopy, now shielding from an implied rain or sun.\"}"
+  },
+  {
+    "caption": "The 3D shapes are transforming from cubes into spheres.",
+    "state 0": "cubic 3D shapes",
+    "state 1": "spherical 3D shapes",
+    "frame_first": "Three distinct cubes are positioned side by side, each beginning to morph at their edges.",
+    "frame_middle": "The shapes are now in a transitional phase, with rounded edges and a smooth, bulging appearance, clearly shifting towards spherical forms.",
+    "frame_last": "The transformation is complete, revealing three perfect spheres standing in the same arrangement as the original cubes.",
+    "frame_json_raw": "{\"first\": \"Three distinct cubes are positioned side by side, each beginning to morph at their edges.\", \"middle\": \"The shapes are now in a transitional phase, with rounded edges and a smooth, bulging appearance, clearly shifting towards spherical forms.\", \"last\": \"The transformation is complete, revealing three perfect spheres standing in the same arrangement as the original cubes.\"}"
+  },
+  {
+    "caption": "The 3D shapes are transforming from spheres into cubes.",
+    "state 0": "spherical 3D shapes",
+    "state 1": "cubic 3D shapes",
+    "frame_first": "A group of smooth, white spheres float in a dark, digital space.",
+    "frame_middle": "The spheres begin to morph, their surfaces developing flat planes as they transition into cubes.",
+    "frame_last": "The transformation is complete, leaving a set of sharp-edged, geometric cubes in the void.",
+    "frame_json_raw": "{\"first\": \"A group of smooth, white spheres float in a dark, digital space.\", \"middle\": \"The spheres begin to morph, their surfaces developing flat planes as they transition into cubes.\", \"last\": \"The transformation is complete, leaving a set of sharp-edged, geometric cubes in the void.\"}"
+  },
+  {
+    "caption": "The battery charge is increasing from zero to full.",
+    "state 0": "empty battery",
+    "state 1": "fully charged battery",
+    "frame_first": "A digital battery icon displays 0% charge, the red bar is completely empty under a low battery warning.",
+    "frame_middle": "The battery icon shows a half-filled green bar, indicating a 50% charge, with the warning message fading out.",
+    "frame_last": "The battery icon is fully green, displaying 100% charge, and a 'Fully Charged' message appears in the top corner.",
+    "frame_json_raw": "{\"first\": \"A digital battery icon displays 0% charge, the red bar is completely empty under a low battery warning.\", \"middle\": \"The battery icon shows a half-filled green bar, indicating a 50% charge, with the warning message fading out.\", \"last\": \"The battery icon is fully green, displaying 100% charge, and a 'Fully Charged' message appears in the top corner.\"}"
+  },
+  {
+    "caption": "The battery charge is decreasing from full to zero.",
+    "state 0": "fully charged battery",
+    "state 1": "empty battery",
+    "frame_first": "A smartphone displays a full battery icon with 100% charge, the screen brightly lit.",
+    "frame_middle": "The smartphone's battery icon shows 20% remaining, a low battery warning appears on the screen.",
+    "frame_last": "The smartphone screen flickers and goes dark, the battery icon showing 0% charge, the device now off.",
+    "frame_json_raw": "{\"first\": \"A smartphone displays a full battery icon with 100% charge, the screen brightly lit.\", \"middle\": \"The smartphone's battery icon shows 20% remaining, a low battery warning appears on the screen.\", \"last\": \"The smartphone screen flickers and goes dark, the battery icon showing 0% charge, the device now off.\"}"
+  },
+  {
+    "caption": "The paper is changing from a wrinkled paper ball into a flattened sheet.",
+    "state 0": "wrinkled paper ball",
+    "state 1": "flat paper sheet",
+    "frame_first": "A wrinkled paper ball sits motionless on a plain background.",
+    "frame_middle": "The paper ball begins to unfold, gradually flattening out.",
+    "frame_last": "The paper is now a smooth, flat sheet lying still on the background.",
+    "frame_json_raw": "{\"first\": \"A wrinkled paper ball sits motionless on a plain background.\", \"middle\": \"The paper ball begins to unfold, gradually flattening out.\", \"last\": \"The paper is now a smooth, flat sheet lying still on the background.\"}"
+  },
+  {
+    "caption": "The paper is changing from a flattened sheet into a wrinkled paper ball.",
+    "state 0": "flat paper sheet",
+    "state 1": "wrinkled paper ball",
+    "frame_first": "A flat sheet of white paper lies motionless on a plain, dark surface.",
+    "frame_middle": "The paper begins to curl and fold, forming the early stages of a ball, with visible creases and wrinkles.",
+    "frame_last": "The paper is now fully transformed into a compact, wrinkled ball, resting on the surface.",
+    "frame_json_raw": "{\"first\": \"A flat sheet of white paper lies motionless on a plain, dark surface.\", \"middle\": \"The paper begins to curl and fold, forming the early stages of a ball, with visible creases and wrinkles.\", \"last\": \"The paper is now fully transformed into a compact, wrinkled ball, resting on the surface.\"}"
+  },
+  {
+    "caption": "The 3D pixels are changing from the shape of a man into a cuboid.",
+    "state 0": "man-shaped 3D pixels",
+    "state 1": "cuboid 3D pixels",
+    "frame_first": "A figure of a man is formed by 3D pixels, standing still against a dark background.",
+    "frame_middle": "The 3D pixels that once formed the man are now visibly shifting and rearranging, taking on a more angular shape.",
+    "frame_last": "The 3D pixels have completed their transformation, now forming a perfect cuboid floating in the dark space.",
+    "frame_json_raw": "{\"first\": \"A figure of a man is formed by 3D pixels, standing still against a dark background.\", \"middle\": \"The 3D pixels that once formed the man are now visibly shifting and rearranging, taking on a more angular shape.\", \"last\": \"The 3D pixels have completed their transformation, now forming a perfect cuboid floating in the dark space.\"}"
+  },
+  {
+    "caption": "The 3D house model is being demolished into particles.",
+    "state 0": "3D house model",
+    "state 1": "3D particles",
+    "frame_first": "A 3D house model stands intact under a clear blue sky, with the sun casting sharp shadows.",
+    "frame_middle": "Particles begin to break off from the house, swirling around as the structure starts to disintegrate.",
+    "frame_last": "The house has fully transformed into a cloud of particles that scatter in the wind, leaving no trace of the original structure.",
+    "frame_json_raw": "{\"first\": \"A 3D house model stands intact under a clear blue sky, with the sun casting sharp shadows.\", \"middle\": \"Particles begin to break off from the house, swirling around as the structure starts to disintegrate.\", \"last\": \"The house has fully transformed into a cloud of particles that scatter in the wind, leaving no trace of the original structure.\"}"
+  },
+  {
+    "caption": "The 3D house model is being constructed from particles.",
+    "state 0": "3D particles",
+    "state 1": "3D house model",
+    "frame_first": "A blank 3D space is filled with swirling particles, beginning to coalesce at the center.",
+    "frame_middle": "Particles continue to gather, forming the basic structure of a house with walls and a roof taking shape.",
+    "frame_last": "The house model is fully formed, with particles now settled into the detailed structure, showcasing a complete 3D house.",
+    "frame_json_raw": "{\"first\": \"A blank 3D space is filled with swirling particles, beginning to coalesce at the center.\", \"middle\": \"Particles continue to gather, forming the basic structure of a house with walls and a roof taking shape.\", \"last\": \"The house model is fully formed, with particles now settled into the detailed structure, showcasing a complete 3D house.\"}"
+  },
+  {
+    "caption": "The 3D pixel is transforming from the shape of a flower into a white square.",
+    "state 0": "flower-shaped 3D pixel",
+    "state 1": "white square 3D pixel",
+    "frame_first": "A 3D pixel in the shape of a vibrant flower is seen in the center of the frame, with petals in full bloom.",
+    "frame_middle": "The flower begins to flatten and its colors fade, transitioning into a more uniform white tone.",
+    "frame_last": "The 3D pixel has fully transformed into a white square, now flat and devoid of any floral features.",
+    "frame_json_raw": "{\"first\": \"A 3D pixel in the shape of a vibrant flower is seen in the center of the frame, with petals in full bloom.\", \"middle\": \"The flower begins to flatten and its colors fade, transitioning into a more uniform white tone.\", \"last\": \"The 3D pixel has fully transformed into a white square, now flat and devoid of any floral features.\"}"
+  },
+  {
+    "caption": "The 3D pixel is transforming from a white square into the shape of a flower.",
+    "state 0": "white square 3D pixel",
+    "state 1": "flower-shaped 3D pixel",
+    "frame_first": "A white square pixel stands out in the center of the frame, its edges sharp and clean against a dark background.",
+    "frame_middle": "The square begins to morph, petals unfolding from its sides, still in the pixelated style, forming the early stages of a flower.",
+    "frame_last": "The transformation is complete, revealing a fully formed pixelated flower with distinct petals, standing prominently against the dark backdrop.",
+    "frame_json_raw": "{\"first\": \"A white square pixel stands out in the center of the frame, its edges sharp and clean against a dark background.\", \"middle\": \"The square begins to morph, petals unfolding from its sides, still in the pixelated style, forming the early stages of a flower.\", \"last\": \"The transformation is complete, revealing a fully formed pixelated flower with distinct petals, standing prominently against the dark backdrop.\"}"
+  },
+  {
+    "caption": "The inflatable pool deflates, collapsing from a full, structured circle to a flat, limp sheet.",
+    "state 0": "inflated pool",
+    "state 1": "deflated pool",
+    "frame_first": "A vibrant inflatable pool, filled with water, stands as a perfect blue circle under a clear, sunny sky.",
+    "frame_middle": "The pool begins to deflate, its edges starting to droop and fold inward, water sloshing as it loses shape.",
+    "frame_last": "The once full pool now lies as a flat, limp, and crumpled sheet on the ground, the remnants of water pooling in the center.",
+    "frame_json_raw": "{\"first\": \"A vibrant inflatable pool, filled with water, stands as a perfect blue circle under a clear, sunny sky.\", \"middle\": \"The pool begins to deflate, its edges starting to droop and fold inward, water sloshing as it loses shape.\", \"last\": \"The once full pool now lies as a flat, limp, and crumpled sheet on the ground, the remnants of water pooling in the center.\"}"
+  },
+  {
+    "caption": "The inflatable pool inflates, expanding from a flat, limp sheet to a full, structured circle.",
+    "state 0": "deflated pool",
+    "state 1": "inflated pool",
+    "frame_first": "A flat, limp inflatable pool sheet lies on the ground, beginning to puff up at its center.",
+    "frame_middle": "The pool is half-inflated, forming a partial circle with visible air rushing into it.",
+    "frame_last": "The inflatable pool is fully inflated, a perfect circle filled with air, standing ready for use.",
+    "frame_json_raw": "{\"first\": \"A flat, limp inflatable pool sheet lies on the ground, beginning to puff up at its center.\", \"middle\": \"The pool is half-inflated, forming a partial circle with visible air rushing into it.\", \"last\": \"The inflatable pool is fully inflated, a perfect circle filled with air, standing ready for use.\"}"
+  },
+  {
+    "caption": "The fabric is stretching from a wrinkled bundle into a taut, flat surface.",
+    "state 0": "wrinkled bundle of fabric",
+    "state 1": "taut, flat fabric",
+    "frame_first": "A wrinkled bundle of fabric lies loosely on a surface, starting to be pulled and stretched.",
+    "frame_middle": "The fabric is halfway stretched, smoothing out as wrinkles disappear under tension.",
+    "frame_last": "The fabric now lies completely flat and taut, all wrinkles removed, stretched to its full extent.",
+    "frame_json_raw": "{\"first\": \"A wrinkled bundle of fabric lies loosely on a surface, starting to be pulled and stretched.\", \"middle\": \"The fabric is halfway stretched, smoothing out as wrinkles disappear under tension.\", \"last\": \"The fabric now lies completely flat and taut, all wrinkles removed, stretched to its full extent.\"}"
+  },
+  {
+    "caption": "Fluffy clouds in the sky shape themselves into letters, forming a word.",
+    "state 0": "fluffy clouds",
+    "state 1": "clouds shaped into letters forming a word",
+    "frame_first": "A bright blue sky is dotted with fluffy white clouds, some beginning to naturally form the shape of letters.",
+    "frame_middle": "The clouds continue to shift and morph, clearly defining the letters that spell out a word.",
+    "frame_last": "The clouds have fully formed into the word 'PEACE', hanging majestically in the sky.",
+    "frame_json_raw": "{\"first\": \"A bright blue sky is dotted with fluffy white clouds, some beginning to naturally form the shape of letters.\", \"middle\": \"The clouds continue to shift and morph, clearly defining the letters that spell out a word.\", \"last\": \"The clouds have fully formed into the word 'PEACE', hanging majestically in the sky.\"}"
+  },
+  {
+    "caption": "A red balloon deflating as air is released and a green balloon expanding as it is filled with air.",
+    "state 0": "inflated red balloon and uninflated green balloon",
+    "state 1": "deflated red balloon and inflated green balloon",
+    "frame_first": "A red balloon hangs in the air, slowly shrinking as air escapes from a small hole at the bottom, while a green balloon beside it begins to inflate.",
+    "frame_middle": "The red balloon is now half its original size, drooping slightly, while the green balloon grows larger, nearly matching the red balloon's initial size.",
+    "frame_last": "The red balloon is now a small, limp sphere, while the green balloon is fully inflated, taking center stage in the scene.",
+    "frame_json_raw": "{\"first\": \"A red balloon hangs in the air, slowly shrinking as air escapes from a small hole at the bottom, while a green balloon beside it begins to inflate.\", \"middle\": \"The red balloon is now half its original size, drooping slightly, while the green balloon grows larger, nearly matching the red balloon's initial size.\", \"last\": \"The red balloon is now a small, limp sphere, while the green balloon is fully inflated, taking center stage in the scene.\"}"
+  },
+  {
+    "caption": "The tofu crisps in the pan, shifting from a soft, spongy feel to a firm crust.",
+    "state 0": "soft, spongy tofu",
+    "state 1": "firm-crusted tofu",
+    "frame_first": "A pan on medium heat, tofu slices gently sizzling, their surfaces glistening with moisture.",
+    "frame_middle": "The tofu slices develop a golden crust, bubbles forming around the edges as they crisp up.",
+    "frame_last": "The tofu is fully crisped, with a rich, golden-brown color, and is carefully flipped to cook the other side.",
+    "frame_json_raw": "{\"first\": \"A pan on medium heat, tofu slices gently sizzling, their surfaces glistening with moisture.\", \"middle\": \"The tofu slices develop a golden crust, bubbles forming around the edges as they crisp up.\", \"last\": \"The tofu is fully crisped, with a rich, golden-brown color, and is carefully flipped to cook the other side.\"}"
+  },
+  {
+    "caption": "The sponge absorbs water, changing from dry and stiff to wet and squishy.",
+    "state 0": "dry and stiff sponge",
+    "state 1": "wet and squishy sponge",
+    "frame_first": "A dry, stiff sponge sits on a white countertop under bright kitchen lights, casting a sharp shadow.",
+    "frame_middle": "The sponge is partially submerged in a bowl of water, bubbles forming around it as it begins to absorb the liquid.",
+    "frame_last": "The sponge is now fully saturated, large and plump, resting in the water-filled bowl, no longer stiff but soft and wet.",
+    "frame_json_raw": "{\"first\": \"A dry, stiff sponge sits on a white countertop under bright kitchen lights, casting a sharp shadow.\", \"middle\": \"The sponge is partially submerged in a bowl of water, bubbles forming around it as it begins to absorb the liquid.\", \"last\": \"The sponge is now fully saturated, large and plump, resting in the water-filled bowl, no longer stiff but soft and wet.\"}"
+  },
+  {
+    "caption": "The concrete hardens, changing from a gritty, wet mixture to a solid, rough surface.",
+    "state 0": "gritty, wet concrete mixture",
+    "state 1": "solid, rough concrete surface",
+    "frame_first": "A large form is filled with a gritty, wet concrete mixture, visible under a bright, midday sun.",
+    "frame_middle": "The concrete begins to set, its surface roughening and losing its wet sheen under the persistent sunlight.",
+    "frame_last": "The concrete has fully hardened into a solid, rough surface, casting sharp shadows in the afternoon light.",
+    "frame_json_raw": "{\"first\": \"A large form is filled with a gritty, wet concrete mixture, visible under a bright, midday sun.\", \"middle\": \"The concrete begins to set, its surface roughening and losing its wet sheen under the persistent sunlight.\", \"last\": \"The concrete has fully hardened into a solid, rough surface, casting sharp shadows in the afternoon light.\"}"
+  },
+  {
+    "caption": "The leather jacket ages, shifting from a sleek, smooth finish to a worn, slightly rough texture.",
+    "state 0": "sleek, smooth leather jacket",
+    "state 1": "worn, rough leather jacket",
+    "frame_first": "A close-up shot of a sleek, black leather jacket hangs on a rack, reflecting the soft studio lights.",
+    "frame_middle": "The camera zooms in on the jacket's surface, now showing slight creases and a matte finish, with natural light filtering through a window.",
+    "frame_last": "The final frame shows the jacket with visible wear, the leather rougher and darker in some areas, under the dim light of a vintage lamp.",
+    "frame_json_raw": "{\"first\": \"A close-up shot of a sleek, black leather jacket hangs on a rack, reflecting the soft studio lights.\", \"middle\": \"The camera zooms in on the jacket's surface, now showing slight creases and a matte finish, with natural light filtering through a window.\", \"last\": \"The final frame shows the jacket with visible wear, the leather rougher and darker in some areas, under the dim light of a vintage lamp.\"}"
+  },
+  {
+    "caption": "The stone surface polishes over time, shifting from rough and rugged to smooth and glossy.",
+    "state 0": "rough, rugged stone",
+    "state 1": "smooth, glossy stone",
+    "frame_first": "A close-up of a rough, rugged stone surface under a polishing cloth, with visible dust and small scratches.",
+    "frame_middle": "The stone surface is now partially polished, showing areas of smoothness interspersed with rough patches, the polishing cloth moving across it.",
+    "frame_last": "The stone surface is now completely smooth and glossy, reflecting light with a pristine finish, the polishing cloth set aside.",
+    "frame_json_raw": "{\"first\": \"A close-up of a rough, rugged stone surface under a polishing cloth, with visible dust and small scratches.\", \"middle\": \"The stone surface is now partially polished, showing areas of smoothness interspersed with rough patches, the polishing cloth moving across it.\", \"last\": \"The stone surface is now completely smooth and glossy, reflecting light with a pristine finish, the polishing cloth set aside.\"}"
+  },
+  {
+    "caption": "A glass window, clean and clear, becoming dusty and spotted with grime over time.",
+    "state 0": "clean, clear glass window",
+    "state 1": "dusty, spotted glass window",
+    "frame_first": "A pristine glass window reflects a bright, clear sky, with no visible spots or dust.",
+    "frame_middle": "The glass window now shows a light layer of dust, with a few noticeable spots of grime beginning to mar its surface.",
+    "frame_last": "The once clear glass window is now heavily covered with dust and grime, obscuring the view outside significantly.",
+    "frame_json_raw": "{\"first\": \"A pristine glass window reflects a bright, clear sky, with no visible spots or dust.\", \"middle\": \"The glass window now shows a light layer of dust, with a few noticeable spots of grime beginning to mar its surface.\", \"last\": \"The once clear glass window is now heavily covered with dust and grime, obscuring the view outside significantly.\"}"
+  },
+  {
+    "caption": "A metal garden gate, originally shiny, gradually corroding and covered in rust.",
+    "state 0": "shiny metal garden gate",
+    "state 1": "rusty, corroded garden gate",
+    "frame_first": "A metal garden gate stands in a well-kept garden, its surface gleaming under the morning sun.",
+    "frame_middle": "The gate's surface now shows patches of rust, with a few leaves from nearby trees settling on its frame.",
+    "frame_last": "The once-shiny gate is now heavily rusted, its structure weakened, with overgrown vines creeping along its corroded surface.",
+    "frame_json_raw": "{\"first\": \"A metal garden gate stands in a well-kept garden, its surface gleaming under the morning sun.\", \"middle\": \"The gate's surface now shows patches of rust, with a few leaves from nearby trees settling on its frame.\", \"last\": \"The once-shiny gate is now heavily rusted, its structure weakened, with overgrown vines creeping along its corroded surface.\"}"
+  },
+  {
+    "caption": "A canvas painting, vivid and colorful, fading and cracking slightly as it ages in sunlight.",
+    "state 0": "vivid, colorful canvas painting",
+    "state 1": "faded, cracked canvas painting",
+    "frame_first": "A vibrant, colorful canvas painting fills the frame, hanging in a sunlit room, its edges beginning to show slight signs of aging.",
+    "frame_middle": "Sunlight casts a warm glow on the painting, highlighting the subtle cracks and faded areas that have developed over time.",
+    "frame_last": "The painting, now visibly aged with more pronounced cracks and faded colors, remains a focal point in the softly lit room, a testament to its enduring presence.",
+    "frame_json_raw": "{\"first\": \"A vibrant, colorful canvas painting fills the frame, hanging in a sunlit room, its edges beginning to show slight signs of aging.\", \"middle\": \"Sunlight casts a warm glow on the painting, highlighting the subtle cracks and faded areas that have developed over time.\", \"last\": \"The painting, now visibly aged with more pronounced cracks and faded colors, remains a focal point in the softly lit room, a testament to its enduring presence.\"}"
+  },
+  {
+    "caption": "A concrete sidewalk, smooth and new, developing cracks over years of weather and use.",
+    "state 0": "new, smooth concrete sidewalk",
+    "state 1": "cracked, weathered concrete sidewalk",
+    "frame_first": "A pristine concrete sidewalk stretches straight ahead, its surface smooth and unblemished under the bright sunlight of a clear day.",
+    "frame_middle": "The sidewalk now shows several thin, web-like cracks spreading across its surface, evidence of years of weathering and foot traffic.",
+    "frame_last": "Deep fissures mar the once-smooth concrete, the sidewalk visibly deteriorating as weeds begin to sprout from the larger cracks.",
+    "frame_json_raw": "{\"first\": \"A pristine concrete sidewalk stretches straight ahead, its surface smooth and unblemished under the bright sunlight of a clear day.\", \"middle\": \"The sidewalk now shows several thin, web-like cracks spreading across its surface, evidence of years of weathering and foot traffic.\", \"last\": \"Deep fissures mar the once-smooth concrete, the sidewalk visibly deteriorating as weeds begin to sprout from the larger cracks.\"}"
+  },
+  {
+    "caption": "The leather jacket is shifting from a worn, rough texture to a sleek, smooth finish.",
+    "state 0": "worn, rough leather jacket",
+    "state 1": "sleek, smooth leather jacket",
+    "frame_first": "A leather jacket lies flat under a bright light, its surface rough and marked with wear.",
+    "frame_middle": "The jacket's texture begins to change, the rough patches smoothing out gradually.",
+    "frame_last": "The leather jacket now has a sleek, smooth finish, reflecting light evenly across its surface.",
+    "frame_json_raw": "{\"first\": \"A leather jacket lies flat under a bright light, its surface rough and marked with wear.\", \"middle\": \"The jacket's texture begins to change, the rough patches smoothing out gradually.\", \"last\": \"The leather jacket now has a sleek, smooth finish, reflecting light evenly across its surface.\"}"
+  },
+  {
+    "caption": "The stone surface is transforming from rough and rugged to smooth and glossy.",
+    "state 0": "rough, rugged stone surface",
+    "state 1": "smooth, glossy stone surface",
+    "frame_first": "A close-up of a rough, rugged stone surface under a soft, ambient light, early morning.",
+    "frame_middle": "The stone begins to shimmer as its texture gradually becomes smoother, midday sunlight highlighting the transformation.",
+    "frame_last": "The stone is now completely smooth and glossy, reflecting the surroundings with a polished finish, as the sun sets in the background.",
+    "frame_json_raw": "{\"first\": \"A close-up of a rough, rugged stone surface under a soft, ambient light, early morning.\", \"middle\": \"The stone begins to shimmer as its texture gradually becomes smoother, midday sunlight highlighting the transformation.\", \"last\": \"The stone is now completely smooth and glossy, reflecting the surroundings with a polished finish, as the sun sets in the background.\"}"
+  },
+  {
+    "caption": "A glass window, once dusty and spotted with grime, is gradually cleaned, becoming clear and spotless.",
+    "state 0": "dusty, spotted glass window",
+    "state 1": "clean, clear glass window",
+    "frame_first": "A glass window is covered in a thick layer of dust and grime, obscuring the view outside.",
+    "frame_middle": "A person is wiping the window with a cloth, revealing patches of clear glass as they work.",
+    "frame_last": "The window is now completely clean and spotless, allowing a clear view of the outside world.",
+    "frame_json_raw": "{\"first\": \"A glass window is covered in a thick layer of dust and grime, obscuring the view outside.\", \"middle\": \"A person is wiping the window with a cloth, revealing patches of clear glass as they work.\", \"last\": \"The window is now completely clean and spotless, allowing a clear view of the outside world.\"}"
+  },
+  {
+    "caption": "A metal garden gate, initially corroded and rusty, is returning to a shiny, polished state.",
+    "state 0": "rusty, corroded metal gate",
+    "state 1": "shiny, polished metal gate",
+    "frame_first": "A metal garden gate stands corroded and rusty, with patches of flaking paint, at the entrance of a garden under a clear, bright morning sky.",
+    "frame_middle": "The gate begins to transform, with rust spots fading and a gradual sheen appearing, as sunlight glints off the slowly smoothing surface.",
+    "frame_last": "The garden gate now gleams in the sunlight, fully restored to a shiny, polished state, reflecting the vibrant colors of the surrounding flowers and greenery.",
+    "frame_json_raw": "{\"first\": \"A metal garden gate stands corroded and rusty, with patches of flaking paint, at the entrance of a garden under a clear, bright morning sky.\", \"middle\": \"The gate begins to transform, with rust spots fading and a gradual sheen appearing, as sunlight glints off the slowly smoothing surface.\", \"last\": \"The garden gate now gleams in the sunlight, fully restored to a shiny, polished state, reflecting the vibrant colors of the surrounding flowers and greenery.\"}"
+  },
+  {
+    "caption": "A canvas painting, once faded and cracked, is restored to its original vivid and colorful appearance.",
+    "state 0": "faded, cracked canvas painting",
+    "state 1": "vivid, colorful canvas painting",
+    "frame_first": "A large canvas painting hangs on a white wall, its colors faded and surface cracked, showing signs of age and neglect.",
+    "frame_middle": "Restoration work is in progress; a conservator carefully applies materials to the canvas, the colors gradually regaining their vibrancy under the soft, diffused lighting of the restoration studio.",
+    "frame_last": "The restored painting now hangs on the wall, its colors vivid and rich, the cracks and fading gone, as if it were freshly painted.",
+    "frame_json_raw": "{\"first\": \"A large canvas painting hangs on a white wall, its colors faded and surface cracked, showing signs of age and neglect.\", \"middle\": \"Restoration work is in progress; a conservator carefully applies materials to the canvas, the colors gradually regaining their vibrancy under the soft, diffused lighting of the restoration studio.\", \"last\": \"The restored painting now hangs on the wall, its colors vivid and rich, the cracks and fading gone, as if it were freshly painted.\"}"
+  },
+  {
+    "caption": "A concrete sidewalk, cracked and weathered, is returning to a smooth condition.",
+    "state 0": "cracked, weathered sidewalk",
+    "state 1": "smooth, new sidewalk",
+    "frame_first": "A concrete sidewalk, cracked and weathered, stretches into the distance under a clear blue sky.",
+    "frame_middle": "Cracks on the concrete sidewalk are visibly narrowing, with the surface becoming smoother and more uniform.",
+    "frame_last": "The concrete sidewalk is now smooth and unblemished, reflecting the sunlight as if newly laid.",
+    "frame_json_raw": "{\"first\": \"A concrete sidewalk, cracked and weathered, stretches into the distance under a clear blue sky.\", \"middle\": \"Cracks on the concrete sidewalk are visibly narrowing, with the surface becoming smoother and more uniform.\", \"last\": \"The concrete sidewalk is now smooth and unblemished, reflecting the sunlight as if newly laid.\"}"
+  },
+  {
+    "caption": "A paper changing from smooth to an embossed surface with virtual 3D effects.",
+    "state 0": "smooth paper",
+    "state 1": "embossed paper",
+    "frame_first": "A flat, smooth sheet of white paper is illuminated by soft, even lighting, resting on a plain background.",
+    "frame_middle": "The paper's surface begins to ripple and rise, forming subtle embossed patterns that catch the light, creating a 3D effect.",
+    "frame_last": "The paper now displays intricate embossed designs with deep shadows and highlights, fully transformed into a visually dynamic 3D texture.",
+    "frame_json_raw": "{\"first\": \"A flat, smooth sheet of white paper is illuminated by soft, even lighting, resting on a plain background.\", \"middle\": \"The paper's surface begins to ripple and rise, forming subtle embossed patterns that catch the light, creating a 3D effect.\", \"last\": \"The paper now displays intricate embossed designs with deep shadows and highlights, fully transformed into a visually dynamic 3D texture.\"}"
+  },
+  {
+    "caption": "A rubber duck slowly transforms into a glassy crystal duck.",
+    "state 0": "rubber duck",
+    "state 1": "glassy crystal duck",
+    "frame_first": "A bright yellow rubber duck floats in a clear, shallow pool under a bright sky, the water reflecting the sun.",
+    "frame_middle": "The rubber duck begins to shimmer and harden, its surface turning into a transparent, glass-like crystal, still partially retaining its rubber texture.",
+    "frame_last": "The transformation is complete, revealing a pristine, crystalline duck sparkling in the sunlight, now fully a glassy sculpture.",
+    "frame_json_raw": "{\"first\": \"A bright yellow rubber duck floats in a clear, shallow pool under a bright sky, the water reflecting the sun.\", \"middle\": \"The rubber duck begins to shimmer and harden, its surface turning into a transparent, glass-like crystal, still partially retaining its rubber texture.\", \"last\": \"The transformation is complete, revealing a pristine, crystalline duck sparkling in the sunlight, now fully a glassy sculpture.\"}"
+  },
+  {
+    "caption": "A ceramic teapot gradually turns into a wooden teapot.",
+    "state 0": "ceramic teapot",
+    "state 1": "wooden teapot",
+    "frame_first": "A ceramic teapot sits on a white table, its glaze reflecting a soft light.",
+    "frame_middle": "The ceramic teapot begins to morph, its surface transforming into rough wooden texture.",
+    "frame_last": "The transformation is complete, revealing a wooden teapot with intricate grain patterns on the table.",
+    "frame_json_raw": "{\"first\": \"A ceramic teapot sits on a white table, its glaze reflecting a soft light.\", \"middle\": \"The ceramic teapot begins to morph, its surface transforming into rough wooden texture.\", \"last\": \"The transformation is complete, revealing a wooden teapot with intricate grain patterns on the table.\"}"
+  },
+  {
+    "caption": "A denim jacket shifts into a silk jacket, with the fabric softening and gaining a reflective surface.",
+    "state 0": "denim jacket",
+    "state 1": "silk jacket with reflective surface",
+    "frame_first": "A denim jacket hangs on a mannequin, its surface rough and textured under soft, even lighting.",
+    "frame_middle": "The jacket's fabric begins to transform, the denim fibers morphing into a smoother, silk-like material with subtle sheen.",
+    "frame_last": "The transformation complete, the jacket now appears as sleek silk, its surface reflective and smooth in the same soft lighting.",
+    "frame_json_raw": "{\"first\": \"A denim jacket hangs on a mannequin, its surface rough and textured under soft, even lighting.\", \"middle\": \"The jacket's fabric begins to transform, the denim fibers morphing into a smoother, silk-like material with subtle sheen.\", \"last\": \"The transformation complete, the jacket now appears as sleek silk, its surface reflective and smooth in the same soft lighting.\"}"
+  },
+  {
+    "caption": "A clear glass window becoming dusty and spotted as a shiny metal gate gradually corroding over time.",
+    "state 0": "clean glass window and shiny metal gate",
+    "state 1": "dusty glass window and corroding metal gate",
+    "frame_first": "A pristine clear glass window lets in bright sunlight, with a shiny metal gate standing out in sharp contrast against a backdrop of a blue sky.",
+    "frame_middle": "Dust begins to accumulate on the glass window, slightly obscuring the view, while the metal gate shows the first signs of rust, its surface no longer gleaming.",
+    "frame_last": "The glass window is now heavily dusted, barely letting through the light, and the metal gate is visibly corroded, its rusted surface a stark contrast to its former shine.",
+    "frame_json_raw": "{\"first\": \"A pristine clear glass window lets in bright sunlight, with a shiny metal gate standing out in sharp contrast against a backdrop of a blue sky.\", \"middle\": \"Dust begins to accumulate on the glass window, slightly obscuring the view, while the metal gate shows the first signs of rust, its surface no longer gleaming.\", \"last\": \"The glass window is now heavily dusted, barely letting through the light, and the metal gate is visibly corroded, its rusted surface a stark contrast to its former shine.\"}"
+  },
+  {
+    "caption": "The apple is shrinking and drying out.",
+    "state 0": "fresh apple",
+    "state 1": "shrinking, dried-out apple",
+    "frame_first": "A ripe, red apple sits on a plain white background, filling the frame.",
+    "frame_middle": "The apple is noticeably smaller, its skin beginning to wrinkle and brown.",
+    "frame_last": "The apple has shrunk to a fraction of its original size, now a shriveled, darkened remnant of its former self.",
+    "frame_json_raw": "{\"first\": \"A ripe, red apple sits on a plain white background, filling the frame.\", \"middle\": \"The apple is noticeably smaller, its skin beginning to wrinkle and brown.\", \"last\": \"The apple has shrunk to a fraction of its original size, now a shriveled, darkened remnant of its former self.\"}"
+  },
+  {
+    "caption": "The lava cools, transforming from a molten, viscous flow to rough, porous rock.",
+    "state 0": "molten, viscous lava",
+    "state 1": "rough, porous rock",
+    "frame_first": "A river of molten lava flows across a dark, rocky landscape, glowing with intense red and orange hues under a dim, dusky sky.",
+    "frame_middle": "The lava begins to solidify, its surface crust turning black and rough, while the core still glows with residual heat, creating a contrast of textures.",
+    "frame_last": "The once-flowing lava has fully cooled into a jagged, black rock formation, the landscape now silent and still under a starlit night sky.",
+    "frame_json_raw": "{\"first\": \"A river of molten lava flows across a dark, rocky landscape, glowing with intense red and orange hues under a dim, dusky sky.\", \"middle\": \"The lava begins to solidify, its surface crust turning black and rough, while the core still glows with residual heat, creating a contrast of textures.\", \"last\": \"The once-flowing lava has fully cooled into a jagged, black rock formation, the landscape now silent and still under a starlit night sky.\"}"
+  },
+  {
+    "caption": "The green and fresh leaf is curling and turning brown.",
+    "state 0": "green, fresh leaf",
+    "state 1": "curled, brown leaf",
+    "frame_first": "A vibrant green leaf hangs from a branch, its edges beginning to curl slightly.",
+    "frame_middle": "The leaf is now half-brown, half-green, curling more dramatically in the dry afternoon sun.",
+    "frame_last": "The leaf is fully brown and curled into a tight, crisp shape, about to fall from the branch.",
+    "frame_json_raw": "{\"first\": \"A vibrant green leaf hangs from a branch, its edges beginning to curl slightly.\", \"middle\": \"The leaf is now half-brown, half-green, curling more dramatically in the dry afternoon sun.\", \"last\": \"The leaf is fully brown and curled into a tight, crisp shape, about to fall from the branch.\"}"
+  },
+  {
+    "caption": "The flower is wilting and losing its vibrant color.",
+    "state 0": "vibrant flower",
+    "state 1": "wilted, colorless flower",
+    "frame_first": "A once vibrant flower stands in the center of the frame, its petals beginning to droop slightly under the midday sun.",
+    "frame_middle": "The flower's petals are more wilted, their colors fading from bright to a duller hue as the afternoon progresses.",
+    "frame_last": "The flower is nearly wilted, its petals hanging limply, barely clinging to the stem as the day comes to a close.",
+    "frame_json_raw": "{\"first\": \"A once vibrant flower stands in the center of the frame, its petals beginning to droop slightly under the midday sun.\", \"middle\": \"The flower's petals are more wilted, their colors fading from bright to a duller hue as the afternoon progresses.\", \"last\": \"The flower is nearly wilted, its petals hanging limply, barely clinging to the stem as the day comes to a close.\"}"
+  },
+  {
+    "caption": "The balloon is deflating and wrinkling.",
+    "state 0": "inflated balloon",
+    "state 1": "deflated, wrinkled balloon",
+    "frame_first": "A vibrant red balloon hangs in the air, starting to lose its round shape as air escapes from a small hole at the bottom.",
+    "frame_middle": "The balloon is now half its original size, its surface covered in deep wrinkles as it continues to deflate.",
+    "frame_last": "The once full balloon is now a crumpled, deflated mass of rubber, hanging limply from its string.",
+    "frame_json_raw": "{\"first\": \"A vibrant red balloon hangs in the air, starting to lose its round shape as air escapes from a small hole at the bottom.\", \"middle\": \"The balloon is now half its original size, its surface covered in deep wrinkles as it continues to deflate.\", \"last\": \"The once full balloon is now a crumpled, deflated mass of rubber, hanging limply from its string.\"}"
+  },
+  {
+    "caption": "The mountain shifts from bare rocky cliffs into snow-covered peaks.",
+    "state 0": "bare rocky cliffs",
+    "state 1": "snow-covered peaks",
+    "frame_first": "The mountain's rocky cliffs are exposed under clear blue sky, with no snow in sight.",
+    "frame_middle": "The mountain's face is partially covered with snow, transitioning from rocky to snowy peaks.",
+    "frame_last": "The mountain is now fully snow-covered, with pristine white snow blanketing the peaks under a bright sky.",
+    "frame_json_raw": "{\"first\": \"The mountain's rocky cliffs are exposed under clear blue sky, with no snow in sight.\", \"middle\": \"The mountain's face is partially covered with snow, transitioning from rocky to snowy peaks.\", \"last\": \"The mountain is now fully snow-covered, with pristine white snow blanketing the peaks under a bright sky.\"}"
+  },
+  {
+    "caption": "The tree fills out from bare branches into lush, green foliage.",
+    "state 0": "bare tree branches",
+    "state 1": "lush, green tree",
+    "frame_first": "A tree stands with bare branches against a clear blue sky, the sun shining brightly.",
+    "frame_middle": "The tree's branches are partially covered with emerging green leaves, catching the sunlight.",
+    "frame_last": "The tree is now fully covered in lush, green foliage, casting a dense shadow on the ground below.",
+    "frame_json_raw": "{\"first\": \"A tree stands with bare branches against a clear blue sky, the sun shining brightly.\", \"middle\": \"The tree's branches are partially covered with emerging green leaves, catching the sunlight.\", \"last\": \"The tree is now fully covered in lush, green foliage, casting a dense shadow on the ground below.\"}"
+  },
+  {
+    "caption": "The pink flowers are turning from withered to full blossom.",
+    "state 0": "withered pink flowers",
+    "state 1": "fully blossomed pink flowers",
+    "frame_first": "A close-up of pink flowers, slightly withered, begins to show signs of new life as buds start to unfurl.",
+    "frame_middle": "The flowers are in the middle of their transformation, with some petals fully open and others still curling outward.",
+    "frame_last": "The pink flowers are now in full bloom, their petals fully open and vibrant against the backdrop of green leaves.",
+    "frame_json_raw": "{\"first\": \"A close-up of pink flowers, slightly withered, begins to show signs of new life as buds start to unfurl.\", \"middle\": \"The flowers are in the middle of their transformation, with some petals fully open and others still curling outward.\", \"last\": \"The pink flowers are now in full bloom, their petals fully open and vibrant against the backdrop of green leaves.\"}"
+  },
+  {
+    "caption": "The pink flowers are turning from full blossom to withered.",
+    "state 0": "fully blossomed pink flowers",
+    "state 1": "withered pink flowers",
+    "frame_first": "A close-up of vibrant pink flowers in full bloom under the bright morning sun.",
+    "frame_middle": "The same flowers, now slightly drooping, with some petals beginning to wither and fall.",
+    "frame_last": "The once vibrant flowers are now withered, their petals scattered on the ground, as the day fades into dusk.",
+    "frame_json_raw": "{\"first\": \"A close-up of vibrant pink flowers in full bloom under the bright morning sun.\", \"middle\": \"The same flowers, now slightly drooping, with some petals beginning to wither and fall.\", \"last\": \"The once vibrant flowers are now withered, their petals scattered on the ground, as the day fades into dusk.\"}"
+  },
+  {
+    "caption": "The blue ink dissolves in water, spreading out and turning the water blue.",
+    "state 0": "blue ink and clear water",
+    "state 1": "blue water",
+    "frame_first": "A droplet of blue ink falls into a clear glass of water, beginning to spread.",
+    "frame_middle": "The ink continues to dissolve, creating a swirling pattern of blue in the water.",
+    "frame_last": "The water is now uniformly blue as the ink fully dissolves and blends.",
+    "frame_json_raw": "{\"first\": \"A droplet of blue ink falls into a clear glass of water, beginning to spread.\", \"middle\": \"The ink continues to dissolve, creating a swirling pattern of blue in the water.\", \"last\": \"The water is now uniformly blue as the ink fully dissolves and blends.\"}"
+  },
+  {
+    "caption": "The icicle forms, going from a single droplet to a long, pointed shape as water freezes layer by layer.",
+    "state 0": "single water droplet",
+    "state 1": "long, pointed icicle",
+    "frame_first": "A single droplet of water hangs from a branch, beginning to freeze in the cold air.",
+    "frame_middle": "The droplet has grown into a small icicle, its layers of ice clearly visible as it continues to form.",
+    "frame_last": "A long, pointed icicle now dangles from the branch, fully formed and glistening in the frosty air.",
+    "frame_json_raw": "{\"first\": \"A single droplet of water hangs from a branch, beginning to freeze in the cold air.\", \"middle\": \"The droplet has grown into a small icicle, its layers of ice clearly visible as it continues to form.\", \"last\": \"A long, pointed icicle now dangles from the branch, fully formed and glistening in the frosty air.\"}"
+  },
+  {
+    "caption": "The face is morphing from a human into a chimpanzee.",
+    "state 0": "human face",
+    "state 1": "chimpanzee face",
+    "frame_first": "A human face is seen in close-up, the camera steady, with neutral lighting highlighting the transformation about to occur.",
+    "frame_middle": "The face is halfway transformed, human features blending with chimpanzee characteristics, the eyes and nose shifting.",
+    "frame_last": "The transformation is complete, revealing a chimpanzee face, the camera still focused and the lighting consistent throughout the change.",
+    "frame_json_raw": "{\"first\": \"A human face is seen in close-up, the camera steady, with neutral lighting highlighting the transformation about to occur.\", \"middle\": \"The face is halfway transformed, human features blending with chimpanzee characteristics, the eyes and nose shifting.\", \"last\": \"The transformation is complete, revealing a chimpanzee face, the camera still focused and the lighting consistent throughout the change.\"}"
+  },
+  {
+    "caption": "The landscape transforms from a barren desert into a lush forest.",
+    "state 0": "barren desert",
+    "state 1": "lush forest",
+    "frame_first": "A vast, barren desert stretches under a clear blue sky, with sand dunes and sparse vegetation.",
+    "frame_middle": "The desert gradually shifts, with green shoots emerging from the sand, trees beginning to form, and a denser canopy above.",
+    "frame_last": "A lush, vibrant forest now covers the landscape, with tall trees, a thick canopy, and sunlight filtering through the leaves.",
+    "frame_json_raw": "{\"first\": \"A vast, barren desert stretches under a clear blue sky, with sand dunes and sparse vegetation.\", \"middle\": \"The desert gradually shifts, with green shoots emerging from the sand, trees beginning to form, and a denser canopy above.\", \"last\": \"A lush, vibrant forest now covers the landscape, with tall trees, a thick canopy, and sunlight filtering through the leaves.\"}"
+  },
+  {
+    "caption": "The building changes from an ancient ruin into a modern skyscraper.",
+    "state 0": "ancient ruin",
+    "state 1": "modern skyscraper",
+    "frame_first": "An ancient ruin stands under a cloudy sky, its stone walls cracked and overgrown with vines.",
+    "frame_middle": "The ruin begins to transform, with modern glass and steel structures emerging from the ancient stones.",
+    "frame_last": "A sleek, modern skyscraper stands where the ruin once was, bathed in the light of a clear, sunny day.",
+    "frame_json_raw": "{\"first\": \"An ancient ruin stands under a cloudy sky, its stone walls cracked and overgrown with vines.\", \"middle\": \"The ruin begins to transform, with modern glass and steel structures emerging from the ancient stones.\", \"last\": \"A sleek, modern skyscraper stands where the ruin once was, bathed in the light of a clear, sunny day.\"}"
+  },
+  {
+    "caption": "The painting develops from rough pencil sketches into a vibrant, detailed masterpiece.",
+    "state 0": "rough pencil sketches",
+    "state 1": "vibrant, detailed masterpiece",
+    "frame_first": "A blank canvas sits on an easel with faint pencil sketches of shapes and outlines barely visible.",
+    "frame_middle": "The canvas now shows a painting in progress, with colors filling in the sketch, details becoming clearer, and the artist's hand visible adding finer touches.",
+    "frame_last": "The final painting is a vibrant, detailed masterpiece, with rich colors and intricate details fully realized, the artist stepping back to admire the work.",
+    "frame_json_raw": "{\"first\": \"A blank canvas sits on an easel with faint pencil sketches of shapes and outlines barely visible.\", \"middle\": \"The canvas now shows a painting in progress, with colors filling in the sketch, details becoming clearer, and the artist's hand visible adding finer touches.\", \"last\": \"The final painting is a vibrant, detailed masterpiece, with rich colors and intricate details fully realized, the artist stepping back to admire the work.\"}"
+  },
+  {
+    "caption": "The robot builds up from a simple metal framework into a fully armored machine.",
+    "state 0": "simple metal framework",
+    "state 1": "fully armored robot",
+    "frame_first": "A bare metal framework of a robot stands in an empty workshop, lights casting sharp shadows, early morning light filtering through the windows.",
+    "frame_middle": "The robot's framework is partially covered with armor plating, tools and machinery around it, midday sun brightening the room.",
+    "frame_last": "A fully armored robot stands complete, its metallic surface gleaming under the workshop lights, as the sun sets outside, casting a warm glow through the windows.",
+    "frame_json_raw": "{\"first\": \"A bare metal framework of a robot stands in an empty workshop, lights casting sharp shadows, early morning light filtering through the windows.\", \"middle\": \"The robot's framework is partially covered with armor plating, tools and machinery around it, midday sun brightening the room.\", \"last\": \"A fully armored robot stands complete, its metallic surface gleaming under the workshop lights, as the sun sets outside, casting a warm glow through the windows.\"}"
+  },
+  {
+    "caption": "The rough stone refines from an unpolished rock into a smooth marble statue.",
+    "state 0": "rough, unpolished stone",
+    "state 1": "smooth, polished marble statue",
+    "frame_first": "A large, unpolished rock sits in a dimly lit workshop, its rough surface casting deep shadows.",
+    "frame_middle": "The rock is now partially transformed, with one side gleaming as smooth marble while the other remains rough, under the steady hands of a sculptor.",
+    "frame_last": "The final statue stands complete, its smooth marble surface reflecting the light, now polished and detailed in the center of the workshop.",
+    "frame_json_raw": "{\"first\": \"A large, unpolished rock sits in a dimly lit workshop, its rough surface casting deep shadows.\", \"middle\": \"The rock is now partially transformed, with one side gleaming as smooth marble while the other remains rough, under the steady hands of a sculptor.\", \"last\": \"The final statue stands complete, its smooth marble surface reflecting the light, now polished and detailed in the center of the workshop.\"}"
+  },
+  {
+    "caption": "The galaxy assembles from scattered stars into a swirling spiral galaxy.",
+    "state 0": "scattered stars",
+    "state 1": "swirling spiral galaxy",
+    "frame_first": "Scattered stars float in the vast darkness of space, each a distant point of light.",
+    "frame_middle": "The stars begin to coalesce, forming the early arms of a spiral galaxy, their movement creating a dynamic, swirling pattern.",
+    "frame_last": "A fully formed spiral galaxy rotates majestically, its arms swirling with stars and cosmic dust, glowing brightly against the black backdrop of space.",
+    "frame_json_raw": "{\"first\": \"Scattered stars float in the vast darkness of space, each a distant point of light.\", \"middle\": \"The stars begin to coalesce, forming the early arms of a spiral galaxy, their movement creating a dynamic, swirling pattern.\", \"last\": \"A fully formed spiral galaxy rotates majestically, its arms swirling with stars and cosmic dust, glowing brightly against the black backdrop of space.\"}"
+  },
+  {
+    "caption": "The garden blooms from bare soil patches into a vibrant paradise.",
+    "state 0": "bare soil patches garden",
+    "state 1": "vibrant blooming garden",
+    "frame_first": "Bare soil patches cover the garden, with a few sprouts just beginning to emerge under a bright morning sun.",
+    "frame_middle": "Flowers and plants are in full bloom, creating a colorful and lively garden scene, with bees and butterflies flitting between blossoms.",
+    "frame_last": "The garden is a lush, vibrant paradise, with mature plants and flowers in every hue, bathed in the soft light of a setting sun.",
+    "frame_json_raw": "{\"first\": \"Bare soil patches cover the garden, with a few sprouts just beginning to emerge under a bright morning sun.\", \"middle\": \"Flowers and plants are in full bloom, creating a colorful and lively garden scene, with bees and butterflies flitting between blossoms.\", \"last\": \"The garden is a lush, vibrant paradise, with mature plants and flowers in every hue, bathed in the soft light of a setting sun.\"}"
+  },
+  {
+    "caption": "The city skyline grows from low historic buildings into towering futuristic structures.",
+    "state 0": "low historic city buildings",
+    "state 1": "towering futuristic city buildings",
+    "frame_first": "The scene opens with a row of low, historic buildings with red roofs and stone facades, set against a soft dawn sky.",
+    "frame_middle": "In the middle, the camera pans right, revealing a mix of old and new architecture, with sleek, glassy skyscrapers emerging from the older structures.",
+    "frame_last": "The final frame shows a fully transformed skyline dominated by towering futuristic buildings with neon lights, the sun now high in the sky.",
+    "frame_json_raw": "{\"first\": \"The scene opens with a row of low, historic buildings with red roofs and stone facades, set against a soft dawn sky.\", \"middle\": \"In the middle, the camera pans right, revealing a mix of old and new architecture, with sleek, glassy skyscrapers emerging from the older structures.\", \"last\": \"The final frame shows a fully transformed skyline dominated by towering futuristic buildings with neon lights, the sun now high in the sky.\"}"
+  },
+  {
+    "caption": "The car transforms from a vintage model into a sleek, modern sports car.",
+    "state 0": "vintage car model",
+    "state 1": "sleek, modern sports car",
+    "frame_first": "A vintage car sits in the center of the frame, its classic lines and chrome details catching the sunlight of a bright afternoon.",
+    "frame_middle": "The car's body ripples and reshapes, metal and glass warping and reforming in a shimmering, almost liquid motion.",
+    "frame_last": "A sleek, modern sports car stands where the vintage car once was, its aerodynamic design and sharp angles contrasting with the now-still surroundings.",
+    "frame_json_raw": "{\"first\": \"A vintage car sits in the center of the frame, its classic lines and chrome details catching the sunlight of a bright afternoon.\", \"middle\": \"The car's body ripples and reshapes, metal and glass warping and reforming in a shimmering, almost liquid motion.\", \"last\": \"A sleek, modern sports car stands where the vintage car once was, its aerodynamic design and sharp angles contrasting with the now-still surroundings.\"}"
+  },
+  {
+    "caption": "The planet shifts from barren landscapes into a vibrant, life-filled world.",
+    "state 0": "barren planet",
+    "state 1": "vibrant, life-filled planet",
+    "frame_first": "A vast, desolate landscape stretches under a pale sky, devoid of life, with rocky terrain and no signs of vegetation.",
+    "frame_middle": "The ground begins to green, sprouting grass and small plants, while the sky brightens with a warm, golden hue.",
+    "frame_last": "A lush, vibrant ecosystem flourishes, with tall trees, blooming flowers, and animals roaming freely across the now fertile land.",
+    "frame_json_raw": "{\"first\": \"A vast, desolate landscape stretches under a pale sky, devoid of life, with rocky terrain and no signs of vegetation.\", \"middle\": \"The ground begins to green, sprouting grass and small plants, while the sky brightens with a warm, golden hue.\", \"last\": \"A lush, vibrant ecosystem flourishes, with tall trees, blooming flowers, and animals roaming freely across the now fertile land.\"}"
+  },
+  {
+    "caption": "The blueprint progresses from simple lines and measurements into a completed building.",
+    "state 0": "simple lines and measurements blueprint",
+    "state 1": "completed building",
+    "frame_first": "A blank sheet of paper with a pencil drawing the initial lines and measurements of a blueprint.",
+    "frame_middle": "The blueprint is partially filled with more detailed architectural drawings, including walls and rooms.",
+    "frame_last": "A fully detailed blueprint is shown, with the final building illustrated, ready for construction.",
+    "frame_json_raw": "{\"first\": \"A blank sheet of paper with a pencil drawing the initial lines and measurements of a blueprint.\", \"middle\": \"The blueprint is partially filled with more detailed architectural drawings, including walls and rooms.\", \"last\": \"A fully detailed blueprint is shown, with the final building illustrated, ready for construction.\"}"
+  },
+  {
+    "caption": "The digital avatar advances from pixelated shapes into a lifelike character.",
+    "state 0": "pixelated avatar",
+    "state 1": "lifelike avatar",
+    "frame_first": "A grid of pixelated squares flickers to life, gradually forming rough outlines of a human figure.",
+    "frame_middle": "The pixelated figure begins to smooth out, details like facial features and clothing becoming more defined.",
+    "frame_last": "The avatar now stands as a fully realized, lifelike character, with realistic textures and subtle expressions.",
+    "frame_json_raw": "{\"first\": \"A grid of pixelated squares flickers to life, gradually forming rough outlines of a human figure.\", \"middle\": \"The pixelated figure begins to smooth out, details like facial features and clothing becoming more defined.\", \"last\": \"The avatar now stands as a fully realized, lifelike character, with realistic textures and subtle expressions.\"}"
+  },
+  {
+    "caption": "The apple is shrinking and drying out as the flower is wilting and losing its vibrant color.",
+    "state 0": "fresh apple and vibrant flower",
+    "state 1": "shrinking, dried apple and wilted flower losing its vibrant color",
+    "frame_first": "An apple, still plump and red, sits beside a bright, fully bloomed flower, both resting on a rustic wooden table under a soft, natural light.",
+    "frame_middle": "The apple has noticeably shrunk, its skin wrinkling, while the flower droops slightly, its petals fading from vivid colors to dull tones.",
+    "frame_last": "A withered, small apple and a nearly wilted flower, barely holding onto their shapes, lie lifelessly on the table, the light dimming as the scene fades.",
+    "frame_json_raw": "{\"first\": \"An apple, still plump and red, sits beside a bright, fully bloomed flower, both resting on a rustic wooden table under a soft, natural light.\", \"middle\": \"The apple has noticeably shrunk, its skin wrinkling, while the flower droops slightly, its petals fading from vivid colors to dull tones.\", \"last\": \"A withered, small apple and a nearly wilted flower, barely holding onto their shapes, lie lifelessly on the table, the light dimming as the scene fades.\"}"
+  },
+  {
+    "caption": "The green and fresh leaf is curling and turning brown as the balloon is deflating and wrinkling.",
+    "state 0": "green, fresh leaf and inflated balloon",
+    "state 1": "curled, brown leaf and deflated, wrinkled balloon",
+    "frame_first": "A vibrant green leaf hangs from a string attached to a fully inflated red balloon under a bright, clear sky.",
+    "frame_middle": "The leaf begins to curl at the edges, showing hints of brown, while the balloon starts to lose air, its surface becoming slightly wrinkled.",
+    "frame_last": "The leaf is now mostly brown and curled, hanging limply as the balloon is nearly deflated, its skin completely wrinkled and sagging.",
+    "frame_json_raw": "{\"first\": \"A vibrant green leaf hangs from a string attached to a fully inflated red balloon under a bright, clear sky.\", \"middle\": \"The leaf begins to curl at the edges, showing hints of brown, while the balloon starts to lose air, its surface becoming slightly wrinkled.\", \"last\": \"The leaf is now mostly brown and curled, hanging limply as the balloon is nearly deflated, its skin completely wrinkled and sagging.\"}"
+  }
+]
